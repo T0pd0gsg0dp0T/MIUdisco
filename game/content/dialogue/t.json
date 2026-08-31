@@ -1,0 +1,275 @@
+{
+ "npc": "t",
+ "nodes": {
+  "root": {
+   "text": "Voilà! In view, a vagabond veteran, vested in violet, victim of a vessel of vicissitude that has vanished — and vowing, at last, to vindicate the vexed and the—\n\n... Sorry. Sorry. You get a V and it takes the whole night off you.",
+   "options": [
+    {
+     "id": "why_t",
+     "text": "\"Why are you called T?\"",
+     "goto": "why_t"
+    },
+    {
+     "id": "utensils",
+     "text": "\"Things float in this kitchen when you talk.\"",
+     "goto": "utensils"
+    },
+    {
+     "id": "speech",
+     "text": "\"Do the T one.\"",
+     "goto": "speech"
+    },
+    {
+     "id": "t_watch",
+     "text": "Say nothing at all and watch him work.",
+     "once": true,
+     "check": {
+      "id": "t:t_watch",
+      "skill": "PERCEPTION",
+      "dc": 11,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "Eleven minutes of silence and a man doing prep, and in eleven minutes he does not once look at what his hands are doing.\n\nHe is watching the door. Not the pass, not the pans, the *door*, continuously, the whole shift, and he has arranged his entire station so that he can do that without it being visible that he is doing it.",
+      "failure_text": "He preps. It is soothing and extremely fast and entirely opaque, and at the end of eleven minutes there is a great deal of prepared food and you have learned nothing except that he is very good at this.",
+      "success_effects": {
+       "clue": {
+        "id": "c_t_watches_the_door",
+        "title": "He watches the door",
+        "text": "\"T\" has arranged his whole station so he can watch the door for an entire shift without anybody noticing that he is.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "personhood"
+        ],
+        "source": "\"T\""
+       },
+       "lucidity": 8
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Let him get back to the pass.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "why_t": {
+   "text": {
+    "low": "Because it's the first letter of the thing I'm not going to tell you, and because Chef couldn't say the rest of it, and because when she said the first letter it came out *perfectly*.\n\nOne clean consonant. No air in it, no whistle, nothing to trip over. She said T and it was the only sound in eleven years that came out of that woman exactly as it went in, and I have been called T from that afternoon and I will be called T at the end.\n\nThat's not a sad story either. That's the best thing anybody ever did for me and she did it by accident, standing at a stove, not looking up.",
+    "high": "Because it's the first letter of the thing I'm not going to tell you, and because when Chef said that letter it came out *perfectly*.\n\nOne clean consonant. No air in it, no whistle, nothing to trip over. The only sound in eleven years that came out of that woman exactly as it went in. I've been called T from that afternoon and I'll be called T at the end.\n\nThat's not a sad story. It's the best thing anybody ever did for me, and she did it by accident, standing at a stove, not looking up."
+   },
+   "effects": {
+    "morale": 6,
+    "relationship": {
+     "t": 1
+    }
+   },
+   "options": [
+    {
+     "id": "rest",
+     "text": "\"What's the rest of it?\"",
+     "goto": "rest_of_it"
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "rest_of_it": {
+   "text": {
+    "low": "He opens his mouth.\n\nAnd then he stands there with it open for about four seconds, in whites, with a knife in his hand, and the extraction fan has gone quiet again the way it does, and there is a ladle on the pass that is not touching the pass.\n\n\"...Huh,\" he says.\n\nHe puts the knife down. He tries again. Nothing arrives. He is not being coy — you have watched a man reach for his own name and come back with his hand empty, twice, and the second time he laughed, which was worse.\n\n\"Well,\" he says. \"That's new.\"",
+    "high": "He opens his mouth.\n\nAnd stands there with it open for about four seconds, in whites, with a knife in his hand, and there is a ladle on the pass that is not touching the pass.\n\n\"...Huh,\" he says.\n\nHe puts the knife down. Tries again. Nothing arrives. He is not being coy — you have watched a man reach for his own name and come back with his hand empty, twice, and the second time he laughed, which was worse.\n\n\"Well. That's new.\""
+   },
+   "effects": {
+    "clue": {
+     "id": "c_t_has_no_rest",
+     "title": "There is no rest of it",
+     "text": "Asked for the rest of his name, T reaches for it twice and comes back with nothing. He is not being coy. It is not there.",
+     "beat": "revilo",
+     "tags": [
+      "revilo",
+      "identity",
+      "language",
+      "personhood"
+     ],
+     "source": "\"T\""
+    },
+    "lucidity": 12,
+    "morale": -5,
+    "relationship": {
+     "t": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...I'm sorry. I shouldn't have asked.\"",
+     "goto": "sorry"
+    }
+   ]
+  },
+  "sorry": {
+   "text": {
+    "low": "No — no, don't. Don't do that.\n\nI've had a name-shaped hole in me for eleven years and I've been walking around it in the dark and calling it modesty. You put a light on. That's a service. In this trade we charge for that.\n\nAnd besides — he picks the knife back up, and the fan comes back on, and the ladle settles — besides, a man with one letter has got one letter to *be excellent at*, and I have been, and there is not a soul in this parish who does a T like I do a T.",
+    "high": "No — don't. Don't do that.\n\nI've had a name-shaped hole in me for eleven years and I've been walking round it in the dark calling it modesty. You put a light on. That's a service; in this trade we charge for it.\n\nAnd besides — he picks the knife back up, and the ladle settles — a man with one letter has got one letter to *be excellent at*, and there is not a soul in this parish who does a T like I do a T."
+   },
+   "effects": {
+    "morale": 8,
+    "relationship": {
+     "t": 2
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Then do the T one.\"",
+     "goto": "speech"
+    }
+   ]
+  },
+  "utensils": {
+   "text": {
+    "low": "They do. Not always. Not on request, before you ask, and everybody asks, and I've stopped being wounded by it.\n\nIt's the long ones. When a sentence runs — when it's *going*, when the sound has got hold of the thing and the thing has stopped being a list of words and started being a shape — that's when the pass goes light. Ladles. A whisk once, quite high. Chef's second knife, which frightened everybody including the knife.\n\nAnd it stops the second I stop. Never a moment after. It doesn't fall, either — it *settles*, like it's been put down by somebody who wasn't finished.",
+    "high": "They do. Not always, and not on request, before you ask.\n\nIt's the long ones. When a sentence is *going* — when the sound has got hold of the thing and it's stopped being a list of words and started being a shape — that's when the pass goes light. Ladles. A whisk once, quite high. Chef's second knife, which frightened everybody including the knife.\n\nAnd it stops the second I stop. Never a moment after. It doesn't fall, either — it *settles*, like it's been put down by somebody who wasn't finished."
+   },
+   "passive": [
+    {
+     "skill": "SAVOIR_FAIRE",
+     "dc": 12,
+     "text": "It stops the second he stops, and nothing falls. Whatever is holding those objects up is not losing its grip when he finishes — it is putting them down. It was listening."
+    },
+    {
+     "skill": "EMPATHY",
+     "dc": 11,
+     "text": "He has told this to people before and been laughed at, and he has built a small hard shell around the telling of it, and he is telling you anyway."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_pass_goes_light",
+     "title": "It settles, rather than falls",
+     "text": "Utensils rise during T's longest sentences and never fall when he stops — they settle, as though put down by somebody who was not finished.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "language"
+     ],
+     "source": "\"T\""
+    },
+    "lucidity": 8,
+    "relationship": {
+     "t": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "speech": {
+   "text": "You want the T one.\n\nNobody wants the T one. They want the V one because they've heard the V one. Right. Right — stand back, mind the pass, and don't laugh in the middle, laugh at the end, the middle's load-bearing.",
+   "options": [
+    {
+     "id": "listen",
+     "text": "Stand back. Mind the pass.",
+     "goto": "the_speech"
+    },
+    {
+     "id": "back",
+     "text": "\"Another time.\"",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "the_speech": {
+   "narration": true,
+   "text": {
+    "low": "\"Take this,\" he says, and takes it — a tureen, two hands, both wrists, up to the light.\n\n\"Take this tepid, tremulous, thoroughly traduced tureen, this trifling triumph of the tuber, tended these three thousand tedious turns of the tap by a toothless titan who tastes nothing and therefore tastes *truly* — and tell me, tell me truthfully, that the tongue is the arbiter of the table.\n\nIt is not. It is a tenant. It is a tenant of a house it did not build and pays no rent on, and it holds forth about the furniture.\n\nWhat you are tasting is not the thing. What you are tasting is the *telling* of the thing — the sequence, the timing, the terrible patience of a woman who has not tasted since 1971 and has not been wrong since 1974 — and if you can taste that, then the tongue is a courtesy, and the truth of a dish is in how it has been *told*.\"\n\nAnd there are four utensils in the air over the pass, and a colander, and a small pan.\n\nHe stops.\n\nThey settle, one after another, at intervals — the way a person puts things down when they have been listening and are going back to work.",
+    "high": "\"Take this,\" he says, and takes it — a tureen, two hands, up to the light.\n\n\"Take this tepid, tremulous, thoroughly traduced tureen, this trifling triumph of the tuber, tended by a toothless titan who tastes nothing and therefore tastes *truly* — and tell me truthfully that the tongue is the arbiter of the table.\n\nIt is not. It is a tenant of a house it did not build, and it holds forth about the furniture.\n\nWhat you are tasting is not the thing. It is the *telling* of the thing — the sequence, the timing, the terrible patience of a woman who has not tasted since 1971 and has not been wrong since 1974. The tongue is a courtesy. The truth of a dish is in how it has been *told*.\"\n\nThere are four utensils in the air over the pass, and a colander, and a small pan.\n\nHe stops.\n\nThey settle, one after another, at intervals — the way a person puts things down when they have been listening and are going back to work."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_telling_of_the_thing",
+     "title": "The telling of the thing",
+     "text": "T's soliloquy, delivered to six floating utensils: what you taste is not the thing but the telling of it. They settle one after another, at intervals, when he stops.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "language",
+      "manuscript"
+     ],
+     "source": "\"T\""
+    },
+    "lucidity": 14,
+    "morale": 10,
+    "relationship": {
+     "t": 2
+    }
+   },
+   "options": [
+    {
+     "id": "clap",
+     "text": "Laugh. At the end, as instructed.",
+     "goto": "after"
+    },
+    {
+     "id": "quiet",
+     "text": "Say nothing at all.",
+     "goto": "after_quiet"
+    }
+   ]
+  },
+  "after": {
+   "text": "HA! Yes. Yes — thank you, at the *end*, do you see, that's how it's done, and there are people in this parish who have been coming here for a decade and cannot manage it.\n\nHe is genuinely, uncomplicatedly delighted, in whites, with a tureen, in a kitchen where six things have just come down out of the air.",
+   "effects": {
+    "morale": 6,
+    "relationship": {
+     "t": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "after_quiet": {
+   "text": "Nothing.\n\nHe waits, in whites, holding a tureen, for about three seconds longer than anybody should have to.\n\nThen he puts it down and says, in an ordinary voice: \"Right,\" and turns back to the pass, and the extraction fan comes on, and by the door there is a patch of air about a yard across that has gone thick, and it is in this kitchen and not in Woolbinkle's, and it has never been in this kitchen before.",
+   "effects": {
+    "morale": -6,
+    "relationship": {
+     "t": -1
+    },
+    "clue": {
+     "id": "c_silence_travels",
+     "title": "A thickened patch, in the wrong building",
+     "text": "A failed response to T leaves a yard-wide patch of thickened air in the Lishush Mush kitchen — the same phenomenon as Cheeses Thrice, in a building where it has never happened before.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "language"
+     ],
+     "source": "the kitchen"
+    },
+    "lucidity": 7
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Stand in the patch.",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

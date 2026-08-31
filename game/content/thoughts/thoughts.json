@@ -1,0 +1,90 @@
+[
+ {
+  "id": "and_furthermore",
+  "name": "And Furthermore—",
+  "cycles": 3,
+  "premise": "The name is not a name. It is the last word of every conversation you have ever lost. You turned to add one more point, the room had gone, and the only thing still listening had a trunk and infinite time. Sit with the arithmetic of that: how many rooms, over how many years, to earn a companion made entirely of your unfinished sentences.",
+  "conclusion": "The conclusion is not flattering and it is not painful. It is simply that you have always talked to someone, and someone has always stayed.",
+  "effect_text": "Rhetoric +1. Furthermore reaches you one notch more clearly.",
+  "effects": {
+   "skills": {
+    "RHETORIC": 1
+   },
+   "lucidity": 4
+  }
+ },
+ {
+  "id": "sound_of_typing",
+  "name": "The Sound of Typing",
+  "cycles": 4,
+  "premise": "Nobody in this building owns a typewriter. You have confirmed this. You have also confirmed that the sound occurs, that it occurs at intervals resembling composition rather than transcription — bursts, then pauses of exactly the length a person needs to reconsider a word — and that no resident finds this worth a second sentence.",
+  "conclusion": "Somebody is working. The work has pauses in it. Pauses are where choices go.",
+  "effect_text": "Logic +1. Typewriter evidence now grants a bonus on related checks.",
+  "effects": {
+   "skills": {
+    "LOGIC": 1
+   },
+   "lucidity": 6
+  }
+ },
+ {
+  "id": "presumptuous_senses",
+  "name": "The Presumptuousness of Senses",
+  "cycles": 5,
+  "premise": "If we are to believe the evidence of our senses — which, admittedly, seems rather presumptuous — then something here is deliciously askew. But the sentence has a second half you have been declining to write: if the senses are presumptuous, the presumption is yours, and the askewness is being performed for an audience of one.",
+  "conclusion": "You are not being lied to by the world. You are being agreed with by it, constantly, and that is a far worse position to be in.",
+  "effect_text": "Empathy +1, Logic -1. The town's agreeableness now reads as a symptom.",
+  "effects": {
+   "skills": {
+    "EMPATHY": 1,
+    "LOGIC": -1
+   },
+   "lucidity": 8,
+   "morale": -5
+  }
+ },
+ {
+  "id": "hair_of_the_dog",
+  "name": "Hair of the Dog That Bit the Town",
+  "cycles": 3,
+  "premise": "Gin does not make Silvora Reefs more coherent. Gin makes you less bothered that it is not. There is a professional argument for this — a man who stops flinching at impossibilities can stand closer to them — and there is the other argument, which is that you have started making the professional argument.",
+  "conclusion": "Both arguments are correct. That is the trouble with them.",
+  "effect_text": "Electrochemistry +2, Physique -1. Intoxication penalties to Logic are halved.",
+  "effects": {
+   "skills": {
+    "ELECTROCHEMISTRY": 2,
+    "PHYSIQUE": -1
+   },
+   "morale": 5
+  }
+ },
+ {
+  "id": "backwards_man",
+  "name": "The Man Who Is Your Name Backwards",
+  "cycles": 5,
+  "premise": "Snoino Revilo. Say it slowly. Then say your own, and say it slowly, and then say it in the other direction, which is a thing you have been able to do since you were eight and have never once had a reason to do since. Someone has your letters. They are using all of them and no others.",
+  "conclusion": "An anagram is a coincidence. A reversal is an author.",
+  "effect_text": "Savoir-Faire +1. Reversals and anagrams now yield more on examination.",
+  "effects": {
+   "skills": {
+    "SAVOIR_FAIRE": 1
+   },
+   "lucidity": 10
+  }
+ },
+ {
+  "id": "wet_notebook",
+  "name": "Three Dry Pages",
+  "cycles": 4,
+  "premise": "The notebook went into the water with you. Every page is a blue smear except three, and those three are dry, and the handwriting on them is yours in the way a signature on a document you did not sign is yours. Water does not select. Water is the least selective thing there is.",
+  "conclusion": "Something declined to let those three pages get wet. That is a preference. Preferences belong to people.",
+  "effect_text": "Logic +1, Morale -5. You will not be putting the notebook down again.",
+  "effects": {
+   "skills": {
+    "LOGIC": 1
+   },
+   "morale": -5,
+   "lucidity": 5
+  }
+ }
+]

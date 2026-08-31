@@ -1,0 +1,253 @@
+{
+ "npc": "sir_jerry",
+ "nodes": {
+  "root": {
+   "text": "Be seated, good sir, and let us have a look at the presenting field.\n\nMm. Mm. There is a deal of thinking gone on above this collar and it has not been kind to the temporal region. I say that as an observation and not a judgement — a knight does not judge a field, a knight surveys it.",
+   "options": [
+    {
+     "id": "photos",
+     "text": "\"Your wall says you transfigure people. The photographs say an inch and a half.\"",
+     "goto": "photos",
+     "requires": {
+      "clue": "c_before_after"
+     }
+    },
+    {
+     "id": "cut",
+     "text": "\"Cut it, then. Whatever you think.\"",
+     "goto": "cut"
+    },
+    {
+     "id": "name",
+     "text": "\"Sir Jerry. Say it fast.\"",
+     "goto": "name",
+     "once": true
+    },
+    {
+     "id": "jerry_sit",
+     "text": "Sit for the razor and do not move, whatever the third mirror does.",
+     "once": true,
+     "check": {
+      "id": "sir_jerry:jerry_sit",
+      "skill": "PAIN_THRESHOLD",
+      "dc": 11,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "The third mirror does something on the ninth minute and you do not move, at all, because whatever it costs to hold still is a currency you happen to have a great deal of.\n\n\"A knight,\" says Sir Jerry, genuinely moved, \"does not flinch.\" And in the glass, for the length of the tenth minute, there are two men being shaved by two barbers and only one of the barbers is Sir Jerry.",
+      "failure_text": "The third mirror does something on the ninth minute and your head goes round with it, and the razor withdraws with thirty years of practice, and there is a very small nick above the ear bleeding with tremendous enthusiasm.",
+      "success_effects": {
+       "clue": {
+        "id": "c_two_barbers",
+        "title": "Two barbers, one Jerry",
+        "text": "Held still in Sir Jerry's chair: the third mirror shows two men being shaved by two barbers, and only one of the barbers is here.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "personhood"
+        ],
+        "source": "Sir Jerry"
+       },
+       "lucidity": 10,
+       "relationship": {
+        "sir_jerry": 1
+       }
+      },
+      "failure_effects": {
+       "health": -3
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Decline the chair.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "photos": {
+   "text": {
+    "low": "Both are true, good sir, and I would not have one of them off the wall for the world.\n\nThe camera records the *field*. An inch and a half, taken from the lateral aspect, bilaterally, and there is no dispute and I would not attempt one — I have measured it myself with a rule, out of professional interest, and the camera is correct.\n\nThe signatures record the *presentation*. And a man's presentation is not his field. It is what is said about the field, by him, to himself, in a glass, every morning of his life. I do not touch that. I have never touched it. I merely change the field by an inch and a half and then the man goes home and revises.",
+    "high": "Both are true, good sir, and I would not have one of them off the wall for the world.\n\nThe camera records the *field*. An inch and a half from the lateral aspect, bilaterally — I have measured it myself with a rule, and the camera is correct.\n\nThe signatures record the *presentation*. And a man's presentation is not his field. It is what is said about the field, by him, to himself, in a glass, every morning of his life. I do not touch that. I change the field by an inch and a half, and then the man goes home and revises."
+   },
+   "passive": [
+    {
+     "skill": "RHETORIC",
+     "dc": 12,
+     "text": "He has separated the thing from the account of the thing, in a barbershop, with a rule and a camera, and he did it for professional reasons, and he has no idea that he has just described the operating principle of the entire town."
+    },
+    {
+     "skill": "LOGIC",
+     "dc": 11,
+     "text": "An inch and a half is doing the work of a transfiguration. That is a ratio, and in this parish it is a very informative one: the physical change required to produce a total revision is small. Small enough to be nudged by somebody else."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_field_and_presentation",
+     "title": "The field and the account of the field",
+     "text": "Sir Jerry distinguishes the presenting field, which he changes by an inch and a half, from the presentation, which is what a man says about himself in a glass every morning. He does not touch the second. It revises anyway.",
+     "beat": "revilo",
+     "tags": [
+      "revilo",
+      "identity",
+      "language"
+     ],
+     "source": "Sir Jerry"
+    },
+    "lucidity": 9
+   },
+   "options": [
+    {
+     "id": "who_revises",
+     "text": "\"And if somebody else did the revising?\"",
+     "check": {
+      "id": "jerry:who_revises",
+      "skill": "RHETORIC",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "The razor comes off the strop and does not go back to it.\n\n\"Then he would not be a man having a haircut, good sir. He would be a man being *described*, and the difference is the whole of my profession and the whole of my order and I will not have the two confused in my chair.\"\n\nA long pause. Somewhere behind you the clippers keep time.\n\n\"I shall say a thing now that I have said to no patient in thirty years of practice. There is a gentleman I attended, once, long ago, in the near chair — a taper, very particular about the parting — and I have thought of him perhaps four times since and I have never been able to fix his face.\n\nI can fix every face I have ever attended. Every one. It is the whole of my recall and it is the only vanity I permit myself.\n\nHis, I cannot. And I have his measurements written down, good sir, in my own book, in my own hand, and they are your measurements to the sixteenth.\"",
+      "failure_text": "\"Then he would be ill served, and I should hope his barber would notice.\" The razor goes back to the strop. \"Now. The temporal aspect, good sir, and let us be candid about the recession, for a knight is not a herald and I am not paid to flatter a field.\"",
+      "success": "measurements",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_same_measurements",
+        "title": "Your measurements, to the sixteenth",
+        "text": "Sir Jerry can fix every face he has attended in thirty years except one — a man very particular about his parting, whose measurements, in Jerry's own book, are Oliver's to the sixteenth of an inch.",
+        "beat": "revilo",
+        "tags": [
+         "revilo",
+         "identity"
+        ],
+        "source": "Sir Jerry"
+       },
+       "lucidity": 15,
+       "morale": -7,
+       "relationship": {
+        "sir_jerry": 2
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "measurements": {
+   "text": {
+    "low": "I have kept that book locked these eight years, good sir, and I could not have told you why, and now I can, and I find I preferred not knowing.\n\nThere is a page in it with two entries. Same measurements, same hand, mine, eight years apart. And beside the first one I have written a single word of my own, in the margin, and the word is *asymmetric* — which is a thing I write when a man's parting will not sit where his crown says it should.\n\nBeside the second — beside yours, good sir — I have written the same word.\n\nAnd the two of you part on opposite sides.",
+    "high": "I have kept that book locked these eight years and could not have told you why, and now I can, and I find I preferred not knowing.\n\nThere is a page with two entries. Same measurements, same hand — mine — eight years apart. Beside the first I wrote one word in the margin: *asymmetric*. A thing I write when a man's parting will not sit where his crown says it should.\n\nBeside the second — beside yours — I have written the same word.\n\nAnd the two of you part on opposite sides."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_opposite_partings",
+     "title": "The same asymmetry, opposite sides",
+     "text": "Sir Jerry's book holds the same measurements twice, eight years apart, both annotated 'asymmetric'. Oliver and the other man part on opposite sides.",
+     "beat": "revilo",
+     "tags": [
+      "revilo",
+      "identity",
+      "wordplay"
+     ],
+     "source": "Sir Jerry"
+    },
+    "lucidity": 13,
+    "relationship": {
+     "sir_jerry": 1
+    },
+    "thought": "backwards_man"
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...Cut it, Sir Jerry.\"",
+     "goto": "cut"
+    }
+   ]
+  },
+  "cut": {
+   "text": "A knight does not decline a commission.\n\nSit still, good sir, and mind the presenting field, and I shall take an inch and a half from the lateral aspect bilaterally as I have from every patient in thirty years, for it is the correct quantity, and there is not a head in this parish that requires more nor one that survives less.",
+   "options": [
+    {
+     "id": "have_it",
+     "text": "Sit still.",
+     "check": {
+      "id": "jerry:cut",
+      "skill": "PHYSIQUE",
+      "dc": 10,
+      "kind": "white",
+      "repeatable": true,
+      "success_text": "It takes eleven minutes and it is the only eleven minutes since the harbour in which nothing whatever is required of you.\n\nHe works. The clippers keep time behind. The mirror in front of you holds the room and does not do anything clever, and the man in the third mirror goes on with his own business, and for eleven minutes two men who part on opposite sides are having their hair seen to by different people in the same building.\n\n\"There,\" says Sir Jerry. \"An inch and a half, good sir, and the field is much improved, and you may go home and revise at your leisure.\"\n\nAnd the man in the glass is much improved and you cannot for the life of you say what has changed.",
+      "failure_text": "You sit still for nine of the eleven minutes and on the ninth the third mirror does something at the edge of vision and your head goes round with it, and the razor is a razor, and Sir Jerry withdraws it with the unhurried competence of a man who has been withdrawing razors from moving heads for thirty years.\n\n\"A knight,\" he observes, \"does not flinch. A knight's *patient*, however, is under no such obligation, and I have never once held it against one.\"\n\nThere is a nick above the ear. It is very small and it is bleeding with tremendous enthusiasm.",
+      "success": "after_cut",
+      "failure": "after_cut",
+      "success_effects": {
+       "morale": 12,
+       "exhaustion": -2,
+       "relationship": {
+        "sir_jerry": 1
+       }
+      },
+      "failure_effects": {
+       "health": -4,
+       "morale": 4
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Another time.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "after_cut": {
+   "text": {
+    "low": "Now, good sir. Off with you.\n\nAnd take this with you, without charge, for it is the only medicine I dispense and it goes stale in the jar: whatever it is that has you walking about this parish at all hours with your collar up — you will not settle it by looking at it harder. You have been looking at it harder for a fortnight and it has cost you the temporal region.\n\nChange the field. Any inch and a half will do. Then go and see what gets revised.",
+    "high": "Now, good sir. Off with you.\n\nAnd take this without charge, for it is the only medicine I dispense and it goes stale in the jar: whatever has you walking this parish at all hours with your collar up, you will not settle it by looking at it harder. You have been looking harder for a fortnight and it has cost you the temporal region.\n\nChange the field. Any inch and a half will do. Then go and see what gets revised."
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "name": {
+   "text": {
+    "low": "Surgery. Yes. It is not lost on me, good sir, it has never been lost on me, and I should very much like the record to show that it was not my doing.\n\nI was christened Jeremy. The 'Sir' I awarded myself at nineteen in a moment of considerable pretension and I have never had the nerve to withdraw it. The town did the rest — said the two together often enough and quickly enough and by about my thirtieth year the pun had *set*, and the profession followed the name, and I did not choose barbering, good sir, barbering was concluded about me.\n\nI have made my peace. It is honest work and the blade is honest and I am the only man in this parish whose employment can be deduced from his own vowels.",
+    "high": "Surgery. Yes. It has never been lost on me, and I should like the record to show it was not my doing.\n\nI was christened Jeremy. The 'Sir' I awarded myself at nineteen in a moment of considerable pretension and have never had the nerve to withdraw. The town did the rest — said the two together often enough that by my thirtieth year the pun had *set*, and the profession followed the name. I did not choose barbering, good sir. Barbering was concluded about me.\n\nI have made my peace. I am the only man in this parish whose employment can be deduced from his own vowels."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_profession_followed_name",
+     "title": "The profession followed the name",
+     "text": "Sir Jerry did not choose barber-surgery. The town said 'Sir Jerry' often enough that the pun set, and the profession was concluded about him afterwards.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "language",
+      "wordplay"
+     ],
+     "source": "Sir Jerry"
+    },
+    "lucidity": 10,
+    "relationship": {
+     "sir_jerry": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

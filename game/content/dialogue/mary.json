@@ -1,0 +1,367 @@
+{
+ "npc": "mary",
+ "nodes": {
+  "root": {
+   "text": "Yeah. Yeah, you can come round this side, the queue's not for you, the queue's for people who know what they want.\n\nThat's not a dig, man. That's a category.",
+   "options": [
+    {
+     "id": "code",
+     "text": "\"Nobody can tell me what the code is.\"",
+     "goto": "code"
+    },
+    {
+     "id": "boundary",
+     "text": "\"Eleven degrees across four inches. In an open room.\"",
+     "goto": "boundary",
+     "requires": {
+      "clue": "c_the_join"
+     }
+    },
+    {
+     "id": "police",
+     "text": "\"Nobody has ever gone into that building.\"",
+     "goto": "police",
+     "requires": {
+      "clue": "c_facade"
+     }
+    },
+    {
+     "id": "busiest",
+     "text": "\"Why is this the busiest place in the parish?\"",
+     "goto": "busiest",
+     "once": true
+    },
+    {
+     "id": "mary_speed",
+     "text": "Order at her speed. Do not think about it first.",
+     "once": true,
+     "check": {
+      "id": "mary:mary_speed",
+      "skill": "REACTION_SPEED",
+      "dc": 11,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "You go at her pace and something in you supplies the words before the rest of you has been consulted, and they are not words you know.\n\nShe serves it. It is right. The queue does not break stride, and Mary looks at you for exactly as long as it takes to hand it over, which is the longest she has looked at anybody all night.",
+      "failure_text": "You go at her pace and produce a sound. She waits, at her speed, which is a very fast kind of waiting, and then serves you the thing that people who make that sound get, and it is fine.",
+      "success_effects": {
+       "clue": {
+        "id": "c_you_know_the_code",
+        "title": "You know the code",
+        "text": "Ordering at speed, the words arrive before you do. You know the Dude's Dews code and have no memory of learning it.",
+        "beat": "crash",
+        "tags": [
+         "crash",
+         "identity"
+        ],
+        "source": "Mary Guana"
+       },
+       "lucidity": 8,
+       "relationship": {
+        "mary": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Get out of the way of the queue.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "code": {
+   "text": {
+    "low": "'Cause there isn't one.\n\nYeah. Take your time with that. Everybody takes a minute.\n\nThere's no code, man. There's never been a code. There's two hundred people a night who've all decided there's a code, and they've all been doing it since they were kids, and what they're actually doing — every single one of them — is *saying something confidently on the beat*. Any words. I've had 'blue Tuesday and the man's regards'. I've had a fella order in Welsh. It all works.",
+    "high": "'Cause there isn't one.\n\nYeah. Take your time with that. Everybody takes a minute.\n\nThere's no code, man. Never has been. There's two hundred people a night who've all decided there is one, and what they're actually doing — every one of them — is *saying something confidently on the beat*. Any words. I've had a fella order in Welsh. It all works."
+   },
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "If any words work, then she is not decoding. She is deciding — and the confidence and the timing are how she knows the customer will accept whatever she decides."
+    }
+   ],
+   "options": [
+    {
+     "id": "then_how",
+     "text": "\"Then how do you know what to give them?\"",
+     "check": {
+      "id": "mary:then_how",
+      "skill": "LOGIC",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_metre_is_the_code": 3
+      },
+      "success_text": "\"I don't.\"\n\nShe is completely still. She has been completely still since you came round this side and it is now clear that the stillness is the default and the counter-speed is the effort.\n\n\"I give 'em something. And then they've ordered it. That's the whole mechanism, man, and I found it when I was nineteen and I've never told a soul.\n\nSomebody says a thing on the beat, right — confident, no gap — and there's about a second where what they wanted hasn't settled yet. It's *open*. And if I put a cup down in that second, then that's what they wanted, and they walk off happy, and they're not being fooled, I want to be clear. They *did* want it. It's just that they wanted it because I gave it to them and not the other way round.\"",
+      "failure_text": "\"Vibes,\" she says, and lets it sit there for about eight seconds. \"...Yeah. Vibes. That's the answer and it's a real answer and it's cost me forty years to be able to say it that short.\"",
+      "success": "mechanism",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_open_second",
+        "title": "There is a second where it has not settled",
+        "text": "Mary's method: a confident order delivered on the beat leaves roughly one second in which what the customer wanted has not yet settled. Whatever she puts down in that second becomes what they wanted.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "language"
+        ],
+        "source": "Mary Guana"
+       },
+       "lucidity": 15,
+       "relationship": {
+        "mary": 2
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"...Huh.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "mechanism": {
+   "text": {
+    "low": "And before you go off and do something clever with that — sit down a second. Yeah. On the warm side.\n\nI've had forty years with that and here's everything I know and it's four things.\n\nOne: it only works in the open second. You're late, you're just a lizard handing a man a drink.\n\nTwo: it only works on small stuff. Drinks. Donuts. I've never once been able to do it with anything that mattered and God knows I've tried.\n\nThree: it doesn't work on people who already know. Regulars who've decided what they want walk out with what they wanted. Every time. Can't touch 'em.\n\nAnd four — and this is the one, man, this is the one I'd sit up with — it has never once worked on you.",
+    "high": "Before you go off and do something clever with that — sit down. On the warm side.\n\nForty years, and here's everything I know. It's four things.\n\nOne: it only works in the open second. You're late, you're just a lizard handing a man a drink.\n\nTwo: only small stuff. Drinks. Donuts. Never once anything that mattered, and God knows I've tried.\n\nThree: it doesn't work on people who already know. Can't touch 'em.\n\nAnd four — this is the one I'd sit up with — it has never once worked on you."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_never_worked_on_you",
+     "title": "It has never worked on Oliver",
+     "text": "Mary's four rules: the open second, small things only, never on the already-decided — and it has never once worked on Oliver in eleven years.",
+     "beat": "revilo",
+     "tags": [
+      "revilo",
+      "language",
+      "identity",
+      "personhood"
+     ],
+     "source": "Mary Guana"
+    },
+    "lucidity": 12,
+    "relationship": {
+     "mary": 1
+    }
+   },
+   "options": [
+    {
+     "id": "why_not",
+     "text": "\"Why not?\"",
+     "goto": "why_not_me"
+    }
+   ]
+  },
+  "why_not_me": {
+   "text": {
+    "low": "Two reasons and I don't like either.\n\nFirst one's flattering, so you'll take it: you come in already decided. Always. Eleven years, you've walked through that door with a thing in your head and I've never got near the gap. That's rare, man. That's about four people in this parish.\n\nSecond one I've had for about six months and I haven't said it out loud.\n\nThere isn't a second. On everybody else there's a gap where it hasn't settled. On you it's already settled when you come through the door — settled *before* you get here, and settled in a way I can't get a cup into. Somebody's had that second already.\n\nAnd they've been having it, man. Every time. Before you arrive.",
+    "high": "Two reasons, and I don't like either.\n\nFirst one's flattering, so you'll take it: you come in already decided. Eleven years, and I've never got near the gap. That's about four people in this parish.\n\nSecond one I've had six months and haven't said out loud.\n\nThere isn't a second. On everybody else there's a gap where it hasn't settled. On you it's already settled when you come through the door — settled *before* you get here, in a way I can't get a cup into.\n\nSomebody's had that second already. Every time. Before you arrive."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_settled_before_arrival",
+     "title": "Somebody has had the second already",
+     "text": "Mary can find no open second in Oliver. What he wants is settled before he comes through the door, in a way she cannot get a cup into. Somebody has had that second first, every time.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "revilo",
+      "manuscript"
+     ],
+     "source": "Mary Guana"
+    },
+    "lucidity": 17,
+    "morale": -8,
+    "relationship": {
+     "mary": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "boundary": {
+   "text": {
+    "low": "Yeah. Warm side, cold side. It moves.\n\nEverybody thinks it's a draught. It's not a draught, and I'll tell you how I know, and it took me a while: I stood in it for a whole shift once. Whole shift, right down the middle, one arm each side.\n\nAnd the thing about a draught, man, is a draught *mixes*. Give it four hours and it's one room at one temperature. That's just what air does, it's the laziest thing in the world, it can't be bothered to stay in two piles.\n\nThat's been two piles for forty years.",
+    "high": "Yeah. Warm side, cold side. It moves.\n\nEverybody thinks it's a draught. It's not, and here's how I know: I stood in it for a whole shift once. Right down the middle, one arm each side.\n\nThing about a draught is it *mixes*. Give it four hours and it's one room at one temperature. That's just what air does — it's the laziest thing in the world, it can't be bothered to stay in two piles.\n\nThat's been two piles for forty years."
+   },
+   "passive": [
+    {
+     "skill": "PHYSIQUE",
+     "dc": 11,
+     "text": "She stood in it for an entire shift. Eight hours with eleven degrees down the middle of her, deliberately, to settle a question, and she has never mentioned it to anybody."
+    }
+   ],
+   "options": [
+    {
+     "id": "which_side",
+     "text": "\"Which side do you work?\"",
+     "check": {
+      "id": "mary:which_side",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_change_of_tense": 3
+      },
+      "success_text": "\"Both. Always both. Counter runs across it — that's not an accident, man, my dad built that counter and he built it across, and I asked him once why and he said 'so somebody's in both.'\n\nHe wasn't a mystical guy. He sold pop.\n\nBut I've had forty years behind a counter with one hand in each and I'll tell you what it's like, since you're the one asking: the cold side's *done*. Everything over there has already happened, it's finished, you can't do anything about it and it doesn't want you to.\n\nThe warm side's still going.\n\nAnd my till's on the cold side and my hands are on the warm, and that's the job, man. Taking money for things that have already happened with hands that are still going.\"",
+      "failure_text": "\"Both, man. Counter runs across it.\" She shrugs, slowly, and it takes about four seconds. \"You get used to it. You get used to anything with a wage attached.\"",
+      "success": "both_sides",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_counter_runs_across",
+        "title": "Built across, so somebody's in both",
+        "text": "Mary's father built the counter across the boundary deliberately — 'so somebody's in both.' The cold side is finished and unalterable; the warm side is still going. The till is on the cold side and her hands are on the warm.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "language",
+         "manuscript",
+         "personhood"
+        ],
+        "source": "Mary Guana"
+       },
+       "lucidity": 13,
+       "relationship": {
+        "mary": 2
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "both_sides": {
+   "text": {
+    "low": "You want the advice? You've got the walk of a man who's about to go and do something on the cold side.\n\nDon't. Whatever it is — whatever's over there that you're going up the hill for every night — it's done, man. It's finished. You can go and look at it all you want and it will be exactly as finished when you've finished looking.\n\nThe warm side's the only bit that's still going and you have been spending it. That's all. That's the whole of what an old lizard has got for you.",
+    "high": "You want the advice? You've got the walk of a man about to go and do something on the cold side.\n\nDon't. Whatever's over there that you're going up the hill for every night — it's done. It's finished. You can look at it all you want and it'll be exactly as finished when you've finished looking.\n\nThe warm side's the only bit still going, and you have been spending it."
+   },
+   "effects": {
+    "morale": 6,
+    "relationship": {
+     "mary": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Noted.\"",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "police": {
+   "text": {
+    "low": "Forty years I've looked at that door.\n\nAnd yeah. Down the steps, all night. Up the steps, all night. Nobody in off the street, nobody out onto it, not once, and I've been stood at this window since I was a kid stacking crates for my dad.\n\nHere's mine, and you won't have this one because nobody stands here as long as me: they don't come down the steps at the start of a shift. They come down when something's *about to be needed*. Fella came down last March at four in the morning and stood on that kerb doing nothing for eleven minutes, and at minute twelve there was a fight outside the Möbius, and he was already halfway there.",
+    "high": "Forty years I've looked at that door.\n\nDown the steps all night, up the steps all night. Nobody in off the street, nobody out onto it, not once.\n\nHere's mine, and you won't have this one because nobody stands here as long as me: they don't come down at the start of a shift. They come down when something's *about to be needed*. Fella came down last March at four in the morning and stood on that kerb doing nothing for eleven minutes, and at minute twelve there was a fight outside the Möbius, and he was already halfway there."
+   },
+   "passive": [
+    {
+     "skill": "SAVOIR_FAIRE",
+     "dc": 12,
+     "text": "Eleven minutes early, standing on a kerb doing nothing. That is not a patrol and it is not foresight. That is a man who has been put somewhere in advance of needing to be there."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_placed_in_advance",
+     "title": "They come down before they are needed",
+     "text": "Mary's forty years at the window: constables emerge not at shift changes but eleven or twelve minutes before something requires them, and wait on the kerb.",
+     "beat": "quadc",
+     "tags": [
+      "quadc",
+      "oracle"
+     ],
+     "source": "Mary Guana"
+    },
+    "lucidity": 10,
+    "relationship": {
+     "mary": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "busiest": {
+   "text": {
+    "low": "'Cause nothing's ever gone wrong in here.\n\nThat's it. That's the whole thing and nobody's ever worked it out because it's too boring to be an answer. Two hundred a night, forty years, and there's never been a fight, never been a fire, never been a fella took bad, never had the hallway do the thing, never had the sign — the sign does its thing but that's outside, that's the sign's business.\n\nInside this room, man, in forty years: nothing. Not one anomaly. Not one.\n\nAnd folk don't know that's why they come. They think they come for the dews. They come because it's the only room in Silvora Reefs where you can put your bag down.",
+    "high": "'Cause nothing's ever gone wrong in here.\n\nThat's it. Nobody's ever worked it out because it's too boring to be an answer. Two hundred a night, forty years — never a fight, never a fire, never had the hallway do the thing.\n\nInside this room, in forty years: nothing. Not one anomaly.\n\nAnd folk don't know that's why they come. They think they come for the dews. They come because it's the only room in Silvora Reefs where you can put your bag down."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_nothing_happens_here",
+     "title": "The only room where you can put your bag down",
+     "text": "In forty years and two hundred customers a night, nothing anomalous has ever occurred inside Dude's Dews & Don'ts. Nobody knows that is why they come.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "quadc"
+     ],
+     "source": "Mary Guana"
+    },
+    "lucidity": 11
+   },
+   "options": [
+    {
+     "id": "why_here",
+     "text": "\"Why here?\"",
+     "goto": "why_here"
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "why_here": {
+   "text": {
+    "low": "Opposite the police, man.\n\nNah — I know, I've had forty years on it, that's not it either. There's nothing in that building. You told me that yourself two minutes ago and I've known it since I was nine.\n\nHere's what I've got. Everything in this town goes weird when somebody's *looking* at it. The hallway does it when you walk it alone. The vaults do it when you count 'em. The sign does it when you look straight at it.\n\nNobody looks in here. Two hundred a night and every single one of 'em is looking at the board, or the queue, or their own order, and not one of them has ever once looked *at the room*.\n\nAnd it's fine. Forty years, and it's completely fine.",
+    "high": "Opposite the police, man.\n\nNah — that's not it either. There's nothing in that building; you told me so yourself two minutes ago and I've known since I was nine.\n\nHere's what I've got. Everything in this town goes weird when somebody's *looking* at it. The hallway does it when you walk it alone. The vaults do it when you count 'em.\n\nNobody looks in here. Two hundred a night, every one of them looking at the board or the queue or their own order, and not one has ever looked *at the room*.\n\nAnd it's fine. Forty years, completely fine."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_nobody_looks_at_the_room",
+     "title": "Nothing goes wrong where nobody is looking",
+     "text": "Mary's conclusion after forty years: everything in Silvora Reefs distorts under attention. Two hundred people a night look at the board, the queue, or their order — never at the room — and the room has been completely fine.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "manuscript"
+     ],
+     "source": "Mary Guana"
+    },
+    "lucidity": 14,
+    "relationship": {
+     "mary": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...Don't look at the room.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

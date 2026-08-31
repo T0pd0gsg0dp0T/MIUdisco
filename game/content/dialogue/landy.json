@@ -1,0 +1,416 @@
+{
+ "npc": "landy",
+ "nodes": {
+  "root": {
+   "text": "Mr Onions! Two-F! Now — I'll stop you before you start, because I know what you're going to say and I've already done it.\n\nThe window's sorted. The corridor's sorted. The door on Two-C is sorted and has been since Michaelmas, and if it's opening onto Three-A on a Thursday then that is a *Thursday* issue and I'd want it raised as one.",
+   "options": [
+    {
+     "id": "sorted",
+     "text": "\"Sorted how, exactly?\"",
+     "goto": "sorted"
+    },
+    {
+     "id": "stamps",
+     "text": "\"Every notice on that board says RESOLVED and nothing is fixed.\"",
+     "goto": "stamps",
+     "requires": {
+      "clue": "c_quadc_stamp"
+     }
+    },
+    {
+     "id": "suit",
+     "text": "\"You are the best-dressed man in this building.\"",
+     "goto": "suit",
+     "once": true
+    },
+    {
+     "id": "2f",
+     "text": "\"Have you ever worked in 2F? While I was out?\"",
+     "goto": "in_2f",
+     "requires": {
+      "clue": "c_2f_typing"
+     }
+    },
+    {
+     "id": "landy_watch",
+     "text": "Say nothing. Watch his hands instead of his face.",
+     "once": true,
+     "check": {
+      "id": "landy:landy_watch",
+      "skill": "PERCEPTION",
+      "dc": 10,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "The face lies fluently and continuously and the hands do not participate.\n\nWhile he explains that everything is sorted, his hands sort: a screw into the left pocket, a folded form into the right, and the right pocket already has eleven folded forms in it and he has not filed any of them.",
+      "failure_text": "He talks and you watch and the hands do exactly what a maintenance man's hands do, which is fidget with a screwdriver, and the face goes on being extremely reassuring about all of it.",
+      "success_effects": {
+       "clue": {
+        "id": "c_eleven_unfiled_forms",
+        "title": "Eleven forms, unfiled",
+        "text": "Lying Landy's right pocket holds eleven folded repair forms he has never filed, while he explains that everything is sorted.",
+        "beat": "quadc",
+        "tags": [
+         "quadc",
+         "kindness"
+        ],
+        "source": "Lying Landy"
+       },
+       "lucidity": 7
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Leave him to the toolbox.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "sorted": {
+   "text": {
+    "low": "Sorted *properly*. Written up, submitted, stamped, returned, filed, and the file's in the cupboard on the half-landing and you're welcome to it any time, and I mean that, nobody ever takes me up on it.\n\nThat's the trade, Mr Onions. People think maintenance is spanners. It's about four per cent spanners. The rest of it's getting a thing on paper in a form that'll be accepted, and I am — and I'll say this without boasting because it's simply true — I am the best in this parish at getting a thing accepted.",
+    "high": "Sorted *properly*. Written up, submitted, stamped, returned, filed, and the file's in the cupboard on the half-landing and you're welcome to it any time.\n\nThat's the trade, Mr Onions. People think maintenance is spanners. It's about four per cent spanners. The rest is getting a thing on paper in a form that'll be accepted, and I am — without boasting, because it's simply true — the best in this parish at getting a thing accepted."
+   },
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 10,
+     "text": "He has described his entire job and there is no repair anywhere in the description. Submitted, stamped, returned, filed. At no point does anybody go and mend anything."
+    },
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "He is proud, and the pride is real and specific and earned. Whatever he is, he is not a fraud. He believes the filing is the work because somebody trained him that the filing is the work."
+    }
+   ],
+   "options": [
+    {
+     "id": "who_taught",
+     "text": "\"Who taught you the forms?\"",
+     "check": {
+      "id": "landy:who_taught",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "\"Came with the job! Whole system, ready to go — the pad, the carbons, the little stamp for the corner, all of it in a drawer in the half-landing cupboard on my first morning, and a note on the top of the pad in a lovely hand saying WORKED EXAMPLE OVERLEAF.\"\n\nHe beams.\n\n\"And it was! Overleaf! A perfect worked example, filled in beautifully, for a job in this building — corridor length, Two-F end — dated eleven years before I started.\n\nI've kept it. I've followed it every day of my working life and I have never once had a submission come back rejected, and there are men in this parish who've been doing this thirty years who can't say that.\"",
+      "failure_text": "\"Trade! It's a trade, Mr Onions, you learn it on the tools and off the older fellas and there's no mystery in it and I'd be a poor tradesman if there was.\"\n\nHe is already reaching for the toolbox, which has never once been closed properly, and there is nothing in it that would fix a corridor.",
+      "success": "worked_example",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_worked_example",
+        "title": "WORKED EXAMPLE OVERLEAF",
+        "text": "Landy's entire filing system was waiting in a drawer on his first morning, with a note in a lovely hand and a perfect worked example — for a corridor-length job at the 2F end, dated eleven years before he started.",
+        "beat": "quadc",
+        "tags": [
+         "quadc",
+         "bureaucracy",
+         "manuscript"
+        ],
+        "source": "Lying Landy"
+       },
+       "lucidity": 12,
+       "relationship": {
+        "landy": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "worked_example": {
+   "text": "Would you like to see it? I've got it in the cupboard. I've — nobody's ever asked, Mr Onions, and I've been carrying it about in a plastic wallet for eleven years like a man with a picture of his dog.\n\n... It's a lovely hand. That's the thing I'd want you to notice. Whoever filled that in cared about the corner of a form, and there is not much of that about.",
+   "options": [
+    {
+     "id": "see_it",
+     "text": "\"Show me the hand.\"",
+     "check": {
+      "id": "landy:the_hand",
+      "skill": "LOGIC",
+      "dc": 11,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_one_hand": 3,
+       "c_three_pages": 2
+      },
+      "success_text": "He has it out of the wallet in under four seconds.\n\nIt is a lovely hand. Small, even, faintly impatient at the ends of words — the hand of somebody used to writing faster than this and slowing down on purpose because the form deserved it.\n\nIt is the hand on the three dry pages in your notebook.\n\nIt is also, and this takes a moment longer, not quite: every letter leans the other way. Not backhand — the same hand, mirrored at the wrist, by somebody who has done it so often it has stopped being difficult.\n\nUnder OBSERVED CAUSE, in that hand, eleven years before Landy started, somebody has written: *tenant walks it alone.*\n\nAnd under REMEDY: *none available. Recommend company.*",
+      "failure_text": "It is a lovely hand. Small, even, and completely unfamiliar, and you look at it for a long time trying to make it be something and it declines, the way handwriting does.\n\nLandy watches you look at it with enormous pleasure and then puts it back in the wallet and back in his inside pocket, over the heart, where it lives.",
+      "success": "the_remedy",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_recommend_company",
+        "title": "REMEDY: none available. Recommend company.",
+        "text": "The worked example is in the hand from the three dry pages, mirrored at the wrist by long practice. OBSERVED CAUSE: 'tenant walks it alone.' REMEDY: 'none available. Recommend company.' Dated eleven years before Landy started.",
+        "beat": "revilo",
+        "tags": [
+         "revilo",
+         "manuscript",
+         "office",
+         "kindness"
+        ],
+        "source": "Lying Landy"
+       },
+       "lucidity": 18,
+       "morale": -6,
+       "relationship": {
+        "landy": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Another time.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "the_remedy": {
+   "text": {
+    "low": "\"Recommend company,\" says Landy, reading it upside down, cheerfully. \"I've always liked that. It's not a remedy, is it? It's not a *remedy*, it's advice, and you don't get advice on a form, forms hate advice.\n\nI've followed it, mind. Twenty-two submissions on that corridor in eleven years and every single one of them says the same in the remedy box, because the worked example says it, and you follow the worked example.\n\nSo there's twenty-two forms in a cupboard in this building all recommending that you don't walk it on your own. Which — hah. Which nobody's ever read, because nobody reads the file, because I'm the only one who ever goes in the cupboard.\"",
+    "high": "\"Recommend company,\" says Landy, reading it upside down, cheerfully. \"I've always liked that. It's not a remedy, it's advice, and you don't get advice on a form. Forms hate advice.\n\nI've followed it, mind. Twenty-two submissions on that corridor in eleven years, every one saying the same in the remedy box, because the worked example says it and you follow the worked example.\n\nSo there's twenty-two forms in a cupboard recommending you don't walk it on your own. Which nobody's ever read, because I'm the only one who goes in the cupboard.\""
+   },
+   "effects": {
+    "clue": {
+     "id": "c_twenty_two_forms",
+     "title": "Twenty-two forms recommending company",
+     "text": "Landy has copied the worked example's remedy into twenty-two submissions over eleven years. There are twenty-two forms in a half-landing cupboard advising Oliver not to walk the corridor alone. Nobody has ever read them.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "manuscript",
+      "kindness"
+     ],
+     "source": "Lying Landy"
+    },
+    "lucidity": 11,
+    "morale": -4,
+    "relationship": {
+     "landy": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...I've read them now.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "stamps": {
+   "text": {
+    "low": "Well — no. No, with respect, Mr Onions, that's the bit everybody gets round the wrong way and I'll not have it said about my board.\n\nRESOLVED doesn't mean mended. It's never meant mended. RESOLVED means *the matter is closed and no party is now liable*, and that is a real thing and it is a valuable thing and it takes some getting.\n\nThe corridor's not mended. Course it's not mended. You can't mend a corridor for being long, there's no fitting for it, I've looked in three catalogues.\n\nBut nobody's liable. And that's me. I did that.",
+    "high": "Well — no. With respect, that's the bit everybody gets round the wrong way, and I'll not have it said about my board.\n\nRESOLVED doesn't mean mended. It's never meant mended. RESOLVED means *the matter is closed and no party is now liable*, and that is a real thing and it takes some getting.\n\nThe corridor's not mended. Course it's not — you can't mend a corridor for being long, there's no fitting for it.\n\nBut nobody's liable. And that's me. I did that."
+   },
+   "passive": [
+    {
+     "skill": "RHETORIC",
+     "dc": 12,
+     "text": "He is entirely right, and he is right in the most alarming available way: RESOLVED is a term of art meaning nobody is answerable. Eleven years of impossibilities have been processed into a state of nobody-being-answerable, and a proud man in a good suit did it, correctly, one form at a time."
+    }
+   ],
+   "options": [
+    {
+     "id": "who_would_be",
+     "text": "\"Liable to whom? Who would be answerable, if you didn't file?\"",
+     "check": {
+      "id": "landy:liable",
+      "skill": "LOGIC",
+      "dc": 13,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_quadc_holds_it_up": 2,
+       "c_worked_example": 2
+      },
+      "success_text": "The pocket square goes back in three times before it sits right.\n\n\"...Do you know, I've never had that one. Twenty-two years and I've never had that one and I've had some questions, Mr Onions, I've had a woman on Three-B who wanted to know what a *stanchion* was.\n\nLiable to whom.\n\nWell — the Coalition receive it, so. So the Coalition. Except the Coalition don't own the building and don't insure it and don't send anybody, and I have never in twenty-two years met an officer of the Coalition, and I have posted eleven hundred forms into a slot in a wall on Wick Street beside a door that doesn't open.\n\nAnd they come back stamped. Next morning. Every time. Which means somebody's in there.\"\n\nHe looks at the toolbox.\n\n\"Doesn't it.\"",
+      "failure_text": "\"The Coalition! It's all in the schedule, Mr Onions, it's a standing arrangement and it's been in place since before my time and I'd not want to speak out of turn about a standing arrangement.\"\n\nAnd the pocket square is adjusted, and the toolbox is picked up, and he is off up the stair to sort something.",
+      "success": "the_slot",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_the_slot",
+        "title": "A slot in a wall beside a door that doesn't open",
+        "text": "Landy has posted eleven hundred forms into a slot on Wick Street, beside a door that does not open, and has never met an officer of the Coalition. They come back stamped the next morning, every time.",
+        "beat": "quadc",
+        "tags": [
+         "quadc",
+         "bureaucracy"
+        ],
+        "source": "Lying Landy"
+       },
+       "lucidity": 13,
+       "relationship": {
+        "landy": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Fair enough, Landy.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "the_slot": {
+   "text": {
+    "low": "I've stood at that slot at six in the morning and I've stood at it at midnight and I have never once heard a thing on the other side of it.\n\nAnd they come back *stamped*, Mr Onions. Not signed. Stamped. And I have looked at eleven hundred of those stamps very closely, because I'm the sort of man who does, and there isn't one of them that's smudged.\n\nEleven hundred stamps and not one smudge. Do you know what that takes? I've stamped things. Everybody smudges. It's the one thing about a stamp.",
+    "high": "I've stood at that slot at six in the morning and at midnight, and I have never once heard a thing on the other side of it.\n\nAnd they come back *stamped*. Not signed. Stamped. And I've looked at eleven hundred of those stamps very closely, because I'm the sort of man who does, and there isn't one that's smudged.\n\nEleven hundred, and not one smudge. Everybody smudges. It's the one thing about a stamp."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_no_smudges",
+     "title": "Eleven hundred stamps and not one smudge",
+     "text": "Landy, who examines such things: not one of the Coalition's eleven hundred returned stamps is smudged. Everybody smudges. It is the one thing about a stamp.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "quadc"
+     ],
+     "source": "Lying Landy"
+    },
+    "lucidity": 9
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "in_2f": {
+   "text": {
+    "low": "In your flat? While you were — no. No, Mr Onions, absolutely not, and I'd want that very clearly understood. I've a key and I've never used it unaccompanied and I never would, and if Mr Sobeleaux has said otherwise then Mr Sobeleaux and I will be having a—\n\n... Ah.\n\nNo. Once. Not while you were out — while you were in the *harbour*, which I'd not have called being out, and which is why I said no, and I'd like the record to show I corrected myself unprompted.",
+    "high": "In your flat? While you were — no. Absolutely not, and I'd want that very clearly understood. I've a key and I've never used it unaccompanied and I never would—\n\n... Ah.\n\nNo. Once. Not while you were out — while you were in the *harbour*, which I'd not have called being out, which is why I said no, and I'd like the record to show I corrected myself unprompted."
+   },
+   "options": [
+    {
+     "id": "what_for",
+     "text": "\"What did you go in for?\"",
+     "check": {
+      "id": "landy:in_2f_why",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_2f_typing": 3,
+       "c_dust_rectangle": 2
+      },
+      "success_text": "\"Noise complaint.\"\n\nHe says it quickly and then stands there in a very good suit with a toolbox that will not shut.\n\n\"Three-A and Two-C, both, same week, same wording — *machine noise, night, below*. And below Two-C is Two-F and Two-F was empty because you were in the water, and I let myself in with Mr Sobeleaux's knowledge and against his advice.\n\nThere was nothing. Flat as anything. Chair, papers, that desk you've made out of a door — and I want to say, in passing, that the left trestle's split and I'd have had that off you and mended in an afternoon if you'd ever once asked.\n\nAnd it was *warm*, Mr Onions. In the middle of the room. Not the flat — the flat was cold, four days empty, but there was a patch of warm air about the size of a desk chair, at the back edge, and I stood in it, and I filed a form.\"",
+      "failure_text": "\"A tap. There was a tap. I'd rather not go further into a tenant's flat than a tap, Mr Onions, even a tenant's own flat, even to the tenant. It's a matter of standards.\"\n\nThe pocket square is adjusted twice.",
+      "success": "the_warm_patch",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_warm_patch",
+        "title": "A patch of warm air the size of a chair",
+        "text": "Called to 2F by machine-noise complaints while Oliver was in the harbour, Landy found the flat cold and empty except for a chair-sized patch of warm air at the back edge of the desk. He stood in it and filed a form.",
+        "beat": "revilo",
+        "tags": [
+         "revilo",
+         "office",
+         "typewriter",
+         "kindness"
+        ],
+        "source": "Lying Landy"
+       },
+       "lucidity": 17,
+       "morale": -7,
+       "relationship": {
+        "landy": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "Let it go.",
+     "goto": "root"
+    }
+   ]
+  },
+  "the_warm_patch": {
+   "text": {
+    "low": "I filed it as HEATING — LOCALISED — NO FAULT FOUND, and it came back RESOLVED, and it's on the board, and you've read it, because you read the board, and I've watched you read the board and thought there's a man who reads a board.\n\nAnd I'll tell you the thing I didn't file, since we're stood here.\n\nIt was the right temperature for a person. Not a radiator. Not a machine, whatever the complaints said. It was exactly the warmth a chair's got in it when somebody's just this second got up out of it, and I have been in four hundred empty rooms in twenty-two years, Mr Onions, and I know that warmth, and I stood in it for a minute and a half like an idiot in a good suit and then I went and got my pad.",
+    "high": "I filed it as HEATING — LOCALISED — NO FAULT FOUND, and it came back RESOLVED, and it's on the board, and you've read it, because you read the board.\n\nAnd I'll tell you the thing I didn't file, since we're stood here.\n\nIt was the right temperature for a person. Not a radiator. It was exactly the warmth a chair's got in it when somebody's just this second got up out of it, and I have been in four hundred empty rooms in twenty-two years, and I know that warmth. I stood in it a minute and a half like an idiot in a good suit, and then I went and got my pad."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_just_got_up",
+     "title": "The warmth of a chair somebody has just left",
+     "text": "Landy's unfiled observation: the warm patch in 2F was not machinery. It was the exact warmth of a chair somebody has this second stood up out of.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "revilo",
+      "office",
+      "kindness"
+     ],
+     "source": "Lying Landy"
+    },
+    "lucidity": 15,
+    "morale": -5,
+    "relationship": {
+     "landy": 2
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Landy. Mend the trestle.\"",
+     "goto": "trestle"
+    }
+   ]
+  },
+  "trestle": {
+   "text": {
+    "low": "He looks up so fast the pocket square moves.\n\n\"Tomorrow. First thing. I'll want an hour and I'll want the desk off it and I'd not trust anybody else with the papers so you'll have to be in.\"\n\nA pause, and then, with a difficulty that is clearly costing him:\n\n\"It'll come back, mind. They do. I've never said that to a tenant in twenty-two years and I'm saying it to you because you asked me a question nobody's asked me and I'd rather be honest than stamped. Some of them come back.\n\nBut I'd have a go at it. If you're in.\"",
+    "high": "He looks up so fast the pocket square moves.\n\n\"Tomorrow. First thing. I'll want an hour and the desk off it, and I'd not trust anybody else with the papers, so you'll have to be in.\"\n\nA pause, and then, with a difficulty that is clearly costing him:\n\n\"It'll come back, mind. Some of them come back. I've never said that to a tenant in twenty-two years and I'm saying it to you because you asked me a question nobody's asked me.\n\nBut I'd have a go at it. If you're in.\""
+   },
+   "effects": {
+    "flag": {
+     "landy_will_mend_the_trestle": true
+    },
+    "relationship": {
+     "landy": 2
+    },
+    "morale": 10
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"I'll be in.\"",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "suit": {
+   "text": {
+    "low": "Well — thank you. Thank you, that's — nobody says. They notice, I can see them noticing, and then they look at the toolbox and they decide it's a joke and they don't say.\n\nIt isn't a joke. It's a three-piece and it's the same one and I've had it turned twice.\n\nIt's because of the forms, Mr Onions. Twenty-two years I have gone about this parish asking people to accept a piece of paper from me, and a man in overalls hands you a piece of paper and you put it in a drawer. A man in a three-piece hands you a piece of paper and you *read* it.\n\nI have never once had a submission rejected. Some of that's the hand. Most of it's the suit.",
+    "high": "Well — thank you. Nobody says. They notice, and then they look at the toolbox and decide it's a joke and they don't say.\n\nIt isn't a joke. It's a three-piece and it's the same one and I've had it turned twice.\n\nIt's because of the forms. A man in overalls hands you a piece of paper and you put it in a drawer. A man in a three-piece hands you a piece of paper and you *read* it.\n\nI have never once had a submission rejected. Some of that's the hand. Most of it's the suit."
+   },
+   "effects": {
+    "morale": 6,
+    "relationship": {
+     "landy": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

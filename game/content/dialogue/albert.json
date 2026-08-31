@@ -1,0 +1,240 @@
+{
+ "npc": "albert",
+ "nodes": {
+  "root": {
+   "text": "— from the glass, and only from the glass, at a volume that does not cross the room —\n\n\"You have addressed me.\n\nForgive me. I shall require a moment. It has been some time and I find that I have prepared a great deal and retained none of it.\"",
+   "options": [
+    {
+     "id": "how_long",
+     "text": "\"How long have you been in the mirror?\"",
+     "goto": "how_long"
+    },
+    {
+     "id": "why_glass",
+     "text": "\"Why only in the glass?\"",
+     "goto": "why_glass"
+    },
+    {
+     "id": "seen",
+     "text": "\"What have you seen from in there?\"",
+     "goto": "seen"
+    },
+    {
+     "id": "leave",
+     "text": "Take your leave, courteously.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "how_long": {
+   "text": {
+    "low": "\"Longer than the shop. You will want a number and I have not got one, and I should say at once that this is not coyness — I have not got one because I was not counting at the beginning, and by the time counting seemed advisable the beginning was some way behind.\n\nI recall the street being narrower. I recall a chandlery where the tobacconist is. I recall a man cutting hair in this room who was not Antonio and was not Antonio's father, and I recall being *in the room* for that, monsieur, and standing on the boards, and being handed a cup.\"",
+    "high": "\"Longer than the shop. You will want a number and I have not got one — not coyness; I was not counting at the beginning, and by the time counting seemed advisable the beginning was some way behind.\n\nI recall the street being narrower. I recall a chandlery where the tobacconist is. I recall a man cutting hair in this room who was not Antonio nor Antonio's father — and I recall being *in the room* for that, monsieur, standing on the boards, and being handed a cup.\""
+   },
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "He was in the room once. He led with it and did not dwell on it, which is how a person mentions the thing they most want to be asked about."
+    }
+   ],
+   "options": [
+    {
+     "id": "in_the_room",
+     "text": "\"You were in the room.\"",
+     "check": {
+      "id": "albert:in_the_room",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_room_omits_him": 3
+      },
+      "success_text": "\"I was in the room.\"\n\nThe great head comes round in the glass. The corresponding volume of air by the last chair does nothing at all.\n\n\"For a considerable period I was simply a person in a barbershop, monsieur, which I recommend without reservation and did not appreciate at the time. And then over a number of years — not at once, I want to be exact about this, there was no *moment* — I was mentioned less.\n\nThat is the whole of it. I was mentioned less, and then I was mentioned only in passing, and then I was mentioned as a feature of the establishment rather than a patron of it, and at each stage I was a little further into the glass, and at no stage was there anything to object to.\n\nOne cannot lodge a complaint about a diminution in mentions. There is no office.\"",
+      "failure_text": "\"I was. It is a very long time ago and I find it does not improve for handling. Shall we speak of something else — the shop, perhaps, or the weather, of which we have a great deal indoors at the Inn and rather too little here.\"\n\nThe courtesy is complete and it is a closed door.",
+      "success": "mentioned_less",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_mentioned_less",
+        "title": "He was mentioned less",
+        "text": "Monsieur Albert was once a patron in the room. Over years he was mentioned less, then only in passing, then as a feature rather than a person — and at each stage he was further into the glass.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "language",
+         "identity",
+         "personhood"
+        ],
+        "source": "Monsieur Albert"
+       },
+       "lucidity": 16,
+       "morale": -7,
+       "relationship": {
+        "albert": 2
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "mentioned_less": {
+   "text": {
+    "low": "\"You are alarmed. I had rather hoped you would be, and I am ashamed of hoping it, and I shall say the useful thing now to make up for the hoping.\n\nMonsieur. You are being mentioned a very great deal at present. In this shop, at the Inn, at the mausoleum, in the pizzeria — I hear it, the glass carries, the glass carries appallingly — and a man who is mentioned a great deal is a man who is *in* the room, and firmly, and I would not have you take that for granted as I did.\n\nBut mentions may be withdrawn. That is the whole of my counsel and it has cost me forty years to be able to give it: they may be withdrawn, monsieur, and there is no office, and it does not hurt.\"",
+    "high": "\"You are alarmed. I had rather hoped you would be, and I am ashamed of hoping it, so I shall say the useful thing now to make up for it.\n\nYou are being mentioned a very great deal at present. In this shop, at the Inn, at the mausoleum — the glass carries, monsieur, it carries appallingly — and a man who is mentioned a great deal is a man who is *in* the room, firmly, and I would not have you take that for granted as I did.\n\nBut mentions may be withdrawn. That is the whole of my counsel and it has cost me forty years to be able to give it. There is no office, and it does not hurt.\""
+   },
+   "effects": {
+    "clue": {
+     "id": "c_mentions_withdrawn",
+     "title": "Mentions may be withdrawn",
+     "text": "Albert's counsel: being much-mentioned is what keeps a person in the room. Mentions may be withdrawn, there is no office to appeal to, and it does not hurt.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "language",
+      "identity",
+      "personhood"
+     ],
+     "source": "Monsieur Albert"
+    },
+    "lucidity": 12,
+    "relationship": {
+     "albert": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...Thank you, Monsieur.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "why_glass": {
+   "text": {
+    "low": "\"Because the glass will have me.\n\nThat is not bitterness, it is gratitude, and I should hate to be misheard on it. A mirror is not fastidious. A mirror does not select. It is a surface with no opinion whatsoever about what is worth including, and it has therefore included me for forty years without once being asked to, and it has never charged me anything, and it has never made a face.\n\nThe room is a different proposition. The room has *taste*.\"",
+    "high": "\"Because the glass will have me.\n\nThat is not bitterness, it is gratitude. A mirror is not fastidious. A mirror does not select. It is a surface with no opinion about what is worth including, and it has therefore included me for forty years without once being asked, and has never made a face.\n\nThe room is a different proposition. The room has *taste*.\""
+   },
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "The mirrors in this shop show impossible angles, other buildings, and a man at a desk. They are the least reliable surfaces in Silvora Reefs — and they are the only ones that will still hold him. Unreliability and inclusiveness are the same property here."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_glass_has_no_taste",
+     "title": "A mirror does not select",
+     "text": "Albert on why he survives in reflection: a mirror has no opinion about what is worth including. The room has taste.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "identity",
+      "personhood"
+     ],
+     "source": "Monsieur Albert"
+    },
+    "lucidity": 9,
+    "relationship": {
+     "albert": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "seen": {
+   "text": {
+    "low": "\"A great deal, and almost all of it hair.\n\nBut you are not asking about hair. Very well: I have seen the third mirror for a fortnight, as you have, and I shall tell you what you cannot see from where you are standing, which is that from *in here* he is not at a desk in another room.\n\nHe is in this one. He is at the desk in the middle of this shop, monsieur, between the chairs, where there is no desk — and Antonio walks through the place where the desk is forty times a day and has never once broken stride.\"",
+    "high": "\"A great deal, and almost all of it hair.\n\nBut you are not asking about hair. I shall tell you what you cannot see from where you are standing: from *in here*, he is not at a desk in another room.\n\nHe is in this one. At the desk in the middle of this shop, between the chairs, where there is no desk — and Antonio walks through the place where it stands forty times a day and has never once broken stride.\""
+   },
+   "lucid": {
+    "3": "The volume of air between the two chairs. You have walked through it. Twice, this evening."
+   },
+   "options": [
+    {
+     "id": "ask_turn",
+     "text": "\"Ask him to turn round.\"",
+     "check": {
+      "id": "albert:ask_turn",
+      "skill": "RHETORIC",
+      "dc": 14,
+      "kind": "red",
+      "bonus_if_clue": {
+       "c_green_with_purple": 2,
+       "c_cut_his_hair": 2
+      },
+      "success_text": "\"I shall not,\" says Albert. \"But I shall do the thing you actually want, which is a different thing, and I would ask you to notice that I am doing it.\"\n\nAnd the great head turns — not to the third mirror. To the space between the chairs. To the empty air in the middle of the room, at the height a seated man's shoulders would be, and Monsieur Albert, an owlbear and a nobleman, who has not been addressed in forty years, says into it:\n\n\"Sir. There is a gentleman here who would like a word.\"\n\nNothing happens in the room.\n\nIn the third mirror, the man at the desk stops. The shoulders go still. For four seconds a room that has been typing for a fortnight does not type.\n\nThen it starts again, and it is faster than it was, and it does not stop for the rest of the night.",
+      "failure_text": "\"No.\"\n\nThe first ungentle syllable in forty years. He composes himself immediately and completely.\n\n\"Forgive me. Monsieur — I have spent a very long time learning what it is to be looked at by a room that has decided not to include one, and I would not put a second creature through it on an evening's acquaintance, however much I like you. And I do like you. That is not nothing, from in here.\"",
+      "success": "he_stopped",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_he_stopped_typing",
+        "title": "For four seconds, he stopped",
+        "text": "Addressed by Monsieur Albert into the empty air between the barber's chairs, the man in the mirror stopped typing for four seconds. Then resumed, faster, and did not stop again.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "revilo",
+         "typewriter",
+         "kindness"
+        ],
+        "source": "Monsieur Albert"
+       },
+       "lucidity": 20,
+       "morale": -10,
+       "relationship": {
+        "albert": 2
+       },
+       "flag": {
+        "revilo_heard_you": true
+       }
+      },
+      "failure_effects": {
+       "relationship": {
+        "albert": 1
+       },
+       "morale": 4
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "he_stopped": {
+   "text": {
+    "low": "\"He heard,\" says Albert, and there is something in the glass that has not been in it all evening, and it is not fear.\n\n\"Forty years, monsieur. Forty years of being a feature, and it transpires that the whole apparatus can be interrupted by an owlbear being *polite* at the correct piece of empty air.\n\nI shall be doing that again. I want you to know that. Whatever comes of your business — and something is coming, one hears it, the glass carries — I shall be standing in this shop addressing the space between the chairs every evening at six, and I shall keep doing it, and he will have to keep hearing it.\n\nIt is not much of a campaign. It is, however, entirely mine.\"",
+    "high": "\"He heard,\" says Albert, and there is something in the glass that has not been there all evening, and it is not fear.\n\n\"Forty years of being a feature, monsieur, and it transpires the whole apparatus can be interrupted by an owlbear being *polite* at the correct piece of empty air.\n\nI shall be doing that again. Whatever comes of your business — and something is coming, one hears it — I shall stand in this shop addressing the space between the chairs every evening at six, and he will have to keep hearing it.\n\nIt is not much of a campaign. It is, however, entirely mine.\""
+   },
+   "effects": {
+    "morale": 12,
+    "relationship": {
+     "albert": 1
+    },
+    "lucidity": 5
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Every evening at six, Monsieur.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,486 @@
+{
+ "id": "mobius",
+ "name": "The Möbius Strip Club",
+ "subtitle": "One surface. One edge. No way to be inside it wrongly.",
+ "description": {
+  "low": "The frontage is red and the light coming off it is not, quite. Inside, the room is a room, and the corridor off the room is a corridor, and if you follow the corridor in one direction with no turns and no doors you will arrive at the room, facing the way you set off, having never once reversed. Patrons do this on purpose. It is considered a thing to do while drunk, the way other towns have a hill.\n\nThe stage does its impossible business: dancers continuously undressing, and never at any point undressed, an act that resolves the moment you stop watching and refuses to while you do. The bar is long and the menu is a provocation. And at the edges — behind the booths, along the corridor where the light gives out — the walls occasionally stop being opaque, and what is on the other side of them is not the street.",
+  "mid": "Red frontage, light that is nearly red. Follow the corridor one way with no turns and you arrive back in the room facing forward, never having reversed. Onstage: dancers continuously undressing and never undressed. At the edges, the walls occasionally stop being opaque, and what is behind them is not the street.",
+  "high": "The club that returns you to yourself without a turn. At the edges the walls go transparent, and behind them is not the street."
+ },
+ "revisit": {
+  "low": "The Insta-gators register your entry the way a spreadsheet registers a variance. Nobody moves. Two of them are now standing where none of them were, and they were not standing anywhere before that, and they will tell you they have been there all evening and one of them will believe it.",
+  "mid": "The Insta-gators register your entry the way a spreadsheet registers a variance. Two of them are now standing where none were.",
+  "high": "Two Insta-gators are standing where none were."
+ },
+ "lucid": {
+  "2": "The music has gaps in it. Not silences — gaps, of a length that a person would take to change a line.",
+  "3": "In the third gap, before the music resumes, there is a sound in the room that is not in the room: keys, four of them, struck hard and close together, and then a carriage going back.",
+  "4": "The gaps are not gaps in the music. The music is what is filling the gaps, and it is being put there afterwards, over the top of a room that has no sound of its own."
+ },
+ "ambient": [
+  "A patron walks the corridor for a joke, comes back grinning from the wrong direction, and is grinning slightly less than when he left.",
+  "The barman pours something into a glass and the glass is already holding it.",
+  "Somewhere behind the booths a wall goes briefly to glass, shows a stretch of obsidian that belongs to a building on the other side of town, and thinks better of it."
+ ],
+ "objects": [
+  {
+   "id": "sign",
+   "name": "the main sign",
+   "aliases": [
+    "sign",
+    "signage",
+    "lettering",
+    "name"
+   ],
+   "description": {
+    "low": "THE MÖBIUS STRIP CLUB, in a red that has been chosen by somebody with a whole opinion about red. The umlaut is a nice touch and is doing no phonetic work whatsoever; it is there to be looked at, which in this town is a legitimate job.\n\nThe letters are steady. They have been steady every time you have come here.",
+    "mid": "THE MÖBIUS STRIP CLUB in an opinionated red. The umlaut does no phonetic work. The letters are steady.",
+    "high": "THE MÖBIUS STRIP CLUB, steady, red."
+   },
+   "repeat": "Steady. Red. A joke about surfaces, told once, at some expense.",
+   "monocle": "Through the gold the letters detach from the board and reassemble, unhurried, with the deliberation of a man rearranging a hand of cards, and settle into:\n\nREVILO'S TRAP BUILT\n\nThey hold for as long as you keep the lens up. Then they go back, one letter at a time, in the reverse of the order they came.",
+   "passive": [
+    {
+     "skill": "RHETORIC",
+     "dc": 11,
+     "text": "A Möbius strip is the one surface with no inside. That is not a name for a club. That is a disclosure, hung over the door in red, where nobody has to read it."
+    }
+   ],
+   "check": {
+    "id": "mobius:sign:anagram",
+    "skill": "RHETORIC",
+    "dc": 12,
+    "kind": "white",
+    "requires": {
+     "clue": "c_sign_rearranged"
+    },
+    "prompt": "Do the letters properly. Not the impression of the trick — the arithmetic of it. Count what THE MÖBIUS STRIP CLUB actually contains, and count what it gave you.",
+    "success": "You count. You count twice, because the first count is the one where a man finds what he expected.\n\nTHE MÖBIUS STRIP CLUB has no A in it. It has no V. REVILO'S TRAP BUILT has both, and has them prominently, and REVILO is where they live.\n\nThis is not an anagram. An anagram would be a coincidence with good manners. This is a rearrangement that has *brought letters with it* — which means the sign did not reveal a hidden name. Somebody spelled a name at you, and used the sign as a surface to do it on, and did not check whether the surface could afford the letters.\n\nWhoever did it wanted to be read more than they wanted to be plausible.",
+    "failure": "The letters swim. You get as far as counting the Bs, lose the count to the music, start again, and lose it again to the specific fact that the music stopped for exactly as long as it took you to lose it.",
+    "success_effects": {
+     "clue": {
+      "id": "c_impossible_anagram",
+      "title": "The sign spent letters it did not have",
+      "text": "REVILO'S TRAP BUILT contains an A and a V. THE MÖBIUS STRIP CLUB contains neither. This is not a hidden name surfacing — it is a name being spelled at you by something that did not check the supply.",
+      "beat": "revilo",
+      "tags": [
+       "revilo",
+       "wordplay",
+       "manuscript"
+      ],
+      "source": "the main sign"
+     },
+     "lucidity": 10
+    },
+    "failure_effects": {
+     "morale": -3
+    }
+   },
+   "effects": {
+    "monocle_effects": {
+     "clue": {
+      "id": "c_sign_rearranged",
+      "title": "REVILO'S TRAP BUILT",
+      "text": "Under the monocle the club's sign rearranges itself into REVILO'S TRAP BUILT, holds while the lens is up, and reassembles in reverse when it comes down.",
+      "beat": "revilo",
+      "tags": [
+       "revilo",
+       "wordplay"
+      ],
+      "source": "the main sign"
+     },
+     "lucidity": 7
+    }
+   }
+  },
+  {
+   "id": "corridor",
+   "name": "the corridor with no turns",
+   "aliases": [
+    "corridor",
+    "hallway",
+    "loop"
+   ],
+   "description": {
+    "low": "It leaves the main room at the left of the stage and it does not turn. There is no point along it at which it turns. You have walked it and paid attention and it does not turn, and it delivers you to the main room at the right of the stage, facing forward.\n\nThe wall on the outside of the walk is papered. The wall on the inside of the walk is papered in the same paper. There is no inside of the walk. That is what a Möbius strip is for, and somebody has built one out of flock wallpaper and put a bar in it.",
+    "mid": "It leaves at the left of the stage, never turns, and delivers you to the right of the stage facing forward. Both walls carry the same paper. There is no inside. Somebody built a Möbius strip out of flock wallpaper and put a bar in it.",
+    "high": "The corridor does not turn and returns you facing forward."
+   },
+   "repeat": "The second walk is shorter. Not because the corridor is shorter. Because you have stopped checking.",
+   "monocle": "Through the gold the corridor is straight and short — nine feet, a dead end, a wall. The loop is not in the architecture. The loop is in the account of the architecture: the same nine feet, described four times, with the fourth description ending where the first began.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "A Möbius strip has one surface and one edge. If this corridor is genuinely one, then there is no outside of it, and everyone who has ever walked it — including you, twice — is on the same side of the paper as everyone else. That is not a comforting property of this building. That is the least comforting property of this building."
+    },
+    {
+     "skill": "PHYSIQUE",
+     "dc": 11,
+     "text": "Your legs kept a count even when you did not. Twenty-two paces out, and you arrive back after twenty-two, and a loop that returns you in the distance it took to leave is not a loop. It is a fold."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_corridor_fold",
+     "title": "Not a loop — a fold",
+     "text": "Twenty-two paces out, twenty-two paces back to the start, in a corridor with no turns. Under the monocle it is nine feet and a dead end, described four times.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "architecture"
+     ],
+     "source": "the corridor"
+    },
+    "monocle_effects": {
+     "lucidity": 6
+    }
+   },
+   "check": {
+    "id": "mobius:corridor:sea",
+    "skill": "SEA_LEGS",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "Walk the corridor with no turns all the way round, at a steady pace, without putting a hand on the wall.",
+    "success": "The floor is off-level the whole way and the off-level rotates, slowly, so that down is always about four degrees ahead of you. You walk it the way you walk a deck.\n\nYou arrive facing the way you set off, having never reversed, and — because you kept your feet and therefore your count — with the knowledge that the corridor is eleven paces longer coming back than it was going out, and that you only went one way.",
+    "failure": "Four degrees of wrong, continuously, and about two-thirds of the way round the wall gets a hand whether you offer it or not, and the count goes, and you come out grinning like the patrons do and knowing exactly as much as they do.",
+    "success_effects": {
+     "clue": {
+      "id": "c_eleven_paces_longer",
+      "title": "Eleven paces longer, one way",
+      "text": "Walked properly, the Möbius corridor is eleven paces longer on the return than the outward leg — and there is only one leg.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript"
+      ],
+      "source": "the corridor with no turns"
+     },
+     "lucidity": 10
+    },
+    "failure_effects": {
+     "morale": 2
+    }
+   }
+  },
+  {
+   "id": "wall",
+   "name": "the wall behind the far booth",
+   "aliases": [
+    "wall",
+    "booth",
+    "glass",
+    "transparent"
+   ],
+   "description": {
+    "low": "The booths at the back are where the light stops trying. The last one is upholstered in a red that has gone the colour of an old argument, and the wall behind it does the thing.\n\nIt does it for about two seconds at a stretch and it does not do it on request. The wall stops being a wall — not fading, not shimmering, simply *not being the item that was there* — and behind it is somewhere else. Twice it has been a stretch of obsidian and a row of vault doors. Once it was a low room with a green-shaded lamp and a desk under it, and a chair pulled out, and nobody in the chair.",
+    "mid": "The wall behind the last booth stops being a wall for two seconds at a time. Behind it: twice, obsidian and vault doors. Once, a low room with a green lamp, a desk, and a chair pulled out with nobody in it.",
+    "high": "The wall goes transparent for two seconds. Behind it: vault doors, or a desk under a green lamp with the chair pulled out."
+   },
+   "repeat": "It does it again while you are sitting down, which it has never done while you were sitting down.",
+   "lucid": {
+    "3": "The chair is not pulled out. The chair is pushed back, which is a different event with a different cause, and the cause of a chair being pushed back is somebody standing up in a hurry."
+   },
+   "monocle": "The gold holds it open. The wall does not come back for as long as the lens is up, and the room behind it is fully furnished and entirely ordinary and has a waste basket beside the desk with paper in it, and the paper has been screwed up by a hand that was not pleased.",
+   "passive": [
+    {
+     "skill": "SAVOIR_FAIRE",
+     "dc": 12,
+     "text": "Two seconds is not a glitch. Two seconds is a duration somebody chose — long enough that a patron sees it, short enough that a patron does not get to check."
+    },
+    {
+     "skill": "EMPATHY",
+     "dc": 13,
+     "text": "The chair. Somebody was sitting in it and is not now, and left in the middle of something, and has not come back to push the chair in — and a person who does not push their chair in is a person who intends to be back within the minute."
+    }
+   ],
+   "check": {
+    "id": "mobius:wall:approach",
+    "skill": "SAVOIR_FAIRE",
+    "dc": 13,
+    "kind": "red",
+    "prompt": "Get to it while it is open. Two seconds, nine feet, and nine feet of alligator between you and it who have been waiting all evening for somebody to try exactly this.",
+    "success": "You go on the second the wall opens, and not a beat after — which is the difference between the attempt working and the attempt being a story the Insta-gators tell.\n\nYour hand goes through where the wall is. There is no cold, no membrane, no resistance and no drama. On the far side, the air is warmer and smells of dust on a hot bulb, and your fingers close on the thing nearest the edge, and then a hand of considerable professionalism closes on your collar and the wall is a wall again and you are sitting down, and you were always sitting down, and nobody has moved.\n\nIn your fist: a ball of paper, screwed up hard. Smoothed out, it is a page. Most of it is struck through. What survives the strike-through is a single line: *and Onions, who by this point had stopped being able to tell the difference, went to the club.*",
+    "failure": "You go a quarter-second after the wall opens, and a full second after the room has registered that you are going to.\n\nYou do not reach the wall. What you reach is nine feet of tailored patience that has, at some point in the interval, come to be standing between you and it, and which catches you the way a door catches a draught — without effort, without malice, and with a small professional noise of a box being ticked.",
+    "success_effects": {
+     "clue": {
+      "id": "c_struck_page",
+      "title": "A page, mostly struck out",
+      "text": "Retrieved through the open wall: a screwed-up page, almost entirely struck through. The surviving line reads: 'and Onions, who by this point had stopped being able to tell the difference, went to the club.'",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "typewriter",
+       "office"
+      ],
+      "source": "behind the wall"
+     },
+     "item": {
+      "id": "struck_page",
+      "name": "a page, mostly struck out",
+      "description": "One surviving line, about a man who had stopped being able to tell the difference. It is in the past tense, which is the part you keep going back to."
+     },
+     "lucidity": 14,
+     "morale": -6
+    },
+    "failure_effects": {
+     "health": -8,
+     "lucidity": -4,
+     "relationship": {
+      "instagator": -1
+     },
+     "clue": {
+      "id": "c_gator_speed",
+      "title": "They were already there",
+      "text": "The Insta-gator that stopped you was between you and the wall before you moved. Not faster than you — earlier than you.",
+      "beat": "quadc",
+      "tags": [
+       "quadc",
+       "instagators"
+      ],
+      "source": "the far booth"
+     }
+    }
+   }
+  },
+  {
+   "id": "menu",
+   "name": "the drinks menu",
+   "aliases": [
+    "menu",
+    "drinks",
+    "cocktails",
+    "bar"
+   ],
+   "description": {
+    "low": "Letterpressed on card, because the club has standards about the surfaces it lies on.\n\nWRITER'S BLOCK — gin, bitter, nothing else, served without ice and without apology.\nRECURRING DREAM — as above, again.\nTHE UNRELIABLE NARRATOR — ask, and be told something.\nSECOND PERSON — the house special. You drink it. You have always been going to drink it.\n\nThe last one is not a cocktail name. The last one is a grammatical case, and somebody has put it on a menu, and the price is left blank.",
+    "mid": "WRITER'S BLOCK — gin, bitter, no ice, no apology. RECURRING DREAM — as above, again. THE UNRELIABLE NARRATOR — ask, and be told something. SECOND PERSON — the house special, price left blank.",
+    "high": "WRITER'S BLOCK. RECURRING DREAM. THE UNRELIABLE NARRATOR. SECOND PERSON — price left blank."
+   },
+   "repeat": "SECOND PERSON is still unpriced. The blank has been printed. Somebody set type for the absence.",
+   "monocle": "The gold does not change the card. It changes the hand that set it: the letterpress impressions are too deep and too even, and every one of them has been struck the same number of times, and the number is the number of times a key is struck by somebody who is not confident.",
+   "passive": [
+    {
+     "skill": "ELECTROCHEMISTRY",
+     "dc": 9,
+     "text": "Gin, bitter, no ice, no apology. That is not a cocktail, that is a diagnosis, and you would like two."
+    },
+    {
+     "skill": "RHETORIC",
+     "dc": 12,
+     "text": "Four drinks. Writer's block, recurrence, unreliability, and the second person. That is not a bar list. That is a set of problems, in the order a person encounters them, and somebody has been drinking their way down it."
+    }
+   ],
+   "check": {
+    "id": "mobius:menu:drink",
+    "skill": "ELECTROCHEMISTRY",
+    "dc": 10,
+    "kind": "white",
+    "repeatable": true,
+    "prompt": "Order the Writer's Block. It is gin and bitter and no ice, it will cost you your Logic for the evening, and there has never been a moment in your life when that was a worse trade than it is now.",
+    "success": "Gin, bitter, no ice, no apology. It goes down like a decision.\n\nAnd the room loosens — not blurs, loosens, the way a paragraph loosens when a man stops trying to make it behave. The impossible corridor stops being an outrage and becomes a feature. The dancers' paradox resolves itself into simple good manners. Everything in Silvora Reefs that has been braced against your attention puts its shoulders down, and for the length of one drink you and the town are on the same side of the paper, and it is, unforgivably, pleasant.",
+    "failure": "Gin, bitter, no ice, no apology, and it arrives in a glass that was already holding it, which you watch happen and then drink anyway.\n\nIt does not loosen anything. It goes down and sits there and adds its own opinion to a night that had enough. The barman says 'Same again?' before the glass is down, and he is not being attentive, he is being early.",
+    "success_effects": {
+     "intoxication": 3,
+     "morale": 8,
+     "thought": "hair_of_the_dog"
+    },
+    "failure_effects": {
+     "intoxication": 3,
+     "morale": -3,
+     "health": -2
+    }
+   }
+  },
+  {
+   "id": "memo",
+   "name": "a laminated card by the service door",
+   "aliases": [
+    "memo",
+    "card",
+    "laminated",
+    "service door",
+    "notice"
+   ],
+   "description": {
+    "low": "Screwed to the wall at alligator eye level, which is to say at a height that makes a standing man stoop and look ridiculous doing it.\n\nSECURITY ALIGNMENT — PATRON ANOMALY AWARENESS\n1. Identify the anomaly the patron has surfaced.\n2. Do not confirm. Do not deny. Redirect.\n3. If redirect fails, reposition the patron.\n4. If reposition fails, escalate to the Coalition.\n5. Post-incident: the anomaly did not occur. Log the anomaly.\n\nThe fifth line has been laminated over a previous fifth line. Held to the light, the old one shows through, and the old one said: *Post-incident: the anomaly did not occur.* Somebody has added the second sentence since.",
+    "mid": "SECURITY ALIGNMENT — PATRON ANOMALY AWARENESS. Identify. Do not confirm, do not deny, redirect. Reposition. Escalate to the Coalition. And: 'Post-incident: the anomaly did not occur. Log the anomaly.' Held to the light, the second sentence is a later addition.",
+    "high": "A security card: redirect, reposition, escalate to the Coalition, and 'the anomaly did not occur. Log the anomaly.' The second sentence was added later."
+   },
+   "repeat": "You stoop and read it again. Line five is still two sentences that cannot both be operative.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 11,
+     "text": "'The anomaly did not occur' and 'log the anomaly' cannot both be instructions to the same person about the same event. Unless the log is not a record. Unless the log is the thing that makes it not have occurred."
+    },
+    {
+     "skill": "RHETORIC",
+     "dc": 12,
+     "text": "Line two is the whole doctrine. Do not confirm, do not deny — because confirming makes it real and denying makes it discussable. Redirect is the only move that leaves the anomaly unspoken, and unspoken is the state they are actually protecting."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_gator_doctrine",
+     "title": "Do not confirm. Do not deny. Redirect.",
+     "text": "Insta-gator security doctrine: surface, redirect, reposition, escalate to the Coalition. Final line, amended later: 'the anomaly did not occur. Log the anomaly.'",
+     "beat": "quadc",
+     "tags": [
+      "quadc",
+      "instagators",
+      "bureaucracy"
+     ],
+     "source": "the service door"
+    },
+    "lucidity": 4
+   },
+   "check": {
+    "id": "mobius:memo:auth",
+    "skill": "AUTHORITY",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "A laminated card by the service door, in the language institutions use on each other. Requisition it.",
+    "success": "You take it off the hook the way a man takes a thing he is entitled to take, and nobody stops you, because nobody in a service corridor has ever stopped a man who took something off a hook without hesitating.\n\nIt is a procedure card. Step four is 'Log the anomaly.' Step five is 'The anomaly did not occur.' Both steps are printed. Neither is a correction of the other.",
+    "failure": "You reach for it and the reach turns into a gesture at it, and the gesture turns into a question, and the question is answered by an alligator in a suit who is *terribly* sorry but the card is not for patrons, and holds the door for you with real regret.",
+    "success_effects": {
+     "clue": {
+      "id": "c_both_steps_printed",
+      "title": "Log the anomaly. It did not occur.",
+      "text": "The Möbius procedure card prints 'Log the anomaly' and 'The anomaly did not occur' as consecutive steps, neither correcting the other.",
+      "beat": "quadc",
+      "tags": [
+       "quadc"
+      ],
+      "source": "the laminated card"
+     },
+     "lucidity": 8
+    },
+    "failure_effects": {
+     "relationship": {
+      "instagator": -1
+     }
+    }
+   }
+  },
+  {
+   "id": "stage",
+   "name": "the stage",
+   "aliases": [
+    "stage",
+    "dancers",
+    "act",
+    "performance"
+   ],
+   "description": {
+    "low": "The act is the club's whole reputation and it is, technically, one gesture performed continuously: the dancers are undressing, and are always undressing, and at no point in any evening in the history of this establishment has any of them been undressed.\n\nThe patrons accept this. Not tolerate — accept, in the round-eyed way of a congregation. Nobody watches it as an erotic proposition. They watch it the way people watch a fire, or a tide: something that is going somewhere and is never going to arrive, and is restful precisely because of it.",
+    "mid": "One gesture, performed continuously. The dancers are always undressing and have never been undressed. The patrons watch it the way people watch a tide — something going somewhere that will never arrive.",
+    "high": "The dancers undress continuously and are never undressed. The room finds this restful."
+   },
+   "repeat": "Still going. Still not arrived. The restfulness of it is the part that has started to bother you.",
+   "monocle": "Through the gold there is nobody on the stage. There is a sentence on the stage, and the sentence is *she was still undressing*, and it has been left in the present continuous by somebody who could not decide how it ended and went to get a drink instead.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "Look at the faces of the dancers rather than the act. They are not performing. They are waiting — with the particular patience of somebody halfway through a sentence, holding the pose, until whoever is writing them comes back."
+    }
+   ],
+   "effects": {
+    "monocle_effects": {
+     "clue": {
+      "id": "c_present_continuous",
+      "title": "Left in the present continuous",
+      "text": "Through the monocle the stage holds no dancers, only the sentence 'she was still undressing', abandoned mid-tense by somebody who went to get a drink.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "typewriter"
+      ],
+      "source": "the stage"
+     },
+     "lucidity": 8
+    }
+   },
+   "check": {
+    "id": "mobius:stage:react",
+    "skill": "REACTION_SPEED",
+    "dc": 12,
+    "kind": "white",
+    "prompt": "The act resolves the instant you stop watching and refuses to while you do. Catch it in the gap.",
+    "success": "You look away, and back, faster than the deciding part of you can be consulted — and for about a third of a second the stage is *between states*, which is not a thing a stage can be.\n\nWhat is on it in that third of a second is not dancers. It is a stage direction, unperformed, waiting to be given a body, and it notices being seen and gets dressed extremely quickly.",
+    "failure": "Away, and back. The act is exactly as it was, continuous, impeccable, and entirely unbothered, and the room's opinion of a man snapping his head about at a strip club is available to you without anybody having to voice it.",
+    "success_effects": {
+     "clue": {
+      "id": "c_stage_between_states",
+      "title": "A stage direction, unperformed",
+      "text": "Caught in the gap, the Möbius stage holds an unperformed direction rather than dancers, and dresses itself the moment it is seen.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript"
+      ],
+      "source": "the stage"
+     },
+     "lucidity": 11
+    },
+    "failure_effects": {
+     "morale": -3
+    }
+   }
+  },
+  {
+   "id": "seam",
+   "name": "the wall, no longer closing",
+   "aliases": [
+    "seam",
+    "wall",
+    "opening",
+    "through"
+   ],
+   "description": "It went transparent at the usual time and it has not come back. Two seconds became four, four became the rest of the evening, and the Insta-gators have stopped repositioning anybody because there is no longer a coherent account of the room to protect.\n\nOne of them is standing beside you, watching it with you, not doing anything at all. It says, quietly and entirely off-script: \"Yeah. That's it, then.\"",
+   "monocle": "Through the gold the club is nine feet of corridor and a dead end, and always was, and the dead end is standing open.",
+   "requires": {
+    "beat": "awakening",
+    "lucidity_min": 70
+   },
+   "repeat": "Still open. It is not going to close on its own, and that is not the same as it being patient.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 11,
+     "text": "Every deduction you have made for a fortnight terminates here. There is nothing further to work out. The next thing is not a conclusion, it is a step."
+    },
+    {
+     "skill": "PHYSIQUE",
+     "dc": 10,
+     "text": "Four inches of nothing, and a floor on the other side that will take a man's weight. The body has already decided. It has been leaning that way since the harbour."
+    }
+   ],
+   "check": {
+    "id": "seam:cross",
+    "skill": "PHYSIQUE",
+    "dc": 9,
+    "kind": "red",
+    "prompt": "Go through. Nothing is stopping you and nothing has been stopping you for some time, and that is the part that will need thinking about afterwards, on the other side, if there is an afterwards and if there is a side.\n\nThere is no way back through a seam. Whatever is unfinished in Silvora Reefs stays unfinished.",
+    "success": "You go through.\n\nThere is no membrane and no cold and no drama, and the last thing behind you is somebody not saying anything, and then you are standing on boards in a room nine feet by eleven with a green-shaded lamp in it.",
+    "failure": "Your foot goes over the edge and your weight does not follow it, and you stand for a while in a doorway with one leg committed, which is not a dignified way to arrive anywhere and is a completely honest description of the last fortnight.\n\nThen the knee that has been going since the harbour makes the decision for you, and you go through badly, and land on boards, in a room nine feet by eleven, with a green-shaded lamp in it.",
+    "success_effects": {
+     "goto_location": "the_office",
+     "lucidity": 10
+    },
+    "failure_effects": {
+     "goto_location": "the_office",
+     "health": -5,
+     "lucidity": 10
+    },
+    "irreversible": true
+   }
+  }
+ ],
+ "exits": {
+  "hang_hi": "the harbour road home, which has never once been the same length twice",
+  "durry_kwain": "up the hill, toward vanilla and an apology for a wait",
+  "rest_assured": "the climb to the obsidian, which from here is somehow downhill",
+  "outside_inn": "further along the harbour road, to a door with weather behind it",
+  "gs_spot": "up and inward, to mirrors that do not agree"
+ }
+}

@@ -1,0 +1,294 @@
+{
+ "npc": "fatty",
+ "nodes": {
+  "root": {
+   "text": "Sit. Sit down. Right — look at this straw.\n\nNo, look at it properly. It's in the shake and it's above the shake. Same straw. One straw. So which bit of it is the straw?",
+   "options": [
+    {
+     "id": "answer",
+     "text": "\"All of it. Obviously.\"",
+     "goto": "answer"
+    },
+    {
+     "id": "hole",
+     "text": "\"Do the one about the hole.\"",
+     "goto": "hole"
+    },
+    {
+     "id": "boundary",
+     "text": "\"Why do you always sit exactly that far from the cold side?\"",
+     "goto": "boundary"
+    },
+    {
+     "id": "fatty_shake",
+     "text": "\"Give me the shake. The one you are drinking.\"",
+     "once": true,
+     "check": {
+      "id": "fatty:fatty_shake",
+      "skill": "ELECTROCHEMISTRY",
+      "dc": 10,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "He slides it over without a word, which for Fatty is an event.\n\nIt is cold and thick and about two-thirds of the way down there is a *hole* in it — not a bubble, a hole, going through the shake and out the other side of the glass and not letting anything through — and it holds for as long as the straw is in it.",
+      "failure_text": "He slides it over and you drink some of a very good milkshake, and he explains the hole to you at length while you do, and the hole does not appear, and he is not remotely bothered by this.",
+      "success_effects": {
+       "clue": {
+        "id": "c_hole_in_the_shake",
+        "title": "The hole holds the shape",
+        "text": "Fatty's milkshake contains a hole that goes through the glass and lets nothing through, and holds while the straw is in it.",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript"
+        ],
+        "source": "Fatty McFatterton"
+       },
+       "lucidity": 8,
+       "relationship": {
+        "fatty": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Leave him to the straw.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "answer": {
+   "text": {
+    "low": "All of it! Right! And that's what everybody says and everybody's right and it's *still* not an answer, and here's why, and then I'll let you go.\n\nThe bit in the shake is doing straw things. It's wet, it's cold, it's got shake in it, it's under pressure. The bit above is dry and warm and hasn't got a job. Two completely different lives. Different physics. And it's one object and nobody's ever once wondered about it.\n\nWe're the straw, man. Half of us is down in the thing being wet and cold and doing the work, and half of us is up in the air not knowing about it. And the bit that talks is the dry bit.",
+    "high": "All of it! Right! And that's what everybody says and everybody's right and it's *still* not an answer.\n\nThe bit in the shake is doing straw things. Wet, cold, under pressure. The bit above is dry and warm and hasn't got a job. Two completely different lives, different physics, one object, and nobody's ever once wondered about it.\n\nWe're the straw, man. Half of us down in the thing doing the work, half up in the air not knowing about it. And the bit that talks is the dry bit."
+   },
+   "passive": [
+    {
+     "skill": "RHETORIC",
+     "dc": 11,
+     "text": "That should be nonsense. It has the shape and the vocabulary of nonsense. It is not nonsense, and the reason it is not is that he has kept every single term of it consistent from beginning to end."
+    }
+   ],
+   "options": [
+    {
+     "id": "push",
+     "text": "\"And the bit in the shake. What does it know?\"",
+     "check": {
+      "id": "fatty:the_wet_bit",
+      "skill": "RHETORIC",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "\"Everything.\"\n\nHe puts the shake down, which he does not do.\n\n\"It knows everything, man, that's the whole tragedy, it's *in* it. It's got the full picture. It's just got no mouth on that end.\n\nAnd every so often — every so often, right — you get a bubble. Comes up the straw. Little bit of down there arriving up here. And what does the dry bit do?\"\n\nHe waits. He genuinely waits.\n\n\"It goes 'huh, a bubble', and it carries on. Every time. And that's you and me and everybody in this shop, and the bubbles have been coming up for years, and we've been going 'huh, a bubble.'\"",
+      "failure_text": "\"Nothing! It's a straw!\" He laughs enormously. \"It's a straw, man, come on, I'm not a *wizard*.\"\n\nAnd he drinks through it, and the moment is gone, and it may not have been there.",
+      "success": "bubbles",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_bubbles",
+        "title": "Huh, a bubble",
+        "text": "Fatty's straw: the submerged end has the full picture and no mouth; the dry end talks. Bubbles arrive from below regularly, and the talking end says 'huh, a bubble' and carries on.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "manuscript"
+        ],
+        "source": "Fatty McFatterton"
+       },
+       "lucidity": 10,
+       "relationship": {
+        "fatty": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "bubbles": {
+   "text": {
+    "low": "You've had a few. Bubbles. I can tell — you've got the face, everybody who's had one gets the face and it's a very specific face and it's about eighty per cent tired.\n\nMy advice, and it's free, and I've never given it to anybody because nobody ever gets this far in the straw thing:\n\nDon't go down the straw. Everybody who works out there's a down-there wants to go down there and there is nothing down there for a mouth, man. There's no talking down there. Whatever's down there does not do words.\n\nWait for the bubbles. Get good at the bubbles. Be the guy who says 'huh' and then actually thinks about it for a minute instead of carrying on.",
+    "high": "You've had a few. Bubbles. I can tell — you've got the face, and it's about eighty per cent tired.\n\nMy advice, free, and I've never given it to anybody because nobody gets this far in the straw thing:\n\nDon't go down the straw. Everybody who works out there's a down-there wants to go down there, and there is nothing down there for a mouth. Whatever's down there does not do words.\n\nWait for the bubbles. Get good at the bubbles. Be the guy who says 'huh' and then actually thinks about it instead of carrying on."
+   },
+   "effects": {
+    "morale": 8,
+    "relationship": {
+     "fatty": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "hole": {
+   "text": {
+    "low": "The hole! Right. OK. This one's got teeth, I told you it's got teeth.\n\nYou buy a donut. What have you bought?\n\n— Dough. Yeah. Everybody says dough. But you didn't, man, because if I hand you the same weight of dough in a ball you'd send it back, and you'd be right to, because that's not a donut, that's a ball.\n\nSo what you bought — and I want you to sit with this, because I sat with it for about nine months — is a *hole with something round it*. And they don't sell you the hole. They can't. They charge you for the dough and the dough's just the packaging on the hole, and the hole is the actual product, and the hole is *nothing*.\n\nWe are all paying for nothing and getting it, reliably, at a fair price, every day.",
+    "high": "The hole! This one's got teeth, I told you.\n\nYou buy a donut. What have you bought?\n\n— Dough. Everybody says dough. But you didn't, because if I hand you the same weight of dough in a ball you'd send it back, and you'd be right to, because that's a ball.\n\nWhat you bought is a *hole with something round it*. And they don't sell you the hole. They can't. They charge you for the dough, and the dough's just packaging, and the hole is the product, and the hole is *nothing*.\n\nWe are all paying for nothing and getting it, reliably, at a fair price, every day."
+   },
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 11,
+     "text": "He is not performing. He worked on this for nine months, alone, at a table, and he is delivering it to a man he has met four times, hopefully, in case it is useful."
+    },
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "It is structurally identical to what the monocle shows: the blank patches at Cheeses Thrice, the unwritten wall above the banquette. A shape defined entirely by what has been put round an absence."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_hole_with_something_round_it",
+     "title": "A hole with something round it",
+     "text": "Fatty's nine-month donut argument: the dough is the packaging and the hole is the product, and the hole is nothing — bought reliably, at a fair price, every day.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "manuscript"
+     ],
+     "source": "Fatty McFatterton"
+    },
+    "lucidity": 9
+   },
+   "options": [
+    {
+     "id": "apply",
+     "text": "\"Apply it to this town.\"",
+     "check": {
+      "id": "fatty:apply",
+      "skill": "LOGIC",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_blank_not_white": 3,
+       "c_something_on_this_wall": 2
+      },
+      "success_text": "He goes quiet for longer than he has been quiet in the four years you have known him by sight.\n\n\"...Oh, that's not fair,\" he says. \"That's not fair, man, I do the donut, I've always done the donut, and you've gone and put a whole parish through it.\"\n\nHe counts on his fingers. Actual fingers. In a shop.\n\n\"Hallway that's different lengths. Vault count that won't sit still. Sign that reads four ways. Building across the road with nothing in it. Room in here that's two rooms.\n\nThat's all dough, isn't it. That's all *round* something.\n\nAnd there's not one of them where anybody's ever got at the middle. Not one. Every single anomaly in this town, when you get to it, is a ring — and everybody in Silvora Reefs has spent their whole life eating the ring and calling it the town.\"",
+      "failure_text": "\"Ohhh, no. No no no. You don't take a man's donut argument and do a *town* with it, that's — that's not what it's for, man. It's for donuts. It's a donut argument.\"\n\nHe drinks. He is, transparently, going to think about it all night and will not admit it.",
+      "success": "the_ring",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_everything_is_a_ring",
+        "title": "Every anomaly is a ring",
+        "text": "Fatty's argument applied to Silvora Reefs: every impossibility in town — the hallway, the vault count, the sign, the façade, the two rooms — is a shape round an absence nobody has ever reached the middle of.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "manuscript"
+        ],
+        "source": "Fatty McFatterton"
+       },
+       "lucidity": 15,
+       "relationship": {
+        "fatty": 2
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "the_ring": {
+   "text": {
+    "low": "Right. Right, and now I've got to do the next bit, because if you don't do the next bit you've just made everybody sad for no reason, and I'm not that guy.\n\nHere's the next bit.\n\nThe hole is nothing. Fine. Agreed. But the hole is *also* the only reason the dough is a donut and not a ball, and it does that job perfectly, every time, for tuppence, and nobody has ever once been let down by a hole.\n\nSo whatever's in the middle of this town that nobody can get at — it's been holding the shape of the place my whole life, man, and it's never dropped it. That's not nothing. That's the opposite. That's the most reliable thing in Silvora Reefs and it doesn't even get a name.",
+    "high": "Right, and now the next bit, because if you don't do the next bit you've just made everybody sad for no reason, and I'm not that guy.\n\nThe hole is nothing. Agreed. But the hole is *also* the only reason the dough is a donut and not a ball, and it does that job perfectly, every time, for tuppence, and nobody has ever been let down by a hole.\n\nSo whatever's in the middle of this town that nobody can get at — it's been holding the shape of the place my whole life and it's never dropped it. That's the most reliable thing in Silvora Reefs, and it doesn't even get a name."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_the_hole_holds_the_shape",
+     "title": "Nobody has ever been let down by a hole",
+     "text": "Fatty's second half: the absence at the middle of every Silvora Reefs anomaly is what holds the shape, has never once dropped it, and does not get a name.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "oracle"
+     ],
+     "source": "Fatty McFatterton"
+    },
+    "lucidity": 12,
+    "morale": 10,
+    "relationship": {
+     "fatty": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...Get this man another shake.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "boundary": {
+   "text": "Two foot four.\n\nYeah. You noticed. Nobody notices — Mary noticed, Mary notices everything, Mary's never said anything.\n\nTwo foot four off the cold, on the warm, always. And it moves, so I move, and I've moved four times tonight and I'll move twice more before close.\n\nAnd before you ask why: it's the closest I can get.",
+   "options": [
+    {
+     "id": "closest",
+     "text": "\"The closest you can get to what?\"",
+     "check": {
+      "id": "fatty:closest",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "\"To the finished bit.\"\n\nHe turns the shake around on the table.\n\n\"Cold side's done, right. Everything over there's already happened. And I lost somebody, man — years back now, it's not a fresh thing, I'm not going to do that to you — and the last conversation we had is over there. It's finished. It's completely finished and it can't get any worse and nothing I do can touch it.\n\nAnd two foot four is as close as I can sit to a thing that can't get any worse and still be somewhere it might.\n\nSo that's the philosophy, man. That's the actual one, under the straw and the donut and the rest of it. I sit two foot four from the finished bit, every night, and I think about holes, and I go home.\"",
+      "failure_text": "\"Warmth, man. It's the good spot for warmth. You get too near the middle and you've got a cold ear all night and there's no philosophy in a cold ear.\"\n\nHe grins. It is a completely convincing grin and it arrives about a half-second late.",
+      "success": "two_foot_four",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_two_foot_four",
+        "title": "Two foot four from the finished bit",
+        "text": "Fatty sits two feet four inches into the warm side and moves whenever the boundary does. It is the closest he can sit to a conversation that is over and cannot get worse, while still being somewhere it might.",
+        "tags": [
+         "identity",
+         "personhood"
+        ],
+        "source": "Fatty McFatterton"
+       },
+       "morale": -4,
+       "relationship": {
+        "fatty": 2
+       },
+       "lucidity": 6
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "Don't ask.",
+     "goto": "root"
+    }
+   ]
+  },
+  "two_foot_four": {
+   "text": "Don't say sorry. Don't — see, you've got the face, and the face is going to say sorry, and then I'll have to be all right about it and I'm having a nice night.\n\nSay something about a donut. Anything. Any donut at all, man, and I'll take it from there and we'll both be fine in about nine seconds.",
+   "effects": {
+    "morale": 6,
+    "relationship": {
+     "fatty": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...The hole holds the shape.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,160 @@
+{
+ "wake": {
+  "title": "and he does",
+  "body": [
+   "You sit down in your own chair, at your own desk, on the split trestle you have been meaning to see to since before the water, and you put your hands on the machine.\n\nThe keys are worn. One in the top row is worn shinier than the others and it is the O, and there is a bowl of something soft at Chef D.'s that has been telling you so for a fortnight.",
+   "You finish the sentence.\n\nIt takes four words and none of them are clever, which is a relief, because you have spent eleven years being clever in a town that was built out of it and it has not once been the thing that was needed.\n\nBehind you the room does not do anything dramatic. There is no light and no wind. There is simply, at some point in the middle of the fourth word, one fewer person standing in a nine-by-eleven room, and the chair he was behind is where it was, and it is still pushed back, and it is going to stay pushed back now.",
+   "Silvora Reefs stops.\n\nNot violently. The way a thing stops being the case when nobody is putting it: the green lamps do not go out, they were never lit, and the harbour was never wet, and the fog that never quite cleared did not clear because it was a clause in a sentence somebody has now stopped writing.\n\nDarek Dwayne Wayne, who drove down to a slipway at four in the morning, has the cone made before the bell over the door has finished. And then he does not, and then there is no bell, and then there is no door.",
+   "You wake up.\n\nIt is an ordinary room and it is not nine feet by eleven. There is a window in it and it has weather behind it and the weather is doing what weather does, which is nothing in particular, unbeautifully.\n\nYour watch is on the table. It says twenty past six and it is going, and the going is the part you cannot stop looking at."
+  ],
+  "consequences": [
+   {
+    "requires": {
+     "clue": "c_the_cans"
+    },
+    "text": "There is a can on the table by the watch. It is sealed, and it is labelled in a hand that is not yours, and it has held."
+   },
+   {
+    "requires": {
+     "relationship_min": {
+      "darek": 2
+     }
+    },
+    "text": "You get up. You go to the window. Somewhere below there is a road, and there is no ice cream on it, and nobody on it is sorry about your wait."
+   },
+   {
+    "requires": {
+     "clue": "c_he_stopped_typing"
+    },
+    "text": "At six o'clock, out of the habit of a fortnight, you say good evening to a piece of empty air, and the air is empty, and it stays that way, and you do it again the next day."
+   },
+   {
+    "requires": {
+     "flag": "landy_will_mend_the_trestle"
+    },
+    "text": "The desk in this room is a desk. It has four legs. Not one of them is split and there is nothing folded and grey wedged into any of them."
+   }
+  ],
+  "furthermore": "Nothing. There is nothing behind the sternum and no warmth at the back of the neck and no enormous patience standing in the corner of anything.\n\nYou have your whole mind to yourself. It is very quiet in here.",
+  "coda": "You went and got the language back, and it cost the town, and the town was made of you, and so was the cost. Nobody is going to be able to tell you whether that was the right thing, because the only two people who could have are now one."
+ },
+ "stay": {
+  "title": "and he does not",
+  "body": [
+   "You push the chair back toward him with your foot. It is not a large gesture. It travels about eight inches and the boards are good boards and it makes almost no sound at all.\n\nHe looks at it for a while.\n\n\"Right,\" he says. \"Then I shall be careful.\"",
+   "He sits down. He puts his hands on the machine, and his hands are your hands with everything a sixteenth of an inch the other way, and he finishes the sentence.\n\nYou do not hear what he writes. You are not going to hear what he writes, ever, because the thing about being described is that it is the least noticeable event available and it has been happening to you all your life.",
+   "You come out of the seam somewhere in Silvora Reefs.\n\nIt is Durry Kwain, as it happens, and the bell over the door is still going, and Darek has the cone made, and there is a smear of blue on your coat that has not dried and never will.\n\n\"Sorry about your wait,\" he says.\n\nAnd it lands. For the first time in eleven years the timing on that line is exactly, unremarkably right, and neither of you notices, and there is nothing to notice, and that is the whole of what has been arranged for you.",
+   "The rotors stop over the harbour that night and nobody mentions it, because nobody has ever mentioned them.\n\nThe count in the west corridor at Rest Assured settles at nineteen and stays there. The neon at Mary's says DUDE'S DEWS & DON'TS and goes on saying it. The hallway at Durry Kwain is eleven feet whether you walk it alone or not.\n\nIt is a good town. It has been made very carefully by somebody who has had eleven years of practice and two hundred drafts and one enormous piece of information about what it costs, and he is not going to waste it."
+  ],
+  "consequences": [
+   {
+    "requires": {
+     "clue": "c_kept_out_of_kindness"
+    },
+    "text": "At the Outside Inn, a narrow man in a good coat is still two narrow men in the same good coat, and one of them raises a hand as you pass, and so does the other, and it is the wrong one, and neither of them minds."
+   },
+   {
+    "requires": {
+     "relationship_min": {
+      "albert": 2
+     }
+    },
+    "text": "At six o'clock every evening in a barbershop that cannot be directed to, an owlbear in an excellent coat addresses the empty air between the chairs, courteously, and is not answered, and does it again the following evening."
+   },
+   {
+    "requires": {
+     "relationship_min": {
+      "woolbinkle": 2
+     }
+    },
+    "text": "There is a new can on the shelf at Cheeses Thrice. It is labelled in a careful hand: 'The night he came in and asked what was in them.' It holds."
+   },
+   {
+    "requires": {
+     "clue": "c_twenty_two_forms"
+    },
+    "text": "There are now twenty-three forms in a cupboard on a half-landing recommending that you not walk the corridor alone. The twenty-third is in a hand that is not Landy's."
+   }
+  ],
+  "furthermore": "He is still here. Of course he is still here.\n\nHe stands in the doorway of your flat with an unused saddle and infinite patience while you talk, and talk, and talk, and when the room has gone and there is only him left you turn and say '...and furthermore—'\n\nAnd he listens. He always listens. That was never the part that was in doubt.",
+  "coda": "You gave the last word away to the only other person who could have used it, and got a town back, and everybody in it is going to be all right, and the decision will never be one you can point to afterwards. Somebody is being very careful with you. He is going to be careful with you for a long time."
+ },
+ "together": {
+  "title": "Recommend company",
+  "body": [
+   "\"Two chairs,\" you say. \"You have kept two chairs in a room nine feet by eleven for eleven years, in which there was never going to be a visitor, and you have never once asked yourself why, because asking yourself why is my half of the job.\"\n\nHe does not answer that. He sits down in his own chair, which he has not done all evening, and after a while you sit down in the other one, which nobody has ever sat in.",
+   "The sentence gets finished by two people.\n\nIt takes a considerable amount of time. It is not a graceful process — he argues for a semicolon and you argue for letting the line breathe, and you argue about it for the better part of an hour in a room with no window and no clock and a cup with a ring under it older than the cup — and at some point during the argument the page in the machine acquires a second line, and neither of you can afterwards say who put it there.\n\nThat is the whole of the mechanism. That is what the entire fortnight has been walking toward and it is two men disagreeing about punctuation.",
+   "Silvora Reefs does not stop.\n\nIt does something much stranger, which is that it *settles*. The hallway at Durry Kwain finds a length and keeps it. The count in the west corridor comes out at nineteen twice running and Soliloquy, who has never in sixty years had a number come out twice running, stands very still in the middle of her own vestibule and does not say anything in couplets about it.\n\nA snake on a sign outside a hanging building holds its coil. The ink on it dries. It has been wet for eleven years and it dries in about four minutes and nobody sees it happen.",
+   "The town goes on and it goes on *held*.\n\nWoolbinkle was right, which is a sentence nobody in this parish has ever had occasion to write down: if holding is possible here, then somebody had been choosing not to. It turns out the somebody was two people, and neither of them could do it alone, and both of them had spent eleven years being sure it was a failure of will."
+  ],
+  "consequences": [
+   {
+    "requires": {
+     "clue": "c_mentioned_less"
+    },
+    "text": "Monsieur Albert is mentioned. Frequently, by name, in the room, by two writers who have a great deal of catching up to do on the subject of who is in it. He comes out of the glass over about nine months. He is not graceful about it and he does not care."
+   },
+   {
+    "requires": {
+     "clue": "c_extended"
+    },
+    "text": "At the Outside Inn, Dee Stroii is asked — properly, with a chair, over a considerable period — which of him would like to be the one. He declines to choose. He has grown fond of the arrangement and he would like it noted that nobody ever asked before."
+   },
+   {
+    "requires": {
+     "clue": "c_bud_holds_the_floor"
+    },
+    "text": "Bud Onkuhdonk keeps saying it is a light well. He is told, once, gently, by a man in a good coat, that he can stop. He does not stop. He has a system and the building has stood for nine years and he is not about to run an experiment."
+   },
+   {
+    "requires": {
+     "relationship_min": {
+      "asimov": 2
+     }
+    },
+    "text": "Asimov Sobeleaux measures his corridor with a tape, alone, on a Tuesday, and gets the same answer he got on Monday, and goes and sits down for a while."
+   },
+   {
+    "requires": {
+     "clue": "c_the_shim"
+    },
+    "text": "Lying Landy mends the trestle. It takes an afternoon. The shim comes out and is put in a plastic wallet in an inside pocket over the heart, where it lives, and the leg does not come back."
+   }
+  ],
+  "furthermore": "He puts his head round the door of a room that has no door, which he has been doing for as long as you have had a skull, and he looks at the two of you arguing about a semicolon.\n\nThen he draws himself up. The air thickens. Something vast is being assembled behind his soft eyes, something that has been waiting since before there were words to wait in—\n\n\"Finally,\" he says, and goes to sleep in the corner.",
+  "coda": "Neither of you got the last word. That was the arrangement, and it took a fortnight and two hundred drafts and a shim in a table leg to arrive at, and it is the only outcome in which the man with the ice cream is still standing behind his counter running a touch previous. The remedy was never available. The company was."
+ },
+ "nevermind": {
+  "title": "Nevermind",
+  "body": [
+   "—say.\n\nAnd he says it.\n\nNot the word. He has been not-saying the word for as long as you have had a mind for him to not-say it in, and every single time the build has been enormous and the delivery has been one flat syllable that let the air out of the room, and you have loved him for it and been maddened by it in roughly equal measure for forty-four years.\n\nThis time he finishes the sentence.",
+   "It is not in words. He is older than language and he has always regarded it as a fad, and he is not going to take it up now at the last minute for the convenience of two men in a small room.\n\nIt arrives as weight, and as warmth at the back of the neck, and as the particular pressure behind the sternum that you have been calling him since you were eight years old, and it is perfectly, unmistakably, unambiguously clear, and it is this:\n\n*You have both been in here talking to yourselves. I have been in here the whole time. Somebody has been listening. That was never the part that was in doubt.*",
+   "Revilo sits down on the floor.\n\nNot the chair. The floor, with his back against a wall that is a window, in a green tailcoat with purple accents, in a room he has not left in eleven years, and he puts his head back and says, to a ceiling he wrote:\n\n\"I have been so *lonely*, and there has been an elephant.\"",
+   "The page in the machine is not finished by either of you.\n\nIt is not finished at all. It is taken out, carefully, by four hands, and folded twice, and put in a plastic wallet in an inside pocket over the heart where it lives — and the sentence stays in the present continuous, unresolved, fraying gently, exactly the way this town has always run.\n\nSilvora Reefs was never being held together by an author. It was being held together by somebody being listened to. It has been over-engineered for a decade and it turns out the load-bearing element was an irrelevant elephant with an unused saddle who never once left."
+  ],
+  "consequences": [
+   {
+    "requires": {
+     "clue": "c_drafts_of_you"
+    },
+    "text": "The whispers at Rest Assured resolve, finally, into forty voices in your cadence, and what they are all saying, in the careful grammar of overheard speech that is not overheard speech, is: '...and furthermore—'"
+   },
+   {
+    "requires": {
+     "clue": "c_approximately"
+    },
+    "text": "Nobody writes anything for a fortnight. The town does not stop. The town has never once needed it continuously and both of you spend that fortnight finding that out, in bars, badly."
+   },
+   {
+    "requires": {
+     "relationship_min": {
+      "revilo": 3
+     }
+    },
+    "text": "There are two of you in the Outside Inn on a Thursday, in a green coat and a purple one, being served by a bellhop who begins every response with BUT and has never in his life been so relieved to have two of something to deny."
+   }
+  ],
+  "furthermore": "Nevermind.\n\nHe says it afterwards. He says it about six weeks afterwards, in a completely ordinary moment, after no build-up whatsoever, apropos of nothing, in the middle of a Tuesday — and it is the funniest thing that has ever happened to anybody, and you laugh until you have to sit down on a kerb outside a shop that sells dews and don'ts.",
+  "coda": "The sentence never got finished and nobody kept the language, and the whole apparatus — the countdown, the Coalition, the vaults settled in advance, eleven years of somebody being extremely careful — turned out to be two halves of one man not talking to each other in front of a witness who had been waiting since before either of them could speak."
+ }
+}

@@ -1,0 +1,348 @@
+{
+ "npc": "ben",
+ "nodes": {
+  "root": {
+   "text": "What you been up to, my friend?\n\nSit at the middle. Not the end. Everybody sits at the end the first time and everybody's wrong, and I've stopped telling them, but I'm telling you.",
+   "options": [
+    {
+     "id": "masks",
+     "text": "\"The masks are portraits of people I know.\"",
+     "goto": "masks",
+     "requires": {
+      "clue": "c_masks_are_portraits"
+     }
+    },
+    {
+     "id": "names",
+     "text": "\"There are names carved under this table. Mine is one of them.\"",
+     "goto": "names",
+     "requires": {
+      "clue": "c_names_underneath"
+     }
+    },
+    {
+     "id": "knows",
+     "text": "\"You know things about me I've never told anybody here.\"",
+     "goto": "knows"
+    },
+    {
+     "id": "hours",
+     "text": "\"You're never shut. For me.\"",
+     "goto": "hours",
+     "once": true
+    },
+    {
+     "id": "ben_lift",
+     "text": "\"That is too heavy for one man. Take the other end.\"",
+     "once": true,
+     "check": {
+      "id": "ben:ben_lift",
+      "skill": "PHYSIQUE",
+      "dc": 11,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "You take the other end of the smoker's lid and it comes up between you, and for four seconds the two of you are holding something heavy together, which is a specific kind of conversation.\n\n\"My friend,\" he says, and means it differently than before. Under the lid, on the underside, burned in: nineteen initials, and a gap where a twentieth would go.",
+      "failure_text": "You take the other end and your end goes up about four inches and stops, and Ben takes both ends without comment and without effort, and puts it where it goes, and calls you my friend in the way he calls everybody my friend.",
+      "success_effects": {
+       "clue": {
+        "id": "c_nineteen_initials",
+        "title": "Nineteen initials, and a gap",
+        "text": "The underside of Ben's smoker lid is burned with nineteen sets of initials and a space left for a twentieth.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "personhood"
+        ],
+        "source": "Wutchu 'Ben' Uptu"
+       },
+       "lucidity": 9,
+       "relationship": {
+        "ben": 2
+       }
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Leave him with his palms on the table.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "masks": {
+   "text": "They're old masks.\n\n... Mm. You gonna sit there. All right. You gonna sit there and not say the next thing and wait for me, which is a technique, my friend, and I have been waited at by better than you and I have outlasted every one of 'em.\n\nBut I'm eighty-eight. And waiting's cheaper when you got more of it than the other fella, and for the first time in my life I don't.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "He wants to be asked. He has wanted to be asked for a very long time and has arranged his whole manner so that nobody would, and the arrangement has worked, and it has been the great disappointment of his life."
+    }
+   ],
+   "options": [
+    {
+     "id": "wait",
+     "text": "Say nothing. Wait.",
+     "check": {
+      "id": "ben:wait",
+      "skill": "SAVOIR_FAIRE",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "You wait.\n\nIt takes a long time. The fire settles twice. A man comes in, is fed, and leaves, and neither of you moves, and Ben's palms stay flat on the oak the whole while.\n\n\"They come in,\" he says at last. \"That's the thing you're wanting. They come in.\n\nI don't carve. Never carved a day. My father didn't carve, his mother didn't carve. A mask *arrives* — on the step, in the morning, no wrapping, no note — and it's somebody, and it's always somebody from this parish, and by the time I've got it inside I know where it goes on that wall and I have never once been wrong about where it goes.\"",
+      "failure_text": "You wait for about forty seconds and then you say something, because forty seconds is a long time and because the silence had a shape in it that wanted filling.\n\nBen nods, kindly, and answers what you asked, and what you asked was not the thing. He is very good at this and he is not being unkind. He has simply been given a door and closed it, and he will hold it closed for the rest of the evening out of something that is not quite relief.",
+      "success": "masks_arrive",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_masks_arrive",
+        "title": "They arrive on the step",
+        "text": "Nobody at Giddyup carves the masks. They arrive on the step in the morning, unwrapped and unlabelled, always depicting a living Reefer, and Ben has never been wrong about where each one goes.",
+        "beat": "revilo",
+        "tags": [
+         "revilo",
+         "identity"
+        ],
+        "source": "Wutchu 'Ben' Uptu"
+       },
+       "lucidity": 13,
+       "relationship": {
+        "ben": 2
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Old masks. All right.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "masks_arrive": {
+   "text": {
+    "low": "Now. The one you're really asking about.\n\nThat one came thirty years ago and it came *wrong*. Every other one, I knew the spot before I was through the door. That one I stood holding for two hours, my friend, two hours in that doorway with a face in my hands, and there wasn't a spot. Not anywhere on that wall. Not a gap, not a nail, nothing that would take it.\n\nSo I put it behind the fisherman. And that's not hanging it and it's not throwing it out and I have been not-deciding for thirty years and I'd have gone to my grave not-deciding if you hadn't walked in here with that face on it.",
+    "high": "Now. The one you're really asking about.\n\nThat one came thirty years ago and it came *wrong*. Every other one, I knew the spot before I was through the door. That one I stood holding for two hours in that doorway with a face in my hands, and there wasn't a spot. Not a gap, not a nail, nothing that would take it.\n\nSo I put it behind the fisherman. That ain't hanging it and it ain't throwing it out, and I've been not-deciding for thirty years, and I'd have gone to my grave not-deciding if you hadn't walked in with that face on it."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_no_spot_for_it",
+     "title": "There was no spot for it",
+     "text": "The hidden mask arrived thirty years ago and, uniquely, had no place on the wall. Ben held it in the doorway for two hours and then put it behind the fisherman, and has been not-deciding since.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "revilo",
+      "identity",
+      "kindness"
+     ],
+     "source": "Wutchu 'Ben' Uptu"
+    },
+    "lucidity": 14,
+    "relationship": {
+     "ben": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Thirty years is a long time to hold a door.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "names": {
+   "text": "Yeah.\n\nYeah, they're under there. My name's under there and my father's is and his mother's is, and yours is, and I've known yours was under there since about four days after they pulled you out the water, and I've sat over it every night since with my hands flat on it like that'd help.\n\nAsk me the question. Go on. Ask me the one you've been carrying up that hill.",
+   "options": [
+    {
+     "id": "the_date",
+     "text": "\"What is the date beside my name?\"",
+     "goto": "the_date"
+    },
+    {
+     "id": "yours",
+     "text": "\"What's the date beside yours?\"",
+     "goto": "his_date"
+    }
+   ]
+  },
+  "the_date": {
+   "text": {
+    "low": "Don't know. Can't read 'em. Never could — I can see there's a number and I can't hold it, and I've had eighty-eight years and a good pair of eyes and I can't hold it.\n\nBut I know it moves. And I know which way it moves, because I've watched other folks' move, and they only ever go one way, and when a fella's number gets small he generally starts turning up here more, and he generally starts saying things he ain't said before.\n\nYou been here three times this fortnight, my friend. You never come up this hill in your life before that.",
+    "high": "Don't know. Can't read 'em — I can see there's a number and I can't hold it, and I've had eighty-eight years and a good pair of eyes.\n\nBut I know it moves, and I know which way, because I've watched other folks'. They only ever go one way. And when a fella's number gets small he starts turning up here more, and he starts saying things he ain't said before.\n\nYou been here three times this fortnight. You never come up this hill in your life before that."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_numbers_go_one_way",
+     "title": "They only go one way",
+     "text": "Ben cannot read the carved numbers but has watched them shrink for others. When a number gets small the person starts coming to Giddyup more, and starts saying things they have not said before.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "countdown"
+     ],
+     "source": "Wutchu 'Ben' Uptu"
+    },
+    "lucidity": 12,
+    "morale": -6,
+    "relationship": {
+     "ben": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"No. I never did.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "his_date": {
+   "text": {
+    "low": "He laughs. It is the first laugh out of him all evening and there is nothing dark in it at all.\n\n\"Small, my friend. Real small. Been small a while now and it don't trouble me and I'll tell you why, and then you can put your hands flat and we'll have some ribs.\n\nI been sat at the middle of this table fifty years feeding a parish that don't know it's being fed. Every single one of them faces on that wall has eaten at this table and been asked what they been up to, and about half of 'em told me, and I have carried it, and there ain't nobody carrying mine and there never was.\n\nThat's not a complaint. That's the *job*. A man who's got a small number and a full table has come out ahead and don't let nobody tell you different.\"",
+    "high": "He laughs — the first laugh out of him all evening, and there is nothing dark in it.\n\n\"Small, my friend. Real small, and it don't trouble me, and I'll tell you why and then we'll have some ribs.\n\nI been sat at the middle of this table fifty years feeding a parish that don't know it's being fed. Every face on that wall has eaten here and been asked what they been up to, and about half of 'em told me, and I carried it. Ain't nobody carrying mine and there never was.\n\nThat ain't a complaint. That's the *job*.\""
+   },
+   "effects": {
+    "morale": 12,
+    "relationship": {
+     "ben": 2
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Then ask me. Properly.\"",
+     "goto": "knows"
+    }
+   ],
+   "narration": true
+  },
+  "knows": {
+   "text": {
+    "low": "I know you got raised by two people who made things and neither of 'em was ever satisfied with a thing they made, and I know you were eighteen when that stopped, and I know you have never once in twenty-six years said the word 'orphan' out loud about yourself.\n\nAnd I never met your people and I ain't been off this hill since 1981.\n\nNow — before you get up and go pale on my floor — I want to tell you what it's like from in here, because ain't nobody ever asked and it ain't what you think.",
+    "high": "I know you got raised by two people who made things and neither of 'em was ever satisfied with a thing they made, and I know you were eighteen when that stopped, and I know you have never once in twenty-six years said the word 'orphan' out loud about yourself.\n\nAnd I never met your people, and I ain't been off this hill since 1981.\n\nNow — before you go pale on my floor — let me tell you what it's like from in here. It ain't what you think."
+   },
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 11,
+     "text": "He led with the hardest one and then immediately offered to explain himself. That is not a man showing off. That is a man who has decided you can take it and is standing close in case you cannot."
+    }
+   ],
+   "options": [
+    {
+     "id": "what_is_it_like",
+     "text": "\"What is it like?\"",
+     "goto": "what_its_like"
+    },
+    {
+     "id": "back",
+     "text": "Sit down. Say nothing.",
+     "goto": "what_its_like"
+    }
+   ]
+  },
+  "what_its_like": {
+   "text": {
+    "low": "It ain't knowing. That's the wrong word and I've never had a better one till tonight and I'll try it on you.\n\nIt's *remembering*. Same feel exactly — same warmth, same certainty, same little bit of embarrassment. I remember your mother at a table with her back to a door. I remember it the way I remember my own wedding.\n\nAnd I wasn't there, my friend. I was not there, and I have got a whole life of memories in me that I was not there for, and about a third of 'em ain't mine, and I have never been able to tell you which third.",
+    "high": "It ain't knowing. Wrong word, and I've never had a better one till tonight.\n\nIt's *remembering*. Same feel exactly — same warmth, same certainty, same little bit of embarrassment. I remember your mother at a table with her back to a door, the way I remember my own wedding.\n\nAnd I wasn't there. I got a whole life of memories I was not there for, and about a third of 'em ain't mine, and I have never been able to tell which third."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_remembering_not_knowing",
+     "title": "Not knowing — remembering",
+     "text": "Ben does not know things about strangers; he remembers them, with full warmth and certainty. Roughly a third of his memories are of events he was not present for, and he cannot tell which third.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "identity",
+      "personhood"
+     ],
+     "source": "Wutchu 'Ben' Uptu"
+    },
+    "lucidity": 13,
+    "relationship": {
+     "ben": 1
+    }
+   },
+   "options": [
+    {
+     "id": "shared",
+     "text": "\"A woman at a table with her back to a door, saying 'And furthermore—'.\"",
+     "requires": {
+      "clue": "c_mother_line"
+     },
+     "goto": "shared_memory"
+    },
+    {
+     "id": "back",
+     "text": "\"...Ribs, then.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "shared_memory": {
+   "text": {
+    "low": "His palms come off the table.\n\nIn fifty years, according to every soul in this parish, Wutchu Ben Uptu's palms have not come off that table for anything short of a funeral.\n\n\"In your voice,\" he says. \"She said it in *your* voice.\"\n\n\"Yes.\"\n\n\"I never told nobody that part. Fifty years, I never told nobody that part, because that's the part where a man sounds like he's lost it — the memories ain't wrong, my friend, the memories is *fine*, it's that everybody in 'em talks the same. Every one. Every person in every memory I ain't earned. They all got the one voice and it ain't mine.\"\n\nHe looks at you across twenty-two feet of oak with several hundred names under it.\n\n\"It's yours.\"",
+    "high": "His palms come off the table. According to every soul in this parish they have not come off it in fifty years for anything short of a funeral.\n\n\"In your voice,\" he says. \"She said it in *your* voice.\"\n\n\"Yes.\"\n\n\"I never told nobody that part. That's the part where a man sounds like he's lost it — the memories ain't wrong, the memories is *fine*, it's that everybody in 'em talks the same. Every person in every memory I ain't earned. One voice, and it ain't mine.\"\n\nHe looks at you across twenty-two feet of oak with several hundred names under it.\n\n\"It's yours.\""
+   },
+   "effects": {
+    "clue": {
+     "id": "c_everyone_has_your_voice",
+     "title": "Everybody in them has your voice",
+     "text": "In every memory Ben did not earn, every person speaks in one voice — and it is Oliver's. He has never told anybody this part in fifty years.",
+     "beat": "revilo",
+     "tags": [
+      "revilo",
+      "identity",
+      "manuscript",
+      "personhood"
+     ],
+     "source": "Wutchu 'Ben' Uptu"
+    },
+    "lucidity": 18,
+    "morale": -9,
+    "relationship": {
+     "ben": 2
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Put your hands flat on the table.",
+     "goto": "root"
+    }
+   ]
+  },
+  "hours": {
+   "text": {
+    "low": "Never shut for you. Shut plenty for others.\n\nMan came up here last winter, freezing, banging on that door, and I was stood on the other side of it with the fire going and I could not open it. Not wouldn't. Could not. Hand would not go to the bolt, and I have never in my life been unkind to a cold man.\n\nHe got taken in at the Inn and he was fine. But I stood there with my hand not going to the bolt, my friend, and I have thought about it every day since, and what I have come to is this: this place ain't open when folks need it. It's open when it's *needed*. And them is not the same, and the difference is who's doing the needing.",
+    "high": "Never shut for you. Shut plenty for others.\n\nMan came up here last winter, freezing, banging on that door, and I was stood the other side of it with the fire going and I could not open it. Not wouldn't. Could not. Hand would not go to the bolt, and I have never in my life been unkind to a cold man.\n\nHe got taken in at the Inn and he was fine. But what I come to is this: this place ain't open when folks need it. It's open when it's *needed*. And them ain't the same, and the difference is who's doing the needing."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_open_when_needed",
+     "title": "Open when it is needed, not when people need it",
+     "text": "Ben once physically could not open the door to a freezing man. His conclusion: Giddyup is not open when people need it, but when it is needed — and the difference is who is doing the needing.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "manuscript",
+      "personhood"
+     ],
+     "source": "Wutchu 'Ben' Uptu"
+    },
+    "lucidity": 11,
+    "relationship": {
+     "ben": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

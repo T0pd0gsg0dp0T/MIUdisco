@@ -1,0 +1,301 @@
+{
+ "npc": "bud",
+ "nodes": {
+  "root": {
+   "text": "BUT — and I want to get in front of this — whatever you're about to raise, it's normal, it's been looked at, and it's normal.",
+   "options": [
+    {
+     "id": "sky",
+     "text": "\"There is thirty feet of sky in a two-storey building.\"",
+     "goto": "sky",
+     "requires": {
+      "clue": "c_indoor_sky"
+     }
+    },
+    {
+     "id": "rain",
+     "text": "\"It is raining on one armchair and not the other.\"",
+     "goto": "rain"
+    },
+    {
+     "id": "trolley",
+     "text": "\"You have been holding that trolley all evening.\"",
+     "goto": "trolley"
+    },
+    {
+     "id": "why",
+     "text": "\"Bud. Why do you start every sentence with BUT?\"",
+     "goto": "why",
+     "once": true
+    },
+    {
+     "id": "bud_look",
+     "text": "Do not ask about the ceiling. Look at what he is standing under.",
+     "once": true,
+     "check": {
+      "id": "bud:bud_look",
+      "skill": "PERCEPTION",
+      "dc": 10,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "He is not standing under the light well. He is standing beside it, exactly, at the edge of where it would come down — and the floor there has been worn to a different colour in the shape of a man standing.\n\nHe has stood in that spot, every day, for long enough to wear the boards, and it is the one place in this room the thirty feet of sky is not above.",
+      "failure_text": "BUT it's a light well, he says, and you look up at it rather than at him, which is what the sentence is for, and it works, and thirty feet of indoor weather does what it does.",
+      "success_effects": {
+       "clue": {
+        "id": "c_worn_boards_beside_it",
+        "title": "Worn to the shape of a man standing",
+        "text": "Bud stands beside the light well, never under it, and has worn the boards to a different colour doing so.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "kindness",
+         "personhood"
+        ],
+        "source": "Bud Onkuhdonk"
+       },
+       "lucidity": 8,
+       "relationship": {
+        "bud": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Leave him with the trolley.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "sky": {
+   "text": "BUT it's a light well.\n\nBUT it's a light well and it's been a light well since the refurbishment and the reason it goes up further than the building is that it goes up further than the building, and if you want to take that up with somebody you can take it up with the parish, and I've got the paperwork, and the paperwork says light well.\n\nBUT.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 11,
+     "text": "He got to the end of that and said BUT again, with nothing after it, and stopped. That last BUT was not the start of a sentence. It was a man putting a hand out to hold a door shut."
+    }
+   ],
+   "effects": {
+    "lucidity": -4
+   },
+   "options": [
+    {
+     "id": "press",
+     "text": "\"There is a moon in it.\"",
+     "check": {
+      "id": "bud:sky:press",
+      "skill": "RHETORIC",
+      "dc": 13,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_proofing_tick": 2
+      },
+      "success_text": "\"BUT it's a—\"\n\nAnd nothing. He gets three words in and the sentence does not arrive, and he stands there with his hand on the brass rail and his mouth open and something behind his face going through the options at speed and finding none.\n\nThen, at a completely different volume, and without the BUT:\n\n\"There's a moon in it. I know there's a moon in it. I've known there's a moon in it for nine years and every single day I have got up and come in here and said it's a light well, out loud, before anybody asks, because—\"\n\nHe stops. He looks at the ceiling, which is a night sky, and he does not look at it for long.\n\n\"Because the year I didn't say it, the second floor went. Not fell. Went. Was not there for most of an afternoon, with four guests on it, and then it was, and none of them ever knew, and I got them all down and I never told Josh and I never told anybody and I said it's a light well every day since and it has not gone again.\"",
+      "failure_text": "\"BUT that's the *skylight*.\"\n\nAnd he is off — nine minutes on glazing, on the parish, on a firm in the capital who did the work, on a man called Petherick who is dead and cannot be asked, and every clause of it is delivered with the specific ferocity of a man building a wall out of whatever is to hand, and by the end of it your own certainty about what is in that ceiling has gone soft at the edges in a way you resent.",
+      "success": "sky_truth",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_bud_holds_the_floor",
+        "title": "The year he didn't say it",
+        "text": "Bud says 'it's a light well' aloud every day, pre-emptively, because the one year he did not, the Inn's second floor was not there for most of an afternoon with four guests on it. It has not gone since.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "language",
+         "denial",
+         "personhood"
+        ],
+        "source": "Bud Onkuhdonk"
+       },
+       "lucidity": 16,
+       "relationship": {
+        "bud": 2
+       },
+       "morale": -5
+      },
+      "failure_effects": {
+       "lucidity": -8,
+       "morale": -3
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "Let him have the light well.",
+     "goto": "root"
+    }
+   ]
+  },
+  "sky_truth": {
+   "text": {
+    "low": "BUT — and I'm keeping the BUT, I've earned the BUT — you're not to say it in here.\n\nI'm not asking as staff. Josh doesn't know and Josh is happy and Josh is the best man in this parish and he tells stories about this building that'd take your arm off if you thought about them, and he doesn't, and he sleeps.\n\nYou go around saying there's a moon in my ceiling and one day somebody agrees with you. And then there's a moon in my ceiling, and it's *established*, and I can't say it's a light well any more, because you can't say a thing is a light well after everybody's agreed it's a moon.\n\nThat's all I've got. That's the whole of my job. I say it first and I say it every day and the building holds.",
+    "high": "BUT — and I'm keeping the BUT, I've earned the BUT — you're not to say it in here.\n\nI'm not asking as staff. Josh doesn't know, and Josh is happy, and Josh is the best man in this parish, and he sleeps.\n\nYou go around saying there's a moon in my ceiling and one day somebody agrees with you. And then there *is* a moon in my ceiling, and it's established, and I can't say it's a light well any more — because you can't call a thing a light well after everybody's agreed it's a moon.\n\nThat's the whole of my job. I say it first, I say it every day, and the building holds."
+   },
+   "effects": {
+    "flag": {
+     "bud_confided": true
+    },
+    "relationship": {
+     "bud": 1
+    },
+    "clue": {
+     "id": "c_say_it_first",
+     "title": "He says it first, every day",
+     "text": "Bud's denials are pre-emptive by design: a thing cannot be called a light well once everybody has agreed it is a moon. He gets in first, daily, and the building holds.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "language",
+      "denial",
+      "personhood"
+     ],
+     "source": "Bud Onkuhdonk"
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...All right, Bud.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "rain": {
+   "text": "BUT that's a leak.\n\nBUT that's a leak and it's been reported and there's a man coming and the man is called Landy and he does the Hang-Hi, and you'll know him, and he's coming Thursday and he's been coming Thursday for a while now but he is coming.",
+   "effects": {
+    "lucidity": -3
+   },
+   "options": [
+    {
+     "id": "leak_from",
+     "text": "\"A leak from where? There is sky above it.\"",
+     "check": {
+      "id": "bud:rain:from",
+      "skill": "LOGIC",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "\"BUT from the— from the—\"\n\nHe points up. His arm gets about halfway and he watches it going and brings it back down and puts the hand back on the brass rail where it lives.\n\n\"From above,\" he says. \"Leaks come from above. That's the whole of what I know about leaks and I've been leaning on it for nine years and I would very much appreciate it if you'd let me keep it.\"",
+      "failure_text": "\"BUT from ABOVE. Where else. Where else does water come from, in a building, when it's coming down.\" And that is, infuriatingly, an argument.",
+      "success": "root",
+      "failure": "root",
+      "success_effects": {
+       "relationship": {
+        "bud": 1
+       },
+       "lucidity": 5
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Thursday, then.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "trolley": {
+   "text": "BUT that's the job.\n\nBUT that's the job and I'll thank you not to make a study of me doing it. There's four bags on that trolley and they belong to guests and they're going up when the guests say they're going up and until then a man stands with his hand on the rail because that is what a bellhop *is*.",
+   "passive": [
+    {
+     "skill": "SAVOIR_FAIRE",
+     "dc": 12,
+     "text": "There is no register entry for any guest with luggage waiting. You read the register. Four bags, no owners, and a man holding them for people who are not in the book."
+    }
+   ],
+   "options": [
+    {
+     "id": "whose",
+     "text": "\"Whose bags are they?\"",
+     "check": {
+      "id": "bud:trolley:whose",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_bud_holds_nothing": 3
+      },
+      "success_text": "\"BUT they're—\"\n\nAnd then he does something he has not done in the nine years you have been coming here, which is that he takes his hand off the rail.\n\nThe trolley is still there. He looks at it with the expression of a man checking.\n\n\"They're nobody's,\" he says. \"There's never been a name on one. They change. That tartan one was leather in the spring and I never touched it and nobody ever came for it and I have been holding luggage for nine years for people who have not arrived, and I'll tell you what I've worked out, and then I'm going to put my hand back.\n\nThey're not waiting to go up. They're waiting to be *for* somebody. And as long as I'm stood here holding them like they're for somebody, they haven't got round to not being.\"\n\nHe puts his hand back on the rail. The knuckles go white in the usual place.",
+      "failure_text": "\"BUT they're the *guests'*.\" And the hand does not leave the rail, and the sentence does not get a second clause, and after a while it becomes clear that standing here is a thing you are doing to a man who has a job.",
+      "success": "trolley_truth",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_luggage_for_nobody",
+        "title": "Waiting to be for somebody",
+        "text": "Bud has held four unclaimed bags for nine years. They change; no name has ever been on one. His conclusion: they are not waiting to go up, they are waiting to be for somebody, and his holding them keeps that pending.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "denial",
+         "personhood"
+        ],
+        "source": "Bud Onkuhdonk"
+       },
+       "lucidity": 12,
+       "relationship": {
+        "bud": 2
+       },
+       "morale": -4
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "Leave the man his rail.",
+     "goto": "root"
+    }
+   ]
+  },
+  "trolley_truth": {
+   "text": "BUT don't put that anywhere.\n\nI've never said it. Nine years and I've never said it and I've said it to you because you asked it like you wanted the answer and not like you wanted to be right, and there's a difference, and about four people in this parish know there's a difference.",
+   "effects": {
+    "relationship": {
+     "bud": 1
+    },
+    "morale": 5
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"It won't go anywhere.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "why": {
+   "text": {
+    "low": "BUT because—\n\n... BUT.\n\nBUT because if I start with BUT then whatever comes next is an argument, and an argument's got two sides, and as long as a thing's got two sides it hasn't settled. You settle a thing by agreeing with it. Nobody ever settled anything by objecting to it.\n\nSo I object. To all of it. Every day. First thing. And I'll keep objecting till they carry me out, and this establishment will still have a light well in it, and Josh will still be telling that story about the fella who came in from Mountain Avenue, and everybody will still be having a lovely time.",
+    "high": "BUT because—\n\n... BUT.\n\nBUT because if I start with BUT then whatever comes next is an argument, and an argument's got two sides, and as long as a thing's got two sides it hasn't settled. You settle a thing by agreeing with it. Nobody ever settled anything by objecting to it.\n\nSo I object. To all of it. Every day. First thing. And I'll keep objecting till they carry me out, and this establishment will still have a light well in it, and everybody will still be having a lovely time."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_bud_doctrine",
+     "title": "Nothing settles while it is being argued with",
+     "text": "Bud's BUT is deliberate: an argument has two sides, and a thing with two sides has not settled. He objects to everything, daily, first, to keep the Inn unsettled.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "language",
+      "denial",
+      "personhood"
+     ],
+     "source": "Bud Onkuhdonk"
+    },
+    "lucidity": 9,
+    "relationship": {
+     "bud": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

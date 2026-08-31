@@ -1,0 +1,365 @@
+{
+ "npc": "soliloquy",
+ "nodes": {
+  "root": {
+   "text": "You have come to the house of the horizontal. Mind the threshold — it is the only part of my establishment that has ever asked anything of anybody, and what it asks is that you notice which way you are going through it.",
+   "options": [
+    {
+     "id": "plates",
+     "text": "\"The plates carry my name. Including a middle name nobody here knows.\"",
+     "goto": "plates",
+     "requires": {
+      "clue": "c_own_name"
+     }
+    },
+    {
+     "id": "ledger",
+     "text": "\"Forty interments paid for in advance by the Coalition.\"",
+     "goto": "ledger",
+     "requires": {
+      "clue": "c_coalition_prepaid"
+     }
+    },
+    {
+     "id": "vault",
+     "text": "\"There is a vault at the end of the west corridor with no plate on it.\"",
+     "goto": "vault"
+    },
+    {
+     "id": "name",
+     "text": "\"Soliloquy is not a name. It is a stage direction.\"",
+     "goto": "name",
+     "once": true
+    },
+    {
+     "id": "sol_shiv",
+     "text": "Stop listening to the words and listen to the room she is keeping.",
+     "once": true,
+     "check": {
+      "id": "soliloquy:sol_shiv",
+      "skill": "SHIVERS",
+      "dc": 12,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "The verse is a surface. Underneath it the vault room is doing something continuous and quiet, and it is the same thing the fog does and the same thing the lampposts do.\n\nIt is *waiting*, in the specific way of a room that has been told to expect somebody. Nineteen vaults, and the room is not holding them shut. It is holding them ready.",
+      "failure_text": "She speaks in verse and the verse is very good and the room is cold and full of brass, and whatever else it is doing it declines to do it audibly tonight.",
+      "success_effects": {
+       "clue": {
+        "id": "c_holding_them_ready",
+        "title": "Held ready, not held shut",
+        "text": "Under Soliloquy's verse, the vault room is waiting for somebody expected. The nineteen vaults are not being held shut. They are being held ready.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "awakening"
+        ],
+        "source": "Soliloquy"
+       },
+       "lucidity": 11
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Leave her to the maintained silence.",
+     "goto": "__exit__"
+    }
+   ],
+   "narration": true
+  },
+  "plates": {
+   "text": "Everyone sees their own name. Everyone. The bereaved, the curious, the surveyor from the parish who came about the drains and left about something else. It is the house's little courtesy: *here is what you came to look at, and here is who is actually being looked at, and the two are the same and always were.*\n\nIt is a mirror, Mr Onions. A brass one. Mirrors are not clever. They are only very, very attentive.",
+   "options": [
+    {
+     "id": "middle",
+     "text": "\"A mirror doesn't know a middle name I haven't said aloud in thirty years.\"",
+     "check": {
+      "id": "soliloquy:middle_name",
+      "skill": "LOGIC",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_own_name": 2
+      },
+      "success_text": "The rhyme stops. Not the speech — the rhyme, mid-line, the way a musician takes their hands off a keyboard.\n\n\"No,\" she agrees. \"It does not.\"\n\nAnd then she is off again, at speed, in couplets, on the subject of brass as an alloy and the tempers of engravers and a man in 1911 who cut a plate wrong and would not be told — and it is beautiful and it is nine minutes long and it is the most transparent evasion you have been handed in a week, and you know it, and she knows you know it, and somewhere in the sixth minute she puts a hand on the plate you were reading and turns it very slightly toward the wall.",
+      "failure_text": "\"A mirror knows what it is shown, sir, and you have been showing yourself to my brasswork for a fortnight with the whole of your face.\" She is off, in couplets, and the couplets are lovely and go nowhere and are not intended to go anywhere, and by the end of them you are nearer the door than you were.",
+      "success": "plates_evasion",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_soliloquy_evades",
+        "title": "She stopped rhyming",
+        "text": "Pressed on the middle name, Soliloquy conceded the point, then talked for nine minutes about brass, and turned the plate toward the wall while doing it.",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript",
+         "identity"
+        ],
+        "source": "Soliloquy"
+       },
+       "lucidity": 6,
+       "relationship": {
+        "soliloquy": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "plates_evasion": {
+   "text": {
+    "low": "You are still here. Most people take the brass and go.\n\nVery well. A trade, then, since you have earned one by the simple method of not leaving: I will tell you a true thing, and you will not ask me a second true thing tonight, and we will both pretend that is a fair exchange because it is the only exchange on offer.\n\nThe plates do not show you your name. The plates show *the name that is being written*. It is yours at the moment you look because at the moment you look you are what is being written. Step away and it is someone else's, because it is.",
+    "high": "You are still here. Most people take the brass and go.\n\nVery well — a trade, since you have earned one by the simple method of not leaving. I will tell you a true thing, and you will not ask me a second one tonight.\n\nThe plates do not show you your name. They show *the name that is being written*. It is yours at the moment you look because at the moment you look you are what is being written. Step away and it is someone else's, because it is."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_being_written",
+     "title": "The name that is being written",
+     "text": "Soliloquy: the plates do not reflect the reader. They display whatever name is currently being written — which is yours only while you are looking.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "identity",
+      "typewriter"
+     ],
+     "source": "Soliloquy"
+    },
+    "lucidity": 11,
+    "relationship": {
+     "soliloquy": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Take it and stop.",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "ledger": {
+   "text": {
+    "low": "Ah, the prepaid. My favourite column and my least favourite forty souls.\n\nThey arrive settled. No family calls, no estate corresponds, no parish objects. A card comes ahead of the body with four lobes on it and a number, and the number is always exactly right, and I have never once had to invoice the Coalition for a shortfall — which, given that these are forty deaths across sixty years at wildly differing costs of brass, ought to be impossible and is merely *tidy*.",
+    "high": "Ah, the prepaid. My favourite column and my least favourite forty souls.\n\nThey arrive settled. No family calls, no estate corresponds. A card comes ahead of the body with four lobes on it and a number, and the number is always exactly right.\n\nForty deaths across sixty years at wildly differing costs of brass, and I have never once had to invoice for a shortfall. That ought to be impossible. It is merely *tidy*."
+   },
+   "options": [
+    {
+     "id": "what_connects",
+     "text": "\"What did the forty have in common?\"",
+     "check": {
+      "id": "soliloquy:prepaid_link",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_noticed_too_much": 3
+      },
+      "success_text": "\"They talked,\" she says, and there is no rhyme in it. \"That is the whole of it, sir, and I have had sixty years to find a better answer and there is not one.\n\nThey talked about the town. Not gossip — *description*. They were the ones who said out loud that the hallway was longer, that the clock was wrong, that the man behind the counter had answered before the question. They said it in public and they said it more than once.\n\nAnd then a card came, with four lobes on it, and then they did.\"",
+      "failure_text": "\"In common? They were dead, sir, which in my experience is the only thing anybody has ever had in common with anybody.\" A couplet arrives about worms and is genuinely very good, and takes ninety seconds, and answers nothing.",
+      "success": "ledger_talked",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_they_talked",
+        "title": "They said it out loud, more than once",
+        "text": "The forty prepaid interments were people who publicly described Silvora Reefs' impossibilities — repeatedly. Then a four-lobed card arrived, and then they did.",
+        "beat": "quadc",
+        "tags": [
+         "quadc",
+         "oracle"
+        ],
+        "source": "Soliloquy"
+       },
+       "lucidity": 10,
+       "morale": -8,
+       "relationship": {
+        "soliloquy": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "ledger_talked": {
+   "text": "You have been saying it out loud, Mr Onions. To Sobeleaux. To the man with the ice cream, who does not understand and is safer for it. To me, twice, and I do not count, because I am already in the ledger — bottom of page one, in my own hand, settled in advance, sixty years ago.\n\nDo not look like that. It is a very good vault. The light is excellent and there is nothing in it.",
+   "effects": {
+    "clue": {
+     "id": "c_soliloquy_prepaid",
+     "title": "She is in her own ledger",
+     "text": "Soliloquy's own interment is the first prepaid entry, in her own hand, settled sixty years ago. The vault is empty and she has seen it.",
+     "beat": "quadc",
+     "tags": [
+      "quadc",
+      "identity",
+      "kindness"
+     ],
+     "source": "Soliloquy"
+    },
+    "lucidity": 8,
+    "relationship": {
+     "soliloquy": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...\"",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "vault": {
+   "text": "There is no vault at the end of the west corridor.\n\nThere are eleven vaults in the west corridor and I can name every occupant and the third from the end is Mrs Ahearne, who was ninety-one and disagreeable and is now ninety-one and quiet, and there is nothing whatever unusual about her door.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 11,
+     "text": "She said that plainly. No rhyme, no riddle, no soliloquy — the only unornamented sentence she has produced all evening. She lies the way honest people lie: economically, and without decoration, and far too fast."
+    },
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "Eleven vaults. You counted nine on Tuesday and fourteen on Thursday, and she has just produced a number instantly and without checking, and she is the only person in this building who has never once had to count."
+    }
+   ],
+   "options": [
+    {
+     "id": "press_vault",
+     "text": "\"Mrs Ahearne's door has no plate. It has never had provision for one.\"",
+     "check": {
+      "id": "soliloquy:vault_press",
+      "skill": "RHETORIC",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_your_desk": 3,
+       "c_being_written": 2
+      },
+      "success_text": "She is quiet for a while. In a building where silence is a maintained condition, a keeper going quiet is a substantial gesture.\n\n\"No,\" she says. \"It has not.\"\n\n\"I keep it shut. I have kept it shut since before you moved into Sobeleaux's hanging floor, and I will keep it shut for as long as keeping it shut remains something a person can do. It is not locked. I want that understood — I have never locked it, I would not, one does not lock a thing one is protecting *from*.\n\nIt stands ajar because it was left ajar, by somebody who meant to come straight back, and has not, and the width has not changed in eleven years. I have measured the width, Mr Onions. Every Michaelmas. It is the only measurement in this town that has never once disagreed with itself, and I find that far more frightening than any of the ones that do.\"",
+      "failure_text": "\"Mrs Ahearne,\" she says, \"was a woman of firm views about ornament, and left instruction that her door should carry none, and I honour instruction, and that is the end of it and the beginning of a short address on the subject of last wishes—\"\n\nIt is eleven minutes long. It rhymes throughout. You are, by the close of it, in the vestibule.",
+      "success": "vault_ajar",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_width_never_changed",
+        "title": "The one measurement that agrees with itself",
+        "text": "Soliloquy has measured the unmarked vault's two-finger gap every Michaelmas for eleven years. It is the only measurement in Silvora Reefs that has never disagreed with itself. It was left ajar by someone who meant to come straight back.",
+        "beat": "awakening",
+        "tags": [
+         "manuscript",
+         "office",
+         "kindness"
+        ],
+        "source": "Soliloquy"
+       },
+       "lucidity": 13,
+       "relationship": {
+        "soliloquy": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "Let her have Mrs Ahearne.",
+     "goto": "root"
+    }
+   ]
+  },
+  "vault_ajar": {
+   "text": {
+    "low": "You will go and look. Of course you will. You are the sort of man who reads the plates, and the sort of man who reads the plates is the sort of man who opens the door, and I have buried a great many of both.\n\nSo. Since I cannot stop you and have decided, tonight, at some cost, not to try: when you look, look at the *page*. Not the desk. Not the lamp, not the chair, not the split in the trestle leg that you will recognise and that will take the whole of your attention for a minute you cannot spare.\n\nThe page. And whatever is on it — Mr Onions, whatever is on it — do not read it aloud.",
+    "high": "You will go and look. Of course you will. The sort of man who reads the plates is the sort of man who opens the door, and I have buried a great many of both.\n\nSo — since I cannot stop you and have decided, at some cost, not to try: when you look, look at the *page*. Not the desk. Not the lamp, not the split in the trestle leg that will take the whole of your attention for a minute you cannot spare.\n\nThe page. And whatever is on it — do not read it aloud."
+   },
+   "effects": {
+    "flag": {
+     "soliloquy_warned_you": true
+    },
+    "relationship": {
+     "soliloquy": 1
+    },
+    "thought": "backwards_man"
+   },
+   "options": [
+    {
+     "id": "why",
+     "text": "\"Why not aloud?\"",
+     "goto": "aloud"
+    }
+   ],
+   "narration": true
+  },
+  "aloud": {
+   "text": {
+    "low": "Because forty people in my ledger said it out loud.\n\nThat is not a warning about the Coalition, sir, whatever you are about to decide it is. The Coalition are clerks. Clerks arrive *after*.\n\nSaying a thing aloud in Silvora Reefs is how a thing gets to be the case. It is the local physics and every soul in this town obeys it and not one of them has noticed, because you do not notice water. Bud Onkuhdonk says everything is normal, out loud, forty times a day, and at the Outside Inn everything is normal, and that man is holding up a building with his mouth.\n\nSo read the page. Read every word of it. And keep your excellent, tireless, ruinous voice out of it until you have decided what you want to be true.",
+    "high": "Because forty people in my ledger said it out loud.\n\nThat is not a warning about the Coalition, whatever you are about to decide it is. The Coalition are clerks. Clerks arrive *after*.\n\nSaying a thing aloud in Silvora Reefs is how it gets to be the case. It is the local physics, and every soul here obeys it, and not one has noticed, because you do not notice water. Bud Onkuhdonk says everything is normal forty times a day, and at the Outside Inn everything is normal, and that man is holding up a building with his mouth.\n\nSo read the page. Every word. And keep your excellent, ruinous voice out of it until you have decided what you want to be true."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_saying_makes_it_so",
+     "title": "Saying it aloud is how it becomes the case",
+     "text": "Soliloquy: in Silvora Reefs, speaking a thing aloud is what makes it so. Bud Onkuhdonk holds up the Outside Inn with his mouth. The Coalition are clerks who arrive afterwards.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "language",
+      "quadc"
+     ],
+     "source": "Soliloquy"
+    },
+    "lucidity": 15,
+    "relationship": {
+     "soliloquy": 1
+    }
+   },
+   "options": [
+    {
+     "id": "out",
+     "text": "Go and find the page.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "name": {
+   "text": {
+    "low": "It is a stage direction, yes. Well spotted, and late — most people take a fortnight and you have taken a fortnight, so let us not gild it.\n\nHannah O'Dochtaigh went into a vault in 1961 and I came out of one, and the difference between those two sentences is a name, and I chose mine on purpose. A soliloquy is a speech delivered by a person who believes themselves to be alone.\n\nI have delivered one every night for sixty years, sir, in a building full of the horizontal, and I have never once been alone, and I have never once been answered. You may draw whichever conclusion costs you least.",
+    "high": "It is a stage direction, yes. Well spotted, and late.\n\nHannah O'Dochtaigh went into a vault in 1961 and I came out of one, and the difference between those two sentences is a name, and I chose mine on purpose. A soliloquy is a speech delivered by a person who believes themselves alone.\n\nI have delivered one every night for sixty years, in a building full of the horizontal, and I have never once been alone, and never once been answered. Draw whichever conclusion costs you least."
+   },
+   "effects": {
+    "morale": 2,
+    "relationship": {
+     "soliloquy": 1
+    },
+    "clue": {
+     "id": "c_soliloquy_name",
+     "title": "A speech by a person who believes themselves alone",
+     "text": "Hannah O'Dochtaigh went into a vault in 1961; Soliloquy came out of one. She has delivered a soliloquy nightly for sixty years, never alone and never answered.",
+     "tags": [
+      "identity"
+     ],
+     "source": "Soliloquy"
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

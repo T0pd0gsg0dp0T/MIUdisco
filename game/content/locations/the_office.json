@@ -1,0 +1,280 @@
+{
+ "id": "the_office",
+ "name": "The Office",
+ "subtitle": "Nine feet by eleven. Everything in Silvora Reefs was measured from here.",
+ "description": "Nine by eleven. You have had that measurement for a while now, off a bowl of something soft at Chef D.'s, and having it does nothing at all to prepare a man for standing in it.\n\nA green-shaded lamp. A desk made of a door on two trestles, and the left trestle is split, and you have been meaning to see to it since before the water. Paper in drifts — not stacked, drifted, the way paper drifts when nobody has tidied since there was a reason to. A cup with a ring under it, and the ring is older than the cup, and the cup is cold.\n\nA waste basket with a great deal in it.\n\nAnd a typewriter, black and heavy, with a page in it, and the page is not blank.\n\nThere is one chair at the desk and it is pushed back. There is a second chair drawn up at an angle that means somebody expects to be talked to.\n\nHe is standing at the window. There is no window.",
+ "revisit": "The room has not changed and will not. It is the one place in the world that has never once been described twice.",
+ "lucid": {
+  "2": "The sound you have been chasing across ten buildings for a fortnight is not happening in this room. It has stopped. It stopped when you came through.",
+  "3": "Every measurement you have taken in Silvora Reefs resolves here: eleven feet of hallway, nine vaults, four inches of boundary, twenty-two paces, two seconds. All of them are dimensions of this room or of the man in it.",
+  "4": "You are inside the paragraph. It is smaller than you expected and there is a cup in it."
+ },
+ "ambient": [
+  "The lamp does not flicker. Nothing in this room does anything at all unless it is being described.",
+  "Out beyond the walls, at an enormous distance, a town continues, and you can hear it the way you hear a party through a floor."
+ ],
+ "on_enter": {
+  "flag": {
+   "reached_the_office": true
+  },
+  "lucidity": 20
+ },
+ "objects": [
+  {
+   "id": "page",
+   "name": "the page in the machine",
+   "aliases": [
+    "page",
+    "typewriter",
+    "machine",
+    "paper"
+   ],
+   "description": "Half a sheet showing above the platen. The type is dense and the left margin is wide and the right is ragged, and you have seen this exact shape once before, in melted cheese, for four seconds.\n\nIt is the account of a man coming through a seam into a room nine feet by eleven. It is in the present tense. It stops in the middle of a sentence — not at a full stop, not at a comma, at a place where nothing in the grammar suggests stopping — and the carriage is sitting where it was left.\n\nThe last four words are: *and he does not*",
+   "repeat": "It has not gained a word. Nothing in this room is going to gain a word while you are standing in it, and that is what the whole town has been trying to tell you for a fortnight.",
+   "monocle": "The gold does nothing. There is nothing under this. It is a page and it says what it says and it is the first entirely honest object you have handled since the harbour.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 11,
+     "text": "It stopped when you came through. Not before. The sentence describing your arrival is unfinished because you arrived, and the writing of you and the being of you cannot happen in the same second."
+    },
+    {
+     "skill": "RHETORIC",
+     "dc": 12,
+     "text": "'And he does not' is a subject, an auxiliary and a negation with no verb after it. It is the most open construction in the language. Anything at all can go there and whatever goes there will be true."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_the_unfinished_sentence",
+     "title": "and he does not",
+     "text": "The page in the machine describes Oliver arriving in this room and stops mid-sentence at 'and he does not' — a subject, an auxiliary and a negation, with the verb missing.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "manuscript",
+      "kindness"
+     ],
+     "source": "the page in the machine"
+    },
+    "lucidity": 10
+   },
+   "check": {
+    "id": "office:page:hand",
+    "skill": "HAND_EYE",
+    "dc": 12,
+    "kind": "white",
+    "prompt": "There is a page in the machine and it is not blank. Take it out without tearing it and without him stopping you.",
+    "success": "Platen release, one turn, and it comes up clean.\n\nIt is a description of a man standing in a small room holding a page he has just taken out of a machine. It is in the present tense. It stops mid-sentence, and the sentence it stops in the middle of is this one.",
+    "failure": "You have the corner of it and the platen has the rest, and the rest wins by about two inches of tear, and what you are holding is the top of a page and the top of a page says nothing at all.",
+    "success_effects": {
+     "clue": {
+      "id": "c_page_describes_this",
+      "title": "A description of this",
+      "text": "The page in the office typewriter describes a man in a small room taking a page out of a machine, in the present tense, stopping mid-sentence.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "manuscript",
+       "identity"
+      ],
+      "source": "the page in the machine"
+     },
+     "lucidity": 12
+    },
+    "failure_effects": {
+     "morale": -4
+    }
+   }
+  },
+  {
+   "id": "basket",
+   "name": "the waste basket",
+   "aliases": [
+    "basket",
+    "bin",
+    "waste",
+    "rubbish"
+   ],
+   "description": "Full, and not recently. The pages at the bottom have gone the colour of weak tea and the ones at the top are screwed up hard by a hand that was not pleased.\n\nYou flatten a few. They are all the same page. Not the same text — the same *page*, the arrival at the seam, attempted and attempted and attempted, and each attempt gets a little further and each one is struck through, and in every single one the man arriving is described a little more kindly than in the one before.\n\nThe earliest ones call him the tenant. The later ones call him Oliver. The last one, screwed up hardest, the one nearest the top, calls him Ols.",
+   "repeat": "You go through more of them. It does not get better and you were not expecting it to and you go through more of them anyway.",
+   "monocle": "The gold finds a date on each. They are eleven years apart at the bottom and four days apart at the top, and the intervals shorten the whole way up, and the shortening is the shape of somebody running out of ways to put it off.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 10,
+     "text": "Nobody screws a page up that hard because the prose is bad. That is what a page looks like when the writing was fine and the writer could not go on with what it meant."
+    },
+    {
+     "skill": "SAVOIR_FAIRE",
+     "dc": 12,
+     "text": "Count them. Two hundred and change. At the rate the dates are shortening, he has been getting ready to do this for as long as you have been alive in it."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_two_hundred_drafts",
+     "title": "Two hundred attempts at the same page",
+     "text": "The waste basket holds two hundred drafts of Oliver's arrival, struck through, each one naming him a little more kindly than the last — the tenant, then Oliver, then Ols.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "manuscript",
+      "kindness"
+     ],
+     "source": "the waste basket"
+    },
+    "lucidity": 12,
+    "morale": -6
+   },
+   "check": {
+    "id": "office:basket:inland",
+    "skill": "INLAND_EMPIRE",
+    "dc": 13,
+    "kind": "white",
+    "prompt": "A waste basket with a great deal in it. Do not read the pages. Ask the basket what it is for.",
+    "success": "It is not a basket of failures. Every page in it was taken out on purpose and none of them were thrown away — they are *folded*, each one, the same fold, which is not what a man does with a bad page.\n\nThis is not where the drafts died. This is where he put the people he could not make work, and he folded each of them first, and he has never once emptied it.",
+    "failure": "Paper, and a great deal of it, and the specific silence of a container that has been filled slowly over years by somebody who was not enjoying it. Nothing else comes. The basket declines to elaborate.",
+    "success_effects": {
+     "clue": {
+      "id": "c_basket_is_a_grave",
+      "title": "He folded each of them first",
+      "text": "The waste basket in the office holds years of removed pages, every one folded the same way, and it has never been emptied.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "kindness",
+       "personhood"
+      ],
+      "source": "the waste basket"
+     },
+     "lucidity": 10
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "trestle",
+   "name": "the split trestle leg",
+   "aliases": [
+    "trestle",
+    "leg",
+    "desk",
+    "split"
+   ],
+   "description": "The left one. A long clean split up the grain, the sort that happens once and then sits there getting slowly worse while a man works above it and means to see to it.\n\nSomebody has put a shim in. Folded paper, four thicknesses, wedged in tight and gone grey with age, and it is holding, and it has clearly been holding for years.\n\nIt is a page. You get it out without much trouble, because it has been put in to be got out, and it is one of Landy's forms, filled in beautifully, and under REMEDY it says: *none available. Recommend company.*",
+   "repeat": "You put it back. The desk needs it and you have read it and both of those remain true.",
+   "monocle": "Through the gold, the shim is not holding the desk up. The desk is holding the shim in. Somebody has kept a piece of paper somewhere it would be safe and dry for eleven years and has used a broken trestle as the excuse.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 11,
+     "text": "Landy offered to mend this in an afternoon and has offered for years. It has not been mended because mending it would mean taking the shim out."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_the_shim",
+     "title": "The desk is holding the shim in",
+     "text": "The split trestle is shimmed with a copy of the form reading 'REMEDY: none available. Recommend company.' It has been kept there, safe and dry, for eleven years, and the break is the excuse.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "kindness",
+      "office"
+     ],
+     "source": "the split trestle leg"
+    },
+    "lucidity": 8
+   },
+   "check": {
+    "id": "office:trestle:inter",
+    "skill": "INTERFACING",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "The left trestle is split and has been for a long time. Get under the desk and look at how it is holding.",
+    "success": "It is split and it is holding because somebody shimmed it, and the shim is a folded page, and the folded page has been under there long enough to have taken the shape of the load.\n\nHe fixed it with a person. Whatever is written on that shim, it has been holding this desk up for eleven years, and unfolding it would put the desk on the floor.",
+    "failure": "Split, shimmed, holding. The shim is paper of some kind and it is compressed to the density of wood and it is not coming out without the desk coming down, and you are not going to be the one who does that in front of him.",
+    "success_effects": {
+     "clue": {
+      "id": "c_shimmed_with_a_person",
+      "title": "Shimmed with a page",
+      "text": "The split trestle in the office is held up by a folded page compressed to the density of wood. Unfolding it would drop the desk.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "kindness",
+       "personhood"
+      ],
+      "source": "the split trestle leg"
+     },
+     "lucidity": 9
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "window",
+   "name": "the window that is not there",
+   "aliases": [
+    "window",
+    "view"
+   ],
+   "description": "He is standing at it. There is no window. There is wall, plastered, papered, and unremarkable, and a man in green with purple accents standing in front of it in the exact attitude of a man looking out of one — weight on one hip, one hand in a pocket, head at the angle of somebody watching weather.\n\nGo and stand beside him. There is nothing there. There is a wall at the distance a wall would be.\n\nHe has been standing at it for eleven years.",
+   "repeat": "Still nothing there. He has not moved. He does not appear to require there to be anything there.",
+   "monocle": "Through the gold there is a window and it looks out on Silvora Reefs: the harbour, the green lamps, Durry Kwain's sign the colour of a boiled sweet, the obsidian up on the hill. All of it, in twilight, in enormous detail, from an angle nothing in the town could take.\n\nThe monocle has been showing you what things are made of for eleven years. It is showing you that this wall is made of the whole town.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "He is not watching for anything and he is not waiting for anybody. This is where a man stands when he has finished for the day, in a room with no outside, and wants to look at something that is not the desk."
+    }
+   ],
+   "effects": {
+    "monocle_effects": {
+     "clue": {
+      "id": "c_wall_is_the_town",
+      "title": "The wall is made of the town",
+      "text": "Through the monocle the blank wall is a window onto the whole of Silvora Reefs in enormous detail, from an angle nothing in the town could take. It is what he looks at when he has finished for the day.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "kindness",
+       "personhood"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 12
+    }
+   },
+   "check": {
+    "id": "office:window:vol",
+    "skill": "VOLITION",
+    "dc": 13,
+    "kind": "white",
+    "prompt": "There is a window and there is a man at it, and the whole room is arranged so that you will look where he is looking. Look at something else instead.",
+    "success": "You keep your attention where you put it. The window goes on being a window and the man goes on being at it and the arrangement goes on being an arrangement, and none of it acquires the authority it was built to acquire.\n\nWhen he speaks it is a man speaking in a small room, nine feet by eleven, at a person who is standing up.",
+    "failure": "The window is doing what the window was put there to do. Weather behind it, and the long violet, and the parish going about its business a very long way down — and the room composes itself around the view, and around him, and around you as the smaller of the two people in it.",
+    "success_effects": {
+     "clue": {
+      "id": "c_a_man_in_a_small_room",
+      "title": "A man in a small room",
+      "text": "Refusing the office's arranged sightline leaves it what it is: a nine-by-eleven room with two people in it, one of them standing.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "revilo"
+      ],
+      "source": "the office window"
+     },
+     "lucidity": 8,
+     "morale": 6
+    },
+    "failure_effects": {
+     "morale": -8
+    }
+   }
+  }
+ ],
+ "exits": {}
+}

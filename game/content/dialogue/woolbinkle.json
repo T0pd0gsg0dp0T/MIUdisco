@@ -1,0 +1,400 @@
+{
+ "npc": "woolbinkle",
+ "nodes": {
+  "root": {
+   "text": "It's in. It's been in about four minutes, which is — no, that's fine, that's actually ideal, I put it in when I had the feeling and the feeling was about four minutes ago and here you are, so.\n\nSo that's good. That's a good sign about the feeling.",
+   "options": [
+    {
+     "id": "feeling",
+     "text": "\"What feeling?\"",
+     "goto": "feeling"
+    },
+    {
+     "id": "cans",
+     "text": "\"The shelf behind you isn't food.\"",
+     "goto": "cans",
+     "requires": {
+      "clue": "c_the_cans"
+     }
+    },
+    {
+     "id": "poem",
+     "text": "\"Can't Elope Antelope.\"",
+     "goto": "poem",
+     "once": true
+    },
+    {
+     "id": "chuckles",
+     "text": "\"Why do you keep employing Chuckles?\"",
+     "goto": "chuckles"
+    },
+    {
+     "id": "wool_seal",
+     "text": "\"Show me the seal. Let me do one.\"",
+     "once": true,
+     "check": {
+      "id": "woolbinkle:wool_seal",
+      "skill": "HAND_EYE",
+      "dc": 11,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "He shows you — headspace, pressure, the quarter-turn at the end — and lets you do one, and you do it correctly, and the can holds.\n\n\"Right,\" he says, and takes it, and writes on the label in a hand that is not steady: *the night somebody helped*. Then he puts it on the shelf with the others and does not look at it again.",
+      "failure_text": "He shows you and you do it and the seal fails, audibly, and whatever was going into that can is now going into the room instead. He is not angry. He is *quick* — a second can, a proper seal, four seconds flat — and he does not explain what he just caught.",
+      "success_effects": {
+       "clue": {
+        "id": "c_the_night_somebody_helped",
+        "title": "The night somebody helped",
+        "text": "Woolbinkle labels the can you sealed 'the night somebody helped', in an unsteady hand, and shelves it without looking at it again.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "kindness"
+        ],
+        "source": "Woolbinkle"
+       },
+       "lucidity": 8,
+       "relationship": {
+        "woolbinkle": 2
+       }
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Leave before the oven finishes.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "feeling": {
+   "text": {
+    "low": "It's not a — I want to be careful, because people hear 'feeling' and they hear something *mystical*, and it isn't, and I'd hate you to think I was claiming anything.\n\nIt's more like — you know when you've laid a table for somebody and then you hear the gate? It's that. Only I lay the table first and the gate comes after, and it has been coming after for eleven years, and I have stopped being surprised and I have never once stopped being *relieved*.\n\nBecause the alternative, Mr Onions, is that one day I get the feeling and I put one in and nobody comes.",
+    "high": "It's not a — I want to be careful, because people hear 'feeling' and they hear something *mystical*, and it isn't.\n\nIt's more like — you know when you've laid a table for somebody and then you hear the gate? It's that. Only I lay the table first and the gate comes after, and it has been coming after for eleven years, and I have never once stopped being *relieved*.\n\nBecause the alternative is that one day I get the feeling and I put one in and nobody comes."
+   },
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 10,
+     "text": "Every sentence he builds has a trapdoor in it and every trapdoor goes to the same room. He is not talking about pizza and he has not been talking about pizza since you came in."
+    }
+   ],
+   "options": [
+    {
+     "id": "has_it",
+     "text": "\"Has that happened?\"",
+     "check": {
+      "id": "wool:nobody_came",
+      "skill": "EMPATHY",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "\"Once.\"\n\nHe puts the peel down across the counter, which is not where a peel goes.\n\n\"Third of March. I got the feeling about nine and I put one on and I did a good one, I did the three-cheese and I did it properly, and I put it on the warm shelf and I waited, and nobody came, and at about two in the morning I took it off the shelf and I looked at it and the pattern hadn't gone.\n\nThey go in four seconds. Every one, four seconds, eleven years. That one was still going at two in the morning and it was still going when I put it in a can and it is on that shelf now, third from the left, and I have never opened it and I never will.\"\n\nHe picks the peel back up.\n\n\"It said *nearly*. It was a word. It was one word, in cheese, for five hours, and the word was nearly.\"",
+      "failure_text": "\"No! No — no, it hasn't, it's never — and I don't dwell on it, I want to say that, I'm not a dweller. I've got a business and a very good oven and the parish committee are lovely people who are simply doing their jobs.\"\n\nHe smiles. It is an enormous and completely undefended smile and it is worse than any answer.",
+      "success": "third_of_march",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_nearly",
+        "title": "NEARLY, in cheese, for five hours",
+        "text": "On the third of March, Woolbinkle got the feeling, made a pizza, and nobody came. The pattern did not resolve after four seconds — it held for five hours, and it was one word: NEARLY. It is in a can, third from the left, unopened.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "manuscript",
+         "kindness"
+        ],
+        "source": "Woolbinkle"
+       },
+       "lucidity": 15,
+       "relationship": {
+        "woolbinkle": 2
+       },
+       "morale": -5
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "third_of_march": {
+   "text": {
+    "low": "You can have it. The can. If you want it.\n\nNo — listen, before you're polite at me: I have been keeping that on a shelf for a year and a half in a shop where nobody has ever once asked me what's in the cans, and you asked, and that is the entire transaction, and you don't have to want it.\n\nBut it's yours if you want it. It's the only thing in this building I've ever managed to keep and I would quite like to have given it to somebody.",
+    "high": "You can have it. The can. If you want it.\n\nNo — before you're polite at me: I've kept that on a shelf for a year and a half in a shop where nobody has ever once asked what's in the cans, and you asked. That's the entire transaction. You don't have to want it.\n\nBut it's yours if you do. It's the only thing in this building I've ever managed to keep, and I'd quite like to have given it to somebody."
+   },
+   "options": [
+    {
+     "id": "take",
+     "text": "\"I'll take it.\"",
+     "goto": "take_can",
+     "effects": {
+      "item": {
+       "id": "can_nearly",
+       "name": "a can labelled 'Third of March, NEARLY'",
+       "description": "Sealed, unopened, and holding. Woolbinkle canned five hours of a word that would not resolve, and then gave it to the first person who asked what was in it."
+      },
+      "relationship": {
+       "woolbinkle": 2
+      },
+      "morale": 10
+     }
+    },
+    {
+     "id": "leave_it",
+     "text": "\"Keep it. It's yours.\"",
+     "goto": "leave_can",
+     "effects": {
+      "relationship": {
+       "woolbinkle": 1
+      },
+      "morale": 4
+     }
+    }
+   ],
+   "narration": true
+  },
+  "take_can": {
+   "text": {
+    "low": "He gets it down with both hands and he checks the seal, which does not need checking, and he checks it again.\n\n\"It'll hold,\" he says. \"I did it properly. I do them all properly, I've never done a bad one, that's — anyway. It'll hold.\"\n\nAnd then, to the oven, not to you: \"Eleven years I've been canning things nobody wanted and it turns out the whole time the trick was somebody asking. That's — I'm going to think about that later. I'm going to think about that a lot later and probably at an unhelpful hour.\"",
+    "high": "He gets it down with both hands and checks the seal, which does not need checking, and checks it again.\n\n\"It'll hold,\" he says. \"I did it properly. I do them all properly.\"\n\nAnd then, to the oven rather than to you: \"Eleven years canning things nobody wanted, and it turns out the trick was somebody asking. I'm going to think about that later. Probably at an unhelpful hour.\""
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Thank you, Woolbinkle.\"",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "leave_can": {
+   "text": "\"Right. Yes. No, that's — that's probably right, isn't it. It's mine.\"\n\nHe puts a hand flat on the counter, briefly, the way Ben does, and takes it off again.\n\n\"Nobody's ever said that to me about anything. That it's mine. I've had a lot of things given back and I've never had one *left* with me.\"",
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "cans": {
+   "text": {
+    "low": "No. No, it isn't food, and I'll tell you straight because you've clearly read the labels and there's no version of this where I look better for being coy about it.\n\nI can things. Not preserves — I mean I can, as a verb, as a *practice*. Something happens and it's got a shape and if you leave it out it goes off, or worse, it goes *vague*, and vague is worse than off because you can throw off away.\n\nSo I get it in a can while it's still got its shape. March, patience. That's a can with a March in it. There's four hours of a Tuesday in the one at the end that I would not sell you for the shop.",
+    "high": "No, it isn't food, and I'll tell you straight, because there's no version of this where I look better for being coy.\n\nI can things. Not preserves — I mean *can*, as a practice. Something happens and it's got a shape, and if you leave it out it goes off, or worse it goes *vague*, and vague is worse than off because you can throw off away.\n\nSo I get it in a can while it's still got its shape. March, patience. There's four hours of a Tuesday in the one at the end that I would not sell you for the shop."
+   },
+   "options": [
+    {
+     "id": "why_learn",
+     "text": "\"Where did you learn to do that?\"",
+     "check": {
+      "id": "wool:why_learn",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_cantaloupe": 2
+      },
+      "success_text": "\"After.\"\n\nOne word, and then a long time.\n\n\"You'll have heard the poem. Everybody's heard the poem, it's in three establishments on a wall, somebody set it to music once. Can't Elope Antelope. Very good poem. It's about the worst thing I ever did and it is genuinely a very good poem and I've never been able to be angry about that.\n\nWhat the poem hasn't got in it is the after. And the after is a person standing in a kitchen at four in the morning with a thing that has already happened and cannot be made not to have happened, and the only two options in the world are *carry it about loose* or *put it somewhere it can't get any worse*.\n\nSo I learned to can. And I have canned every single thing since. And I have not done one bad thing in eleven years, Mr Onions, not one, and I would like that written down somewhere it can't go vague.\"",
+      "failure_text": "\"Oh — you pick it up. Trade, mostly. There's a lot of preserving in this line if you go back far enough and I went back further than most.\"\n\nAnd he is talking about brine, at length, warmly, and the door has closed so gently that you would have to be unkind to notice it.",
+      "success": "the_after",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_the_after",
+        "title": "Carry it loose, or put it where it can't get worse",
+        "text": "Woolbinkle learned canning after the thing the poem is about — a practice for holding an event's shape so it cannot go vague. Eleven years, not one bad thing, and he would like that written where it cannot go vague.",
+        "tags": [
+         "woolbinkle",
+         "personhood"
+        ],
+        "source": "Woolbinkle"
+       },
+       "lucidity": 6,
+       "relationship": {
+        "woolbinkle": 2
+       },
+       "morale": -4
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "the_after": {
+   "text": {
+    "low": "And here's the thing I've worked out that you might actually have a use for, since you go about this parish collecting things.\n\nEverything here goes vague. Everything. The menus, the hallways, the count of the vaults, that neon at Mary's — all of it, all the time, and everybody's fine with it because they've never seen anything hold still.\n\nMy cans hold still. Eleven years, forty cans, not one gone vague.\n\nAnd I'm nobody. I'm a franchisee with a bad history and an oven. If *I* can make something in this town that holds — then holding is possible here, Mr Onions, and if holding is possible then somebody has been choosing not to.",
+    "high": "And here's the thing I've worked out that you might have a use for, since you go about collecting things.\n\nEverything here goes vague. The menus, the hallways, the count of the vaults, that neon at Mary's — all of it, all the time, and everybody's fine with it because they've never seen anything hold still.\n\nMy cans hold still. Eleven years, forty cans, not one gone vague.\n\nAnd I'm nobody. If *I* can make something in this town that holds, then holding is possible — and if holding is possible, somebody has been choosing not to."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_holding_is_possible",
+     "title": "Holding is possible here",
+     "text": "Forty of Woolbinkle's cans have held their shape for eleven years in a town where nothing else does. His inference: if holding is possible, somebody has been choosing not to.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "manuscript",
+      "kindness",
+      "personhood"
+     ],
+     "source": "Woolbinkle"
+    },
+    "lucidity": 14,
+    "relationship": {
+     "woolbinkle": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"You are not nobody.\"",
+     "goto": "not_nobody"
+    }
+   ]
+  },
+  "not_nobody": {
+   "text": "He does not say anything for a bit.\n\nThe lights come up about a quarter and the far wall comes in three feet and the room gets appreciably warmer, and neither of you mentions it, and it does not go back for the rest of the evening.",
+   "effects": {
+    "morale": 12,
+    "relationship": {
+     "woolbinkle": 2
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Eat the pizza.",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "poem": {
+   "text": "Yes.\n\nGo on then. You've got the face of a man who's about to do the whole thing at me and I'd honestly rather you did it than sat on it, because sitting on it makes it bigger, and it's already got music.",
+   "options": [
+    {
+     "id": "recite",
+     "text": "Recite it. All of it. To his face.",
+     "check": {
+      "id": "wool:recite",
+      "skill": "RHETORIC",
+      "dc": 12,
+      "kind": "red",
+      "success_text": "You do it properly. Not fast and not cruel — properly, the whole tangle, the cans and the can'ts and the can-can and the belle who would not fool with a full-of-bull fool of a bull antelope, all the way through, at the pace it wants, in a pizzeria, to the antelope it is about.\n\nAnd about two thirds of the way in he starts saying it with you.\n\nHe knows every word. Of course he knows every word. And the two of you finish it together, and there is a silence at the end of it that does not go thick and does not need a laugh, and Woolbinkle says:\n\n\"That's the first time anybody's done it *to* me. Eleven years of hearing it done about me across a room. It's a much better poem when it's aimed.\"",
+      "failure_text": "You get four lines in and it turns in your mouth.\n\nIt is a very funny poem and it is a poem about the worst thing that ever happened to somebody who is standing in front of you holding a peel, and somewhere around the third 'can' the joke goes out of it like heat out of a pan, and you stop.\n\n\"No, go on,\" he says, encouragingly, hopefully, with the whole of his face. \"Go on. It's the good bit next.\"\n\nYou do not go on.",
+      "success": "poem_ok",
+      "failure": "poem_stop",
+      "success_effects": {
+       "relationship": {
+        "woolbinkle": 3
+       },
+       "morale": 15,
+       "clue": {
+        "id": "c_better_when_aimed",
+        "title": "A much better poem when it's aimed",
+        "text": "Recited to Woolbinkle rather than about him, the Can't Elope Antelope resolves into something he can join in with. Eleven years of hearing it across a room; the first time anybody aimed it.",
+        "tags": [
+         "woolbinkle",
+         "wordplay"
+        ],
+        "source": "Woolbinkle"
+       }
+      },
+      "failure_effects": {
+       "relationship": {
+        "woolbinkle": 1
+       },
+       "morale": -6
+      }
+     }
+    },
+    {
+     "id": "dont",
+     "text": "\"No. I'd rather not.\"",
+     "goto": "poem_stop",
+     "effects": {
+      "relationship": {
+       "woolbinkle": 1
+      }
+     }
+    }
+   ]
+  },
+  "poem_ok": {
+   "text": {
+    "low": "Right. Right, and now I'm going to say the bit I've never said, because you've earned about four minutes of me being unbearable.\n\nThe poem's got it wrong in one place. One place, and it's not the cannibalism, the cannibalism is accurate.\n\nShe never said nope. She said *not yet*. And whoever wrote it changed it to nope for the rhyme, and it is a better rhyme, and I have spent eleven years understanding that it is a better rhyme.",
+    "high": "Right. And now the bit I've never said, because you've earned about four minutes of me being unbearable.\n\nThe poem's got it wrong in one place, and it isn't the cannibalism. The cannibalism is accurate.\n\nShe never said nope. She said *not yet*. Whoever wrote it changed it for the rhyme, and it is a better rhyme, and I have spent eleven years understanding that it is a better rhyme."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_changed_for_the_rhyme",
+     "title": "She said 'not yet'",
+     "text": "Woolbinkle: the poem's one inaccuracy is the refusal. She said 'not yet'. It was changed to 'nope' for the rhyme, and it is a better rhyme.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "wordplay",
+      "manuscript",
+      "kindness"
+     ],
+     "source": "Woolbinkle"
+    },
+    "lucidity": 13,
+    "morale": -6
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...Not yet.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "poem_stop": {
+   "text": "\"Ah,\" he says. \"Well. It's a long one.\"\n\nAnd he goes back to the oven, and the lights do not come up, and the far wall stays exactly where it is.",
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "chuckles": {
+   "text": {
+    "low": "Because he's not funny.\n\nNo — I know how that sounds. Listen. Every joke he tells that lands wrong puts a patch of that stuff in my restaurant, and I have to work round them, and they're bad for trade, and last month there were nine.\n\nAnd every single one of them goes away when somebody laughs. Anybody. Any laugh, even a rubbish one, even one done out of pity from three tables off.\n\nSo what I have got, Mr Onions, is a man who reliably produces a problem that can only be solved by a room full of people being kind to a stranger. On purpose. Eleven times a night. And he's been doing it for six years and he thinks he's dying out there and I have never had the heart to tell him what he actually does.",
+    "high": "Because he's not funny.\n\nNo — listen. Every joke that lands wrong puts a patch of that stuff in my restaurant, and they're bad for trade, and last month there were nine.\n\nAnd every single one goes away when somebody laughs. Anybody. Even a rubbish one, even one done out of pity from three tables off.\n\nSo what I have got is a man who reliably produces a problem that can only be solved by a room full of people being kind to a stranger. Eleven times a night, six years. He thinks he's dying out there, and I have never had the heart to tell him what he actually does."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_chuckles_function",
+     "title": "A problem only kindness solves",
+     "text": "Woolbinkle keeps Chuckles because every failed joke produces a defect that only somebody being kind to a stranger can clear. Eleven times a night, six years, and Chuckles believes he is dying out there.",
+     "tags": [
+      "language",
+      "personhood"
+     ],
+     "source": "Woolbinkle"
+    },
+    "morale": 8,
+    "relationship": {
+     "woolbinkle": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

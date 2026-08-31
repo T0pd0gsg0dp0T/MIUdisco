@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Runtime state — regenerable, and every playtest run churns these
+game/saves/*.json
+
+# Playtest output
+*.log
+
+# Local Claude Code permissions (machine-specific; settings.json is the
+# shared one, settings.local.json is personal)
+.claude/settings.local.json
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store

@@ -1,0 +1,267 @@
+{
+ "npc": "dee",
+ "nodes": {
+  "root": {
+   "text": "Both of us saw you come in. That's not a boast, it's the difficulty — we saw you come in from the stream and we saw you come in from the stair, and the two accounts don't match, and we've been going round on it since.",
+   "options": [
+    {
+     "id": "how",
+     "text": "\"How many of you are there?\"",
+     "goto": "how"
+    },
+    {
+     "id": "argument",
+     "text": "\"What's the argument?\"",
+     "goto": "argument"
+    },
+    {
+     "id": "which",
+     "text": "\"Which one of you is the original?\"",
+     "goto": "which"
+    },
+    {
+     "id": "dee_comp",
+     "text": "Address both of them at once, by name, without choosing.",
+     "once": true,
+     "check": {
+      "id": "dee:dee_comp",
+      "skill": "COMPOSURE",
+      "dc": 11,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "You use the name once and look at the space between them while you do it, and you do not favour either, and you do not apologise for the arrangement.\n\nBoth of them answer. At the same time. In the same words — and then stop, at the same time, and one of them says: \"Nobody does that. Everybody picks one. You did not pick one.\"",
+      "failure_text": "You address one of them, because a man addresses a man, and the other one goes very slightly out of focus for the rest of the conversation, and it is not clear that either of them minds, and it is extremely clear that one of them noticed.",
+      "success_effects": {
+       "clue": {
+        "id": "c_you_did_not_pick_one",
+        "title": "You did not pick one",
+        "text": "Addressed together, both of Dee Stroii answer in the same words and point out that everybody else picks one of them.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "kindness",
+         "personhood"
+        ],
+        "source": "Dee Stroii"
+       },
+       "lucidity": 9,
+       "relationship": {
+        "dee": 2
+       }
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Leave them to it. Both of them.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "how": {
+   "text": "One.\n\nThat's not modesty and it's not a riddle. There is one of us. We're just not all in the same place, and the language hasn't got a way of saying that which doesn't make it sound like there's two, so we say we, and everybody assumes twins, and we've stopped correcting it because the correction takes forty minutes and ends in tears about half the time.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "'One, not all in the same place.' Treat that as a technical statement rather than a poetic one and it is not incoherent — it is a statement about extent. A thing can be one and be in two places if it is large enough and the places are close enough together."
+    }
+   ],
+   "options": [
+    {
+     "id": "extent",
+     "text": "\"Then you're not duplicated. You're extended.\"",
+     "check": {
+      "id": "dee:extent",
+      "skill": "LOGIC",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "Both of them stop.\n\nThe one by the stream turns round. The one by the stair stands up. They do this simultaneously and it is the first thing they have done simultaneously since you came in, and the effect in the room is of a held breath in something much larger than a person.\n\n\"Yes,\" they say, and it is one voice arriving from two directions with no echo between them. \"Extended. Thank you. That's — nobody has ever — thank you.\"\n\nAnd then, from the stream one only, in a much smaller register: \"We've been trying to get somebody to say that for nineteen years. It doesn't work if you say it about yourself. It has to be somebody else's word.\"",
+      "failure_text": "\"Extended,\" says the one by the stream, tasting it.\n\n\"Extended,\" says the one by the stair, and shakes his head. \"No. Close, and no. Extended's got a middle. There isn't a middle. That's the bit nobody gets and it's not their fault, we can't get at it either.\"\n\nThey go back to disagreeing, in a way that has clearly been going on for some time and will continue after you leave.",
+      "success": "extent_ok",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_extended",
+        "title": "Not duplicated — extended",
+        "text": "Dee Stroii is one person occupying more than one place. Nineteen years of waiting for somebody else to supply the word, because it does not work if you say it about yourself.",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript",
+         "identity",
+         "language",
+         "personhood"
+        ],
+        "source": "Dee Stroii"
+       },
+       "lucidity": 11,
+       "relationship": {
+        "dee": 2
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "extent_ok": {
+   "text": {
+    "low": "Now that you've said it we can tell you the useful part, and it is useful, and we've been sitting on it because there's no point handing a man a tool he hasn't got a hand for.\n\nIt happened in one go. Nineteen years ago, on a Tuesday, in the lounge, at about four in the afternoon: we were one man in one chair and then we were this, and there was no transition and nothing hurt.\n\nAnd the thing we've never told anybody — the thing we've been holding — is that we know exactly what we were doing at the moment it happened.\n\nWe were being described. Somebody in this room was describing us to somebody else. And they got to the middle of it, and they stopped, and they started again differently, and they didn't take the first one back.",
+    "high": "Now you've said it, we can tell you the useful part. We've been sitting on it because there's no point handing a man a tool he hasn't got a hand for.\n\nIt happened in one go. Nineteen years ago, on a Tuesday, in the lounge: we were one man in one chair and then we were this. No transition, and nothing hurt.\n\nAnd the thing we've never told anybody is that we know exactly what we were doing at the moment it happened.\n\nWe were being described. Somebody was describing us to somebody else, and they got to the middle of it and stopped, and started again differently, and they didn't take the first one back."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_not_taken_back",
+     "title": "They started again and didn't take the first one back",
+     "text": "Dee Stroii became two at a stroke, nineteen years ago, while being described aloud — the speaker stopped mid-description, began again differently, and left the first version standing.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "language",
+      "manuscript",
+      "personhood"
+     ],
+     "source": "Dee Stroii"
+    },
+    "lucidity": 16,
+    "relationship": {
+     "dee": 1
+    }
+   },
+   "options": [
+    {
+     "id": "who",
+     "text": "\"Who was describing you?\"",
+     "goto": "who_described"
+    },
+    {
+     "id": "back",
+     "text": "Sit with it.",
+     "goto": "root"
+    }
+   ]
+  },
+  "who_described": {
+   "text": {
+    "low": "We didn't see. We were the thing being looked at, not the thing looking, and there's a difference in where your attention sits and we've had nineteen years to be sure of it.\n\nBut we heard the voice, and we've heard it since, and we'll tell you what we've got, and you're not going to like the shape of it.\n\nIt was fond of us. Whoever was describing us was *fond* of us, and got stuck, and went again, and the second go was better — it was, we've compared, we are in a position to compare — and they left the first one in because they couldn't bring themselves to take it out.\n\nWe've been the leftover draft of a man for nineteen years, Mr Onions, and we've been kept out of kindness, and we would rather that than the alternative, and we think about the alternative most nights.",
+    "high": "We didn't see. We were the thing being looked at, not the thing looking.\n\nBut we heard the voice, and we've heard it since, and you're not going to like the shape of it.\n\nIt was fond of us. Whoever was describing us was *fond* of us, and got stuck, and went again, and the second go was better — we've compared, we are in a position to compare — and they left the first one in because they couldn't bring themselves to take it out.\n\nWe've been the leftover draft of a man for nineteen years, kept out of kindness, and we would rather that than the alternative. We think about the alternative most nights."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_kept_out_of_kindness",
+     "title": "Kept out of kindness",
+     "text": "Dee's account: the voice describing him was fond of him, got stuck, wrote a better second version, and could not bring itself to delete the first. He has been the leftover draft for nineteen years.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "manuscript",
+      "identity",
+      "kindness",
+      "personhood"
+     ],
+     "source": "Dee Stroii"
+    },
+    "lucidity": 14,
+    "morale": -7,
+    "relationship": {
+     "dee": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "argument": {
+   "text": {
+    "low": "Whether the rain on that chair is weather or punctuation.\n\nThe stream one says weather. Weather's got causes, weather comes from the sky, and there's a sky, and it rains out of it, and that's a complete account and a man could go to bed on it.\n\nThe stair one says punctuation. Says it's raining on that chair to *separate* it from the next chair, because the two of them are too close together to be two things otherwise, and the rain is doing the work an inch of white space would do.\n\nWe have been at this since March. We have never once persuaded ourself.",
+    "high": "Whether the rain on that chair is weather or punctuation.\n\nThe stream one says weather. Weather's got causes, it comes from the sky, there's a sky, it rains out of it. A man could go to bed on that.\n\nThe stair one says punctuation. Says it's raining on that chair to *separate* it from the next one, because the two are too close together to be two things otherwise, and the rain is doing the work an inch of white space would do.\n\nWe've been at this since March, and we have never once persuaded ourself."
+   },
+   "passive": [
+    {
+     "skill": "RHETORIC",
+     "dc": 12,
+     "text": "Both are correct and they are correct about different things. The rain is weather in the room and punctuation on the page, and a man arguing with himself for six months about which is not confused — he is standing exactly on the join."
+    }
+   ],
+   "options": [
+    {
+     "id": "both",
+     "text": "\"You're both right, and that's the finding, not the failure.\"",
+     "goto": "argument_settled"
+    },
+    {
+     "id": "back",
+     "text": "Decline to arbitrate.",
+     "goto": "root"
+    }
+   ]
+  },
+  "argument_settled": {
+   "text": {
+    "low": "The one by the stream sits down. The one by the stair walks over and sits in the wet chair, in the rain, next to the reader, and gets immediately soaked and does not appear to notice.\n\n\"That's it,\" they say, from two places, one voice. \"That's been it since March.\n\nWe'd got as far as knowing that both answers worked and we'd taken that to mean one of us was wrong. It didn't occur to us that it meant there were two of the room.\"\n\nA pause. The reader in the wet chair turns a dry page.\n\n\"There are two of the room. Mr Onions. There have been two of the room the entire time and we have been standing in the difference, which is why there's two of us, and we'd honestly rather have gone on arguing.\"",
+    "high": "The one by the stream sits down. The one by the stair walks over and sits in the wet chair beside the reader, gets immediately soaked, and does not appear to notice.\n\n\"That's it,\" they say, from two places, one voice. \"That's been it since March.\n\nWe'd got as far as knowing both answers worked, and took that to mean one of us was wrong. It didn't occur to us it meant there were two of the room.\"\n\nThe reader in the wet chair turns a dry page.\n\n\"There are two of the room. There always have been, and we have been standing in the difference, which is why there's two of us — and we'd honestly rather have gone on arguing.\""
+   },
+   "effects": {
+    "clue": {
+     "id": "c_two_of_the_room",
+     "title": "There are two of the room",
+     "text": "Dee's six-month argument with himself resolves: both accounts of the rain are correct because there are two accounts of the room, and he has been standing in the difference between them.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "architecture",
+      "personhood"
+     ],
+     "source": "Dee Stroii"
+    },
+    "lucidity": 13,
+    "relationship": {
+     "dee": 2
+    },
+    "morale": -3
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"I'm sorry.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "which": {
+   "text": {
+    "low": "Neither of us knows and both of us have an opinion, which is the worst available arrangement.\n\nThe stream one thinks he's the original because he remembers the chair. The stair one thinks he's the original because he remembers *getting up* from the chair, and getting up is a later event than sitting, and a later memory is a longer life.\n\nWe've tested it. We've tested it every way two men in one coat can test a thing and it comes out even every time, and the honest answer is that the question hasn't got a floor under it. There's no fact down there. We've looked.",
+    "high": "Neither of us knows and both of us have an opinion, which is the worst available arrangement.\n\nThe stream one thinks he's the original because he remembers the chair. The stair one thinks he's the original because he remembers *getting up* from it, and getting up is later than sitting, and a later memory is a longer life.\n\nWe've tested it every way two men in one coat can, and it comes out even every time. The question hasn't got a floor under it. We've looked."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_no_floor",
+     "title": "The question has no floor under it",
+     "text": "Dee has tested which of him is original by every means available and the question comes out even every time. His conclusion: there is no fact underneath it.",
+     "tags": [
+      "identity",
+      "personhood"
+     ],
+     "source": "Dee Stroii"
+    },
+    "lucidity": 6
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

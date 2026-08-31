@@ -1,0 +1,579 @@
+{
+ "npc": "revilo",
+ "nodes": {
+  "root": {
+   "text": {
+    "low": "He does not turn round for a while, and when he does it is unhurried and complete, and there is no theatre in it at all.\n\nIt is your face. Not a resemblance and not a likeness — your face, with everything in it moved about a sixteenth of an inch toward the mirror image and stopped short, and the effect is not of a twin. It is of a sentence you wrote being read back to you by somebody with a slightly different accent.\n\n\"Well,\" he says, in your voice, at your pace, with your pause before the last word. \"Now we have both had a very long day.\"",
+    "high": "He turns round, unhurried and complete, and there is no theatre in it at all.\n\nIt is your face, with everything in it moved about a sixteenth of an inch toward the mirror image and stopped short. Not a twin — a sentence you wrote, read back to you in a slightly different accent.\n\n\"Well,\" he says, in your voice, with your pause before the last word. \"Now we have both had a very long day.\""
+   },
+   "options": [
+    {
+     "id": "who",
+     "text": "\"Say your name.\"",
+     "goto": "the_name",
+     "once": true
+    },
+    {
+     "id": "arg1",
+     "text": "\"You've been writing me.\"",
+     "goto": "arg_one"
+    },
+    {
+     "id": "desk",
+     "text": "Say nothing. Sit down in the second chair.",
+     "goto": "sit"
+    }
+   ],
+   "narration": true
+  },
+  "sit": {
+   "text": {
+    "low": "You sit. He watches you do it, and something in the set of his shoulders comes down about an inch, and he does not mention it and neither do you.\n\n\"Eleven years,\" he says, \"I have kept a chair in a room nine feet by eleven, in which there is no reason whatsoever for there to be two chairs, and every visitor I have ever had has been me, coming in, and sitting in the other one.\"\n\nHe sits down at the desk. Not at the machine — beside it, turned toward you, the way a man sits when he has decided not to work.",
+    "high": "You sit. Something in the set of his shoulders comes down about an inch, and neither of you mentions it.\n\n\"Eleven years,\" he says, \"I have kept a second chair in a room nine feet by eleven, and every visitor I have ever had has been me.\"\n\nHe sits down beside the machine rather than at it, the way a man sits when he has decided not to work."
+   },
+   "effects": {
+    "relationship": {
+     "revilo": 1
+    },
+    "flag": {
+     "took_the_chair": true
+    }
+   },
+   "options": [
+    {
+     "id": "who",
+     "text": "\"Say your name.\"",
+     "goto": "the_name",
+     "once": true
+    },
+    {
+     "id": "arg1",
+     "text": "\"You've been writing me.\"",
+     "goto": "arg_one"
+    }
+   ],
+   "narration": true
+  },
+  "the_name": {
+   "text": "\"You know it. You have known it since a man drove you up a hill in a truck while you said it over and over, backwards, out of the water, trying to warn him about somebody.\n\nSay it, if it helps. It is a party trick and I have never once got tired of it, which tells you something about the parties.\"",
+   "options": [
+    {
+     "id": "say_it",
+     "text": "\"Snoino Revilo. Oliver Onions. Letter for letter, both ways.\"",
+     "check": {
+      "id": "revilo:the_name",
+      "skill": "RHETORIC",
+      "dc": 11,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_silvo_ovlis": 2,
+       "c_interrupted_reversal": 2
+      },
+      "success_text": "\"Letter for letter. Not an anagram — an anagram is a coincidence with good manners. A reversal is an author.\"\n\nHe says it in the exact rhythm you would have said it in, and then he does something with his mouth that is not a smile and is the shape a smile is cut from.\n\n\"Silvo and Ovlis founded that town twice, eleven years apart, on the same plots, and neither charter mentions the other. That was not cleverness. That was a man who could not settle on a name and did not have the discipline to throw the first one away, and the parish has been living in both of them ever since.\n\nI have never thrown anything away. You will have noticed the basket. That is not the same as keeping things, and it has taken me eleven years to learn the difference, and I learned it about four days ago and I am not enjoying it.\"",
+      "failure_text": "\"Mm. You have got it round the wrong way, which is funnier than either of us needs tonight.\"\n\nHe lets it sit, and does not correct you, and the not-correcting is a courtesy that costs him something.",
+      "success": "root",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_never_threw_anything_away",
+        "title": "He has never thrown anything away",
+        "text": "Revilo on the two foundings and the two hundred drafts: not cleverness, but a man who could not settle and lacked the discipline to discard the first attempt. He learned the difference between that and keeping things four days ago.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "kindness"
+        ],
+        "source": "Snoino Revilo"
+       },
+       "lucidity": 8,
+       "relationship": {
+        "revilo": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "dont_bother",
+     "text": "Don't give him the trick. He has been waiting eleven years for an audience.",
+     "goto": "root",
+     "effects": {
+      "relationship": {
+       "revilo": -1
+      },
+      "morale": 3
+     }
+    }
+   ]
+  },
+  "arg_one": {
+   "text": {
+    "low": "\"I have been writing you. Yes. I would rather we did not spend an hour on the establishing of it — you have two hundred drafts of your own arrival in a basket by your foot and a page in the machine with your name coming up in four lines, and you did not come through that seam to be told a thing you already had.\n\nSo let us go straight to the part that matters, and the part that matters is this:\n\n*You are not a man.* You are a draft. You are a well-made one, you are the best thing I have ever done and I have done nothing else, and you are two hundred pages and a set of habits and a stopped watch, and when you tell me you are frightened what is happening is that I have written down that you are frightened.\n\nThere is no fact underneath you. I have looked. I built the looking.\"",
+    "high": "\"I have been writing you. Yes — and you have two hundred drafts of your own arrival in the basket by your foot, so let us not spend an hour establishing it.\n\n*You are not a man.* You are a draft. A well-made one, the best thing I have ever done and the only thing I have done, and when you tell me you are frightened what is happening is that I have written down that you are frightened.\n\nThere is no fact underneath you. I have looked. I built the looking.\""
+   },
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "He is correct and the argument is sound and there is no flaw in it to find. Note, though, what it is not: it is not an argument about him. He has made the case against you and exempted himself from it without noticing."
+    },
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "He has rehearsed this. Two hundred times, on paper, in a basket. And he is delivering it fast, in one breath, the way people deliver the thing they are afraid of being interrupted in."
+    }
+   ],
+   "options": [
+    {
+     "id": "so_are_you",
+     "text": "\"Yes. And so are you.\"",
+     "check": {
+      "id": "revilo:so_are_you",
+      "skill": "RHETORIC",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_the_unfinished_sentence": 3,
+       "c_two_hundred_drafts": 2,
+       "c_no_floor": 2
+      },
+      "success_text": "He stops.\n\nIt is the first genuine stop of the evening and it is four full seconds long, and in a room where nothing moves unless it is described, four seconds is an enormous quantity of nothing happening.\n\n\"...Go on,\" he says.\n\n\"You stand at a window that is a wall. You keep a chair for a visitor who is yourself. You have a cup with a ring under it older than the cup and you have never once left this room to get another one, because there is no out there for you to get one in. You are nine feet by eleven and a set of habits, and when I came through that seam your sentence stopped in the middle, because the writing of a man and the being of him cannot happen in the same second — and it stopped on *your* side.\n\nOne of us is standing in a room he can leave.\"\n\nHe looks at the page in the machine for a while.\n\n\"That,\" he says, \"is the argument I have been unable to write down for eleven years, and you have made it in a room with no window, at eleven o'clock at night, on a knee that has been going since March. I would like it on record that I am not angry. I have simply been beaten with my own vocabulary and there is nobody to complain to.\"",
+      "failure_text": "\"So am I. Yes.\"\n\nHe says it without a flicker, and it is not a concession, because he has clearly had it for years and filed it.\n\n\"I have known that a great deal longer than you have and it has never once helped. Two drafts in a room is not better than one, it is worse, because now there are two things with no fact underneath them and only one chair that has ever been sat in.\"",
+      "success": "arg_two",
+      "failure": "arg_one",
+      "success_effects": {
+       "flag": {
+        "answered_arg_one": true
+       },
+       "clue": {
+        "id": "c_one_of_us_can_leave",
+        "title": "One of us is standing in a room he can leave",
+        "text": "Revilo's case against Oliver's reality applies equally to Revilo, and Revilo has never been able to write it down. The sentence stopped on his side.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "personhood"
+        ],
+        "source": "Snoino Revilo"
+       },
+       "lucidity": 10,
+       "relationship": {
+        "revilo": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "deny",
+     "text": "\"I am a man. I was eighteen when my parents died. I remember the kitchen.\"",
+     "goto": "denied",
+     "once": true
+    },
+    {
+     "id": "skip",
+     "text": "\"Then nothing I say here can hurt you. Let's proceed.\"",
+     "goto": "arg_two",
+     "effects": {
+      "morale": -5
+     }
+    }
+   ]
+  },
+  "denied": {
+   "text": {
+    "low": "\"You remember a kitchen. So do I. Mine has a woman in it with her back to the door who says *and furthermore* in a voice that is not hers, and I put her there, and I put her there because I needed you to have somebody to have lost.\n\nI am not saying that to wound you. I am saying it because it is four in the morning somewhere and I have run out of ways to be delicate about the architecture.\n\nAsk me anything about that kitchen. Anything at all. I will have an answer and the answer will be right, and that is not because I was there.\"",
+    "high": "\"You remember a kitchen. So do I. Mine has a woman in it with her back to the door who says *and furthermore* in a voice that is not hers, and I put her there because you needed somebody to have lost.\n\nI am not saying it to wound you. I have run out of ways to be delicate about the architecture.\n\nAsk me anything about that kitchen. I will have an answer and it will be right, and that is not because I was there.\""
+   },
+   "effects": {
+    "clue": {
+     "id": "c_somebody_to_have_lost",
+     "title": "Somebody to have lost",
+     "text": "Revilo put the kitchen there, and the woman with her back to the door, because Oliver needed somebody to have lost. He can answer any question about it correctly, and not because he was there.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "manuscript",
+      "identity"
+     ],
+     "source": "Snoino Revilo"
+    },
+    "morale": -12,
+    "lucidity": 8
+   },
+   "options": [
+    {
+     "id": "so_are_you",
+     "text": "\"...Then so are you. Say something about it you didn't decide.\"",
+     "goto": "arg_one"
+    },
+    {
+     "id": "on",
+     "text": "Let him go on.",
+     "goto": "arg_two"
+    }
+   ]
+  },
+  "arg_two": {
+   "text": {
+    "low": "\"Second thing, and then I will stop making a case and we can do the part neither of us has a draft for.\n\nYou have come here to end it. Do not trouble to deny it, you have been walking toward this room for a fortnight with your collar up, and every person you have spoken to has been evidence and you have been collecting them like a man doing an inventory before a house clearance.\n\nSo: end it. I will not stop you, I could not stop you, and I want to be extremely clear that I am not about to plead.\n\nI want only to record that *nothing will be lost*. There is no one in Silvora Reefs. There is a bull antelope who is a joke about the verb 'can'. There is a barber whose profession was concluded about him by a pun. There is an owlbear in a mirror who is a piece of furniture I stopped mentioning. They do not have insides. I would know. I did not put any in.\"",
+    "high": "\"Second thing, and then I stop making a case.\n\nYou came here to end it — do not trouble to deny it. Every person you have spoken to has been evidence, and you have been collecting them like a man doing an inventory before a house clearance.\n\nSo end it. I will not stop you. I want only to record that *nothing will be lost*. There is a bull antelope who is a joke about the verb 'can'. There is an owlbear in a mirror who is a piece of furniture I stopped mentioning.\n\nThey do not have insides. I would know. I did not put any in.\""
+   },
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 11,
+     "text": "'I would know. I did not put any in.' He is not stating a fact. He is asking a question, and he has phrased it as a fact so that it cannot be refused, and he has been waiting a very long time for somebody to refuse it anyway."
+    }
+   ],
+   "options": [
+    {
+     "id": "move_on",
+     "text": "\"You have heard the answer. Say the third thing.\"",
+     "requires": {
+      "flag": [
+       "answered_arg_two"
+      ]
+     },
+     "goto": "arg_three"
+    },
+    {
+     "id": "they_are_people",
+     "text": "\"They have insides. I have been in them.\"",
+     "requires": {
+      "tag_count_min": {
+       "personhood": 4
+      }
+     },
+     "check": {
+      "id": "revilo:personhood",
+      "skill": "EMPATHY",
+      "dc": 13,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_mentioned_less": 3,
+       "c_kept_out_of_kindness": 3,
+       "c_bud_holds_the_floor": 2
+      },
+      "success_text": "You do not argue. You do the only thing that has ever worked in Silvora Reefs, which is to say things out loud in front of somebody, in order, until they are the case.\n\nMonsieur Albert was not put in a mirror. He was mentioned less, over years, and at each stage there was nothing to object to and no office to object at, and he has been courteous about it for forty years and he asks nothing except to be addressed.\n\nDee Stroii was described, and the description stopped, and started again better, and the first one was left in — not by accident. By somebody who could not take it out. He has been the leftover draft of a man for nineteen years and he would rather that than the alternative and he thinks about the alternative most nights.\n\nBud Onkuhdonk says 'it's a light well' out loud every morning of his life because the one year he did not, a floor went, with four guests on it. He is holding up a building with his mouth and he has never told the innkeeper because the innkeeper sleeps well.\n\nWoolbinkle has canned forty things in eleven years and every one of them has held, in a town where nothing holds, and he did it because he did one unforgivable thing once and has been making sure nothing else got loose ever since.\n\n\"You did not put insides in them,\" you say. \"They grew them. In the gaps. While you were busy.\"\n\nHe has both hands flat on the desk, which is what Ben does, which is what a man does when he needs to be kept where he is.",
+      "failure_text": "You start to list them and it comes out as a list.\n\nNames, and facts about names, and the facts are all correct and none of them arrives as a person, and about four names in you can hear it happening and cannot stop it, and he lets you finish, courteously, which is the worst possible response.\n\n\"Yes,\" he says. \"That is what I have as well. A list. I have had it for eleven years and I have never once been able to get anybody out of it.\"",
+      "success": "arg_three",
+      "failure": "arg_two",
+      "success_effects": {
+       "flag": {
+        "answered_arg_two": true
+       },
+       "clue": {
+        "id": "c_they_grew_insides",
+        "title": "They grew them in the gaps",
+        "text": "Named aloud in front of their author — Albert, Dee, Bud, Woolbinkle — the people of Silvora Reefs turn out to have interiors he did not write and cannot account for.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "personhood",
+         "kindness"
+        ],
+        "source": "Snoino Revilo"
+       },
+       "lucidity": 12,
+       "relationship": {
+        "revilo": 2
+       }
+      }
+     }
+    },
+    {
+     "id": "one_of_them",
+     "text": "\"Then explain the antelope's cans.\"",
+     "requires": {
+      "clue": "c_the_cans",
+      "not_flag": "answered_arg_two"
+     },
+     "goto": "the_cans"
+    },
+    {
+     "id": "agree",
+     "text": "\"No. They aren't. And that makes this easier.\"",
+     "goto": "arg_three",
+     "effects": {
+      "morale": -10,
+      "flag": {
+       "denied_personhood": true
+      }
+     }
+    }
+   ]
+  },
+  "the_cans": {
+   "text": {
+    "low": "\"...The cans.\"\n\nHe is quiet for a moment.\n\n\"I did not write the cans. I want to be precise, because precision is the only tool I have that still works: I wrote an antelope with a history and an obsession with containment, and I put him behind a counter, and I went away and did something else for eleven years.\n\nWhen I came back there were forty cans on a shelf, labelled in his hand, and one of them had four hours of a Tuesday in it, and none of them were mine.\n\nI have not had a satisfactory account of that. I have had eleven years and I have not had one.\"",
+    "high": "\"...The cans.\"\n\nA pause.\n\n\"I did not write the cans. I wrote an antelope with a history and an obsession with containment, put him behind a counter, and went away for eleven years.\n\nWhen I came back there were forty on a shelf, labelled in his hand, one of them with four hours of a Tuesday in it, and none of them were mine.\n\nEleven years, and I have not had a satisfactory account of that.\""
+   },
+   "effects": {
+    "clue": {
+     "id": "c_he_didnt_write_the_cans",
+     "title": "He did not write the cans",
+     "text": "Revilo wrote an antelope with an obsession and left him behind a counter for eleven years. The forty cans were not his, and he has never had a satisfactory account of them.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "personhood",
+      "kindness"
+     ],
+     "source": "Snoino Revilo"
+    },
+    "lucidity": 10,
+    "relationship": {
+     "revilo": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"They have insides. I have been in them.\"",
+     "goto": "arg_two"
+    }
+   ]
+  },
+  "arg_three": {
+   "text": {
+    "low": "He gets up and goes back to the window that is a wall, and stands at it, and does not look out of it because there is nothing to look out of.\n\n\"Third and last, and it is not an argument, it is a request for an acknowledgement, and I am aware of how that sounds.\n\nI have kept you alive.\n\nThe flood in the harbour took ninety pages of your notebook and went round three. The vault at the mausoleum has stood two fingers open for eleven years because a woman I made has been keeping it shut for you and I let her. There are twenty-two maintenance forms in a cupboard on a half-landing recommending that you not walk that corridor alone, and I wrote the first one, and a man in a very good suit has been copying it out for eleven years without knowing what he was copying.\n\nI could have ended it at any point in eleven years. It would have taken one sentence. I have written the sentence two hundred times and it is in the basket by your foot.\"",
+    "high": "He goes back to the window that is a wall and stands at it, not looking out, because there is nothing to look out of.\n\n\"Third and last, and it is not an argument. It is a request for an acknowledgement.\n\nI have kept you alive.\n\nThe flood took ninety pages of your notebook and went round three. A woman I made has kept a vault shut for you for eleven years and I let her. There are twenty-two forms in a cupboard recommending that you not walk that corridor alone, and I wrote the first one.\n\nI could have ended it at any point. It would have taken one sentence. I have written that sentence two hundred times and it is in the basket by your foot.\""
+   },
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "Every anomaly you have catalogued is a delay. The stretching corridor, the unresolving hallway, the countdown engraved by hand rather than by mechanism — none of them is a defence of the town. They are all the same act: a man finding one more thing to do before the last page."
+    }
+   ],
+   "options": [
+    {
+     "id": "acknowledge",
+     "text": "\"I know. I have been finding the evidence of it all fortnight.\"",
+     "requires": {
+      "tag_count_min": {
+       "kindness": 5
+      }
+     },
+     "check": {
+      "id": "revilo:kindness",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_recommend_company": 3,
+       "c_the_shim": 3,
+       "c_two_hundred_drafts": 2
+      },
+      "success_text": "\"I know,\" you say. \"You have been very bad at hiding it.\n\nThe shim in the trestle is a form you kept somewhere dry for eleven years, and the desk is not holding the shim up, the desk is holding the shim *in*, and you have refused to have the leg mended by a man who has offered every year.\n\nThe drafts in that basket are dated. Eleven years apart at the bottom and four days apart at the top. That is not a writer's block. That is somebody finding one more thing to do.\n\nAnd the earliest ones call me the tenant. And the last one calls me Ols, which is what a man calls me who drove down to a slipway at four in the morning.\"\n\nHe has not turned round from the wall.\n\n\"I did not think anybody was going to read the basket,\" he says. \"That is the whole of my defence and it is not a good one.\"",
+      "failure_text": "\"I know. You have kept me alive.\"\n\nIt comes out flat and it comes out as a receipt, and he takes it as a receipt, and says \"Thank you\" to a wall in a tone that closes the subject for good.",
+      "success": "the_last_word",
+      "failure": "the_last_word",
+      "success_effects": {
+       "flag": {
+        "answered_arg_three": true
+       },
+       "clue": {
+        "id": "c_one_more_thing_to_do",
+        "title": "Finding one more thing to do",
+        "text": "Every anomaly in Silvora Reefs is a delay. The drafts are dated eleven years apart at the bottom and four days at the top, and the last one calls him Ols.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "kindness"
+        ],
+        "source": "Snoino Revilo"
+       },
+       "lucidity": 10,
+       "morale": -5,
+       "relationship": {
+        "revilo": 2
+       }
+      }
+     }
+    },
+    {
+     "id": "so_what",
+     "text": "\"You kept a man in a jar and fed him. That isn't a kindness, it's a hobby.\"",
+     "goto": "the_last_word",
+     "effects": {
+      "relationship": {
+       "revilo": -2
+      },
+      "flag": {
+       "refused_the_kindness": true
+      },
+      "morale": -6
+     }
+    },
+    {
+     "id": "quiet",
+     "text": "Say nothing at all, for a long time.",
+     "goto": "the_long_quiet"
+    }
+   ],
+   "narration": true
+  },
+  "the_long_quiet": {
+   "text": {
+    "low": "You say nothing.\n\nIt goes on. The lamp does not flicker, because nothing in this room does anything unless it is described, and neither of you is describing anything, and so for a length of time that cannot be measured because there is no mechanism here to measure it, the room simply holds two people in it and does not proceed.\n\n\"That,\" he says eventually, still at the wall, \"is the longest I have gone without writing in eleven years.\n\nAnd nothing came apart. The town did not stop. Sobeleaux is putting his bins out. There is a queue outside Mary's and it is moving.\n\nI have been under the impression that it required me continuously. It appears that it requires me *approximately*, and I would have liked to know that at some point during the first decade.\"",
+    "high": "You say nothing.\n\nIt goes on. Nothing in this room does anything unless it is described, and neither of you is describing anything, so the room simply holds two people and does not proceed.\n\n\"That,\" he says eventually, \"is the longest I have gone without writing in eleven years. And nothing came apart. Sobeleaux is putting his bins out. There is a queue outside Mary's and it is moving.\n\nI had been under the impression that it required me continuously. It appears to require me *approximately*.\""
+   },
+   "effects": {
+    "clue": {
+     "id": "c_approximately",
+     "title": "It requires him approximately",
+     "text": "A long silence in the office — the longest Revilo has gone without writing in eleven years — and Silvora Reefs did not stop. It does not need him continuously.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "personhood",
+      "kindness"
+     ],
+     "source": "the office"
+    },
+    "lucidity": 12,
+    "morale": 8,
+    "relationship": {
+     "revilo": 2
+    },
+    "flag": {
+     "the_long_quiet": true
+    }
+   },
+   "options": [
+    {
+     "id": "on",
+     "text": "Go on to the last word.",
+     "goto": "the_last_word"
+    }
+   ],
+   "narration": true
+  },
+  "the_last_word": {
+   "text": {
+    "low": "He comes back from the wall and stands behind the chair at the desk, with both hands on the back of it, not sitting.\n\n\"Right. The page in the machine says *and he does not*, and it has said that since the moment you came through, and it will say it for as long as we are both standing in this room being people at each other.\n\nOne of us has to finish the sentence. It cannot be finished by both and it cannot be left, because a thing left in the present continuous does not stay still, it *frays* — you have seen the fraying, you have been cataloguing it for a fortnight, the vault count and the hallway and the sign with four settings standing.\n\nSo. Whoever finishes it keeps the language. The other one becomes something that has been described.\n\nI am not going to advise you. I have advised you for eleven years and I have done it in maintenance forms and hidden vaults and a shim in a table leg, and it has all been advice given from behind something, and I am not going to do it once more now that I am standing in front of you.\n\nTake the chair or don't.\"",
+    "high": "He comes back and stands behind his chair with both hands on it, not sitting.\n\n\"The page says *and he does not*, and it will go on saying it for as long as we are both in this room being people at each other.\n\nOne of us has to finish the sentence. It cannot be finished by both, and it cannot be left — a thing left in the present continuous frays, and you have been cataloguing the fraying for a fortnight.\n\nWhoever finishes it keeps the language. The other becomes something that has been described.\n\nI am not going to advise you. I have advised you for eleven years from behind maintenance forms and hidden vaults and a shim in a table leg, and I am not doing it once more standing in front of you.\n\nTake the chair or don't.\""
+   },
+   "lucid": {
+    "4": "Furthermore is in the room. He has been in the room since you came through the seam, standing where the wall is, with an unused saddle and the whole of his enormous patience, and he is drawing himself up."
+   },
+   "options": [
+    {
+     "id": "wake",
+     "text": "Sit down and finish the sentence yourself. Wake up.",
+     "goto": "confirm_wake"
+    },
+    {
+     "id": "stay",
+     "text": "Push the chair back toward him. Let him finish it.",
+     "goto": "confirm_stay"
+    },
+    {
+     "id": "together",
+     "text": "\"Two chairs. You have kept two chairs in this room for eleven years.\"",
+     "requires": {
+      "tag_count_min": {
+       "kindness": 5,
+       "personhood": 4
+      },
+      "flag": [
+       "answered_arg_two"
+      ]
+     },
+     "goto": "confirm_together"
+    },
+    {
+     "id": "nevermind",
+     "text": "Say nothing. Let the elephant finish it.",
+     "requires": {
+      "thought": "and_furthermore",
+      "lucidity_min": 95
+     },
+     "goto": "confirm_nevermind"
+    }
+   ],
+   "narration": true
+  },
+  "confirm_wake": {
+   "text": {
+    "low": "\"Yes,\" he says. \"That is the correct one. I want you to know I think it is the correct one, because I am about to be very poor company about it and I would rather have said so first.\"\n\nHe steps away from the chair.\n\n\"Silvora Reefs stops. Not violently — it will simply not be the case, the way a thing is not the case when nobody is putting it. Sobeleaux, the antelope, the woman with the vaults, the man with the ice cream who drove down to the slipway. All of it.\n\nGo on, then. It is your desk. It has always been your desk. The left leg is split and there is a shim in it and I would rather you did not read the shim again before you sit down.\"",
+    "high": "\"Yes,\" he says. \"That is the correct one, and I want that said before I become very poor company about it.\"\n\nHe steps away from the chair.\n\n\"Silvora Reefs stops. Not violently — it will simply not be the case, the way a thing is not the case when nobody is putting it. Sobeleaux, the antelope, the man with the ice cream who drove down to the slipway.\n\nGo on. It is your desk. It always was. I would rather you did not read the shim again before you sit down.\""
+   },
+   "options": [
+    {
+     "id": "do_it",
+     "text": "Sit down. Finish the sentence.",
+     "goto": "__exit__",
+     "effects": {
+      "ending": "wake"
+     }
+    },
+    {
+     "id": "back",
+     "text": "Don't. Not yet.",
+     "goto": "the_last_word"
+    }
+   ]
+  },
+  "confirm_stay": {
+   "text": {
+    "low": "\"...Are you certain.\"\n\nIt is the first unstructured thing he has said all evening. He does not repair it.\n\n\"You would be a character. Not a prisoner — I want to be exact, this is the last exactness I will get to offer you — you would be a man in a town with a stopped watch and a purple elephant and an oldest friend who makes the cone before the bell finishes. You would not know. You have not known for eleven years and by every account available to me you have had a reasonably good time.\n\nAnd I would go on. And I would be very careful with you. And that is the entire content of the offer and I am aware that it is the offer I have been making for eleven years without ever once saying it out loud.\"",
+    "high": "\"...Are you certain.\"\n\nThe first unstructured thing he has said all evening. He does not repair it.\n\n\"You would be a character. Not a prisoner — a man in a town with a stopped watch and a purple elephant and an oldest friend who makes the cone before the bell finishes. You would not know. You have not known for eleven years and you have had a reasonably good time.\n\nAnd I would go on, and I would be very careful with you. That is the whole of the offer, and it is the one I have been making for eleven years without once saying it out loud.\""
+   },
+   "options": [
+    {
+     "id": "do_it",
+     "text": "Push the chair toward him.",
+     "goto": "__exit__",
+     "effects": {
+      "ending": "stay"
+     }
+    },
+    {
+     "id": "back",
+     "text": "Take it back.",
+     "goto": "the_last_word"
+    }
+   ]
+  },
+  "confirm_together": {
+   "text": {
+    "low": "He looks at the second chair.\n\nHe looks at it for a long time, and it is the chair he has kept for eleven years in a nine-by-eleven room where there was never going to be a visitor, and the not-having-noticed is arriving in him now, at speed, and it is not comfortable to watch.\n\n\"That is a shim,\" he says at last. \"You have found a shim, and you are putting it in the argument, and it will hold, and I am not going to be able to take it out.\"\n\nHe sits down in his own chair for the first time this evening.\n\n\"It does not work. I want that on record, because I have modelled it and it does not work — two hands on one machine, two accounts of one room, and you have seen what two accounts of one room does, there is a man at the Outside Inn who is *two people* because somebody could not settle a description.\"\n\nA pause. Your pause. The one before the last word.\n\n\"...Although he is not unhappy. Dee. He is not unhappy, is he. I have never once written him unhappy and I have never once had to.\"",
+    "high": "He looks at the second chair for a long time — the chair he has kept for eleven years in a room where there was never going to be a visitor — and the not-having-noticed arrives in him at speed, and it is not comfortable to watch.\n\n\"That is a shim,\" he says at last. \"You have put it in the argument, and it will hold, and I am not going to be able to take it out.\"\n\nHe sits down in his own chair for the first time this evening.\n\n\"It does not work. I have modelled it. Two hands on one machine, two accounts of one room — and you have seen what two accounts of one room does. There is a man at the Outside Inn who is *two people* because somebody could not settle a description.\"\n\nYour pause. The one before the last word.\n\n\"...Although he is not unhappy. Dee. I have never once written him unhappy and I have never once had to.\""
+   },
+   "options": [
+    {
+     "id": "do_it",
+     "text": "\"Recommend company.\"",
+     "goto": "__exit__",
+     "effects": {
+      "ending": "together"
+     }
+    },
+    {
+     "id": "back",
+     "text": "Withdraw it.",
+     "goto": "the_last_word"
+    }
+   ],
+   "narration": true
+  },
+  "confirm_nevermind": {
+   "narration": true,
+   "text": {
+    "low": "You say nothing.\n\nAnd Furthermore, who has been in this room since you came through the seam, and who was in the harbour, and who was in the kitchen with your mother, and who is older than language and has always regarded it as a fad — Furthermore draws himself up.\n\nThe air thickens. It has thickened before, a dozen times, in a dozen buildings, and every one of those times it has ended in one word delivered flat.\n\nRevilo turns round.\n\n\"...There is an elephant in this room,\" he says, in a completely different voice. \"There has never been an elephant in this room. I did not write an elephant into this room and I have written every single thing in this room including the ring under the cup.\"\n\nFurthermore does not look at him. Furthermore looks at you, with soft eyes, over an ornate saddle that has never been used, and the whole of Silvora Reefs goes quiet to hear what he is going to",
+    "high": "You say nothing.\n\nAnd Furthermore — who has been in this room since you came through the seam, who was in the harbour and in the kitchen with your mother, who is older than language and has always regarded it as a fad — draws himself up.\n\nThe air thickens. It has thickened a dozen times before, in a dozen buildings, and every one of those times ended in a single word delivered flat.\n\nRevilo turns round.\n\n\"...There is an elephant in this room,\" he says, in a completely different voice. \"I did not write an elephant into this room, and I have written every single thing in it including the ring under the cup.\"\n\nFurthermore looks at you, over a saddle that has never been used, and the whole of Silvora Reefs goes quiet to hear what he is going to"
+   },
+   "options": [
+    {
+     "id": "do_it",
+     "text": "Wait.",
+     "goto": "__exit__",
+     "effects": {
+      "ending": "nevermind"
+     }
+    }
+   ]
+  }
+ }
+}

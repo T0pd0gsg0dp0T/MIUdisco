@@ -1,0 +1,308 @@
+{
+ "id": "crash_site",
+ "name": "The Wreckage in the Shallows",
+ "subtitle": "Where you woke up. Whatever this was, you were in it.",
+ "description": "Cold to the waist. The water here comes in at the pace of something with nowhere to be, and it has been going through your pockets since before you woke up.\n\nBehind you, half in the shallows, is the thing you came down in. It is large and it is broken and the smell coming off it is hot metal apologising. Rotor blades are still turning somewhere above the fog, unhurried, in a town where — and this arrives with total confidence and no source whatsoever — nobody owns a helicopter.\n\nAhead, past the harbour wall, green lampposts go up a street in a line, each one throwing more shadow than its flame can account for.\n\nYou do not know your name. This is not distressing yet. It is simply the first item on a list that is going to get longer.",
+ "revisit": "The wreckage is where you left it, cooling. The water has stopped going through your pockets, having found nothing else it wanted.",
+ "ambient": [
+  "Something structural gives out inside the wreck, settles two inches, and stops.",
+  "The rotors change pitch briefly and then remember themselves.",
+  "A gull goes over, or a thing shaped approximately like one."
+ ],
+ "on_enter": {
+  "clue": {
+   "id": "c_woke_in_wreckage",
+   "title": "You came down out of the sky",
+   "text": "You woke in the shallows beside the wreck of something that fell. You have your effects, your injuries and no name.",
+   "beat": "crash",
+   "tags": [
+    "crash",
+    "identity"
+   ],
+   "source": "the harbour"
+  }
+ },
+ "objects": [
+  {
+   "id": "hands",
+   "name": "your own hands",
+   "aliases": [
+    "hands",
+    "yourself",
+    "me",
+    "self",
+    "body"
+   ],
+   "description": "Two of them, working, forty-something. There is ink under the nails of the right one, old and worked in, the kind that arrives over years rather than in an afternoon.\n\nNo wedding ring. A callus on the middle finger where a pen sits.\n\nThe coat is good and has been good for a long time. Whoever you are, you were not poor and you were not idle.",
+   "repeat": "Ink under the nails. A pen callus. Still no name attached to either.",
+   "monocle": "Through the gold, the ink under your nails is not ink. It is the same substance the sky over this harbour is bruising with, and there is a great deal more of it in you than under the nails.",
+   "passive": [
+    {
+     "skill": "VISUAL_CALCULUS",
+     "dc": 10,
+     "text": "Callus placement, ink depth, the wear on the cuff: this hand has held a pen for six to eight hours a day for upwards of twenty years. Whatever you are, you write."
+    },
+    {
+     "skill": "PAIN_THRESHOLD",
+     "dc": 10,
+     "text": "Full inventory, then: the left knee, the right shoulder, a place behind the eye. Nothing broken. Everything filed."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_ink_and_callus",
+     "title": "Ink, and a pen callus",
+     "text": "Ink worked into the nails of your writing hand and a callus where a pen rests. Whoever you are, you have written for a living for a long time.",
+     "beat": "crash",
+     "tags": [
+      "crash",
+      "identity",
+      "manuscript"
+     ],
+     "source": "your own hands"
+    },
+    "lucidity": 4
+   },
+   "check": {
+    "id": "crash:hands:pain",
+    "skill": "PAIN_THRESHOLD",
+    "dc": 9,
+    "kind": "white",
+    "prompt": "Press the places that hurt, one at a time, and take a full inventory rather than a flinch.",
+    "success": "Knee, shoulder, a place behind the eye. You press each one and hold it and the body reports honestly for once.\n\nNothing is broken. Everything is bruised in the pattern of a man who was held and then let go, not a man who struck anything — and the bruising on the forearms is symmetrical, which is not what a fall does.",
+    "failure": "You press the knee and the knee closes the conversation, and the inventory ends there with one item on it, underlined.",
+    "success_effects": {
+     "clue": {
+      "id": "c_held_not_struck",
+      "title": "Held, then let go",
+      "text": "Your bruising is symmetrical along both forearms — the pattern of being held and released, not of falling.",
+      "beat": "crash",
+      "tags": [
+       "crash",
+       "identity"
+      ],
+      "source": "your own body"
+     },
+     "lucidity": 6
+    },
+    "failure_effects": {
+     "health": -2
+    }
+   }
+  },
+  {
+   "id": "wreck",
+   "name": "the wreckage",
+   "aliases": [
+    "wreck",
+    "crash",
+    "machine",
+    "helicopter",
+    "debris"
+   ],
+   "description": "It is the size of a small room and it has come apart along seams that a manufactured object should not have. The metal is hot where the water is not touching it.\n\nThere is no cockpit. There are no controls. There is no space inside it in which a person could have been sitting, and you were unmistakably inside it.\n\nOn one intact panel, stencilled small and neat: a serial number, and under the serial number, four words in a language that resolves into English while you are reading it and declines to afterwards.",
+   "repeat": "Still cooling. Still no cockpit. Still no room in it for a man, which continues to be the interesting part.",
+   "monocle": "Through the gold, the wreck is not wreckage. It is a *correction* — something struck out heavily enough to tear the surface it was struck out on, and the tearing is what came down, and you were in the tear rather than in the machine.",
+   "passive": [
+    {
+     "skill": "INTERFACING",
+     "dc": 11,
+     "text": "There are no working parts. Not damaged ones — absent ones. This object has the shape of a machine and none of the commitments of one."
+    },
+    {
+     "skill": "LOGIC",
+     "dc": 11,
+     "text": "You were inside a thing with no inside. Hold that. Do not resolve it yet, and do not let anybody resolve it for you."
+    },
+    {
+     "skill": "HALF_LIGHT",
+     "dc": 10,
+     "text": "It is still hot. Things that are still hot are still happening. Do not put a hand on it and do not stand downwind of it."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_no_room_inside",
+     "title": "A machine with no inside",
+     "text": "The wreck in the shallows has no cockpit, no controls and no space in which a passenger could have sat. You were in it regardless.",
+     "beat": "crash",
+     "tags": [
+      "crash",
+      "manuscript"
+     ],
+     "source": "the wreckage"
+    },
+    "lucidity": 8
+   },
+   "check": {
+    "id": "crash:wreck:half",
+    "skill": "HALF_LIGHT",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "It is still hot and it is still doing something. Go in close enough to find out what.",
+    "success": "You get in past the point where the heat says stop, because the animal doing this has decided the heat is not the threat.\n\nIt is right. The threat is the sound — under the ticking of cooling metal, a rhythm, four or five strikes and a pause and a return, which is not a machine failing. It is a machine *working*, somewhere very close, and it is a typewriter.",
+    "failure": "You get within a yard and everything old in you objects at once, loudly and without argument, and you are back at the waterline with your pulse doing something athletic and nothing whatever to show for it.",
+    "success_effects": {
+     "clue": {
+      "id": "c_typing_in_the_wreck",
+      "title": "A rhythm in the cooling metal",
+      "text": "Close in to the wreck, under the ticking: four or five strikes, a pause, a return. Not a machine failing — a typewriter working.",
+      "beat": "crash",
+      "tags": [
+       "crash",
+       "manuscript"
+      ],
+      "source": "the wreckage"
+     },
+     "lucidity": 9
+    },
+    "failure_effects": {
+     "morale": -3
+    }
+   }
+  },
+  {
+   "id": "effects",
+   "name": "the things in your pockets",
+   "aliases": [
+    "pockets",
+    "effects",
+    "belongings",
+    "monocle",
+    "watch",
+    "notebook",
+    "cane"
+   ],
+   "description": "Four items, and the water did not take any of them.\n\nA gold monocle, unbroken, on a gold chain. A gold pocket watch stopped at 3:33. A cane with a gold onion handle, which is a joke somebody made once and then had to live inside. And a notebook, waterlogged, most of it a blue smear.\n\nThree pages of the notebook are still legible. They are in handwriting that matches the callus on your finger. You have no memory of writing them and no reason to doubt that you did.",
+   "repeat": "Monocle, watch, cane, notebook. The notebook still has its three legible pages and you still do not remember writing them.",
+   "monocle": "Through the gold — and the monocle looking at itself is a thing you will want to not think about too hard — all four objects are the same age, and the age is not a number of years. They were issued together. They are a set. Somebody equipped you.",
+   "passive": [
+    {
+     "skill": "PERCEPTION",
+     "dc": 10,
+     "text": "The watch is stopped and the watch is dry. Everything else came out of the harbour soaked. The watch has not been in the water at all."
+    },
+    {
+     "skill": "HAND_EYE",
+     "dc": 10,
+     "text": "Take the wet pages from the spine, slowly, with the grain. Wrong angle and the three legible ones become four hundred pieces of confetti."
+    },
+    {
+     "skill": "CONCEPTUALISATION",
+     "dc": 11,
+     "text": "Gold, gold, gold, and a joke about layers. This is not a man's possessions. This is a *characterisation*, and somebody assembled it on purpose."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_three_legible_pages",
+     "title": "Three pages you do not remember writing",
+     "text": "Your notebook came out of the water ruined except for three pages, which are in your own handwriting and describe things you have no memory of.",
+     "beat": "crash",
+     "tags": [
+      "crash",
+      "identity",
+      "manuscript"
+     ],
+     "source": "the waterlogged notebook"
+    },
+    "lucidity": 6
+   },
+   "check": {
+    "id": "crash:effects:hand",
+    "skill": "HAND_EYE",
+    "dc": 10,
+    "kind": "white",
+    "prompt": "The three legible pages are stuck to their ruined neighbours. Separate them without losing them.",
+    "success": "From the spine, slowly, with the grain. The wet paper gives up its neighbours one fibre at a time and all three come away whole.\n\nThe third page has a list on it. Eleven names, in your hand, and nine of them have been crossed out — not scribbled, *ruled* through, once, neatly, the way a man crosses out something he is sorry about.",
+    "failure": "From the spine, slowly, and then not slowly enough. The top page comes away in two pieces and the two pieces do not want to be one piece again, and what is left of it is half a list of something.",
+    "success_effects": {
+     "clue": {
+      "id": "c_eleven_names_nine_ruled",
+      "title": "Eleven names, nine ruled through",
+      "text": "The third legible page of your notebook holds eleven names in your handwriting. Nine are ruled through once, neatly.",
+      "beat": "crash",
+      "tags": [
+       "crash",
+       "identity",
+       "personhood"
+      ],
+      "source": "the waterlogged notebook"
+     },
+     "lucidity": 8
+    },
+    "failure_effects": {
+     "morale": -4
+    }
+   }
+  },
+  {
+   "id": "harbour_wall",
+   "name": "the harbour wall and the street beyond",
+   "aliases": [
+    "wall",
+    "street",
+    "lampposts",
+    "town",
+    "harbour",
+    "inland"
+   ],
+   "description": "The wall is old and the stone is wet to a height that the tide has no business reaching.\n\nBeyond it a street goes up into the parish, green lampposts at intervals, each flame leaning very slightly away from the harbour as though the harbour had said something.\n\nThere are people up there. You can hear a queue being served at a speed no queue is served at, somewhere out of sight, continuously.",
+   "repeat": "The street goes up. The lampposts lean away. The queue is still being served at a speed that no queue is served at.",
+   "monocle": "Through the gold the lampposts are not lit. They are *annotated* — each one carrying a small mark in the margin of the air beside it, in the same hand as your notebook.",
+   "passive": [
+    {
+     "skill": "SHIVERS",
+     "dc": 10,
+     "text": "The parish, coming down the hill to meet you: wet stone, green flame, and a fog with rotors in it that has been here longer than tonight."
+    },
+    {
+     "skill": "ESPRIT_DE_CORPS",
+     "dc": 11,
+     "text": "Four streets up, a man sets down a crate and looks at this fog for longer than the crate required. He does it every night. He will not mention it to you."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_the_parish_above",
+     "title": "Silvora Reefs, up the hill",
+     "text": "A parish of green lampposts above the harbour, awake at an hour that does not appear to end.",
+     "beat": "crash",
+     "tags": [
+      "crash"
+     ],
+     "source": "the harbour wall"
+    }
+   },
+   "check": {
+    "id": "crash:wall:sea",
+    "skill": "SEA_LEGS",
+    "dc": 9,
+    "kind": "white",
+    "prompt": "The wall is wet to a height the tide has no business reaching, and the street is on the other side of it. Go over rather than around.",
+    "success": "Wet stone, a bad angle and a knee with opinions, and none of it is new to the body doing it. You are up and over and down the other side before the deciding part of you has finished objecting.\n\nFrom the top, briefly, the whole parish: green lampposts going up in a line, and the fog behind you with the rotors still in it, and — for one second, from that height only — no lights at all past the far end of the town. Not darkness. An edge.",
+    "failure": "Wet stone and a bad angle. You get a knee over, and the knee that went in the harbour makes a case, and you come down on the harbour side in about four inches of water with your dignity arriving separately a moment later.",
+    "success_effects": {
+     "clue": {
+      "id": "c_an_edge_past_the_town",
+      "title": "An edge, past the far end",
+      "text": "From the top of the harbour wall, briefly: no lights past the far end of the parish. Not darkness — an edge.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "crash"
+      ],
+      "source": "the harbour wall"
+     },
+     "lucidity": 9
+    },
+    "failure_effects": {
+     "health": -3
+    }
+   }
+  }
+ ],
+ "exits": {
+  "durry_kwain": "Up the street, into the parish."
+ }
+}

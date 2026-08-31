@@ -1,0 +1,400 @@
+{
+ "npc": "ginny",
+ "nodes": {
+  "root": {
+   "text": "You're standing in my doorway with your weight on the back foot and your eyes doing the room. That's a guard. That's a man expecting to be hit by architecture.\n\nSit down, Onions. Nothing in here has ever hit anybody who was sitting.",
+   "options": [
+    {
+     "id": "corridor",
+     "text": "\"Your corridor doesn't turn and brings me back facing forward.\"",
+     "goto": "corridor"
+    },
+    {
+     "id": "wall",
+     "text": "\"The wall behind the far booth goes transparent.\"",
+     "goto": "wall",
+     "requires": {
+      "clue": [
+       "c_corridor_fold"
+      ]
+     }
+    },
+    {
+     "id": "sign",
+     "text": "\"Your sign spells another man's name.\"",
+     "goto": "sign",
+     "requires": {
+      "clue": "c_sign_rearranged"
+     }
+    },
+    {
+     "id": "gators",
+     "text": "\"Your security has a laminated card about denying things that happened.\"",
+     "goto": "gators",
+     "requires": {
+      "clue": "c_gator_doctrine"
+     }
+    },
+    {
+     "id": "ginny_room",
+     "text": "Leave the conversation at the exact moment it stops being useful.",
+     "once": true,
+     "check": {
+      "id": "ginny:ginny_room",
+      "skill": "SAVOIR_FAIRE",
+      "dc": 12,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "You are standing and moving before the sentence she is building has finished being built, and you are through the door on the beat where the music changes, which is the only beat on which anybody leaves this room unremarked.\n\nFrom the corridor, briefly, you hear her say — to nobody, in a completely different voice — \"Well. *He* knows how to leave.\"",
+      "failure_text": "You go to leave and the room does what the room does: the music holds, the conversation has one more turn in it, and you take the turn, and by the time you are out you have been seen leaving by everybody who was going to see it.",
+      "success_effects": {
+       "clue": {
+        "id": "c_a_different_voice",
+        "title": "A completely different voice",
+        "text": "Leaving the Möbius unremarked, you hear Ginny speak to an empty room in a voice that is not the one she uses on people.",
+        "beat": "revilo",
+        "tags": [
+         "revilo",
+         "personhood"
+        ],
+        "source": "Ginny 'Gin' Ginja"
+       },
+       "lucidity": 8
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Leave before the room decides something.",
+     "goto": "__exit__"
+    }
+   ],
+   "narration": true
+  },
+  "corridor": {
+   "text": {
+    "low": "Correct. It doesn't turn and it brings you back forward. That's the building. That's what the building is *called*, it's on the sign in red, we did not hide it.\n\nAnd here's the thing you're about to do, and I'd rather you didn't, so I'm going to name it first: you're about to treat that as a problem. It isn't. A problem is something you can be hit by. That corridor has never hit anybody. Whereas my ice machine is a problem, and my licensing is a problem, and the fact that a man came in here Tuesday and *walked at a wall* is very much a problem, and none of those are impossible and all of them are mine.",
+    "high": "Correct. It doesn't turn and it brings you back forward. That's what the building is *called* — it's on the sign in red, we did not hide it.\n\nAnd here's the thing you're about to do, so I'll name it first: you're about to treat that as a problem. It isn't. A problem is something you can be hit by, and that corridor has never hit anybody.\n\nMy ice machine is a problem. My licensing is a problem. A man came in here Tuesday and *walked at a wall* — very much a problem. None of those are impossible and all of them are mine."
+   },
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "She is not incurious. She is triaging. This is a woman who worked out years ago exactly how much of this she can afford to look at, and has held the line every day since, and is holding it now, in front of you, at some cost."
+    }
+   ],
+   "options": [
+    {
+     "id": "you_know",
+     "text": "\"You know exactly what this building is.\"",
+     "check": {
+      "id": "ginny:you_know",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_corridor_fold": 2
+      },
+      "success_text": "\"'Course I know.\"\n\nShe puts the gin down. Not hard — placed, the way you place a thing you might need both hands away from.\n\n\"I've managed this floor eleven years. You think I haven't paced the corridor? I've paced it with a tape. I've paced it with two men and a tape. I know precisely what my building is, Onions, and here's what I do about it: I open at six, I run the bar, I pay eleven people, and I do not look at the back wall.\n\nThat's not denial. Denial's Bud Onkuhdonk, up at the Inn, arguing with weather. This is a *stance*. I know what's coming through that wall and I have decided where my feet go, and my feet go here, in front of the till, between it and them.\"",
+      "failure_text": "\"I know what it's called, I know what it costs to heat, and I know what time the fire inspection is.\" She picks the gin back up. \"You came in here to be told something. Everybody does. The dancers are through there.\"",
+      "success": "corridor_stance",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_ginny_stance",
+        "title": "A stance, not denial",
+        "text": "Ginny has paced the corridor with a tape and two men. She knows exactly what the club is, and has chosen to stand between it and her eleven staff rather than look at it.",
+        "beat": "quadc",
+        "tags": [
+         "awareness",
+         "mobius"
+        ],
+        "source": "Ginny Ginja"
+       },
+       "lucidity": 7,
+       "relationship": {
+        "ginny": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "corridor_stance": {
+   "text": {
+    "low": "Now. Since we're being adults about it, one piece of advice, free, and you'll ignore it because men who investigate always do.\n\nEverything in this town that's gone wrong for somebody has gone wrong at the moment they *lunged*. Not when they looked — looking's free, look all you like, I look. When they lunged. Reached, grabbed, ran at, shouted at.\n\nYou fight a thing bigger than you by making it come to you. It's not brave and it's not satisfying and it is the only thing that has ever worked. Keep your weight down, Onions.",
+    "high": "Since we're being adults about it: one piece of advice, free, and you'll ignore it because men who investigate always do.\n\nEverything in this town that's gone wrong for somebody went wrong the moment they *lunged*. Not when they looked — looking's free, I look. When they reached, grabbed, ran at, shouted at.\n\nYou fight a thing bigger than you by making it come to you. It isn't brave and it isn't satisfying and it's the only thing that has ever worked. Keep your weight down, Onions."
+   },
+   "effects": {
+    "relationship": {
+     "ginny": 1
+    },
+    "flag": {
+     "ginny_warned_about_lunging": true
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Noted.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "wall": {
+   "text": "Yes.\n\nThat's it. That's the whole answer. Yes, it does that, roughly nine times a night, roughly two seconds a go, and I could set a clock by it except that in this establishment that sentence has a second meaning I'd rather not have opened.",
+   "options": [
+    {
+     "id": "whats_behind",
+     "text": "\"What's behind it?\"",
+     "goto": "whats_behind"
+    },
+    {
+     "id": "why_two",
+     "text": "\"Why exactly two seconds?\"",
+     "check": {
+      "id": "ginny:why_two",
+      "skill": "LOGIC",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_gator_doctrine": 2
+      },
+      "success_text": "\"That's the question,\" she says, and looks at you properly for the first time. \"Nobody asks that one. They all ask what's behind it. You asked how long.\n\nTwo seconds because two seconds is what a person *glances* at. Long enough that you saw it, short enough that you can't check it. That's not a physical property, Onions. Nothing physical has a duration tuned to human attention.\n\nSomebody set it. And a thing that's been set can be set differently, and the week before you came out of that harbour it was running at four.\"",
+      "failure_text": "\"Because that's how long it does it for.\" She drinks. \"You're asking a plumbing question about a wall. I've got no plumber for the wall. I've asked.\"",
+      "success": "wall_tuned",
+      "failure": "wall",
+      "success_effects": {
+       "clue": {
+        "id": "c_two_seconds_tuned",
+        "title": "Tuned to a glance",
+        "text": "The transparency lasts exactly two seconds — long enough to see, too short to verify. Nothing physical has a duration tuned to human attention. The week before Oliver surfaced, it was running at four.",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript",
+         "mobius"
+        ],
+        "source": "Ginny Ginja"
+       },
+       "lucidity": 10,
+       "relationship": {
+        "ginny": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "wall_tuned": {
+   "text": "Four seconds, the week before. I know because a girl on the early shift complained about it and I wrote it in the book, and I wrote 'four' because I counted, twice, on two separate nights.\n\nThen you came up out of the water and it went to two, and it has been two every night since, and I would very much like you to tell me that's a coincidence in a way I can believe.",
+   "effects": {
+    "clue": {
+     "id": "c_shortened_when_you_surfaced",
+     "title": "It shortened when you surfaced",
+     "text": "The wall's transparency ran at four seconds until the day Oliver came out of the harbour. It has been two every night since.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "crash",
+      "kindness"
+     ],
+     "source": "Ginny Ginja"
+    },
+    "lucidity": 9,
+    "relationship": {
+     "ginny": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "You cannot tell her that.",
+     "goto": "root"
+    }
+   ]
+  },
+  "whats_behind": {
+   "text": "Vault doors, mostly. Black stone. That's the mortuary up the hill, which is a hell of a thing to have showing through your back wall at a stag party, and I have stopped apologising for it because apologising made it a topic.\n\nAnd once a month, give or take — a room. Low ceiling. Green lamp. Desk.",
+   "lucid": {
+    "2": "She describes it without hesitating over any detail, which is how you describe a room you have looked at more than once."
+   },
+   "options": [
+    {
+     "id": "the_room",
+     "text": "\"Describe the room.\"",
+     "check": {
+      "id": "ginny:the_room",
+      "skill": "RHETORIC",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_mirror_office": 2,
+       "c_struck_page": 3
+      },
+      "success_text": "\"Desk made out of a door on two trestles. Left trestle's split. Paper everywhere — not stacked, *drifted*, like nobody's tidied since there was a reason to. Green shade on the lamp. Cup with a ring under it. Chair pushed back.\n\nAnd a typewriter.\"\n\nShe is watching your face while she says it, which is a fighter's habit, and she does not stop.\n\n\"That's your desk, isn't it. I've been looking at your desk through my back wall once a month for eleven years and I only worked that out about four seconds ago, from your face, and I would like it very much on the record that I did not enjoy it.\"",
+      "failure_text": "\"A room. Lamp, desk, paper. I've got a bar to run, Onions, I don't take inventory of the impossible, I take inventory of the gin.\" But her eyes went to the back wall while she said it, and came back, and she noticed you notice.",
+      "success": "room_is_yours",
+      "failure": "wall",
+      "success_effects": {
+       "clue": {
+        "id": "c_ginny_saw_your_desk",
+        "title": "She has been watching your desk for eleven years",
+        "text": "Ginny describes the room behind the wall in exact detail — including the split left trestle leg. It is Oliver's desk. She has seen it monthly for eleven years.",
+        "beat": "revilo",
+        "tags": [
+         "manuscript",
+         "office"
+        ],
+        "source": "Ginny Ginja"
+       },
+       "lucidity": 15,
+       "morale": -8,
+       "relationship": {
+        "ginny": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Never mind.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "room_is_yours": {
+   "text": "Right. Right.\n\nOK. Guard up, weight down, and let's do this properly, because I've had eleven years of the slow version and you've had a week and I'd rather we arrived together.\n\nIf that's your desk, and it's through my wall, then either you're in two places or my wall is. And I've measured my wall.",
+   "effects": {
+    "relationship": {
+     "ginny": 2
+    },
+    "lucidity": 5,
+    "thought": "presumptuous_senses"
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"You've measured your wall.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "sign": {
+   "text": "Say that again.",
+   "options": [
+    {
+     "id": "again",
+     "text": "\"Revilo's Trap Built. Through the monocle. Every time.\"",
+     "goto": "revilo_reveal"
+    }
+   ]
+  },
+  "revilo_reveal": {
+   "text": {
+    "low": "She does not ask what a monocle has to do with it. She does not ask who Revilo is. Both of those omissions are answers.\n\n\"Onions. I'm going to tell you a thing and then I'm going to ask you to leave, and the leaving isn't hostile, it's *tactical*, and I need you to take it in that spirit.\n\nI don't own this club. I've never owned this club. I manage it, I sign for it, my name's on the licence and I've never once met the freeholder — the paperwork comes through the Coalition and the instructions come on cards with four lobes on them, and the instructions are always about the same thing.\n\nThey're always about a man. Height, coat, a cane with an onion on it. Eleven years of cards telling me what to do if a specific man ever walks in the front.\"",
+    "high": "She does not ask what a monocle has to do with it. She does not ask who Revilo is. Both omissions are answers.\n\n\"Onions. I'm going to tell you a thing and then ask you to leave, and the leaving isn't hostile, it's *tactical*.\n\nI don't own this club. Never have. I manage it, I sign for it, and I have never once met the freeholder — the paperwork comes through the Coalition and the instructions come on cards with four lobes on them.\n\nThey're always about a man. Height, coat, a cane with an onion on it. Eleven years of cards telling me what to do if a specific man walks in the front.\""
+   },
+   "effects": {
+    "clue": {
+     "id": "c_cards_about_you",
+     "title": "Eleven years of instructions about you",
+     "text": "Ginny does not own the club. Instructions arrive on four-lobed cards, and for eleven years they have described a tall man in a coat with an onion-handled cane, and what to do if he walks in the front.",
+     "beat": "revilo",
+     "tags": [
+      "revilo",
+      "quadc"
+     ],
+     "source": "Ginny Ginja"
+    },
+    "lucidity": 14,
+    "morale": -10,
+    "relationship": {
+     "ginny": 1
+    }
+   },
+   "options": [
+    {
+     "id": "what_do",
+     "text": "\"And what do the cards say to do?\"",
+     "goto": "what_do"
+    }
+   ],
+   "narration": true
+  },
+  "what_do": {
+   "text": {
+    "low": "\"Let him in. Let him look. Do not stop him. Do not help him.\"\n\nShe picks the gin back up and does not drink it.\n\n\"Eleven years, Onions. Same three lines, every card. Somebody has been holding a door open for you for eleven years and paying eleven staff to stand near it and not touch you.\n\nNow get out of my club. Come back tomorrow — come back every day, I'm not barring you, I'm *timing* you. But the gators have had a card this week they haven't shown me, and a card they haven't shown me is the first one in eleven years, and I would like you on the other side of my door while I find out what's on it.\"",
+    "high": "\"Let him in. Let him look. Do not stop him. Do not help him.\"\n\nShe picks the gin back up and does not drink it.\n\n\"Same three lines, every card, eleven years. Somebody has been holding a door open for you and paying eleven staff to stand near it and not touch you.\n\nNow get out of my club. Come back tomorrow — I'm not barring you, I'm *timing* you. But the gators have had a card this week they haven't shown me, and that's the first in eleven years, and I want you the other side of my door while I find out what's on it.\""
+   },
+   "effects": {
+    "clue": {
+     "id": "c_new_card",
+     "title": "A card she has not been shown",
+     "text": "For eleven years the cards said: let him in, let him look, do not stop him, do not help him. This week the Insta-gators received one Ginny has not been shown.",
+     "beat": "quadc",
+     "tags": [
+      "quadc",
+      "revilo",
+      "countdown"
+     ],
+     "source": "Ginny Ginja"
+    },
+    "lucidity": 8,
+    "relationship": {
+     "ginny": 1
+    },
+    "flag": {
+     "new_card_exists": true
+    }
+   },
+   "options": [
+    {
+     "id": "out",
+     "text": "Go. Weight down.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "gators": {
+   "text": {
+    "low": "The laminated card. Yes. I wrote lines one through four.\n\nI did not write line five. Line five arrived. And line five used to be one sentence and now it's two, and the second sentence is 'log the anomaly', and I have never seen the log, and I have asked four times, and each time I've been told — courteously, in that voice they do — that they'll circle back.\n\nEleven years of circling back, Onions. They have circled back precisely never, and they say it every single time like it's the first.",
+    "high": "The laminated card. I wrote lines one through four.\n\nI did not write line five. Line five arrived. And it used to be one sentence and now it's two, and the second is 'log the anomaly'. I've never seen the log. I've asked four times, and each time been told — courteously, in that voice they do — that they'll circle back.\n\nEleven years of circling back. They have circled back precisely never, and they say it every time like it's the first."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_log_exists",
+     "title": "There is a log she has never seen",
+     "text": "Ginny wrote the first four lines of Insta-gator doctrine. Line five arrived from elsewhere and instructs them to log anomalies that did not occur. She has asked to see the log four times and been told they will circle back.",
+     "beat": "quadc",
+     "tags": [
+      "quadc",
+      "instagators"
+     ],
+     "source": "Ginny Ginja"
+    },
+    "lucidity": 5,
+    "relationship": {
+     "ginny": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

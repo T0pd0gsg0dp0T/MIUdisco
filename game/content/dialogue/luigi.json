@@ -1,0 +1,272 @@
+{
+ "npc": "luigi",
+ "nodes": {
+  "root": {
+   "text": "Ey! Careful, careful — is wet, is *blessed*, is not the same thing but today they happen in the same place.\n\nYou want to walk here, you wait. Two minutes. The floor is having a moment.",
+   "options": [
+    {
+     "id": "moment",
+     "text": "\"What sort of moment is the floor having?\"",
+     "goto": "moment"
+    },
+    {
+     "id": "corridor",
+     "text": "\"Have you noticed the corridor changes length?\"",
+     "goto": "corridor"
+    },
+    {
+     "id": "typing",
+     "text": "\"Do you hear typing at night?\"",
+     "goto": "typing"
+    },
+    {
+     "id": "squeegee",
+     "text": "\"Patron Saint of the Squeegee.\"",
+     "goto": "squeegee",
+     "once": true
+    },
+    {
+     "id": "luigi_squeegee",
+     "text": "\"Give me the squeegee. One pane. I will do it properly.\"",
+     "once": true,
+     "check": {
+      "id": "luigi:luigi_squeegee",
+      "skill": "SAVOIR_FAIRE",
+      "dc": 11,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "You take it and you do the arc — one pass, no lift, the wrist doing the turn at the bottom — and the glass behind it stops arguing with the room.\n\nLuigi watches the whole pane without speaking, which he has not done since you met him. \"Ey,\" he says, when it is finished. \"You have done this. Not a floor. Something else. But you have done *this*.\"",
+      "failure_text": "You take it and you do something that is technically a wipe. Luigi does not take it back, which would be a kindness. He watches, and offers advice, and the advice is about the elbow, and the pane ends up worse than it started.",
+      "success_effects": {
+       "clue": {
+        "id": "c_you_have_done_this",
+        "title": "You have done this",
+        "text": "Handed a squeegee, your hands know the stroke. Luigi says you have done this before — not floors, something else, but this.",
+        "beat": "crash",
+        "tags": [
+         "crash",
+         "identity"
+        ],
+        "source": "Luigi Luigi"
+       },
+       "lucidity": 6,
+       "relationship": {
+        "luigi": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Go round the wet patch.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "moment": {
+   "text": {
+    "low": "Is a *dirty* moment. What else, my friend? A floor does not have moods. A floor has a dirt on it, or a floor has no dirt on it, and in between the two there is me and there is this bucket.\n\nAnybody can put a dirt down. A shoe does it. A shoe does it and does not even know. But to take one *up* — so it does not come back Tuesday, so it has never been there, so a man walks over that spot and thinks about his mother instead of about a mark — ey. Ey! For that you need the wrist. Forty-one years I have this wrist.",
+    "high": "Is a *dirty* moment. What else? A floor has a dirt on it or it has no dirt on it, and in between there is me and this bucket.\n\nAnybody can put a dirt down — a shoe does it and does not even know. To take one *up*, so it does not come back Tuesday, so it has never been there, so a man walks over that spot and thinks about his mother instead of a mark — ey! For that you need the wrist. Forty-one years I have this wrist."
+   },
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 11,
+     "text": "'So it has never been there.' He means it as an old man's flourish about mopping. It is also, word for word, what the Insta-gators' fifth line does to an anomaly."
+    }
+   ],
+   "options": [
+    {
+     "id": "never_been",
+     "text": "\"So it has never been there.\"",
+     "goto": "never_been"
+    },
+    {
+     "id": "back",
+     "text": "\"Right.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "never_been": {
+   "text": {
+    "low": "Sì! Never! Is the standard! Is the *only* standard!\n\nYou do a thing halfway and what you have made is worse than the dirt was. Is worse. I tell you how I know.\n\nThird floor, by the lift. Twenty years ago, more, there is a mark and I am in a hurry and I do it *almost*. Is gone. You would say is gone. Anybody would say is gone, I would take money off you that is gone.\n\nIs not gone. Every day, forty-one years, I come past that spot and my eye goes to it. There is nothing there for my eye to go to and my eye goes anyway.\n\nSo is not in the floor any more, Mr Onions. Is in me. And one day I retire, and then is in the wall — and the wall, my friend, the wall does not retire.",
+    "high": "Sì! Never! Is the standard! Is the *only* standard!\n\nYou do a thing halfway and what you have made is worse than the dirt was. I tell you how I know.\n\nThird floor, by the lift. Twenty years ago there is a mark and I am in a hurry and I do it *almost*. Is gone — anybody would say is gone, I would take money off you that is gone.\n\nIs not gone. Every day, forty-one years, my eye goes to that spot. There is nothing there for my eye to go to and my eye goes anyway.\n\nSo is not in the floor now. Is in me. And one day I retire, and then is in the wall — and the wall does not retire."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_luigi_doctrine",
+     "title": "The wall does not retire",
+     "text": "A mark Luigi half-cleaned twenty years ago is invisible and he still looks at the spot daily. His account of where it went — out of the floor, into him, and eventually into the wall — is functionally the Insta-gators' fifth line, arrived at with a bucket.",
+     "tags": [
+      "language",
+      "luigi"
+     ],
+     "source": "Luigi Luigi"
+    },
+    "lucidity": 4,
+    "relationship": {
+     "luigi": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "corridor": {
+   "text": "The corridor is a corridor.\n\n... Now, you make the face. Do not make the face at me, I have been made faces at by professionals. The corridor is a corridor *when I have done it*. Before I have done it — ey, before I have done it, who knows, is not my business what a floor gets up to on its own time.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 10,
+     "text": "He is not concealing anything. He has genuinely never wondered. The distinction between 'the corridor behaves after I clean it' and 'the corridor behaves because I clean it' has not once occurred to him, and pointing it out would be a small cruelty."
+    },
+    {
+     "skill": "SAVOIR_FAIRE",
+     "dc": 12,
+     "text": "Look at his route. He does the west end first, then the turn, then back along the east — and the west end is where the corridor stretches, and he does it first, every day, and has done for years, and nobody assigned him that order."
+    }
+   ],
+   "options": [
+    {
+     "id": "test",
+     "text": "\"Do the west end for me. Now. I'll walk it after.\"",
+     "check": {
+      "id": "luigi:test",
+      "skill": "RHETORIC",
+      "dc": 10,
+      "kind": "white",
+      "success_text": "\"For *you*? Out of order? Mr Onions, this is—\"\n\nHe does it. He grumbles the entire length of it in two languages and he does it beautifully, arcs like a man conducting something, and the glass behind the squeegee stops arguing with the room.\n\nYou walk it after. Alone.\n\nEleven feet. Fourteen paces, the fourteenth against the scuff, and the far door where the far door is, and no stretch, no give, nothing. The corridor is simply a corridor, and it is a corridor because a man with a bucket made it one twenty seconds ago, and in an hour it will not be, and he will not know either time.",
+      "failure_text": "\"Out of *order*? Ey. No. No, no. West, turn, east. Is not superstition, Mr Onions, is not — is the *route*. You do not ask a river for a favour.\"\n\nHe will not be moved. He is, on this one subject, completely immovable, and cannot tell you why, and does not find that strange.",
+      "success": "test_worked",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_luigi_stabilises",
+        "title": "The mop is load-bearing",
+        "text": "Walked immediately after Luigi cleans it, the corridor is eleven feet — the same as it is with company. His cleaning stabilises the building, and he has no idea.",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript",
+         "luigi",
+         "architecture"
+        ],
+        "source": "the west corridor"
+       },
+       "lucidity": 9,
+       "relationship": {
+        "luigi": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "Leave him his route.",
+     "goto": "root"
+    }
+   ]
+  },
+  "test_worked": {
+   "text": "Is good, no? Is *clean*.\n\nYou stand there with the face again. Mr Onions. My friend. I have cleaned this building eleven years and in eleven years you are the first tenant to walk a corridor on purpose after I have done it, and I want you to know that I have noticed, and that it is the nicest thing that has happened to me this month, and that I am not going to ask why.",
+   "effects": {
+    "morale": 8,
+    "relationship": {
+     "luigi": 2
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"It's very clean, Luigi.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "typing": {
+   "text": "The typing! Sì, sì, everybody, all the time, tap tap tap — is the pipes.\n\nIs the pipes, Mr Onions. In a building this old the pipes do everything. I have heard the pipes do a *waltz*.",
+   "options": [
+    {
+     "id": "not_pipes",
+     "text": "\"It stops when you're working.\"",
+     "check": {
+      "id": "luigi:not_pipes",
+      "skill": "LOGIC",
+      "dc": 11,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_luigi_stabilises": 3
+      },
+      "success_text": "He stops mid-arc.\n\n\"...Sì,\" he says. \"Sì, is true. I do not hear it when I am working. I hear it when I stop for the coffee, and I hear it going up the stair, and never with the squeegee in my hand.\"\n\nA long pause, filled by a bucket.\n\n\"I had thought this was because of the noise of my working. But I am a quiet worker, Mr Onions. I am a very quiet worker. Is glass and water. Is the quietest thing in the building.\"",
+      "failure_text": "\"Because I am working! Is noise! A man with a bucket cannot hear a pipe do a waltz, this is not a mystery, this is a bucket.\"",
+      "success": "not_pipes_ok",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_typing_stops_for_luigi",
+        "title": "It stops while he works",
+        "text": "The typing is never audible while Luigi is cleaning — and he is the quietest worker in the building. It resumes when he stops for coffee.",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript",
+         "typewriter",
+         "luigi"
+        ],
+        "source": "Luigi Luigi"
+       },
+       "lucidity": 10,
+       "relationship": {
+        "luigi": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Probably the pipes.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "not_pipes_ok": {
+   "text": {
+    "low": "Ey. Ey, ey, ey. No.\n\nI see where this is going, my friend, I have seen where things are going since before you were born, and I am telling you now with love: I do not want it.\n\nI have a bucket and a route and a floor that is clean at the end of the day. Whatever it is you are building in your head out of my quiet working — you keep it. You are welcome to it. You take it away with you and you do not bring it back into my corridor, and I will do the west end first tomorrow like every day, and we will both be happier men.\n\n... You will bring it back. I know. Go on. Mind the wet.",
+    "high": "Ey. Ey, ey, ey. No.\n\nI see where this is going, and I am telling you now with love: I do not want it.\n\nI have a bucket and a route and a floor that is clean at the end of the day. Whatever you are building in your head out of my quiet working — you keep it. Take it away and do not bring it back into my corridor, and I will do the west end first tomorrow like every day, and we will both be happier men.\n\n... You will bring it back. I know. Go on. Mind the wet."
+   },
+   "effects": {
+    "relationship": {
+     "luigi": 1
+    },
+    "morale": 4
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Mind the wet.",
+     "goto": "root"
+    }
+   ]
+  },
+  "squeegee": {
+   "text": "Patron Saint! Sì! Myself I proclaim it — I am very clear, there is no committee, I do not wish to mislead anybody.\n\nAnd is not for the holiness, before you get excited. My mother, God rest her, she would tell you I am the furthest thing.\n\nIs for *showing up*. Forty-one years, same building, same bucket. You show up like that, somebody is supposed to give you a title — and nobody gives you one, so you give yourself one, and then you show up Monday anyway. That is the whole ceremony, Mr Onions. Was a very small ceremony. I was the only one there.",
+   "effects": {
+    "morale": 5,
+    "relationship": {
+     "luigi": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

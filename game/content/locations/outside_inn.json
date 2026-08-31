@@ -1,0 +1,390 @@
+{
+ "id": "outside_inn",
+ "name": "The Outside Inn",
+ "subtitle": "The outdoors, brought indoors, and asked to behave.",
+ "description": {
+  "low": "The door is a door and behind the door is weather.\n\nNot a conservatory. Not a courtyard with a roof off. Weather — thirty feet of it, going up, with a sky at the top that is doing something the sky outside is not doing. Tonight the outside sky is violet going crimson, as ever, and the Inn's sky is holding a clean cold noon with three-quarters of a moon in it, unbothered, like a man reading in a room where an argument is happening.\n\nBeneath it: trees. Actual ones, rooted in actual ground that goes down further than the building's footprint permits. A stream comes out of the east wall, runs the length of the lounge, and goes into the west wall, and nobody has ever asked where from or where to. Over by the stair there is rain falling on one armchair and not on the one beside it, and both chairs are occupied, and neither occupant has mentioned it.",
+  "mid": "Behind the door is weather — thirty feet of it, with a sky at the top holding a cold clean noon while the sky outside goes violet into crimson. Trees rooted in ground that goes deeper than the footprint allows. A stream comes out of the east wall and into the west. Rain is falling on one armchair and not the one beside it, and both are occupied.",
+  "high": "Indoor weather under an indoor sky. Rain on one armchair, not the next. Both occupied."
+ },
+ "revisit": {
+  "low": "The indoor sky has moved on to a dusk it is not entitled to, and the stream is running the other way, and Bud Onkuhdonk is already crossing the lounge toward you with the expression of a man who has prepared a sentence beginning with BUT.",
+  "mid": "The indoor sky has moved to a dusk it is not entitled to. The stream is running the other way. Bud is already crossing the lounge.",
+  "high": "The stream is running the other way. Bud is crossing the lounge."
+ },
+ "lucid": {
+  "2": "There is a sound under the water-noise that the water-noise was chosen to cover.",
+  "3": "The rain falls on the one chair because the chair beside it is not in the same paragraph.",
+  "4": "The indoor sky is not a sky. It is a stage direction that ran long and had to be given somewhere to be."
+ },
+ "ambient": [
+  "A guest walks in from the street, shakes rain off a coat, and steps under the indoor rain to do it, and neither rain acknowledges the other.",
+  "Dee Stroii passes through the lounge and simultaneously does not, and waves at himself across the water, and himself waves back with the wrong hand.",
+  "The stream carries a page of newsprint out of the east wall. Nobody reaches for it. It goes into the west wall still dry."
+ ],
+ "objects": [
+  {
+   "id": "sky",
+   "name": "the indoor sky",
+   "aliases": [
+    "sky",
+    "ceiling",
+    "moon",
+    "weather"
+   ],
+   "description": {
+    "low": "It starts about thirty feet up and it does not stop there. There is depth in it. Distance. The moon in it tonight is three-quarters and slightly the wrong way round for the season, and around it there are stars in arrangements that are almost the arrangements you know.\n\nBarney will tell you, at the smallest provocation, that the sky was here when he took the lease. He says this the way a man says the boiler was here when he took the lease.",
+    "mid": "Thirty feet up and with real depth in it. A three-quarter moon, slightly the wrong way round for the season, among constellations that are almost the ones you know. Barney says the sky was here when he took the lease, in the tone a man uses about a boiler.",
+    "high": "An indoor sky with real depth, a wrong-way moon, and near-familiar stars."
+   },
+   "repeat": "The moon has not moved and the stars have. That is the wrong one of those to be moving.",
+   "monocle": "Through the gold there is no sky. There is a ceiling at nine feet, plaster, water-stained, with a light fitting in it that has been painted over. The thirty feet of night is being *described* into the gap between your eye and the plaster, and it is a good description, and in the top left of it there is a small mark like a proofing tick where somebody has read it back and been satisfied.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 11,
+     "text": "The building is two storeys. You have walked past it four hundred times. There is no elevation here that can hold thirty feet of anything, and the room above this one is let, and somebody sleeps in it."
+    },
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "Watch the guests rather than the sky. Nobody looks up. In a room with a private night in the ceiling, not one person has looked up, and that is not incuriosity — that is a rule everybody has been taught and nobody was told."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_indoor_sky",
+     "title": "A private night indoors",
+     "text": "The Outside Inn contains thirty feet of independent sky in a two-storey building whose upper room is let and slept in. No guest ever looks up.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "architecture"
+     ],
+     "source": "The Outside Inn"
+    },
+    "monocle_effects": {
+     "clue": {
+      "id": "c_proofing_tick",
+      "title": "A proofing tick",
+      "text": "Under the monocle the indoor sky is nine feet of water-stained plaster with a description laid over it — and in the top left, a small mark like a proofing tick, where somebody read it back and was satisfied.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "office",
+       "typewriter"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 9
+    }
+   },
+   "check": {
+    "id": "inn:sky:shiv",
+    "skill": "SHIVERS",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "There is thirty feet of sky in a two-storey building. Stand under it and let it be weather rather than a problem.",
+    "success": "It has weather in it. Not the idea of weather — pressure, and a front coming through, and a temperature drop that arrives four minutes before it arrives outside.\n\nThis sky is running ahead of the real one. It is not a copy of the weather over Silvora Reefs. It is a draft of it.",
+    "failure": "Thirty feet of it, with a moon, indoors, and the bellhop somewhere behind you saying BUT it's a light well with the fervour of a man holding something up.",
+    "success_effects": {
+     "clue": {
+      "id": "c_indoor_sky_runs_ahead",
+      "title": "A draft of the weather",
+      "text": "The Outside Inn's indoor sky carries weather four minutes before it reaches the real one. It is not a copy. It is a draft.",
+      "beat": "oracle",
+      "tags": [
+       "oracle",
+       "manuscript"
+      ],
+      "source": "the indoor sky"
+     },
+     "lucidity": 10
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "register",
+   "name": "the guest register",
+   "aliases": [
+    "register",
+    "book",
+    "guestbook",
+    "ledger"
+   ],
+   "description": {
+    "low": "Open on the desk, because Barney keeps it open, because Barney believes a closed book is an unfriendly object.\n\nName, arrival, room, and a column headed CAME BY. The last is the Inn's local peculiarity and Barney is proud of it: guests write down which street they came in from.\n\nHarbour Road. Mountain Avenue. Harbour Road. Mountain Avenue. Wick Street. Harbour Road. Nobody has ever queried it. Mountain Avenue is on the other side of Silvora Reefs and is uphill, and Harbour Road is at the water, and both of them arrive at this door, and every guest recorded here describes the walk as direct.",
+    "mid": "Open on the desk. Name, arrival, room, and CAME BY. Guests write the street they arrived from: Harbour Road, Mountain Avenue, Harbour Road, Wick Street. Mountain Avenue is uphill on the far side of town. Harbour Road is at the water. Every guest describes the walk as direct.",
+    "high": "The register's CAME BY column lists incompatible streets. Every guest called the walk direct."
+   },
+   "repeat": "Four new arrivals since Tuesday. Two Harbour Road, one Mountain Avenue, and one that says, in a firm hand, BOTH.",
+   "monocle": "Through the gold the CAME BY column has a second entry under each first, in fainter ink, and every one of the second entries says the same thing: FROM WHERE THEY WERE LAST NEEDED.",
+   "passive": [
+    {
+     "skill": "SAVOIR_FAIRE",
+     "dc": 11,
+     "text": "Check the arrival times against the streets. Two guests, four minutes apart, from opposite ends of the town, both direct, both on foot. One of those is a lie and neither of them is lying."
+    },
+    {
+     "skill": "RHETORIC",
+     "dc": 12,
+     "text": "The column is headed CAME BY and not CAME FROM. Barney chose that wording, or somebody chose it for him, and 'came by' is what you say about a thing that arrived rather than a person who travelled."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_came_by",
+     "title": "Every road arrives here",
+     "text": "The Inn's register records guests arriving directly from streets on opposite sides of town, minutes apart, on foot. Nobody has ever queried the column.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "architecture"
+     ],
+     "source": "the guest register"
+    },
+    "monocle_effects": {
+     "clue": {
+      "id": "c_last_needed",
+      "title": "From where they were last needed",
+      "text": "Under the monocle every register entry carries a second line in fainter ink: FROM WHERE THEY WERE LAST NEEDED.",
+      "beat": "oracle",
+      "tags": [
+       "oracle",
+       "manuscript"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 10
+    }
+   },
+   "check": {
+    "id": "inn:register:ency",
+    "skill": "ENCYCLOPEDIA",
+    "dc": 10,
+    "kind": "white",
+    "prompt": "A guest register, and you have read about guest registers. Work the book rather than the names.",
+    "success": "Registers are kept for the licensing and the licensing wants three things: arrival, origin, and duration. This one has all three and every origin is a place inside this parish.\n\nNobody has ever arrived at the Outside Inn from outside. In eleven years of a book kept for the express purpose of recording arrivals from elsewhere, there is no elsewhere in it.",
+    "failure": "Names, dates, a column of origins in a careful hand. There is a shape to the way the book is kept that you have read about and cannot currently produce, and the innkeeper refills something at your elbow while you fail to produce it.",
+    "success_effects": {
+     "clue": {
+      "id": "c_no_arrivals_from_outside",
+      "title": "Nobody arrives from outside",
+      "text": "Eleven years of the Outside Inn's guest register, and every recorded origin is somewhere inside the parish. There is no elsewhere in the book.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "quadc"
+      ],
+      "source": "the guest register"
+     },
+     "lucidity": 8
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "chairs",
+   "name": "the two armchairs",
+   "aliases": [
+    "chairs",
+    "armchair",
+    "armchairs",
+    "rain"
+   ],
+   "description": {
+    "low": "Side by side at the foot of the stair, eighteen inches apart, matching pair, same upholstery, same wear on the same arm.\n\nIt is raining on the left one. It has been raining on the left one for as long as you have been in the room. The rain arrives from the indoor sky in a column about a yard across, lands on the occupant, runs off the occupant, and soaks into ground that is somehow keeping up with it.\n\nThe man in the left chair is reading. He is wet through and turning pages that are dry. The woman in the right chair is knitting, in the dry, eighteen inches away, and has not looked over once.",
+    "mid": "A matching pair, eighteen inches apart. Rain falls on the left one in a yard-wide column. The man in it is soaked and turning dry pages. The woman in the right chair is knitting in the dry and has not looked over.",
+    "high": "Rain on the left armchair only. The man in it is soaked and his pages are dry."
+   },
+   "repeat": "Still raining on the left. He has finished the book and started it again.",
+   "lucid": {
+    "3": "The eighteen inches between the chairs is not eighteen inches. It is a paragraph break."
+   },
+   "monocle": "Through the gold the two chairs are not in the same place. They are in the same *sentence*, adjacent, with nothing between them — and one of them is being rained on because it says so, and the other is not being rained on because it does not.",
+   "check": {
+    "id": "inn:chairs:ask",
+    "skill": "EMPATHY",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "Ask the woman in the dry chair whether her companion is aware that it is raining on him.",
+    "success": "\"He likes it,\" she says, without stopping the needles.\n\nAnd then, after four more stitches, in a completely different voice — flatter, and much older, and addressed to the knitting rather than to you:\n\n\"He's been in the wet one since March. I sat in it first, and it was dry, and then he sat down and it started, and I moved. That's all it is, love. It's not the chair. It's the one of us who's in it.\"\n\nShe does not elaborate. The needles go on. The man turns another dry page in the rain.",
+    "failure": "\"He likes it,\" she says, and the needles do not stop, and there is no second answer coming. After a while it becomes clear that there was never going to be a second answer and that standing here waiting for one is a thing you are doing to yourself.",
+    "success_effects": {
+     "clue": {
+      "id": "c_not_the_chair",
+      "title": "It's not the chair",
+      "text": "The woman in the dry armchair sat in the wet one first, when it was dry. It began raining when he sat down. Her verdict: it is not the chair, it is the one of you who is in it.",
+      "beat": "revilo",
+      "tags": [
+       "revilo",
+       "manuscript"
+      ],
+      "source": "the two armchairs"
+     },
+     "lucidity": 9
+    },
+    "failure_effects": {
+     "morale": -2
+    }
+   }
+  },
+  {
+   "id": "stream",
+   "name": "the stream",
+   "aliases": [
+    "stream",
+    "water",
+    "waterfall",
+    "brook"
+   ],
+   "description": {
+    "low": "It comes out of the east wall at ankle height through an opening that has been finished with proper stonework, as though somebody had planned for a river and hired a mason about it. It runs the length of the lounge over a bed of rounded stones, drops four feet into a pool by the bar, and leaves through the west wall.\n\nIt is very cold and completely clear and it is running slightly uphill for the middle third of its course. Not steeply. Just enough that a man who has watched water his whole life would have to stand there a while before he could say why the room was bothering him.",
+    "mid": "Out of the east wall at ankle height through proper stonework, the length of the lounge, four feet into a pool by the bar, out through the west. Very cold, completely clear, and running slightly uphill for the middle third.",
+    "high": "The stream runs uphill for the middle third of its course."
+   },
+   "repeat": "Running the other way tonight, and uphill for the middle third of that direction too, which is the detail that finishes the argument.",
+   "monocle": "Through the gold the water is not water and is not pretending especially hard. It is a line of type running left to right along the floor of the lounge, in a face you have seen before, and where it drops four feet into the pool it is a paragraph break, and where it goes into the west wall it is the end of a page.",
+   "passive": [
+    {
+     "skill": "PHYSIQUE",
+     "dc": 10,
+     "text": "Put a hand in it. It is cold in the way of a real stream and it pushes against the wrist in the way of a real stream, and it is doing that while going up, and the wrist has no opinion about which way is up."
+    },
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "It leaves through the west wall at a level below where it entered through the east, having gone up in the middle. That is a net loss of height accomplished with a gain in the middle, which water can do only if something is carrying it, and nothing is carrying it."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_uphill_water",
+     "title": "Water running uphill in the middle third",
+     "text": "The Inn's stream runs slightly uphill for the middle third of its course, in both directions, and is otherwise entirely convincing water.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "architecture"
+     ],
+     "source": "the stream"
+    },
+    "monocle_effects": {
+     "clue": {
+      "id": "c_stream_is_type",
+      "title": "A line of type along the floor",
+      "text": "Under the monocle the stream is a line of type running left to right, dropping four feet at a paragraph break and leaving through the west wall at the end of a page.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "typewriter"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 11
+    }
+   },
+   "check": {
+    "id": "inn:stream:sea",
+    "skill": "SEA_LEGS",
+    "dc": 10,
+    "kind": "white",
+    "prompt": "There is a stream running through the lounge and it is running uphill by about a degree. Wade it and keep your feet.",
+    "success": "The trick is to stop arguing with it. You go in to the shin and the current takes the leg and you let it, and it turns out to be the same negotiation as a wet deck in a swell, and the knees know it before the rest of you gets a vote.\n\nMidstream the direction resolves: it is running toward the fireplace, and it has been running toward the fireplace for as long as there has been a fireplace, and nothing anywhere is filling it.",
+    "failure": "You go in to the shin and the floor of it is not where the surface says it is. The leg goes further than the leg expected, the knee that has been going since the harbour makes its position known, and you come out of it wet to the waist with an audience being extremely tactful about it.",
+    "success_effects": {
+     "clue": {
+      "id": "c_stream_runs_to_the_fire",
+      "title": "It runs toward the fireplace",
+      "text": "The indoor stream at the Outside Inn runs uphill toward the fireplace and has no source feeding it.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript"
+      ],
+      "source": "the stream"
+     },
+     "lucidity": 7
+    },
+    "failure_effects": {
+     "health": -4,
+     "morale": -3
+    }
+   }
+  },
+  {
+   "id": "trolley",
+   "name": "Bud's luggage trolley",
+   "aliases": [
+    "trolley",
+    "luggage",
+    "cart",
+    "bags"
+   ],
+   "description": {
+    "low": "Brass rail, brass wheels, brass everything, polished past the point where polish is doing any good and into the point where it is doing something else.\n\nThere are four bags on it. There have been four bags on it every time you have been in this building. They are not the same four bags — the tartan one was a leather one in the spring and a hard case in the autumn — but there are four, always, and the trolley never goes anywhere, and Bud stands beside it all day with one hand on the rail like a man holding a horse for somebody who is coming right back.",
+    "mid": "Brass, over-polished. Four bags on it, always four, never the same four, and the trolley never goes anywhere. Bud stands beside it with one hand on the rail like a man holding a horse for somebody who is coming right back.",
+    "high": "Four bags, always four, never the same four, and the trolley never moves."
+   },
+   "repeat": "Four bags. One of them is now a hatbox. Bud's hand has not left the rail.",
+   "monocle": "Through the gold there are no bags and there is no trolley. There is Bud Onkuhdonk, standing in the middle of the lounge with one hand out at waist height, holding nothing, very hard, for a long time.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "He is not lazy and he is not idle. Look at the hand on the rail: the knuckles are pale. He is holding on to it. This is a man who has found one object in this building that will hold still and has decided to make a career of it."
+    }
+   ],
+   "effects": {
+    "monocle_effects": {
+     "clue": {
+      "id": "c_bud_holds_nothing",
+      "title": "He is holding nothing, very hard",
+      "text": "Under the monocle there is no trolley and there are no bags. There is Bud, standing in the lounge with one hand out at waist height, gripping nothing, for a long time.",
+      "beat": "oracle",
+      "tags": [
+       "oracle",
+       "denial"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 8,
+     "morale": -5
+    }
+   },
+   "check": {
+    "id": "inn:trolley:phys",
+    "skill": "PHYSIQUE",
+    "dc": 10,
+    "kind": "white",
+    "prompt": "Bud has been holding that luggage trolley all evening. Offer to take it and actually take it.",
+    "success": "He hands it over with enormous reluctance and you take the weight, and the weight is wrong.\n\nThere are no bags on it. There have never been bags on it. It weighs what a loaded trolley weighs and the load is not on it, and Bud watches you find that out with an expression of profound and specific relief at not being the only one.",
+    "failure": "He does not let go. He says BUT it's no trouble, three times, with escalating politeness, and his knuckles do something that ends the offer more clearly than a refusal would have.",
+    "success_effects": {
+     "clue": {
+      "id": "c_trolley_loaded_with_nothing",
+      "title": "Loaded with nothing",
+      "text": "Bud's luggage trolley carries the weight of a full load and has nothing on it. He is relieved that somebody else has felt it.",
+      "beat": "oracle",
+      "tags": [
+       "oracle",
+       "kindness",
+       "personhood"
+      ],
+      "source": "Bud's luggage trolley"
+     },
+     "lucidity": 9,
+     "relationship": {
+      "bud": 2
+     }
+    },
+    "failure_effects": {}
+   }
+  }
+ ],
+ "exits": {
+  "mobius": "back onto the harbour road and the light that is nearly red",
+  "lishush_mush": "two streets in, toward a smell of something soft and extraordinary",
+  "giddyup": "up and inland, to smoke and a building older than the town"
+ }
+}

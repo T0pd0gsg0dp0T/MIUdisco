@@ -1,0 +1,349 @@
+{
+ "id": "giddyup",
+ "name": "Giddyup End 'em Ribs",
+ "subtitle": "Open whenever it is genuinely needed. Closed at all other times.",
+ "description": {
+  "low": "There is no sign of the hours anywhere on the building, and there has never been a night when you have walked up here and found it shut. Other people report finding it shut constantly. Both accounts are held to be accurate and nobody has ever put them side by side.\n\nSmoke first, then the room: low, long, dark wood gone darker, and the sort of warmth that a building only accumulates over centuries. Which is the trouble. The parish had the foundations dated in the sixties, out of civic pride, and the report came back with three different answers for three different courses of stone — one of them four hundred years before there was a Silvora Reefs to build in, and one of them for a material the report's author noted, in a footnote he clearly enjoyed, was not yet being manufactured.\n\nThe walls are masks. That is the thing everybody remembers about this room, and everybody remembers it wrongly, because they remember it as decoration.",
+  "mid": "You have never found it shut. Others report finding it shut constantly. Both accounts stand. Smoke, then a long dark room with centuries of warmth in it — and foundations dated to three different periods, one predating the town, one using a material not yet manufactured. The walls are masks, which everyone remembers as decoration.",
+  "high": "Never shut for you, always shut for others. Foundations from three impossible periods. The walls are masks."
+ },
+ "revisit": {
+  "low": "Ben is at the long table with his hands flat on it, and he greets you with his own name in the form of a question, and the question lands the way it always lands, which is as though he already has the answer and is being polite about it.",
+  "mid": "Ben greets you with his own name in the form of a question, as though he has the answer and is being polite.",
+  "high": "Ben asks you what you been up to. He already knows."
+ },
+ "lucid": {
+  "2": "The smoke goes up and out through a roof that has no vent in it.",
+  "3": "There are two hundred masks and there are two hundred people in Silvora Reefs, and neither of those numbers has ever needed to be counted.",
+  "4": "This building is older than the town because it was written first. Everything else was worked out from here."
+ },
+ "ambient": [
+  "Ben says something about a summer you have not told anybody about, and moves on before it can be a question.",
+  "The fire settles. In the settling there is the sound of a lever being thrown at the end of a line.",
+  "A mask on the west wall is not where it was, and the nail it was on is still there, and there is no dust ring."
+ ],
+ "objects": [
+  {
+   "id": "masks",
+   "name": "the masks",
+   "aliases": [
+    "masks",
+    "mask",
+    "wall",
+    "faces"
+   ],
+   "description": {
+    "low": "They cover the walls from the wainscot to the beams, overlapping, four and five deep in places, carved in a dozen woods by what must be a dozen hands over what must be a very long time.\n\nAnd they are portraits. Not one of them is an abstraction and not one of them is a god. They are people, and they are people you know: there is Darek in the corner by the door with the drawl carved into the set of the jaw, and Soliloquy over the fire holding her chin at the angle she holds it, and Ginny high up on the west wall with her hair pinned like a threat, and Asimov, and Luigi, and Mary Guana, and a bull antelope with crooked antlers and an expression of enormous effortful hope.\n\nBen's position on this is that they are old masks. He has never disputed the resemblances. He has never once said the word 'resemblance'.",
+    "mid": "Wainscot to beams, overlapping four and five deep, a dozen woods and a dozen hands over a very long time. And every one is a portrait of somebody you know: Darek, Soliloquy, Ginny, Asimov, Luigi, Mary, a bull antelope with an expression of effortful hope. Ben says they are old masks, and has never once said 'resemblance'.",
+    "high": "Two hundred masks, every one a portrait of somebody you know. Ben says they are old."
+   },
+   "repeat": "There is one near the door that was not near the door. It is Darek. He is smiling in it and he was not smiling in it.",
+   "monocle": "Through the gold the masks are not carved. They are *cast* — every one taken from the same original, and then worked afterwards into difference, and the working is skilful and the original is underneath all of them and the original has your bone structure.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 11,
+     "text": "The carver liked them. All of them, individually, and it shows in the small decisions — the humour left in around Darek's mouth, the tiredness allowed into Asimov's eyes. Whoever made these was fond of every single person in this town."
+    },
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "A dozen hands over centuries, and yet the eye-spacing is identical on every mask on this wall. Different woods, different tools, different eras, one set of measurements."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_masks_are_portraits",
+     "title": "Every mask is somebody you know",
+     "text": "The masks at Giddyup are portraits of living Reefers — Darek, Soliloquy, Ginny, Asimov, Luigi — carved in a dozen woods over centuries, with identical eye-spacing on every one.",
+     "beat": "revilo",
+     "tags": [
+      "revilo",
+      "identity"
+     ],
+     "source": "the masks"
+    },
+    "monocle_effects": {
+     "clue": {
+      "id": "c_one_original",
+      "title": "One original, worked into difference",
+      "text": "Under the monocle the masks are cast from a single original and worked afterwards into difference. The original has Oliver's bone structure.",
+      "beat": "revilo",
+      "tags": [
+       "revilo",
+       "identity"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 15,
+     "morale": -7
+    }
+   },
+   "check": {
+    "id": "giddyup:masks:comp",
+    "skill": "COMPOSURE",
+    "dc": 10,
+    "kind": "white",
+    "prompt": "Take one off the wall and put it on, in front of everybody, without making it a joke.",
+    "success": "You put it on. You do not do a voice. You do not make the face people make when they put on a mask, and the room, which had been ready to laugh, has nowhere to put the laugh and quietly keeps it.\n\nFrom inside, the eyeholes line up with the room in a way that is off by a foot. These were cut for somebody standing where nobody stands — behind the counter, on the left, exactly where the proprietor has stood for eleven years.",
+    "failure": "You put it on and the room decides what that means before you do, and what it means is a joke, and the joke is generous and warm and completely finished with by the time it comes off.\n\nYou learn nothing except that the wood smells of smoke and that these people like you.",
+    "success_effects": {
+     "clue": {
+      "id": "c_masks_cut_for_one_position",
+      "title": "Cut for one position",
+      "text": "The eyeholes of Giddyup's masks line up only from behind the counter, on the left, where the proprietor has stood for eleven years.",
+      "beat": "oracle",
+      "tags": [
+       "oracle",
+       "personhood"
+      ],
+      "source": "the masks"
+     },
+     "lucidity": 8
+    },
+    "failure_effects": {
+     "morale": 3
+    }
+   }
+  },
+  {
+   "id": "hidden_mask",
+   "name": "the mask behind the others",
+   "aliases": [
+    "hidden mask",
+    "hidden",
+    "behind",
+    "warped"
+   ],
+   "description": {
+    "low": "Third bay from the fire, four deep, most of it behind a fisherman and a woman with a lamp. What is visible is a cheekbone, part of a jaw, and one eye.\n\nIt is you. It is unmistakably you and it takes about a second and a half to be certain of it, and in the second and a half there is a stage where it is not you and is somebody with your cheekbone, and that stage is the part that stays with you afterwards.\n\nThe features are not quite in the arrangement you keep them in. Nothing is missing and nothing has been added. Everything has been moved about a sixteenth of an inch, in different directions, by somebody who knew exactly what they were doing and had a reason.",
+    "mid": "Four deep behind a fisherman and a woman with a lamp: a cheekbone, part of a jaw, one eye. It is you, and it takes a second and a half to be sure, and in that second and a half it is somebody with your cheekbone. Every feature has been moved about a sixteenth of an inch, in different directions, deliberately.",
+    "high": "A mask of your face, four deep behind the others, every feature moved a sixteenth of an inch."
+   },
+   "repeat": "You have moved the fisherman aside twice now. Both times it has been back over the eye when you looked again, and both times Ben has been at the long table with his hands flat and his eyes elsewhere.",
+   "lucid": {
+    "3": "The sixteenth of an inch is not random. Every feature has been moved toward the mirror-image position and stopped short of it.",
+    "4": "It is not a warped face. It is a face that was going to be reversed and was interrupted."
+   },
+   "monocle": "Through the gold the mask is whole and unobstructed and facing you, and the fisherman and the woman with the lamp are somewhere else entirely, and on the inside of the mask — the side that goes against a face — somebody has written, small, in pencil: NOT YET.",
+   "check": {
+    "id": "giddyup:mask:take",
+    "skill": "PHYSIQUE",
+    "dc": 11,
+    "kind": "white",
+    "requires": {
+     "clue": "c_masks_are_portraits"
+    },
+    "prompt": "Move the fisherman properly. Not a nudge — lift it off the nail and put it on the table and look at the thing behind it with the whole of your attention.",
+    "success": "The fisherman comes off the nail. The woman with the lamp comes off the nail. You put them on the long table, one either side of Ben's hands, and Ben does not move them and does not stop you and does not look.\n\nAnd it is your face, complete, and it is wrong in the way described, and it is not a wrongness of craft. Every displacement is toward the mirror image. The nose leans a sixteenth the other way, the jaw sits a sixteenth the other way, the parting is on the other side by a sixteenth — and none of them arrives, all of them stop short, and the effect is of a reversal that somebody began and did not finish.\n\nBen says, to the table: \"That one's older than the others, and it ain't. Both. I've had it up thirty years and I've never hung it and I've never took it down.\"",
+    "failure": "The fisherman is on a nail that has been there since the war and it does not want to come off it, and you get it half up and the whole bay shifts an inch and something at the back knocks, and you put it back.\n\nBen has not looked up. Ben's hands are flat on the long table and he says, at a normal volume, to nobody: \"Some things is hung and some things is just up there.\"",
+    "success_effects": {
+     "clue": {
+      "id": "c_interrupted_reversal",
+      "title": "A reversal that stopped short",
+      "text": "The hidden mask is Oliver's face with every feature displaced a sixteenth of an inch toward its mirror image and stopping short. Ben has had it thirty years, has never hung it, and has never taken it down.",
+      "beat": "revilo",
+      "tags": [
+       "revilo",
+       "identity",
+       "wordplay",
+       "kindness"
+      ],
+      "source": "the hidden mask"
+     },
+     "lucidity": 16,
+     "morale": -8,
+     "thought": "backwards_man"
+    },
+    "failure_effects": {
+     "health": -3,
+     "lucidity": 4
+    }
+   },
+   "effects": {
+    "monocle_effects": {
+     "clue": {
+      "id": "c_not_yet",
+      "title": "NOT YET",
+      "text": "On the inside of the hidden mask — the side that goes against a face — somebody has written in small pencil: NOT YET.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "revilo",
+       "kindness"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 12
+    }
+   }
+  },
+  {
+   "id": "foundations",
+   "name": "the exposed foundation course",
+   "aliases": [
+    "foundations",
+    "foundation",
+    "stone",
+    "floor",
+    "course"
+   ],
+   "description": {
+    "low": "By the cold end of the room somebody has taken up three boards and never put them back, and under them is the top course of the original footing, and beside it in a frame on the wall is the parish's dating report from 1963, kept up because Ben thinks it is funny.\n\nThree courses. Three answers. The bottom one predates Silvora Reefs by four hundred years, which the report handles calmly. The middle one is unremarkable. The top one is a cement compound that the report's author identifies, correctly and at some length and with obvious delight, as not yet being in production.\n\nThe conclusion of the report reads: THE BUILDING IS THEREFORE OF INDETERMINATE BUT UNDOUBTED ANTIQUITY. Somebody in the parish office has written OK in the margin.",
+    "mid": "Three boards up, the original footing beneath, and the 1963 parish dating report framed on the wall because Ben finds it funny. Three courses, three answers: one four hundred years before the town, one unremarkable, and one of a cement not yet in production. Conclusion: THE BUILDING IS THEREFORE OF INDETERMINATE BUT UNDOUBTED ANTIQUITY. Somebody has written OK in the margin.",
+    "high": "Three foundation courses, three impossible dates. The report concludes: INDETERMINATE BUT UNDOUBTED ANTIQUITY. Somebody wrote OK in the margin."
+   },
+   "repeat": "The OK in the margin is in a hand you have started to be able to pick out of a crowd.",
+   "monocle": "Through the gold the three courses are three drafts. The bottom is the earliest and it is the roughest and it has the most life in it. The middle is competent. The top is the newest and is the most careful and is holding up the least.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "A building cannot be built out of a material that does not exist yet. But a building can be *described* as being built out of one, by somebody who knows the material, who is not writing in 1963."
+    },
+    {
+     "skill": "RHETORIC",
+     "dc": 11,
+     "text": "'Indeterminate but undoubted antiquity.' The author had three contradictory results and produced a sentence that is true of all three. That is not incompetence. That is a professional at the end of his patience doing something rather beautiful."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_three_courses",
+     "title": "Three courses, three centuries",
+     "text": "Giddyup's foundations date to three incompatible periods, one predating the town by four hundred years and one using a cement not yet manufactured in 1963.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "architecture"
+     ],
+     "source": "the foundation course"
+    },
+    "monocle_effects": {
+     "clue": {
+      "id": "c_three_drafts",
+      "title": "Three drafts",
+      "text": "Under the monocle the three foundation courses are three drafts — the oldest roughest and most alive, the newest most careful and holding up least.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "typewriter"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 10
+    }
+   },
+   "check": {
+    "id": "giddyup:found:inter",
+    "skill": "INTERFACING",
+    "dc": 12,
+    "kind": "white",
+    "prompt": "The building sits on something older than the building. Get underneath and read the mechanism.",
+    "success": "Under the floor the joists rest on a frame, and the frame is not a foundation. It has bearings in it, and a track, and the track is circular.\n\nThis building is mounted to turn. It has not turned — the grease is undisturbed — but it was built by somebody who expected it to, and it is aimed, currently, at the harbour.",
+    "failure": "Joists, a frame, and a great deal of very old grease, and whatever the frame is for it declines to say from this angle with this light and this back.",
+    "success_effects": {
+     "clue": {
+      "id": "c_the_building_can_turn",
+      "title": "Mounted to turn",
+      "text": "Giddyup sits on a circular track with bearings. It has never turned, but it was built to, and it is aimed at the harbour.",
+      "beat": "oracle",
+      "tags": [
+       "oracle",
+       "quadc"
+      ],
+      "source": "the foundations"
+     },
+     "lucidity": 10
+    },
+    "failure_effects": {
+     "health": -2
+    }
+   }
+  },
+  {
+   "id": "long_table",
+   "name": "the long table",
+   "aliases": [
+    "table",
+    "long table",
+    "bench"
+   ],
+   "description": {
+    "low": "One piece of oak, twenty-two feet, black with a century of hands. Ben sits at the middle of the long side with his palms flat on it, which is how he sits, and which is not a mannerism — he has told you it keeps him where he is.\n\nThere are names carved into the underside. You found them by dropping a fork. Hundreds of them, going back along the whole length, cut small and neat and all in the same tool, and each one has a date beside it, and the dates are not deaths and they are not births.\n\nThe most recent one is yours. The date beside it is four days after you came out of the harbour, which has not happened yet.",
+    "mid": "Twenty-two feet of oak, black with handling. Ben sits with his palms flat on it because it keeps him where he is. On the underside: hundreds of names cut small and neat in the same tool, each with a date that is neither a birth nor a death. The most recent is yours, dated four days after you came out of the harbour — which has not happened yet.",
+    "high": "Names carved under the table, each with a date. The most recent is yours, four days from now."
+   },
+   "repeat": "You check the date again. It is one day closer than it was, and the carving has not been recut, and the number is simply different.",
+   "monocle": "Through the gold the dates are not dates. They are page numbers. Yours is high and it is not the highest, and the highest one belongs to a name you cannot read because the tool slipped, or because it has not been decided.",
+   "passive": [
+    {
+     "skill": "SAVOIR_FAIRE",
+     "dc": 12,
+     "text": "One tool. Hundreds of names, over what the wear says is a century, and one tool, and the same pressure. Nobody's hand stays that steady for a century."
+    },
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "Ben knows they are there. Ben has sat with his palms flat on this table for fifty years directly above a list with his own name in it, and he has never once mentioned it, and he has never once moved."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_names_underneath",
+     "title": "A list with a date beside your name",
+     "text": "Hundreds of names are carved into the underside of Ben's table in a single tool over a century. Each has a date that is neither birth nor death. The most recent is Oliver's, and it is in the future, and it moves closer.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "countdown"
+     ],
+     "source": "the long table"
+    },
+    "monocle_effects": {
+     "clue": {
+      "id": "c_page_numbers",
+      "title": "They are page numbers",
+      "text": "Under the monocle the dates carved beside each name are page numbers. Oliver's is high but not highest. The highest belongs to a name the tool slipped on, or that has not been decided.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "manuscript"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 13
+    }
+   },
+   "check": {
+    "id": "giddyup:table:sugg",
+    "skill": "SUGGESTION",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "The long table seats eleven and nine of them are strangers to each other. Get the table talking about the night the harbour lit up.",
+    "success": "You do not ask. You put the subject down in the middle of the table like a dish and let them serve themselves.\n\nWithin four minutes eleven people are arguing about a night none of them will place, and the argument has a shape: everybody remembers the light, nobody remembers the sound, and two of them remember being outside for it and having no reason to have been.",
+    "failure": "You put the subject down and it sits there. Somebody asks whether you mean the fireworks. Somebody else says there were no fireworks. The table agrees pleasantly that there were no fireworks and returns to the ribs, and the moment is gone and cannot be put down twice.",
+    "success_effects": {
+     "clue": {
+      "id": "c_light_but_no_sound",
+      "title": "The light, and no sound",
+      "text": "Eleven strangers at Giddyup all remember a light over the harbour and none remember a sound. Two remember being outside for it without reason.",
+      "beat": "crash",
+      "tags": [
+       "crash",
+       "oracle"
+      ],
+      "source": "the long table"
+     },
+     "lucidity": 7
+    },
+    "failure_effects": {}
+   }
+  }
+ ],
+ "exits": {
+  "rest_assured": "further up, into the obsidian",
+  "outside_inn": "down and seaward, to a building with its own weather",
+  "cheeses_thrice": "along the ridge, toward an oven that can be smelled from here"
+ }
+}

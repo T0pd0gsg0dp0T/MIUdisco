@@ -1,0 +1,349 @@
+{
+ "npc": "barney",
+ "nodes": {
+  "root": {
+   "text": "Take a pew! Mind the ford — she's running the other way tonight, which happens, that's just her being a river about it.",
+   "options": [
+    {
+     "id": "history",
+     "text": "\"Tell me about the town. The old parts.\"",
+     "goto": "history"
+    },
+    {
+     "id": "sky",
+     "text": "\"Where did the sky come from, Josh?\"",
+     "goto": "sky"
+    },
+    {
+     "id": "roads",
+     "text": "\"Your guests arrive from opposite ends of town and all call it direct.\"",
+     "goto": "roads",
+     "requires": {
+      "clue": "c_came_by"
+     }
+    },
+    {
+     "id": "voice",
+     "text": "\"Your voice changes when you explain this place.\"",
+     "goto": "voice",
+     "once": true
+    },
+    {
+     "id": "barney_stream",
+     "text": "\"Walk me up the stream. To wherever it starts.\"",
+     "once": true,
+     "check": {
+      "id": "barney:barney_stream",
+      "skill": "SEA_LEGS",
+      "dc": 11,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "He comes, and the two of you wade the lounge, and he keeps his feet as easily as you do, which for an innkeeper is worth noticing.\n\nIt does not start. It goes under the wainscot at the far end and the wainscot is on an outside wall and there is nothing behind it, and Barney says, in the second voice, the one with the sea in it: \"It has always come from there. I stopped asking in the first year.\"",
+      "failure_text": "He comes as far as the armchairs and then does the innkeeper thing — a hand on your shoulder, a change of subject, a drink — and by the time it has finished happening you are dry and sitting down and the stream is somebody else's business.",
+      "success_effects": {
+       "clue": {
+        "id": "c_stream_from_an_outside_wall",
+        "title": "From behind an outside wall",
+        "text": "The Outside Inn's stream comes from under the wainscot of an outside wall with nothing behind it. Barney stopped asking in his first year.",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript",
+         "oracle"
+        ],
+        "source": "Josh 'Barney' Arneaux"
+       },
+       "lucidity": 9,
+       "relationship": {
+        "barney": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Leave him to the weather.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "history": {
+   "text": {
+    "low": "Ohhh, now you've done it. Sit down. No — sit *down*, this one's got a middle.\n\nSilvora Reefs got founded twice. That's the thing nobody tells you and it's in the parish book plain as anything. Founded in the spring by a fella off a boat, and then founded again eleven years later by a different fella off a different boat, and both foundings are recorded, and neither one mentions the other, and there's no gap in between where the first one stopped.\n\nEleven years where the town was founded twice at once. Records for both. Two lots of first buildings on the same plots. And here's my favourite bit — and this is the bit I tell at Christmas — the second fella's name was the first fella's name, only round the other way.",
+    "high": "Ohhh, now you've done it. Sit *down*, this one's got a middle.\n\nSilvora Reefs got founded twice. It's in the parish book plain as anything. Founded in the spring by a fella off a boat, and founded again eleven years later by a different fella off a different boat. Both recorded. Neither mentions the other. No gap where the first one stopped.\n\nAnd here's my favourite bit, the bit I tell at Christmas — the second fella's name was the first fella's name, only round the other way."
+   },
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 11,
+     "text": "Two foundings, overlapping, on the same plots, with no gap. That is not a disputed history. That is a first attempt and a second attempt, both left in."
+    },
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "He is telling you the most alarming fact in the parish as a Christmas story, and he is enjoying it, and there is not one particle of unease anywhere in him. He has no idea. He is a man carrying a live thing in a bag and whistling."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_founded_twice",
+     "title": "The town was founded twice, at once",
+     "text": "Parish records show Silvora Reefs founded twice, eleven years apart, with no gap and the same plots — and the second founder's name was the first founder's name reversed.",
+     "beat": "revilo",
+     "tags": [
+      "revilo",
+      "wordplay",
+      "manuscript"
+     ],
+     "source": "Josh 'Barney' Arneaux"
+    },
+    "lucidity": 11
+   },
+   "options": [
+    {
+     "id": "name",
+     "text": "\"What was the name?\"",
+     "check": {
+      "id": "barney:founder_name",
+      "skill": "RHETORIC",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "\"Now, I'd have to look — no, I wouldn't, I know it, everybody knows it, it's on the harbour stone.\n\nSilvo. First fella was Silvo. That's your Silvora Reefs, right there, that's the whole name of the town.\n\nAnd the second fella, eleven years on, off his own boat, with his own charter — he was Ovlis.\"\n\nHe laughs. It is a completely delighted laugh and it goes on for a while.\n\n\"Ovlis! Off a boat! And they never met and they both built on the corner of Wick Street and there's two foundation stones under the customs house and the parish has never once had the nerve to dig them up and see which is on top.\"",
+      "failure_text": "\"Ohhh, it's — hang on. It's on the harbour stone. It's Silvo one way and it's the other one the other way and I can never keep hold of which is which without a pencil, and I've not got a pencil, and if I go and get a pencil I'll come back with a story about the pencil.\"",
+      "success": "founder_name",
+      "failure": "history",
+      "success_effects": {
+       "clue": {
+        "id": "c_silvo_ovlis",
+        "title": "Silvo. Ovlis.",
+        "text": "The two founders of Silvora Reefs were Silvo and Ovlis. Two foundation stones lie under the customs house and the parish has never dug them up to see which is on top.",
+        "beat": "revilo",
+        "tags": [
+         "revilo",
+         "wordplay"
+        ],
+        "source": "Josh 'Barney' Arneaux"
+       },
+       "lucidity": 12,
+       "relationship": {
+        "barney": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "founder_name": {
+   "text": "You've gone quiet. People do, at that bit. It's a good bit.\n\nHere's the one I don't tell, since you're being quiet properly and not the polite way. The parish keeps a list of everybody who's ever asked about the second founder. It's four names long and it goes back a hundred and ten years.\n\nAnd I'm on it, from when I took the lease. And I never asked anybody. I filled in a form about the drains.",
+   "effects": {
+    "clue": {
+     "id": "c_list_of_askers",
+     "title": "Four names in a hundred and ten years",
+     "text": "The parish keeps a list of everyone who has ever asked about the second founder. It is four names long across 110 years. Barney is on it, and never asked — he filled in a form about the drains.",
+     "beat": "quadc",
+     "tags": [
+      "quadc",
+      "revilo"
+     ],
+     "source": "Josh 'Barney' Arneaux"
+    },
+    "lucidity": 8,
+    "relationship": {
+     "barney": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Who else is on it?\"",
+     "goto": "who_else"
+    }
+   ],
+   "narration": true
+  },
+  "who_else": {
+   "text": {
+    "low": "Couldn't tell you. Never seen it. It's a list somebody told me about in a pub in 1994 and I've believed it ever since without a shred of anything, which — now you say it back to me with your face doing that — is not how I generally go about things.\n\nHuh.\n\nRight! Anyway. There's a front coming through the lounge at ten and you'll want to be on the dry side for it, and I'll say no more, and I'd take it as a kindness if you'd let me get on with the barrels.",
+    "high": "Couldn't tell you. Never seen it. It's a list somebody told me about in a pub in 1994 and I've believed it ever since without a shred of anything — which, now you say it back with your face doing that, is not how I generally go about things.\n\nHuh.\n\nRight! There's a front coming through the lounge at ten and you'll want the dry side, and I'd take it as a kindness if you'd let me get on with the barrels."
+   },
+   "effects": {
+    "relationship": {
+     "barney": 1
+    },
+    "lucidity": 4
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Let him get on with the barrels.",
+     "goto": "root"
+    }
+   ]
+  },
+  "sky": {
+   "text": {
+    "low": "She came with the building!\n\nAnd that's — no, hang on, that's the short one, you'll want the long one. *Everything* came with the building. That's the wonder of the place, that's what I say to every guest that walks in with a face on: I didn't put a river in here. I couldn't. Have you priced a river?\n\nI took the lease in '94 and there was thirty foot of night in the lounge and a stream through it running the wrong way for a Tuesday, and the fella selling it never mentioned it once in the particulars, and I never asked, because—\n\nWell. Because when a man's selling you a river for the price of a pub you don't get clever about it.",
+    "high": "She came with the building!\n\n*Everything* came with the building. That's the wonder of the place. I didn't put a river in here. I couldn't. Have you priced a river?\n\nI took the lease in '94 and there was thirty foot of night in the lounge and a stream running the wrong way for a Tuesday, and the fella selling it never mentioned it once in the particulars, and I never asked — because when a man's selling you a river for the price of a pub you don't get clever about it."
+   },
+   "lucid": {
+    "2": "The register goes back to 1911. He has been here since 1994 and the register is in one hand throughout."
+   },
+   "options": [
+    {
+     "id": "who_sold",
+     "text": "\"Who sold it to you?\"",
+     "check": {
+      "id": "barney:who_sold",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "The children's-television warmth goes out of his voice like a light being turned off at a wall.\n\n\"I've never been able to bring him up,\" Barney says, in his own register, which is much flatter and about ten years older. \"Not can't remember. *Can't bring up.* I get to the shape of him and there's a — and then I'm talking about the drains.\n\nI've got the deed in the safe. There's a name on it and I've read it four hundred times and I have never once carried it out of the room. My hand's on the paper, I'm reading it, and by the time I've got the safe shut it's gone, and what I'm left with is that it was short.\n\nIt was short and it started with an S. Or it ended with one.\"",
+      "failure_text": "\"Fella off the — ohh, now. He'd have been the agent, or the — there was a firm. It'll be in the deed! It's all in the deed and the deed's in the safe and the safe's a devil and I'll dig it out for you, honest I will, remind me.\"\n\nHe will not remember. He is not avoiding it. He simply arrives at the end of the sentence somewhere else, cheerfully, every time.",
+      "success": "who_sold_truth",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_unspeakable_vendor",
+        "title": "The name that will not leave the room",
+        "text": "Barney has read the vendor's name on the Inn's deed four hundred times and has never carried it out of the safe room. All that survives: it was short, and it started with an S, or ended with one.",
+        "beat": "revilo",
+        "tags": [
+         "revilo",
+         "manuscript"
+        ],
+        "source": "Josh 'Barney' Arneaux"
+       },
+       "lucidity": 13,
+       "relationship": {
+        "barney": 2
+       },
+       "morale": -4
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Fair enough.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "who_sold_truth": {
+   "text": "Right.\n\nRight, well, that's the first time I've said that out loud and I'd be obliged if we didn't do it again, because I've got a lovely life, Oliver. I want that on the record. I have got a genuinely lovely life in a building with a moon in it and I am not a stupid man and I have made a decision.\n\nNow. There's a front coming through around ten. You'll want the dry side.",
+   "effects": {
+    "relationship": {
+     "barney": 1
+    },
+    "morale": 4
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Take the dry side.",
+     "goto": "root"
+    }
+   ]
+  },
+  "roads": {
+   "text": "Aha! The column! Nobody reads the column. I put that column in myself in '96 and in thirty years you're the fourth person to bring it up.\n\nAnd yes. Harbour Road, Mountain Avenue, both, all night, every night, and everybody walked straight here. I love it. I think it's marvellous. My view is that this establishment is *approachable*, and that's a compliment to a hotel, and I have never once seen the difficulty.",
+   "options": [
+    {
+     "id": "fourth",
+     "text": "\"Who were the other three?\"",
+     "check": {
+      "id": "barney:other_three",
+      "skill": "SAVOIR_FAIRE",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "\"A surveyor in '99. A young woman in about 2011 who was writing something. And a fella in a green coat, and I couldn't put a year on him, and I couldn't put a year on him because he's been in four times and I've written him in the register four times and it's four different years and it's the same conversation.\"\n\nBarney laughs, because Barney laughs.\n\n\"Same conversation! Word for word! I do my bit, he does his bit, he says the thing about the column, I say it's marvellous, and off he goes. And every time, in the CAME BY, he's put the same thing, and it's not a road.\"\n\nHe turns the register round and finds it without looking, four times, four years, one hand.\n\nCAME BY: *the same way as last time.*",
+      "failure_text": "\"Ohhh — a surveyor, and a young woman who was writing something, and — no. Two. It was two and now it's you and that's three, and I said four, and I'd not want to add one on for the sake of a round number.\"\n\nHe frowns at the register for a while and then puts it down and is cheerful again with a completeness that is difficult to watch.",
+      "success": "green_coat",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_green_coat",
+        "title": "A man in a green coat, four times, four years",
+        "text": "The Inn's register records a man in a green coat four times across four different years, having the same conversation word for word. Under CAME BY he has written, each time: 'the same way as last time.'",
+        "beat": "revilo",
+        "tags": [
+         "revilo",
+         "office"
+        ],
+        "source": "the guest register"
+       },
+       "lucidity": 14,
+       "relationship": {
+        "barney": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Marvellous. Yes.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "green_coat": {
+   "text": "Handsome fella. Tall. Bit like you, actually — no, that's not it. Bit like *the idea* of you, if you'd been described to somebody who then met you.\n\nAnd he had a stick with a thing on the top and I couldn't tell you what the thing was and I looked right at it.\n\nWill you have a drink? I've gone off a bit here and I'd like to go back on.",
+   "effects": {
+    "clue": {
+     "id": "c_green_coat_stick",
+     "title": "A stick with a thing on the top",
+     "text": "Barney's description of the man in the green coat: tall, and like the idea of Oliver as described to somebody who then met him. He carried a stick with something on the top that Barney looked directly at and cannot name.",
+     "beat": "revilo",
+     "tags": [
+      "revilo",
+      "identity"
+     ],
+     "source": "Josh 'Barney' Arneaux"
+    },
+    "lucidity": 10,
+    "morale": -5
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Have one yourself, Josh.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "voice": {
+   "text": {
+    "low": "Does it?\n\n... Does it? Go on, do it back at me. — No. No, don't, actually. Sheila said. Sheila said years ago and I asked her to stop.\n\nIt's the explaining. When I'm explaining the place I go — she said it's like a fella on the telly for children, and I know the one she means, and I have never once heard it happen, and I've listened for it.\n\nIt's a kind thing though, isn't it. If you were going to be given a voice for explaining an impossible building to a frightened person, you'd want that one. You wouldn't want mine.",
+    "high": "Does it?\n\n... Go on, do it back at me. — No. Don't, actually. Sheila said, years ago, and I asked her to stop.\n\nIt's the explaining. She said it's like a fella on the telly for children, and I know the one she means, and I have never once heard it happen, and I've listened.\n\nIt's a kind thing though, isn't it. If you were going to be given a voice for explaining an impossible building to a frightened person, you'd want that one. You wouldn't want mine."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_barney_voice",
+     "title": "The voice he was given for explaining",
+     "text": "Barney's timbre shifts to a children's-television register whenever he explains the Inn. He has listened for it for years and has never once heard it happen.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript"
+     ],
+     "source": "Josh 'Barney' Arneaux"
+    },
+    "lucidity": 7,
+    "relationship": {
+     "barney": 1
+    },
+    "morale": 3
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"No. You wouldn't.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

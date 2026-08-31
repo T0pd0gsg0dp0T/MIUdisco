@@ -1,0 +1,520 @@
+{
+ "id": "hang_hi",
+ "name": "Hang-Hi Quiet Apartments",
+ "subtitle": "Second floor. Suspended from above. Nobody has ever explained from what.",
+ "description": {
+  "low": "Home, insofar as the word survives contact with the building. The second floor hangs from something overhead rather than standing on anything below, and the residents treat this as a design feature the way other towns treat a nice cornice. Your corridor runs from the stair to your door in a length that has never twice been the same, and it is longer tonight, because you are walking it alone.\n\nInside, the flat has arranged itself into the shape it uses when you have been away: chair angled toward the window, desk under its usual weight of paper, the smell of wet wool coming off the coat you have not yet taken off. The lamp is on. You do not recall leaving it on, but the lamp and you have an arrangement and it has never yet been in writing.",
+  "mid": "Home. The second floor hangs from above rather than standing on anything below, which the residents treat as a cornice treats a wall. Your corridor was longer tonight, because you walked it alone.\n\nThe flat has arranged itself into its away-shape: chair to the window, desk under paper, the lamp on. You did not leave the lamp on. You and the lamp have an arrangement.",
+  "high": "Home, hanging from nothing. The lamp is on and you did not leave it on."
+ },
+ "revisit": {
+  "low": "The corridor gives you a different length again — shorter this time, companionably so, which from this building constitutes an apology. Your door is where you left it, which is not guaranteed and is never remarked upon.",
+  "mid": "The corridor is shorter this time. From this building, that is an apology.",
+  "high": "The corridor lets you through without argument."
+ },
+ "lucid": {
+  "2": "Under everything else, at the edge of the audible, there is a rhythm in the building that is not plumbing. Three or four strikes, then a pause. Then three or four more.",
+  "3": "The pauses between the strikes have lengths. Some are short. One, tonight, goes on for most of a minute, and the building holds its breath through all of it, and then the striking resumes and something in the arrangement of your evening has been revised.",
+  "4": "The building is not making a sound. The building is being described as making a sound, and the description is being typed, and you are standing inside the paragraph where it happens."
+ },
+ "ambient": [
+  "Somewhere below, a squeegee completes an arc, and for a moment the stairwell agrees to be a stairwell.",
+  "A door two flats down opens onto weather. It is not the weather outside. Nobody mentions it, and the door closes politely.",
+  "The green flame in the corridor lamp throws four shadows and has only ever had the one of you."
+ ],
+ "on_enter": {
+  "thought": "and_furthermore",
+  "learn_name": true
+ },
+ "objects": [
+  {
+   "id": "notebook",
+   "name": "the waterlogged notebook",
+   "aliases": [
+    "notebook",
+    "pages",
+    "notes"
+   ],
+   "description": {
+    "low": "It came out of the harbour in your coat. Ninety pages of blue smear, ink gone to weather, the whole record of whatever you were doing before the sky handed you back.\n\nThree pages are dry. Not dried — dry. They sit in the middle of the ruin like a paragraph the flood was instructed to go around. The handwriting is yours. The words are yours in the sense that you would use them, in that order, with that comma. You have no memory of the sentence they make.",
+    "mid": "Ninety pages of blue smear. Three dry ones in the middle, untouched, in your handwriting. You would have written those words in that order. You did not write them.",
+    "high": "Three dry pages in a drowned notebook, in your hand, unremembered."
+   },
+   "repeat": "The three pages are still dry. You have stopped expecting this to change and have not stopped checking.",
+   "monocle": "Through the gold, the smeared pages stay smeared — but the blue moves. It is not ink dispersing in water. It is ink being *withdrawn*, page by page, back toward a nib, in a slow careful retraction that has been going on for some time and is nearly finished. The three dry pages are not survivors. They are what has not been taken back yet.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 10,
+     "text": "Water does not select. It has no criteria. A flood that skips three pages in the middle of a book is not a flood, it is an editor."
+    },
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "Read the three pages as a person rather than as evidence. The hand is steady on the first two. On the third it presses harder — not fear. Insistence. Somebody wanted this bit to survive being written."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_three_pages",
+     "title": "Three dry pages",
+     "text": "The notebook drowned. Three pages in the middle did not, and they carry your handwriting and a sentence you have no memory of composing.",
+     "beat": "crash",
+     "tags": [
+      "manuscript",
+      "crash",
+      "kindness"
+     ],
+     "source": "your coat pocket"
+    },
+    "thought": "wet_notebook",
+    "monocle_effects": {
+     "clue": {
+      "id": "c_ink_withdrawing",
+      "title": "The ink is being withdrawn",
+      "text": "Through the monocle, the ruined pages are not running. They are being un-written, slowly, back toward a nib.",
+      "beat": "manuscript",
+      "tags": [
+       "typewriter",
+       "manuscript"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 6
+    }
+   },
+   "check": {
+    "id": "hang:notebook:hand",
+    "skill": "HAND_EYE",
+    "dc": 10,
+    "kind": "white",
+    "prompt": "There are more pages in this than the three. Work the blue smear apart and see what is under it.",
+    "success": "Patience, a dry cloth and a very shallow angle. Two more pages come up out of the blue — not legible, but *ruled*, and the ruling is not the notebook's.\n\nSomebody drew a margin down these pages by hand, twice, on the same two sheets, at eleven and nine inches. The measurements of a room.",
+    "failure": "The blue is not ink any more, it is a suspension, and the moment the cloth touches it the page decides to be one colour all the way through.",
+    "success_effects": {
+     "clue": {
+      "id": "c_margins_at_eleven_and_nine",
+      "title": "Margins at eleven and nine",
+      "text": "Two ruined notebook pages carry hand-drawn margins at eleven and nine inches — the measurements of a room.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "manuscript"
+      ],
+      "source": "the waterlogged notebook"
+     },
+     "lucidity": 9
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "mirror",
+   "name": "the hallway mirror",
+   "aliases": [
+    "mirror",
+    "glass",
+    "reflection"
+   ],
+   "description": {
+    "low": "A tall spotted glass in a frame the building insists came with the building. It reflects the corridor, the lamp, the coat rack, and you — in that order of enthusiasm, as though you were the item it was least contracted to include.\n\nHold still in front of it. Hold still longer than is comfortable, longer than a man checking his collar would. On a long enough hold, the corridor behind your reflection stops being the corridor. It becomes a room with a low ceiling and one lamp, and a desk under the lamp, and paper on the desk. Then it is the corridor again, and the mirror has the decency not to look pleased with itself.",
+    "mid": "A tall spotted glass. It reflects the corridor and includes you reluctantly. Hold still longer than a man checking his collar would, and the corridor behind you becomes a low room with one lamp, a desk, and paper. Then it stops.",
+    "high": "The mirror shows a low room, a lamp, a desk, paper. Then the corridor again."
+   },
+   "repeat": "The office comes faster now. You have got better at holding still, or it has got worse at waiting.",
+   "lucid": {
+    "3": "This time the office holds for four full seconds, and there is a hand in it. Not reaching for anything. Resting beside the paper, the way a hand rests when the person it belongs to is deciding.",
+    "4": "The hand in the mirror is the same shape as yours and is not doing what yours is doing."
+   },
+   "monocle": "The gold lens declines to reflect the corridor at all. It gives you the room directly, without the pretence: a desk, a lamp with a green shade, a typewriter with a page in it, and the page has a paragraph on it, and the paragraph is about a man standing in a hallway looking into a mirror.",
+   "passive": [
+    {
+     "skill": "SAVOIR_FAIRE",
+     "dc": 11,
+     "text": "The trick is stillness. Not patience — stillness. Whatever is on the other side is watching for movement, the way a thing that has to keep a secret watches for movement."
+    },
+    {
+     "skill": "LOGIC",
+     "dc": 13,
+     "text": "Rule out the ordinary. Reflected room from a facing window: there is no facing window. Trick of the lamp: the lamp is behind you and green, and that room's lamp is green, which is either corroboration or the single laziest coincidence in the harbour."
+    }
+   ],
+   "check": {
+    "id": "hang_hi:mirror:hold",
+    "skill": "PHYSIQUE",
+    "dc": 12,
+    "kind": "white",
+    "prompt": "Hold absolutely still. Longer than is reasonable. Long enough to be rude to your own knees.",
+    "success": "You hold. Your knees file their complaint and you overrule it. The corridor drains out of the glass like water out of a bath and the office stays: a desk, a green lamp, a typewriter with a page in it, and beside the page, a coffee cup with a ring under it that has been there long enough to have a ring.\n\nSomebody works here. Somebody has worked here for a long time, badly, in the specific way of a person who does not get up.",
+    "failure": "Your knee goes at forty seconds — the one that has been going since the harbour — and the shift is small and the mirror is not interested in small. The corridor snaps back. The coat rack is very smug about it.",
+    "success_effects": {
+     "clue": {
+      "id": "c_mirror_office",
+      "title": "The office behind the mirror",
+      "text": "A low room with a green-shaded lamp, a desk, a typewriter with a page in it, and a coffee ring old enough to be a habit.",
+      "beat": "manuscript",
+      "tags": [
+       "typewriter",
+       "manuscript",
+       "office"
+      ],
+      "source": "the hallway mirror"
+     },
+     "lucidity": 7
+    },
+    "failure_effects": {
+     "health": -3,
+     "clue": {
+      "id": "c_mirror_glimpse",
+      "title": "Something behind the glass",
+      "text": "There is a room behind the mirror that is not the corridor. Forty seconds of stillness is not enough to furnish it.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript"
+      ],
+      "source": "the hallway mirror"
+     }
+    }
+   }
+  },
+  {
+   "id": "sign",
+   "name": "the snake on the building sign",
+   "aliases": [
+    "snake",
+    "sign",
+    "s"
+   ],
+   "description": {
+    "low": "HANG-HI QUIET APARTMENT , says the board over the entry, the final S having been supplied years ago by somebody with a spray can and a sense of humour: a snake, coiled into the shape of the letter, green on a ground of flaking gold.\n\nIt is a good S. It is a better snake. It has been in a different coil every time you have had occasion to check, and you have never once caught it moving, which after eleven years you have decided to regard as manners.",
+    "mid": "HANG-HI QUIET APARTMENT , the final S supplied by a spray-painted snake, green on flaking gold. It is coiled differently every time. You have never caught it moving. You call this manners.",
+    "high": "The spray-painted snake that does the work of the final S has recoiled again."
+   },
+   "repeat": "Recoiled. Same paint, same wall, different S.",
+   "monocle": "Through the gold, the snake is not paint and is not a snake. It is a correction — a letter that was typed wrong, struck through, and typed again, and the strike-through is what you have been reading as a body all these years. It is still wet. It has been still wet since before you moved in.",
+   "passive": [
+    {
+     "skill": "RHETORIC",
+     "dc": 10,
+     "text": "A building that cannot hold on to the last letter of its own name. There is no reading of that which is good for the tenants."
+    }
+   ],
+   "effects": {
+    "monocle_effects": {
+     "clue": {
+      "id": "c_wet_correction",
+      "title": "A correction, still wet",
+      "text": "The snake that serves as the building's final S is, under the monocle, a strike-through: a letter typed wrong and typed again. The ink has not dried in eleven years.",
+      "beat": "manuscript",
+      "tags": [
+       "typewriter",
+       "manuscript"
+      ],
+      "source": "the building sign"
+     },
+     "lucidity": 5
+    }
+   },
+   "check": {
+    "id": "hang:sign:react",
+    "skill": "REACTION_SPEED",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "The snake on the building sign is in a slightly different position every time the eye returns to it. Catch it moving.",
+    "success": "Away and back, fast, without deciding to.\n\nIt is mid-stroke. Not mid-slither — mid-*stroke*, the way a line is mid-stroke when a hand is drawing it, and there is no hand, and it finishes the stroke while you watch and settles into having always been that shape.",
+    "failure": "Away and back. Coiled, painted, flaking at the tail, and exactly where it was, and it will go on being exactly where it was for as long as you keep doing this.",
+    "success_effects": {
+     "clue": {
+      "id": "c_snake_mid_stroke",
+      "title": "Caught mid-stroke",
+      "text": "The snake on the Hang-Hi sign is caught mid-stroke — a line being drawn, finishing itself, with no hand drawing it.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript"
+      ],
+      "source": "the snake on the building sign"
+     },
+     "lucidity": 10
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "repair_forms",
+   "name": "Landy's repair notices",
+   "aliases": [
+    "forms",
+    "notices",
+    "repairs",
+    "landy",
+    "paperwork"
+   ],
+   "description": {
+    "low": "Lying Landy, the Unhandy Dandy, does not fix things. Landy files. Pinned to the corridor board in a fan of municipal beige is the complete record of his attentions: WINDOW 2F — WEATHER NONCONFORMING — RESOLVED. DOOR 2C — OPENS TO 3A ON THURSDAYS — RESOLVED. CORRIDOR — LENGTH — RESOLVED, RESOLVED, RESOLVED.\n\nEach one is stamped, bottom right, with a four-lobed seal and a line of small print: FILED WITH THE COALITION FOR CULPABILITY AND CONSTRUCTIVE CHANGE. NO FURTHER ACTION IS REQUIRED OF THE RESIDENT. NO FURTHER ACTION IS AVAILABLE TO THE RESIDENT.",
+    "mid": "A fan of beige notices on the corridor board. WINDOW 2F — WEATHER NONCONFORMING — RESOLVED. CORRIDOR — LENGTH — RESOLVED, RESOLVED, RESOLVED. Each stamped with a four-lobed seal: FILED WITH THE COALITION FOR CULPABILITY AND CONSTRUCTIVE CHANGE. NO FURTHER ACTION IS AVAILABLE TO THE RESIDENT.",
+    "high": "Repair notices, all marked RESOLVED, all stamped by a four-lobed seal: the Coalition for Culpability and Constructive Change."
+   },
+   "repeat": "Three more since you last looked. The corridor has been RESOLVED twice this week.",
+   "monocle": "Under the gold, the word RESOLVED is not a word. It is the same three characters typed over and over on top of themselves until the paper gave up and agreed to be black there. Nothing was resolved. Something was insisted on, at length, by a machine.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 11,
+     "text": "Nothing on this board has been repaired. Every item has been *filed*. The distinction is the entire organisation."
+    },
+    {
+     "skill": "RHETORIC",
+     "dc": 12,
+     "text": "Read the small print again. 'No further action is required of the resident' is a courtesy. 'No further action is available to the resident' is the sentence they actually came to write, and they put it second so it would sound like the same sentence twice."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_quadc_stamp",
+     "title": "The four-lobed seal",
+     "text": "Every impossibility in this building has been filed with the Coalition for Culpability and Constructive Change and marked RESOLVED. None of them has been fixed.",
+     "beat": "quadc",
+     "tags": [
+      "quadc",
+      "bureaucracy"
+     ],
+     "source": "the corridor board"
+    },
+    "monocle_effects": {
+     "lucidity": 4
+    }
+   },
+   "check": {
+    "id": "hang:forms:ency",
+    "skill": "ENCYCLOPEDIA",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "Twenty-two forms in a cupboard on a half-landing. You have read enough bureaucracy to know what a form is for.",
+    "success": "A repair notice exists to create a liability and then discharge it. Every one of these has been raised, stamped and *closed* — closed by the same office that raised it, on the same day, with no work recorded in between.\n\nThat is not maintenance. That is a body of paper generated for the purpose of existing, and somebody has been generating it about this building, at a rate of two a year, for eleven years.",
+    "failure": "Twenty-two forms, stamped, in a hand you have seen before. There is a convention they are violating and it stays just out of reach, filed somewhere behind everything else you have ever read.",
+    "success_effects": {
+     "clue": {
+      "id": "c_forms_raised_and_closed",
+      "title": "Raised and closed the same day",
+      "text": "Every repair notice in Hang-Hi was raised, stamped and closed by the same office on the same day, with no work recorded. Two a year for eleven years.",
+      "beat": "quadc",
+      "tags": [
+       "quadc",
+       "manuscript"
+      ],
+      "source": "Landy's repair notices"
+     },
+     "lucidity": 7
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "window",
+   "name": "the window over the harbour",
+   "aliases": [
+    "window",
+    "harbour",
+    "harbor",
+    "view"
+   ],
+   "description": {
+    "low": "The glass gives you the harbour, the fog, and the perpetual violet overhead going about its slow crimson business. Down there, the water is holding whatever came out of the sky and is not offering it up.\n\nAnd the sound is still there. Rotors. Slow ones, the heavy unhurried chop of a machine holding a position, somewhere off past the breakwater in fog too thick to hold a machine. It has not stopped since you came out of the water. Nobody else has mentioned it. You have twice asked, in the specific casual voice, and been answered in the specific casual voice, and the answer both times was about the weather.",
+    "mid": "Harbour, fog, violet going crimson. The water is holding what came out of the sky. And the rotors are still going — heavy, unhurried, a machine holding position in fog too thick to hold a machine. Nobody else has mentioned it. You have asked twice and been answered about the weather.",
+    "high": "Rotors, still, off past the breakwater. Nobody else hears them."
+   },
+   "repeat": "Still turning. Same position, same unhurried chop, same fog that could not possibly contain it.",
+   "lucid": {
+    "3": "Listen to the rhythm rather than the sound. It is not rotors. It is a hand returning to the same four keys, over and over, while its owner works out what the next word is."
+   },
+   "monocle": "The gold finds nothing over the water. No machine, no wreck, no oil, no debris field, no disturbance of any kind. The harbour is unmarked. The sound continues to arrive from a place where nothing is, at a volume that has never once varied, which is not how sound behaves and is exactly how a sound *effect* behaves.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "Constant volume, constant bearing, four days. A machine holding a hover for four days is a machine that has solved fuel. Rule it out and what is left is that this is not a machine."
+    },
+    {
+     "skill": "EMPATHY",
+     "dc": 11,
+     "text": "It is not that they cannot hear it. Watch a Reefer's face while the sound is happening: there is a small managed flinch, and then the weather. They can hear it. They have agreed not to have heard it."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_rotors",
+     "title": "Rotors over an empty harbour",
+     "text": "Four days of unvarying rotor noise from a fog bank containing nothing. Every Reefer asked has answered about the weather.",
+     "beat": "crash",
+     "tags": [
+      "crash",
+      "sound"
+     ],
+     "source": "your window"
+    },
+    "monocle_effects": {
+     "clue": {
+      "id": "c_no_wreck",
+      "title": "No wreck",
+      "text": "Through the monocle the harbour is unmarked — no debris, no oil, no disturbance. Whatever you came down in did not come down in the water.",
+      "beat": "crash",
+      "tags": [
+       "crash"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 5
+    }
+   },
+   "check": {
+    "id": "hang:window:shiv",
+    "skill": "SHIVERS",
+    "dc": 10,
+    "kind": "white",
+    "prompt": "Open the window over the harbour and let the parish come in for a minute.",
+    "success": "Cold off the water, green flame two streets down, and the rotors — and with the window open the rotors resolve into what they have been all along, which is not rotors.\n\nIt is a page being turned. Over and over, at the pace of a man checking something he has already read, from a room that is not in the direction the sound is coming from.",
+    "failure": "Cold, and the smell of the harbour, and the rotors going on being rotors at the same unhurried pace they have kept since you came out of the water.",
+    "success_effects": {
+     "clue": {
+      "id": "c_rotors_are_pages",
+      "title": "Not rotors. Pages.",
+      "text": "With the window open the rotor sound resolves: a page being turned, over and over, from a room that is not where the sound is coming from.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "crash"
+      ],
+      "source": "the window over the harbour"
+     },
+     "lucidity": 11
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "desk",
+   "name": "your desk",
+   "aliases": [
+    "desk",
+    "papers",
+    "typewriter"
+   ],
+   "description": {
+    "low": "A door on two trestles, which is what a desk is when a man has decided that furniture is a distraction from work. Paper in drifts. A dozen abandoned openings to a dozen abandoned somethings, each one a single confident sentence followed by a great deal of white.\n\nThere is no typewriter on it. There has never been a typewriter on it. There is, in the dust at the back edge, a rectangle where the dust is thinner, of a size, with four small round gaps at the corners.",
+    "mid": "A door on two trestles. Paper in drifts, a dozen confident opening sentences and a great deal of white. No typewriter. In the dust at the back edge: a thinner rectangle, of a size, with four small round gaps at the corners.",
+    "high": "No typewriter on the desk. A rectangle in the dust where one has not been standing, with four round gaps at the corners."
+   },
+   "repeat": "The rectangle in the dust has not filled in. Dust does not work like that, and this dust has been given other instructions.",
+   "monocle": "Through the gold the rectangle is occupied. There is a typewriter there, black and heavy and mid-sentence, and it is not translucent or ghostly or any of the things the word would lead you to expect. It is simply present, and the room has been asked not to include it.",
+   "passive": [
+    {
+     "skill": "SAVOIR_FAIRE",
+     "dc": 11,
+     "text": "Four round gaps at the corners of a thin rectangle. Feet. Rubber ones, the kind fitted to a machine heavy enough to need them."
+    },
+    {
+     "skill": "ELECTROCHEMISTRY",
+     "dc": 10,
+     "text": "There is a cold cup somewhere under that paper and it has a ring under it and the ring is older than the cup. Drink it anyway. It is only a day. Two days. It is fine."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_dust_rectangle",
+     "title": "The shape of an absent machine",
+     "text": "The dust on your desk holds a clean rectangle with four round gaps at the corners. Nothing has ever stood there. The dust disagrees.",
+     "beat": "manuscript",
+     "tags": [
+      "typewriter",
+      "manuscript"
+     ],
+     "source": "your desk"
+    },
+    "monocle_effects": {
+     "thought": "sound_of_typing",
+     "lucidity": 8
+    }
+   },
+   "check": {
+    "id": "hang:desk:inter",
+    "skill": "INTERFACING",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "The dust holds a rectangle with four round gaps. Work out the machine from its footprint.",
+    "success": "Four feet, in a rectangle nine and a quarter by eleven and a half, with the front pair set inboard — which is a carriage-return frame, which means a heavy desk machine, which means a weight no man carries down a flight of stairs alone.\n\nAnd the dust is undisturbed all round it. Nothing was dragged. Nothing was lifted. The rectangle is not where a machine was taken from. It is where a machine has not yet been put.",
+    "failure": "A rectangle and four gaps and a quantity of dust, and it is the shape of a typewriter the way a hole is the shape of a thing that is not in it.",
+    "success_effects": {
+     "clue": {
+      "id": "c_not_yet_been_put",
+      "title": "Where it has not yet been put",
+      "text": "The dust around the absent machine on your desk is undisturbed on every side. Nothing was removed. The space is where something has not yet been placed.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "manuscript",
+       "identity"
+      ],
+      "source": "your desk"
+     },
+     "lucidity": 12
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "seam",
+   "name": "the seam in the hallway mirror",
+   "aliases": [
+    "seam",
+    "gap",
+    "opening",
+    "through"
+   ],
+   "description": "The mirror has stopped bothering. It is not showing you the corridor and it is not showing you the office; it is showing you the *edge between them*, which is about four inches wide and has no thickness at all, and which has been in this hallway the entire eleven years you have lived here.\n\nThe office is on the other side. The lamp is on. The chair is pushed back.",
+   "monocle": "The gold makes no difference whatever. There is nothing left for it to reveal. That is the first time the monocle has had nothing to add, and it is the most alarming thing it has ever done.",
+   "requires": {
+    "beat": "awakening",
+    "lucidity_min": 70
+   },
+   "repeat": "Still open. It is not going to close on its own, and that is not the same as it being patient.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 11,
+     "text": "Every deduction you have made for a fortnight terminates here. There is nothing further to work out. The next thing is not a conclusion, it is a step."
+    },
+    {
+     "skill": "PHYSIQUE",
+     "dc": 10,
+     "text": "Four inches of nothing, and a floor on the other side that will take a man's weight. The body has already decided. It has been leaning that way since the harbour."
+    }
+   ],
+   "check": {
+    "id": "seam:cross",
+    "skill": "PHYSIQUE",
+    "dc": 9,
+    "kind": "red",
+    "prompt": "Go through. Nothing is stopping you and nothing has been stopping you for some time, and that is the part that will need thinking about afterwards, on the other side, if there is an afterwards and if there is a side.\n\nThere is no way back through a seam. Whatever is unfinished in Silvora Reefs stays unfinished.",
+    "success": "You go through.\n\nThere is no membrane and no cold and no drama, and the last thing behind you is somebody not saying anything, and then you are standing on boards in a room nine feet by eleven with a green-shaded lamp in it.",
+    "failure": "Your foot goes over the edge and your weight does not follow it, and you stand for a while in a doorway with one leg committed, which is not a dignified way to arrive anywhere and is a completely honest description of the last fortnight.\n\nThen the knee that has been going since the harbour makes the decision for you, and you go through badly, and land on boards, in a room nine feet by eleven, with a green-shaded lamp in it.",
+    "success_effects": {
+     "goto_location": "the_office",
+     "lucidity": 10
+    },
+    "failure_effects": {
+     "goto_location": "the_office",
+     "health": -5,
+     "lucidity": 10
+    },
+    "irreversible": true
+   }
+  }
+ ],
+ "exits": {
+  "durry_kwain": "down the hill, past the green lamps, to the only counter in town that has ever been glad to see you",
+  "mobius": "along the harbour road to a building that gets you back where you started without ever asking you to turn",
+  "rest_assured": "up, into the obsidian, where the town keeps the ones who have finished",
+  "dudes_dews": "four minutes downhill to the busiest counter in the parish",
+  "gs_spot": "a walk nobody has ever been able to give you directions for"
+ }
+}

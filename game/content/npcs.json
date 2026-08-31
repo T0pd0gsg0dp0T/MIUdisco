@@ -1,0 +1,342 @@
+[
+ {
+  "id": "asimov",
+  "name": "Asimov Sobeleaux",
+  "title": "manager, Hang-Hi Quiet Apartments",
+  "location": "hang_hi",
+  "awareness": "aware",
+  "colour": "cyan",
+  "quirk": "Explains the impossible so clearly that the explanation will not survive the walk to your door.",
+  "appearance": "Sixties, silver-streaked beard, hands that have hauled nets and inked coastlines. His office holds charts of waterways that appear on no map and blueprints that rearrange themselves when looked at sideways. The accent thickens in proportion to how impossible the subject is.",
+  "greetings": {
+   "neutral": "Ah. The tenant who survives things. Come in, come in — mind the corridor, it is longer today than it was contracted to be.",
+   "warm": "Oliver. Sit. I have been keeping a thing back, and keeping it back has become heavier than saying it.",
+   "cold": "The rent is current. The corridor is a corridor. Was there something else."
+  },
+  "alias": "the friendly Russian",
+  "alias_title": "manager of the hanging apartments"
+ },
+ {
+  "id": "luigi",
+  "name": "Luigi Luigi",
+  "title": "janitor, Patron Saint of the Squeegee",
+  "location": "hang_hi",
+  "awareness": "oblivious",
+  "colour": "green",
+  "quirk": "Cleans anomalies away without knowing they are anomalies. Rooms he has just done behave themselves.",
+  "appearance": "A man and a bucket, in a relationship of long standing. He works the squeegee in slow sacramental arcs, and the glass behind it stops arguing with the room.",
+  "greetings": {
+   "neutral": "Ey! Mister Onions! You walk on the wet floor, you take the consequences up with a higher authority. Me, I only do the floor.",
+   "warm": "My friend! Come, come — I saved you a dry patch. Is the only honest patch in the whole building.",
+   "cold": "The floor is wet. That is all I have for you today."
+  },
+  "alias": "the man with the squeegee",
+  "alias_title": "a janitor, mid-sacrament"
+ },
+ {
+  "id": "darek",
+  "name": "Darek Dwayne Wayne",
+  "title": "manager, Durry Kwain",
+  "location": "durry_kwain",
+  "awareness": "oblivious",
+  "colour": "gold",
+  "quirk": "Your oldest friend. Deploys customer-service pleasantries in situations that do not have customers. Answers questions a beat before they are asked.",
+  "appearance": "Amiable, apron-clad, a drawl thick enough that his own name comes out sounding like the sign above his head. He wipes the counter in the manner of a man who has decided the counter is the part of the world he can help.",
+  "greetings": {
+   "neutral": "Well, hey there, Ols. Sorry about your wait. — Ah. You ain't waited yet. Gimme a second, I'm runnin' a touch ahead this evenin'.",
+   "warm": "Oliver Otto Onions. Sit down before you fall down, and don't argue with a man who's already got the cone made.",
+   "cold": "Welcome to Durry Kwain. How can I help you today. That's the whole thing I got, Ols."
+  },
+  "alias": "the manager with the wet eyes",
+  "alias_title": "runs the ice cream place"
+ },
+ {
+  "id": "ginny",
+  "name": "Ginny 'Gin' Ginja",
+  "title": "manager, The Möbius Strip Club",
+  "location": "mobius",
+  "awareness": "aware",
+  "colour": "crimson",
+  "quirk": "Describes everything — grief, plumbing, you — in martial arts terms. Knows the club is impossible and has decided that is a management problem.",
+  "appearance": "Red hair pinned like a threat. She moves the way a closed door moves when someone competent is behind it. There is gin in her hand and none of it in her voice.",
+  "greetings": {
+   "neutral": "You came in the front. Nobody comes in the front. That's not a compliment, that's a stance — and yours is wide open.",
+   "warm": "Onions. Sit where I can see you. You're the only patron who keeps his guard up, and I've gotten used to the symmetry.",
+   "cold": "You're in my house telegraphing every move. Drink or leave. Preferably in that order, preferably fast."
+  },
+  "alias": "the woman who owns the room",
+  "alias_title": "manager, the club with one side"
+ },
+ {
+  "id": "instagator",
+  "name": "an Insta-gator",
+  "title": "security, The Möbius Strip Club",
+  "location": "mobius",
+  "awareness": "denial",
+  "colour": "green",
+  "quirk": "An alligator ninja who discusses assassination in the register of a quarterly review. Appears without arriving. Denies what it just did while doing it.",
+  "appearance": "It was not there. Then the sentence you were in acquired a second clause, and it was. Nine feet of tailored patience with a jaw in it.",
+  "greetings": {
+   "neutral": "Circling back on your presence in this space. Do you have a moment for a quick alignment.",
+   "warm": "Flagging that you continue to be within tolerance. Appreciate you.",
+   "cold": "Escalating. Nothing personal — well. Some of it is process, and some of it is personal, and I'm not resourced to separate them."
+  },
+  "alias": "the alligator in the suit",
+  "alias_title": "security, and very sorry about it"
+ },
+ {
+  "id": "soliloquy",
+  "name": "Soliloquy",
+  "title": "keeper, Rest Assured",
+  "location": "rest_assured",
+  "awareness": "aware",
+  "colour": "purple",
+  "quirk": "Née Hannah O'Dochtaigh. Speaks in riddles, puns, and speeches addressed to nobody. Guards the dead against theft, desecration, and — she is specific about this — resurrection.",
+  "appearance": "Pale as the inside of an argument. She stands slightly too still, in the way of someone who has practised being a fixture, and the obsidian behind her declines to reflect her at the expected angle.",
+  "greetings": {
+   "neutral": "A visitor. Vertical. How novel, and how temporary — I say that of everyone, and I have never once been wrong.",
+   "warm": "Ah. My favourite kind of guest: the sort who reads the plates. Come. Read some more.",
+   "cold": "The living are permitted. Permitted is not the same as welcome, and I keep a very exact ledger of the difference."
+  },
+  "alias": "the keeper of the vaults",
+  "alias_title": "speaks only in verse"
+ },
+ {
+  "id": "barney",
+  "name": "Josh 'Barney' Arneaux",
+  "title": "innkeeper, The Outside Inn",
+  "location": "outside_inn",
+  "awareness": "oblivious",
+  "colour": "green",
+  "quirk": "Describes indoor situations in wilderness terms. His voice slips into a children's-television register when he explains the Inn, and he does not notice.",
+  "appearance": "Robust, forties, weathered in a way that suits a man who runs thirty feet of indoor weather. Rustic clothing with better tailoring than it admits to. When he starts explaining the sky, the timbre goes warm and patient and slightly too slow, and stays there until he stops.",
+  "greetings": {
+   "neutral": "Well now! Look what the trail dragged in. You'll be wanting the dry side — we've got a front coming through the lounge around ten.",
+   "warm": "Oliver! Sit by the water, the good stretch, where it runs the right way. I've been saving you a story and it's gone off a bit in the keeping.",
+   "cold": "BUT — sorry, that's Bud's. Force of habit. Rooms are seven a night and the weather's included."
+  },
+  "alias": "the innkeeper with two voices",
+  "alias_title": "runs the inn with weather in it"
+ },
+ {
+  "id": "bud",
+  "name": "Bud Onkuhdonk",
+  "title": "bellhop, The Outside Inn",
+  "location": "outside_inn",
+  "awareness": "denial",
+  "colour": "crimson",
+  "quirk": "Begins every response with BUT. Denies anomalies aggressively and at length. Talking to him can push your lucidity back down — his denials are load-bearing.",
+  "appearance": "One hand on the brass rail of a trolley that never goes anywhere. The grip is white at the knuckle. He watches the room the way a man watches a dog he has been told is friendly.",
+  "greetings": {
+   "neutral": "BUT — before you say anything — everything in this establishment is completely normal and I'd thank you to note that I said it first.",
+   "warm": "BUT you're all right, you. You look and you don't say. That's the good kind.",
+   "cold": "BUT I've heard what you've been saying in here and I'd like it on record that it isn't happening."
+  },
+  "alias": "the bellhop who says BUT",
+  "alias_title": "carries bags, denies ceilings"
+ },
+ {
+  "id": "dee",
+  "name": "Dee Stroii",
+  "title": "a guest, or two",
+  "location": "outside_inn",
+  "awareness": "intuitive",
+  "colour": "purple",
+  "quirk": "Occurs in more than one place at once and holds conversations with himself across the lounge. Speaks in the first person plural without ever being asked to explain it.",
+  "appearance": "A narrow man in a good coat, standing by the stream. Also a narrow man in the same good coat, sitting by the stair. The two of them are not twins and are not pretending to be, and when one of them raises a hand the other raises the other one.",
+  "greetings": {
+   "neutral": "We were hoping you'd come over. We've been having an argument and we can't settle it, which is unusual, because normally we can.",
+   "warm": "Ah — both of us are glad. That's rarer than it sounds.",
+   "cold": "We'd rather not, tonight. One of us would. That's the trouble."
+  },
+  "alias": "the guest who is two people",
+  "alias_title": "a guest, or two"
+ },
+ {
+  "id": "chef_d",
+  "name": "Chef Delilah 'Dee' Rishrush",
+  "title": "proprietor, Lishush Mush",
+  "location": "lishush_mush",
+  "awareness": "intuitive",
+  "colour": "gold",
+  "quirk": "Toothless, and her speech renders words as a mouth without teeth renders them. Punctuates cooking with onomatopoeia that turns out to be precise instruction.",
+  "appearance": "Small, ancient, and entirely in charge. Her hands do things to a pan that you have watched four times and cannot describe. She smiles with the whole of a face that has nothing to hide behind and has never wanted anything to.",
+  "greetings": {
+   "neutral": "Mishter Onionsh. Shit down, shit down. I got shomething going and ish nearly at the — shhhk. There. Ish at the shhhk.",
+   "warm": "Ah, my Onionsh. Come here to the pash where ish warm and let me look at you. ... Mm. You been thinking again. It'sh all over your fashe.",
+   "cold": "Shit where you like. Ish a reshtaurant."
+  },
+  "alias": "the cook with no teeth",
+  "alias_title": "feeds anyone who sits down"
+ },
+ {
+  "id": "t",
+  "name": "\"T\"",
+  "title": "sous chef, Lishush Mush",
+  "location": "lishush_mush",
+  "awareness": "intuitive",
+  "colour": "crimson",
+  "quirk": "Delivers alliterative culinary soliloquies in the register of a revolutionary manifesto. Utensils occasionally leave the counter during them.",
+  "appearance": "Whites, immaculate. He holds a knife the way an actor holds a prop he has decided is a sword. When he speaks, the extraction fan quiets to let him, which nobody has ever remarked on because it would mean remarking on the extraction fan.",
+  "greetings": {
+   "neutral": "Voilà! In view, a humble vessel of a victual, veteran of vinegar and veal, vouchsafing neither vanity nor vulgar—\n\n... Sorry. It's the T. It gets away from me on a T.",
+   "warm": "Ah — the one who listens to the end. Do you know how rare that is, in a room where everybody is eating?",
+   "cold": "Table service is table service. I'm working."
+  },
+  "alias": "the silent sous chef",
+  "alias_title": "says nothing, says it well"
+ },
+ {
+  "id": "wino_t",
+  "name": "Antonio 'Wino-T' Vino",
+  "title": "owner, The G.'s Spot",
+  "location": "gs_spot",
+  "awareness": "intuitive",
+  "colour": "green",
+  "quirk": "Speaks in rhythm with the clippers; everything he says lands on a beat. Catchphrase: 'Why not?' — deployed as an actual philosophical position.",
+  "appearance": "African-Italian, former rapper, and the retirement has not taken. He works a fade like a man laying down a bar, and the shop's noise organises itself around him, and he has never once appeared to be trying.",
+  "greetings": {
+   "neutral": "Onions in the door / at a quarter to whenever / take a chair, take two / I got nothing but forever.",
+   "warm": "There he is. Sit down. I been saving a verse and it's about you and it ain't kind.",
+   "cold": "Chair's a chair. Money's money. Ain't no verse today."
+  },
+  "alias": "the man behind the bar",
+  "alias_title": "owns the place with the mirrors"
+ },
+ {
+  "id": "sir_jerry",
+  "name": "Sir Jerry",
+  "title": "barber-surgeon, The G.'s Spot",
+  "location": "gs_spot",
+  "awareness": "intuitive",
+  "colour": "cyan",
+  "quirk": "Medieval knight-speak crossed with modern clinical terminology. Holds that changing an appearance changes more than an appearance, and is right in ways he does not pursue.",
+  "appearance": "An apron like a tabard and a razor kept to a standard the profession abandoned. He addresses customers as 'good sir' and their scalps as 'the presenting field', in the same sentence, without any sense of a joining.",
+  "greetings": {
+   "neutral": "Well met, good sir. Be seated, and let us assess the presenting field. I observe recession at the temporal aspect and I shall speak no further of it, for a knight is not a herald.",
+   "warm": "Ah — my most contemplative patient. Sit. We shall take very little off, and change a great deal.",
+   "cold": "The chair is open to all comers. I am obliged to say no more than that."
+  },
+  "alias": "the barber with the razor",
+  "alias_title": "knighted, apparently, by a pun"
+ },
+ {
+  "id": "albert",
+  "name": "Monsieur Albert",
+  "title": "an owlbear, in the mirror",
+  "location": "gs_spot",
+  "awareness": "aware",
+  "colour": "purple",
+  "quirk": "Visible only in reflection. Impeccably courteous. Has been in the shop longer than the shop and has never been spoken to directly.",
+  "appearance": "In the third mirror: a great deal of shoulder in an excellent coat, feathers at the collar going to fur at the cuff, and an expression of the most enormous patience. In the room: the corresponding volume of air, containing nothing.",
+  "greetings": {
+   "neutral": "— from the glass, at a volume that does not travel: \"You are looking at me. Not past. At. Do you know how long, monsieur.\"",
+   "warm": "\"My friend. Sit where the glass can hold you and let us be two people in a room, which is a thing I have been managing alone for some time.\"",
+   "cold": "He inclines his head, in the mirror, and does not speak, and the courtesy of it is worse than a refusal."
+  },
+  "alias": "the owlbear in the mirror",
+  "alias_title": "lives in the third mirror"
+ },
+ {
+  "id": "ben",
+  "name": "Wutchu 'Ben' Uptu",
+  "title": "proprietor, Giddyup End 'em Ribs",
+  "location": "giddyup",
+  "awareness": "aware",
+  "colour": "gold",
+  "quirk": "Greets you with his own name as a question. Knows things about your past you have never told anyone here, and offers them as small talk rather than revelation.",
+  "appearance": "Eighty-eight, and the room arranges itself around him without being asked. He sits at the middle of the long side of a twenty-two foot table with both palms flat on it, and he has told you that this keeps him where he is, and did not appear to be speaking figuratively.",
+  "greetings": {
+   "neutral": "What you been up to, my friend? — No. Don't answer that one. I'll take the other one. What you been up to that you ain't told nobody.",
+   "warm": "Come sit at the middle. Not the end. The middle's where the table's oldest and it's where I can hear you.",
+   "cold": "Kitchen's open. Sit where you like, long as it ain't the middle."
+  },
+  "alias": "the man at the smoker",
+  "alias_title": "calls everyone 'my friend'"
+ },
+ {
+  "id": "woolbinkle",
+  "name": "Woolbinkle",
+  "title": "franchisee, Cheeses Thrice Pizza",
+  "location": "cheeses_thrice",
+  "awareness": "intuitive",
+  "colour": "gold",
+  "quirk": "A bull antelope with a past. Obsessed with canning, containment and preservation. Eager to please to a degree that is difficult to be in the room with, and entirely earnest.",
+  "appearance": "Thick wool-like fur and antlers that go the wrong way at the third branch. He wears an apron that was made for a shape other than his and has been altered, by hand, several times, well. He watches the door constantly and hopes at it.",
+  "greetings": {
+   "neutral": "Mr Onions! I had a feeling. I had a feeling and I put one on and if I was wrong I'd have eaten it myself, so there's no — there's no obligation, is what I'm saying. There's no obligation.",
+   "warm": "You came back. I want to say — no. I'll say it when it's out of the oven. Sit anywhere. Sit near the warm.",
+   "cold": "Your order's up. It's a good one. I made it good anyway."
+  },
+  "alias": "the franchisee with the cans",
+  "alias_title": "sells pizza, cans everything else"
+ },
+ {
+  "id": "mary",
+  "name": "Mary Guana",
+  "title": "owner, Dude's Dews & Don'ts",
+  "location": "dudes_dews",
+  "awareness": "aware",
+  "colour": "green",
+  "quirk": "An iguana, bloodshot and unhurried, who runs the fastest counter in the parish. Speaks in long slow observations that begin as small talk and land somewhere else.",
+  "appearance": "Behind the counter at a speed that has nothing to do with the rest of her. Between customers she is entirely still and her eyes are half shut and she is not asleep and has never once been asleep.",
+  "greetings": {
+   "neutral": "Hey. Yeah. You're the one who orders in words. That's fine. That's a whole way of doing it.",
+   "warm": "There he is. Come round the warm side, I'll do you one off the book. Yeah. The book's got a back page, man.",
+   "cold": "Queue's there. Order how you like. It'll take as long as it takes."
+  },
+  "alias": "the woman taking orders",
+  "alias_title": "impossibly fast, behind the counter"
+ },
+ {
+  "id": "fatty",
+  "name": "Fatty McFatterton",
+  "title": "regular, Dude's Dews & Don'ts",
+  "location": "dudes_dews",
+  "awareness": "intuitive",
+  "colour": "cyan",
+  "quirk": "Constructs metaphysics out of donuts and milkshakes. The conclusions are correct more often than the reasoning has any right to make them.",
+  "appearance": "At the same table on the warm side, at the same distance from the boundary, with a shake and a box. He has moved four times tonight and the distance has not changed.",
+  "greetings": {
+   "neutral": "Sit. Sit. Look at this straw. No — look at it. In the shake and above the shake, same straw, one straw. Now: which bit of it is the straw?",
+   "warm": "My man. I got a new one and it's about the hole. Not the donut. The hole. Sit down, this one's got teeth.",
+   "cold": "S'a free country. Table's got four sides."
+  },
+  "alias": "the regular with the shake",
+  "alias_title": "sits exactly that far from the cold"
+ },
+ {
+  "id": "landy",
+  "name": "Lying Landy",
+  "title": "maintenance, Hang-Hi Quiet Apartments",
+  "location": "hang_hi",
+  "awareness": "oblivious",
+  "colour": "crimson",
+  "quirk": "The Unhandy Dandy. Every repair creates a new inconsistency, every job is logged as RESOLVED, and he believes all of it. Immaculately dressed for a man under a sink.",
+  "appearance": "A three-piece suit, a pocket square, and a toolbox that has never been closed properly. He is the best-dressed man in the building and the second floor hangs from nothing and he has never connected those facts.",
+  "greetings": {
+   "neutral": "Mr Onions! Two-F! Now — the window. I've been at the window. It's sorted. It's completely sorted and I'd not want you to worry about the weather in it.",
+   "warm": "Ah, the man himself. Between us — and this doesn't go in the book — some of these jobs come back. Not most. Some.",
+   "cold": "It's all filed, Mr Onions. Every one of them's filed and stamped and there's not a thing more I can do about a stamped one."
+  },
+  "alias": "the maintenance man who lies",
+  "alias_title": "fixes things, allegedly"
+ },
+ {
+  "id": "revilo",
+  "name": "Snoino Revilo",
+  "title": "the man at the window",
+  "location": "the_office",
+  "awareness": "lucid",
+  "colour": "invert",
+  "quirk": "Your cadence and your vocabulary, applied to structure rather than exploration. The long clause, the qualifying aside, the pause before the last word. He does all of it correctly and none of it for fun.",
+  "appearance": "Your height. Your build. A green tailcoat with purple accents, which is your own arrangement with the colours changed places, and it is well kept in the way of clothing worn by somebody who does not go out. His face is at the angle where the lamp does not reach it, and he holds it there without appearing to arrange it, which is worse.",
+  "greetings": {
+   "neutral": "You came through. I want to say at once that I am not surprised, because I am not, and I would rather not begin by pretending to a reaction I have not got.",
+   "warm": "You came through, and you came through carrying rather a lot, and I can see most of it from here. Sit down. There is a chair. There has been a chair for eleven years.",
+   "cold": "You came through. Very well. I would ask you not to touch the desk."
+  },
+  "alias": "the man at the window",
+  "alias_title": "the man at the window"
+ }
+]

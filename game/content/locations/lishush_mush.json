@@ -1,0 +1,338 @@
+{
+ "id": "lishush_mush",
+ "name": "Chef D.'s Lishush Mush",
+ "subtitle": "Everything soft. Nothing simple.",
+ "description": {
+  "low": "The name is the menu and the menu is a pronunciation guide. Chef Delilah Rishrush has no teeth and has never regarded this as a limitation, and the whole establishment is built on the proposition that texture is the least interesting thing food can offer.\n\nInside, the room is exactly the right size. It is exactly the right size when there are two diners and it is exactly the right size when there are thirty, and nobody has ever had to wait and nobody has ever eaten in an echo. The walls are a colour that changes its mind about being a colour. There are eleven tables tonight. You have counted eleven every time and you have never seen the same eleven.\n\nAnd the air. Somebody has done something to the air in here, and what they have done to it is: it tastes.",
+  "mid": "Chef D. has no teeth and has never regarded that as a limitation. The room is exactly the right size whether there are two diners or thirty. Eleven tables tonight, as always, and never the same eleven. And the air in here tastes.",
+  "high": "The room is always exactly the right size. Eleven tables, never the same eleven. The air tastes."
+ },
+ "revisit": {
+  "low": "Chef D. has your order going before the door has finished. She does not look up. She says something to the pan that is mostly onomatopoeia and entirely instructions, and the pan does it.",
+  "mid": "Chef D. has your order going before the door finishes. She addresses the pan in onomatopoeia and the pan complies.",
+  "high": "Your order is already going."
+ },
+ "lucid": {
+  "2": "The onomatopoeia she cooks by is not describing the food. It is keeping time with something.",
+  "3": "Under the extraction fan there is a sound with pauses in it, and Chef D. cooks in the pauses and rests in the striking.",
+  "4": "She is not cooking to a rhythm. She is cooking in the gaps, the way a person talks in the gaps when somebody else is talking."
+ },
+ "ambient": [
+  "A diner puts down a spoon, looks at the middle distance for four seconds with an expression of complete and specific grief, picks the spoon back up, and finishes the bowl.",
+  "T comes out of the kitchen, delivers eleven seconds of soliloquy on the subject of celeriac, and returns. A ladle stays up for a moment after he has gone.",
+  "The colour of the wall commits to being green, thinks better of it, and goes back to the previous arrangement."
+ ],
+ "objects": [
+  {
+   "id": "menu",
+   "name": "the menu",
+   "aliases": [
+    "menu",
+    "card",
+    "board",
+    "dishes"
+   ],
+   "description": {
+    "low": "Hand-lettered, laminated, and — the establishment's central and only complaint — unstable.\n\nYou read: TOMORROW'S MEMORIES SEARED IN YESTERDAY'S REGRETS. You order it. What arrives is described by the person carrying it as something else entirely, in a different register, with a different number of words. You go back to the menu to establish which of you is wrong and the menu is on your side of the argument in a way that makes it clear you have misremembered.\n\nThis has happened to every diner in this room and it is not discussed, in the way that a thing which happens to everybody and can be checked by nobody is not discussed.",
+    "mid": "Hand-lettered, laminated, unstable. You read TOMORROW'S MEMORIES SEARED IN YESTERDAY'S REGRETS, you order it, and what arrives is called something else by the person carrying it. Back at the menu, you have misremembered. This happens to everybody and is not discussed.",
+    "high": "The menu changes between reading and ordering, and is always able to prove you misremembered."
+   },
+   "repeat": "You have started reading it aloud, quietly, as a control. It does not help. It changes anyway and you cannot swear to what you said.",
+   "monocle": "Through the gold the menu is a list of eleven dishes and it is completely stable. Every one is crossed out. Underneath, in a hand that is not Chef D.'s and is not steady, somebody has written eleven replacements — and then crossed those out too, and then written the first eleven back.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "The menu is not changing. If it were changing you would catch it changing, because you have been watching it. It is your *account* of the menu that is being brought into line with the menu, retroactively, and the menu is being kept as the fixed point."
+    },
+    {
+     "skill": "RHETORIC",
+     "dc": 11,
+     "text": "'Tomorrow's Memories Seared in Yesterday's Regrets' is not a dish name. It is a working title, and a bad one, and somebody knows it is bad, which is why it does not survive to the plate."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_menu_revision",
+     "title": "You are what gets revised",
+     "text": "The Lishush Mush menu does not change; the diner's memory of it is brought into line afterwards. The menu is kept as the fixed point.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript"
+     ],
+     "source": "the menu"
+    },
+    "monocle_effects": {
+     "clue": {
+      "id": "c_crossed_and_restored",
+      "title": "Crossed out, replaced, restored",
+      "text": "Under the monocle every dish on the menu is crossed out, replaced in an unsteady hand that is not Chef D.'s, and then the originals are written back.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "typewriter"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 9
+    }
+   },
+   "check": {
+    "id": "lishush:menu:react",
+    "skill": "REACTION_SPEED",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "Your account of the menu is revised while you are not looking at it. Look back before the revision finishes.",
+    "success": "You catch the tail of it. For a quarter of a second the laminate holds two dish names in the same place, one fading under the other, and the one fading is the one you read and the one arriving is the one you will remember reading.\n\nThe correction is not on the menu. It is on you, and you have just watched it be applied.",
+    "failure": "TOMORROW'S MEMORIES SEARED IN YESTERDAY'S REGRETS. You look away and back and it says something else and has always said something else, and the something else is not interesting.",
+    "success_effects": {
+     "clue": {
+      "id": "c_correction_applied_to_you",
+      "title": "The correction is applied to you",
+      "text": "Caught mid-revision, the Lishush Mush menu holds two names at once — and the edit is being made to the reader rather than the board.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "identity"
+      ],
+      "source": "the menu"
+     },
+     "lucidity": 11
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "liver",
+   "name": "the liver and onions",
+   "aliases": [
+    "liver",
+    "onions",
+    "dish",
+    "plate",
+    "food"
+   ],
+   "description": {
+    "low": "It arrives without being ordered, as it has arrived without being ordered every time, and Chef D.'s position on this — delivered toothlessly, warmly, and without any apparent sense that it needs defending — is that a man named Onions who has not been given onions has been failed by his restaurant.\n\nIt is soft. Everything here is soft. It is also, and this is not a matter of opinion, extraordinary — the liver tastes of something that has no business being a taste, something in the region of a long afternoon in a house where somebody is painting.\n\nThe onions are arranged on the top. They arrange themselves further while you look at the plate. Round, and evenly spaced, in four short rows.",
+    "mid": "It arrives unordered, because Chef D. holds that a man named Onions who has not been given onions has been failed by his restaurant. Soft, and extraordinary, and tasting of a long afternoon in a house where somebody is painting. The onions on top rearrange while you look: round, evenly spaced, four short rows.",
+    "high": "Unordered liver and onions. The onions arrange themselves into four short rows of evenly spaced rounds."
+   },
+   "repeat": "Four rows again. You have started counting the rounds in each row and the counts are 10, 9, 7, and a long one at the bottom.",
+   "lucid": {
+    "2": "Four rows. Ten, nine, seven, and a long one at the bottom that your thumb wants to press.",
+    "4": "It is a keyboard. It has been a keyboard every time, on your plate, in front of you, going cold while you failed to look at it."
+   },
+   "monocle": "Through the gold the onions are keys. Not like keys — keys, with the little dished tops and the wire linkages going down into the liver, and the long one at the bottom is a space bar, and one of the keys in the top row is worn shinier than the others, and it is the O.",
+   "passive": [
+    {
+     "skill": "SAVOIR_FAIRE",
+     "dc": 12,
+     "text": "Ten, nine, seven, and a long one. Anybody who has ever sat in front of a machine knows that shape without having to be told it."
+    },
+    {
+     "skill": "ELECTROCHEMISTRY",
+     "dc": 10,
+     "text": "It is going cold while you conduct an investigation into its layout. Eat it. It is the best thing that will happen to you today and it is not getting better."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_onion_keys",
+     "title": "Ten, nine, seven, and a long one",
+     "text": "The unordered liver and onions arranges itself into four rows of evenly spaced rounds — ten, nine, seven, and a long one at the bottom.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "typewriter"
+     ],
+     "source": "the liver and onions"
+    },
+    "monocle_effects": {
+     "clue": {
+      "id": "c_worn_o",
+      "title": "The O is worn shiny",
+      "text": "Under the monocle the onions are typewriter keys with linkages going down into the liver. One key in the top row is worn shinier than the rest. It is the O.",
+      "beat": "revilo",
+      "tags": [
+       "revilo",
+       "typewriter",
+       "identity"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 14
+    }
+   },
+   "check": {
+    "id": "lishush:liver:react",
+    "skill": "REACTION_SPEED",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "The onions rearrange while you look at them. Look faster than they rearrange.",
+    "success": "You catch it mid-move. Ten, nine, seven and a long one — and for the half-second before it settles, the arrangement is *not* four rows of onions. It is four lines of type, set and waiting, and one of the lines is longer than the others because it has a name in it.\n\nThen it is onions, and it is very good, and the plate is warm.",
+    "failure": "Ten, nine, seven, and a long one. You look away and back and it is ten, nine, seven, and a long one, and the rearranging happens exactly and only in the place where you are not.",
+    "success_effects": {
+     "clue": {
+      "id": "c_four_lines_of_type",
+      "title": "Four lines of type",
+      "text": "Caught mid-move, the onions on the liver resolve into four set lines of type, the last one longer because it contains a name.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "identity"
+      ],
+      "source": "the liver and onions"
+     },
+     "lucidity": 10
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "inspector",
+   "name": "the health inspector's file",
+   "aliases": [
+    "inspector",
+    "file",
+    "ficklefuk",
+    "reports",
+    "clipboard"
+   ],
+   "description": {
+    "low": "Antopolis Ficklefuk comes on Thursdays and he has come on Thursdays for nine years and he keeps the most meticulous records in Silvora Reefs.\n\nThe file lives in a wire rack by the door because the regulations say it must be available for inspection, and nobody has ever inspected it except you, and you have now done so four times.\n\nThe observations column is exhaustive. *Room dimension at 1904h: 6.2m. Room dimension at 1911h: 9.4m. No structural work observed.* *Dish served under name not appearing on menu. Menu subsequently correct.* *Utensil aloft, unsupported, 4s, kitchen.*\n\nThe findings column, on every page, for nine years, says: NO MATTERS ARISING.",
+    "mid": "Antopolis Ficklefuk has inspected on Thursdays for nine years and keeps the most meticulous records in town. Observations: 'Room dimension at 1904h: 6.2m. At 1911h: 9.4m. No structural work observed.' 'Utensil aloft, unsupported, 4s.' Findings, on every page, for nine years: NO MATTERS ARISING.",
+    "high": "Nine years of meticulously documented impossibilities. Findings, every page: NO MATTERS ARISING."
+   },
+   "repeat": "Two new Thursdays. Utensil aloft, six seconds. Diner reports tasting a colour. No matters arising.",
+   "monocle": "Through the gold, NO MATTERS ARISING is a stamp and not a signature, and the stamp has four lobes, and it has been applied to the findings column *before* the observations column was filled in. The ink of the finding is under the ink of the observation on every page for nine years.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 11,
+     "text": "He is not covering it up. A man covering it up would not write it down. He is doing something much stranger: recording it in full and then certifying that nothing happened, in the same document, in the same hand."
+    },
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "Nine years of Thursdays. He measures the room twice a visit because measuring it twice is the only part of this that is his. Somebody told him what the findings column would say a long time ago, and he has been filling the other column ever since out of self-respect."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_no_matters_arising",
+     "title": "NO MATTERS ARISING",
+     "text": "Nine years of health inspections at Lishush Mush record dimensional changes, unsupported utensils and non-existent dishes in exhaustive detail. Every findings column reads NO MATTERS ARISING.",
+     "beat": "quadc",
+     "tags": [
+      "quadc",
+      "bureaucracy"
+     ],
+     "source": "the inspection file"
+    },
+    "monocle_effects": {
+     "clue": {
+      "id": "c_finding_first",
+      "title": "The finding was stamped first",
+      "text": "Under the monocle, NO MATTERS ARISING is a four-lobed stamp applied before the observations were written. The ink of the conclusion lies under the ink of the evidence on every page for nine years.",
+      "beat": "oracle",
+      "tags": [
+       "oracle",
+       "quadc",
+       "bureaucracy"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 12
+    }
+   },
+   "check": {
+    "id": "lishush:file:sav",
+    "skill": "SAVOIR_FAIRE",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "The file is behind the pass and the kitchen is busy. Have the last nine years of it without anybody watching you have it.",
+    "success": "There is a half-second every ninety seconds when the pass is loud and nobody is facing the shelf. You take it in that half-second and read it standing up and put it back in the next one.\n\nNine years. Every findings column reads NO MATTERS ARISING — and on the last page, this Thursday, in a different hand: *matters arising*, lower case, unstamped, unfinished.",
+    "failure": "You get the file off the shelf and Chef D. says your name — the one she uses, which is 'love' — from four feet away without turning round, and asks whether you are hungry, and you put it back and say yes.",
+    "success_effects": {
+     "clue": {
+      "id": "c_matters_arising",
+      "title": "matters arising",
+      "text": "The last page of the inspector's file, this Thursday, in a different hand and unstamped: 'matters arising', lower case, unfinished.",
+      "beat": "oracle",
+      "tags": [
+       "oracle",
+       "quadc"
+      ],
+      "source": "the health inspector's file"
+     },
+     "lucidity": 10
+    },
+    "failure_effects": {
+     "relationship": {
+      "chef_d": -1
+     }
+    }
+   }
+  },
+  {
+   "id": "antelope",
+   "name": "the Can't Elope Antelope",
+   "aliases": [
+    "antelope",
+    "cant elope",
+    "can't elope",
+    "special"
+   ],
+   "description": {
+    "low": "It is on the menu and it is on the menu at every establishment in Silvora Reefs that has ever wanted to annoy Woolbinkle, which is all of them.\n\nHere it is served in a bowl, soft, pale, and it is the only dish in the room that arrives looking different to each person at the table. You have watched this happen. Four diners, one dish, four honest descriptions, no two overlapping, and a general table-wide agreement afterwards that it had been very good.\n\nChef D. will tell you, if you ask, that she does not know what is in it. She will tell you this cheerfully and it is not a joke and it does not trouble her. Her position is that she cooks it correctly and the ingredients are between the dish and the diner.",
+    "mid": "Served soft and pale, and it is the only dish here that arrives looking different to each person at the table — four diners, four honest and non-overlapping descriptions, and general agreement afterwards that it was very good. Chef D. does not know what is in it, cheerfully, and holds that the ingredients are between the dish and the diner.",
+    "high": "One dish, different to every diner. Chef D. doesn't know what's in it and isn't troubled."
+   },
+   "repeat": "Different again. You are getting better at not describing it, which is the only skill this dish rewards.",
+   "monocle": "Through the gold, the bowl contains one word, and the word is CANNED, and it has been canned.",
+   "check": {
+    "id": "lishush:antelope:eat",
+    "skill": "ELECTROCHEMISTRY",
+    "dc": 11,
+    "kind": "red",
+    "prompt": "Eat it. Everything in this room has been extraordinary and none of it has hurt anybody, and that is a sentence with a shape you have started to distrust.",
+    "success": "Soft. Warm. And then a taste that is not a taste but a *held note*, low, sustained, the way an organ holds a chord under a hymn — and while the note is held, a great deal of Silvora Reefs is briefly available to you at once, the way a town is available from a hill.\n\nYou are aware of Rest Assured, and the count of its vaults, which is nineteen. You are aware of Darek's back hallway, which is eleven feet. You are aware of a small room with a green lamp in it, which is nine by eleven, and which is not in Silvora Reefs, and which is nonetheless the room all of the others are measured from.\n\nThen it is a bowl of something soft, and Chef D. is saying *shhhk* at a pan, and your spoon is halfway to your mouth and has been for some time.",
+    "failure": "Soft. Warm. Extraordinary. And nothing else — no note, no hill, no town laid out.\n\nAt the bottom of the bowl there is a single round of cantaloupe, which is not an ingredient in anything else in this room, and which sits there being a joke told by somebody who is not present and who has been waiting a long time for you to reach the bottom of a bowl.",
+    "success_effects": {
+     "clue": {
+      "id": "c_room_of_measure",
+      "title": "The room everything is measured from",
+      "text": "Under the Can't Elope Antelope, the whole town becomes briefly available at once — and every measurement in it resolves against a small green-lamped room, nine feet by eleven, which is not in Silvora Reefs.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "office",
+       "manuscript"
+      ],
+      "source": "the Can't Elope Antelope"
+     },
+     "lucidity": 17,
+     "morale": -6
+    },
+    "failure_effects": {
+     "morale": 4,
+     "clue": {
+      "id": "c_cantaloupe",
+      "title": "A round of cantaloupe",
+      "text": "At the bottom of the bowl, one round of cantaloupe — an ingredient in nothing else in the building, and a joke told by somebody not present.",
+      "tags": [
+       "woolbinkle",
+       "wordplay"
+      ],
+      "source": "the Can't Elope Antelope"
+     }
+    }
+   }
+  }
+ ],
+ "exits": {
+  "outside_inn": "back down toward the water, and a building with weather in it",
+  "cheeses_thrice": "along the narrow street, toward an oven and a great deal of feeling",
+  "gs_spot": "a corner you will not be able to point to afterwards"
+ }
+}

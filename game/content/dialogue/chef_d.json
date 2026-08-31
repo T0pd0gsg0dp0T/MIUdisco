@@ -1,0 +1,335 @@
+{
+ "npc": "chef_d",
+ "nodes": {
+  "root": {
+   "text": "Shit down. You look like a man who hash been reading shomething and hash not been eating anything, and I have sheen that fashe before and it did not end well for the fashe.",
+   "options": [
+    {
+     "id": "liver",
+     "text": "\"You always send out liver and onions. I never order it.\"",
+     "goto": "liver"
+    },
+    {
+     "id": "menu",
+     "text": "\"The menu changes between reading it and ordering.\"",
+     "goto": "menu",
+     "requires": {
+      "clue": "c_menu_revision"
+     }
+    },
+    {
+     "id": "inspector",
+     "text": "\"Nine years of inspections. No matters arising.\"",
+     "goto": "inspector",
+     "requires": {
+      "clue": "c_no_matters_arising"
+     }
+    },
+    {
+     "id": "teeth",
+     "text": "\"How do you taste it?\"",
+     "goto": "teeth",
+     "once": true
+    },
+    {
+     "id": "chefd_pass",
+     "text": "\"Let me work the pass. Two minutes. Tell me what to do.\"",
+     "once": true,
+     "check": {
+      "id": "chef_d:chefd_pass",
+      "skill": "HAND_EYE",
+      "dc": 11,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "She tells you and you do it, and the plates go out at the pace they go out at, and nothing is dropped.\n\nAt the end of it she says *shhhk* at the pan, approvingly, and tells you that you plate like somebody who has been fed by somebody who cared, which is not the same as somebody who can cook, and is a much rarer thing to be.",
+      "failure_text": "She tells you and you do most of it and one plate goes down badly and she has it rebuilt before it has finished going down badly. \"Sit,\" she says, kindly, immediately, and there is food in front of you inside a minute.",
+      "success_effects": {
+       "clue": {
+        "id": "c_fed_by_somebody_who_cared",
+        "title": "Plated like somebody who was fed",
+        "text": "Chef D. says you plate like a man who was fed by somebody who cared — a different thing from a man who can cook.",
+        "beat": "revilo",
+        "tags": [
+         "revilo",
+         "kindness",
+         "identity"
+        ],
+        "source": "Chef Delilah Rishrush"
+       },
+       "lucidity": 7,
+       "morale": 6,
+       "relationship": {
+        "chef_d": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Let her get back to the pass.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "liver": {
+   "text": "You are called Onionsh.\n\nThat ish the whole of it, Mishter Onionsh, and I will not be argued out of it. A man cannot come into my houshe with that name and be given a shoup. It would be a — shhk — it would be a failure of hoshpitality and I have not had one of thoshe shinsh the war.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 10,
+     "text": "She means it entirely. There is no second layer here. A woman has decided that a man's name is a fact about what he should be fed and has acted on it, daily, for years, out of pure and uncomplicated regard."
+    }
+   ],
+   "options": [
+    {
+     "id": "arrangement",
+     "text": "\"The onions arrange themselves on the plate. Ten, nine, seven, and a long one.\"",
+     "requires": {
+      "clue": "c_onion_keys"
+     },
+     "check": {
+      "id": "chefd:arrangement",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_worn_o": 3
+      },
+      "success_text": "She wipes her handsh on the cloth and shits down, which she does not do, and which the whole kitchen notices without looking.\n\n\"I do not arrange them,\" she says. \"I have never arranged them. I put them on the plate the way you put a thing on a plate and by the time the plate is at the pash they have gone into the rowsh.\n\nAt firsht I thought — a draught, a shlope, the fat moving. Ish not. I have tilted the plate. They come back. I have put fourteen on and there are alwaysh thirty-shix, and I do not have thirty-shix onionsh on this shection, Mishter Onionsh, and I have counted the shtock and the shtock is right.\"\n\nA pause. She looks at her own hands with mild professional interest.\n\n\"Shomething is finishing my platesh for me. It hash better handwriting than I do and it hash been doing it for eleven yearsh and it hash never onshe got an order wrong.\"",
+      "failure_text": "\"They shettle,\" she says, comfortably. \"Everything shettles. You put a thing down and it findsh where it wantsh to be, ish the shame with a shauce, ish the shame with a — shhhk — ish the shame with a man in a chair.\"\n\nAnd she is back at the pass, and the conversation has been ended by somebody who does not appear to have ended it.",
+      "success": "arrangement_truth",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_finishing_her_plates",
+        "title": "Something finishes her plates",
+        "text": "Chef D. does not arrange the onions. Fourteen go on the plate and thirty-six arrive at the pass, from stock that counts correctly. Something has been completing her dishes for eleven years and has never got an order wrong.",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript",
+         "typewriter"
+        ],
+        "source": "Chef D. Rishrush"
+       },
+       "lucidity": 13,
+       "relationship": {
+        "chef_d": 2
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Thank you, Chef.\"",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "arrangement_truth": {
+   "text": {
+    "low": "I do not mind it. I want to shay that firsht, becaushe you have the fashe again.\n\nWhatever ish finishing my platesh — ish kind. Ish careful. It doesh not shalt anything. It hash never onshe put a thing on a plate that did not belong there, and in fifty yearsh of kitchensh, Mishter Onionsh, that ish more than I can shay for any human being I have employed.\n\nIf ish going to take my platesh off me at the end, well. It hash earned them.",
+    "high": "I do not mind it. I want to shay that firsht, becaushe you have the fashe again.\n\nWhatever ish finishing my platesh — ish kind. Ish careful. It hash never onshe put a thing on a plate that did not belong there, and in fifty yearsh of kitchensh that ish more than I can shay for any human being I have employed.\n\nIf ish going to take my platesh off me at the end — well. It hash earned them."
+   },
+   "effects": {
+    "relationship": {
+     "chef_d": 1
+    },
+    "morale": 6
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else, Chef.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "menu": {
+   "text": {
+    "low": "Yesh. Ish been happening shinsh before you were coming here.\n\nAnd I will tell you the part that nobody ashks, becaushe everybody ashks about the menu and nobody ashks about the *kitchen*: the dockets do not change. The paper that comesh to me is the paper that leavesh the front. I have kept them. I have a box of them going back yearsh, and every one of them ish what the man actually shaid, and it ish never what he thinksh he shaid.\n\nSho ish not the menu that ish moving, Mishter Onionsh. Ish not the food. Ish the *cushtomer*.",
+    "high": "Yesh. Shinsh before you were coming here.\n\nAnd I will tell you the part nobody ashks, becaushe everybody ashks about the menu and nobody ashks about the *kitchen*: the dockets do not change. I have kept them, yearsh of them, and every one ish what the man actually shaid, and it ish never what he thinksh he shaid.\n\nSho ish not the menu that ish moving. Ish the *cushtomer*."
+   },
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 11,
+     "text": "She has independent evidence. The dockets are a fixed record made at the moment of speech, and they always match the food and never match the memory. The revision happens after the order and before the recollection."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_dockets_dont_change",
+     "title": "The dockets never change",
+     "text": "Chef D. keeps years of order dockets. They always match the food served and never match what the customer remembers ordering. The menu is not moving; the customer is.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript"
+     ],
+     "source": "Chef D. Rishrush"
+    },
+    "lucidity": 9,
+    "relationship": {
+     "chef_d": 1
+    }
+   },
+   "options": [
+    {
+     "id": "mine",
+     "text": "\"Do you have my dockets?\"",
+     "goto": "my_dockets"
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "my_dockets": {
+   "text": {
+    "low": "She gosh to the box. It takesh a while and nobody in the kitchen filsh the gap and T doesh not shpeak, which is the most remarkable thing that hash happened in this room tonight.\n\nShe comesh back with eleven yearsh of dockets in a rubber band.\n\nEvery one of them ish blank.\n\n\"You have never onshe ordered,\" she says. \"Not in eleven yearsh. I have alwaysh known what you were having and I have alwaysh shent it and I have never onshe wondered why, until thish moment, shtanding here, holding it.\"",
+    "high": "She gosh to the box. It takesh a while, and T doesh not shpeak, which is the most remarkable thing that has happened in this room tonight.\n\nShe comesh back with eleven yearsh of dockets in a rubber band.\n\nEvery one of them ish blank.\n\n\"You have never onshe ordered,\" she says. \"Not in eleven yearsh. I have alwaysh known what you were having, and I have never onshe wondered why, until thish moment, holding it.\""
+   },
+   "effects": {
+    "clue": {
+     "id": "c_blank_dockets",
+     "title": "Eleven years of blank dockets",
+     "text": "Chef D.'s order dockets for Oliver are all blank. He has never ordered in eleven years. She has always known what he was having and has never once wondered why until now.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "manuscript",
+      "identity",
+      "personhood"
+     ],
+     "source": "Chef D. Rishrush"
+    },
+    "lucidity": 17,
+    "morale": -8,
+    "relationship": {
+     "chef_d": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"I'm sorry, Chef.\"",
+     "goto": "sorry"
+    }
+   ]
+  },
+  "sorry": {
+   "text": "Do not be shorry at me in my own kitchen.\n\nShit down. Eat the liver. Ish going cold while two grown people shtand about being frightened of a rubber band, and there ish one thing in thish building that hash never once let anybody down and ish on that plate, and I made it, and I know I made it, becaushe my hands are shtill hot.",
+   "effects": {
+    "morale": 8,
+    "relationship": {
+     "chef_d": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Sit down. Eat the liver.",
+     "goto": "root"
+    }
+   ]
+  },
+  "inspector": {
+   "text": {
+    "low": "Antopolish. Nine yearsh of Thurshdaysh and he hash never onshe eaten anything.\n\nHe measuresh my room twishe. He writesh down everything. He ish the mosht thorough man I have ever met and I have met a great many men who were paid to be thorough and were not.\n\nAnd then he shtampsh it and he shaysh good afternoon Chef and he goesh. And I have watched hish fashe while he shtampsh it, Mishter Onionsh, and hish fashe ish the fashe of a man shigning shomething he did not write.",
+    "high": "Antopolish. Nine yearsh of Thurshdaysh and he hash never onshe eaten anything.\n\nHe measuresh my room twishe. He writesh down everything. He ish the mosht thorough man I have ever met.\n\nAnd then he shtampsh it and shaysh good afternoon Chef and goesh. And I have watched hish fashe while he shtampsh it, and it ish the fashe of a man shigning shomething he did not write."
+   },
+   "options": [
+    {
+     "id": "ask_him",
+     "text": "\"Has anybody ever asked him about it?\"",
+     "check": {
+      "id": "chefd:ficklefuk",
+      "skill": "RHETORIC",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "\"I ashked him. Onshe. Four yearsh ago, in April, and I have not ashked shinsh.\n\nHe put down the shtamp and he shaid — and I am giving you the wordsh, becaushe I have had them in my head for four yearsh — he shaid: *Chef, I record what occurs and I certify what may be said to have occurred, and those are two different professions, and the parish employs me in both, and pays me for one.*\n\nAnd then he shtamped it. And then he shaid good afternoon Chef. And he hash come every Thurshday shinsh and he hash never mentioned it and neither have I.\"",
+      "failure_text": "\"Who would ashk? Ish a health inshpector. You do not ashk a health inshpector to explain himshelf, you give him a chair and a good light and you get on with the shervish.\"",
+      "success": "ficklefuk",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_two_professions",
+        "title": "Two professions, one salary",
+        "text": "Antopolis Ficklefuk on his own findings column: 'I record what occurs and I certify what may be said to have occurred, and those are two different professions, and the parish employs me in both, and pays me for one.'",
+        "beat": "quadc",
+        "tags": [
+         "quadc",
+         "bureaucracy",
+         "language"
+        ],
+        "source": "Chef D. Rishrush"
+       },
+       "lucidity": 11,
+       "relationship": {
+        "chef_d": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "ficklefuk": {
+   "text": {
+    "low": "*What may be shaid to have occurred.*\n\nI have turned that over for four yearsh, Mishter Onionsh, at four in the morning, over shtock. And here ish where I have got to and you may have it for nothing:\n\nShomebody ish paying a man to write down what may be shaid. Not what happened — what may be *shaid*. And if you are paying for that, then you are not in the businesh of knowing thingsh.\n\nYou are in the businesh of deshiding what ish shayable.",
+    "high": "*What may be shaid to have occurred.*\n\nI have turned that over for four yearsh, at four in the morning, over shtock. Here ish where I have got to, and you may have it for nothing:\n\nShomebody ish paying a man to write down what may be *shaid*. Not what happened. And if you are paying for that, you are not in the businesh of knowing thingsh.\n\nYou are in the businesh of deshiding what ish shayable."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_sayable",
+     "title": "The business of deciding what is sayable",
+     "text": "Chef D.'s four-year conclusion: paying a man to certify 'what may be said to have occurred' is not the business of knowing things. It is the business of deciding what is sayable.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "language",
+      "quadc"
+     ],
+     "source": "Chef D. Rishrush"
+    },
+    "lucidity": 12,
+    "relationship": {
+     "chef_d": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...Yes.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "teeth": {
+   "text": {
+    "low": "With my handsh.\n\nYou are laughing. Good. Ish a good anshwer and ish alsho true. Fifty yearsh, Mishter Onionsh. Fifty yearsh of a pan and a shpoon and a nose, and the tashte ish in the — shhhk — ish in the shound it makesh when ish right, and in the way it goesh over a shpoon, and in the shmell at the shecond it turnsh.\n\nI have not tashted anything shinsh 1971 and I have not shent out a bad plate shinsh 1974, and I would like thoshe two factsh read in that order, becaushe in the other order they are a shad shtory and in thish order they are my life.",
+    "high": "With my handsh.\n\nYou are laughing. Good. Ish a good anshwer and ish alsho true. Fifty yearsh of a pan and a shpoon and a nose, and the tashte ish in the — shhhk — in the shound it makesh when ish right, and in the shmell at the shecond it turnsh.\n\nI have not tashted anything shinsh 1971 and I have not shent out a bad plate shinsh 1974, and I would like thoshe two factsh read in that order — in the other order they are a shad shtory, and in thish order they are my life."
+   },
+   "effects": {
+    "morale": 10,
+    "relationship": {
+     "chef_d": 2
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"In that order, then.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

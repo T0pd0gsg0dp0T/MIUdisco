@@ -1,0 +1,453 @@
+{
+ "npc": "darek",
+ "nodes": {
+  "root": {
+   "text": "Sorry about your wait. — Nope. Still ahead. Gimme a second, Ols, I been runnin' a touch previous all evenin' and it makes a man sound rude when he ain't.",
+   "options": [
+    {
+     "id": "crash",
+     "text": "\"Did anything come down over the harbour last week?\"",
+     "goto": "crash"
+    },
+    {
+     "id": "hallway",
+     "text": "\"Your back hallway changes length.\"",
+     "goto": "hallway"
+    },
+    {
+     "id": "ahead",
+     "text": "\"You keep answering before I ask.\"",
+     "goto": "ahead"
+    },
+    {
+     "id": "licence",
+     "text": "\"The Coalition measured your hallway and told them not to tell you.\"",
+     "goto": "licence",
+     "requires": {
+      "clue": "c_variance_licence"
+     }
+    },
+    {
+     "id": "darek_sundae",
+     "text": "\"Make me the one you would not sell me.\"",
+     "once": true,
+     "check": {
+      "id": "darek:darek_sundae",
+      "skill": "ELECTROCHEMISTRY",
+      "dc": 10,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "He looks at you for a while and then makes it, and it is not on the board.\n\nIt tastes of a specific afternoon that is not yours, in a kitchen with the window open, and somebody in the next room is typing. When it is gone the taste goes with it completely, the way a name goes.",
+      "failure_text": "\"I would not sell you that,\" he says, and makes you the second-best thing, and the second-best thing is superb and tastes of nothing but itself, which under the circumstances is a small betrayal.",
+      "success_effects": {
+       "clue": {
+        "id": "c_a_kitchen_and_typing",
+        "title": "A kitchen, and typing next door",
+        "text": "Off the board at Durry Kwain: a flavour of somebody else's afternoon, a kitchen with the window open, and typing in the next room.",
+        "beat": "revilo",
+        "tags": [
+         "revilo",
+         "manuscript"
+        ],
+        "source": "Darek Dwayne Wayne"
+       },
+       "lucidity": 8,
+       "intoxication": 1
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Let him wipe the counter.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "crash": {
+   "text": {
+    "low": "Come down? Over the *harbour*?\n\nOls. Now. I been on this hill since I was nineteen years old and I got a window faces straight down at that water and I open at four and I close when I close. Nothin' come down over that harbour. Not last week, not last year, not never in my life.\n\nAnd before you say it — 'cause you got the face on, you got the face where the eyebrow's doin' the talkin' — I know they pulled you out of it. I know that. I'm the one drove down and got you, and you were wetter'n a boiled owl and sayin' the alphabet backwards, which, you do that, you always did, that ain't news.\n\nBut ain't nothin' come *down*. You come *up*.",
+    "high": "Come down? Over the *harbour*?\n\nOls. I been on this hill since I was nineteen and I got a window faces straight down at that water. Nothin' come down over that harbour. Not last week, not never.\n\nAnd before you say it — I know they pulled you out. I'm the one drove down and got you, and you were wetter'n a boiled owl and sayin' the alphabet backwards, which you always did, that ain't news.\n\nBut ain't nothin' come *down*. You come *up*."
+   },
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 10,
+     "text": "He is not being evasive. He is being precise, and precision from Darek is rarer and more alarming than evasion. There was no crash. There was a surfacing."
+    },
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "He is frightened. Not of the question — of having the answer ready. He has been sitting on that sentence for a week hoping you would not come in and make him say it."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_no_crash",
+     "title": "Nothing came down",
+     "text": "Darek's window overlooks the harbour and he opens at four. Nothing came down. He drove down and pulled you out. You came up.",
+     "beat": "crash",
+     "tags": [
+      "crash"
+     ],
+     "source": "Darek Dwayne Wayne"
+    },
+    "lucidity": 7
+   },
+   "options": [
+    {
+     "id": "rotors",
+     "text": "\"Then what are the rotors?\"",
+     "goto": "rotors",
+     "requires": {
+      "clue": "c_rotors"
+     }
+    },
+    {
+     "id": "backwards",
+     "text": "\"What did I say. Backwards. Exactly.\"",
+     "check": {
+      "id": "darek:backwards",
+      "skill": "EMPATHY",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "He stops wiping. Darek stopping wiping is a geological event.\n\n\"Wasn't the alphabet,\" he says, to the counter. \"I said the alphabet 'cause it's easier and 'cause you were in no state and 'cause I'm a coward about you, Ols, I always been a coward about you.\n\nYou said your own name. Over and over, all the way up the hill in the truck, backwards. *Snoino Revilo. Snoino Revilo.* Like it was somebody you were tryin' to warn me about.\"",
+      "failure_text": "\"The alphabet! Z, Y, X, the whole business, and a man doin' that on the slipway at four in the mornin' is a man needs a towel and a sit-down, so that's what he got.\" He wipes the counter. The counter has not needed it since you came in.",
+      "success": "backwards_reveal",
+      "failure": "crash",
+      "success_effects": {
+       "clue": {
+        "id": "c_said_revilo",
+        "title": "You said his name coming out of the water",
+        "text": "Darek: you were not saying the alphabet backwards. You were saying your own name backwards, repeatedly, all the way up the hill. Snoino Revilo. Like a warning.",
+        "beat": "revilo",
+        "tags": [
+         "revilo",
+         "crash",
+         "wordplay"
+        ],
+        "source": "Darek Dwayne Wayne"
+       },
+       "lucidity": 12,
+       "morale": -6,
+       "relationship": {
+        "darek": 1
+       },
+       "thought": "backwards_man"
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"All right.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "backwards_reveal": {
+   "text": {
+    "low": "I ain't told nobody. I ain't told *you*, and I had a week, and every day I had it ready and every day you come in here and I made you a cone instead.\n\nOls — is there a fella? Is there an actual fella with that name walkin' around my town?\n\n... You don't gotta answer that. Look at me. I asked and I don't want it. That's the first time in my whole life I asked a thing I didn't want, and I'd take it back if takin' back was a service we offered.",
+    "high": "I ain't told nobody. I ain't told *you*, and I had a week, and every day I had it ready and every day I made you a cone instead.\n\nOls — is there a fella? Is there an actual fella with that name walkin' around my town?\n\n... Don't answer that. I asked and I don't want it. First time in my life I asked a thing I didn't want."
+   },
+   "effects": {
+    "relationship": {
+     "darek": 1
+    },
+    "morale": 4
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Let him off. Change the subject.",
+     "goto": "root"
+    }
+   ]
+  },
+  "rotors": {
+   "text": "The what now.\n\nThe— Ols. Ols, buddy. There ain't no rotors. There ain't been a helicopter in Silvora Reefs since the parish sold the one, and they sold it 'cause the fog. You can't fly in this. Nobody can fly in this. Ain't nothin' up there but the up.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 11,
+     "text": "There it is — the managed flinch, right on the word 'rotors', a quarter-second before he decided what to say. He can hear it. He has agreed not to have heard it, and the agreement is costing him something to keep."
+    }
+   ],
+   "options": [
+    {
+     "id": "push",
+     "text": "\"Darek. You flinched.\"",
+     "check": {
+      "id": "darek:rotors_push",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_rotors": 2
+      },
+      "success_text": "\"'Course I flinched.\"\n\nHe says it to the counter, in a voice with no drawl in it, and without the drawl he does not sound like the sign above his head at all.\n\n\"Everybody hears it. Every soul on this hill hears it, all day, every day, since the — since you come up. And we don't say it, Ols, and I need you to hear why we don't say it, 'cause it ain't cowardice and it ain't the Coalition and it ain't nothin' clever.\n\nIt's that the first fella who says it out loud is gonna make it *true*. Right now it's a noise. Right now a man can go to bed. You say 'there's a helicopter over the harbour' in this town, in a voice, where folks can hear you — and then there's a helicopter over the harbour, and it's got to have come from someplace, and it's got to be *for* somebody.\n\nSo we let it be a noise. That's the whole town's plan and it ain't much of one and I'd thank you not to spoil it.\"",
+      "failure_text": "\"I flinched 'cause you come in here with your coat still wet askin' about aircraft, and a man's allowed a flinch.\" He looks at you the way he looked at you on the slipway. \"You want a cone? I made you a cone. I always made you a cone.\"",
+      "success": "rotors_truth",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_town_agreement",
+        "title": "The whole town's plan",
+        "text": "Everyone hears the rotors. Nobody says so, because in Silvora Reefs the first person to say a thing aloud makes it the case. Letting it stay a noise is the town's entire plan.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "language",
+         "crash"
+        ],
+        "source": "Darek Dwayne Wayne"
+       },
+       "lucidity": 14,
+       "relationship": {
+        "darek": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "Let it be a noise.",
+     "goto": "root"
+    }
+   ]
+  },
+  "rotors_truth": {
+   "text": "Now you got it and I wish you didn't.\n\nAnd Ols — one more and then I'm makin' you eat somethin'. You been in here every day since the water askin' after impossible business. That's fine. That's you, that's always been you, I got no complaint.\n\nBut you're sayin' it *out loud*. In my shop. In front of my window. And I ain't scared of what the Coalition'd do about that.\n\nI'm scared of what'd be true afterward.",
+   "effects": {
+    "relationship": {
+     "darek": 1
+    },
+    "morale": -4,
+    "lucidity": 4
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Eat the ice cream.",
+     "goto": "root"
+    }
+   ]
+  },
+  "hallway": {
+   "text": "It does not.\n\nOls, I have walked that hallway maybe nine hundred thousand times. It's eleven foot. It's been eleven foot since my daddy leased this counter and it'll be eleven foot when they carry me down it, and if it was any other length I'd have noticed on account of I carry a mop through it.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 11,
+     "text": "He is telling the truth. Which means the hallway is eleven feet for Darek and thirty-odd for you, and both of those are measurements of the same hallway taken by two men standing in the same shop."
+    }
+   ],
+   "options": [
+    {
+     "id": "walk_together",
+     "text": "\"Walk it with me.\"",
+     "check": {
+      "id": "darek:walk_together",
+      "skill": "RHETORIC",
+      "dc": 10,
+      "kind": "white",
+      "success_text": "He comes out from behind the counter, which he does perhaps twice a year, and you walk it together.\n\nIt is eleven feet.\n\nIt is eleven feet the whole way, briskly, with a friend, and Darek says 'told ya' and goes back to the till, and you stand at the door marked STAFF and turn round and walk back alone and it takes you nineteen seconds.\n\nAsimov said it: one man needs more corridor than four men do. One man has further to go. You did not believe him at the time and you have now been made to.",
+      "failure_text": "\"I got a shop, Ols.\" And he does, and there is a customer, and there has never been a customer in here before, and by the time the customer is dealt with the moment has gone the way moments go in this town — not passed. Withdrawn.",
+      "success": "hallway_walked",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_eleven_feet_together",
+        "title": "Eleven feet with a friend",
+        "text": "Walked with Darek, the back hallway is eleven feet. Walked alone, it is thirty-odd. The variable is not the hallway.",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript",
+         "architecture"
+        ],
+        "source": "the back hallway"
+       },
+       "lucidity": 8,
+       "relationship": {
+        "darek": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Never mind.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "hallway_walked": {
+   "text": {
+    "low": "You went quiet on me back there. You got the quiet where the eyebrow ain't movin'.\n\nOls, listen. Whatever it is you're workin' at — and I ain't askin', I have made a real point of not askin' — you got a standin' invitation to be in here doin' it. Sit at the window. Talk at me. I don't gotta follow it, I never followed it, that ain't the part I was ever in it for.\n\nJust don't do the whole thing alone, huh. On account of, apparently, that's how the hallway gets long.",
+    "high": "You went quiet on me back there. The quiet where the eyebrow ain't movin'.\n\nOls — whatever it is you're workin' at, and I ain't askin', you got a standin' invitation to be in here doin' it. Sit at the window. Talk at me. I don't gotta follow it; that ain't the part I was ever in it for.\n\nJust don't do the whole thing alone. On account of, apparently, that's how the hallway gets long."
+   },
+   "effects": {
+    "morale": 10,
+    "relationship": {
+     "darek": 2
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"...Thank you, Durry.\"",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "ahead": {
+   "text": "Yeah. I know. I been previous my whole life and it got worse since the water.\n\nIt ain't a gift, 'fore you get excited. I ain't seein' nothin'. It's more like — you know when a fella's told you a story so many times you're mouthin' it along with him? Like that. Only I ain't heard the story before and I'm mouthin' it anyhow.",
+   "passive": [
+    {
+     "skill": "SAVOIR_FAIRE",
+     "dc": 12,
+     "text": "That is not precognition. That is a man reading ahead on a page he is also on."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_reading_ahead",
+     "title": "Mouthing along to a story he has not heard",
+     "text": "Darek answers early. Not foresight — the sensation of mouthing along to a story told many times, except he has not heard it before.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript"
+     ],
+     "source": "Darek Dwayne Wayne"
+    },
+    "lucidity": 6
+   },
+   "options": [
+    {
+     "id": "apology",
+     "text": "\"Then why is it always the apology? 'Sorry about your wait.'\"",
+     "goto": "apology"
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "apology": {
+   "text": "...Huh.\n\nHuh. I don't— I say that 'cause you say things and it's what you say, but you're right, it's always that one. Been that one for years. Sorry about your wait. Sorry about your wait. And there ain't never been a wait, there ain't never been a line, I got nine tubs and three customers.\n\nSo who am I apologisin' to, Ols?\n\n... Don't answer. I seen your face and I have decided I got tubs to check.",
+   "effects": {
+    "clue": {
+     "id": "c_apology_for_nothing",
+     "title": "Sorry about your wait",
+     "text": "Darek's stock line apologises for a wait that has never occurred in a shop that has never had a queue. He has no idea who it is addressed to.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript"
+     ],
+     "source": "Darek Dwayne Wayne"
+    },
+    "lucidity": 7,
+    "relationship": {
+     "darek": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Let him check his tubs.",
+     "goto": "root"
+    }
+   ]
+  },
+  "licence": {
+   "text": "The framed thing? By the till?\n\nOls, that's been up since my daddy. That's the licence. Every shop in the Reefs got one. Ain't nobody ever read a licence in the history of—\n\n... What's it say.",
+   "options": [
+    {
+     "id": "read_it",
+     "text": "Read him the last line.",
+     "goto": "read_it"
+    },
+    {
+     "id": "dont",
+     "text": "\"Nothing. It's a licence.\"",
+     "goto": "dont"
+    }
+   ]
+  },
+  "read_it": {
+   "text": {
+    "low": "*Dimensional variance within permitted tolerance. Proprietor not to be informed.*\n\nHe does not say anything for a while. Then he takes the frame off the wall, and looks at the back of it, and puts it down on the counter face-up, and puts both hands flat either side of it.\n\n\"Permitted,\" he says. \"By who. In my shop. That my daddy leased.\"\n\nThe drawl has gone. Without it he does not sound like his sign, and the shop is very quiet, and somewhere behind you the hallway is a length neither of you is measuring.",
+    "high": "*Dimensional variance within permitted tolerance. Proprietor not to be informed.*\n\nHe says nothing for a while. Then he takes the frame off the wall, looks at the back of it, sets it face-up on the counter and puts both hands flat either side.\n\n\"Permitted,\" he says. \"By who. In my shop. That my daddy leased.\"\n\nThe drawl has gone. Without it he does not sound like his sign, and somewhere behind you the hallway is a length neither of you is measuring."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_darek_told",
+     "title": "The proprietor was informed",
+     "text": "You read Darek his own licence. He now knows the Quad-C measured his shop, permitted the variance, and instructed that he not be told.",
+     "beat": "quadc",
+     "tags": [
+      "quadc"
+     ],
+     "source": "Durry Kwain"
+    },
+    "flag": {
+     "darek_knows": true
+    },
+    "relationship": {
+     "darek": 1
+    },
+    "morale": -5,
+    "lucidity": 6
+   },
+   "options": [
+    {
+     "id": "sorry",
+     "text": "\"I'm sorry.\"",
+     "goto": "sorry"
+    }
+   ],
+   "narration": true
+  },
+  "sorry": {
+   "text": {
+    "low": "Don't be. Don't you be sorry, Oliver Otto Onions, I have had a licence on my wall my whole working life tellin' me I'm not to be told and I been not told, faithful, like a good boy, for thirty-one years.\n\nYou want to know the worst of it? I feel *better*. I'm stood here madder'n I ever been and I feel better than I felt all week, and that's a thing about knowin' I did not expect and did not sign up for.\n\nSo. What else ain't I been told.",
+    "high": "Don't be. Don't you be sorry, Oliver Otto Onions. I have had a licence on my wall my whole working life tellin' me I'm not to be told, and I been not told, faithful, for thirty-one years.\n\nWorst of it? I feel *better*. Stood here madder'n I ever been and feelin' better than I felt all week, and that's a thing about knowin' I did not sign up for.\n\nSo. What else ain't I been told."
+   },
+   "effects": {
+    "relationship": {
+     "darek": 2
+    },
+    "morale": 8
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Tell him what you have.",
+     "goto": "root"
+    }
+   ]
+  },
+  "dont": {
+   "text": "Well. All right then.\n\nHe goes back to the counter. He wipes it. The counter did not need it and does not need it now, and he wipes it in the long slow way of a man who has been let off something and has noticed being let off, and would have preferred, on balance, not to be.",
+   "effects": {
+    "relationship": {
+     "darek": -1
+    },
+    "morale": -3,
+    "flag": {
+     "spared_darek": true
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Change the subject.",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  }
+ }
+}

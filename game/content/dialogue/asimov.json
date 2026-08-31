@@ -1,0 +1,408 @@
+{
+ "npc": "asimov",
+ "nodes": {
+  "root": {
+   "text": "So. You have been looking at my building. Not living in it — looking at it. There is a difference and I have been in this trade long enough to hear it through a floor.",
+   "options": [
+    {
+     "id": "corridor",
+     "text": "\"The corridor is longer when I walk it alone.\"",
+     "goto": "corridor"
+    },
+    {
+     "id": "typing",
+     "text": "\"Somebody in this building types at night.\"",
+     "goto": "typing",
+     "requires": {
+      "clue": [
+       "c_dust_rectangle"
+      ]
+     }
+    },
+    {
+     "id": "forms",
+     "text": "\"Landy's repair notices are all stamped by the Coalition.\"",
+     "goto": "forms",
+     "requires": {
+      "clue": "c_quadc_stamp"
+     }
+    },
+    {
+     "id": "name",
+     "text": "\"Sobeleaux. Say it slowly for me.\"",
+     "goto": "name",
+     "once": true
+    },
+    {
+     "id": "asimov_hold",
+     "text": "\"Say that again. All of it. I want to hear it twice.\"",
+     "once": true,
+     "check": {
+      "id": "asimov:asimov_hold",
+      "skill": "COMPOSURE",
+      "dc": 11,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "You keep your face out of it entirely and let him run the whole explanation again, and you do not help him, and you do not nod.\n\nThe second telling is nine words shorter and one of the nine is 'contracted'. He notices that you noticed. He does not mind, particularly, and he pours you something.",
+      "failure_text": "He gets four sentences in and something crosses your face and he stops, and adjusts, and gives you the version for a man who is having difficulty — which is warmer, and shorter, and has nothing in it.",
+      "success_effects": {
+       "clue": {
+        "id": "c_contracted_out",
+        "title": "Nine words shorter",
+        "text": "Asimov's second telling drops the word 'contracted'. The corridor is longer than it was contracted to be, and a contract has parties.",
+        "beat": "quadc",
+        "tags": [
+         "quadc"
+        ],
+        "source": "Asimov Sobeleaux"
+       },
+       "lucidity": 7
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Leave him to his charts.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "corridor": {
+   "text": "It is longer when you walk it alone, yes. It is shorter with two. With four it is a formality. This is not mysterious, Oliver, it is *load-bearing* — a corridor exists to be between two places, and betweenness is a service, and a service scales to demand. One man needs more corridor than four men do. One man has further to go.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "That made sense. That made complete, satisfying, structural sense while he was saying it, and it is already going — not forgotten, *withdrawn*, the way the blue is being withdrawn from your notebook."
+    }
+   ],
+   "options": [
+    {
+     "id": "write_it",
+     "text": "Write it down before it goes.",
+     "check": {
+      "id": "asimov:write_it",
+      "skill": "SAVOIR_FAIRE",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "You have the notebook out before he finishes and you get it, in full, in your own hand — and the writing holds. You read it back. It is nine words long. It was four minutes long when he said it, and the nine words are: *a corridor is a service and services scale down.* That is not a summary. That is what survived.",
+      "failure_text": "You have the notebook out before he finishes, and you get the first clause, and the second clause is gone by the time the pencil reaches it, and the pencil goes on moving for a while out of politeness.",
+      "success": "write_it_ok",
+      "failure": "corridor",
+      "success_effects": {
+       "clue": {
+        "id": "c_asimov_compression",
+        "title": "Four minutes, nine words",
+        "text": "Asimov's explanations are true while spoken and compress on the page. Four minutes of structural sense reduces to: 'a corridor is a service and services scale down.'",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript",
+         "asimov"
+        ],
+        "source": "Asimov Sobeleaux"
+       },
+       "lucidity": 6
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Try again. Slower.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "write_it_ok": {
+   "text": "You wrote it down. Good. Now read it to me.\n\n... Yes. That is what I said. That is the whole of what I said, and I spoke for four minutes, and both of those facts are true and I have made my peace with living between them. You have not, yet. You will. Everyone in this building does, or moves out.",
+   "options": [
+    {
+     "id": "who_hasnt",
+     "text": "\"Who hasn't made their peace with it?\"",
+     "goto": "who_hasnt"
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "who_hasnt": {
+   "text": {
+    "low": "Me. I have not, obviously. I said I had made peace; I said it in the tone a man uses when he has made an arrangement and calls it peace to save time.\n\nI was a cartographer, Oliver. Before the nets, before this. A man who draws coastlines learns one thing above all others, and it is this: the coastline is not the length you measure. It is the length you measure *at the scale you chose*. Change the scale, change the coast. There is no true length of Ireland.\n\nI have lived thirty years in a building where somebody keeps changing the scale. And I have never once caught the hand doing it.",
+    "high": "Me. Obviously. I said I had made peace; I said it in the tone a man uses when he has made an arrangement and calls it peace to save time.\n\nI was a cartographer, Oliver. A man who draws coastlines learns one thing above all others: the coastline is not the length you measure, it is the length you measure *at the scale you chose*. Change the scale, change the coast. There is no true length of Ireland.\n\nThirty years in a building where somebody keeps changing the scale. And I have never once caught the hand doing it."
+   },
+   "lucid": {
+    "3": "He says 'the hand'. Not the cause, not the phenomenon, not the building. The hand."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_scale_changer",
+     "title": "Somebody keeps changing the scale",
+     "text": "Asimov, a former cartographer: there is no true length of a coastline, only the length at the chosen scale. He has spent thirty years in a building where somebody changes the scale, and has never caught the hand.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "asimov"
+     ],
+     "source": "Asimov Sobeleaux"
+    },
+    "lucidity": 5,
+    "relationship": {
+     "asimov": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"The hand.\"",
+     "goto": "hand"
+    },
+    {
+     "id": "out",
+     "text": "Let it sit.",
+     "goto": "root"
+    }
+   ]
+  },
+  "hand": {
+   "text": {
+    "low": "I said 'the hand'. Yes. I have said it that way for years and I have never examined why, and I would rather you did not make me start at my age.\n\n— No. That is cowardice, and you came in here with wet shoes and a question, so. Here is what I have and it is not much: whatever adjusts this building does it the way a *man* does it. Not the way weather does it. It corrects. It goes back over. Twice I have found the same repair made twice, differently, as though somebody had reconsidered.\n\nAnd once — once, Oliver, and I have told nobody — I found it made three times, and the third one was worse than the first, and it had been put back to the first.",
+    "high": "I said 'the hand'. Yes. I have said it that way for years without examining why, and I would rather you did not make me start at my age.\n\n— No. That is cowardice, and you came in with wet shoes and a question. Here is what I have, and it is not much: whatever adjusts this building does it the way a *man* does it. It corrects. It goes back over. Twice I have found the same repair made twice, differently, as though somebody had reconsidered.\n\nAnd once — and I have told nobody — three times, and the third was worse than the first, and it had been put back to the first."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_revision",
+     "title": "Made twice, differently. Once, three times.",
+     "text": "Asimov has found the same repair made twice in different ways, as though reconsidered — and once made three times, the third worse, and put back to the first.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "typewriter"
+     ],
+     "source": "Asimov Sobeleaux"
+    },
+    "lucidity": 7,
+    "relationship": {
+     "asimov": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "typing": {
+   "text": "Ah. The typing.\n\nYes. Every resident hears it. No resident owns a machine — I have keys to every flat in this building and I have looked, and I looked because a manager who does not look is a landlord. There is no typewriter in the Hang-Hi Quiet Apartments.",
+   "options": [
+    {
+     "id": "press",
+     "text": "\"You looked. That means you thought there might be.\"",
+     "check": {
+      "id": "asimov:typing:press",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_dust_rectangle": 2
+      },
+      "success_text": "He does not answer for long enough that the answer is the pause.\n\n\"I thought there might be,\" he says, \"because for one week in the spring the sound came from a specific direction, and I stood in the corridor at two in the morning with my hand on a door, and the direction was 2F.\"\n\nA pause of a different quality.\n\n\"2F is your flat, Oliver. You were in the harbour that week. You were in the harbour that week and the flat was empty and the sound was coming from inside it and I did not open the door, and I have had a year to decide whether that was cowardice or courtesy, and I have not decided.\"",
+      "failure_text": "\"I looked because I look. It is a building; things get into buildings. A man brought a goat up to 3C in the spring and did not think to mention it.\" He turns a chart over, which is what he does instead of ending a conversation.",
+      "success": "typing_2f",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_2f_typing",
+        "title": "The sound came from 2F",
+        "text": "For one week last spring the typing had a direction, and the direction was 2F — Oliver's own flat, empty at the time. Asimov stood outside it and did not open the door.",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript",
+         "typewriter",
+         "office"
+        ],
+        "source": "Asimov Sobeleaux"
+       },
+       "lucidity": 11,
+       "relationship": {
+        "asimov": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Fine.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "typing_2f": {
+   "text": {
+    "low": "Do not ask me to go in with you. I will say yes and then I will be busy, and we will both have to live with the shape of that.\n\nBut I will tell you the thing I have kept back, since we are here and since you are wet and since I am too old to be careful for both of us. The sound stopped the day you came out of the water.\n\nNot the day the — whatever it was — came down. The day *you* came out. I have the date. I have it in the book because I noted it as the day the building went quiet, and I noted it before I knew you had been pulled out, and the two entries are one line apart.",
+    "high": "Do not ask me to go in with you. I will say yes and then I will be busy, and we will both have to live with the shape of that.\n\nBut I will tell you the thing I have kept back, since you are wet and I am too old to be careful for both of us. The sound stopped the day you came out of the water.\n\nNot the day the — whatever it was — came down. The day *you* came out. I have it in the book, noted as the day the building went quiet, and I noted it before I knew you had been pulled out. The two entries are one line apart."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_stopped_when_you_surfaced",
+     "title": "It stopped the day you came out of the water",
+     "text": "Asimov's book records the building going quiet on the same day Oliver was pulled from the harbour — noted before he knew about the rescue, one line apart.",
+     "beat": "crash",
+     "tags": [
+      "crash",
+      "manuscript",
+      "kindness"
+     ],
+     "source": "Asimov Sobeleaux"
+    },
+    "lucidity": 9,
+    "relationship": {
+     "asimov": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Sit with that.",
+     "goto": "root"
+    }
+   ]
+  },
+  "forms": {
+   "text": "The Coalition, yes. They stamp. It is what they are for.\n\nUnderstand me: they do not repair. Landy does not repair either, but Landy at least fails at repairing, which is a form of trying. The Coalition receives the failure and issues a word. The word is RESOLVED. Nothing about the building changes and everything about the *file* does, and the file is what the Coalition lives in.",
+   "options": [
+    {
+     "id": "why_tolerate",
+     "text": "\"And you let them.\"",
+     "check": {
+      "id": "asimov:forms:why",
+      "skill": "RHETORIC",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "\"I let them,\" he agrees, \"and here is why, and you will not like it and neither do I.\n\nBefore they began stamping, the corridor did not simply vary. It *ended*, sometimes, four feet short of my door, and there was nothing past the end — not a wall, Oliver. Nothing. I put my hand into it once.\n\nThey stamped it RESOLVED. It has never ended since. It varies, it stretches, it is impertinent — but it goes all the way to the door every single time.\n\nSo yes. I let them. Whatever they are doing with those words, the words are holding something up.\"",
+      "failure_text": "\"I let them.\" He turns a chart. \"A man my age chooses what he will be tired about. I have chosen the boiler.\"",
+      "success": "forms_hold",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_quadc_holds_it_up",
+        "title": "The stamps are holding something up",
+        "text": "Before the Quad-C began stamping, the corridor sometimes ended four feet short of the door with nothing beyond it. Since RESOLVED, it has always reached the door. Their words are structural.",
+        "beat": "quadc",
+        "tags": [
+         "quadc",
+         "oracle",
+         "kindness"
+        ],
+        "source": "Asimov Sobeleaux"
+       },
+       "lucidity": 8,
+       "relationship": {
+        "asimov": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "forms_hold": {
+   "text": "You have the look, Oliver. The one you get before a sentence with three subordinate clauses in it.\n\nGo on. Say the thing. I have been waiting some years for a tenant to say it to me so I do not have to be the one who did.",
+   "options": [
+    {
+     "id": "say_it",
+     "text": "\"If their words hold the building up, then the building is made of words.\"",
+     "check": {
+      "id": "asimov:say_it",
+      "skill": "RHETORIC",
+      "dc": 13,
+      "kind": "red",
+      "bonus_if_clue": {
+       "c_quadc_holds_it_up": 2,
+       "c_revision": 2
+      },
+      "success_text": "He does not flinch and he does not agree. He does something worse: he nods, slowly, the way a man nods at an arithmetic he checked long ago.\n\n\"Sobeleaux,\" he says. \"You never did ask about the name. As above, so below — my grandmother's joke, and she thought it was about the fishing. Above the water, below the water. The same shape twice.\n\nOliver. If the building is made of words, then so is the man standing in it telling you so. I have known that for eleven years. It has not once stopped me putting the bins out. I recommend the bins. They are the only argument against it that has ever worked.\"",
+      "failure_text": "\"Made of words.\" He weighs it, and sets it down, and turns a chart over. \"That is a poem, Oliver, and I have a boiler. Come back when it is a measurement.\"\n\nThe accent has gone flat. It does that when he has decided a conversation is over and would prefer not to say so.",
+      "success": "say_it_ok",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_asimov_knows",
+        "title": "As above, so below",
+        "text": "Asimov has known for eleven years that Silvora Reefs is made of language, and has kept putting the bins out. He recommends the bins.",
+        "beat": "revilo",
+        "tags": [
+         "manuscript",
+         "asimov",
+         "awareness"
+        ],
+        "source": "Asimov Sobeleaux"
+       },
+       "lucidity": 12,
+       "morale": 6,
+       "relationship": {
+        "asimov": 2
+       },
+       "thought": "presumptuous_senses"
+      },
+      "failure_effects": {
+       "morale": -4,
+       "relationship": {
+        "asimov": -1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "Say nothing. Let him keep it.",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "say_it_ok": {
+   "text": {
+    "low": "Go and see Soliloquy, if you have not. She has a vault she keeps shut and she keeps it shut for a reason, and the reason has your name on it in a hand I recognise and would rather not place.\n\nAnd Oliver — take the corridor slowly on the way out. It is long tonight. It is long because you are going alone, and you are going alone, and there is no arrangement in this world by which that is not true.",
+    "high": "Go and see Soliloquy, if you have not. She keeps a vault shut for a reason, and the reason has your name on it in a hand I recognise and would rather not place.\n\nAnd Oliver — take the corridor slowly on the way out. It is long tonight. It is long because you are going alone."
+   },
+   "effects": {
+    "flag": {
+     "asimov_pointed_at_vault": true
+    }
+   },
+   "options": [
+    {
+     "id": "out",
+     "text": "Go.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "name": {
+   "text": "Sobeleaux. So-be-low. Yes. My grandmother's, and she thought it was about fishing — above the water, below the water, the same shape twice and only one of them is yours.\n\nEverybody gets there eventually. You got there faster than most and you have been carrying it about for a week without asking, which is worse manners and better instinct.",
+   "effects": {
+    "morale": 3,
+    "relationship": {
+     "asimov": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  }
+ }
+}

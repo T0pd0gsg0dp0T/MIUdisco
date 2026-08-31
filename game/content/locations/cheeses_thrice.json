@@ -1,0 +1,319 @@
+{
+ "id": "cheeses_thrice",
+ "name": "Cheeses Thrice Pizza",
+ "subtitle": "Holy, profane, and extremely responsive to how the room is doing.",
+ "description": {
+  "low": "The name is a pun with a congregation and the spokesman is a figure called Jesus Crust who appears on the boxes with his arms out, and Woolbinkle has been asked to modify this by three separate parish committees and has, each time, agreed enthusiastically and changed nothing.\n\nThe room reads the room. That is the whole of the phenomenon and it takes about four minutes to become undeniable: when the table by the window laughed, the lights came up a quarter and the far wall came in three feet and the place got cosier; when the couple at the back stopped speaking to each other, the temperature dropped and the ceiling went away somewhere and everybody found themselves sitting further apart.\n\nNobody adjusts anything. There is no thermostat behind the counter. There is a bull antelope with crooked antlers and thick wool-like fur, watching the door with an expression of enormous and effortful hope.",
+  "mid": "A pun with a congregation, a spokesman called Jesus Crust, and three parish committees enthusiastically ignored. The room reads the room: when the window table laughed the lights came up and the far wall came in three feet; when the couple at the back stopped speaking the temperature dropped and everyone found themselves further apart. Nobody adjusts anything. There is no thermostat.",
+  "high": "The room's dimensions and temperature follow the diners' mood. There is no thermostat."
+ },
+ "revisit": {
+  "low": "Your order is already in the oven. Woolbinkle says, in the tone of a man laying down a difficult card, that he had a feeling you would be hungry for answers today, and then watches your face for slightly too long to see whether that was all right to say.",
+  "mid": "Your order is already in the oven. Woolbinkle says he had a feeling you would be hungry for answers today, and watches your face slightly too long to see whether that was all right.",
+  "high": "Your order is already in the oven. He had a feeling."
+ },
+ "lucid": {
+  "2": "The oven is not making the noise the oven is making.",
+  "3": "When the room contracts, it contracts by whole feet, in one movement, between one glance and the next. Rooms do not have a smallest unit. This one does.",
+  "4": "The room is not responding to the diners' mood. The room and the diners' mood are both being set, from outside, by somebody who is finding the tone difficult tonight."
+ },
+ "ambient": [
+  "Chuckles the Unfunny Clown delivers a joke to the family by the door. Nobody laughs. The silence comes down as a patch of fog about a yard across, and the family walk around it to reach the counter, and do not mention it.",
+  "Somebody laughs politely two tables away and a patch of static in the air near the till thins out and is gone.",
+  "The wall decorations are a set of framed harbour prints. At the next table, a diner refers to the mounted fish. Neither of them looks up."
+ ],
+ "objects": [
+  {
+   "id": "cheese",
+   "name": "the three-cheese blend",
+   "aliases": [
+    "cheese",
+    "pizza",
+    "blend",
+    "order"
+   ],
+   "description": {
+    "low": "The holy secret and the reason the parish committees keep coming. Three cheeses, and Woolbinkle will not say which, and the blend does something in the last forty seconds of the bake that has made this establishment famous in a town that is difficult to make famous anything in.\n\nIt patterns. As it goes molten it draws — briefly, legibly, and unmistakably about the person who ordered it. The couple at the back got a closed door. The family by the window got a long table with too many chairs. It resolves into ordinary bubbling within about four seconds and there is a general understanding in Silvora Reefs that you do not comment on somebody else's.\n\nYours is coming out now. Woolbinkle is standing between you and the oven with a peel in his hands and his shoulders set.",
+    "mid": "Three cheeses, none named, and in the last forty seconds of the bake the blend patterns — legibly, and about whoever ordered it. The couple at the back got a closed door. The family by the window got a long table with too many chairs. It resolves in four seconds and nobody comments on anybody else's. Yours is coming out now, and Woolbinkle is standing between you and the oven.",
+    "high": "The cheese patterns legibly about whoever ordered it. Yours is coming out, and Woolbinkle is standing in front of the oven."
+   },
+   "repeat": "He stands in front of the oven every time now. He has started doing it before you order.",
+   "monocle": "Through the gold you do not need him to move. The pattern is legible through him: it is a page, and it is dense, and it has a wide left margin and a ragged right one, and about two thirds of the way down there is a gap where a paragraph has been taken out and the surrounding text has not been closed up.",
+   "check": {
+    "id": "cheeses:pattern:see",
+    "skill": "RHETORIC",
+    "dc": 12,
+    "kind": "white",
+    "prompt": "Get him to move. He is a bull antelope with a peel and a very great deal of reason not to, and he is also the loneliest creature in this parish, and one of those facts is a lever.",
+    "success": "You do not ask him to move. You ask him what he got, when he orders one for himself, at the end of a shift, alone.\n\nHe puts the peel down.\n\n\"A can,\" he says. \"Every time. Been a can for eleven years.\" And he steps aside — not to show you yours, but because a man who has just said that is not standing anywhere on purpose any more.\n\nYours is on the stone. It is a page. Dense type, wide left margin, ragged right, and two thirds of the way down a gap where something has been taken out and the text around it has not been closed up. It holds for four seconds and it is not a symbol and it is not a metaphor and you have read enough of it to know the rhythm of the sentences.\n\nThen it is cheese, and it is very good, and Woolbinkle says, quietly, \"Your thoughts are particularly spicy today,\" which is what he says, and which he has clearly been saying for years to avoid saying anything else.",
+    "failure": "He does not move. He is enormous and gentle and completely immovable and he talks the entire four seconds — about the blend, about the oven, about the parish committee and the third letter from the parish committee — and by the end of it the pattern has resolved and the pizza is a pizza and he is holding it out to you with both hands and an expression of hope so undefended that pressing further would be a kind of assault.",
+    "success_effects": {
+     "clue": {
+      "id": "c_cheese_page",
+      "title": "A page with a paragraph removed",
+      "text": "Oliver's cheese patterns into a dense page — wide left margin, ragged right — with a gap two thirds down where a paragraph has been removed and the surrounding text not closed up.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "manuscript",
+       "typewriter"
+      ],
+      "source": "the three-cheese blend"
+     },
+     "lucidity": 14,
+     "relationship": {
+      "woolbinkle": 2
+     },
+     "morale": -4
+    },
+    "failure_effects": {
+     "relationship": {
+      "woolbinkle": 1
+     },
+     "morale": 3
+    }
+   }
+  },
+  {
+   "id": "fog",
+   "name": "the patches of silence",
+   "aliases": [
+    "fog",
+    "silence",
+    "patches",
+    "static",
+    "chuckles"
+   ],
+   "description": {
+    "low": "Chuckles is not funny. That is not an opinion held about Chuckles, it is his professional situation, and he has been in it for a long time and continues to arrive.\n\nWhen a joke fails here, the failure has a physical consequence. A patch of air about a yard across goes thick — fog, sometimes; sometimes a sort of dry static that makes the light behind it grainy — and it stays where it happened. Diners walk around them. There are four in the room at the moment and two of them are old enough to have collected an ashtray.\n\nA polite laugh dissolves them. Anybody's. It does not have to be sincere and it does not have to be near.",
+    "mid": "Chuckles is not funny; this is his professional situation, not an opinion. Failed jokes leave a yard-wide patch of thick air — fog, or a dry static that makes the light grainy — where they happened. Diners walk around them. Four in the room, two old enough to have collected an ashtray. Any polite laugh dissolves them.",
+    "high": "Failed jokes leave yard-wide patches of fog or static. Diners walk around them. A polite laugh dissolves them."
+   },
+   "repeat": "Six now. The new ones are by the counter, which means he has moved on to the staff.",
+   "monocle": "Through the gold the patches are not fog. They are blank. Not white — *unwritten*, with the texture of paper that has had nothing put on it, and the room's description simply stops at the edge of each one and resumes on the other side.",
+   "passive": [
+    {
+     "skill": "LOGIC",
+     "dc": 11,
+     "text": "A polite laugh dissolves them and sincerity is not required. That means the mechanism is not responding to feeling. It is responding to the *sound being made*, which is a much shorter chain of causation and a much worse one."
+    },
+    {
+     "skill": "EMPATHY",
+     "dc": 12,
+     "text": "He knows. Watch him after one lands wrong: he does not look at the audience, he looks at the air, to see how big it is. He has been measuring his own failures by the yard for years and he keeps coming back, and the reason he keeps coming back is that he is the only one who can clear them."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_unwritten_patches",
+     "title": "Silence that takes up room",
+     "text": "Failed jokes at Cheeses Thrice leave physical yard-wide patches of thickened air that any polite laugh — sincere or not — dissolves. Sound, not feeling, is the mechanism.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "language"
+     ],
+     "source": "the patches of silence"
+    },
+    "monocle_effects": {
+     "clue": {
+      "id": "c_blank_not_white",
+      "title": "Unwritten, not white",
+      "text": "Under the monocle the silence-patches are blank paper. The room's description stops at the edge of each and resumes on the far side.",
+      "beat": "oracle",
+      "tags": [
+       "oracle",
+       "manuscript",
+       "language"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 12
+    }
+   },
+   "check": {
+    "id": "cheeses:fog:shiv",
+    "skill": "SHIVERS",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "The fog off the harbour comes up this street and stops at the door. Go out into it and let it have you for a minute.",
+    "success": "It is not cold and it is not wet and it has a direction that has nothing to do with the wind.\n\nIt is coming *from* the far end of the parish rather than from the sea, and there is a pressure in it like the pressure at the edge of a held note, and four streets over somebody stops what they are doing at the same moment you do.",
+    "failure": "Fog. It goes over you and past you and up the street and it is, as far as any part of you can establish, weather.",
+    "success_effects": {
+     "clue": {
+      "id": "c_fog_from_the_far_end",
+      "title": "The fog comes from the far end",
+      "text": "The fog does not come off the sea. It comes from the far end of the parish, carrying a pressure like the edge of a held note.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "oracle"
+      ],
+      "source": "the fog"
+     },
+     "lucidity": 9
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "decor",
+   "name": "the wall decorations",
+   "aliases": [
+    "decor",
+    "decorations",
+    "walls",
+    "prints",
+    "pictures"
+   ],
+   "description": {
+    "low": "Framed harbour prints. Six of them, in a row, above the banquette: the breakwater, the fish quay, two of the lighthouse from different years, and a long one of the whole waterfront in weather.\n\nThe couple at the next table have been here as long as you have. Ask them and they will tell you, without hesitating and without any sense of contradiction, that the wall above the banquette has a mounted pike on it and always has.\n\nYou can both point at it. You have done. Your fingers arrive at the same place on the same wall.",
+    "mid": "Six framed harbour prints above the banquette: breakwater, fish quay, two lighthouses, a long waterfront in weather. The couple at the next table will tell you without hesitation that the wall has a mounted pike on it and always has. You can both point at it, and your fingers arrive at the same place.",
+    "high": "You see six harbour prints. The next table sees a mounted pike. You both point at the same place."
+   },
+   "repeat": "Still prints for you. The couple have gone and been replaced by a man who sees a map.",
+   "monocle": "Through the gold there is nothing above the banquette. Not a blank wall — a blank *space*, with the same unwritten texture as Chuckles' fog, and a note in the margin beside it in small pencil: SOMETHING ON THIS WALL.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 11,
+     "text": "Neither of you is wrong and neither of you is going to give way, and the striking thing is that neither of you finds the disagreement interesting. The not-finding-it-interesting is the load-bearing part."
+    },
+    {
+     "skill": "SAVOIR_FAIRE",
+     "dc": 12,
+     "text": "Six prints. The pike is one object. Whatever is on that wall, everybody gets the right number of *hooks* — the nail positions are the fixed thing and the contents are not."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_two_walls",
+     "title": "The nails are fixed. The contents are not.",
+     "text": "Two diners describe entirely different decorations above the same banquette and point at the same place. The nail positions are constant; what hangs on them is not.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript"
+     ],
+     "source": "the wall decorations"
+    },
+    "monocle_effects": {
+     "clue": {
+      "id": "c_something_on_this_wall",
+      "title": "SOMETHING ON THIS WALL",
+      "text": "Under the monocle the banquette wall is blank in the unwritten sense, with a pencil note in the margin beside it reading SOMETHING ON THIS WALL.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "manuscript",
+       "office"
+      ],
+      "source": "the monocle"
+     },
+     "lucidity": 13
+    }
+   },
+   "check": {
+    "id": "cheeses:decor:perc",
+    "skill": "PERCEPTION",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "Franchise decor, mass-produced, identical to a thousand others. Find the one that is not.",
+    "success": "Eleven framed prints, all of them stock, all of them the same three photographs in rotation — and the ninth is not a print.\n\nIt is a photograph of this room, taken from where you are standing, with the prints on the wall in it, and in that photograph the ninth frame contains a photograph of this room.",
+    "failure": "Eleven frames of exactly the kind of nothing they are meant to be, and a smell of oregano, and a man watching you look at his wall with the patience of somebody used to it.",
+    "success_effects": {
+     "clue": {
+      "id": "c_ninth_frame",
+      "title": "The ninth frame",
+      "text": "One frame at Cheeses Thrice holds a photograph of the room it hangs in, containing itself, taken from where a customer stands.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript"
+      ],
+      "source": "the decor"
+     },
+     "lucidity": 8
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "cans",
+   "name": "the shelf of cans",
+   "aliases": [
+    "cans",
+    "can",
+    "shelf",
+    "preserves",
+    "jars"
+   ],
+   "description": {
+    "low": "Behind the counter, at head height, running the whole length: cans. Not stock — stock is in the back, you have seen the back. These are on display and they are labelled in Woolbinkle's own hand and they are not food.\n\nThe labels are dates and single words. *March, patience.* *Two winters ago, the letter.* *A Tuesday, hope, unopened.* Forty or so, going back years, and the newest four are at the near end and they are dusty in a way that says they were put up together and some time ago.\n\nHe has told you, when asked, that he cans things. He said it the way a man says he swims.",
+    "mid": "Behind the counter at head height, the whole length: cans, not stock, labelled in Woolbinkle's own hand and not containing food. 'March, patience.' 'Two winters ago, the letter.' 'A Tuesday, hope, unopened.' Forty or so. He has said, when asked, that he cans things — the way a man says he swims.",
+    "high": "Forty cans labelled with dates and single words. Not food. He says he cans things."
+   },
+   "repeat": "There is a new one at the near end. It says: *Tonight, the man who asked.*",
+   "monocle": "Through the gold the cans are exactly what the labels say, sealed and airtight and completely intact, and every one of them is holding. It is the only shelf of anything in Silvora Reefs that is not leaking, revising, or quietly disagreeing with itself, and it has been built by hand out of the only technique its maker had.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 10,
+     "text": "This is not a hobby and it is not a symptom. A creature who was once unable to keep something has worked out a method and has been applying it, carefully, every time, for years. It is the most functional thing in this town."
+    },
+    {
+     "skill": "RHETORIC",
+     "dc": 12,
+     "text": "Can, can't, can-can, cannibal, cantaloupe, can't elope. The whole tangle is one verb doing four jobs, and the joke everybody in Silvora Reefs tells at his expense is a joke about a creature who could not do a thing — and he has spent eleven years demonstrating, on a shelf, in public, that he *can*."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_the_cans",
+     "title": "Forty cans, all holding",
+     "text": "Woolbinkle's shelf holds forty hand-labelled cans of things that are not food — 'March, patience', 'A Tuesday, hope, unopened' — and every one of them is sealed and intact.",
+     "tags": [
+      "woolbinkle",
+      "personhood"
+     ],
+     "source": "the shelf of cans"
+    },
+    "monocle_effects": {
+     "lucidity": 4,
+     "morale": 5
+    }
+   },
+   "check": {
+    "id": "cheeses:cans:sugg",
+    "skill": "SUGGESTION",
+    "dc": 12,
+    "kind": "white",
+    "prompt": "He will not tell you what is in the cans. Arrange for him to want to.",
+    "success": "You stop asking about the cans and start being interested in the *sealing*, which is a craft, and which nobody has asked him about in eleven years.\n\nHe talks for a quarter of an hour about pressure and headspace, and somewhere in the middle of it he says, without noticing he is saying it, that the difficult ones are the ones that are still going on when you seal them — and then he stops, and looks at the shelf, and does not take it back.",
+    "failure": "You come at it from the side and he watches you come, pleasantly, the whole way. \"You want to know what's in them,\" he says, not unkindly, and puts a slice in front of you, and that is the end of the subject for tonight.",
+    "success_effects": {
+     "clue": {
+      "id": "c_sealed_while_still_going",
+      "title": "The ones still going on",
+      "text": "Woolbinkle lets slip that the difficult cans are the ones still going on when they are sealed — then stops, and looks at the shelf, and does not retract it.",
+      "beat": "oracle",
+      "tags": [
+       "oracle",
+       "kindness",
+       "personhood"
+      ],
+      "source": "Woolbinkle"
+     },
+     "lucidity": 9,
+     "relationship": {
+      "woolbinkle": 1
+     }
+    },
+    "failure_effects": {}
+   }
+  }
+ ],
+ "exits": {
+  "durry_kwain": "up the hill toward vanilla and a man who is running previous",
+  "giddyup": "along the ridge, toward smoke and a very long table",
+  "lishush_mush": "the narrow street, toward something soft and extraordinary"
+ }
+}

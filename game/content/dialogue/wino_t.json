@@ -1,0 +1,285 @@
+{
+ "npc": "wino_t",
+ "nodes": {
+  "root": {
+   "text": "Chair's open / clippers warm / you got a question in your walk / and it ain't about your hair.\n\nGo on. Ask it on my beat and I'll answer on yours.",
+   "options": [
+    {
+     "id": "mirrors",
+     "text": "\"The third mirror. The man at the desk.\"",
+     "goto": "mirrors",
+     "requires": {
+      "clue": "c_man_at_desk"
+     }
+    },
+    {
+     "id": "findit",
+     "text": "\"Why can nobody give me directions to this shop?\"",
+     "goto": "findit"
+    },
+    {
+     "id": "whynot",
+     "text": "\"Why not what, exactly?\"",
+     "goto": "whynot",
+     "once": true
+    },
+    {
+     "id": "albert",
+     "text": "\"There is an owlbear in your mirror.\"",
+     "goto": "albert"
+    },
+    {
+     "id": "winot_fade",
+     "text": "\"Pour me whatever you pour yourself at the end.\"",
+     "once": true,
+     "check": {
+      "id": "wino_t:winot_fade",
+      "skill": "ELECTROCHEMISTRY",
+      "dc": 11,
+      "kind": "white",
+      "success": "root",
+      "failure": "root",
+      "success_text": "He does, and it is not from any of the bottles, and he pours two.\n\nHalfway down he says, to the bar rather than to you, that he has been closing this room every night for eleven years and has never once been the last to leave it, and that he has stopped wondering who else is still in here.",
+      "failure_text": "\"You don't want that,\" he says, and pours you something excellent instead, and moves down the bar to the fade where the light gives out, and the conversation ends there with great courtesy.",
+      "success_effects": {
+       "clue": {
+        "id": "c_never_the_last_to_leave",
+        "title": "Never the last to leave",
+        "text": "Wino-T has closed The G.'s Spot every night for eleven years and has never once been the last one in the room.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "personhood"
+        ],
+        "source": "Antonio 'Wino-T' Vino"
+       },
+       "lucidity": 9,
+       "intoxication": 2,
+       "relationship": {
+        "wino_t": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "leave",
+     "text": "Leave him to the fade.",
+     "goto": "__exit__"
+    }
+   ]
+  },
+  "mirrors": {
+   "text": "Fortnight now. / Man at a desk. / Back of his head / and the rest's a guess.\n\nI stopped covering it. Covered it two days and folks started asking what was under the sheet, and a sheet's a question mark, and a mirror ain't. Ain't nobody ever asked me about a mirror in a barbershop. That's the whole trick of this trade — you can hang anything on a wall if you hang four of them.",
+   "passive": [
+    {
+     "skill": "RHETORIC",
+     "dc": 11,
+     "text": "He is not hiding it. He is *filing* it — four mirrors so no one mirror is a claim. That is the Insta-gators' doctrine done by a man with clippers, arrived at independently, out of nothing but good sense about customers."
+    }
+   ],
+   "options": [
+    {
+     "id": "recognise",
+     "text": "\"Do you know who he is?\"",
+     "check": {
+      "id": "winot:recognise",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "bonus_if_clue": {
+       "c_green_with_purple": 3
+      },
+      "success_text": "The clippers stop. Not off — stopped, held, still running, against nothing.\n\n\"I cut that man's hair,\" Wino-T says, and it is not on any beat at all. \"Eight years ago. Maybe nine. Sat in that chair, the near one, and I did him a taper and we talked about nothing and he tipped like a man who'd been told to.\n\nI'd know the back of a head I cut anywhere. That's not a boast neither, that's just the job — you spend forty minutes on a crown you got it for life.\n\nThat is the back of a head I cut. In my mirror. For a fortnight. And he's got your ears, Onions, and he ain't got your parting, and I have been standing behind that chair for two weeks not saying so.\"",
+      "failure_text": "\"Man at a desk / could be any man / world's full of desks / and it's full of backs.\"\n\nThe clippers do not stop. He is very good at this and he has been doing it a long time, and the beat carries the answer away before it can be examined.",
+      "success": "recognise_ok",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_cut_his_hair",
+        "title": "He cut that man's hair, eight years ago",
+        "text": "Wino-T recognises the crown in the mirror: he cut it, eight or nine years ago, in the near chair. The man has Oliver's ears and not Oliver's parting.",
+        "beat": "revilo",
+        "tags": [
+         "revilo",
+         "identity"
+        ],
+        "source": "Wino-T"
+       },
+       "lucidity": 15,
+       "morale": -6,
+       "relationship": {
+        "wino_t": 2
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"All right.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "recognise_ok": {
+   "text": {
+    "low": "And here's the part I ain't said out loud, and I'm saying it once, and then we're doing your sides.\n\nHe paid in coins that ain't been coins here since before my father. I took 'em. Put 'em in the drawer. Went back that night to have a proper look and the drawer had the right money in it, correct to the penny, in this year's coin.\n\nWhy not, I said. That's what I said at the time. Twenty-two years I been saying why not to this town and it's carried me and it's never once let me down, and about a fortnight ago it started sounding less like a philosophy and more like a *deal*.",
+    "high": "And here's the part I ain't said out loud, and I'm saying it once, and then we're doing your sides.\n\nHe paid in coins that ain't been coins here since before my father. I took 'em, put 'em in the drawer. Went back that night for a proper look and the drawer had the right money in it, correct to the penny, in this year's coin.\n\nWhy not, I said. Twenty-two years I been saying why not to this town and it's carried me — and about a fortnight ago it started sounding less like a philosophy and more like a *deal*."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_coins_corrected",
+     "title": "The drawer corrected itself",
+     "text": "The man in the mirror paid Wino-T in coins that had not circulated for generations. By that night the drawer held the right money in current coin, correct to the penny.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "revilo"
+     ],
+     "source": "Wino-T"
+    },
+    "lucidity": 10,
+    "relationship": {
+     "wino_t": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"A deal with who?\"",
+     "goto": "whynot"
+    }
+   ]
+  },
+  "findit": {
+   "text": {
+    "low": "'Cause directions is a *route* / and this shop ain't on a route / it's on a — nah. Nah, I'ma drop the beat for this one, it don't deserve the beat.\n\nYou can't get told where this is. You can only already know. And there's a whole community in this parish who already know, always did, walk here in the dark first time and never once been late, and I ain't going to explain that and I ain't going to have it explained at me neither, because the day somebody explains it is the day it stops working and there's folk who need it to keep working.\n\nSo: it's findable. It ain't directable. You found it. Sit down.",
+    "high": "'Cause directions is a *route* / and this shop ain't on a route / it's on a — nah. I'ma drop the beat for this one, it don't deserve the beat.\n\nYou can't get told where this is. You can only already know. And there's a whole community in this parish who already know, walk here in the dark first time and never once been late. I ain't going to explain that and I ain't going to have it explained at me neither, because the day somebody explains it is the day it stops working, and there's folk who need it to keep working.\n\nIt's findable. It ain't directable. You found it. Sit down."
+   },
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 11,
+     "text": "He is protecting something, and the thing he is protecting is not the shop. He would give up the shop. He is protecting the fact that a certain kind of person can arrive here without having to ask anybody anything."
+    },
+    {
+     "skill": "LOGIC",
+     "dc": 12,
+     "text": "Findable but not directable. Everything else in Silvora Reefs varies by who is looking. This varies by who is *already looking for it* — which is not a property of a place, it is a property of a search."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_findable_not_directable",
+     "title": "Findable, not directable",
+     "text": "The G.'s Spot cannot be given as directions, only already known. Wino-T will not have it explained, because the day it is explained is the day it stops working for the people who need it to.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "language"
+     ],
+     "source": "Wino-T"
+    },
+    "lucidity": 8
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "Sit down.",
+     "goto": "root"
+    }
+   ]
+  },
+  "whynot": {
+   "text": {
+    "low": "Why not everything.\n\nThat's not a joke and it ain't laziness, it's a *position*, and I got to it the hard way. Man spends his twenties saying why, right? Why's this, why's that, why me. And why is a question that always gets answered and the answer's always the same and the answer's always *because*, and because is a wall.\n\nWhy not is a door. Costs the same. Takes the same breath.\n\nAnd in this town — Onions, in *this* town — a man who says why is going to be stood in front of a wall his whole life askin' a building to justify itself. And a man who says why not gets to go in.",
+    "high": "Why not everything.\n\nThat ain't a joke and it ain't laziness, it's a *position*, and I got to it the hard way. Man spends his twenties saying why — why's this, why me. And why always gets answered and the answer's always *because*, and because is a wall.\n\nWhy not is a door. Costs the same breath.\n\nAnd in *this* town, a man who says why is stood in front of a wall his whole life asking a building to justify itself. A man who says why not gets to go in."
+   },
+   "effects": {
+    "clue": {
+     "id": "c_why_not_is_a_door",
+     "title": "Why is a wall. Why not is a door.",
+     "text": "Wino-T's position, arrived at deliberately: 'why' is always answered with 'because', which is a wall. 'Why not' costs the same breath and is a door.",
+     "tags": [
+      "language"
+     ],
+     "source": "Wino-T"
+    },
+    "morale": 8,
+    "relationship": {
+     "wino_t": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Why not.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "albert": {
+   "text": {
+    "low": "Monsieur Albert. Been here longer than the chairs / been here longer than the shop / far as I can tell he been here longer than the street, and I ain't looked into it, and that's on purpose.\n\nHe's in the glass. He ain't in the room. I set a cup down for him every morning on the shelf by the third mirror and every evening it's empty and I ain't never once seen it move and I ain't never going to try.",
+    "high": "Monsieur Albert. Been here longer than the chairs / longer than the shop / far as I can tell longer than the street, and I ain't looked into it, and that's on purpose.\n\nHe's in the glass. He ain't in the room. I set a cup down for him every morning on the shelf by the third mirror, and every evening it's empty, and I ain't never seen it move and I ain't never going to try."
+   },
+   "options": [
+    {
+     "id": "spoken",
+     "text": "\"Has anybody ever spoken to him?\"",
+     "check": {
+      "id": "winot:albert_spoken",
+      "skill": "EMPATHY",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "\"Spoken *about* him. All day, every day, twenty-two years. Spoken *to* him?\"\n\nThe clippers slow down.\n\n\"...No. Not once. Not by me and not by nobody in that chair, and I have watched four hundred people notice that owlbear in my mirror and every single one of them has turned to *me* to ask about it.\n\nThey ask me. Man's right there. In the glass, in an excellent coat, and they turn round and ask the barber.\"\n\nHe puts the clippers down.\n\n\"Twenty-two years I been the one they ask instead. And he's been stood there through every one of them, being asked about, in the third person, in his own shop.\"",
+      "failure_text": "\"Folk talk about him plenty. He don't seem to mind it. He's got a face for being talked about — some fellas have.\"\n\nThe beat comes back and the subject goes with it.",
+      "success": "albert_ok",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_asked_about_never_to",
+        "title": "Four hundred people asked the barber instead",
+        "text": "In twenty-two years nobody has spoken to Monsieur Albert. Everyone who notices him turns to Wino-T and asks about him, in the third person, in his own shop.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "language",
+         "personhood"
+        ],
+        "source": "Wino-T"
+       },
+       "lucidity": 9,
+       "relationship": {
+        "wino_t": 1,
+        "albert": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "albert_ok": {
+   "text": "Go on then.\n\nNah — I mean it. Go and do it. He's right there, third mirror, and I'll be over here doing a taper and not listening, and I have wanted somebody to do that for about eleven years and never had the nerve, and I own the shop.\n\nWhy not, Onions. Why not.",
+   "effects": {
+    "flag": {
+     "wino_t_dared_you": true
+    },
+    "relationship": {
+     "wino_t": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Why not.\"",
+     "goto": "__exit__"
+    }
+   ]
+  }
+ }
+}

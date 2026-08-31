@@ -1,0 +1,81 @@
+# ---------------------------------------------------------------------------
+# Malice in Underland - configuration
+#
+# Everything tunable lives here so that balance passes never require code
+# edits. Loaded by config.py, which falls back to hard-coded defaults if
+# PyYAML is unavailable, so the game always boots.
+# ---------------------------------------------------------------------------
+
+display:
+  # Prose is wrapped to this width. Silvora Reefs reads better narrow.
+  wrap_width: 78
+  color: auto
+  # Persistent bottom command bar driven by the arrow keys.
+  command_bar: auto     # auto | always | never          # auto | always | never
+  # Typewriter-style reveal. 0.0 disables (recommended: the effect is charming
+  # for one scene and infuriating for twenty). Seconds per character.
+  crawl_speed: 0.0
+  paragraph_gap: 1
+
+difficulty:
+  # 2d6 + skill vs DC. The skill value is the modifier, so a Logic of 4
+  # adds 4. DCs run about 5-14; needing 7 on the dice is a coin flip.
+  dc_offset: 0         # global nudge; +2 makes the whole game harder
+  critical_success: 12 # natural 2d6 roll that always succeeds
+  critical_failure: 2  # natural 2d6 roll that always fails
+  # White checks may be retried once the investigation state changes.
+  # Red checks are permanent. Failure is never a wall, only a fork.
+  allow_white_retry: true
+  # A white check always unlocks again after this many failures, even if
+  # nothing else has changed. Stops a sealed room from retiring a branch.
+  retry_after_failures: 2
+
+narrative:
+  # The pacing dial is gone: the game renders at the fullest telling always.
+  # These two are kept only so older config files still parse.
+  default_density: 1
+  auto_scale: false
+  max_thoughts_per_scene: 3
+  max_passives_per_scene: 4
+  # How many thoughts may be internalising at once. This is what makes
+  # "which thought" a decision rather than a queue.
+  thought_slots: 2
+  # Passive skill checks that fail stay silent rather than reporting failure.
+  silent_passive_failure: true
+
+player:
+  # Fallback build only - character creation overwrites this at the start of
+  # a new game. Each attribute sets the floor for its six skills.
+  attributes:
+    INTELLECT: 4
+    PSYCHE: 3
+    FORTITUDE: 2
+    MOTORICS: 3
+  attribute_points: 8    # distributed on top of 1 in each, for 12 total
+  attribute_max: 6
+  skill_points: 4        # individual +1s on top of the attribute floors
+  signature_bonus: 2
+  morale: 70
+  health: 80
+  intoxication: 0
+  lucidity: 0          # awareness that the world is not a world
+
+world:
+  # Silvora Reefs has no dawn. "Cycles" are the closest thing to hours.
+  cycles_per_phase: 6
+  autosave_every_cycles: 5
+  # Lucidity thresholds at which the town stops pretending.
+  lucidity_stages: [0, 20, 45, 70, 90]
+  # Lucidity gains are scaled by remaining headroom and divided by this.
+  # Higher = slower waking. Content grants ~1900 raw against a scale of 100.
+  lucidity_approach: 250
+
+features:
+  # Toggles for testing. Turn things off to isolate a system.
+  furthermore: true
+  passive_checks: true
+  wordplay: true
+  ambient_lines: true
+  autosave: true
+  show_dice: true      # print the roll breakdown; invaluable while balancing
+  debug: false
