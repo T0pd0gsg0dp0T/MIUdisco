@@ -216,7 +216,7 @@
    "narration": true
   },
   "vault": {
-   "text": "There is no vault at the end of the west corridor.\n\nThere are eleven vaults in the west corridor and I can name every occupant and the third from the end is Mrs Ahearne, who was ninety-one and disagreeable and is now ninety-one and quiet, and there is nothing whatever unusual about her door.",
+   "text": "There is no vault at the end of the west corridor.\n\nThere are eleven vaults in the west corridor, sir. I can name every occupant, their dates, their families and the line their families chose, and I can do it without the book.\n\nThe third from the end is Mrs Ahearne, who was ninety-one and disagreeable and is now ninety-one and quiet, and who left instruction about ornament which I have honoured to the letter.\n\nThere is nothing whatever unusual about her door.",
    "passive": [
     {
      "skill": "EMPATHY",

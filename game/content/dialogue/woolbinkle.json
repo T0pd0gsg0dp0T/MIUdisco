@@ -204,7 +204,7 @@
    "narration": true
   },
   "leave_can": {
-   "text": "\"Right. Yes. No, that's — that's probably right, isn't it. It's mine.\"\n\nHe puts a hand flat on the counter, briefly, the way Ben does, and takes it off again.\n\n\"Nobody's ever said that to me about anything. That it's mine. I've had a lot of things given back and I've never had one *left* with me.\"",
+   "text": "\"Right. Yes. No, that's — that's probably right, isn't it. It's mine.\"\n\nHe puts a hand flat on the counter, briefly, the way Ben does, and takes it off again as though he has caught himself at something.\n\n\"Nobody's ever said that to me about anything. That it's mine.\n\nI've had a lot of things given back to me over the years. Given back is a whole category and I know it well. I've never had one *left* with me, and I'm going to need a minute with that, and I'd rather have the minute after you've gone.\"",
    "options": [
     {
      "id": "back",
@@ -287,7 +287,7 @@
    ]
   },
   "not_nobody": {
-   "text": "He does not say anything for a bit.\n\nThe lights come up about a quarter and the far wall comes in three feet and the room gets appreciably warmer, and neither of you mentions it, and it does not go back for the rest of the evening.",
+   "text": "He does not say anything for a bit.\n\nHe does not say anything for long enough that the oven finishes what it is doing and clicks over, and the peel stays where it is on the counter, across the grain, which is not where a peel goes.\n\nAnd the lights come up about a quarter. And the far wall comes in three feet. And the room gets appreciably, measurably warmer — the kind of warm that arrives in the hands first.\n\nNeither of you mentions it. It does not go back for the rest of the evening, and it has not gone back by the time you leave, and the tables nearest the door are the fullest they have been all fortnight.",
    "effects": {
     "morale": 12,
     "relationship": {
@@ -382,7 +382,7 @@
    ]
   },
   "poem_stop": {
-   "text": "\"Ah,\" he says. \"Well. It's a long one.\"\n\nAnd he goes back to the oven, and the lights do not come up, and the far wall stays exactly where it is.",
+   "text": "\"Ah,\" he says. \"Well. It's a long one.\"\n\nAnd that is all he says about it, and it is offered generously, as an excuse you are welcome to take.\n\nHe goes back to the oven. He checks a thing that does not need checking and turns a thing that does not need turning.\n\nThe lights do not come up. The far wall stays exactly where it is, at the distance it has been all evening, and the room is the temperature it was.",
    "options": [
     {
      "id": "back",
