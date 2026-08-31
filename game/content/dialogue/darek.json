@@ -2,7 +2,7 @@
  "npc": "darek",
  "nodes": {
   "root": {
-   "text": "Sorry about your wait. — Nope. Still ahead. Gimme a second, Ols, I been runnin' a touch previous all evenin' and it makes a man sound rude when he ain't.",
+   "text": "Sorry about your wait. — Nope. Still ahead. Gimme a second, Ols.\n\nI been runnin' a touch previous all evenin' and it makes a man sound rude when he ain't, and there ain't a thing I can do about it except say so up front and hope you take it in the spirit.\n\nThere. Now — what can I get you, and don't tell me, I got it, I got it comin' already.",
    "options": [
     {
      "id": "crash",
@@ -158,7 +158,7 @@
    ]
   },
   "rotors": {
-   "text": "The what now.\n\nThe— Ols. Ols, buddy. There ain't no rotors. There ain't been a helicopter in Silvora Reefs since the parish sold the one, and they sold it 'cause the fog. You can't fly in this. Nobody can fly in this. Ain't nothin' up there but the up.",
+   "text": "The what now.\n\nThe— Ols. Ols, buddy.\n\nThere ain't no rotors. There ain't been a helicopter in Silvora Reefs since the parish sold the one back in — must be sixty-one, sixty-two — and they sold it 'cause the fog. That was the whole reason. Man came down from the county to look at it and stood on that hill for a day and a half and said you cannot fly in this, and he was right, and they sold it inside a month.\n\nYou can't fly in this. Nobody can fly in this. There ain't nothin' up there but the up.",
    "passive": [
     {
      "skill": "EMPATHY",
@@ -265,7 +265,7 @@
    ]
   },
   "hallway": {
-   "text": "It does not.\n\nOls, I have walked that hallway maybe nine hundred thousand times. It's eleven foot. It's been eleven foot since my daddy leased this counter and it'll be eleven foot when they carry me down it, and if it was any other length I'd have noticed on account of I carry a mop through it.",
+   "text": "It does not.\n\nOls, I have walked that hallway maybe nine hundred thousand times. I walked it before I could see over the counter. It's eleven foot. It's been eleven foot since my daddy leased this counter off a man named Pell, and it'll be eleven foot when they carry me down it, and if it was ever one inch other than eleven foot I would have noticed on account of I carry a mop through it twice a night and I have carried a mop through it twice a night for thirty-one years.\n\nEleven foot. You could put a plank in there and it'd fit and I know that 'cause I done it.",
    "passive": [
     {
      "skill": "LOGIC",
@@ -330,7 +330,7 @@
    "narration": true
   },
   "ahead": {
-   "text": "Yeah. I know. I been previous my whole life and it got worse since the water.\n\nIt ain't a gift, 'fore you get excited. I ain't seein' nothin'. It's more like — you know when a fella's told you a story so many times you're mouthin' it along with him? Like that. Only I ain't heard the story before and I'm mouthin' it anyhow.",
+   "text": "Yeah. I know. I been previous my whole life and it got worse since the water.\n\nIt ain't a gift, 'fore you get excited about it. I ain't seein' nothin'. There ain't no pictures and there ain't no feelin' in the bones and I ain't never once known a thing that was any use to anybody.\n\nIt's more like — you know when a fella's told you a story so many times you're mouthin' it along with him? Where you ain't rememberin' it, exactly, your mouth's just goin' where it goes?\n\nLike that. Only I ain't heard the story before. And I'm mouthin' it anyhow.",
    "passive": [
     {
      "skill": "SAVOIR_FAIRE",
@@ -428,7 +428,7 @@
    ]
   },
   "licence": {
-   "text": "The framed thing? By the till?\n\nOls, that's been up since my daddy. That's the licence. Every shop in the Reefs got one. Ain't nobody ever read a licence in the history of—\n\n... What's it say.",
+   "text": "The framed thing? By the till?\n\nOls, that's been up since my daddy. That's the licence. Every shop in the Reefs got one, they come in the post, you put 'em up 'cause a man from the parish comes round once every few years and looks to see it's up. Ain't nobody ever read a licence in the history of—\n\nHe stops. He has the cloth in his hand and he does not put it down.\n\n... What's it say.",
    "options": [
     {
      "id": "read_it",

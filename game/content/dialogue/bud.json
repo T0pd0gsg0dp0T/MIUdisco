@@ -2,7 +2,7 @@
  "npc": "bud",
  "nodes": {
   "root": {
-   "text": "BUT — and I want to get in front of this — whatever you're about to raise, it's normal, it's been looked at, and it's normal.",
+   "text": "BUT — and I want to get in front of this, because I can see the coat and I can see the way you came in — whatever you're about to raise, it's normal, it's been looked at, and it's normal.\n\nThat's not me being short with you. That's me saving us both the eleven minutes, because I've had this conversation with a great many guests and it goes the same way every time and it always ends up back at normal.\n\nSo. Normal. What can I do for you.",
    "options": [
     {
      "id": "sky",
@@ -165,7 +165,7 @@
    ]
   },
   "rain": {
-   "text": "BUT that's a leak.\n\nBUT that's a leak and it's been reported and there's a man coming and the man is called Landy and he does the Hang-Hi, and you'll know him, and he's coming Thursday and he's been coming Thursday for a while now but he is coming.",
+   "text": "BUT that's a leak.\n\nBUT that's a leak and it's been reported and there's a man coming, and the man is called Landy, and he does the Hang-Hi and half the parish besides, and you'll know him — three-piece suit, pocket square, toolbox that won't shut.\n\nHe's coming Thursday. He's been coming Thursday for a while now. But he is coming, and it's on the board, and it's got a number on it, and a thing with a number on it is a thing that's in hand.\n\nThat's the position and I'd thank you to note that I gave it to you straight.",
    "effects": {
     "lucidity": -3
    },
@@ -198,7 +198,7 @@
    ]
   },
   "trolley": {
-   "text": "BUT that's the job.\n\nBUT that's the job and I'll thank you not to make a study of me doing it. There's four bags on that trolley and they belong to guests and they're going up when the guests say they're going up and until then a man stands with his hand on the rail because that is what a bellhop *is*.",
+   "text": "BUT that's the job.\n\nBUT that's the job and I'll thank you not to make a study of me doing it.\n\nThere's four bags on that trolley. They belong to guests. They're going up when the guests say they're going up, and until then a man stands with his hand on the rail, because that is what a bellhop *is* — that's not me being funny, that's the actual definition, you can ask anybody in the trade.\n\nYou don't put the bags down. That's the first thing they tell you. You do not put the bags down.",
    "passive": [
     {
      "skill": "SAVOIR_FAIRE",

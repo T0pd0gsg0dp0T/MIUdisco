@@ -2,7 +2,7 @@
  "npc": "mary",
  "nodes": {
   "root": {
-   "text": "Yeah. Yeah, you can come round this side, the queue's not for you, the queue's for people who know what they want.\n\nThat's not a dig, man. That's a category.",
+   "text": "Yeah. Yeah, you can come round this side, the queue's not for you.\n\nThe queue's for people who know what they want. That's not a dig, man — that's a category. There's people who come in here knowing, and they go in the queue and it moves, and there's people who come in here to *find out*, and they come round the warm side and they take as long as they take.\n\nYou're the second kind. You've been the second kind for eleven years. It's fine. It's slower and it's fine and I've got no schedule.",
    "options": [
     {
      "id": "code",

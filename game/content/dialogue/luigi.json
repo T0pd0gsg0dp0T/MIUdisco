@@ -2,7 +2,7 @@
  "npc": "luigi",
  "nodes": {
   "root": {
-   "text": "Ey! Careful, careful — is wet, is *blessed*, is not the same thing but today they happen in the same place.\n\nYou want to walk here, you wait. Two minutes. The floor is having a moment.",
+   "text": "Ey! Careful, careful — is wet, is *blessed*, is not the same thing but today they happen in the same place and a man who does not look where he puts his shoe gets both.\n\nYou want to walk here, you wait. Two minutes. Is not a punishment, my friend, is a floor. The floor is having a moment and the moment is nearly finished and then you walk on it like a king and you do not think about me at all, which is correct, which is the whole job.",
    "options": [
     {
      "id": "moment",
@@ -113,7 +113,7 @@
    ]
   },
   "corridor": {
-   "text": "The corridor is a corridor.\n\n... Now, you make the face. Do not make the face at me, I have been made faces at by professionals. The corridor is a corridor *when I have done it*. Before I have done it — ey, before I have done it, who knows, is not my business what a floor gets up to on its own time.",
+   "text": "The corridor is a corridor.\n\n... Now. Now you make the face.\n\nDo not make the face at me, Mr Onions. I have been made faces at by professionals — by a woman in 3C for nine years, every Tuesday, about a smell that was her own bins.\n\nThe corridor is a corridor *when I have done it*. That I will say and that I will stand behind. Before I have done it — ey. Before I have done it, who knows. Is not my business what a floor gets up to on its own time, and I do not ask, and it does not tell me, and we have an arrangement.",
    "passive": [
     {
      "skill": "EMPATHY",
@@ -167,7 +167,7 @@
    ]
   },
   "test_worked": {
-   "text": "Is good, no? Is *clean*.\n\nYou stand there with the face again. Mr Onions. My friend. I have cleaned this building eleven years and in eleven years you are the first tenant to walk a corridor on purpose after I have done it, and I want you to know that I have noticed, and that it is the nicest thing that has happened to me this month, and that I am not going to ask why.",
+   "text": "Is good, no? Is *clean*.\n\nYou stand there with the face again. The other face. The one where the eyebrow is doing the thinking.\n\nMr Onions. My friend. I have cleaned this building forty-one years and in forty-one years you are the first tenant to walk a corridor on purpose after I have done it — not through it, not past it, *on purpose* — and I want you to know that I have noticed.\n\nIs the nicest thing that has happened to me this month. And I am not going to ask why. You keep the why. I have the floor.",
    "effects": {
     "morale": 8,
     "relationship": {
@@ -183,7 +183,7 @@
    ]
   },
   "typing": {
-   "text": "The typing! Sì, sì, everybody, all the time, tap tap tap — is the pipes.\n\nIs the pipes, Mr Onions. In a building this old the pipes do everything. I have heard the pipes do a *waltz*.",
+   "text": "The typing! Sì, sì, everybody, all the time, tap tap tap tap — is the pipes.\n\nIs the pipes, Mr Onions. In a building this old the pipes do everything. They knock, they sing, they complain about the cold before I do.\n\nI have heard the pipes do a *waltz*. Three-four time, all the way through, twice, and I stood on the second floor with the bucket in my hand and I listened to the whole of it and then I went home. Is the pipes.",
    "options": [
     {
      "id": "not_pipes",
