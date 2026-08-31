@@ -267,7 +267,7 @@
    ],
    "description": "It is on the menu and it is on the menu at every establishment in Silvora Reefs that has ever wanted to annoy Woolbinkle, which is all of them.\n\nHere it is served in a bowl, soft, pale, and it is the only dish in the room that arrives looking different to each person at the table. You have watched this happen. Four diners, one dish, four honest descriptions, no two overlapping, and a general table-wide agreement afterwards that it had been very good.\n\nChef D. will tell you, if you ask, that she does not know what is in it. She will tell you this cheerfully and it is not a joke and it does not trouble her. Her position is that she cooks it correctly and the ingredients are between the dish and the diner.",
    "repeat": "Different again. You are getting better at not describing it to yourself while it is in front of you, which helps, and which is the most disquieting sentence you have formed this week.",
-   "monocle": "Through the gold, the bowl contains one word, and the word is CANNED, and it has been canned.",
+   "monocle": "Through the gold, the bowl contains one word.\n\nThe word is CANNED, and it has been canned — sealed inside its own letters, at the correct headspace, with a quarter-turn at the end — and it is holding, and it will go on holding, and it is the only thing on this menu that will still be exactly what it is tomorrow.\n\nSomewhere behind you, four streets away, an antelope who does not know you are looking at this puts a lid on something.",
    "check": {
     "id": "lishush:antelope:eat",
     "skill": "ELECTROCHEMISTRY",
@@ -322,7 +322,7 @@
    ],
    "description": "Chef D. puts them down the same way every time and has never once been asked about it, because it is a garnish, and nobody in the history of eating has interrogated a garnish.\n\nTen rings. Then nine. Then seven. Then one long piece, laid across the whole of it at a slight angle, always last.\n\nAlways that. Always in that order, always the long one last, and she does it without looking at the plate — her hands go to three places on the board and the fourth cut is longer, every time, without measuring, while she is talking to you about something else entirely.\n\nThe rings are not the same size as each other within each group, which rules out a mould and rules out habit-of-the-knife. They are placed. Each one is put where it goes, and the spacing between the groups is wider than the spacing within them, and it is wider by about the same amount every time.",
    "repeat": "Ten, nine, seven, and a long one. She has served you eleven times and it has been ten, nine, seven and a long one on all eleven plates, laid down in that order, the long one last, without her once looking at what her hands were doing.",
-   "monocle": "Through the gold the rings are not rings. They are strokes, and they are being written left to right by somebody in a hurry to get it down before the plate goes out.",
+   "monocle": "Through the gold the rings are not rings.\n\nThey are strokes — pen strokes, at the pressure of a hand writing quickly — and they are being laid down left to right by somebody in a hurry to get it down before the plate goes out to the room.\n\nThe long one is not a garnish and it is not a stroke either. It is a line through. The word is written and then struck out, several times a night, on plate after plate, and sent out to be eaten by strangers who think it is an onion.",
    "passive": [
     {
      "skill": "PERCEPTION",
