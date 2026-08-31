@@ -111,7 +111,7 @@ class Session:
                 self.log.write(t); self.log.flush()
         self.dead = True
 
-    def read(self, quiet=0.35, cap=5.0):
+    def read(self, quiet=0.22, cap=3.5):
         start = last_change = time.time()
         last = -1
         while time.time() - start < cap:
@@ -146,27 +146,44 @@ def menu_of(screen):
     return opts if opts and [n for n, _ in opts] == list(range(1, len(opts) + 1)) else []
 
 
-def settle(s, screen, depth, cross_seam, stats):
-    """Answer any menus until we are back at a command prompt."""
-    for _ in range(depth):
+EXIT_WORDS = ("leave", "back", "nothing", "something else", "not now",
+              "never mind", "nevermind", "enough", "decline", "let him",
+              "let her", "go round", "another time", "all right", "take your leave")
+
+
+def settle(s, screen, depth, cross_seam, stats, hard_cap=40):
+    """Answer menus until we are back at a command prompt.
+
+    `depth` is how many *substantive* choices to make before heading for the
+    door. Beyond that we take the exit option every time. An earlier version
+    always picked a substantive option, so a conversation never ended: the tour
+    stayed inside Darek's dialogue and every later `go to` was rejected, which
+    read as nine failed moves and nine skipped rooms.
+    """
+    explored = 0
+    for _ in range(hard_cap):
         opts = menu_of(screen)
         if not opts:
             return screen
         stats["menus"] += 1
-        pick = None
-        # Leave the seam alone unless explicitly asked to cross it.
+
         safe = [(n, l) for n, l in opts
                 if cross_seam or not any(w in l.lower() for w in SEAM_WORDS)]
         if not safe:
             safe = [opts[-1]]
-        for n, l in safe:
-            if any(k in l.lower() for k in ("leave", "back", "nothing", "something else",
-                                            "not now", "never mind", "enough")):
-                pick = n
-        # prefer a fresh substantive option first, fall back to the exit
-        fresh = [(n, l) for n, l in safe if n != pick]
-        chosen = fresh[0][0] if fresh else (pick or safe[-1][0])
+
+        exits_ = [n for n, l in safe if any(k in l.lower() for k in EXIT_WORDS)]
+        fresh = [n for n, l in safe if n not in exits_]
+
+        if explored < depth and fresh:
+            chosen = fresh[0]
+            explored += 1
+        elif exits_:
+            chosen = exits_[-1]
+        else:
+            chosen = safe[-1][0]
         screen = s.send(str(chosen))
+    stats["stuck_menus"] += 1
     return screen
 
 
@@ -180,7 +197,8 @@ def main():
     a = ap.parse_args()
 
     locs, exits, objs, npcs = load_world()
-    stats = {"rooms": 0, "objects": 0, "talks": 0, "menus": 0}
+    stats = {"rooms": 0, "objects": 0, "talks": 0, "menus": 0,
+             "failed_moves": 0, "skipped": 0, "stuck_menus": 0}
 
     s = Session(a.seed, a.log)
     screen = s.read(cap=8)
@@ -207,8 +225,17 @@ def main():
             for stepto in hop:
                 screen = s.send(f"go to {locs.get(stepto, stepto)}")
                 screen = settle(s, screen, 3, False, stats)
-                here = stepto
+                # Only believe the move happened if the room announces itself.
+                # Updating `here` unconditionally desyncs the whole route after
+                # a single refusal, and every later hop is then computed from a
+                # location we are not standing in.
+                if locs.get(stepto, stepto).lower() in screen.lower():
+                    here = stepto
+                else:
+                    stats["failed_moves"] += 1
+                    break
         if here != target:
+            stats["skipped"] += 1
             continue
         stats["rooms"] += 1
         screen = settle(s, s.send("survey"), 3, False, stats)
@@ -241,6 +268,9 @@ def main():
     print(f"objects examined  {stats['objects']}")
     print(f"conversations     {stats['talks']}")
     print(f"menus answered    {stats['menus']}")
+    print(f"failed moves      {stats['failed_moves']}")
+    print(f"rooms skipped     {stats['skipped']}")
+    print(f"menus not escaped {stats['stuck_menus']}")
     print(f"clues surfaced    {log.count('── CLUE ──')}")
     print(f"log size          {len(log):,} chars")
     print(f"tracebacks        {tb}")

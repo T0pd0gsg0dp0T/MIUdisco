@@ -424,12 +424,12 @@
     {
      "skill": "LOGIC",
      "dc": 11,
-     "text": "Every deduction you have made for a fortnight terminates here. There is nothing further to work out. The next thing is not a conclusion, it is a step."
+     "text": "Every deduction terminates here, at the back of a club built out of a joke about surfaces, behind the one booth nobody stands in front of."
     },
     {
      "skill": "PHYSIQUE",
      "dc": 10,
-     "text": "Four inches of nothing, and a floor on the other side that will take a man's weight. The body has already decided. It has been leaning that way since the harbour."
+     "text": "Four inches, and boards beyond, and eight square feet of clear carpet behind you that the whole parish has been keeping clear without instruction."
     }
    ],
    "check": {
@@ -437,9 +437,9 @@
     "skill": "PHYSIQUE",
     "dc": 9,
     "kind": "red",
-    "prompt": "Go through. Nothing is stopping you and nothing has been stopping you for some time, and that is the part that will need thinking about afterwards, on the other side, if there is an afterwards and if there is a side.\n\nThere is no way back through a seam. Whatever is unfinished in Silvora Reefs stays unfinished.",
+    "prompt": "Step through the back wall of a strip club, across eight square feet of carpet that ninety people a night have been leaving clear without knowing why.\n\nNothing is stopping you and nothing has been stopping you for some time, and that is the part that will need thinking about afterwards, on the other side, if there is an afterwards and if there is a side.\n\nThere is no way back through a seam. Whatever is unfinished in Silvora Reefs stays unfinished.",
     "success": "You go through.\n\nThere is no membrane and no cold and no drama. Behind you ninety people are having a night out in a building shaped like an argument, and the music is still going, and nobody is dancing.\n\nThe last thing from that side is an Insta-gator, nine feet of tailored patience, not repositioning you. Not escalating. Standing beside the gap with its hands folded, entirely off-script, watching you go — and it says, quietly, \"Yeah,\" and does not finish the sentence.\n\nThen you are standing on boards in a room nine feet by eleven with a green-shaded lamp in it.",
-    "failure": "Your foot goes over the edge and your weight does not follow it, and you stand for a while in a doorway with one leg committed, which is not a dignified way to arrive anywhere and is a completely honest description of the last fortnight.\n\nThen the knee that has been going since the harbour makes the decision for you, and you go through badly, and land on boards, in a room nine feet by eleven, with a green-shaded lamp in it.",
+    "failure": "Your foot goes over and stops, and the music goes on, and somewhere behind you ninety people continue an evening.\n\nAn Insta-gator watches without repositioning you, entirely off script, and says nothing at all. Then the knee that has been going since the harbour decides on your behalf, and you go through badly, and land on boards.",
     "success_effects": {
      "goto_location": "the_office",
      "lucidity": 10

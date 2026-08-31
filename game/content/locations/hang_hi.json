@@ -459,12 +459,12 @@
     {
      "skill": "LOGIC",
      "dc": 11,
-     "text": "Every deduction you have made in a fortnight terminates here. There is nothing further to work out from this side, no reading of the evidence that does not require going and looking, and you have known that for at least a day and a half."
+     "text": "Every deduction you have made in a fortnight terminates here, in your own hallway, four feet from your own door. There is nothing further to work out from this side and you have known that for a day and a half."
     },
     {
      "skill": "PHYSIQUE",
      "dc": 10,
-     "text": "Four inches of nothing, and a floor on the other side that will take a man's weight — you can see the boards, you can see the grain in the boards. The body has already worked out the step. It is not the body that is hesitating."
+     "text": "Four inches of nothing, and boards on the other side that will take a man's weight — you can see the grain in them, and they are the same boards as these."
     }
    ],
    "check": {
@@ -472,9 +472,9 @@
     "skill": "PHYSIQUE",
     "dc": 9,
     "kind": "red",
-    "prompt": "Go through. Nothing is stopping you and nothing has been stopping you for some time, and that is the part that will need thinking about afterwards, on the other side, if there is an afterwards and if there is a side.\n\nThere is no way back through a seam. Whatever is unfinished in Silvora Reefs stays unfinished.",
+    "prompt": "Step through the mirror in your own hallway, in the building you have lived in for eleven years, past a coat rack you have hung a coat on four thousand times.\n\nNothing is stopping you and nothing has been stopping you for some time, and that is the part that will need thinking about afterwards, on the other side, if there is an afterwards and if there is a side.\n\nThere is no way back through a seam. Whatever is unfinished in Silvora Reefs stays unfinished.",
     "success": "You go through.\n\nThere is no membrane and no cold and no drama. Your own hallway is behind you — the coat rack, the green flame, eleven years of coming home — and then it is not, and the last thing from it is the sound of a bucket being set down two floors below and a squeegee starting an arc.\n\nAnd you are standing on boards in a room nine feet by eleven, with a green-shaded lamp on a desk that is a door, and a chair pushed back, and a man at a wall with his back to you who does not turn round and does not appear surprised.\n\nThe floor on this side is the same floor. Same width of board, same grain. It runs under the frame without a join.",
-    "failure": "Your foot goes over the edge and your weight does not follow it, and you stand for a while in a doorway with one leg committed, which is not a dignified way to arrive anywhere and is a completely honest description of the last fortnight.\n\nThen the knee that has been going since the harbour makes the decision for you, and you go through badly, and land on boards, in a room nine feet by eleven, with a green-shaded lamp in it.",
+    "failure": "Your foot goes over the edge and your weight does not follow it, and you stand for a while in your own hallway with one leg committed — which is not a dignified way to arrive anywhere and is a completely honest description of the last fortnight.\n\nThen the knee that has been going since the harbour makes the decision for you, and you go through badly, and land on boards.",
     "success_effects": {
      "goto_location": "the_office",
      "lucidity": 10

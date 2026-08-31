@@ -381,12 +381,12 @@
     {
      "skill": "LOGIC",
      "dc": 11,
-     "text": "Every deduction you have made in a fortnight terminates here. There is nothing further to be worked out from this side of it — no reading of the evidence that does not require walking through — and that has been true since before you admitted it."
+     "text": "Every deduction terminates here, in a shop that cannot be given as directions, in front of a mirror that has been holding a room open rather than showing one."
     },
     {
      "skill": "PHYSIQUE",
      "dc": 10,
-     "text": "Four inches of nothing, and a floor on the other side that will take a man's weight; you can see the boards and the grain in the boards and a nail head somebody countersunk badly. The body has already worked out the step. The body is not the part that is hesitating."
+     "text": "Four inches, and a floor beyond it, and an owlbear standing on this side who has waited forty years to be somewhere and is not coming with you."
     }
    ],
    "check": {
@@ -394,9 +394,9 @@
     "skill": "PHYSIQUE",
     "dc": 9,
     "kind": "red",
-    "prompt": "Go through. Nothing is stopping you and nothing has been stopping you for some time, and that is the part that will need thinking about afterwards, on the other side, if there is an afterwards and if there is a side.\n\nThere is no way back through a seam. Whatever is unfinished in Silvora Reefs stays unfinished.",
+    "prompt": "Step through the third mirror, past the chair you have been sat in, with an owlbear standing solid on the boards beside you and declining to say anything about it.\n\nNothing is stopping you and nothing has been stopping you for some time, and that is the part that will need thinking about afterwards, on the other side, if there is an afterwards and if there is a side.\n\nThere is no way back through a seam. Whatever is unfinished in Silvora Reefs stays unfinished.",
     "success": "You go through.\n\nThere is no membrane and no cold and no drama. Behind you the clippers are still going, on the beat, because Antonio has turned his back and is doing a taper and taking a long time over the sides.\n\nAnd the last thing from that room is Monsieur Albert — solid, in an excellent coat, standing on boards for the first time in forty years — saying nothing whatever, at length, with the whole of his enormous patience, because he has decided that this is not a moment for a man to be spoken to.\n\nThen you are on the other side, in a room nine feet by eleven, and the lamp is green and the chair is pushed back.",
-    "failure": "Your foot goes over the edge and your weight does not follow it, and you stand for a while in a doorway with one leg committed, which is not a dignified way to arrive anywhere and is a completely honest description of the last fortnight.\n\nThen the knee that has been going since the harbour makes the decision for you, and you go through badly, and land on boards, in a room nine feet by eleven, with a green-shaded lamp in it.",
+    "failure": "Your foot goes over and your weight does not follow, and for a moment you are a man half-in a barbershop mirror with an audience of one.\n\nMonsieur Albert does not comment. He does not look away either, which is worse and is meant kindly. Then the knee makes the decision for you and you go through badly and land hard on boards that are the same boards.",
     "success_effects": {
      "goto_location": "the_office",
      "lucidity": 10
