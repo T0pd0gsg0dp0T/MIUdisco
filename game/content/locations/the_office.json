@@ -67,7 +67,7 @@
     "dc": 12,
     "kind": "white",
     "prompt": "There is a page in the machine and it is not blank and it is the only thing in this room with no dust on it. Read what is on it without saying any of it aloud.",
-    "success": "Platen release, one turn, and it comes up clean.\n\nIt is a description of a man standing in a small room holding a page he has just taken out of a machine. It is in the present tense. It stops mid-sentence, and the sentence it stops in the middle of is this one.",
+    "success": "Platen release, one turn, and it comes up clean and whole.\n\nIt is a description of a man standing in a small room holding a page he has just taken out of a machine.\n\nIt is in the present tense.\n\nIt stops mid-sentence — and the sentence it stops in the middle of is this one, and the last four words on it are *and he does not*, and the ribbon has not been advanced past them.",
     "failure": "You have the corner of it and the platen has the rest, and the platen wins by about two inches of tear.\n\nWhat you are holding is the top of a page, and the top of a page says nothing at all — a wide left margin, three words that are the end of a previous sentence, and a great deal of white. The rest of it is still in the machine, still wound round the roller, still saying whatever it says.",
     "success_effects": {
      "clue": {

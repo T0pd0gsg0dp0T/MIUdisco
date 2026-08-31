@@ -438,7 +438,7 @@
     "dc": 9,
     "kind": "red",
     "prompt": "Go through. Nothing is stopping you and nothing has been stopping you for some time, and that is the part that will need thinking about afterwards, on the other side, if there is an afterwards and if there is a side.\n\nThere is no way back through a seam. Whatever is unfinished in Silvora Reefs stays unfinished.",
-    "success": "You go through.\n\nThere is no membrane and no cold and no drama, and the last thing behind you is somebody not saying anything, and then you are standing on boards in a room nine feet by eleven with a green-shaded lamp in it.",
+    "success": "You go through.\n\nThere is no membrane and no cold and no drama. Behind you ninety people are having a night out in a building shaped like an argument, and the music is still going, and nobody is dancing.\n\nThe last thing from that side is an Insta-gator, nine feet of tailored patience, not repositioning you. Not escalating. Standing beside the gap with its hands folded, entirely off-script, watching you go — and it says, quietly, \"Yeah,\" and does not finish the sentence.\n\nThen you are standing on boards in a room nine feet by eleven with a green-shaded lamp in it.",
     "failure": "Your foot goes over the edge and your weight does not follow it, and you stand for a while in a doorway with one leg committed, which is not a dignified way to arrive anywhere and is a completely honest description of the last fortnight.\n\nThen the knee that has been going since the harbour makes the decision for you, and you go through badly, and land on boards, in a room nine feet by eleven, with a green-shaded lamp in it.",
     "success_effects": {
      "goto_location": "the_office",

@@ -210,7 +210,7 @@
     "dc": 11,
     "kind": "white",
     "prompt": "The cabinet has not been opened in some time and has no intention of starting now. The seal has gone stiff and the hinge has gone stiffer. Open it anyway, with the shoulder if necessary.",
-    "success": "The seal gives with a sound like a held breath being returned. Inside, in rows, in the cold: not tubs.\n\nJars. Nineteen of them, lidded and labelled, and every label is a date, and every date is in the future.",
+    "success": "The seal gives with a sound like a held breath being returned, and the cold comes out over your hands in a slab.\n\nInside, in rows, in the cold: not tubs.\n\nJars. Nineteen of them, lidded and labelled and packed too carefully to be storage — spaced, with the labels turned out, the way a man arranges a thing he expects to be read.\n\nEvery label is a date. Every date is in the future. And they are in order, left to right, and there is a gap at the right-hand end wide enough for one more.",
     "failure": "It is a door and you are a man and the door wins, twice. The second time something in the right shoulder makes a note of the exchange and files it with the others, and the cabinet stands there with its nine tubs behind misted glass, entirely unbothered, as it has stood since before your father would have been born.",
     "success_effects": {
      "clue": {

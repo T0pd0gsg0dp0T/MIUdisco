@@ -79,7 +79,7 @@
     "dc": 10,
     "kind": "white",
     "prompt": "There are more pages in this than the three. Ninety of them, and the blue has not left the paper, it has only stopped being arranged. Work the smear apart with a dry cloth and a great deal of patience and see what is still in there.",
-    "success": "Patience, a dry cloth and a very shallow angle. Two more pages come up out of the blue — not legible, but *ruled*, and the ruling is not the notebook's.\n\nSomebody drew a margin down these pages by hand, twice, on the same two sheets, at eleven and nine inches. The measurements of a room.",
+    "success": "Patience, a dry cloth, a very shallow angle, and the specific discipline of stopping before the page tells you to.\n\nTwo more come up out of the blue. Not legible — the ink is gone and it is not coming back — but *ruled*, and the ruling is not the notebook's. The notebook is feint. These are pencil.\n\nSomebody drew a margin down these two pages by hand, twice, on the same two sheets, at eleven inches and at nine.\n\nThose are not margins. Those are the measurements of a room.",
     "failure": "The blue is not ink any more. It is a suspension — pigment held in a paper that has given up being paper — and the moment the cloth touches it, the page makes its decision and becomes one colour all the way through.\n\nYou stop after the second. There are eighty-seven left and you have just learned what the cloth does to them, and there is a version of this evening in which you go on until there is nothing left to be careful with.",
     "success_effects": {
      "clue": {
@@ -207,7 +207,7 @@
     "dc": 11,
     "kind": "white",
     "prompt": "The snake on the board is in a slightly different position every time the eye comes back to it. Look away deliberately, count to four, and come back fast enough to catch it mid-move.",
-    "success": "Away and back, fast, without deciding to.\n\nIt is mid-stroke. Not mid-slither — mid-*stroke*, the way a line is mid-stroke when a hand is drawing it, and there is no hand, and it finishes the stroke while you watch and settles into having always been that shape.",
+    "success": "Away, count of four, and back — fast, without deciding to, before the deciding part can arrange its face.\n\nIt is mid-stroke.\n\nNot mid-slither: a snake caught moving is a snake, and this is not that. It is mid-*stroke*, the way a line is mid-stroke when a hand is drawing it and has not yet reached the end — thinner at the leading edge, the paint not yet closed on itself.\n\nAnd there is no hand. And it finishes the stroke while you watch, unhurriedly, and settles into having always been that shape.",
     "failure": "Away, count of four, and back.\n\nCoiled, painted, flaking at the tail, and exactly where it was — and it will go on being exactly where it was for as long as you keep doing this, which is the arrangement, and which it has kept faithfully for eleven years without once being caught out or once being still.",
     "success_effects": {
      "clue": {
@@ -473,7 +473,7 @@
     "dc": 9,
     "kind": "red",
     "prompt": "Go through. Nothing is stopping you and nothing has been stopping you for some time, and that is the part that will need thinking about afterwards, on the other side, if there is an afterwards and if there is a side.\n\nThere is no way back through a seam. Whatever is unfinished in Silvora Reefs stays unfinished.",
-    "success": "You go through.\n\nThere is no membrane and no cold and no drama, and the last thing behind you is somebody not saying anything, and then you are standing on boards in a room nine feet by eleven with a green-shaded lamp in it.",
+    "success": "You go through.\n\nThere is no membrane and no cold and no drama. Your own hallway is behind you — the coat rack, the green flame, eleven years of coming home — and then it is not, and the last thing from it is the sound of a bucket being set down two floors below and a squeegee starting an arc.\n\nAnd you are standing on boards in a room nine feet by eleven, with a green-shaded lamp on a desk that is a door, and a chair pushed back, and a man at a wall with his back to you who does not turn round and does not appear surprised.\n\nThe floor on this side is the same floor. Same width of board, same grain. It runs under the frame without a join.",
     "failure": "Your foot goes over the edge and your weight does not follow it, and you stand for a while in a doorway with one leg committed, which is not a dignified way to arrive anywhere and is a completely honest description of the last fortnight.\n\nThen the knee that has been going since the harbour makes the decision for you, and you go through badly, and land on boards, in a room nine feet by eleven, with a green-shaded lamp in it.",
     "success_effects": {
      "goto_location": "the_office",
