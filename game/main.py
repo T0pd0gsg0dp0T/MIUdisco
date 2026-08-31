@@ -363,12 +363,22 @@ class Game:
             ui.clear()
             ui.block(TITLE.strip("\n"), colour_key="purple")
             ui.rule()
-            # Who you are is decided before the town gets a look at you: the
-            # opening narration lands differently depending on which voices
-            # are loud, so the build comes first.
-            if create_character:
-                character_creation.run(self.state.player)
-                ui.blank()
+
+        # Who you are is decided before the town gets a look at you: the
+        # opening narration lands differently depending on which voices are
+        # loud, so the build comes first.
+        #
+        # This is deliberately *outside* the skip_intro block. It used to be
+        # nested inside it, which meant --no-intro silently skipped character
+        # creation as well and dropped the player into the game with every
+        # attribute at 1. The caller already computes create_character
+        # correctly (false when loading a save, or on --no-create); nesting
+        # threw that answer away.
+        if create_character:
+            character_creation.run(self.state.player)
+            ui.blank()
+
+        if not skip_intro:
             ui.narrate(OPENING)
             ui.pause()
 
