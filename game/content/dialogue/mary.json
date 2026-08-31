@@ -185,7 +185,7 @@
     {
      "skill": "PHYSIQUE",
      "dc": 11,
-     "text": "She stood in it for an entire shift. Eight hours with eleven degrees down the middle of her, deliberately, to settle a question, and she has never mentioned it to anybody."
+     "text": "She stood in it for an entire shift.\n\nEight hours with eleven degrees down the middle of her — left side warm, right side cold, all night, deliberately, to settle a question she had privately formed and told nobody about.\n\nAnd she has never mentioned it to anybody since. It came out just now in a subordinate clause, in passing, as background to something else entirely."
     }
    ],
    "options": [
@@ -255,7 +255,7 @@
     {
      "skill": "SAVOIR_FAIRE",
      "dc": 12,
-     "text": "Eleven minutes early, standing on a kerb doing nothing. That is not a patrol and it is not foresight. That is a man who has been put somewhere in advance of needing to be there."
+     "text": "Eleven minutes early, standing on a kerb, doing nothing.\n\nNot waiting — waiting has a posture and this had none. Not patrolling, because a patrol moves.\n\nThat is a man who has been *put somewhere*, in advance of needing to be there, by somebody who knew he would need to be there, and who has stood on that kerb for eleven minutes without once wondering why he came out early."
     }
    ],
    "effects": {

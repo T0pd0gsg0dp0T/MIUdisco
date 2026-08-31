@@ -76,7 +76,7 @@
     {
      "skill": "EMPATHY",
      "dc": 12,
-     "text": "He wants to be asked. He has wanted to be asked for a very long time and has arranged his whole manner so that nobody would, and the arrangement has worked, and it has been the great disappointment of his life."
+     "text": "He wants to be asked.\n\nHe has wanted to be asked for a very long time, and he has arranged his entire manner so that nobody ever would — the flat palms, the easy greeting, the way he answers the question before it becomes a question.\n\nThe arrangement has worked. Perfectly, for fifty years. It has also been the great disappointment of his life and he could not now say which of those two facts he minds more."
     }
    ],
    "options": [
@@ -213,7 +213,7 @@
     {
      "skill": "EMPATHY",
      "dc": 11,
-     "text": "He led with the hardest one and then immediately offered to explain himself. That is not a man showing off. That is a man who has decided you can take it and is standing close in case you cannot."
+     "text": "He led with the hardest one — the summer, the thing nobody in this parish has been told — and then immediately offered to explain himself, before you had asked him to.\n\nThat is not a man showing off. A man showing off leads with the second-hardest and waits.\n\nThat is a man who has decided you can take it, and has gone first to prove he thinks so, and is standing close in case he has judged it wrong."
     }
    ],
    "options": [
