@@ -2,16 +2,8 @@
  "id": "gs_spot",
  "name": "The G.'s Spot",
  "subtitle": "A barbershop. Findable, reportedly, by those who know where it is.",
- "description": {
-  "low": "Nobody can give you directions to this place. Four people have tried, all of them sincerely, all of them describing a different corner, and every one of them got here today without difficulty. There is a demographic in Silvora Reefs that finds it without looking, and Wino-T's explanation is that they grew up around those parts, which he delivers on the beat and which is the whole of the explanation you are going to get.\n\nInside: modest from the street, and then not. Two chairs, a long counter, a wall of bottles in colours that were discontinued, and a hallway to the back that is signposted for a lavatory and has, on three occasions, delivered guests into what they later described as a completely different business.\n\nAnd the mirrors. There is a great deal of mirror in a barbershop. In this one, that is a decision somebody made.",
-  "mid": "Nobody can give you directions here, and everybody arrives without difficulty. Modest from the street and then not. Two chairs, a long counter, bottles in discontinued colours, and a hallway signposted for a lavatory that has three times delivered people into a different business. And a great deal of mirror, which in this shop is a decision.",
-  "high": "The barbershop nobody can direct you to. Two chairs, a back hallway that goes elsewhere, and a great deal of mirror."
- },
- "revisit": {
-  "low": "Wino-T does not look up from the fade he is working and says your name in time with the clippers, on the second beat, which is the beat that means sit down.",
-  "mid": "Wino-T says your name in time with the clippers, on the beat that means sit down.",
-  "high": "Wino-T names you on the beat that means sit down."
- },
+ "description": "Nobody can give you directions to this place. Four people have tried, all of them sincerely, all of them describing a different corner, and every one of them got here today without difficulty. There is a demographic in Silvora Reefs that finds it without looking, and Wino-T's explanation is that they grew up around those parts, which he delivers on the beat and which is the whole of the explanation you are going to get.\n\nInside: modest from the street, and then not. Two chairs, a long counter, a wall of bottles in colours that were discontinued, and a hallway to the back that is signposted for a lavatory and has, on three occasions, delivered guests into what they later described as a completely different business.\n\nAnd the mirrors. There is a great deal of mirror in a barbershop. In this one, that is a decision somebody made.",
+ "revisit": "Wino-T does not look up from the fade he is working and says your name in time with the clippers, on the second beat, which is the beat that means sit down.",
  "lucid": {
   "2": "Under the clippers there is a rhythm that the clippers are matching rather than making.",
   "3": "The clippers stop for the length of a word, and the rhythm underneath does not, and then the clippers catch up.",
@@ -32,11 +24,7 @@
     "glass",
     "reflection"
    ],
-   "description": {
-    "low": "Three on the long wall, one behind each chair, and a fourth at the end that faces the third, so that the room goes off into itself in a corridor of diminishing Olivers.\n\nThey do not all agree. The near one has you in the chair. The far one has the room from above and slightly behind, which is not an angle any mirror in this building could be taking. And the third — the third has been showing the same thing for a fortnight, on and off, and Wino-T has stopped covering it because covering it made customers ask.\n\nIt shows a man at a desk. From behind. Working.",
-    "mid": "Four mirrors that do not agree. The near one has you in the chair. The far one has the room from above and behind, an angle no mirror here could take. The third has shown the same thing for a fortnight: a man at a desk, from behind, working.",
-    "high": "The third mirror has shown the same thing for a fortnight: a man at a desk, from behind, working."
-   },
+   "description": "Three on the long wall, one behind each chair, and a fourth at the end that faces the third, so that the room goes off into itself in a corridor of diminishing Olivers.\n\nThey do not all agree. The near one has you in the chair. The far one has the room from above and slightly behind, which is not an angle any mirror in this building could be taking. And the third — the third has been showing the same thing for a fortnight, on and off, and Wino-T has stopped covering it because covering it made customers ask.\n\nIt shows a man at a desk. From behind. Working.",
    "repeat": "He has not turned round. In a fortnight he has not once turned round.",
    "lucid": {
     "2": "The shoulders in the mirror move in a rhythm. Small, repetitive, two-handed.",
@@ -120,11 +108,7 @@
     "toilet",
     "corridor"
    ],
-   "description": {
-    "low": "Signposted, in a small brass plaque with a small brass arrow, and the plaque is the only unambiguous object in the building.\n\nThree customers on record have gone down it and come out somewhere else. One in a chandlery. One in a room full of filing. One — and this is the one Wino-T tells, on the beat, when the shop is full — came out in the Möbius Strip Club at eleven at night having gone for a wash at four in the afternoon, and was very calm about it, and did not go back for his coat.\n\nAll three returned. None of them can describe the return.",
-    "mid": "A brass plaque and a brass arrow, the only unambiguous object here. Three customers have gone down it and come out elsewhere — a chandlery, a room full of filing, and the Möbius Strip Club at eleven at night, having set off at four. All three came back. None can describe the return.",
-    "high": "Three customers have gone down this hallway and come out in other buildings. None can describe the return."
-   },
+   "description": "Signposted, in a small brass plaque with a small brass arrow, and the plaque is the only unambiguous object in the building.\n\nThree customers on record have gone down it and come out somewhere else. One in a chandlery. One in a room full of filing. One — and this is the one Wino-T tells, on the beat, when the shop is full — came out in the Möbius Strip Club at eleven at night having gone for a wash at four in the afternoon, and was very calm about it, and did not go back for his coat.\n\nAll three returned. None of them can describe the return.",
    "repeat": "The brass arrow points the same way. It is the only thing in Silvora Reefs you would put money on.",
    "monocle": "Through the gold the hallway is four feet long and ends in a door, and behind the door is a lavatory, and it is a perfectly ordinary lavatory with a cracked cistern. The other places are not down the hallway. They are down the *account* of the hallway, and the account is longer than the hallway and always has been.",
    "check": {
@@ -165,11 +149,7 @@
     "wall",
     "before"
    ],
-   "description": {
-    "low": "Sir Jerry's wall. Forty-odd pairs, pinned in a grid, each one a customer before and the same customer after, and every pair is signed by the customer with a comment.\n\nThe comments are extraordinary. *Didn't know myself.* *My own mother walked past me.* *A new man, and the old one is not missed.* One of them, in a shaking hand, says only *thank you*.\n\nThe photographs show a haircut. In every single pair, the difference between the before and the after is about an inch and a half off the sides.",
-    "mid": "Forty-odd before-and-after pairs, each signed with a comment. 'Didn't know myself.' 'My own mother walked past me.' 'A new man, and the old one is not missed.' The photographs show, in every case, about an inch and a half off the sides.",
-    "high": "Forty pairs of photographs. The comments describe transfigurations. The photographs show an inch and a half off the sides."
-   },
+   "description": "Sir Jerry's wall. Forty-odd pairs, pinned in a grid, each one a customer before and the same customer after, and every pair is signed by the customer with a comment.\n\nThe comments are extraordinary. *Didn't know myself.* *My own mother walked past me.* *A new man, and the old one is not missed.* One of them, in a shaking hand, says only *thank you*.\n\nThe photographs show a haircut. In every single pair, the difference between the before and the after is about an inch and a half off the sides.",
    "repeat": "You go along the grid again looking for one pair where the camera agrees with the customer. There is not one.",
    "monocle": "Through the gold the photographs are unchanged and the *comments* are not. Every comment is in the same hand. Forty-odd customers, forty-odd signatures, one hand — and it is a hand that has been trying, on each occasion, to look like somebody else's, and getting better at it as the wall goes on.",
    "passive": [
@@ -250,11 +230,7 @@
     "monsieur albert",
     "shadow"
    ],
-   "description": {
-    "low": "Monsieur Albert does not come forward. Monsieur Albert has never come forward. He occupies the dark past the last chair the way a bookcase occupies a corner, and he is an owlbear, and he is a nobleman, and both of those are simply true here and neither requires anything of you.\n\nHe is visible in the third mirror. He is not visible in the room. You have checked this in both directions, twice, and on the second attempt he inclined his head at the checking, from the mirror, courteously, while the corresponding volume of air continued to contain nothing.",
-    "mid": "An owlbear and a nobleman, occupying the dark past the last chair the way a bookcase occupies a corner. He is visible in the third mirror and not in the room. Checked twice. On the second attempt he inclined his head at the checking, from the mirror, courteously.",
-    "high": "Monsieur Albert is visible in the mirror and not in the room, and has acknowledged you noticing."
-   },
+   "description": "Monsieur Albert does not come forward. Monsieur Albert has never come forward. He occupies the dark past the last chair the way a bookcase occupies a corner, and he is an owlbear, and he is a nobleman, and both of those are simply true here and neither requires anything of you.\n\nHe is visible in the third mirror. He is not visible in the room. You have checked this in both directions, twice, and on the second attempt he inclined his head at the checking, from the mirror, courteously, while the corresponding volume of air continued to contain nothing.",
    "repeat": "Still only in the glass. Still courteous about it.",
    "monocle": "Through the gold, Monsieur Albert is in the room. Solidly, warmly, taking up a great deal of it, in an excellent coat. It is the *room* that has been declining to include him, and the monocle overrules the room, and he looks back at you with an expression that has waited a long time to be looked at directly.",
    "passive": [
@@ -327,11 +303,7 @@
     "shelf",
     "colognes"
    ],
-   "description": {
-    "low": "Hair tonics, all of them discontinued, in colours that were discontinued along with them: a green that is not made any more, an amber that has no modern equivalent, and a purple down at the end which Wino-T says was never made at all and came with the shop.\n\nThe labels are in a typeface you know. You know it the way you know a voice through a wall. You have gone up close to it four times and it has been four different typefaces, all of them the one you know.",
-    "mid": "Discontinued tonics in discontinued colours — a green nobody makes, an amber with no equivalent, a purple Wino-T says was never made and came with the shop. The labels are in a typeface you recognise, and it has been a different typeface each of the four times you have gone close.",
-    "high": "Discontinued tonics. The labels are in a familiar typeface, and it is a different one each time you look closely."
-   },
+   "description": "Hair tonics, all of them discontinued, in colours that were discontinued along with them: a green that is not made any more, an amber that has no modern equivalent, and a purple down at the end which Wino-T says was never made at all and came with the shop.\n\nThe labels are in a typeface you know. You know it the way you know a voice through a wall. You have gone up close to it four times and it has been four different typefaces, all of them the one you know.",
    "repeat": "Fifth time. Fifth face. All of them the one you know.",
    "monocle": "Through the gold the labels are not printed. They are struck — one character at a time, with the uneven pressure of a machine being worked by somebody who does not touch-type, and the purple bottle's label has been struck twice over itself because the first attempt came out as ONIONS.",
    "passive": [

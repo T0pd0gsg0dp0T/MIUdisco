@@ -132,10 +132,7 @@
    "narration": true
   },
   "arrangement_truth": {
-   "text": {
-    "low": "I do not mind it. I want to shay that firsht, becaushe you have the fashe again.\n\nWhatever ish finishing my platesh — ish kind. Ish careful. It doesh not shalt anything. It hash never onshe put a thing on a plate that did not belong there, and in fifty yearsh of kitchensh, Mishter Onionsh, that ish more than I can shay for any human being I have employed.\n\nIf ish going to take my platesh off me at the end, well. It hash earned them.",
-    "high": "I do not mind it. I want to shay that firsht, becaushe you have the fashe again.\n\nWhatever ish finishing my platesh — ish kind. Ish careful. It hash never onshe put a thing on a plate that did not belong there, and in fifty yearsh of kitchensh that ish more than I can shay for any human being I have employed.\n\nIf ish going to take my platesh off me at the end — well. It hash earned them."
-   },
+   "text": "I do not mind it. I want to shay that firsht, becaushe you have the fashe again.\n\nWhatever ish finishing my platesh — ish kind. Ish careful. It doesh not shalt anything. It hash never onshe put a thing on a plate that did not belong there, and in fifty yearsh of kitchensh, Mishter Onionsh, that ish more than I can shay for any human being I have employed.\n\nIf ish going to take my platesh off me at the end, well. It hash earned them.",
    "effects": {
     "relationship": {
      "chef_d": 1
@@ -151,10 +148,7 @@
    ]
   },
   "menu": {
-   "text": {
-    "low": "Yesh. Ish been happening shinsh before you were coming here.\n\nAnd I will tell you the part that nobody ashks, becaushe everybody ashks about the menu and nobody ashks about the *kitchen*: the dockets do not change. The paper that comesh to me is the paper that leavesh the front. I have kept them. I have a box of them going back yearsh, and every one of them ish what the man actually shaid, and it ish never what he thinksh he shaid.\n\nSho ish not the menu that ish moving, Mishter Onionsh. Ish not the food. Ish the *cushtomer*.",
-    "high": "Yesh. Shinsh before you were coming here.\n\nAnd I will tell you the part nobody ashks, becaushe everybody ashks about the menu and nobody ashks about the *kitchen*: the dockets do not change. I have kept them, yearsh of them, and every one ish what the man actually shaid, and it ish never what he thinksh he shaid.\n\nSho ish not the menu that ish moving. Ish the *cushtomer*."
-   },
+   "text": "Yesh. Ish been happening shinsh before you were coming here.\n\nAnd I will tell you the part that nobody ashks, becaushe everybody ashks about the menu and nobody ashks about the *kitchen*: the dockets do not change. The paper that comesh to me is the paper that leavesh the front. I have kept them. I have a box of them going back yearsh, and every one of them ish what the man actually shaid, and it ish never what he thinksh he shaid.\n\nSho ish not the menu that ish moving, Mishter Onionsh. Ish not the food. Ish the *cushtomer*.",
    "passive": [
     {
      "skill": "LOGIC",
@@ -192,10 +186,7 @@
    ]
   },
   "my_dockets": {
-   "text": {
-    "low": "She gosh to the box. It takesh a while and nobody in the kitchen filsh the gap and T doesh not shpeak, which is the most remarkable thing that hash happened in this room tonight.\n\nShe comesh back with eleven yearsh of dockets in a rubber band.\n\nEvery one of them ish blank.\n\n\"You have never onshe ordered,\" she says. \"Not in eleven yearsh. I have alwaysh known what you were having and I have alwaysh shent it and I have never onshe wondered why, until thish moment, shtanding here, holding it.\"",
-    "high": "She gosh to the box. It takesh a while, and T doesh not shpeak, which is the most remarkable thing that has happened in this room tonight.\n\nShe comesh back with eleven yearsh of dockets in a rubber band.\n\nEvery one of them ish blank.\n\n\"You have never onshe ordered,\" she says. \"Not in eleven yearsh. I have alwaysh known what you were having, and I have never onshe wondered why, until thish moment, holding it.\""
-   },
+   "text": "She gosh to the box. It takesh a while and nobody in the kitchen filsh the gap and T doesh not shpeak, which is the most remarkable thing that hash happened in this room tonight.\n\nShe comesh back with eleven yearsh of dockets in a rubber band.\n\nEvery one of them ish blank.\n\n\"You have never onshe ordered,\" she says. \"Not in eleven yearsh. I have alwaysh known what you were having and I have alwaysh shent it and I have never onshe wondered why, until thish moment, shtanding here, holding it.\"",
    "effects": {
     "clue": {
      "id": "c_blank_dockets",
@@ -241,10 +232,7 @@
    ]
   },
   "inspector": {
-   "text": {
-    "low": "Antopolish. Nine yearsh of Thurshdaysh and he hash never onshe eaten anything.\n\nHe measuresh my room twishe. He writesh down everything. He ish the mosht thorough man I have ever met and I have met a great many men who were paid to be thorough and were not.\n\nAnd then he shtampsh it and he shaysh good afternoon Chef and he goesh. And I have watched hish fashe while he shtampsh it, Mishter Onionsh, and hish fashe ish the fashe of a man shigning shomething he did not write.",
-    "high": "Antopolish. Nine yearsh of Thurshdaysh and he hash never onshe eaten anything.\n\nHe measuresh my room twishe. He writesh down everything. He ish the mosht thorough man I have ever met.\n\nAnd then he shtampsh it and shaysh good afternoon Chef and goesh. And I have watched hish fashe while he shtampsh it, and it ish the fashe of a man shigning shomething he did not write."
-   },
+   "text": "Antopolish. Nine yearsh of Thurshdaysh and he hash never onshe eaten anything.\n\nHe measuresh my room twishe. He writesh down everything. He ish the mosht thorough man I have ever met and I have met a great many men who were paid to be thorough and were not.\n\nAnd then he shtampsh it and he shaysh good afternoon Chef and he goesh. And I have watched hish fashe while he shtampsh it, Mishter Onionsh, and hish fashe ish the fashe of a man shigning shomething he did not write.",
    "options": [
     {
      "id": "ask_him",
@@ -286,10 +274,7 @@
    ]
   },
   "ficklefuk": {
-   "text": {
-    "low": "*What may be shaid to have occurred.*\n\nI have turned that over for four yearsh, Mishter Onionsh, at four in the morning, over shtock. And here ish where I have got to and you may have it for nothing:\n\nShomebody ish paying a man to write down what may be shaid. Not what happened — what may be *shaid*. And if you are paying for that, then you are not in the businesh of knowing thingsh.\n\nYou are in the businesh of deshiding what ish shayable.",
-    "high": "*What may be shaid to have occurred.*\n\nI have turned that over for four yearsh, at four in the morning, over shtock. Here ish where I have got to, and you may have it for nothing:\n\nShomebody ish paying a man to write down what may be *shaid*. Not what happened. And if you are paying for that, you are not in the businesh of knowing thingsh.\n\nYou are in the businesh of deshiding what ish shayable."
-   },
+   "text": "*What may be shaid to have occurred.*\n\nI have turned that over for four yearsh, Mishter Onionsh, at four in the morning, over shtock. And here ish where I have got to and you may have it for nothing:\n\nShomebody ish paying a man to write down what may be shaid. Not what happened — what may be *shaid*. And if you are paying for that, then you are not in the businesh of knowing thingsh.\n\nYou are in the businesh of deshiding what ish shayable.",
    "effects": {
     "clue": {
      "id": "c_sayable",
@@ -317,10 +302,7 @@
    ]
   },
   "teeth": {
-   "text": {
-    "low": "With my handsh.\n\nYou are laughing. Good. Ish a good anshwer and ish alsho true. Fifty yearsh, Mishter Onionsh. Fifty yearsh of a pan and a shpoon and a nose, and the tashte ish in the — shhhk — ish in the shound it makesh when ish right, and in the way it goesh over a shpoon, and in the shmell at the shecond it turnsh.\n\nI have not tashted anything shinsh 1971 and I have not shent out a bad plate shinsh 1974, and I would like thoshe two factsh read in that order, becaushe in the other order they are a shad shtory and in thish order they are my life.",
-    "high": "With my handsh.\n\nYou are laughing. Good. Ish a good anshwer and ish alsho true. Fifty yearsh of a pan and a shpoon and a nose, and the tashte ish in the — shhhk — in the shound it makesh when ish right, and in the shmell at the shecond it turnsh.\n\nI have not tashted anything shinsh 1971 and I have not shent out a bad plate shinsh 1974, and I would like thoshe two factsh read in that order — in the other order they are a shad shtory, and in thish order they are my life."
-   },
+   "text": "With my handsh.\n\nYou are laughing. Good. Ish a good anshwer and ish alsho true. Fifty yearsh, Mishter Onionsh. Fifty yearsh of a pan and a shpoon and a nose, and the tashte ish in the — shhhk — ish in the shound it makesh when ish right, and in the way it goesh over a shpoon, and in the shmell at the shecond it turnsh.\n\nI have not tashted anything shinsh 1971 and I have not shent out a bad plate shinsh 1974, and I would like thoshe two factsh read in that order, becaushe in the other order they are a shad shtory and in thish order they are my life.",
    "effects": {
     "morale": 10,
     "relationship": {

@@ -2,16 +2,8 @@
  "id": "hang_hi",
  "name": "Hang-Hi Quiet Apartments",
  "subtitle": "Second floor. Suspended from above. Nobody has ever explained from what.",
- "description": {
-  "low": "Home, insofar as the word survives contact with the building. The second floor hangs from something overhead rather than standing on anything below, and the residents treat this as a design feature the way other towns treat a nice cornice. Your corridor runs from the stair to your door in a length that has never twice been the same, and it is longer tonight, because you are walking it alone.\n\nInside, the flat has arranged itself into the shape it uses when you have been away: chair angled toward the window, desk under its usual weight of paper, the smell of wet wool coming off the coat you have not yet taken off. The lamp is on. You do not recall leaving it on, but the lamp and you have an arrangement and it has never yet been in writing.",
-  "mid": "Home. The second floor hangs from above rather than standing on anything below, which the residents treat as a cornice treats a wall. Your corridor was longer tonight, because you walked it alone.\n\nThe flat has arranged itself into its away-shape: chair to the window, desk under paper, the lamp on. You did not leave the lamp on. You and the lamp have an arrangement.",
-  "high": "Home, hanging from nothing. The lamp is on and you did not leave it on."
- },
- "revisit": {
-  "low": "The corridor gives you a different length again — shorter this time, companionably so, which from this building constitutes an apology. Your door is where you left it, which is not guaranteed and is never remarked upon.",
-  "mid": "The corridor is shorter this time. From this building, that is an apology.",
-  "high": "The corridor lets you through without argument."
- },
+ "description": "Home, insofar as the word survives contact with the building. The second floor hangs from something overhead rather than standing on anything below, and the residents treat this as a design feature the way other towns treat a nice cornice. Your corridor runs from the stair to your door in a length that has never twice been the same, and it is longer tonight, because you are walking it alone.\n\nInside, the flat has arranged itself into the shape it uses when you have been away: chair angled toward the window, desk under its usual weight of paper, the smell of wet wool coming off the coat you have not yet taken off. The lamp is on. You do not recall leaving it on, but the lamp and you have an arrangement and it has never yet been in writing.",
+ "revisit": "The corridor gives you a different length again — shorter this time, companionably so, which from this building constitutes an apology. Your door is where you left it, which is not guaranteed and is never remarked upon.",
  "lucid": {
   "2": "Under everything else, at the edge of the audible, there is a rhythm in the building that is not plumbing. Three or four strikes, then a pause. Then three or four more.",
   "3": "The pauses between the strikes have lengths. Some are short. One, tonight, goes on for most of a minute, and the building holds its breath through all of it, and then the striking resumes and something in the arrangement of your evening has been revised.",
@@ -35,11 +27,7 @@
     "pages",
     "notes"
    ],
-   "description": {
-    "low": "It came out of the harbour in your coat. Ninety pages of blue smear, ink gone to weather, the whole record of whatever you were doing before the sky handed you back.\n\nThree pages are dry. Not dried — dry. They sit in the middle of the ruin like a paragraph the flood was instructed to go around. The handwriting is yours. The words are yours in the sense that you would use them, in that order, with that comma. You have no memory of the sentence they make.",
-    "mid": "Ninety pages of blue smear. Three dry ones in the middle, untouched, in your handwriting. You would have written those words in that order. You did not write them.",
-    "high": "Three dry pages in a drowned notebook, in your hand, unremembered."
-   },
+   "description": "It came out of the harbour in your coat. Ninety pages of blue smear, ink gone to weather, the whole record of whatever you were doing before the sky handed you back.\n\nThree pages are dry. Not dried — dry. They sit in the middle of the ruin like a paragraph the flood was instructed to go around. The handwriting is yours. The words are yours in the sense that you would use them, in that order, with that comma. You have no memory of the sentence they make.",
    "repeat": "The three pages are still dry. You have stopped expecting this to change and have not stopped checking.",
    "monocle": "Through the gold, the smeared pages stay smeared — but the blue moves. It is not ink dispersing in water. It is ink being *withdrawn*, page by page, back toward a nib, in a slow careful retraction that has been going on for some time and is nearly finished. The three dry pages are not survivors. They are what has not been taken back yet.",
    "passive": [
@@ -116,11 +104,7 @@
     "glass",
     "reflection"
    ],
-   "description": {
-    "low": "A tall spotted glass in a frame the building insists came with the building. It reflects the corridor, the lamp, the coat rack, and you — in that order of enthusiasm, as though you were the item it was least contracted to include.\n\nHold still in front of it. Hold still longer than is comfortable, longer than a man checking his collar would. On a long enough hold, the corridor behind your reflection stops being the corridor. It becomes a room with a low ceiling and one lamp, and a desk under the lamp, and paper on the desk. Then it is the corridor again, and the mirror has the decency not to look pleased with itself.",
-    "mid": "A tall spotted glass. It reflects the corridor and includes you reluctantly. Hold still longer than a man checking his collar would, and the corridor behind you becomes a low room with one lamp, a desk, and paper. Then it stops.",
-    "high": "The mirror shows a low room, a lamp, a desk, paper. Then the corridor again."
-   },
+   "description": "A tall spotted glass in a frame the building insists came with the building. It reflects the corridor, the lamp, the coat rack, and you — in that order of enthusiasm, as though you were the item it was least contracted to include.\n\nHold still in front of it. Hold still longer than is comfortable, longer than a man checking his collar would. On a long enough hold, the corridor behind your reflection stops being the corridor. It becomes a room with a low ceiling and one lamp, and a desk under the lamp, and paper on the desk. Then it is the corridor again, and the mirror has the decency not to look pleased with itself.",
    "repeat": "The office comes faster now. You have got better at holding still, or it has got worse at waiting.",
    "lucid": {
     "3": "This time the office holds for four full seconds, and there is a hand in it. Not reaching for anything. Resting beside the paper, the way a hand rests when the person it belongs to is deciding.",
@@ -189,11 +173,7 @@
     "sign",
     "s"
    ],
-   "description": {
-    "low": "HANG-HI QUIET APARTMENT , says the board over the entry, the final S having been supplied years ago by somebody with a spray can and a sense of humour: a snake, coiled into the shape of the letter, green on a ground of flaking gold.\n\nIt is a good S. It is a better snake. It has been in a different coil every time you have had occasion to check, and you have never once caught it moving, which after eleven years you have decided to regard as manners.",
-    "mid": "HANG-HI QUIET APARTMENT , the final S supplied by a spray-painted snake, green on flaking gold. It is coiled differently every time. You have never caught it moving. You call this manners.",
-    "high": "The spray-painted snake that does the work of the final S has recoiled again."
-   },
+   "description": "HANG-HI QUIET APARTMENT , says the board over the entry, the final S having been supplied years ago by somebody with a spray can and a sense of humour: a snake, coiled into the shape of the letter, green on a ground of flaking gold.\n\nIt is a good S. It is a better snake. It has been in a different coil every time you have had occasion to check, and you have never once caught it moving, which after eleven years you have decided to regard as manners.",
    "repeat": "Recoiled. Same paint, same wall, different S.",
    "monocle": "Through the gold, the snake is not paint and is not a snake. It is a correction — a letter that was typed wrong, struck through, and typed again, and the strike-through is what you have been reading as a body all these years. It is still wet. It has been still wet since before you moved in.",
    "passive": [
@@ -253,11 +233,7 @@
     "landy",
     "paperwork"
    ],
-   "description": {
-    "low": "Lying Landy, the Unhandy Dandy, does not fix things. Landy files. Pinned to the corridor board in a fan of municipal beige is the complete record of his attentions: WINDOW 2F — WEATHER NONCONFORMING — RESOLVED. DOOR 2C — OPENS TO 3A ON THURSDAYS — RESOLVED. CORRIDOR — LENGTH — RESOLVED, RESOLVED, RESOLVED.\n\nEach one is stamped, bottom right, with a four-lobed seal and a line of small print: FILED WITH THE COALITION FOR CULPABILITY AND CONSTRUCTIVE CHANGE. NO FURTHER ACTION IS REQUIRED OF THE RESIDENT. NO FURTHER ACTION IS AVAILABLE TO THE RESIDENT.",
-    "mid": "A fan of beige notices on the corridor board. WINDOW 2F — WEATHER NONCONFORMING — RESOLVED. CORRIDOR — LENGTH — RESOLVED, RESOLVED, RESOLVED. Each stamped with a four-lobed seal: FILED WITH THE COALITION FOR CULPABILITY AND CONSTRUCTIVE CHANGE. NO FURTHER ACTION IS AVAILABLE TO THE RESIDENT.",
-    "high": "Repair notices, all marked RESOLVED, all stamped by a four-lobed seal: the Coalition for Culpability and Constructive Change."
-   },
+   "description": "Lying Landy, the Unhandy Dandy, does not fix things. Landy files. Pinned to the corridor board in a fan of municipal beige is the complete record of his attentions: WINDOW 2F — WEATHER NONCONFORMING — RESOLVED. DOOR 2C — OPENS TO 3A ON THURSDAYS — RESOLVED. CORRIDOR — LENGTH — RESOLVED, RESOLVED, RESOLVED.\n\nEach one is stamped, bottom right, with a four-lobed seal and a line of small print: FILED WITH THE COALITION FOR CULPABILITY AND CONSTRUCTIVE CHANGE. NO FURTHER ACTION IS REQUIRED OF THE RESIDENT. NO FURTHER ACTION IS AVAILABLE TO THE RESIDENT.",
    "repeat": "Three more since you last looked. The corridor has been RESOLVED twice this week.",
    "monocle": "Under the gold, the word RESOLVED is not a word. It is the same three characters typed over and over on top of themselves until the paper gave up and agreed to be black there. Nothing was resolved. Something was insisted on, at length, by a machine.",
    "passive": [
@@ -322,11 +298,7 @@
     "harbor",
     "view"
    ],
-   "description": {
-    "low": "The glass gives you the harbour, the fog, and the perpetual violet overhead going about its slow crimson business. Down there, the water is holding whatever came out of the sky and is not offering it up.\n\nAnd the sound is still there. Rotors. Slow ones, the heavy unhurried chop of a machine holding a position, somewhere off past the breakwater in fog too thick to hold a machine. It has not stopped since you came out of the water. Nobody else has mentioned it. You have twice asked, in the specific casual voice, and been answered in the specific casual voice, and the answer both times was about the weather.",
-    "mid": "Harbour, fog, violet going crimson. The water is holding what came out of the sky. And the rotors are still going — heavy, unhurried, a machine holding position in fog too thick to hold a machine. Nobody else has mentioned it. You have asked twice and been answered about the weather.",
-    "high": "Rotors, still, off past the breakwater. Nobody else hears them."
-   },
+   "description": "The glass gives you the harbour, the fog, and the perpetual violet overhead going about its slow crimson business. Down there, the water is holding whatever came out of the sky and is not offering it up.\n\nAnd the sound is still there. Rotors. Slow ones, the heavy unhurried chop of a machine holding a position, somewhere off past the breakwater in fog too thick to hold a machine. It has not stopped since you came out of the water. Nobody else has mentioned it. You have twice asked, in the specific casual voice, and been answered in the specific casual voice, and the answer both times was about the weather.",
    "repeat": "Still turning. Same position, same unhurried chop, same fog that could not possibly contain it.",
    "lucid": {
     "3": "Listen to the rhythm rather than the sound. It is not rotors. It is a hand returning to the same four keys, over and over, while its owner works out what the next word is."
@@ -403,11 +375,7 @@
     "papers",
     "typewriter"
    ],
-   "description": {
-    "low": "A door on two trestles, which is what a desk is when a man has decided that furniture is a distraction from work. Paper in drifts. A dozen abandoned openings to a dozen abandoned somethings, each one a single confident sentence followed by a great deal of white.\n\nThere is no typewriter on it. There has never been a typewriter on it. There is, in the dust at the back edge, a rectangle where the dust is thinner, of a size, with four small round gaps at the corners.",
-    "mid": "A door on two trestles. Paper in drifts, a dozen confident opening sentences and a great deal of white. No typewriter. In the dust at the back edge: a thinner rectangle, of a size, with four small round gaps at the corners.",
-    "high": "No typewriter on the desk. A rectangle in the dust where one has not been standing, with four round gaps at the corners."
-   },
+   "description": "A door on two trestles, which is what a desk is when a man has decided that furniture is a distraction from work. Paper in drifts. A dozen abandoned openings to a dozen abandoned somethings, each one a single confident sentence followed by a great deal of white.\n\nThere is no typewriter on it. There has never been a typewriter on it. There is, in the dust at the back edge, a rectangle where the dust is thinner, of a size, with four small round gaps at the corners.",
    "repeat": "The rectangle in the dust has not filled in. Dust does not work like that, and this dust has been given other instructions.",
    "monocle": "Through the gold the rectangle is occupied. There is a typewriter there, black and heavy and mid-sentence, and it is not translucent or ghostly or any of the things the word would lead you to expect. It is simply present, and the room has been asked not to include it.",
    "passive": [
@@ -527,7 +495,7 @@
     "patch",
     "floor"
    ],
-   "description": "By the window, where the light would have been best, the boards carry a rectangle about the size of a bread oven in which the dust is a different age from the dust around it.\n\nFour small round depressions at the corners, pressed into the grain over a long enough period that the wood has taken them permanently. Whatever stood here stood here for years, and it was heavy, and it had feet rather than a base.",
+   "description": "By the window, where the light would have been best for most of the day, the boards carry a rectangle about the size of a bread oven in which the dust is a different age from the dust around it.\n\nFour small round depressions sit at its corners, pressed down into the grain over a period long enough that the wood has stopped intending to come back up. You can put a fingertip in one. It is deeper than a fingertip.\n\nWhatever stood here stood here for years and it was heavy and it had feet rather than a base, and it was placed with some care — the rectangle is square to the window rather than square to the room, which is what a man does when what matters is the light falling on the work rather than the furniture looking tidy.\n\nThe boards around it are worn in a shallow arc on the near side. Somebody sat there. For a long time, in a chair that moved a little, doing something that required them to be close.",
    "repeat": "The rectangle is where it was. The dust inside it is still the wrong age and is getting no older.",
    "monocle": "Through the gold the rectangle is not empty. There is a machine in it, and it is being used, and the man using it has his back to you and does not turn round, and the light through the window falls on both of you at once from two different times of day.",
    "passive": [
@@ -590,7 +558,7 @@
     "residents",
     "others"
    ],
-   "description": "Nine floors hanging off nothing, and on every one of them somebody is at home this evening: a radio on four, a bath running on six, somebody on two who has been moving furniture for an hour and is not finished.\n\nYou have lived here eleven years and could not name one of them.",
+   "description": "Nine floors hanging off nothing at all, and on every one of them somebody is at home this evening.\n\nThere is a radio on four. It has been on since you came in and it is playing the sort of programme that is mostly talking, and it will go off at eleven, because it goes off at eleven. There is a bath running on six — the pipes announce it through the whole west stack, a long rising note that tops out and holds. And there is somebody on two who has been moving furniture for the better part of an hour and has not yet found where they want it.\n\nIt is a full building. It sounds exactly like a full building sounds on a cold evening: occupied, unremarkable, faintly companionable through a wall.\n\nYou have lived here eleven years.\n\nYou could not name one of them. Not one. Not a face on the stair, not a parcel taken in, not a nod at the letterboxes — and until this moment, standing in your own hallway listening to a bath you have heard a thousand times, it has never once struck you as strange.",
    "repeat": "The radio on four is still on. Whoever it is has not changed the station in eleven years.",
    "monocle": "Through the gold there is nobody on any of the floors. The radio is playing to an empty room, correctly, on schedule, and has been doing it for as long as the building has needed to sound occupied.",
    "passive": [

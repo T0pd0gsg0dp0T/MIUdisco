@@ -2,16 +2,8 @@
  "id": "rest_assured",
  "name": "Rest Assured",
  "subtitle": "Because Death Should Rest in Peace — Not in Pieces.",
- "description": {
-  "low": "Obsidian, and a great deal of it. The stone does not reflect the violet overhead; it takes it in and returns nothing, so that the building reads at distance as a hole in the town cut roughly to the shape of a building. Fractal work is etched across the whole face of it, fine as frost, and it holds still under a direct look and is doing something else at the corner of the eye.\n\nThe slogan is over the door in letters of restrained gold: BECAUSE DEATH SHOULD REST IN PEACE — NOT IN PIECES. Inside, the silence is not the absence of noise. It is a maintained condition, the way a temperature is maintained, and it costs something to run.\n\nThe vaults go back further than the building goes back. Nobody who works here regards that as a fact about the building.",
-  "mid": "Obsidian that takes the violet in and returns nothing, so the place reads as a hole cut to the shape of a building. Fractal etching, still under a direct look and busy at the edge of the eye. BECAUSE DEATH SHOULD REST IN PEACE — NOT IN PIECES. Inside, the silence is maintained rather than natural, and the vaults go back further than the building does.",
-  "high": "Obsidian, fractal etching, maintained silence. The vaults go back further than the building."
- },
- "revisit": {
-  "low": "Soliloquy is where she was, at an angle she has not adjusted, and the count of vaults along the near wall is not the count you left with. You have stopped doing the count aloud. She noticed that you stopped, and approved, and said so in a way that took ninety seconds and rhymed twice.",
-  "mid": "Soliloquy has not adjusted her angle. The count along the near wall has changed again. You have stopped doing it aloud; she noticed, and approved, at length.",
-  "high": "The count along the near wall has changed again."
- },
+ "description": "Obsidian, and a great deal of it. The stone does not reflect the violet overhead; it takes it in and returns nothing, so that the building reads at distance as a hole in the town cut roughly to the shape of a building. Fractal work is etched across the whole face of it, fine as frost, and it holds still under a direct look and is doing something else at the corner of the eye.\n\nThe slogan is over the door in letters of restrained gold: BECAUSE DEATH SHOULD REST IN PEACE — NOT IN PIECES. Inside, the silence is not the absence of noise. It is a maintained condition, the way a temperature is maintained, and it costs something to run.\n\nThe vaults go back further than the building goes back. Nobody who works here regards that as a fact about the building.",
+ "revisit": "Soliloquy is where she was, at an angle she has not adjusted, and the count of vaults along the near wall is not the count you left with. You have stopped doing the count aloud. She noticed that you stopped, and approved, and said so in a way that took ninety seconds and rhymed twice.",
  "lucid": {
   "2": "The whispers in the air here are not consistent in language but are consistent in rhythm, and the rhythm is a sentence being composed rather than a sentence being spoken.",
   "3": "Under the whispering: paper. Not turning — being *fed*, drawn round a roller one line at a time, and then the small definite noise of a lever thrown at the end of it.",
@@ -33,11 +25,7 @@
     "names",
     "vaults"
    ],
-   "description": {
-    "low": "Brass, recessed, one to a door, engraved to a standard that suggests the engraver was paid by the hour and enjoyed the work. Name, two dates, and a line of the family's choosing.\n\nThe trick — and it is done to everyone, and Soliloquy will confirm it without being asked and without being helpful — is that on first look the plate carries your own name. Not a resemblance. Your name, your spelling, the middle one included, which is not a name you have used in public since a form in 1994. It holds for less than a second and then it is a stranger's, and the stranger's dates are ordinary, and the family's chosen line is something about a garden.",
-    "mid": "Brass plates, one to a door: name, two dates, a chosen line. On first look each carries your own name — spelling and middle name included, a name you have not used in public since 1994 — for under a second. Then it is a stranger's, with ordinary dates and something about a garden.",
-    "high": "Each brass plate shows your full name for under a second, then a stranger's."
-   },
+   "description": "Brass, recessed, one to a door, engraved to a standard that suggests the engraver was paid by the hour and enjoyed the work. Name, two dates, and a line of the family's choosing.\n\nThe trick — and it is done to everyone, and Soliloquy will confirm it without being asked and without being helpful — is that on first look the plate carries your own name. Not a resemblance. Your name, your spelling, the middle one included, which is not a name you have used in public since a form in 1994. It holds for less than a second and then it is a stranger's, and the stranger's dates are ordinary, and the family's chosen line is something about a garden.",
    "repeat": "It happens on every plate and it has not stopped happening. The middle name is the detail you keep returning to. Nobody in Silvora Reefs knows the middle name.",
    "lucid": {
     "3": "The second date on your name is not blank. You have never got a clean look at it and you have stopped pretending that is bad luck."
@@ -117,11 +105,7 @@
     "blank vault",
     "no plate"
    ],
-   "description": {
-    "low": "Third from the end of the west corridor, and it has no plate. Not a blank plate — no plate, no recess, no screw holes, no discolouration where a plate has been taken off. The door was made without provision for one.\n\nThe seam around it is not sealed. It stands very slightly ajar, at a width of perhaps two fingers, and it has stood at exactly that width every time you have been in this corridor. Through it there is light: warm, low, single-source, of the kind a lamp with a green shade makes.\n\nYou have never got closer than eight feet. Not because you are prevented. Because on each approach Soliloquy has arrived beside you with something to say, and the something has always been long, and by the end of it you have been somewhere else.",
-    "mid": "Third from the end, west corridor, no plate — no recess, no screw holes, no provision ever made. It stands two fingers ajar, at exactly that width every time, with warm low light behind it of the kind a green-shaded lamp makes. You have never got closer than eight feet; Soliloquy always arrives with something long to say.",
-    "high": "The unmarked vault stands two fingers ajar. Green lamplight behind it. You have never got closer than eight feet."
-   },
+   "description": "Third from the end of the west corridor, and it has no plate. Not a blank plate — no plate, no recess, no screw holes, no discolouration where a plate has been taken off. The door was made without provision for one.\n\nThe seam around it is not sealed. It stands very slightly ajar, at a width of perhaps two fingers, and it has stood at exactly that width every time you have been in this corridor. Through it there is light: warm, low, single-source, of the kind a lamp with a green shade makes.\n\nYou have never got closer than eight feet. Not because you are prevented. Because on each approach Soliloquy has arrived beside you with something to say, and the something has always been long, and by the end of it you have been somewhere else.",
    "repeat": "Two fingers. Always two fingers. A door that has been left ajar is a door somebody intends to come back through.",
    "lucid": {
     "2": "The light behind it moves when the whispering pauses.",
@@ -199,11 +183,7 @@
     "register",
     "records"
    ],
-   "description": {
-    "low": "On a stand by the vestibule, open, because Soliloquy holds that the dead have nothing to hide and the living should be encouraged in the habit.\n\nColumns: NAME. RECEIVED. VAULT. PAID BY. It runs back a long way in several hands and one ink.\n\nThe PAID BY column is the one. Family, family, estate, family, parish, family — and then, at intervals of no pattern you can find, a run of entries where the column reads only: ACCOUNT SETTLED IN ADVANCE BY THE COALITION. Forty or so, scattered across decades. The names in those rows are not remarkable. The dates in those rows are not remarkable. What they have in common is not in the ledger.",
-    "mid": "NAME. RECEIVED. VAULT. PAID BY. Mostly family and estates — and then, at no pattern, forty-odd rows reading only ACCOUNT SETTLED IN ADVANCE BY THE COALITION. Nothing else connects them.",
-    "high": "Forty-odd interments across the decades read: ACCOUNT SETTLED IN ADVANCE BY THE COALITION."
-   },
+   "description": "On a stand by the vestibule, open, because Soliloquy holds that the dead have nothing to hide and the living should be encouraged in the habit.\n\nColumns: NAME. RECEIVED. VAULT. PAID BY. It runs back a long way in several hands and one ink.\n\nThe PAID BY column is the one. Family, family, estate, family, parish, family — and then, at intervals of no pattern you can find, a run of entries where the column reads only: ACCOUNT SETTLED IN ADVANCE BY THE COALITION. Forty or so, scattered across decades. The names in those rows are not remarkable. The dates in those rows are not remarkable. What they have in common is not in the ledger.",
    "repeat": "You count the Coalition rows again and get a different number again, and this time you were watching your own finger.",
    "monocle": "Through the gold the Coalition rows have a further column that the page does not otherwise carry, headed REASON, and every entry in it says the same three words: NOTICED TOO MUCH.",
    "passive": [
@@ -280,11 +260,7 @@
     "brass plaque",
     "numbers"
    ],
-   "description": {
-    "low": "Set into the wall of the vestibule at the height of a plate, in the same brass, by the same hand. It carries no name and no dates. It carries a number, five digits, engraved.\n\nEngraved. Not printed, not displayed, not on any mechanism. Cut into brass, permanently, by a tool.\n\nIt was 04412 the first time you saw it. It is not 04412 now.",
-    "mid": "A brass plaque at plate height with no name and no dates. Five engraved digits — cut into the metal, not displayed by any mechanism. It was 04412 the first time. It is not now.",
-    "high": "A brass plaque carrying five engraved digits. The number has changed since you last read it."
-   },
+   "description": "Set into the wall of the vestibule at the height of a plate, in the same brass, by the same hand. It carries no name and no dates. It carries a number, five digits, engraved.\n\nEngraved. Not printed, not displayed, not on any mechanism. Cut into brass, permanently, by a tool.\n\nIt was 04412 the first time you saw it. It is not 04412 now.",
    "repeat": "Lower. Always lower. Nobody has been near it and there is no tool in this building that could have been.",
    "monocle": "The gold shows the brass mid-cut: a burin in the metal, moving, unheld, and behind it the ghosts of every number it has been, stacked back through 04412 and past it, thousands of them, all the way to a first cut that is out of sight below the plaque and going down.",
    "passive": [
@@ -351,11 +327,7 @@
     "air",
     "sound"
    ],
-   "description": {
-    "low": "They travel in the air rather than along the stone, which is the wrong way round for a building of this shape, and they are constant, and they are almost words.\n\nStand still and give them a minute and they resolve. Not into a voice — into a *sentence*, assembled out of the general susurrus by the same trick that assembles a face out of wallpaper. They are all on one subject. They are about death, and they are about dreams, and they never mention one without the other, and the grammar of them is careful in a way that overheard speech is not.",
-    "mid": "Constant, almost words, travelling through the air rather than along the stone — which is the wrong way round here. Given a minute they resolve into sentences, always about death and dreams together, and the grammar is more careful than overheard speech has any business being.",
-    "high": "The whispers resolve, given a minute. Always death and dreams together, in careful grammar."
-   },
+   "description": "They travel in the air rather than along the stone, which is the wrong way round for a building of this shape, and they are constant, and they are almost words.\n\nStand still and give them a minute and they resolve. Not into a voice — into a *sentence*, assembled out of the general susurrus by the same trick that assembles a face out of wallpaper. They are all on one subject. They are about death, and they are about dreams, and they never mention one without the other, and the grammar of them is careful in a way that overheard speech is not.",
    "repeat": "They have got easier to resolve. This is not the direction that sort of thing usually goes.",
    "monocle": "The gold does nothing to them, because they are not visual, and the failure is informative: the monocle reveals what a thing is made of, and it has no opinion about these at all, the way it has no opinion about your own voice.",
    "check": {
@@ -452,7 +424,7 @@
     "jamb",
     "two fingers"
    ],
-   "description": "West corridor, past the count that will not settle: one obsidian door standing about two fingers off its jamb, and it has stood that way for as long as anybody here has been asked about it.\n\nSoliloquy's position is that it is not open, it is *unclosed*, and that the distinction is the whole of her profession. She will not be drawn further and she will not let you put a hand on it.",
+   "description": "West corridor, past the count that will not settle: one obsidian door standing about two fingers off its jamb, and it has stood that way for as long as anybody in this building has been asked about it.\n\nThe stone is very black and very cold and takes a fingerprint beautifully, and it is entirely free of fingerprints, which in a building this old is its own kind of statement.\n\nSoliloquy's position — delivered in couplets, at length, and with the specific fluency of a woman who has answered this question before — is that it is not open, it is *unclosed*, and that the distinction is the whole of her profession and the reason there is a keeper here at all. She will not be drawn further. She will also not let you put a hand on it, and she does not make a performance of preventing you; she simply arrives at your elbow, courteously, every single time, and stays there until you have moved on.",
    "repeat": "Two fingers. You have measured it with the same two fingers four times now and it has been the same four times.",
    "monocle": "Through the gold the gap has a hand in it, holding the door off the jamb, and the hand is not straining. It has been resting there a long time and could close it whenever it liked.",
    "passive": [
@@ -513,7 +485,7 @@
     "view",
     "hill"
    ],
-   "description": "The mausoleum stands above everything, and from the west corridor's one window the whole of Silvora Reefs is laid out under the fog in the green of its own lamps.\n\nFrom this height it is possible to watch the entire town do its evening at once, which nobody who lives in it has any reason to do, and which Soliloquy does nightly and has never mentioned to anybody.",
+   "description": "The mausoleum stands above everything, which is the point of a mausoleum, and from the west corridor's one window the whole of Silvora Reefs is laid out beneath the fog in the green of its own lamps.\n\nYou can see the harbour road and the roof of Durry Kwain. You can see the queue outside Mary's, moving, always moving. You can see the smoke off Ben's, going up through a roof that has no vent in it, and the lit sign at the Möbius holding its coil, and one window burning on the second floor of a building that hangs from nothing.\n\nFrom this height it is possible to watch an entire town do its evening at once — every lit room, every errand, every small ordinary act of maintenance, simultaneously, in one glance.\n\nNobody who lives down there has any reason to come up here and look at it.\n\nSoliloquy does it nightly. She has never mentioned this to anybody, and there is a chair by the window, and the chair faces out.",
    "repeat": "The lamps are still on. The town is still doing its evening. Somebody down there has just closed a shutter.",
    "monocle": "Through the gold the town is a page seen from the top corner, and the lamps are not lamps, they are the places where the writing is densest, and there are large areas with nothing on them at all.",
    "effects": {

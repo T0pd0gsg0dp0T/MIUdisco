@@ -38,6 +38,9 @@ _models: dict = {}          # model name -> loaded PiperVoice
 _queue: "queue.Queue | None" = None
 _worker: threading.Thread | None = None
 _player: list[str] | None = None
+_current: "subprocess.Popen | None" = None
+_lock = threading.Lock()
+_skip = threading.Event()
 
 
 # --------------------------------------------------------------- normalising
@@ -211,23 +214,67 @@ def _synthesise(spec: dict, text: str, out: Path) -> bool:
 
 
 def _run() -> None:
+    global _current
     while True:
         item = _queue.get()
         if item is None:
             return
         spec, text = item
         try:
+            if _skip.is_set():
+                continue          # a skip landed while this was still queued
             path = _cache_path(spec, text)
             if not path.exists():
                 if not _synthesise(spec, text, path):
                     continue
-            if _player:
-                subprocess.run(_player + [str(path)],
-                               stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            if _player and not _skip.is_set():
+                # Popen rather than run: the player has to stay killable, or
+                # skipping ahead leaves the previous line talking over the next
+                # screen for several seconds.
+                with _lock:
+                    _current = subprocess.Popen(
+                        _player + [str(path)],
+                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                proc = _current
+                proc.wait()
+                with _lock:
+                    if _current is proc:
+                        _current = None
         except Exception:
             pass
         finally:
             _queue.task_done()
+
+
+def stop() -> None:
+    """Cut playback now and drop anything queued behind it.
+
+    Called whenever the player moves on — a keypress, a menu choice, a new
+    scene. Audio that describes the previous screen is worse than no audio.
+    """
+    global _current
+    if not _enabled:
+        return
+    _skip.set()
+    try:
+        while True:
+            try:
+                _queue.get_nowait()
+                _queue.task_done()
+            except queue.Empty:
+                break
+        with _lock:
+            proc, _current = _current, None
+        if proc and proc.poll() is None:
+            proc.terminate()
+            try:
+                proc.wait(timeout=0.4)
+            except Exception:
+                proc.kill()
+    except Exception:
+        pass
+    finally:
+        _skip.clear()
 
 
 # -------------------------------------------------------------------- public

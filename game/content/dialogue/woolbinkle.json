@@ -106,10 +106,7 @@
    ]
   },
   "feeling": {
-   "text": {
-    "low": "It's not a — I want to be careful, because people hear 'feeling' and they hear something *mystical*, and it isn't, and I'd hate you to think I was claiming anything.\n\nIt's more like — you know when you've laid a table for somebody and then you hear the gate? It's that. Only I lay the table first and the gate comes after, and it has been coming after for eleven years, and I have stopped being surprised and I have never once stopped being *relieved*.\n\nBecause the alternative, Mr Onions, is that one day I get the feeling and I put one in and nobody comes.",
-    "high": "It's not a — I want to be careful, because people hear 'feeling' and they hear something *mystical*, and it isn't.\n\nIt's more like — you know when you've laid a table for somebody and then you hear the gate? It's that. Only I lay the table first and the gate comes after, and it has been coming after for eleven years, and I have never once stopped being *relieved*.\n\nBecause the alternative is that one day I get the feeling and I put one in and nobody comes."
-   },
+   "text": "It's not a — I want to be careful, because people hear 'feeling' and they hear something *mystical*, and it isn't, and I'd hate you to think I was claiming anything.\n\nIt's more like — you know when you've laid a table for somebody and then you hear the gate? It's that. Only I lay the table first and the gate comes after, and it has been coming after for eleven years, and I have stopped being surprised and I have never once stopped being *relieved*.\n\nBecause the alternative, Mr Onions, is that one day I get the feeling and I put one in and nobody comes.",
    "passive": [
     {
      "skill": "EMPATHY",
@@ -163,10 +160,7 @@
    ]
   },
   "third_of_march": {
-   "text": {
-    "low": "You can have it. The can. If you want it.\n\nNo — listen, before you're polite at me: I have been keeping that on a shelf for a year and a half in a shop where nobody has ever once asked me what's in the cans, and you asked, and that is the entire transaction, and you don't have to want it.\n\nBut it's yours if you want it. It's the only thing in this building I've ever managed to keep and I would quite like to have given it to somebody.",
-    "high": "You can have it. The can. If you want it.\n\nNo — before you're polite at me: I've kept that on a shelf for a year and a half in a shop where nobody has ever once asked what's in the cans, and you asked. That's the entire transaction. You don't have to want it.\n\nBut it's yours if you do. It's the only thing in this building I've ever managed to keep, and I'd quite like to have given it to somebody."
-   },
+   "text": "You can have it. The can. If you want it.\n\nNo — listen, before you're polite at me: I have been keeping that on a shelf for a year and a half in a shop where nobody has ever once asked me what's in the cans, and you asked, and that is the entire transaction, and you don't have to want it.\n\nBut it's yours if you want it. It's the only thing in this building I've ever managed to keep and I would quite like to have given it to somebody.",
    "options": [
     {
      "id": "take",
@@ -199,10 +193,7 @@
    "narration": true
   },
   "take_can": {
-   "text": {
-    "low": "He gets it down with both hands and he checks the seal, which does not need checking, and he checks it again.\n\n\"It'll hold,\" he says. \"I did it properly. I do them all properly, I've never done a bad one, that's — anyway. It'll hold.\"\n\nAnd then, to the oven, not to you: \"Eleven years I've been canning things nobody wanted and it turns out the whole time the trick was somebody asking. That's — I'm going to think about that later. I'm going to think about that a lot later and probably at an unhelpful hour.\"",
-    "high": "He gets it down with both hands and checks the seal, which does not need checking, and checks it again.\n\n\"It'll hold,\" he says. \"I did it properly. I do them all properly.\"\n\nAnd then, to the oven rather than to you: \"Eleven years canning things nobody wanted, and it turns out the trick was somebody asking. I'm going to think about that later. Probably at an unhelpful hour.\""
-   },
+   "text": "He gets it down with both hands and he checks the seal, which does not need checking, and he checks it again.\n\n\"It'll hold,\" he says. \"I did it properly. I do them all properly, I've never done a bad one, that's — anyway. It'll hold.\"\n\nAnd then, to the oven, not to you: \"Eleven years I've been canning things nobody wanted and it turns out the whole time the trick was somebody asking. That's — I'm going to think about that later. I'm going to think about that a lot later and probably at an unhelpful hour.\"",
    "options": [
     {
      "id": "back",
@@ -223,10 +214,7 @@
    ]
   },
   "cans": {
-   "text": {
-    "low": "No. No, it isn't food, and I'll tell you straight because you've clearly read the labels and there's no version of this where I look better for being coy about it.\n\nI can things. Not preserves — I mean I can, as a verb, as a *practice*. Something happens and it's got a shape and if you leave it out it goes off, or worse, it goes *vague*, and vague is worse than off because you can throw off away.\n\nSo I get it in a can while it's still got its shape. March, patience. That's a can with a March in it. There's four hours of a Tuesday in the one at the end that I would not sell you for the shop.",
-    "high": "No, it isn't food, and I'll tell you straight, because there's no version of this where I look better for being coy.\n\nI can things. Not preserves — I mean *can*, as a practice. Something happens and it's got a shape, and if you leave it out it goes off, or worse it goes *vague*, and vague is worse than off because you can throw off away.\n\nSo I get it in a can while it's still got its shape. March, patience. There's four hours of a Tuesday in the one at the end that I would not sell you for the shop."
-   },
+   "text": "No. No, it isn't food, and I'll tell you straight because you've clearly read the labels and there's no version of this where I look better for being coy about it.\n\nI can things. Not preserves — I mean I can, as a verb, as a *practice*. Something happens and it's got a shape and if you leave it out it goes off, or worse, it goes *vague*, and vague is worse than off because you can throw off away.\n\nSo I get it in a can while it's still got its shape. March, patience. That's a can with a March in it. There's four hours of a Tuesday in the one at the end that I would not sell you for the shop.",
    "options": [
     {
      "id": "why_learn",
@@ -270,10 +258,7 @@
    ]
   },
   "the_after": {
-   "text": {
-    "low": "And here's the thing I've worked out that you might actually have a use for, since you go about this parish collecting things.\n\nEverything here goes vague. Everything. The menus, the hallways, the count of the vaults, that neon at Mary's — all of it, all the time, and everybody's fine with it because they've never seen anything hold still.\n\nMy cans hold still. Eleven years, forty cans, not one gone vague.\n\nAnd I'm nobody. I'm a franchisee with a bad history and an oven. If *I* can make something in this town that holds — then holding is possible here, Mr Onions, and if holding is possible then somebody has been choosing not to.",
-    "high": "And here's the thing I've worked out that you might have a use for, since you go about collecting things.\n\nEverything here goes vague. The menus, the hallways, the count of the vaults, that neon at Mary's — all of it, all the time, and everybody's fine with it because they've never seen anything hold still.\n\nMy cans hold still. Eleven years, forty cans, not one gone vague.\n\nAnd I'm nobody. If *I* can make something in this town that holds, then holding is possible — and if holding is possible, somebody has been choosing not to."
-   },
+   "text": "And here's the thing I've worked out that you might actually have a use for, since you go about this parish collecting things.\n\nEverything here goes vague. Everything. The menus, the hallways, the count of the vaults, that neon at Mary's — all of it, all the time, and everybody's fine with it because they've never seen anything hold still.\n\nMy cans hold still. Eleven years, forty cans, not one gone vague.\n\nAnd I'm nobody. I'm a franchisee with a bad history and an oven. If *I* can make something in this town that holds — then holding is possible here, Mr Onions, and if holding is possible then somebody has been choosing not to.",
    "effects": {
     "clue": {
      "id": "c_holding_is_possible",
@@ -370,10 +355,7 @@
    ]
   },
   "poem_ok": {
-   "text": {
-    "low": "Right. Right, and now I'm going to say the bit I've never said, because you've earned about four minutes of me being unbearable.\n\nThe poem's got it wrong in one place. One place, and it's not the cannibalism, the cannibalism is accurate.\n\nShe never said nope. She said *not yet*. And whoever wrote it changed it to nope for the rhyme, and it is a better rhyme, and I have spent eleven years understanding that it is a better rhyme.",
-    "high": "Right. And now the bit I've never said, because you've earned about four minutes of me being unbearable.\n\nThe poem's got it wrong in one place, and it isn't the cannibalism. The cannibalism is accurate.\n\nShe never said nope. She said *not yet*. Whoever wrote it changed it for the rhyme, and it is a better rhyme, and I have spent eleven years understanding that it is a better rhyme."
-   },
+   "text": "Right. Right, and now I'm going to say the bit I've never said, because you've earned about four minutes of me being unbearable.\n\nThe poem's got it wrong in one place. One place, and it's not the cannibalism, the cannibalism is accurate.\n\nShe never said nope. She said *not yet*. And whoever wrote it changed it to nope for the rhyme, and it is a better rhyme, and I have spent eleven years understanding that it is a better rhyme.",
    "effects": {
     "clue": {
      "id": "c_changed_for_the_rhyme",
@@ -410,10 +392,7 @@
    ]
   },
   "chuckles": {
-   "text": {
-    "low": "Because he's not funny.\n\nNo — I know how that sounds. Listen. Every joke he tells that lands wrong puts a patch of that stuff in my restaurant, and I have to work round them, and they're bad for trade, and last month there were nine.\n\nAnd every single one of them goes away when somebody laughs. Anybody. Any laugh, even a rubbish one, even one done out of pity from three tables off.\n\nSo what I have got, Mr Onions, is a man who reliably produces a problem that can only be solved by a room full of people being kind to a stranger. On purpose. Eleven times a night. And he's been doing it for six years and he thinks he's dying out there and I have never had the heart to tell him what he actually does.",
-    "high": "Because he's not funny.\n\nNo — listen. Every joke that lands wrong puts a patch of that stuff in my restaurant, and they're bad for trade, and last month there were nine.\n\nAnd every single one goes away when somebody laughs. Anybody. Even a rubbish one, even one done out of pity from three tables off.\n\nSo what I have got is a man who reliably produces a problem that can only be solved by a room full of people being kind to a stranger. Eleven times a night, six years. He thinks he's dying out there, and I have never had the heart to tell him what he actually does."
-   },
+   "text": "Because he's not funny.\n\nNo — I know how that sounds. Listen. Every joke he tells that lands wrong puts a patch of that stuff in my restaurant, and I have to work round them, and they're bad for trade, and last month there were nine.\n\nAnd every single one of them goes away when somebody laughs. Anybody. Any laugh, even a rubbish one, even one done out of pity from three tables off.\n\nSo what I have got, Mr Onions, is a man who reliably produces a problem that can only be solved by a room full of people being kind to a stranger. On purpose. Eleven times a night. And he's been doing it for six years and he thinks he's dying out there and I have never had the heart to tell him what he actually does.",
    "effects": {
     "clue": {
      "id": "c_chuckles_function",

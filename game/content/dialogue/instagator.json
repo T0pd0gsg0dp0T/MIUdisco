@@ -94,10 +94,7 @@
    ]
   },
   "step_four": {
-   "text": {
-    "low": "Reposition.\n\nAnd before you ask — no, I can't walk you through five, because five is post-incident and we're pre-incident, and honestly if we're doing five then you and I have both had a bad night and I'd rather we didn't.\n\nCircling back to your original: the page. We're on the page where a gentleman is enjoying a drink and has not put his hand through any part of my employer's building. I like that page. I've read it eleven years running and it holds up.",
-    "high": "Reposition.\n\nAnd before you ask — no, I can't walk you through five. Five is post-incident and we're pre-incident, and if we're doing five then you and I have both had a bad night.\n\nCircling back to your original: the page. We're on the page where a gentleman is enjoying a drink and has not put his hand through any part of my employer's building. I've read it eleven years running and it holds up."
-   },
+   "text": "Reposition.\n\nAnd before you ask — no, I can't walk you through five, because five is post-incident and we're pre-incident, and honestly if we're doing five then you and I have both had a bad night and I'd rather we didn't.\n\nCircling back to your original: the page. We're on the page where a gentleman is enjoying a drink and has not put his hand through any part of my employer's building. I like that page. I've read it eleven years running and it holds up.",
    "effects": {
     "clue": {
      "id": "c_pre_incident",
@@ -160,10 +157,7 @@
    ]
   },
   "the_draft": {
-   "text": {
-    "low": "Look — genuinely, off the record, and I'll deny this and the denial will be sincere because by then it'll be true:\n\nI like this job. I'm good at it. I appear places. I have a jaw. And every single thing I do all night is in service of a patron *not finishing a thought*, and I have started to have a thought of my own about that, at around four in the morning, in the back corridor, which as you know is also the front corridor.\n\nThe thought is: nobody has ever told me what happens if the thought gets finished. Not the patron's. Mine.\n\nAnyway. Circling back — how's your drink.",
-    "high": "Look — off the record, and I'll deny this, and the denial will be sincere because by then it'll be true:\n\nI like this job. I appear places. I have a jaw. And every single thing I do all night is in service of a patron *not finishing a thought* — and I've started having a thought of my own about that, at four in the morning, in the back corridor, which as you know is also the front corridor.\n\nThe thought is: nobody has ever told me what happens if the thought gets finished. Not the patron's. Mine.\n\nAnyway. How's your drink."
-   },
+   "text": "Look — genuinely, off the record, and I'll deny this and the denial will be sincere because by then it'll be true:\n\nI like this job. I'm good at it. I appear places. I have a jaw. And every single thing I do all night is in service of a patron *not finishing a thought*, and I have started to have a thought of my own about that, at around four in the morning, in the back corridor, which as you know is also the front corridor.\n\nThe thought is: nobody has ever told me what happens if the thought gets finished. Not the patron's. Mine.\n\nAnyway. Circling back — how's your drink.",
    "effects": {
     "relationship": {
      "instagator": 1
@@ -228,10 +222,7 @@
    ]
   },
   "read_the_card": {
-   "text": {
-    "low": "I'm going to be straight with you, because you read the card and that has genuinely not happened before and I'm finding it destabilising in a way I'll need to take to my one-to-one.\n\nWe don't escalate people for noticing. That's a myth and I'd love to kill it. Noticing is fine. Noticing is *most* of our patron base, they notice all night, they notice and then they order another one and it goes away.\n\nWe escalate for *saying it twice*.\n\nOnce is a comment. Twice is a position. Positions get logged, logs go to the Coalition, and I don't have visibility past that and I've stopped putting in the ticket.",
-    "high": "I'm going to be straight with you, because you read the card and that has genuinely not happened before.\n\nWe don't escalate people for noticing. That's a myth and I'd love to kill it. Noticing is *most* of our patron base — they notice, then they order another one and it goes away.\n\nWe escalate for *saying it twice*.\n\nOnce is a comment. Twice is a position. Positions get logged, logs go to the Coalition, and I don't have visibility past that."
-   },
+   "text": "I'm going to be straight with you, because you read the card and that has genuinely not happened before and I'm finding it destabilising in a way I'll need to take to my one-to-one.\n\nWe don't escalate people for noticing. That's a myth and I'd love to kill it. Noticing is fine. Noticing is *most* of our patron base, they notice all night, they notice and then they order another one and it goes away.\n\nWe escalate for *saying it twice*.\n\nOnce is a comment. Twice is a position. Positions get logged, logs go to the Coalition, and I don't have visibility past that and I've stopped putting in the ticket.",
    "effects": {
     "clue": {
      "id": "c_twice_is_a_position",
@@ -259,10 +250,7 @@
    ]
   },
   "doctrine": {
-   "text": {
-    "low": "Yeah, that's a known issue.\n\nI raised it. I raised it formally, I raised it in writing, and I've raised it in three consecutive alignments, and the response is always the same and the response is: correct.\n\nNot 'that's a contradiction, we'll fix it'. Not 'good catch'. Just — correct. Both. The anomaly did not occur, and log the anomaly. And I've stopped hearing it as two instructions and started hearing it as one, and I'd honestly rather I hadn't.",
-    "high": "Yeah, known issue.\n\nI raised it formally, in writing, in three consecutive alignments, and the response is always the same: correct.\n\nNot 'that's a contradiction, we'll fix it'. Just — correct. Both. The anomaly did not occur, and log the anomaly. And I've stopped hearing it as two instructions and started hearing it as one, and I'd rather I hadn't."
-   },
+   "text": "Yeah, that's a known issue.\n\nI raised it. I raised it formally, I raised it in writing, and I've raised it in three consecutive alignments, and the response is always the same and the response is: correct.\n\nNot 'that's a contradiction, we'll fix it'. Not 'good catch'. Just — correct. Both. The anomaly did not occur, and log the anomaly. And I've stopped hearing it as two instructions and started hearing it as one, and I'd honestly rather I hadn't.",
    "options": [
     {
      "id": "one_instruction",
@@ -307,10 +295,7 @@
    ]
   },
   "delete_key": {
-   "text": {
-    "low": "So here's my ask, and it's a real one, and I've never made it before.\n\nDon't say the big one out loud in my venue.\n\nI don't know what your big one is. I can see you've got one — you've got the walk of a man carrying a sentence. But if you say it in here, twice, I will write it in the book. Not because I'm ordered to. Because I *will*. I'll do it the way you'd catch a glass.\n\nAnd then it won't have happened, and you'll still be standing there, and you won't know what you've lost, and I will, and I'll have to circle back on it at four in the morning in a corridor with one side.",
-    "high": "So here's my ask, and it's a real one, and I've never made it before.\n\nDon't say the big one out loud in my venue.\n\nI don't know what your big one is — but you've got the walk of a man carrying a sentence. If you say it in here twice, I will write it in the book. Not because I'm ordered to. Because I *will*. I'll do it the way you'd catch a glass.\n\nAnd then it won't have happened, and you'll still be standing there, and you won't know what you've lost, and I will."
-   },
+   "text": "So here's my ask, and it's a real one, and I've never made it before.\n\nDon't say the big one out loud in my venue.\n\nI don't know what your big one is. I can see you've got one — you've got the walk of a man carrying a sentence. But if you say it in here, twice, I will write it in the book. Not because I'm ordered to. Because I *will*. I'll do it the way you'd catch a glass.\n\nAnd then it won't have happened, and you'll still be standing there, and you won't know what you've lost, and I will, and I'll have to circle back on it at four in the morning in a corridor with one side.",
    "effects": {
     "flag": {
      "gator_asked_you_not_to": true
@@ -386,10 +371,7 @@
    ]
   },
   "the_card_shown": {
-   "text": {
-    "low": "You want my read? Since we're here.\n\nActivation isn't a bomb. Nobody writes 'there will be nothing further to secure' about a bomb — a bomb leaves a great deal to secure, ask anybody in facilities.\n\nThat's what you write when the *thing being secured* stops needing to be. When the patron finishes the thought.\n\nSo. Whatever your big one is, Mr Onions — and I've stopped pretending I don't know your name — I'd get it right before you say it. You'll only get to say it once, and after that I'm not going to be here to log it.",
-    "high": "You want my read? Since we're here.\n\nActivation isn't a bomb. Nobody writes 'there will be nothing further to secure' about a bomb — a bomb leaves a great deal to secure, ask anybody in facilities.\n\nThat's what you write when the *thing being secured* stops needing to be. When the patron finishes the thought.\n\nSo whatever your big one is, Mr Onions — and I've stopped pretending I don't know your name — get it right before you say it. You'll only say it once, and after that I won't be here to log it."
-   },
+   "text": "You want my read? Since we're here.\n\nActivation isn't a bomb. Nobody writes 'there will be nothing further to secure' about a bomb — a bomb leaves a great deal to secure, ask anybody in facilities.\n\nThat's what you write when the *thing being secured* stops needing to be. When the patron finishes the thought.\n\nSo. Whatever your big one is, Mr Onions — and I've stopped pretending I don't know your name — I'd get it right before you say it. You'll only get to say it once, and after that I'm not going to be here to log it.",
    "effects": {
     "clue": {
      "id": "c_activation_is_finishing",

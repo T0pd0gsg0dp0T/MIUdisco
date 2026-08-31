@@ -105,10 +105,7 @@
    "narration": true
   },
   "corridor": {
-   "text": {
-    "low": "Correct. It doesn't turn and it brings you back forward. That's the building. That's what the building is *called*, it's on the sign in red, we did not hide it.\n\nAnd here's the thing you're about to do, and I'd rather you didn't, so I'm going to name it first: you're about to treat that as a problem. It isn't. A problem is something you can be hit by. That corridor has never hit anybody. Whereas my ice machine is a problem, and my licensing is a problem, and the fact that a man came in here Tuesday and *walked at a wall* is very much a problem, and none of those are impossible and all of them are mine.",
-    "high": "Correct. It doesn't turn and it brings you back forward. That's what the building is *called* — it's on the sign in red, we did not hide it.\n\nAnd here's the thing you're about to do, so I'll name it first: you're about to treat that as a problem. It isn't. A problem is something you can be hit by, and that corridor has never hit anybody.\n\nMy ice machine is a problem. My licensing is a problem. A man came in here Tuesday and *walked at a wall* — very much a problem. None of those are impossible and all of them are mine."
-   },
+   "text": "Correct. It doesn't turn and it brings you back forward. That's the building. That's what the building is *called*, it's on the sign in red, we did not hide it.\n\nAnd here's the thing you're about to do, and I'd rather you didn't, so I'm going to name it first: you're about to treat that as a problem. It isn't. A problem is something you can be hit by. That corridor has never hit anybody. Whereas my ice machine is a problem, and my licensing is a problem, and the fact that a man came in here Tuesday and *walked at a wall* is very much a problem, and none of those are impossible and all of them are mine.",
    "passive": [
     {
      "skill": "EMPATHY",
@@ -195,10 +192,7 @@
    ]
   },
   "corridor_stance": {
-   "text": {
-    "low": "Now. Since we're being adults about it, one piece of advice, free, and you'll ignore it because men who investigate always do.\n\nEverything in this town that's gone wrong for somebody has gone wrong at the moment they *lunged*. Not when they looked — looking's free, look all you like, I look. When they lunged. Reached, grabbed, ran at, shouted at.\n\nYou fight a thing bigger than you by making it come to you. It's not brave and it's not satisfying and it is the only thing that has ever worked. Keep your weight down, Onions.",
-    "high": "Since we're being adults about it: one piece of advice, free, and you'll ignore it because men who investigate always do.\n\nEverything in this town that's gone wrong for somebody went wrong the moment they *lunged*. Not when they looked — looking's free, I look. When they reached, grabbed, ran at, shouted at.\n\nYou fight a thing bigger than you by making it come to you. It isn't brave and it isn't satisfying and it's the only thing that has ever worked. Keep your weight down, Onions."
-   },
+   "text": "Now. Since we're being adults about it, one piece of advice, free, and you'll ignore it because men who investigate always do.\n\nEverything in this town that's gone wrong for somebody has gone wrong at the moment they *lunged*. Not when they looked — looking's free, look all you like, I look. When they lunged. Reached, grabbed, ran at, shouted at.\n\nYou fight a thing bigger than you by making it come to you. It's not brave and it's not satisfying and it is the only thing that has ever worked. Keep your weight down, Onions.",
    "effects": {
     "relationship": {
      "ginny": 1
@@ -403,10 +397,7 @@
    ]
   },
   "revilo_reveal": {
-   "text": {
-    "low": "She does not ask what a monocle has to do with it. She does not ask who Revilo is. Both of those omissions are answers.\n\n\"Onions. I'm going to tell you a thing and then I'm going to ask you to leave, and the leaving isn't hostile, it's *tactical*, and I need you to take it in that spirit.\n\nI don't own this club. I've never owned this club. I manage it, I sign for it, my name's on the licence and I've never once met the freeholder — the paperwork comes through the Coalition and the instructions come on cards with four lobes on them, and the instructions are always about the same thing.\n\nThey're always about a man. Height, coat, a cane with an onion on it. Eleven years of cards telling me what to do if a specific man ever walks in the front.\"",
-    "high": "She does not ask what a monocle has to do with it. She does not ask who Revilo is. Both omissions are answers.\n\n\"Onions. I'm going to tell you a thing and then ask you to leave, and the leaving isn't hostile, it's *tactical*.\n\nI don't own this club. Never have. I manage it, I sign for it, and I have never once met the freeholder — the paperwork comes through the Coalition and the instructions come on cards with four lobes on them.\n\nThey're always about a man. Height, coat, a cane with an onion on it. Eleven years of cards telling me what to do if a specific man walks in the front.\""
-   },
+   "text": "She does not ask what a monocle has to do with it. She does not ask who Revilo is. Both of those omissions are answers.\n\n\"Onions. I'm going to tell you a thing and then I'm going to ask you to leave, and the leaving isn't hostile, it's *tactical*, and I need you to take it in that spirit.\n\nI don't own this club. I've never owned this club. I manage it, I sign for it, my name's on the licence and I've never once met the freeholder — the paperwork comes through the Coalition and the instructions come on cards with four lobes on them, and the instructions are always about the same thing.\n\nThey're always about a man. Height, coat, a cane with an onion on it. Eleven years of cards telling me what to do if a specific man ever walks in the front.\"",
    "effects": {
     "clue": {
      "id": "c_cards_about_you",
@@ -435,10 +426,7 @@
    "narration": true
   },
   "what_do": {
-   "text": {
-    "low": "\"Let him in. Let him look. Do not stop him. Do not help him.\"\n\nShe picks the gin back up and does not drink it.\n\n\"Eleven years, Onions. Same three lines, every card. Somebody has been holding a door open for you for eleven years and paying eleven staff to stand near it and not touch you.\n\nNow get out of my club. Come back tomorrow — come back every day, I'm not barring you, I'm *timing* you. But the gators have had a card this week they haven't shown me, and a card they haven't shown me is the first one in eleven years, and I would like you on the other side of my door while I find out what's on it.\"",
-    "high": "\"Let him in. Let him look. Do not stop him. Do not help him.\"\n\nShe picks the gin back up and does not drink it.\n\n\"Same three lines, every card, eleven years. Somebody has been holding a door open for you and paying eleven staff to stand near it and not touch you.\n\nNow get out of my club. Come back tomorrow — I'm not barring you, I'm *timing* you. But the gators have had a card this week they haven't shown me, and that's the first in eleven years, and I want you the other side of my door while I find out what's on it.\""
-   },
+   "text": "\"Let him in. Let him look. Do not stop him. Do not help him.\"\n\nShe picks the gin back up and does not drink it.\n\n\"Eleven years, Onions. Same three lines, every card. Somebody has been holding a door open for you for eleven years and paying eleven staff to stand near it and not touch you.\n\nNow get out of my club. Come back tomorrow — come back every day, I'm not barring you, I'm *timing* you. But the gators have had a card this week they haven't shown me, and a card they haven't shown me is the first one in eleven years, and I would like you on the other side of my door while I find out what's on it.\"",
    "effects": {
     "clue": {
      "id": "c_new_card",
@@ -469,10 +457,7 @@
    ]
   },
   "gators": {
-   "text": {
-    "low": "The laminated card. Yes. I wrote lines one through four.\n\nI did not write line five. Line five arrived. And line five used to be one sentence and now it's two, and the second sentence is 'log the anomaly', and I have never seen the log, and I have asked four times, and each time I've been told — courteously, in that voice they do — that they'll circle back.\n\nEleven years of circling back, Onions. They have circled back precisely never, and they say it every single time like it's the first.",
-    "high": "The laminated card. I wrote lines one through four.\n\nI did not write line five. Line five arrived. And it used to be one sentence and now it's two, and the second is 'log the anomaly'. I've never seen the log. I've asked four times, and each time been told — courteously, in that voice they do — that they'll circle back.\n\nEleven years of circling back. They have circled back precisely never, and they say it every time like it's the first."
-   },
+   "text": "The laminated card. Yes. I wrote lines one through four.\n\nI did not write line five. Line five arrived. And line five used to be one sentence and now it's two, and the second sentence is 'log the anomaly', and I have never seen the log, and I have asked four times, and each time I've been told — courteously, in that voice they do — that they'll circle back.\n\nEleven years of circling back, Onions. They have circled back precisely never, and they say it every single time like it's the first.",
    "effects": {
     "clue": {
      "id": "c_log_exists",

@@ -2,16 +2,8 @@
  "id": "cheeses_thrice",
  "name": "Cheeses Thrice Pizza",
  "subtitle": "Holy, profane, and extremely responsive to how the room is doing.",
- "description": {
-  "low": "The name is a pun with a congregation and the spokesman is a figure called Jesus Crust who appears on the boxes with his arms out, and Woolbinkle has been asked to modify this by three separate parish committees and has, each time, agreed enthusiastically and changed nothing.\n\nThe room reads the room. That is the whole of the phenomenon and it takes about four minutes to become undeniable: when the table by the window laughed, the lights came up a quarter and the far wall came in three feet and the place got cosier; when the couple at the back stopped speaking to each other, the temperature dropped and the ceiling went away somewhere and everybody found themselves sitting further apart.\n\nNobody adjusts anything. There is no thermostat behind the counter. There is a bull antelope with crooked antlers and thick wool-like fur, watching the door with an expression of enormous and effortful hope.",
-  "mid": "A pun with a congregation, a spokesman called Jesus Crust, and three parish committees enthusiastically ignored. The room reads the room: when the window table laughed the lights came up and the far wall came in three feet; when the couple at the back stopped speaking the temperature dropped and everyone found themselves further apart. Nobody adjusts anything. There is no thermostat.",
-  "high": "The room's dimensions and temperature follow the diners' mood. There is no thermostat."
- },
- "revisit": {
-  "low": "Your order is already in the oven. Woolbinkle says, in the tone of a man laying down a difficult card, that he had a feeling you would be hungry for answers today, and then watches your face for slightly too long to see whether that was all right to say.",
-  "mid": "Your order is already in the oven. Woolbinkle says he had a feeling you would be hungry for answers today, and watches your face slightly too long to see whether that was all right.",
-  "high": "Your order is already in the oven. He had a feeling."
- },
+ "description": "The name is a pun with a congregation and the spokesman is a figure called Jesus Crust who appears on the boxes with his arms out, and Woolbinkle has been asked to modify this by three separate parish committees and has, each time, agreed enthusiastically and changed nothing.\n\nThe room reads the room. That is the whole of the phenomenon and it takes about four minutes to become undeniable: when the table by the window laughed, the lights came up a quarter and the far wall came in three feet and the place got cosier; when the couple at the back stopped speaking to each other, the temperature dropped and the ceiling went away somewhere and everybody found themselves sitting further apart.\n\nNobody adjusts anything. There is no thermostat behind the counter. There is a bull antelope with crooked antlers and thick wool-like fur, watching the door with an expression of enormous and effortful hope.",
+ "revisit": "Your order is already in the oven. Woolbinkle says, in the tone of a man laying down a difficult card, that he had a feeling you would be hungry for answers today, and then watches your face for slightly too long to see whether that was all right to say.",
  "lucid": {
   "2": "The oven is not making the noise the oven is making.",
   "3": "When the room contracts, it contracts by whole feet, in one movement, between one glance and the next. Rooms do not have a smallest unit. This one does.",
@@ -32,11 +24,7 @@
     "blend",
     "order"
    ],
-   "description": {
-    "low": "The holy secret and the reason the parish committees keep coming. Three cheeses, and Woolbinkle will not say which, and the blend does something in the last forty seconds of the bake that has made this establishment famous in a town that is difficult to make famous anything in.\n\nIt patterns. As it goes molten it draws — briefly, legibly, and unmistakably about the person who ordered it. The couple at the back got a closed door. The family by the window got a long table with too many chairs. It resolves into ordinary bubbling within about four seconds and there is a general understanding in Silvora Reefs that you do not comment on somebody else's.\n\nYours is coming out now. Woolbinkle is standing between you and the oven with a peel in his hands and his shoulders set.",
-    "mid": "Three cheeses, none named, and in the last forty seconds of the bake the blend patterns — legibly, and about whoever ordered it. The couple at the back got a closed door. The family by the window got a long table with too many chairs. It resolves in four seconds and nobody comments on anybody else's. Yours is coming out now, and Woolbinkle is standing between you and the oven.",
-    "high": "The cheese patterns legibly about whoever ordered it. Yours is coming out, and Woolbinkle is standing in front of the oven."
-   },
+   "description": "The holy secret and the reason the parish committees keep coming. Three cheeses, and Woolbinkle will not say which, and the blend does something in the last forty seconds of the bake that has made this establishment famous in a town that is difficult to make famous anything in.\n\nIt patterns. As it goes molten it draws — briefly, legibly, and unmistakably about the person who ordered it. The couple at the back got a closed door. The family by the window got a long table with too many chairs. It resolves into ordinary bubbling within about four seconds and there is a general understanding in Silvora Reefs that you do not comment on somebody else's.\n\nYours is coming out now. Woolbinkle is standing between you and the oven with a peel in his hands and his shoulders set.",
    "repeat": "He stands in front of the oven every time now. He has started doing it before you order.",
    "monocle": "Through the gold you do not need him to move. The pattern is legible through him: it is a page, and it is dense, and it has a wide left margin and a ragged right one, and about two thirds of the way down there is a gap where a paragraph has been taken out and the surrounding text has not been closed up.",
    "check": {
@@ -84,11 +72,7 @@
     "static",
     "chuckles"
    ],
-   "description": {
-    "low": "Chuckles is not funny. That is not an opinion held about Chuckles, it is his professional situation, and he has been in it for a long time and continues to arrive.\n\nWhen a joke fails here, the failure has a physical consequence. A patch of air about a yard across goes thick — fog, sometimes; sometimes a sort of dry static that makes the light behind it grainy — and it stays where it happened. Diners walk around them. There are four in the room at the moment and two of them are old enough to have collected an ashtray.\n\nA polite laugh dissolves them. Anybody's. It does not have to be sincere and it does not have to be near.",
-    "mid": "Chuckles is not funny; this is his professional situation, not an opinion. Failed jokes leave a yard-wide patch of thick air — fog, or a dry static that makes the light grainy — where they happened. Diners walk around them. Four in the room, two old enough to have collected an ashtray. Any polite laugh dissolves them.",
-    "high": "Failed jokes leave yard-wide patches of fog or static. Diners walk around them. A polite laugh dissolves them."
-   },
+   "description": "Chuckles is not funny. That is not an opinion held about Chuckles, it is his professional situation, and he has been in it for a long time and continues to arrive.\n\nWhen a joke fails here, the failure has a physical consequence. A patch of air about a yard across goes thick — fog, sometimes; sometimes a sort of dry static that makes the light behind it grainy — and it stays where it happened. Diners walk around them. There are four in the room at the moment and two of them are old enough to have collected an ashtray.\n\nA polite laugh dissolves them. Anybody's. It does not have to be sincere and it does not have to be near.",
    "repeat": "Six now. The new ones are by the counter, which means he has moved on to the staff.",
    "monocle": "Through the gold the patches are not fog. They are blank. Not white — *unwritten*, with the texture of paper that has had nothing put on it, and the room's description simply stops at the edge of each one and resumes on the other side.",
    "passive": [
@@ -166,11 +150,7 @@
     "prints",
     "pictures"
    ],
-   "description": {
-    "low": "Framed harbour prints. Six of them, in a row, above the banquette: the breakwater, the fish quay, two of the lighthouse from different years, and a long one of the whole waterfront in weather.\n\nThe couple at the next table have been here as long as you have. Ask them and they will tell you, without hesitating and without any sense of contradiction, that the wall above the banquette has a mounted pike on it and always has.\n\nYou can both point at it. You have done. Your fingers arrive at the same place on the same wall.",
-    "mid": "Six framed harbour prints above the banquette: breakwater, fish quay, two lighthouses, a long waterfront in weather. The couple at the next table will tell you without hesitation that the wall has a mounted pike on it and always has. You can both point at it, and your fingers arrive at the same place.",
-    "high": "You see six harbour prints. The next table sees a mounted pike. You both point at the same place."
-   },
+   "description": "Framed harbour prints. Six of them, in a row, above the banquette: the breakwater, the fish quay, two of the lighthouse from different years, and a long one of the whole waterfront in weather.\n\nThe couple at the next table have been here as long as you have. Ask them and they will tell you, without hesitating and without any sense of contradiction, that the wall above the banquette has a mounted pike on it and always has.\n\nYou can both point at it. You have done. Your fingers arrive at the same place on the same wall.",
    "repeat": "Still prints for you. The couple have gone and been replaced by a man who sees a map.",
    "monocle": "Through the gold there is nothing above the banquette. Not a blank wall — a blank *space*, with the same unwritten texture as Chuckles' fog, and a note in the margin beside it in small pencil: SOMETHING ON THIS WALL.",
    "passive": [
@@ -246,11 +226,7 @@
     "preserves",
     "jars"
    ],
-   "description": {
-    "low": "Behind the counter, at head height, running the whole length: cans. Not stock — stock is in the back, you have seen the back. These are on display and they are labelled in Woolbinkle's own hand and they are not food.\n\nThe labels are dates and single words. *March, patience.* *Two winters ago, the letter.* *A Tuesday, hope, unopened.* Forty or so, going back years, and the newest four are at the near end and they are dusty in a way that says they were put up together and some time ago.\n\nHe has told you, when asked, that he cans things. He said it the way a man says he swims.",
-    "mid": "Behind the counter at head height, the whole length: cans, not stock, labelled in Woolbinkle's own hand and not containing food. 'March, patience.' 'Two winters ago, the letter.' 'A Tuesday, hope, unopened.' Forty or so. He has said, when asked, that he cans things — the way a man says he swims.",
-    "high": "Forty cans labelled with dates and single words. Not food. He says he cans things."
-   },
+   "description": "Behind the counter, at head height, running the whole length: cans. Not stock — stock is in the back, you have seen the back. These are on display and they are labelled in Woolbinkle's own hand and they are not food.\n\nThe labels are dates and single words. *March, patience.* *Two winters ago, the letter.* *A Tuesday, hope, unopened.* Forty or so, going back years, and the newest four are at the near end and they are dusty in a way that says they were put up together and some time ago.\n\nHe has told you, when asked, that he cans things. He said it the way a man says he swims.",
    "repeat": "There is a new one at the near end. It says: *Tonight, the man who asked.*",
    "monocle": "Through the gold the cans are exactly what the labels say, sealed and airtight and completely intact, and every one of them is holding. It is the only shelf of anything in Silvora Reefs that is not leaking, revising, or quietly disagreeing with itself, and it has been built by hand out of the only technique its maker had.",
    "passive": [
@@ -324,7 +300,7 @@
     "cantelope",
     "cant elope"
    ],
-   "description": "Framed, behind the till, at a height that suggests it was hung by somebody who did not want to be seen hanging it.\n\nTHE CAN'T ELOPE ANTELOPE. Forty-odd lines of the most relentless punning in the parish — the cans and the can'ts and the can-can, the belle who would not fool with a full-of-bull fool of a bull antelope — and it is genuinely funny, and it is funny the whole way through, which is harder than it looks and is not an accident.\n\nWoolbinkle has hung it himself. He has never mentioned it. It is in three establishments in this town and this is the only one where the antelope put it up.",
+   "description": "Framed, behind the till, at a height that suggests it was hung by somebody who did not want to be observed hanging it and did not want it read too easily afterwards.\n\nTHE CAN'T ELOPE ANTELOPE. Forty-odd lines of the most relentless punning in the parish — the cans and the can'ts and the can-can, the belle who would not fool with a full-of-bull fool of a bull antelope — and it is genuinely, properly funny. It is funny in the first line and it is still funny in the fortieth, which is very much harder than it looks and does not happen by accident.\n\nThe frame is good. The glass has been cleaned recently and cleaned well, on both sides, which means somebody took it off the wall to do it.\n\nWoolbinkle hung it himself. He has never mentioned it, and he has never once been in the room when anybody has read it aloud, and the poem is in three establishments in this town and this is the only one where the antelope put it up.",
    "repeat": "Still behind the till. Still hung slightly too high to read comfortably, which you have started to suspect is also not an accident.",
    "monocle": "Through the gold the poem is a draft with the corrections still showing, and every correction moves in the same direction, which is toward mercy.",
    "passive": [
@@ -389,7 +365,7 @@
     "tables",
     "chuckles"
    ],
-   "description": "Eleven tables, a low stage that is really a pallet with a cloth over it, and a man in a checked jacket doing material that is not going to work.\n\nIt does not work. The room knows within about four words that it is not going to work, and what the room does next is the thing worth watching.",
+   "description": "Eleven tables, a low stage that is really a pallet with a cloth over it, and a man in a checked jacket doing material that is not going to work.\n\nIt does not work. The room knows within about four words that it is not going to work — there is a particular quality to the quiet that arrives when a joke has been recognised as a joke and declined — and the comedian knows it too, and carries on, because carrying on is the job.\n\nWhat the room does next is the thing worth watching.\n\nNothing visible happens. Nobody catches anybody's eye. Nobody nudges anybody. And then, from table nine, a beat and a half late and entirely alone, somebody laughs — not the laugh of a person who found it funny, but a clear, deliberate, carrying laugh, produced on purpose, at some social cost, by a person eating on their own.\n\nAnd then table four does it. And then the pair by the window.",
    "repeat": "He is on again. The room is doing it again, and it is doing it without any of them having agreed to.",
    "monocle": "Through the gold the room is not an audience. It is a repair crew, and it is working, and the patch it is closing is above the third table and about a yard across.",
    "passive": [

@@ -66,10 +66,7 @@
    ]
   },
   "photos": {
-   "text": {
-    "low": "Both are true, good sir, and I would not have one of them off the wall for the world.\n\nThe camera records the *field*. An inch and a half, taken from the lateral aspect, bilaterally, and there is no dispute and I would not attempt one — I have measured it myself with a rule, out of professional interest, and the camera is correct.\n\nThe signatures record the *presentation*. And a man's presentation is not his field. It is what is said about the field, by him, to himself, in a glass, every morning of his life. I do not touch that. I have never touched it. I merely change the field by an inch and a half and then the man goes home and revises.",
-    "high": "Both are true, good sir, and I would not have one of them off the wall for the world.\n\nThe camera records the *field*. An inch and a half from the lateral aspect, bilaterally — I have measured it myself with a rule, and the camera is correct.\n\nThe signatures record the *presentation*. And a man's presentation is not his field. It is what is said about the field, by him, to himself, in a glass, every morning of his life. I do not touch that. I change the field by an inch and a half, and then the man goes home and revises."
-   },
+   "text": "Both are true, good sir, and I would not have one of them off the wall for the world.\n\nThe camera records the *field*. An inch and a half, taken from the lateral aspect, bilaterally, and there is no dispute and I would not attempt one — I have measured it myself with a rule, out of professional interest, and the camera is correct.\n\nThe signatures record the *presentation*. And a man's presentation is not his field. It is what is said about the field, by him, to himself, in a glass, every morning of his life. I do not touch that. I have never touched it. I merely change the field by an inch and a half and then the man goes home and revises.",
    "passive": [
     {
      "skill": "RHETORIC",
@@ -138,10 +135,7 @@
    ]
   },
   "measurements": {
-   "text": {
-    "low": "I have kept that book locked these eight years, good sir, and I could not have told you why, and now I can, and I find I preferred not knowing.\n\nThere is a page in it with two entries. Same measurements, same hand, mine, eight years apart. And beside the first one I have written a single word of my own, in the margin, and the word is *asymmetric* — which is a thing I write when a man's parting will not sit where his crown says it should.\n\nBeside the second — beside yours, good sir — I have written the same word.\n\nAnd the two of you part on opposite sides.",
-    "high": "I have kept that book locked these eight years and could not have told you why, and now I can, and I find I preferred not knowing.\n\nThere is a page with two entries. Same measurements, same hand — mine — eight years apart. Beside the first I wrote one word in the margin: *asymmetric*. A thing I write when a man's parting will not sit where his crown says it should.\n\nBeside the second — beside yours — I have written the same word.\n\nAnd the two of you part on opposite sides."
-   },
+   "text": "I have kept that book locked these eight years, good sir, and I could not have told you why, and now I can, and I find I preferred not knowing.\n\nThere is a page in it with two entries. Same measurements, same hand, mine, eight years apart. And beside the first one I have written a single word of my own, in the margin, and the word is *asymmetric* — which is a thing I write when a man's parting will not sit where his crown says it should.\n\nBeside the second — beside yours, good sir — I have written the same word.\n\nAnd the two of you part on opposite sides.",
    "effects": {
     "clue": {
      "id": "c_opposite_partings",
@@ -206,10 +200,7 @@
    ]
   },
   "after_cut": {
-   "text": {
-    "low": "Now, good sir. Off with you.\n\nAnd take this with you, without charge, for it is the only medicine I dispense and it goes stale in the jar: whatever it is that has you walking about this parish at all hours with your collar up — you will not settle it by looking at it harder. You have been looking at it harder for a fortnight and it has cost you the temporal region.\n\nChange the field. Any inch and a half will do. Then go and see what gets revised.",
-    "high": "Now, good sir. Off with you.\n\nAnd take this without charge, for it is the only medicine I dispense and it goes stale in the jar: whatever has you walking this parish at all hours with your collar up, you will not settle it by looking at it harder. You have been looking harder for a fortnight and it has cost you the temporal region.\n\nChange the field. Any inch and a half will do. Then go and see what gets revised."
-   },
+   "text": "Now, good sir. Off with you.\n\nAnd take this with you, without charge, for it is the only medicine I dispense and it goes stale in the jar: whatever it is that has you walking about this parish at all hours with your collar up — you will not settle it by looking at it harder. You have been looking at it harder for a fortnight and it has cost you the temporal region.\n\nChange the field. Any inch and a half will do. Then go and see what gets revised.",
    "options": [
     {
      "id": "back",
@@ -219,10 +210,7 @@
    ]
   },
   "name": {
-   "text": {
-    "low": "Surgery. Yes. It is not lost on me, good sir, it has never been lost on me, and I should very much like the record to show that it was not my doing.\n\nI was christened Jeremy. The 'Sir' I awarded myself at nineteen in a moment of considerable pretension and I have never had the nerve to withdraw it. The town did the rest — said the two together often enough and quickly enough and by about my thirtieth year the pun had *set*, and the profession followed the name, and I did not choose barbering, good sir, barbering was concluded about me.\n\nI have made my peace. It is honest work and the blade is honest and I am the only man in this parish whose employment can be deduced from his own vowels.",
-    "high": "Surgery. Yes. It has never been lost on me, and I should like the record to show it was not my doing.\n\nI was christened Jeremy. The 'Sir' I awarded myself at nineteen in a moment of considerable pretension and have never had the nerve to withdraw. The town did the rest — said the two together often enough that by my thirtieth year the pun had *set*, and the profession followed the name. I did not choose barbering, good sir. Barbering was concluded about me.\n\nI have made my peace. I am the only man in this parish whose employment can be deduced from his own vowels."
-   },
+   "text": "Surgery. Yes. It is not lost on me, good sir, it has never been lost on me, and I should very much like the record to show that it was not my doing.\n\nI was christened Jeremy. The 'Sir' I awarded myself at nineteen in a moment of considerable pretension and I have never had the nerve to withdraw it. The town did the rest — said the two together often enough and quickly enough and by about my thirtieth year the pun had *set*, and the profession followed the name, and I did not choose barbering, good sir, barbering was concluded about me.\n\nI have made my peace. It is honest work and the blade is honest and I am the only man in this parish whose employment can be deduced from his own vowels.",
    "effects": {
     "clue": {
      "id": "c_profession_followed_name",

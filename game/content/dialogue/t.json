@@ -56,10 +56,7 @@
    ]
   },
   "why_t": {
-   "text": {
-    "low": "Because it's the first letter of the thing I'm not going to tell you, and because Chef couldn't say the rest of it, and because when she said the first letter it came out *perfectly*.\n\nOne clean consonant. No air in it, no whistle, nothing to trip over. She said T and it was the only sound in eleven years that came out of that woman exactly as it went in, and I have been called T from that afternoon and I will be called T at the end.\n\nThat's not a sad story either. That's the best thing anybody ever did for me and she did it by accident, standing at a stove, not looking up.",
-    "high": "Because it's the first letter of the thing I'm not going to tell you, and because when Chef said that letter it came out *perfectly*.\n\nOne clean consonant. No air in it, no whistle, nothing to trip over. The only sound in eleven years that came out of that woman exactly as it went in. I've been called T from that afternoon and I'll be called T at the end.\n\nThat's not a sad story. It's the best thing anybody ever did for me, and she did it by accident, standing at a stove, not looking up."
-   },
+   "text": "Because it's the first letter of the thing I'm not going to tell you, and because Chef couldn't say the rest of it, and because when she said the first letter it came out *perfectly*.\n\nOne clean consonant. No air in it, no whistle, nothing to trip over. She said T and it was the only sound in eleven years that came out of that woman exactly as it went in, and I have been called T from that afternoon and I will be called T at the end.\n\nThat's not a sad story either. That's the best thing anybody ever did for me and she did it by accident, standing at a stove, not looking up.",
    "effects": {
     "morale": 6,
     "relationship": {
@@ -120,10 +117,7 @@
    ]
   },
   "rest_of_it": {
-   "text": {
-    "low": "He opens his mouth.\n\nAnd then he stands there with it open for about four seconds, in whites, with a knife in his hand, and the extraction fan has gone quiet again the way it does, and there is a ladle on the pass that is not touching the pass.\n\n\"...Huh,\" he says.\n\nHe puts the knife down. He tries again. Nothing arrives. He is not being coy — you have watched a man reach for his own name and come back with his hand empty, twice, and the second time he laughed, which was worse.\n\n\"Well,\" he says. \"That's new.\"",
-    "high": "He opens his mouth.\n\nAnd stands there with it open for about four seconds, in whites, with a knife in his hand, and there is a ladle on the pass that is not touching the pass.\n\n\"...Huh,\" he says.\n\nHe puts the knife down. Tries again. Nothing arrives. He is not being coy — you have watched a man reach for his own name and come back with his hand empty, twice, and the second time he laughed, which was worse.\n\n\"Well. That's new.\""
-   },
+   "text": "He opens his mouth.\n\nAnd then he stands there with it open for about four seconds, in whites, with a knife in his hand, and the extraction fan has gone quiet again the way it does, and there is a ladle on the pass that is not touching the pass.\n\n\"...Huh,\" he says.\n\nHe puts the knife down. He tries again. Nothing arrives. He is not being coy — you have watched a man reach for his own name and come back with his hand empty, twice, and the second time he laughed, which was worse.\n\n\"Well,\" he says. \"That's new.\"",
    "effects": {
     "clue": {
      "id": "c_t_has_no_rest",
@@ -153,10 +147,7 @@
    ]
   },
   "sorry": {
-   "text": {
-    "low": "No — no, don't. Don't do that.\n\nI've had a name-shaped hole in me for eleven years and I've been walking around it in the dark and calling it modesty. You put a light on. That's a service. In this trade we charge for that.\n\nAnd besides — he picks the knife back up, and the fan comes back on, and the ladle settles — besides, a man with one letter has got one letter to *be excellent at*, and I have been, and there is not a soul in this parish who does a T like I do a T.",
-    "high": "No — don't. Don't do that.\n\nI've had a name-shaped hole in me for eleven years and I've been walking round it in the dark calling it modesty. You put a light on. That's a service; in this trade we charge for it.\n\nAnd besides — he picks the knife back up, and the ladle settles — a man with one letter has got one letter to *be excellent at*, and there is not a soul in this parish who does a T like I do a T."
-   },
+   "text": "No — no, don't. Don't do that.\n\nI've had a name-shaped hole in me for eleven years and I've been walking around it in the dark and calling it modesty. You put a light on. That's a service. In this trade we charge for that.\n\nAnd besides — he picks the knife back up, and the fan comes back on, and the ladle settles — besides, a man with one letter has got one letter to *be excellent at*, and I have been, and there is not a soul in this parish who does a T like I do a T.",
    "effects": {
     "morale": 8,
     "relationship": {
@@ -172,10 +163,7 @@
    ]
   },
   "utensils": {
-   "text": {
-    "low": "They do. Not always. Not on request, before you ask, and everybody asks, and I've stopped being wounded by it.\n\nIt's the long ones. When a sentence runs — when it's *going*, when the sound has got hold of the thing and the thing has stopped being a list of words and started being a shape — that's when the pass goes light. Ladles. A whisk once, quite high. Chef's second knife, which frightened everybody including the knife.\n\nAnd it stops the second I stop. Never a moment after. It doesn't fall, either — it *settles*, like it's been put down by somebody who wasn't finished.",
-    "high": "They do. Not always, and not on request, before you ask.\n\nIt's the long ones. When a sentence is *going* — when the sound has got hold of the thing and it's stopped being a list of words and started being a shape — that's when the pass goes light. Ladles. A whisk once, quite high. Chef's second knife, which frightened everybody including the knife.\n\nAnd it stops the second I stop. Never a moment after. It doesn't fall, either — it *settles*, like it's been put down by somebody who wasn't finished."
-   },
+   "text": "They do. Not always. Not on request, before you ask, and everybody asks, and I've stopped being wounded by it.\n\nIt's the long ones. When a sentence runs — when it's *going*, when the sound has got hold of the thing and the thing has stopped being a list of words and started being a shape — that's when the pass goes light. Ladles. A whisk once, quite high. Chef's second knife, which frightened everybody including the knife.\n\nAnd it stops the second I stop. Never a moment after. It doesn't fall, either — it *settles*, like it's been put down by somebody who wasn't finished.",
    "passive": [
     {
      "skill": "SAVOIR_FAIRE",
@@ -264,10 +252,7 @@
   },
   "the_speech": {
    "narration": true,
-   "text": {
-    "low": "\"Take this,\" he says, and takes it — a tureen, two hands, both wrists, up to the light.\n\n\"Take this tepid, tremulous, thoroughly traduced tureen, this trifling triumph of the tuber, tended these three thousand tedious turns of the tap by a toothless titan who tastes nothing and therefore tastes *truly* — and tell me, tell me truthfully, that the tongue is the arbiter of the table.\n\nIt is not. It is a tenant. It is a tenant of a house it did not build and pays no rent on, and it holds forth about the furniture.\n\nWhat you are tasting is not the thing. What you are tasting is the *telling* of the thing — the sequence, the timing, the terrible patience of a woman who has not tasted since 1971 and has not been wrong since 1974 — and if you can taste that, then the tongue is a courtesy, and the truth of a dish is in how it has been *told*.\"\n\nAnd there are four utensils in the air over the pass, and a colander, and a small pan.\n\nHe stops.\n\nThey settle, one after another, at intervals — the way a person puts things down when they have been listening and are going back to work.",
-    "high": "\"Take this,\" he says, and takes it — a tureen, two hands, up to the light.\n\n\"Take this tepid, tremulous, thoroughly traduced tureen, this trifling triumph of the tuber, tended by a toothless titan who tastes nothing and therefore tastes *truly* — and tell me truthfully that the tongue is the arbiter of the table.\n\nIt is not. It is a tenant of a house it did not build, and it holds forth about the furniture.\n\nWhat you are tasting is not the thing. It is the *telling* of the thing — the sequence, the timing, the terrible patience of a woman who has not tasted since 1971 and has not been wrong since 1974. The tongue is a courtesy. The truth of a dish is in how it has been *told*.\"\n\nThere are four utensils in the air over the pass, and a colander, and a small pan.\n\nHe stops.\n\nThey settle, one after another, at intervals — the way a person puts things down when they have been listening and are going back to work."
-   },
+   "text": "\"Take this,\" he says, and takes it — a tureen, two hands, both wrists, up to the light.\n\n\"Take this tepid, tremulous, thoroughly traduced tureen, this trifling triumph of the tuber, tended these three thousand tedious turns of the tap by a toothless titan who tastes nothing and therefore tastes *truly* — and tell me, tell me truthfully, that the tongue is the arbiter of the table.\n\nIt is not. It is a tenant. It is a tenant of a house it did not build and pays no rent on, and it holds forth about the furniture.\n\nWhat you are tasting is not the thing. What you are tasting is the *telling* of the thing — the sequence, the timing, the terrible patience of a woman who has not tasted since 1971 and has not been wrong since 1974 — and if you can taste that, then the tongue is a courtesy, and the truth of a dish is in how it has been *told*.\"\n\nAnd there are four utensils in the air over the pass, and a colander, and a small pan.\n\nHe stops.\n\nThey settle, one after another, at intervals — the way a person puts things down when they have been listening and are going back to work.",
    "effects": {
     "clue": {
      "id": "c_telling_of_the_thing",

@@ -2,16 +2,8 @@
  "id": "lishush_mush",
  "name": "Chef D.'s Lishush Mush",
  "subtitle": "Everything soft. Nothing simple.",
- "description": {
-  "low": "The name is the menu and the menu is a pronunciation guide. Chef Delilah Rishrush has no teeth and has never regarded this as a limitation, and the whole establishment is built on the proposition that texture is the least interesting thing food can offer.\n\nInside, the room is exactly the right size. It is exactly the right size when there are two diners and it is exactly the right size when there are thirty, and nobody has ever had to wait and nobody has ever eaten in an echo. The walls are a colour that changes its mind about being a colour. There are eleven tables tonight. You have counted eleven every time and you have never seen the same eleven.\n\nAnd the air. Somebody has done something to the air in here, and what they have done to it is: it tastes.",
-  "mid": "Chef D. has no teeth and has never regarded that as a limitation. The room is exactly the right size whether there are two diners or thirty. Eleven tables tonight, as always, and never the same eleven. And the air in here tastes.",
-  "high": "The room is always exactly the right size. Eleven tables, never the same eleven. The air tastes."
- },
- "revisit": {
-  "low": "Chef D. has your order going before the door has finished. She does not look up. She says something to the pan that is mostly onomatopoeia and entirely instructions, and the pan does it.",
-  "mid": "Chef D. has your order going before the door finishes. She addresses the pan in onomatopoeia and the pan complies.",
-  "high": "Your order is already going."
- },
+ "description": "The name is the menu and the menu is a pronunciation guide. Chef Delilah Rishrush has no teeth and has never regarded this as a limitation, and the whole establishment is built on the proposition that texture is the least interesting thing food can offer.\n\nInside, the room is exactly the right size. It is exactly the right size when there are two diners and it is exactly the right size when there are thirty, and nobody has ever had to wait and nobody has ever eaten in an echo. The walls are a colour that changes its mind about being a colour. There are eleven tables tonight. You have counted eleven every time and you have never seen the same eleven.\n\nAnd the air. Somebody has done something to the air in here, and what they have done to it is: it tastes.",
+ "revisit": "Chef D. has your order going before the door has finished. She does not look up. She says something to the pan that is mostly onomatopoeia and entirely instructions, and the pan does it.",
  "lucid": {
   "2": "The onomatopoeia she cooks by is not describing the food. It is keeping time with something.",
   "3": "Under the extraction fan there is a sound with pauses in it, and Chef D. cooks in the pauses and rests in the striking.",
@@ -32,11 +24,7 @@
     "board",
     "dishes"
    ],
-   "description": {
-    "low": "Hand-lettered, laminated, and — the establishment's central and only complaint — unstable.\n\nYou read: TOMORROW'S MEMORIES SEARED IN YESTERDAY'S REGRETS. You order it. What arrives is described by the person carrying it as something else entirely, in a different register, with a different number of words. You go back to the menu to establish which of you is wrong and the menu is on your side of the argument in a way that makes it clear you have misremembered.\n\nThis has happened to every diner in this room and it is not discussed, in the way that a thing which happens to everybody and can be checked by nobody is not discussed.",
-    "mid": "Hand-lettered, laminated, unstable. You read TOMORROW'S MEMORIES SEARED IN YESTERDAY'S REGRETS, you order it, and what arrives is called something else by the person carrying it. Back at the menu, you have misremembered. This happens to everybody and is not discussed.",
-    "high": "The menu changes between reading and ordering, and is always able to prove you misremembered."
-   },
+   "description": "Hand-lettered, laminated, and — the establishment's central and only complaint — unstable.\n\nYou read: TOMORROW'S MEMORIES SEARED IN YESTERDAY'S REGRETS. You order it. What arrives is described by the person carrying it as something else entirely, in a different register, with a different number of words. You go back to the menu to establish which of you is wrong and the menu is on your side of the argument in a way that makes it clear you have misremembered.\n\nThis has happened to every diner in this room and it is not discussed, in the way that a thing which happens to everybody and can be checked by nobody is not discussed.",
    "repeat": "You have started reading it aloud, quietly, as a control. It does not help. It changes anyway and you cannot swear to what you said.",
    "monocle": "Through the gold the menu is a list of eleven dishes and it is completely stable. Every one is crossed out. Underneath, in a hand that is not Chef D.'s and is not steady, somebody has written eleven replacements — and then crossed those out too, and then written the first eleven back.",
    "passive": [
@@ -112,11 +100,7 @@
     "plate",
     "food"
    ],
-   "description": {
-    "low": "It arrives without being ordered, as it has arrived without being ordered every time, and Chef D.'s position on this — delivered toothlessly, warmly, and without any apparent sense that it needs defending — is that a man named Onions who has not been given onions has been failed by his restaurant.\n\nIt is soft. Everything here is soft. It is also, and this is not a matter of opinion, extraordinary — the liver tastes of something that has no business being a taste, something in the region of a long afternoon in a house where somebody is painting.\n\nThe onions are arranged on the top. They arrange themselves further while you look at the plate. Round, and evenly spaced, in four short rows.",
-    "mid": "It arrives unordered, because Chef D. holds that a man named Onions who has not been given onions has been failed by his restaurant. Soft, and extraordinary, and tasting of a long afternoon in a house where somebody is painting. The onions on top rearrange while you look: round, evenly spaced, four short rows.",
-    "high": "Unordered liver and onions. The onions arrange themselves into four short rows of evenly spaced rounds."
-   },
+   "description": "It arrives without being ordered, as it has arrived without being ordered every time, and Chef D.'s position on this — delivered toothlessly, warmly, and without any apparent sense that it needs defending — is that a man named Onions who has not been given onions has been failed by his restaurant.\n\nIt is soft. Everything here is soft. It is also, and this is not a matter of opinion, extraordinary — the liver tastes of something that has no business being a taste, something in the region of a long afternoon in a house where somebody is painting.\n\nThe onions are arranged on the top. They arrange themselves further while you look at the plate. Round, and evenly spaced, in four short rows.",
    "repeat": "Four rows again. You have started counting the rounds in each row and the counts are 10, 9, 7, and a long one at the bottom.",
    "lucid": {
     "2": "Four rows. Ten, nine, seven, and a long one at the bottom that your thumb wants to press.",
@@ -198,11 +182,7 @@
     "reports",
     "clipboard"
    ],
-   "description": {
-    "low": "Antopolis Ficklefuk comes on Thursdays and he has come on Thursdays for nine years and he keeps the most meticulous records in Silvora Reefs.\n\nThe file lives in a wire rack by the door because the regulations say it must be available for inspection, and nobody has ever inspected it except you, and you have now done so four times.\n\nThe observations column is exhaustive. *Room dimension at 1904h: 6.2m. Room dimension at 1911h: 9.4m. No structural work observed.* *Dish served under name not appearing on menu. Menu subsequently correct.* *Utensil aloft, unsupported, 4s, kitchen.*\n\nThe findings column, on every page, for nine years, says: NO MATTERS ARISING.",
-    "mid": "Antopolis Ficklefuk has inspected on Thursdays for nine years and keeps the most meticulous records in town. Observations: 'Room dimension at 1904h: 6.2m. At 1911h: 9.4m. No structural work observed.' 'Utensil aloft, unsupported, 4s.' Findings, on every page, for nine years: NO MATTERS ARISING.",
-    "high": "Nine years of meticulously documented impossibilities. Findings, every page: NO MATTERS ARISING."
-   },
+   "description": "Antopolis Ficklefuk comes on Thursdays and he has come on Thursdays for nine years and he keeps the most meticulous records in Silvora Reefs.\n\nThe file lives in a wire rack by the door because the regulations say it must be available for inspection, and nobody has ever inspected it except you, and you have now done so four times.\n\nThe observations column is exhaustive. *Room dimension at 1904h: 6.2m. Room dimension at 1911h: 9.4m. No structural work observed.* *Dish served under name not appearing on menu. Menu subsequently correct.* *Utensil aloft, unsupported, 4s, kitchen.*\n\nThe findings column, on every page, for nine years, says: NO MATTERS ARISING.",
    "repeat": "Two new Thursdays. Utensil aloft, six seconds. Diner reports tasting a colour. No matters arising.",
    "monocle": "Through the gold, NO MATTERS ARISING is a stamp and not a signature, and the stamp has four lobes, and it has been applied to the findings column *before* the observations column was filled in. The ink of the finding is under the ink of the observation on every page for nine years.",
    "passive": [
@@ -283,11 +263,7 @@
     "can't elope",
     "special"
    ],
-   "description": {
-    "low": "It is on the menu and it is on the menu at every establishment in Silvora Reefs that has ever wanted to annoy Woolbinkle, which is all of them.\n\nHere it is served in a bowl, soft, pale, and it is the only dish in the room that arrives looking different to each person at the table. You have watched this happen. Four diners, one dish, four honest descriptions, no two overlapping, and a general table-wide agreement afterwards that it had been very good.\n\nChef D. will tell you, if you ask, that she does not know what is in it. She will tell you this cheerfully and it is not a joke and it does not trouble her. Her position is that she cooks it correctly and the ingredients are between the dish and the diner.",
-    "mid": "Served soft and pale, and it is the only dish here that arrives looking different to each person at the table — four diners, four honest and non-overlapping descriptions, and general agreement afterwards that it was very good. Chef D. does not know what is in it, cheerfully, and holds that the ingredients are between the dish and the diner.",
-    "high": "One dish, different to every diner. Chef D. doesn't know what's in it and isn't troubled."
-   },
+   "description": "It is on the menu and it is on the menu at every establishment in Silvora Reefs that has ever wanted to annoy Woolbinkle, which is all of them.\n\nHere it is served in a bowl, soft, pale, and it is the only dish in the room that arrives looking different to each person at the table. You have watched this happen. Four diners, one dish, four honest descriptions, no two overlapping, and a general table-wide agreement afterwards that it had been very good.\n\nChef D. will tell you, if you ask, that she does not know what is in it. She will tell you this cheerfully and it is not a joke and it does not trouble her. Her position is that she cooks it correctly and the ingredients are between the dish and the diner.",
    "repeat": "Different again. You are getting better at not describing it, which is the only skill this dish rewards.",
    "monocle": "Through the gold, the bowl contains one word, and the word is CANNED, and it has been canned.",
    "check": {
@@ -342,7 +318,7 @@
     "arrangement",
     "garnish"
    ],
-   "description": "Chef D. puts them down the same way every time and has never once been asked about it, because it is a garnish and nobody interrogates a garnish.\n\nTen rings, then nine, then seven, and then one long piece laid across the whole of it. Always that. Always in that order, and always the long one last, and she does it without looking at the plate.",
+   "description": "Chef D. puts them down the same way every time and has never once been asked about it, because it is a garnish, and nobody in the history of eating has interrogated a garnish.\n\nTen rings. Then nine. Then seven. Then one long piece, laid across the whole of it at a slight angle, always last.\n\nAlways that. Always in that order, always the long one last, and she does it without looking at the plate — her hands go to three places on the board and the fourth cut is longer, every time, without measuring, while she is talking to you about something else entirely.\n\nThe rings are not the same size as each other within each group, which rules out a mould and rules out habit-of-the-knife. They are placed. Each one is put where it goes, and the spacing between the groups is wider than the spacing within them, and it is wider by about the same amount every time.",
    "repeat": "Ten, nine, seven, and a long one. She has served you eleven times and it has been ten, nine, seven and a long one eleven times.",
    "monocle": "Through the gold the rings are not rings. They are strokes, and they are being written left to right by somebody in a hurry to get it down before the plate goes out.",
    "passive": [

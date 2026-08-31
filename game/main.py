@@ -660,12 +660,32 @@ class Game:
             if not obj.hidden and self.state.meets(obj.requires)
         ]
         if visible:
-            names = ", ".join(obj.name for obj in visible)
-            ui.aside(f"Worth a look: {names}.")
+            names = [obj.name for obj in visible]
+            if len(names) == 1:
+                listed = names[0]
+            else:
+                listed = ", ".join(names[:-1]) + f", and {names[-1]}"
+            ui.narrate(
+                f"Your attention goes round the place and comes back holding "
+                f"{listed}. It will keep going back to them until they have "
+                f"been dealt with; that is the whole of your method and most "
+                f"of your problem."
+            )
 
-        exits = self.exit_names(location)
-        if exits:
-            ui.aside(f"Ways out: {', '.join(exits)}.")
+        # The location files author a line of prose for every exit — where it
+        # goes and what it feels like to walk it. Listing bare place names threw
+        # all of that away and left the driest sentence on the screen.
+        ways = []
+        for target, blurb in (location.exits or {}).items():
+            name = self.locations.display_name(target)
+            ways.append(f"{name}, {blurb}" if isinstance(blurb, str) and blurb else name)
+        if ways:
+            if len(ways) == 1:
+                ui.narrate(f"There is one way on from here: {ways[0]}.")
+            else:
+                body = "\n".join(f"  {w}." for w in ways)
+                ui.narrate("The ways on from here, such as they are:")
+                ui.block(body, "narration")
 
     def exit_names(self, location) -> list[str]:
         names = []

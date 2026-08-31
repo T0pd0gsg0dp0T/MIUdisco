@@ -68,10 +68,7 @@
    ]
   },
   "history": {
-   "text": {
-    "low": "Ohhh, now you've done it. Sit down. No — sit *down*, this one's got a middle.\n\nSilvora Reefs got founded twice. That's the thing nobody tells you and it's in the parish book plain as anything. Founded in the spring by a fella off a boat, and then founded again eleven years later by a different fella off a different boat, and both foundings are recorded, and neither one mentions the other, and there's no gap in between where the first one stopped.\n\nEleven years where the town was founded twice at once. Records for both. Two lots of first buildings on the same plots. And here's my favourite bit — and this is the bit I tell at Christmas — the second fella's name was the first fella's name, only round the other way.",
-    "high": "Ohhh, now you've done it. Sit *down*, this one's got a middle.\n\nSilvora Reefs got founded twice. It's in the parish book plain as anything. Founded in the spring by a fella off a boat, and founded again eleven years later by a different fella off a different boat. Both recorded. Neither mentions the other. No gap where the first one stopped.\n\nAnd here's my favourite bit, the bit I tell at Christmas — the second fella's name was the first fella's name, only round the other way."
-   },
+   "text": "Ohhh, now you've done it. Sit down. No — sit *down*, this one's got a middle.\n\nSilvora Reefs got founded twice. That's the thing nobody tells you and it's in the parish book plain as anything. Founded in the spring by a fella off a boat, and then founded again eleven years later by a different fella off a different boat, and both foundings are recorded, and neither one mentions the other, and there's no gap in between where the first one stopped.\n\nEleven years where the town was founded twice at once. Records for both. Two lots of first buildings on the same plots. And here's my favourite bit — and this is the bit I tell at Christmas — the second fella's name was the first fella's name, only round the other way.",
    "passive": [
     {
      "skill": "LOGIC",
@@ -167,10 +164,7 @@
    "narration": true
   },
   "who_else": {
-   "text": {
-    "low": "Couldn't tell you. Never seen it. It's a list somebody told me about in a pub in 1994 and I've believed it ever since without a shred of anything, which — now you say it back to me with your face doing that — is not how I generally go about things.\n\nHuh.\n\nRight! Anyway. There's a front coming through the lounge at ten and you'll want to be on the dry side for it, and I'll say no more, and I'd take it as a kindness if you'd let me get on with the barrels.",
-    "high": "Couldn't tell you. Never seen it. It's a list somebody told me about in a pub in 1994 and I've believed it ever since without a shred of anything — which, now you say it back with your face doing that, is not how I generally go about things.\n\nHuh.\n\nRight! There's a front coming through the lounge at ten and you'll want the dry side, and I'd take it as a kindness if you'd let me get on with the barrels."
-   },
+   "text": "Couldn't tell you. Never seen it. It's a list somebody told me about in a pub in 1994 and I've believed it ever since without a shred of anything, which — now you say it back to me with your face doing that — is not how I generally go about things.\n\nHuh.\n\nRight! Anyway. There's a front coming through the lounge at ten and you'll want to be on the dry side for it, and I'll say no more, and I'd take it as a kindness if you'd let me get on with the barrels.",
    "effects": {
     "relationship": {
      "barney": 1
@@ -186,10 +180,7 @@
    ]
   },
   "sky": {
-   "text": {
-    "low": "She came with the building!\n\nAnd that's — no, hang on, that's the short one, you'll want the long one. *Everything* came with the building. That's the wonder of the place, that's what I say to every guest that walks in with a face on: I didn't put a river in here. I couldn't. Have you priced a river?\n\nI took the lease in '94 and there was thirty foot of night in the lounge and a stream through it running the wrong way for a Tuesday, and the fella selling it never mentioned it once in the particulars, and I never asked, because—\n\nWell. Because when a man's selling you a river for the price of a pub you don't get clever about it.",
-    "high": "She came with the building!\n\n*Everything* came with the building. That's the wonder of the place. I didn't put a river in here. I couldn't. Have you priced a river?\n\nI took the lease in '94 and there was thirty foot of night in the lounge and a stream running the wrong way for a Tuesday, and the fella selling it never mentioned it once in the particulars, and I never asked — because when a man's selling you a river for the price of a pub you don't get clever about it."
-   },
+   "text": "She came with the building!\n\nAnd that's — no, hang on, that's the short one, you'll want the long one. *Everything* came with the building. That's the wonder of the place, that's what I say to every guest that walks in with a face on: I didn't put a river in here. I couldn't. Have you priced a river?\n\nI took the lease in '94 and there was thirty foot of night in the lounge and a stream through it running the wrong way for a Tuesday, and the fella selling it never mentioned it once in the particulars, and I never asked, because—\n\nWell. Because when a man's selling you a river for the price of a pub you don't get clever about it.",
    "lucid": {
     "2": "The register goes back to 1911. He has been here since 1994 and the register is in one hand throughout."
    },
@@ -316,10 +307,7 @@
    ]
   },
   "voice": {
-   "text": {
-    "low": "Does it?\n\n... Does it? Go on, do it back at me. — No. No, don't, actually. Sheila said. Sheila said years ago and I asked her to stop.\n\nIt's the explaining. When I'm explaining the place I go — she said it's like a fella on the telly for children, and I know the one she means, and I have never once heard it happen, and I've listened for it.\n\nIt's a kind thing though, isn't it. If you were going to be given a voice for explaining an impossible building to a frightened person, you'd want that one. You wouldn't want mine.",
-    "high": "Does it?\n\n... Go on, do it back at me. — No. Don't, actually. Sheila said, years ago, and I asked her to stop.\n\nIt's the explaining. She said it's like a fella on the telly for children, and I know the one she means, and I have never once heard it happen, and I've listened.\n\nIt's a kind thing though, isn't it. If you were going to be given a voice for explaining an impossible building to a frightened person, you'd want that one. You wouldn't want mine."
-   },
+   "text": "Does it?\n\n... Does it? Go on, do it back at me. — No. No, don't, actually. Sheila said. Sheila said years ago and I asked her to stop.\n\nIt's the explaining. When I'm explaining the place I go — she said it's like a fella on the telly for children, and I know the one she means, and I have never once heard it happen, and I've listened for it.\n\nIt's a kind thing though, isn't it. If you were going to be given a voice for explaining an impossible building to a frightened person, you'd want that one. You wouldn't want mine.",
    "effects": {
     "clue": {
      "id": "c_barney_voice",

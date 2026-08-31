@@ -134,10 +134,7 @@
    ]
   },
   "sky_truth": {
-   "text": {
-    "low": "BUT — and I'm keeping the BUT, I've earned the BUT — you're not to say it in here.\n\nI'm not asking as staff. Josh doesn't know and Josh is happy and Josh is the best man in this parish and he tells stories about this building that'd take your arm off if you thought about them, and he doesn't, and he sleeps.\n\nYou go around saying there's a moon in my ceiling and one day somebody agrees with you. And then there's a moon in my ceiling, and it's *established*, and I can't say it's a light well any more, because you can't say a thing is a light well after everybody's agreed it's a moon.\n\nThat's all I've got. That's the whole of my job. I say it first and I say it every day and the building holds.",
-    "high": "BUT — and I'm keeping the BUT, I've earned the BUT — you're not to say it in here.\n\nI'm not asking as staff. Josh doesn't know, and Josh is happy, and Josh is the best man in this parish, and he sleeps.\n\nYou go around saying there's a moon in my ceiling and one day somebody agrees with you. And then there *is* a moon in my ceiling, and it's established, and I can't say it's a light well any more — because you can't call a thing a light well after everybody's agreed it's a moon.\n\nThat's the whole of my job. I say it first, I say it every day, and the building holds."
-   },
+   "text": "BUT — and I'm keeping the BUT, I've earned the BUT — you're not to say it in here.\n\nI'm not asking as staff. Josh doesn't know and Josh is happy and Josh is the best man in this parish and he tells stories about this building that'd take your arm off if you thought about them, and he doesn't, and he sleeps.\n\nYou go around saying there's a moon in my ceiling and one day somebody agrees with you. And then there's a moon in my ceiling, and it's *established*, and I can't say it's a light well any more, because you can't say a thing is a light well after everybody's agreed it's a moon.\n\nThat's all I've got. That's the whole of my job. I say it first and I say it every day and the building holds.",
    "effects": {
     "flag": {
      "bud_confided": true
@@ -270,10 +267,7 @@
    ]
   },
   "why": {
-   "text": {
-    "low": "BUT because—\n\n... BUT.\n\nBUT because if I start with BUT then whatever comes next is an argument, and an argument's got two sides, and as long as a thing's got two sides it hasn't settled. You settle a thing by agreeing with it. Nobody ever settled anything by objecting to it.\n\nSo I object. To all of it. Every day. First thing. And I'll keep objecting till they carry me out, and this establishment will still have a light well in it, and Josh will still be telling that story about the fella who came in from Mountain Avenue, and everybody will still be having a lovely time.",
-    "high": "BUT because—\n\n... BUT.\n\nBUT because if I start with BUT then whatever comes next is an argument, and an argument's got two sides, and as long as a thing's got two sides it hasn't settled. You settle a thing by agreeing with it. Nobody ever settled anything by objecting to it.\n\nSo I object. To all of it. Every day. First thing. And I'll keep objecting till they carry me out, and this establishment will still have a light well in it, and everybody will still be having a lovely time."
-   },
+   "text": "BUT because—\n\n... BUT.\n\nBUT because if I start with BUT then whatever comes next is an argument, and an argument's got two sides, and as long as a thing's got two sides it hasn't settled. You settle a thing by agreeing with it. Nobody ever settled anything by objecting to it.\n\nSo I object. To all of it. Every day. First thing. And I'll keep objecting till they carry me out, and this establishment will still have a light well in it, and Josh will still be telling that story about the fella who came in from Mountain Avenue, and everybody will still be having a lovely time.",
    "effects": {
     "clue": {
      "id": "c_bud_doctrine",

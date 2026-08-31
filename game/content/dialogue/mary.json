@@ -71,10 +71,7 @@
    ]
   },
   "code": {
-   "text": {
-    "low": "'Cause there isn't one.\n\nYeah. Take your time with that. Everybody takes a minute.\n\nThere's no code, man. There's never been a code. There's two hundred people a night who've all decided there's a code, and they've all been doing it since they were kids, and what they're actually doing — every single one of them — is *saying something confidently on the beat*. Any words. I've had 'blue Tuesday and the man's regards'. I've had a fella order in Welsh. It all works.",
-    "high": "'Cause there isn't one.\n\nYeah. Take your time with that. Everybody takes a minute.\n\nThere's no code, man. Never has been. There's two hundred people a night who've all decided there is one, and what they're actually doing — every one of them — is *saying something confidently on the beat*. Any words. I've had a fella order in Welsh. It all works."
-   },
+   "text": "'Cause there isn't one.\n\nYeah. Take your time with that. Everybody takes a minute.\n\nThere's no code, man. There's never been a code. There's two hundred people a night who've all decided there's a code, and they've all been doing it since they were kids, and what they're actually doing — every single one of them — is *saying something confidently on the beat*. Any words. I've had 'blue Tuesday and the man's regards'. I've had a fella order in Welsh. It all works.",
    "passive": [
     {
      "skill": "LOGIC",
@@ -125,10 +122,7 @@
    ]
   },
   "mechanism": {
-   "text": {
-    "low": "And before you go off and do something clever with that — sit down a second. Yeah. On the warm side.\n\nI've had forty years with that and here's everything I know and it's four things.\n\nOne: it only works in the open second. You're late, you're just a lizard handing a man a drink.\n\nTwo: it only works on small stuff. Drinks. Donuts. I've never once been able to do it with anything that mattered and God knows I've tried.\n\nThree: it doesn't work on people who already know. Regulars who've decided what they want walk out with what they wanted. Every time. Can't touch 'em.\n\nAnd four — and this is the one, man, this is the one I'd sit up with — it has never once worked on you.",
-    "high": "Before you go off and do something clever with that — sit down. On the warm side.\n\nForty years, and here's everything I know. It's four things.\n\nOne: it only works in the open second. You're late, you're just a lizard handing a man a drink.\n\nTwo: only small stuff. Drinks. Donuts. Never once anything that mattered, and God knows I've tried.\n\nThree: it doesn't work on people who already know. Can't touch 'em.\n\nAnd four — this is the one I'd sit up with — it has never once worked on you."
-   },
+   "text": "And before you go off and do something clever with that — sit down a second. Yeah. On the warm side.\n\nI've had forty years with that and here's everything I know and it's four things.\n\nOne: it only works in the open second. You're late, you're just a lizard handing a man a drink.\n\nTwo: it only works on small stuff. Drinks. Donuts. I've never once been able to do it with anything that mattered and God knows I've tried.\n\nThree: it doesn't work on people who already know. Regulars who've decided what they want walk out with what they wanted. Every time. Can't touch 'em.\n\nAnd four — and this is the one, man, this is the one I'd sit up with — it has never once worked on you.",
    "effects": {
     "clue": {
      "id": "c_never_worked_on_you",
@@ -157,10 +151,7 @@
    ]
   },
   "why_not_me": {
-   "text": {
-    "low": "Two reasons and I don't like either.\n\nFirst one's flattering, so you'll take it: you come in already decided. Always. Eleven years, you've walked through that door with a thing in your head and I've never got near the gap. That's rare, man. That's about four people in this parish.\n\nSecond one I've had for about six months and I haven't said it out loud.\n\nThere isn't a second. On everybody else there's a gap where it hasn't settled. On you it's already settled when you come through the door — settled *before* you get here, and settled in a way I can't get a cup into. Somebody's had that second already.\n\nAnd they've been having it, man. Every time. Before you arrive.",
-    "high": "Two reasons, and I don't like either.\n\nFirst one's flattering, so you'll take it: you come in already decided. Eleven years, and I've never got near the gap. That's about four people in this parish.\n\nSecond one I've had six months and haven't said out loud.\n\nThere isn't a second. On everybody else there's a gap where it hasn't settled. On you it's already settled when you come through the door — settled *before* you get here, in a way I can't get a cup into.\n\nSomebody's had that second already. Every time. Before you arrive."
-   },
+   "text": "Two reasons and I don't like either.\n\nFirst one's flattering, so you'll take it: you come in already decided. Always. Eleven years, you've walked through that door with a thing in your head and I've never got near the gap. That's rare, man. That's about four people in this parish.\n\nSecond one I've had for about six months and I haven't said it out loud.\n\nThere isn't a second. On everybody else there's a gap where it hasn't settled. On you it's already settled when you come through the door — settled *before* you get here, and settled in a way I can't get a cup into. Somebody's had that second already.\n\nAnd they've been having it, man. Every time. Before you arrive.",
    "effects": {
     "clue": {
      "id": "c_settled_before_arrival",
@@ -189,10 +180,7 @@
    ]
   },
   "boundary": {
-   "text": {
-    "low": "Yeah. Warm side, cold side. It moves.\n\nEverybody thinks it's a draught. It's not a draught, and I'll tell you how I know, and it took me a while: I stood in it for a whole shift once. Whole shift, right down the middle, one arm each side.\n\nAnd the thing about a draught, man, is a draught *mixes*. Give it four hours and it's one room at one temperature. That's just what air does, it's the laziest thing in the world, it can't be bothered to stay in two piles.\n\nThat's been two piles for forty years.",
-    "high": "Yeah. Warm side, cold side. It moves.\n\nEverybody thinks it's a draught. It's not, and here's how I know: I stood in it for a whole shift once. Right down the middle, one arm each side.\n\nThing about a draught is it *mixes*. Give it four hours and it's one room at one temperature. That's just what air does — it's the laziest thing in the world, it can't be bothered to stay in two piles.\n\nThat's been two piles for forty years."
-   },
+   "text": "Yeah. Warm side, cold side. It moves.\n\nEverybody thinks it's a draught. It's not a draught, and I'll tell you how I know, and it took me a while: I stood in it for a whole shift once. Whole shift, right down the middle, one arm each side.\n\nAnd the thing about a draught, man, is a draught *mixes*. Give it four hours and it's one room at one temperature. That's just what air does, it's the laziest thing in the world, it can't be bothered to stay in two piles.\n\nThat's been two piles for forty years.",
    "passive": [
     {
      "skill": "PHYSIQUE",
@@ -245,10 +233,7 @@
    ]
   },
   "both_sides": {
-   "text": {
-    "low": "You want the advice? You've got the walk of a man who's about to go and do something on the cold side.\n\nDon't. Whatever it is — whatever's over there that you're going up the hill for every night — it's done, man. It's finished. You can go and look at it all you want and it will be exactly as finished when you've finished looking.\n\nThe warm side's the only bit that's still going and you have been spending it. That's all. That's the whole of what an old lizard has got for you.",
-    "high": "You want the advice? You've got the walk of a man about to go and do something on the cold side.\n\nDon't. Whatever's over there that you're going up the hill for every night — it's done. It's finished. You can look at it all you want and it'll be exactly as finished when you've finished looking.\n\nThe warm side's the only bit still going, and you have been spending it."
-   },
+   "text": "You want the advice? You've got the walk of a man who's about to go and do something on the cold side.\n\nDon't. Whatever it is — whatever's over there that you're going up the hill for every night — it's done, man. It's finished. You can go and look at it all you want and it will be exactly as finished when you've finished looking.\n\nThe warm side's the only bit that's still going and you have been spending it. That's all. That's the whole of what an old lizard has got for you.",
    "effects": {
     "morale": 6,
     "relationship": {
@@ -265,10 +250,7 @@
    "narration": true
   },
   "police": {
-   "text": {
-    "low": "Forty years I've looked at that door.\n\nAnd yeah. Down the steps, all night. Up the steps, all night. Nobody in off the street, nobody out onto it, not once, and I've been stood at this window since I was a kid stacking crates for my dad.\n\nHere's mine, and you won't have this one because nobody stands here as long as me: they don't come down the steps at the start of a shift. They come down when something's *about to be needed*. Fella came down last March at four in the morning and stood on that kerb doing nothing for eleven minutes, and at minute twelve there was a fight outside the Möbius, and he was already halfway there.",
-    "high": "Forty years I've looked at that door.\n\nDown the steps all night, up the steps all night. Nobody in off the street, nobody out onto it, not once.\n\nHere's mine, and you won't have this one because nobody stands here as long as me: they don't come down at the start of a shift. They come down when something's *about to be needed*. Fella came down last March at four in the morning and stood on that kerb doing nothing for eleven minutes, and at minute twelve there was a fight outside the Möbius, and he was already halfway there."
-   },
+   "text": "Forty years I've looked at that door.\n\nAnd yeah. Down the steps, all night. Up the steps, all night. Nobody in off the street, nobody out onto it, not once, and I've been stood at this window since I was a kid stacking crates for my dad.\n\nHere's mine, and you won't have this one because nobody stands here as long as me: they don't come down the steps at the start of a shift. They come down when something's *about to be needed*. Fella came down last March at four in the morning and stood on that kerb doing nothing for eleven minutes, and at minute twelve there was a fight outside the Möbius, and he was already halfway there.",
    "passive": [
     {
      "skill": "SAVOIR_FAIRE",
@@ -302,10 +284,7 @@
    ]
   },
   "busiest": {
-   "text": {
-    "low": "'Cause nothing's ever gone wrong in here.\n\nThat's it. That's the whole thing and nobody's ever worked it out because it's too boring to be an answer. Two hundred a night, forty years, and there's never been a fight, never been a fire, never been a fella took bad, never had the hallway do the thing, never had the sign — the sign does its thing but that's outside, that's the sign's business.\n\nInside this room, man, in forty years: nothing. Not one anomaly. Not one.\n\nAnd folk don't know that's why they come. They think they come for the dews. They come because it's the only room in Silvora Reefs where you can put your bag down.",
-    "high": "'Cause nothing's ever gone wrong in here.\n\nThat's it. Nobody's ever worked it out because it's too boring to be an answer. Two hundred a night, forty years — never a fight, never a fire, never had the hallway do the thing.\n\nInside this room, in forty years: nothing. Not one anomaly.\n\nAnd folk don't know that's why they come. They think they come for the dews. They come because it's the only room in Silvora Reefs where you can put your bag down."
-   },
+   "text": "'Cause nothing's ever gone wrong in here.\n\nThat's it. That's the whole thing and nobody's ever worked it out because it's too boring to be an answer. Two hundred a night, forty years, and there's never been a fight, never been a fire, never been a fella took bad, never had the hallway do the thing, never had the sign — the sign does its thing but that's outside, that's the sign's business.\n\nInside this room, man, in forty years: nothing. Not one anomaly. Not one.\n\nAnd folk don't know that's why they come. They think they come for the dews. They come because it's the only room in Silvora Reefs where you can put your bag down.",
    "effects": {
     "clue": {
      "id": "c_nothing_happens_here",
@@ -334,10 +313,7 @@
    ]
   },
   "why_here": {
-   "text": {
-    "low": "Opposite the police, man.\n\nNah — I know, I've had forty years on it, that's not it either. There's nothing in that building. You told me that yourself two minutes ago and I've known it since I was nine.\n\nHere's what I've got. Everything in this town goes weird when somebody's *looking* at it. The hallway does it when you walk it alone. The vaults do it when you count 'em. The sign does it when you look straight at it.\n\nNobody looks in here. Two hundred a night and every single one of 'em is looking at the board, or the queue, or their own order, and not one of them has ever once looked *at the room*.\n\nAnd it's fine. Forty years, and it's completely fine.",
-    "high": "Opposite the police, man.\n\nNah — that's not it either. There's nothing in that building; you told me so yourself two minutes ago and I've known since I was nine.\n\nHere's what I've got. Everything in this town goes weird when somebody's *looking* at it. The hallway does it when you walk it alone. The vaults do it when you count 'em.\n\nNobody looks in here. Two hundred a night, every one of them looking at the board or the queue or their own order, and not one has ever looked *at the room*.\n\nAnd it's fine. Forty years, completely fine."
-   },
+   "text": "Opposite the police, man.\n\nNah — I know, I've had forty years on it, that's not it either. There's nothing in that building. You told me that yourself two minutes ago and I've known it since I was nine.\n\nHere's what I've got. Everything in this town goes weird when somebody's *looking* at it. The hallway does it when you walk it alone. The vaults do it when you count 'em. The sign does it when you look straight at it.\n\nNobody looks in here. Two hundred a night and every single one of 'em is looking at the board, or the queue, or their own order, and not one of them has ever once looked *at the room*.\n\nAnd it's fine. Forty years, and it's completely fine.",
    "effects": {
     "clue": {
      "id": "c_nobody_looks_at_the_room",

@@ -130,10 +130,7 @@
    "narration": true
   },
   "who_hasnt": {
-   "text": {
-    "low": "Me. I have not, obviously. I said I had made peace; I said it in the tone a man uses when he has made an arrangement and calls it peace to save time.\n\nI was a cartographer, Oliver. Before the nets, before this. A man who draws coastlines learns one thing above all others, and it is this: the coastline is not the length you measure. It is the length you measure *at the scale you chose*. Change the scale, change the coast. There is no true length of Ireland.\n\nI have lived thirty years in a building where somebody keeps changing the scale. And I have never once caught the hand doing it.",
-    "high": "Me. Obviously. I said I had made peace; I said it in the tone a man uses when he has made an arrangement and calls it peace to save time.\n\nI was a cartographer, Oliver. A man who draws coastlines learns one thing above all others: the coastline is not the length you measure, it is the length you measure *at the scale you chose*. Change the scale, change the coast. There is no true length of Ireland.\n\nThirty years in a building where somebody keeps changing the scale. And I have never once caught the hand doing it."
-   },
+   "text": "Me. I have not, obviously. I said I had made peace; I said it in the tone a man uses when he has made an arrangement and calls it peace to save time.\n\nI was a cartographer, Oliver. Before the nets, before this. A man who draws coastlines learns one thing above all others, and it is this: the coastline is not the length you measure. It is the length you measure *at the scale you chose*. Change the scale, change the coast. There is no true length of Ireland.\n\nI have lived thirty years in a building where somebody keeps changing the scale. And I have never once caught the hand doing it.",
    "lucid": {
     "3": "He says 'the hand'. Not the cause, not the phenomenon, not the building. The hand."
    },
@@ -168,10 +165,7 @@
    ]
   },
   "hand": {
-   "text": {
-    "low": "I said 'the hand'. Yes. I have said it that way for years and I have never examined why, and I would rather you did not make me start at my age.\n\n— No. That is cowardice, and you came in here with wet shoes and a question, so. Here is what I have and it is not much: whatever adjusts this building does it the way a *man* does it. Not the way weather does it. It corrects. It goes back over. Twice I have found the same repair made twice, differently, as though somebody had reconsidered.\n\nAnd once — once, Oliver, and I have told nobody — I found it made three times, and the third one was worse than the first, and it had been put back to the first.",
-    "high": "I said 'the hand'. Yes. I have said it that way for years without examining why, and I would rather you did not make me start at my age.\n\n— No. That is cowardice, and you came in with wet shoes and a question. Here is what I have, and it is not much: whatever adjusts this building does it the way a *man* does it. It corrects. It goes back over. Twice I have found the same repair made twice, differently, as though somebody had reconsidered.\n\nAnd once — and I have told nobody — three times, and the third was worse than the first, and it had been put back to the first."
-   },
+   "text": "I said 'the hand'. Yes. I have said it that way for years and I have never examined why, and I would rather you did not make me start at my age.\n\n— No. That is cowardice, and you came in here with wet shoes and a question, so. Here is what I have and it is not much: whatever adjusts this building does it the way a *man* does it. Not the way weather does it. It corrects. It goes back over. Twice I have found the same repair made twice, differently, as though somebody had reconsidered.\n\nAnd once — once, Oliver, and I have told nobody — I found it made three times, and the third one was worse than the first, and it had been put back to the first.",
    "effects": {
     "clue": {
      "id": "c_revision",
@@ -243,10 +237,7 @@
    ]
   },
   "typing_2f": {
-   "text": {
-    "low": "Do not ask me to go in with you. I will say yes and then I will be busy, and we will both have to live with the shape of that.\n\nBut I will tell you the thing I have kept back, since we are here and since you are wet and since I am too old to be careful for both of us. The sound stopped the day you came out of the water.\n\nNot the day the — whatever it was — came down. The day *you* came out. I have the date. I have it in the book because I noted it as the day the building went quiet, and I noted it before I knew you had been pulled out, and the two entries are one line apart.",
-    "high": "Do not ask me to go in with you. I will say yes and then I will be busy, and we will both have to live with the shape of that.\n\nBut I will tell you the thing I have kept back, since you are wet and I am too old to be careful for both of us. The sound stopped the day you came out of the water.\n\nNot the day the — whatever it was — came down. The day *you* came out. I have it in the book, noted as the day the building went quiet, and I noted it before I knew you had been pulled out. The two entries are one line apart."
-   },
+   "text": "Do not ask me to go in with you. I will say yes and then I will be busy, and we will both have to live with the shape of that.\n\nBut I will tell you the thing I have kept back, since we are here and since you are wet and since I am too old to be careful for both of us. The sound stopped the day you came out of the water.\n\nNot the day the — whatever it was — came down. The day *you* came out. I have the date. I have it in the book because I noted it as the day the building went quiet, and I noted it before I knew you had been pulled out, and the two entries are one line apart.",
    "effects": {
     "clue": {
      "id": "c_stopped_when_you_surfaced",
@@ -371,10 +362,7 @@
    "narration": true
   },
   "say_it_ok": {
-   "text": {
-    "low": "Go and see Soliloquy, if you have not. She has a vault she keeps shut and she keeps it shut for a reason, and the reason has your name on it in a hand I recognise and would rather not place.\n\nAnd Oliver — take the corridor slowly on the way out. It is long tonight. It is long because you are going alone, and you are going alone, and there is no arrangement in this world by which that is not true.",
-    "high": "Go and see Soliloquy, if you have not. She keeps a vault shut for a reason, and the reason has your name on it in a hand I recognise and would rather not place.\n\nAnd Oliver — take the corridor slowly on the way out. It is long tonight. It is long because you are going alone."
-   },
+   "text": "Go and see Soliloquy, if you have not. She has a vault she keeps shut and she keeps it shut for a reason, and the reason has your name on it in a hand I recognise and would rather not place.\n\nAnd Oliver — take the corridor slowly on the way out. It is long tonight. It is long because you are going alone, and you are going alone, and there is no arrangement in this world by which that is not true.",
    "effects": {
     "flag": {
      "asimov_pointed_at_vault": true

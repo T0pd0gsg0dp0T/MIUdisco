@@ -133,13 +133,14 @@ def _wrap(text: str, indent: str = "", subsequent: str | None = None) -> list[st
 
 # --- channels --------------------------------------------------------------
 
-def narrate(text: str) -> None:
+def narrate(text: str, speak: bool = True) -> None:
     """Second-person narration. The game's default voice.
 
     Callers are responsible for the perspective; tools/voice_lint.py enforces
     it across the content files.
     """
-    voice.say("narrator", text)
+    if speak:
+        voice.say("narrator", text)
     for line in _wrap(text):
         _emit(paint(line, PALETTE["narration"]))
     blank(CONFIG["display"]["paragraph_gap"])
@@ -305,6 +306,7 @@ def ask(prompt: str = "> ") -> str:
 
 
 def pause(message: str = "any key") -> None:
+    voice.stop()
     """Wait for acknowledgement. On a terminal, any key will do."""
     if interactive():
         sys.stdout.write(paint(f"  {message}", PALETTE["dim"]))
@@ -503,6 +505,7 @@ def install_resize_handler(redraw) -> None:
 
 
 def read_key() -> str:
+    voice.stop()
     """Block for one keypress. Returns a name for special keys, else the char.
 
     Reads through `os.read` on the raw file descriptor rather than

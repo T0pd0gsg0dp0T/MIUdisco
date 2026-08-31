@@ -2,18 +2,20 @@
  "id": "crash_site",
  "name": "The Wreckage in the Shallows",
  "subtitle": "Where you woke up. Whatever this was, you were in it.",
- "description": "Cold to the waist. The water here comes in at the pace of something with nowhere to be, and it has been going through your pockets since before you woke up.\n\nBehind you, half in the shallows, is the thing you came down in. It is large and it is broken and the smell coming off it is hot metal apologising. Rotor blades are still turning somewhere above the fog, unhurried, in a town where — and this arrives with total confidence and no source whatsoever — nobody owns a helicopter.\n\nAhead, past the harbour wall, green lampposts go up a street in a line, each one throwing more shadow than its flame can account for.\n\nYou do not know your name. This is not distressing yet. It is simply the first item on a list that is going to get longer.",
- "revisit": "The wreckage is where you left it, cooling. The water has stopped going through your pockets, having found nothing else it wanted.",
+ "description": "Cold to the waist, and the cold has stopped being an event and become a condition. The water here comes in at the pace of something with nowhere in particular to be, turning over the shingle, going out again, coming back with the same shingle in a slightly different order. It has been going through your pockets since before you woke up and it has been thorough about it, and whatever it wanted it has either taken or decided against.\n\nBehind you, half in the shallows and half up the shingle where it stopped, is the thing you came down in. It is large and it is broken and it is broken in a way that objects of that size are not supposed to break, and the smell coming off it is hot metal apologising. Somewhere above the fog the rotor blades are still turning, unhurried, patient, entirely unbothered by having arrived — in a town where, and this arrives with total confidence and no source whatsoever, nobody owns a helicopter.\n\nAhead, past the harbour wall, green lampposts go up a street in a line. Each one throws considerably more shadow than its flame can account for, and the shadows do not agree with one another about where the light is coming from, and nobody has apparently ever raised this at a parish meeting.\n\nAnd you do not know your name.\n\nThis is not distressing yet. It is sitting in you the way a missing tooth sits in a jaw — not painful, simply a place the tongue keeps going back to, testing, finding nothing, going back again. It is the first item on a list, and some part of you that has done this kind of work before is already fairly certain the list is going to get longer.",
+ "revisit": "The wreckage is where you left it and it has gone on cooling in your absence, which is the most reassuring thing that has happened all evening. The ticking has slowed. The smell has thinned out into something closer to a workshop than an accident.\n\nThe water has stopped going through your pockets, having found nothing else in them it wanted. It works at the shingle instead, turning it over, putting it back, running the same four feet of beach again and again with the air of a thing that has been given a task and no deadline.\n\nYour own prints are still on the sand above the tideline. Nothing has come to take them.",
  "ambient": [
-  "Something structural gives out inside the wreck, settles two inches, and stops.",
-  "The rotors change pitch briefly and then remember themselves.",
-  "A gull goes over, or a thing shaped approximately like one."
+  "Something structural gives out inside the wreck, settles two inches with a sound like a held breath being let go, and stops. Nothing follows it. Whatever that was, it has finished being it.",
+  "The rotors change pitch briefly — a quarter-tone, no more, the sound of an engine remembering it is supposed to be doing something — and then remember themselves and go back to what they were.",
+  "A gull goes over, or a thing shaped approximately like one, at a height where the fog makes the distinction academic. It does not call. Gulls call.",
+  "The tide brings in a length of pale rope, considers the beach, and takes it out again. It does this twice more while you are standing there, with the same rope, in the same place.",
+  "Up the hill, a long way off, a door opens and closes and somebody laughs at something. The sound arrives thin and late and entirely ordinary, and it is the first evidence you have had that the green lamps go anywhere at all."
  ],
  "on_enter": {
   "clue": {
    "id": "c_woke_in_wreckage",
    "title": "You came down out of the sky",
-   "text": "You woke in the shallows beside the wreck of something that fell. You have your effects, your injuries and no name.",
+   "text": "You came up out of the water beside the wreck of something that fell, at an hour and on a day you cannot name, into a fog that has not since cleared. You have your effects, dry in the wrong places. You have your injuries, which are neat and symmetrical and not the injuries of a fall. And you have no name — not forgotten, exactly, but absent, the way a word is absent when the sentence around it has been finished by somebody else.",
    "beat": "crash",
    "tags": [
     "crash",
@@ -33,19 +35,19 @@
     "self",
     "body"
    ],
-   "description": "Two of them, working, forty-something. There is ink under the nails of the right one, old and worked in, the kind that arrives over years rather than in an afternoon.\n\nNo wedding ring. A callus on the middle finger where a pen sits.\n\nThe coat is good and has been good for a long time. Whoever you are, you were not poor and you were not idle.",
-   "repeat": "Ink under the nails. A pen callus. Still no name attached to either.",
+   "description": "Two of them, working, forty-something and honest about it. Broad across the knuckle, a little swollen at the joints in the way of hands that have been cold for several hours and expect to be cold for several more.\n\nThere is ink under the nails of the right one. Not a splash and not an accident — it is worked in, down at the quick, the kind of stain that arrives over twenty years rather than over an afternoon, and no amount of scrubbing has ever quite been the answer to it. Somebody has clearly tried. There is a paleness around the stain that says the trying was regular and gave up recently.\n\nNo wedding ring, and no pale band where one was, which closes a door on one whole line of enquiry before it opens. A callus on the middle finger of the right hand, at the first joint, exactly where a pen sits in a hand that has held one for a living.\n\nThe coat is good. It is good in the quiet way that does not announce itself and costs more for the privilege, and it has been good for a long time, and it has been mended twice at the left cuff by somebody who cared about matching the thread.\n\nWhoever you are, you were not poor, and you were not idle, and somebody at some point was fond enough of you to mend a cuff properly.",
+   "repeat": "Ink under the nails, worked in past the point of removal. A pen callus at the first joint. A good coat, mended carefully at the left cuff by a hand that was not yours.\n\nStill no name attached to any of it. The evidence is excellent, and it is all evidence of a profession, and none of it is evidence of a person.",
    "monocle": "Through the gold, the ink under your nails is not ink. It is the same substance the sky over this harbour is bruising with, and there is a great deal more of it in you than under the nails.",
    "passive": [
     {
      "skill": "VISUAL_CALCULUS",
      "dc": 10,
-     "text": "Callus placement, ink depth, the wear on the cuff: this hand has held a pen for six to eight hours a day for upwards of twenty years. Whatever you are, you write."
+     "text": "Callus placement, ink depth, the particular polish on the inside of the second finger where a barrel rests. Run it backwards: this hand has held a pen for six to eight hours a day, most days, for upwards of twenty years. That is not a man who writes. That is a man for whom writing is the load-bearing activity of the day, around which meals and sleep and other people have been arranged."
     },
     {
      "skill": "PAIN_THRESHOLD",
      "dc": 10,
-     "text": "Full inventory, then: the left knee, the right shoulder, a place behind the eye. Nothing broken. Everything filed."
+     "text": "Full inventory, then, and take it properly rather than flinching and calling it a survey. The left knee, which has an opinion about the cold and has had it for years. The right shoulder, more recent, a deep ache rather than a sharp one. A place behind the eye that is not a headache and is not going away.\n\nNothing broken. Nothing that will stop you walking up that hill. Everything filed, in the manner of a body that has learned its owner is not going to do anything about any of it."
     }
    ],
    "effects": {
@@ -68,7 +70,7 @@
     "skill": "PAIN_THRESHOLD",
     "dc": 9,
     "kind": "white",
-    "prompt": "Press the places that hurt, one at a time, and take a full inventory rather than a flinch.",
+    "prompt": "You have been avoiding this since you stood up, in the specific way a man avoids the one piece of evidence that is attached to him. Press the places that hurt, one at a time, hold each one long enough to get an honest answer, and take a full inventory rather than a flinch.",
     "success": "Knee, shoulder, a place behind the eye. You press each one and hold it and the body reports honestly for once.\n\nNothing is broken. Everything is bruised in the pattern of a man who was held and then let go, not a man who struck anything — and the bruising on the forearms is symmetrical, which is not what a fall does.",
     "failure": "You press the knee and the knee closes the conversation, and the inventory ends there with one item on it, underlined.",
     "success_effects": {
@@ -100,24 +102,24 @@
     "helicopter",
     "debris"
    ],
-   "description": "It is the size of a small room and it has come apart along seams that a manufactured object should not have. The metal is hot where the water is not touching it.\n\nThere is no cockpit. There are no controls. There is no space inside it in which a person could have been sitting, and you were unmistakably inside it.\n\nOn one intact panel, stencilled small and neat: a serial number, and under the serial number, four words in a language that resolves into English while you are reading it and declines to afterwards.",
-   "repeat": "Still cooling. Still no cockpit. Still no room in it for a man, which continues to be the interesting part.",
+   "description": "It is the size of a small room and it has come apart along seams that a manufactured object should not have — not torn, not buckled, but *parted*, the way a thing parts when it was assembled out of something that was never quite one piece to begin with. The metal is hot where the water is not touching it, and it ticks as it gives up that heat, unevenly, like a clock being wound by somebody who keeps stopping to think.\n\nThere is no cockpit. There are no controls, no seat, no restraints, no instrument housing, no place for a hand to have gone. There is no space inside it in which a person could have been sitting.\n\nYou were unmistakably inside it.\n\nOn one intact panel, stencilled small and neat and slightly off-square, as though applied by hand and in a hurry: a serial number. Under the serial number, four words in a language that resolves into English while you are reading it and declines to afterwards, so that you know you have understood them and cannot say what they were.",
+   "repeat": "Still cooling, and the ticking has spaced out into something almost conversational. Still no cockpit, still no controls, still nowhere inside it that a man could have been — which continues to be the interesting part, and continues to be the part that does not get less true for being looked at twice.",
    "monocle": "Through the gold, the wreck is not wreckage. It is a *correction* — something struck out heavily enough to tear the surface it was struck out on, and the tearing is what came down, and you were in the tear rather than in the machine.",
    "passive": [
     {
      "skill": "INTERFACING",
      "dc": 11,
-     "text": "There are no working parts. Not damaged ones — absent ones. This object has the shape of a machine and none of the commitments of one."
+     "text": "There are no working parts in this. Not damaged ones — *absent* ones. No linkages, no housings, no places where a linkage or a housing has been torn out and left a socket behind. The object has the outward shape of a machine and none of the interior commitments of one, the way a stage prop has the shape of a door."
     },
     {
      "skill": "LOGIC",
      "dc": 11,
-     "text": "You were inside a thing with no inside. Hold that. Do not resolve it yet, and do not let anybody resolve it for you."
+     "text": "You were inside a thing that has no inside. Hold that. Do not resolve it, do not soften it into a thing you misremembered, and above all do not let anybody up that hill resolve it for you — because somebody will offer to, kindly, within the hour, and the offer will be very easy to accept."
     },
     {
      "skill": "HALF_LIGHT",
      "dc": 10,
-     "text": "It is still hot. Things that are still hot are still happening. Do not put a hand on it and do not stand downwind of it."
+     "text": "It is still hot. Things that are still hot are still happening, and a thing that is still happening has not finished deciding what it is going to do. Do not put a hand on it. Do not stand downwind of it. Do not, in particular, put your head inside the part that looks like it wants you to."
     }
    ],
    "effects": {
@@ -139,7 +141,7 @@
     "skill": "HALF_LIGHT",
     "dc": 11,
     "kind": "white",
-    "prompt": "It is still hot and it is still doing something. Go in close enough to find out what.",
+    "prompt": "It is still hot and it is still ticking and it is still, in some sense that will not sit still long enough to be examined, doing something. Go in past the point where the heat says stop, and find out what.",
     "success": "You get in past the point where the heat says stop, because the animal doing this has decided the heat is not the threat.\n\nIt is right. The threat is the sound — under the ticking of cooling metal, a rhythm, four or five strikes and a pause and a return, which is not a machine failing. It is a machine *working*, somewhere very close, and it is a typewriter.",
     "failure": "You get within a yard and everything old in you objects at once, loudly and without argument, and you are back at the waterline with your pulse doing something athletic and nothing whatever to show for it.",
     "success_effects": {
@@ -174,23 +176,23 @@
     "cane"
    ],
    "description": "Four items, and the water did not take any of them.\n\nA gold monocle, unbroken, on a gold chain. A gold pocket watch stopped at 3:33. A cane with a gold onion handle, which is a joke somebody made once and then had to live inside. And a notebook, waterlogged, most of it a blue smear.\n\nThree pages of the notebook are still legible. They are in handwriting that matches the callus on your finger. You have no memory of writing them and no reason to doubt that you did.",
-   "repeat": "Monocle, watch, cane, notebook. The notebook still has its three legible pages and you still do not remember writing them.",
+   "repeat": "Three pages, dry. A watch stopped mid-sweep at twenty-seven minutes past three. A monocle in a case worn shiny at the hinge. And nothing whatsoever with a name on it, which you have now confirmed four times, each time slightly faster than the last.",
    "monocle": "Through the gold — and the monocle looking at itself is a thing you will want to not think about too hard — all four objects are the same age, and the age is not a number of years. They were issued together. They are a set. Somebody equipped you.",
    "passive": [
     {
      "skill": "PERCEPTION",
      "dc": 10,
-     "text": "The watch is stopped and the watch is dry. Everything else came out of the harbour soaked. The watch has not been in the water at all."
+     "text": "Everything in these pockets is wet except the pages, and the pages are dry, and they are dry in a way that has nothing to do with being wrapped or shielded. They are simply dry, in a coat that has been in the sea, and the ink on them has not run."
     },
     {
      "skill": "HAND_EYE",
      "dc": 10,
-     "text": "Take the wet pages from the spine, slowly, with the grain. Wrong angle and the three legible ones become four hundred pieces of confetti."
+     "text": "The watch is stopped at 3:33 and the second hand is not resting against the pin. It has stopped mid-sweep, which a mechanism does not do — a spring runs down and the hand comes to rest. This one has been *held*."
     },
     {
      "skill": "CONCEPTUALISATION",
      "dc": 11,
-     "text": "Gold, gold, gold, and a joke about layers. This is not a man's possessions. This is a *characterisation*, and somebody assembled it on purpose."
+     "text": "Three legible pages, a stopped watch, a monocle, and no wallet, no keys, no letter, no photograph, nothing with a name on it. That is not what a man's pockets contain. That is what a man's pockets contain when somebody has decided what he is going to need."
     }
    ],
    "effects": {
@@ -248,18 +250,18 @@
     "inland"
    ],
    "description": "The wall is old and the stone is wet to a height that the tide has no business reaching.\n\nBeyond it a street goes up into the parish, green lampposts at intervals, each flame leaning very slightly away from the harbour as though the harbour had said something.\n\nThere are people up there. You can hear a queue being served at a speed no queue is served at, somewhere out of sight, continuously.",
-   "repeat": "The street goes up. The lampposts lean away. The queue is still being served at a speed that no queue is served at.",
+   "repeat": "The wall is cold and the parish is up there behind it, going about an evening that has no space in it for a man coming out of the harbour. The green lamps have not moved. The fog is holding at exactly the height it was holding at.",
    "monocle": "Through the gold the lampposts are not lit. They are *annotated* — each one carrying a small mark in the margin of the air beside it, in the same hand as your notebook.",
    "passive": [
     {
      "skill": "SHIVERS",
      "dc": 10,
-     "text": "The parish, coming down the hill to meet you: wet stone, green flame, and a fog with rotors in it that has been here longer than tonight."
+     "text": "The cold comes off the stone and goes through the coat and keeps going, and it brings the parish with it: the green lamps up the street, the fog holding at a height it has held all week, a door somewhere up the hill opening onto warmth and closing again. The town is up there. It is going about its evening. It does not know you are down here yet, and there is a particular quality to being unaccounted for that will not survive the walk up that street."
     },
     {
      "skill": "VOX_POPULI",
      "dc": 11,
-     "text": "Four streets up, a man sets down a crate and looks at this fog for longer than the crate required. He does it every night. He will not mention it to you."
+     "text": "Four streets over, a man in an apron sets a crate down and looks at the fog for longer than the crate required. Somebody laughs in a room with the window shut. A queue is moving outside a place that sells dews, and every person in it is standing slightly closer together than the weather strictly demands.\n\nNone of them has heard anything come down over the harbour tonight, because nothing did."
     }
    ],
    "effects": {
@@ -312,8 +314,8 @@
     "marks",
     "shore"
    ],
-   "description": "The tide has been going out since before you woke and it has left the beach in the condition of a page somebody has written on and not yet torn up.\n\nThere are marks. There is the long smooth drag of the wreck settling, and there is a churn where the water works at it, and between the churn and the harbour wall there is a set of prints going up the sand, and they are yours, and they are walking.\n\nNot crawling. Not staggering. Walking, at an even stride, in a straight line, from the water to the wall.",
-   "repeat": "The prints are still there. The tide has had four hours to take them and has taken everything else on this beach and left those.",
+   "description": "The tide has been going out since before you woke and it has left the beach in the condition of a page somebody has written on and not yet decided whether to tear up.\n\nThere are marks, and they are legible, and they are in the order they happened in. There is the long smooth trough where the wreck came to rest and settled and gave up — a drag, deepening, then stopping. There is the churn a yard out where the water is still working at it and will go on working at it until there is nothing left worth working at.\n\nAnd between the churn and the harbour wall there is a set of prints going up the sand. They are yours; the fit is not in question, you can stand in one and find it your own. They go from the water to the wall in a straight line, without deviation, without the shortening and hesitation of a man on a wet slope in the dark.\n\nThey are walking. Not crawling, not staggering, not the four-limbed scramble of somebody who has just been in an accident and is getting away from it. Walking, at an even stride, like a man crossing a room he knows the shape of.\n\nThe tide has had four hours at this beach and has taken everything else off it. It has left those.",
+   "repeat": "The prints are still there. The tide has had another go at the beach in your absence and has taken the rope and the weed and a good deal of the shingle pattern with it, and it has left the prints exactly as they were, going up the sand in a straight unhurried line from a place where there was no ground to stand on.",
    "monocle": "Through the gold there is only one set of prints on this beach and they go the wrong way — down the sand, into the water, in a stride that does not vary — and the sea end of them is where the wreck is, and there is no return.",
    "passive": [
     {
@@ -340,7 +342,7 @@
     "skill": "VISUAL_CALCULUS",
     "dc": 11,
     "kind": "white",
-    "prompt": "The water has been going out for hours and it has left a record of everything that came up this beach. Read it backwards.",
+    "prompt": "The water has been going out for hours and it has left a record of everything that came up this beach, in order, in the sand. It will not be there in another hour. Read it backwards while there is still something to read.",
     "success": "Run it in reverse. Stride length gives height and gives weight and both of them give you, so the prints are yours and that was never in question.\n\nWhat was in question is where they start, and they start four feet out from the low-water mark, in a place that was under three feet of water at the hour they were made, on sand that would not have held them.\n\nThey do not come out of the sea. They *begin*, at depth, mid-stride, already walking — and there is a second set that comes down to meet them at the wall, smaller, in a boot with a worn heel, and that set turns round and goes back up the hill in a hurry with the first set beside it.",
     "failure": "Stride, depth, the angle of the sand: it comes apart into three problems that will not sit still together, and the tide takes the near end of the evidence while you are working on the far end, which is the tide's whole method.",
     "success_effects": {

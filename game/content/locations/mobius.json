@@ -2,16 +2,8 @@
  "id": "mobius",
  "name": "The Möbius Strip Club",
  "subtitle": "One surface. One edge. No way to be inside it wrongly.",
- "description": {
-  "low": "The frontage is red and the light coming off it is not, quite. Inside, the room is a room, and the corridor off the room is a corridor, and if you follow the corridor in one direction with no turns and no doors you will arrive at the room, facing the way you set off, having never once reversed. Patrons do this on purpose. It is considered a thing to do while drunk, the way other towns have a hill.\n\nThe stage does its impossible business: dancers continuously undressing, and never at any point undressed, an act that resolves the moment you stop watching and refuses to while you do. The bar is long and the menu is a provocation. And at the edges — behind the booths, along the corridor where the light gives out — the walls occasionally stop being opaque, and what is on the other side of them is not the street.",
-  "mid": "Red frontage, light that is nearly red. Follow the corridor one way with no turns and you arrive back in the room facing forward, never having reversed. Onstage: dancers continuously undressing and never undressed. At the edges, the walls occasionally stop being opaque, and what is behind them is not the street.",
-  "high": "The club that returns you to yourself without a turn. At the edges the walls go transparent, and behind them is not the street."
- },
- "revisit": {
-  "low": "The Insta-gators register your entry the way a spreadsheet registers a variance. Nobody moves. Two of them are now standing where none of them were, and they were not standing anywhere before that, and they will tell you they have been there all evening and one of them will believe it.",
-  "mid": "The Insta-gators register your entry the way a spreadsheet registers a variance. Two of them are now standing where none were.",
-  "high": "Two Insta-gators are standing where none were."
- },
+ "description": "The frontage is red and the light coming off it is not, quite. Inside, the room is a room, and the corridor off the room is a corridor, and if you follow the corridor in one direction with no turns and no doors you will arrive at the room, facing the way you set off, having never once reversed. Patrons do this on purpose. It is considered a thing to do while drunk, the way other towns have a hill.\n\nThe stage does its impossible business: dancers continuously undressing, and never at any point undressed, an act that resolves the moment you stop watching and refuses to while you do. The bar is long and the menu is a provocation. And at the edges — behind the booths, along the corridor where the light gives out — the walls occasionally stop being opaque, and what is on the other side of them is not the street.",
+ "revisit": "The Insta-gators register your entry the way a spreadsheet registers a variance. Nobody moves. Two of them are now standing where none of them were, and they were not standing anywhere before that, and they will tell you they have been there all evening and one of them will believe it.",
  "lucid": {
   "2": "The music has gaps in it. Not silences — gaps, of a length that a person would take to change a line.",
   "3": "In the third gap, before the music resumes, there is a sound in the room that is not in the room: keys, four of them, struck hard and close together, and then a carriage going back.",
@@ -32,11 +24,7 @@
     "lettering",
     "name"
    ],
-   "description": {
-    "low": "THE MÖBIUS STRIP CLUB, in a red that has been chosen by somebody with a whole opinion about red. The umlaut is a nice touch and is doing no phonetic work whatsoever; it is there to be looked at, which in this town is a legitimate job.\n\nThe letters are steady. They have been steady every time you have come here.",
-    "mid": "THE MÖBIUS STRIP CLUB in an opinionated red. The umlaut does no phonetic work. The letters are steady.",
-    "high": "THE MÖBIUS STRIP CLUB, steady, red."
-   },
+   "description": "THE MÖBIUS STRIP CLUB, in a red that has been chosen by somebody with a whole opinion about red. The umlaut is a nice touch and is doing no phonetic work whatsoever; it is there to be looked at, which in this town is a legitimate job.\n\nThe letters are steady. They have been steady every time you have come here.",
    "repeat": "Steady. Red. A joke about surfaces, told once, at some expense.",
    "monocle": "Through the gold the letters detach from the board and reassemble, unhurried, with the deliberation of a man rearranging a hand of cards, and settle into:\n\nREVILO'S TRAP BUILT\n\nThey hold for as long as you keep the lens up. Then they go back, one letter at a time, in the reverse of the order they came.",
    "passive": [
@@ -104,11 +92,7 @@
     "hallway",
     "loop"
    ],
-   "description": {
-    "low": "It leaves the main room at the left of the stage and it does not turn. There is no point along it at which it turns. You have walked it and paid attention and it does not turn, and it delivers you to the main room at the right of the stage, facing forward.\n\nThe wall on the outside of the walk is papered. The wall on the inside of the walk is papered in the same paper. There is no inside of the walk. That is what a Möbius strip is for, and somebody has built one out of flock wallpaper and put a bar in it.",
-    "mid": "It leaves at the left of the stage, never turns, and delivers you to the right of the stage facing forward. Both walls carry the same paper. There is no inside. Somebody built a Möbius strip out of flock wallpaper and put a bar in it.",
-    "high": "The corridor does not turn and returns you facing forward."
-   },
+   "description": "It leaves the main room at the left of the stage and it does not turn. There is no point along it at which it turns. You have walked it and paid attention and it does not turn, and it delivers you to the main room at the right of the stage, facing forward.\n\nThe wall on the outside of the walk is papered. The wall on the inside of the walk is papered in the same paper. There is no inside of the walk. That is what a Möbius strip is for, and somebody has built one out of flock wallpaper and put a bar in it.",
    "repeat": "The second walk is shorter. Not because the corridor is shorter. Because you have stopped checking.",
    "monocle": "Through the gold the corridor is straight and short — nine feet, a dead end, a wall. The loop is not in the architecture. The loop is in the account of the architecture: the same nine feet, described four times, with the fourth description ending where the first began.",
    "passive": [
@@ -174,11 +158,7 @@
     "glass",
     "transparent"
    ],
-   "description": {
-    "low": "The booths at the back are where the light stops trying. The last one is upholstered in a red that has gone the colour of an old argument, and the wall behind it does the thing.\n\nIt does it for about two seconds at a stretch and it does not do it on request. The wall stops being a wall — not fading, not shimmering, simply *not being the item that was there* — and behind it is somewhere else. Twice it has been a stretch of obsidian and a row of vault doors. Once it was a low room with a green-shaded lamp and a desk under it, and a chair pulled out, and nobody in the chair.",
-    "mid": "The wall behind the last booth stops being a wall for two seconds at a time. Behind it: twice, obsidian and vault doors. Once, a low room with a green lamp, a desk, and a chair pulled out with nobody in it.",
-    "high": "The wall goes transparent for two seconds. Behind it: vault doors, or a desk under a green lamp with the chair pulled out."
-   },
+   "description": "The booths at the back are where the light stops trying. The last one is upholstered in a red that has gone the colour of an old argument, and the wall behind it does the thing.\n\nIt does it for about two seconds at a stretch and it does not do it on request. The wall stops being a wall — not fading, not shimmering, simply *not being the item that was there* — and behind it is somewhere else. Twice it has been a stretch of obsidian and a row of vault doors. Once it was a low room with a green-shaded lamp and a desk under it, and a chair pulled out, and nobody in the chair.",
    "repeat": "It does it again while you are sitting down, which it has never done while you were sitting down.",
    "lucid": {
     "3": "The chair is not pulled out. The chair is pushed back, which is a different event with a different cause, and the cause of a chair being pushed back is somebody standing up in a hurry."
@@ -258,11 +238,7 @@
     "cocktails",
     "bar"
    ],
-   "description": {
-    "low": "Letterpressed on card, because the club has standards about the surfaces it lies on.\n\nWRITER'S BLOCK — gin, bitter, nothing else, served without ice and without apology.\nRECURRING DREAM — as above, again.\nTHE UNRELIABLE NARRATOR — ask, and be told something.\nSECOND PERSON — the house special. You drink it. You have always been going to drink it.\n\nThe last one is not a cocktail name. The last one is a grammatical case, and somebody has put it on a menu, and the price is left blank.",
-    "mid": "WRITER'S BLOCK — gin, bitter, no ice, no apology. RECURRING DREAM — as above, again. THE UNRELIABLE NARRATOR — ask, and be told something. SECOND PERSON — the house special, price left blank.",
-    "high": "WRITER'S BLOCK. RECURRING DREAM. THE UNRELIABLE NARRATOR. SECOND PERSON — price left blank."
-   },
+   "description": "Letterpressed on card, because the club has standards about the surfaces it lies on.\n\nWRITER'S BLOCK — gin, bitter, nothing else, served without ice and without apology.\nRECURRING DREAM — as above, again.\nTHE UNRELIABLE NARRATOR — ask, and be told something.\nSECOND PERSON — the house special. You drink it. You have always been going to drink it.\n\nThe last one is not a cocktail name. The last one is a grammatical case, and somebody has put it on a menu, and the price is left blank.",
    "repeat": "SECOND PERSON is still unpriced. The blank has been printed. Somebody set type for the absence.",
    "monocle": "The gold does not change the card. It changes the hand that set it: the letterpress impressions are too deep and too even, and every one of them has been struck the same number of times, and the number is the number of times a key is struck by somebody who is not confident.",
    "passive": [
@@ -308,11 +284,7 @@
     "service door",
     "notice"
    ],
-   "description": {
-    "low": "Screwed to the wall at alligator eye level, which is to say at a height that makes a standing man stoop and look ridiculous doing it.\n\nSECURITY ALIGNMENT — PATRON ANOMALY AWARENESS\n1. Identify the anomaly the patron has surfaced.\n2. Do not confirm. Do not deny. Redirect.\n3. If redirect fails, reposition the patron.\n4. If reposition fails, escalate to the Coalition.\n5. Post-incident: the anomaly did not occur. Log the anomaly.\n\nThe fifth line has been laminated over a previous fifth line. Held to the light, the old one shows through, and the old one said: *Post-incident: the anomaly did not occur.* Somebody has added the second sentence since.",
-    "mid": "SECURITY ALIGNMENT — PATRON ANOMALY AWARENESS. Identify. Do not confirm, do not deny, redirect. Reposition. Escalate to the Coalition. And: 'Post-incident: the anomaly did not occur. Log the anomaly.' Held to the light, the second sentence is a later addition.",
-    "high": "A security card: redirect, reposition, escalate to the Coalition, and 'the anomaly did not occur. Log the anomaly.' The second sentence was added later."
-   },
+   "description": "Screwed to the wall at alligator eye level, which is to say at a height that makes a standing man stoop and look ridiculous doing it.\n\nSECURITY ALIGNMENT — PATRON ANOMALY AWARENESS\n1. Identify the anomaly the patron has surfaced.\n2. Do not confirm. Do not deny. Redirect.\n3. If redirect fails, reposition the patron.\n4. If reposition fails, escalate to the Coalition.\n5. Post-incident: the anomaly did not occur. Log the anomaly.\n\nThe fifth line has been laminated over a previous fifth line. Held to the light, the old one shows through, and the old one said: *Post-incident: the anomaly did not occur.* Somebody has added the second sentence since.",
    "repeat": "You stoop and read it again. Line five is still two sentences that cannot both be operative.",
    "passive": [
     {
@@ -378,11 +350,7 @@
     "act",
     "performance"
    ],
-   "description": {
-    "low": "The act is the club's whole reputation and it is, technically, one gesture performed continuously: the dancers are undressing, and are always undressing, and at no point in any evening in the history of this establishment has any of them been undressed.\n\nThe patrons accept this. Not tolerate — accept, in the round-eyed way of a congregation. Nobody watches it as an erotic proposition. They watch it the way people watch a fire, or a tide: something that is going somewhere and is never going to arrive, and is restful precisely because of it.",
-    "mid": "One gesture, performed continuously. The dancers are always undressing and have never been undressed. The patrons watch it the way people watch a tide — something going somewhere that will never arrive.",
-    "high": "The dancers undress continuously and are never undressed. The room finds this restful."
-   },
+   "description": "The act is the club's whole reputation and it is, technically, one gesture performed continuously: the dancers are undressing, and are always undressing, and at no point in any evening in the history of this establishment has any of them been undressed.\n\nThe patrons accept this. Not tolerate — accept, in the round-eyed way of a congregation. Nobody watches it as an erotic proposition. They watch it the way people watch a fire, or a tide: something that is going somewhere and is never going to arrive, and is restful precisely because of it.",
    "repeat": "Still going. Still not arrived. The restfulness of it is the part that has started to bother you.",
    "monocle": "Through the gold there is nobody on the stage. There is a sentence on the stage, and the sentence is *she was still undressing*, and it has been left in the present continuous by somebody who could not decide how it ended and went to get a drink instead.",
    "passive": [
@@ -492,7 +460,7 @@
     "corners",
     "true"
    ],
-   "description": "Stand at the corner by the service door and sight along the near wall to the far one and they are not parallel. Stand at the other corner and do the same and they are not parallel by a different amount, in the other direction.\n\nThe club does not appear to notice. Drinks are poured level, the stage is level, and eleven staff walk this floor nightly without once putting a foot wrong on it.",
+   "description": "Stand at the corner by the service door and sight along the near wall to the far one, and they are not parallel. Close one eye, take it properly, use the brass rail as a straight edge: not parallel, by a margin small enough to argue about and large enough to see.\n\nNow walk to the other corner and do the same. Still not parallel — and not parallel by a different amount, in the other direction, which is not a thing a room is able to be.\n\nThe club does not appear to notice. Drinks are poured level and stay level. The stage is level. Eleven staff walk this floor nightly at speed, carrying trays, in low light, and not one of them has ever put a foot wrong on it or remarked that the room is a difficult shape.\n\nThey have adjusted. Everyone in here has adjusted, continuously, without ever being told there was anything to adjust to, and they have been doing it so long and so well that the adjustment has stopped being visible even to the people performing it.",
    "repeat": "Sight it again. The error has moved. It is always small, and it is always somewhere, and it is never twice in the same corner.",
    "monocle": "Through the gold the walls are ruled lines and the ruling is freehand, and every few feet there is a place where the line has been gone over a second time to straighten it, and the second pass is always slightly better than the first.",
    "effects": {
@@ -547,7 +515,7 @@
     "everybody",
     "room"
    ],
-   "description": "Nobody comes in the front. Ginny said so on the first night and she was not making conversation: they arrive by the side, by the corridor, by the stair that does not go anywhere it should, and once they are in they distribute themselves across the room with a great deal of care.\n\nThere are eleven staff and about ninety patrons and not one of them is standing where the far booth can see them.",
+   "description": "Nobody comes in the front. Ginny said so on the first night and she was not making conversation — they arrive by the side, by the corridor, by the stair that does not go anywhere it ought to, and the front door stands open all evening onto a street that ninety people have declined to use.\n\nOnce they are in, they distribute themselves across the room with a great deal of care.\n\nIt does not look like care. It looks like a busy floor on a good night: knots by the bar, a press at the stage end, couples working the edges. But watch it long enough and a shape resolves out of it, and the shape has a hole in it. There are eleven staff and about ninety patrons and not one of them is standing in the eight or so square feet directly in front of the far booth.\n\nThe carpet there is newer than the carpet anywhere else, because nothing has walked on it.",
    "repeat": "The floor has rearranged itself since you looked and the far booth still has nobody in front of it.",
    "monocle": "Through the gold the floor has a shape drawn on it in a dotted line, and everybody is outside the dotted line, and the dotted line has been there longer than the carpet.",
    "effects": {

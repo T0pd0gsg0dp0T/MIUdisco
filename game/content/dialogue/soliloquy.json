@@ -113,10 +113,7 @@
    ]
   },
   "plates_evasion": {
-   "text": {
-    "low": "You are still here. Most people take the brass and go.\n\nVery well. A trade, then, since you have earned one by the simple method of not leaving: I will tell you a true thing, and you will not ask me a second true thing tonight, and we will both pretend that is a fair exchange because it is the only exchange on offer.\n\nThe plates do not show you your name. The plates show *the name that is being written*. It is yours at the moment you look because at the moment you look you are what is being written. Step away and it is someone else's, because it is.",
-    "high": "You are still here. Most people take the brass and go.\n\nVery well — a trade, since you have earned one by the simple method of not leaving. I will tell you a true thing, and you will not ask me a second one tonight.\n\nThe plates do not show you your name. They show *the name that is being written*. It is yours at the moment you look because at the moment you look you are what is being written. Step away and it is someone else's, because it is."
-   },
+   "text": "You are still here. Most people take the brass and go.\n\nVery well. A trade, then, since you have earned one by the simple method of not leaving: I will tell you a true thing, and you will not ask me a second true thing tonight, and we will both pretend that is a fair exchange because it is the only exchange on offer.\n\nThe plates do not show you your name. The plates show *the name that is being written*. It is yours at the moment you look because at the moment you look you are what is being written. Step away and it is someone else's, because it is.",
    "effects": {
     "clue": {
      "id": "c_being_written",
@@ -145,10 +142,7 @@
    "narration": true
   },
   "ledger": {
-   "text": {
-    "low": "Ah, the prepaid. My favourite column and my least favourite forty souls.\n\nThey arrive settled. No family calls, no estate corresponds, no parish objects. A card comes ahead of the body with four lobes on it and a number, and the number is always exactly right, and I have never once had to invoice the Coalition for a shortfall — which, given that these are forty deaths across sixty years at wildly differing costs of brass, ought to be impossible and is merely *tidy*.",
-    "high": "Ah, the prepaid. My favourite column and my least favourite forty souls.\n\nThey arrive settled. No family calls, no estate corresponds. A card comes ahead of the body with four lobes on it and a number, and the number is always exactly right.\n\nForty deaths across sixty years at wildly differing costs of brass, and I have never once had to invoice for a shortfall. That ought to be impossible. It is merely *tidy*."
-   },
+   "text": "Ah, the prepaid. My favourite column and my least favourite forty souls.\n\nThey arrive settled. No family calls, no estate corresponds, no parish objects. A card comes ahead of the body with four lobes on it and a number, and the number is always exactly right, and I have never once had to invoice the Coalition for a shortfall — which, given that these are forty deaths across sixty years at wildly differing costs of brass, ought to be impossible and is merely *tidy*.",
    "options": [
     {
      "id": "what_connects",
@@ -312,10 +306,7 @@
    ]
   },
   "vault_ajar": {
-   "text": {
-    "low": "You will go and look. Of course you will. You are the sort of man who reads the plates, and the sort of man who reads the plates is the sort of man who opens the door, and I have buried a great many of both.\n\nSo. Since I cannot stop you and have decided, tonight, at some cost, not to try: when you look, look at the *page*. Not the desk. Not the lamp, not the chair, not the split in the trestle leg that you will recognise and that will take the whole of your attention for a minute you cannot spare.\n\nThe page. And whatever is on it — Mr Onions, whatever is on it — do not read it aloud.",
-    "high": "You will go and look. Of course you will. The sort of man who reads the plates is the sort of man who opens the door, and I have buried a great many of both.\n\nSo — since I cannot stop you and have decided, at some cost, not to try: when you look, look at the *page*. Not the desk. Not the lamp, not the split in the trestle leg that will take the whole of your attention for a minute you cannot spare.\n\nThe page. And whatever is on it — do not read it aloud."
-   },
+   "text": "You will go and look. Of course you will. You are the sort of man who reads the plates, and the sort of man who reads the plates is the sort of man who opens the door, and I have buried a great many of both.\n\nSo. Since I cannot stop you and have decided, tonight, at some cost, not to try: when you look, look at the *page*. Not the desk. Not the lamp, not the chair, not the split in the trestle leg that you will recognise and that will take the whole of your attention for a minute you cannot spare.\n\nThe page. And whatever is on it — Mr Onions, whatever is on it — do not read it aloud.",
    "effects": {
     "flag": {
      "soliloquy_warned_you": true
@@ -335,10 +326,7 @@
    "narration": true
   },
   "aloud": {
-   "text": {
-    "low": "Because forty people in my ledger said it out loud.\n\nThat is not a warning about the Coalition, sir, whatever you are about to decide it is. The Coalition are clerks. Clerks arrive *after*.\n\nSaying a thing aloud in Silvora Reefs is how a thing gets to be the case. It is the local physics and every soul in this town obeys it and not one of them has noticed, because you do not notice water. Bud Onkuhdonk says everything is normal, out loud, forty times a day, and at the Outside Inn everything is normal, and that man is holding up a building with his mouth.\n\nSo read the page. Read every word of it. And keep your excellent, tireless, ruinous voice out of it until you have decided what you want to be true.",
-    "high": "Because forty people in my ledger said it out loud.\n\nThat is not a warning about the Coalition, whatever you are about to decide it is. The Coalition are clerks. Clerks arrive *after*.\n\nSaying a thing aloud in Silvora Reefs is how it gets to be the case. It is the local physics, and every soul here obeys it, and not one has noticed, because you do not notice water. Bud Onkuhdonk says everything is normal forty times a day, and at the Outside Inn everything is normal, and that man is holding up a building with his mouth.\n\nSo read the page. Every word. And keep your excellent, ruinous voice out of it until you have decided what you want to be true."
-   },
+   "text": "Because forty people in my ledger said it out loud.\n\nThat is not a warning about the Coalition, sir, whatever you are about to decide it is. The Coalition are clerks. Clerks arrive *after*.\n\nSaying a thing aloud in Silvora Reefs is how a thing gets to be the case. It is the local physics and every soul in this town obeys it and not one of them has noticed, because you do not notice water. Bud Onkuhdonk says everything is normal, out loud, forty times a day, and at the Outside Inn everything is normal, and that man is holding up a building with his mouth.\n\nSo read the page. Read every word of it. And keep your excellent, tireless, ruinous voice out of it until you have decided what you want to be true.",
    "effects": {
     "clue": {
      "id": "c_saying_makes_it_so",
@@ -400,10 +388,7 @@
    ]
   },
   "name": {
-   "text": {
-    "low": "It is a stage direction, yes. Well spotted, and late — most people take a fortnight and you have taken a fortnight, so let us not gild it.\n\nHannah O'Dochtaigh went into a vault in 1961 and I came out of one, and the difference between those two sentences is a name, and I chose mine on purpose. A soliloquy is a speech delivered by a person who believes themselves to be alone.\n\nI have delivered one every night for sixty years, sir, in a building full of the horizontal, and I have never once been alone, and I have never once been answered. You may draw whichever conclusion costs you least.",
-    "high": "It is a stage direction, yes. Well spotted, and late.\n\nHannah O'Dochtaigh went into a vault in 1961 and I came out of one, and the difference between those two sentences is a name, and I chose mine on purpose. A soliloquy is a speech delivered by a person who believes themselves alone.\n\nI have delivered one every night for sixty years, in a building full of the horizontal, and I have never once been alone, and never once been answered. Draw whichever conclusion costs you least."
-   },
+   "text": "It is a stage direction, yes. Well spotted, and late — most people take a fortnight and you have taken a fortnight, so let us not gild it.\n\nHannah O'Dochtaigh went into a vault in 1961 and I came out of one, and the difference between those two sentences is a name, and I chose mine on purpose. A soliloquy is a speech delivered by a person who believes themselves to be alone.\n\nI have delivered one every night for sixty years, sir, in a building full of the horizontal, and I have never once been alone, and I have never once been answered. You may draw whichever conclusion costs you least.",
    "effects": {
     "morale": 2,
     "relationship": {

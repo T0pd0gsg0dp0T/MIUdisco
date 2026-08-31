@@ -68,10 +68,7 @@
    ]
   },
   "sorted": {
-   "text": {
-    "low": "Sorted *properly*. Written up, submitted, stamped, returned, filed, and the file's in the cupboard on the half-landing and you're welcome to it any time, and I mean that, nobody ever takes me up on it.\n\nThat's the trade, Mr Onions. People think maintenance is spanners. It's about four per cent spanners. The rest of it's getting a thing on paper in a form that'll be accepted, and I am — and I'll say this without boasting because it's simply true — I am the best in this parish at getting a thing accepted.",
-    "high": "Sorted *properly*. Written up, submitted, stamped, returned, filed, and the file's in the cupboard on the half-landing and you're welcome to it any time.\n\nThat's the trade, Mr Onions. People think maintenance is spanners. It's about four per cent spanners. The rest is getting a thing on paper in a form that'll be accepted, and I am — without boasting, because it's simply true — the best in this parish at getting a thing accepted."
-   },
+   "text": "Sorted *properly*. Written up, submitted, stamped, returned, filed, and the file's in the cupboard on the half-landing and you're welcome to it any time, and I mean that, nobody ever takes me up on it.\n\nThat's the trade, Mr Onions. People think maintenance is spanners. It's about four per cent spanners. The rest of it's getting a thing on paper in a form that'll be accepted, and I am — and I'll say this without boasting because it's simply true — I am the best in this parish at getting a thing accepted.",
    "passive": [
     {
      "skill": "LOGIC",
@@ -173,10 +170,7 @@
    ]
   },
   "the_remedy": {
-   "text": {
-    "low": "\"Recommend company,\" says Landy, reading it upside down, cheerfully. \"I've always liked that. It's not a remedy, is it? It's not a *remedy*, it's advice, and you don't get advice on a form, forms hate advice.\n\nI've followed it, mind. Twenty-two submissions on that corridor in eleven years and every single one of them says the same in the remedy box, because the worked example says it, and you follow the worked example.\n\nSo there's twenty-two forms in a cupboard in this building all recommending that you don't walk it on your own. Which — hah. Which nobody's ever read, because nobody reads the file, because I'm the only one who ever goes in the cupboard.\"",
-    "high": "\"Recommend company,\" says Landy, reading it upside down, cheerfully. \"I've always liked that. It's not a remedy, it's advice, and you don't get advice on a form. Forms hate advice.\n\nI've followed it, mind. Twenty-two submissions on that corridor in eleven years, every one saying the same in the remedy box, because the worked example says it and you follow the worked example.\n\nSo there's twenty-two forms in a cupboard recommending you don't walk it on your own. Which nobody's ever read, because I'm the only one who goes in the cupboard.\""
-   },
+   "text": "\"Recommend company,\" says Landy, reading it upside down, cheerfully. \"I've always liked that. It's not a remedy, is it? It's not a *remedy*, it's advice, and you don't get advice on a form, forms hate advice.\n\nI've followed it, mind. Twenty-two submissions on that corridor in eleven years and every single one of them says the same in the remedy box, because the worked example says it, and you follow the worked example.\n\nSo there's twenty-two forms in a cupboard in this building all recommending that you don't walk it on your own. Which — hah. Which nobody's ever read, because nobody reads the file, because I'm the only one who ever goes in the cupboard.\"",
    "effects": {
     "clue": {
      "id": "c_twenty_two_forms",
@@ -205,10 +199,7 @@
    ]
   },
   "stamps": {
-   "text": {
-    "low": "Well — no. No, with respect, Mr Onions, that's the bit everybody gets round the wrong way and I'll not have it said about my board.\n\nRESOLVED doesn't mean mended. It's never meant mended. RESOLVED means *the matter is closed and no party is now liable*, and that is a real thing and it is a valuable thing and it takes some getting.\n\nThe corridor's not mended. Course it's not mended. You can't mend a corridor for being long, there's no fitting for it, I've looked in three catalogues.\n\nBut nobody's liable. And that's me. I did that.",
-    "high": "Well — no. With respect, that's the bit everybody gets round the wrong way, and I'll not have it said about my board.\n\nRESOLVED doesn't mean mended. It's never meant mended. RESOLVED means *the matter is closed and no party is now liable*, and that is a real thing and it takes some getting.\n\nThe corridor's not mended. Course it's not — you can't mend a corridor for being long, there's no fitting for it.\n\nBut nobody's liable. And that's me. I did that."
-   },
+   "text": "Well — no. No, with respect, Mr Onions, that's the bit everybody gets round the wrong way and I'll not have it said about my board.\n\nRESOLVED doesn't mean mended. It's never meant mended. RESOLVED means *the matter is closed and no party is now liable*, and that is a real thing and it is a valuable thing and it takes some getting.\n\nThe corridor's not mended. Course it's not mended. You can't mend a corridor for being long, there's no fitting for it, I've looked in three catalogues.\n\nBut nobody's liable. And that's me. I did that.",
    "passive": [
     {
      "skill": "RHETORIC",
@@ -260,10 +251,7 @@
    ]
   },
   "the_slot": {
-   "text": {
-    "low": "I've stood at that slot at six in the morning and I've stood at it at midnight and I have never once heard a thing on the other side of it.\n\nAnd they come back *stamped*, Mr Onions. Not signed. Stamped. And I have looked at eleven hundred of those stamps very closely, because I'm the sort of man who does, and there isn't one of them that's smudged.\n\nEleven hundred stamps and not one smudge. Do you know what that takes? I've stamped things. Everybody smudges. It's the one thing about a stamp.",
-    "high": "I've stood at that slot at six in the morning and at midnight, and I have never once heard a thing on the other side of it.\n\nAnd they come back *stamped*. Not signed. Stamped. And I've looked at eleven hundred of those stamps very closely, because I'm the sort of man who does, and there isn't one that's smudged.\n\nEleven hundred, and not one smudge. Everybody smudges. It's the one thing about a stamp."
-   },
+   "text": "I've stood at that slot at six in the morning and I've stood at it at midnight and I have never once heard a thing on the other side of it.\n\nAnd they come back *stamped*, Mr Onions. Not signed. Stamped. And I have looked at eleven hundred of those stamps very closely, because I'm the sort of man who does, and there isn't one of them that's smudged.\n\nEleven hundred stamps and not one smudge. Do you know what that takes? I've stamped things. Everybody smudges. It's the one thing about a stamp.",
    "effects": {
     "clue": {
      "id": "c_no_smudges",
@@ -287,10 +275,7 @@
    ]
   },
   "in_2f": {
-   "text": {
-    "low": "In your flat? While you were — no. No, Mr Onions, absolutely not, and I'd want that very clearly understood. I've a key and I've never used it unaccompanied and I never would, and if Mr Sobeleaux has said otherwise then Mr Sobeleaux and I will be having a—\n\n... Ah.\n\nNo. Once. Not while you were out — while you were in the *harbour*, which I'd not have called being out, and which is why I said no, and I'd like the record to show I corrected myself unprompted.",
-    "high": "In your flat? While you were — no. Absolutely not, and I'd want that very clearly understood. I've a key and I've never used it unaccompanied and I never would—\n\n... Ah.\n\nNo. Once. Not while you were out — while you were in the *harbour*, which I'd not have called being out, which is why I said no, and I'd like the record to show I corrected myself unprompted."
-   },
+   "text": "In your flat? While you were — no. No, Mr Onions, absolutely not, and I'd want that very clearly understood. I've a key and I've never used it unaccompanied and I never would, and if Mr Sobeleaux has said otherwise then Mr Sobeleaux and I will be having a—\n\n... Ah.\n\nNo. Once. Not while you were out — while you were in the *harbour*, which I'd not have called being out, and which is why I said no, and I'd like the record to show I corrected myself unprompted.",
    "options": [
     {
      "id": "what_for",
@@ -338,10 +323,7 @@
    ]
   },
   "the_warm_patch": {
-   "text": {
-    "low": "I filed it as HEATING — LOCALISED — NO FAULT FOUND, and it came back RESOLVED, and it's on the board, and you've read it, because you read the board, and I've watched you read the board and thought there's a man who reads a board.\n\nAnd I'll tell you the thing I didn't file, since we're stood here.\n\nIt was the right temperature for a person. Not a radiator. Not a machine, whatever the complaints said. It was exactly the warmth a chair's got in it when somebody's just this second got up out of it, and I have been in four hundred empty rooms in twenty-two years, Mr Onions, and I know that warmth, and I stood in it for a minute and a half like an idiot in a good suit and then I went and got my pad.",
-    "high": "I filed it as HEATING — LOCALISED — NO FAULT FOUND, and it came back RESOLVED, and it's on the board, and you've read it, because you read the board.\n\nAnd I'll tell you the thing I didn't file, since we're stood here.\n\nIt was the right temperature for a person. Not a radiator. It was exactly the warmth a chair's got in it when somebody's just this second got up out of it, and I have been in four hundred empty rooms in twenty-two years, and I know that warmth. I stood in it a minute and a half like an idiot in a good suit, and then I went and got my pad."
-   },
+   "text": "I filed it as HEATING — LOCALISED — NO FAULT FOUND, and it came back RESOLVED, and it's on the board, and you've read it, because you read the board, and I've watched you read the board and thought there's a man who reads a board.\n\nAnd I'll tell you the thing I didn't file, since we're stood here.\n\nIt was the right temperature for a person. Not a radiator. Not a machine, whatever the complaints said. It was exactly the warmth a chair's got in it when somebody's just this second got up out of it, and I have been in four hundred empty rooms in twenty-two years, Mr Onions, and I know that warmth, and I stood in it for a minute and a half like an idiot in a good suit and then I went and got my pad.",
    "effects": {
     "clue": {
      "id": "c_just_got_up",
@@ -371,10 +353,7 @@
    ]
   },
   "trestle": {
-   "text": {
-    "low": "He looks up so fast the pocket square moves.\n\n\"Tomorrow. First thing. I'll want an hour and I'll want the desk off it and I'd not trust anybody else with the papers so you'll have to be in.\"\n\nA pause, and then, with a difficulty that is clearly costing him:\n\n\"It'll come back, mind. They do. I've never said that to a tenant in twenty-two years and I'm saying it to you because you asked me a question nobody's asked me and I'd rather be honest than stamped. Some of them come back.\n\nBut I'd have a go at it. If you're in.\"",
-    "high": "He looks up so fast the pocket square moves.\n\n\"Tomorrow. First thing. I'll want an hour and the desk off it, and I'd not trust anybody else with the papers, so you'll have to be in.\"\n\nA pause, and then, with a difficulty that is clearly costing him:\n\n\"It'll come back, mind. Some of them come back. I've never said that to a tenant in twenty-two years and I'm saying it to you because you asked me a question nobody's asked me.\n\nBut I'd have a go at it. If you're in.\""
-   },
+   "text": "He looks up so fast the pocket square moves.\n\n\"Tomorrow. First thing. I'll want an hour and I'll want the desk off it and I'd not trust anybody else with the papers so you'll have to be in.\"\n\nA pause, and then, with a difficulty that is clearly costing him:\n\n\"It'll come back, mind. They do. I've never said that to a tenant in twenty-two years and I'm saying it to you because you asked me a question nobody's asked me and I'd rather be honest than stamped. Some of them come back.\n\nBut I'd have a go at it. If you're in.\"",
    "effects": {
     "flag": {
      "landy_will_mend_the_trestle": true
@@ -394,10 +373,7 @@
    "narration": true
   },
   "suit": {
-   "text": {
-    "low": "Well — thank you. Thank you, that's — nobody says. They notice, I can see them noticing, and then they look at the toolbox and they decide it's a joke and they don't say.\n\nIt isn't a joke. It's a three-piece and it's the same one and I've had it turned twice.\n\nIt's because of the forms, Mr Onions. Twenty-two years I have gone about this parish asking people to accept a piece of paper from me, and a man in overalls hands you a piece of paper and you put it in a drawer. A man in a three-piece hands you a piece of paper and you *read* it.\n\nI have never once had a submission rejected. Some of that's the hand. Most of it's the suit.",
-    "high": "Well — thank you. Nobody says. They notice, and then they look at the toolbox and decide it's a joke and they don't say.\n\nIt isn't a joke. It's a three-piece and it's the same one and I've had it turned twice.\n\nIt's because of the forms. A man in overalls hands you a piece of paper and you put it in a drawer. A man in a three-piece hands you a piece of paper and you *read* it.\n\nI have never once had a submission rejected. Some of that's the hand. Most of it's the suit."
-   },
+   "text": "Well — thank you. Thank you, that's — nobody says. They notice, I can see them noticing, and then they look at the toolbox and they decide it's a joke and they don't say.\n\nIt isn't a joke. It's a three-piece and it's the same one and I've had it turned twice.\n\nIt's because of the forms, Mr Onions. Twenty-two years I have gone about this parish asking people to accept a piece of paper from me, and a man in overalls hands you a piece of paper and you put it in a drawer. A man in a three-piece hands you a piece of paper and you *read* it.\n\nI have never once had a submission rejected. Some of that's the hand. Most of it's the suit.",
    "effects": {
     "morale": 6,
     "relationship": {

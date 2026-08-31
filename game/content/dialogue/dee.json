@@ -117,10 +117,7 @@
    ]
   },
   "extent_ok": {
-   "text": {
-    "low": "Now that you've said it we can tell you the useful part, and it is useful, and we've been sitting on it because there's no point handing a man a tool he hasn't got a hand for.\n\nIt happened in one go. Nineteen years ago, on a Tuesday, in the lounge, at about four in the afternoon: we were one man in one chair and then we were this, and there was no transition and nothing hurt.\n\nAnd the thing we've never told anybody — the thing we've been holding — is that we know exactly what we were doing at the moment it happened.\n\nWe were being described. Somebody in this room was describing us to somebody else. And they got to the middle of it, and they stopped, and they started again differently, and they didn't take the first one back.",
-    "high": "Now you've said it, we can tell you the useful part. We've been sitting on it because there's no point handing a man a tool he hasn't got a hand for.\n\nIt happened in one go. Nineteen years ago, on a Tuesday, in the lounge: we were one man in one chair and then we were this. No transition, and nothing hurt.\n\nAnd the thing we've never told anybody is that we know exactly what we were doing at the moment it happened.\n\nWe were being described. Somebody was describing us to somebody else, and they got to the middle of it and stopped, and started again differently, and they didn't take the first one back."
-   },
+   "text": "Now that you've said it we can tell you the useful part, and it is useful, and we've been sitting on it because there's no point handing a man a tool he hasn't got a hand for.\n\nIt happened in one go. Nineteen years ago, on a Tuesday, in the lounge, at about four in the afternoon: we were one man in one chair and then we were this, and there was no transition and nothing hurt.\n\nAnd the thing we've never told anybody — the thing we've been holding — is that we know exactly what we were doing at the moment it happened.\n\nWe were being described. Somebody in this room was describing us to somebody else. And they got to the middle of it, and they stopped, and they started again differently, and they didn't take the first one back.",
    "effects": {
     "clue": {
      "id": "c_not_taken_back",
@@ -154,10 +151,7 @@
    ]
   },
   "who_described": {
-   "text": {
-    "low": "We didn't see. We were the thing being looked at, not the thing looking, and there's a difference in where your attention sits and we've had nineteen years to be sure of it.\n\nBut we heard the voice, and we've heard it since, and we'll tell you what we've got, and you're not going to like the shape of it.\n\nIt was fond of us. Whoever was describing us was *fond* of us, and got stuck, and went again, and the second go was better — it was, we've compared, we are in a position to compare — and they left the first one in because they couldn't bring themselves to take it out.\n\nWe've been the leftover draft of a man for nineteen years, Mr Onions, and we've been kept out of kindness, and we would rather that than the alternative, and we think about the alternative most nights.",
-    "high": "We didn't see. We were the thing being looked at, not the thing looking.\n\nBut we heard the voice, and we've heard it since, and you're not going to like the shape of it.\n\nIt was fond of us. Whoever was describing us was *fond* of us, and got stuck, and went again, and the second go was better — we've compared, we are in a position to compare — and they left the first one in because they couldn't bring themselves to take it out.\n\nWe've been the leftover draft of a man for nineteen years, kept out of kindness, and we would rather that than the alternative. We think about the alternative most nights."
-   },
+   "text": "We didn't see. We were the thing being looked at, not the thing looking, and there's a difference in where your attention sits and we've had nineteen years to be sure of it.\n\nBut we heard the voice, and we've heard it since, and we'll tell you what we've got, and you're not going to like the shape of it.\n\nIt was fond of us. Whoever was describing us was *fond* of us, and got stuck, and went again, and the second go was better — it was, we've compared, we are in a position to compare — and they left the first one in because they couldn't bring themselves to take it out.\n\nWe've been the leftover draft of a man for nineteen years, Mr Onions, and we've been kept out of kindness, and we would rather that than the alternative, and we think about the alternative most nights.",
    "effects": {
     "clue": {
      "id": "c_kept_out_of_kindness",
@@ -188,10 +182,7 @@
    ]
   },
   "argument": {
-   "text": {
-    "low": "Whether the rain on that chair is weather or punctuation.\n\nThe stream one says weather. Weather's got causes, weather comes from the sky, and there's a sky, and it rains out of it, and that's a complete account and a man could go to bed on it.\n\nThe stair one says punctuation. Says it's raining on that chair to *separate* it from the next chair, because the two of them are too close together to be two things otherwise, and the rain is doing the work an inch of white space would do.\n\nWe have been at this since March. We have never once persuaded ourself.",
-    "high": "Whether the rain on that chair is weather or punctuation.\n\nThe stream one says weather. Weather's got causes, it comes from the sky, there's a sky, it rains out of it. A man could go to bed on that.\n\nThe stair one says punctuation. Says it's raining on that chair to *separate* it from the next one, because the two are too close together to be two things otherwise, and the rain is doing the work an inch of white space would do.\n\nWe've been at this since March, and we have never once persuaded ourself."
-   },
+   "text": "Whether the rain on that chair is weather or punctuation.\n\nThe stream one says weather. Weather's got causes, weather comes from the sky, and there's a sky, and it rains out of it, and that's a complete account and a man could go to bed on it.\n\nThe stair one says punctuation. Says it's raining on that chair to *separate* it from the next chair, because the two of them are too close together to be two things otherwise, and the rain is doing the work an inch of white space would do.\n\nWe have been at this since March. We have never once persuaded ourself.",
    "passive": [
     {
      "skill": "RHETORIC",
@@ -213,10 +204,7 @@
    ]
   },
   "argument_settled": {
-   "text": {
-    "low": "The one by the stream sits down. The one by the stair walks over and sits in the wet chair, in the rain, next to the reader, and gets immediately soaked and does not appear to notice.\n\n\"That's it,\" they say, from two places, one voice. \"That's been it since March.\n\nWe'd got as far as knowing that both answers worked and we'd taken that to mean one of us was wrong. It didn't occur to us that it meant there were two of the room.\"\n\nA pause. The reader in the wet chair turns a dry page.\n\n\"There are two of the room. Mr Onions. There have been two of the room the entire time and we have been standing in the difference, which is why there's two of us, and we'd honestly rather have gone on arguing.\"",
-    "high": "The one by the stream sits down. The one by the stair walks over and sits in the wet chair beside the reader, gets immediately soaked, and does not appear to notice.\n\n\"That's it,\" they say, from two places, one voice. \"That's been it since March.\n\nWe'd got as far as knowing both answers worked, and took that to mean one of us was wrong. It didn't occur to us it meant there were two of the room.\"\n\nThe reader in the wet chair turns a dry page.\n\n\"There are two of the room. There always have been, and we have been standing in the difference, which is why there's two of us — and we'd honestly rather have gone on arguing.\""
-   },
+   "text": "The one by the stream sits down. The one by the stair walks over and sits in the wet chair, in the rain, next to the reader, and gets immediately soaked and does not appear to notice.\n\n\"That's it,\" they say, from two places, one voice. \"That's been it since March.\n\nWe'd got as far as knowing that both answers worked and we'd taken that to mean one of us was wrong. It didn't occur to us that it meant there were two of the room.\"\n\nA pause. The reader in the wet chair turns a dry page.\n\n\"There are two of the room. Mr Onions. There have been two of the room the entire time and we have been standing in the difference, which is why there's two of us, and we'd honestly rather have gone on arguing.\"",
    "effects": {
     "clue": {
      "id": "c_two_of_the_room",
@@ -245,10 +233,7 @@
    ]
   },
   "which": {
-   "text": {
-    "low": "Neither of us knows and both of us have an opinion, which is the worst available arrangement.\n\nThe stream one thinks he's the original because he remembers the chair. The stair one thinks he's the original because he remembers *getting up* from the chair, and getting up is a later event than sitting, and a later memory is a longer life.\n\nWe've tested it. We've tested it every way two men in one coat can test a thing and it comes out even every time, and the honest answer is that the question hasn't got a floor under it. There's no fact down there. We've looked.",
-    "high": "Neither of us knows and both of us have an opinion, which is the worst available arrangement.\n\nThe stream one thinks he's the original because he remembers the chair. The stair one thinks he's the original because he remembers *getting up* from it, and getting up is later than sitting, and a later memory is a longer life.\n\nWe've tested it every way two men in one coat can, and it comes out even every time. The question hasn't got a floor under it. We've looked."
-   },
+   "text": "Neither of us knows and both of us have an opinion, which is the worst available arrangement.\n\nThe stream one thinks he's the original because he remembers the chair. The stair one thinks he's the original because he remembers *getting up* from the chair, and getting up is a later event than sitting, and a later memory is a longer life.\n\nWe've tested it. We've tested it every way two men in one coat can test a thing and it comes out even every time, and the honest answer is that the question hasn't got a floor under it. There's no fact down there. We've looked.",
    "effects": {
     "clue": {
      "id": "c_no_floor",

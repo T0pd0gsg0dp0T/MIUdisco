@@ -65,10 +65,7 @@
    ]
   },
   "moment": {
-   "text": {
-    "low": "Is a *dirty* moment. What else, my friend? A floor does not have moods. A floor has a dirt on it, or a floor has no dirt on it, and in between the two there is me and there is this bucket.\n\nAnybody can put a dirt down. A shoe does it. A shoe does it and does not even know. But to take one *up* — so it does not come back Tuesday, so it has never been there, so a man walks over that spot and thinks about his mother instead of about a mark — ey. Ey! For that you need the wrist. Forty-one years I have this wrist.",
-    "high": "Is a *dirty* moment. What else? A floor has a dirt on it or it has no dirt on it, and in between there is me and this bucket.\n\nAnybody can put a dirt down — a shoe does it and does not even know. To take one *up*, so it does not come back Tuesday, so it has never been there, so a man walks over that spot and thinks about his mother instead of a mark — ey! For that you need the wrist. Forty-one years I have this wrist."
-   },
+   "text": "Is a *dirty* moment. What else, my friend? A floor does not have moods. A floor has a dirt on it, or a floor has no dirt on it, and in between the two there is me and there is this bucket.\n\nAnybody can put a dirt down. A shoe does it. A shoe does it and does not even know. But to take one *up* — so it does not come back Tuesday, so it has never been there, so a man walks over that spot and thinks about his mother instead of about a mark — ey. Ey! For that you need the wrist. Forty-one years I have this wrist.",
    "passive": [
     {
      "skill": "LOGIC",
@@ -90,10 +87,7 @@
    ]
   },
   "never_been": {
-   "text": {
-    "low": "Sì! Never! Is the standard! Is the *only* standard!\n\nYou do a thing halfway and what you have made is worse than the dirt was. Is worse. I tell you how I know.\n\nThird floor, by the lift. Twenty years ago, more, there is a mark and I am in a hurry and I do it *almost*. Is gone. You would say is gone. Anybody would say is gone, I would take money off you that is gone.\n\nIs not gone. Every day, forty-one years, I come past that spot and my eye goes to it. There is nothing there for my eye to go to and my eye goes anyway.\n\nSo is not in the floor any more, Mr Onions. Is in me. And one day I retire, and then is in the wall — and the wall, my friend, the wall does not retire.",
-    "high": "Sì! Never! Is the standard! Is the *only* standard!\n\nYou do a thing halfway and what you have made is worse than the dirt was. I tell you how I know.\n\nThird floor, by the lift. Twenty years ago there is a mark and I am in a hurry and I do it *almost*. Is gone — anybody would say is gone, I would take money off you that is gone.\n\nIs not gone. Every day, forty-one years, my eye goes to that spot. There is nothing there for my eye to go to and my eye goes anyway.\n\nSo is not in the floor now. Is in me. And one day I retire, and then is in the wall — and the wall does not retire."
-   },
+   "text": "Sì! Never! Is the standard! Is the *only* standard!\n\nYou do a thing halfway and what you have made is worse than the dirt was. Is worse. I tell you how I know.\n\nThird floor, by the lift. Twenty years ago, more, there is a mark and I am in a hurry and I do it *almost*. Is gone. You would say is gone. Anybody would say is gone, I would take money off you that is gone.\n\nIs not gone. Every day, forty-one years, I come past that spot and my eye goes to it. There is nothing there for my eye to go to and my eye goes anyway.\n\nSo is not in the floor any more, Mr Onions. Is in me. And one day I retire, and then is in the wall — and the wall, my friend, the wall does not retire.",
    "effects": {
     "clue": {
      "id": "c_luigi_doctrine",
@@ -234,10 +228,7 @@
    ]
   },
   "not_pipes_ok": {
-   "text": {
-    "low": "Ey. Ey, ey, ey. No.\n\nI see where this is going, my friend, I have seen where things are going since before you were born, and I am telling you now with love: I do not want it.\n\nI have a bucket and a route and a floor that is clean at the end of the day. Whatever it is you are building in your head out of my quiet working — you keep it. You are welcome to it. You take it away with you and you do not bring it back into my corridor, and I will do the west end first tomorrow like every day, and we will both be happier men.\n\n... You will bring it back. I know. Go on. Mind the wet.",
-    "high": "Ey. Ey, ey, ey. No.\n\nI see where this is going, and I am telling you now with love: I do not want it.\n\nI have a bucket and a route and a floor that is clean at the end of the day. Whatever you are building in your head out of my quiet working — you keep it. Take it away and do not bring it back into my corridor, and I will do the west end first tomorrow like every day, and we will both be happier men.\n\n... You will bring it back. I know. Go on. Mind the wet."
-   },
+   "text": "Ey. Ey, ey, ey. No.\n\nI see where this is going, my friend, I have seen where things are going since before you were born, and I am telling you now with love: I do not want it.\n\nI have a bucket and a route and a floor that is clean at the end of the day. Whatever it is you are building in your head out of my quiet working — you keep it. You are welcome to it. You take it away with you and you do not bring it back into my corridor, and I will do the west end first tomorrow like every day, and we will both be happier men.\n\n... You will bring it back. I know. Go on. Mind the wet.",
    "effects": {
     "relationship": {
      "luigi": 1

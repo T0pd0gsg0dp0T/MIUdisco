@@ -106,7 +106,7 @@ def _distribute_attributes(player) -> None:
         ui.blank()
         ui.aside(f"{pool} attribute point{'s' if pool != 1 else ''} left.")
         for line in _preview(player):
-            ui.narrate(line)
+            ui.narrate(line, speak=False)
 
         options = []
         targets = []
@@ -246,7 +246,7 @@ def run(player) -> None:
         ui.blank()
         ui.heading("The Shape of You")
         for line in _preview(player):
-            ui.narrate(line)
+            ui.narrate(line, speak=False)
         if player.signature_skill:
             ui.aside(
                 f"Signature: {_skill_label(player.signature_skill)} — it speaks "
