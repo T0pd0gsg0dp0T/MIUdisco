@@ -1,0 +1,80 @@
+{
+ "_comment": "Piper TTS cast. `model` is a piper voice name (auto-downloaded into the voices dir); `speaker` is the index into that model's speaker_id_map. length_scale is DURATION: higher = slower. vctk defaults to 1.4, libritts_r to 1.0, so scales are not comparable across models. noise_scale controls pitch/timbre variability (low = flat, controlled); noise_w controls phoneme-duration variability (low = clipped, high = loose). Speakers were chosen by measuring median F0 of every candidate rather than by guesswork — the vctk_id and hz fields record what was measured, so a swap can be made on evidence. Accents noted where the VCTK corpus documents them.",
+
+ "_defaults": {"model": "en_GB-vctk-medium", "length_scale": 1.4, "noise_scale": 0.333, "noise_w": 0.333},
+
+ "narrator": {
+  "speaker": 62, "vctk_id": "p272", "hz": 120, "length_scale": 1.42,
+  "note": "Carries most of the prose. Mid male, unhurried, deliberately NOT Oliver so the two never blur."},
+
+ "oliver": {
+  "speaker": 95, "vctk_id": "p226", "hz": 109, "length_scale": 1.58, "noise_w": 0.30,
+  "note": "Oliver's interior voice. p226 is documented in the VCTK corpus as male, 22, from Surrey — Home Counties, so RP-adjacent posh. 109Hz is semi-deep. length_scale pushed well above the 1.4 default for the sleepiness, noise_w pulled down so it drawls rather than wanders."},
+
+ "furthermore": {
+  "speaker": 76, "vctk_id": "p254", "hz": 78, "length_scale": 1.78,
+  "noise_scale": 0.20, "noise_w": 0.20,
+  "note": "The deepest voice in the whole 109-speaker corpus at 78Hz. Very slow, and both noise values floored: flat affect, no emphasis, nothing hurried. Calmly disinterested — an elephant who regards language as a fad."},
+
+ "revilo": {
+  "speaker": 95, "vctk_id": "p226", "hz": 109, "length_scale": 1.30, "noise_w": 0.42,
+  "note": "Deliberately the SAME speaker as Oliver. The text says he has Oliver's face with everything moved a sixteenth of an inch, and speaks in Oliver's cadence with Oliver's pause before the last word — so: identical voice, faster and looser. Same man, better rested, worse intentions."},
+
+ "_attributes": {
+  "_comment": "Skill voices are Oliver's interior arguing with itself, so they stay in his head — same model, four facets by attribute.",
+  "INTELLECT": {"speaker": 92, "vctk_id": "p251", "hz": 124, "length_scale": 1.30, "noise_w": 0.25},
+  "PSYCHE":    {"speaker": 13, "vctk_id": "p281", "hz": 90,  "length_scale": 1.62, "noise_scale": 0.42},
+  "FORTITUDE": {"speaker": 102, "vctk_id": "p237", "hz": 81, "length_scale": 1.34, "noise_w": 0.30},
+  "MOTORICS":  {"speaker": 5,  "vctk_id": "p247", "hz": 132, "length_scale": 1.18, "noise_w": 0.40}
+ },
+
+ "asimov":     {"speaker": 104, "vctk_id": "p256", "hz": 86,  "length_scale": 1.52,
+                "note": "Deep and deliberate. Explains the impossible slowly enough that it almost survives."},
+ "albert":     {"speaker": 71, "vctk_id": "p326", "hz": 80, "length_scale": 1.62, "noise_w": 0.26,
+                "note": "Second-deepest available. Enormous patience, impeccable courtesy, forty years of practice at not being a nuisance."},
+ "sir_jerry":  {"speaker": 97, "vctk_id": "p245", "hz": 87, "length_scale": 1.55, "noise_w": 0.28,
+                "note": "Older, formal, measured — a knight surveying a field."},
+ "soliloquy":  {"speaker": 15, "vctk_id": "p231", "hz": 174, "length_scale": 1.50, "noise_w": 0.44,
+                "note": "Female, theatrical, room-filling. Loose noise_w so the verse has swing in it."},
+ "ginny":      {"speaker": 39, "vctk_id": "p294", "hz": 168, "length_scale": 1.24, "noise_w": 0.28,
+                "note": "Fast and clipped. Nothing wasted; every sentence a stance."},
+ "chef_d":     {"speaker": 54, "vctk_id": "p267", "hz": 178, "length_scale": 1.62,
+                "note": "Ancient and slow. Her scripted lisp ('Shit down, shit down') is already phonetic, so it is left untouched and comes out correctly."},
+ "bud":        {"speaker": 50, "vctk_id": "p363", "hz": 110, "length_scale": 1.18, "noise_w": 0.46,
+                "note": "Fast, tense, over-committed. A man holding up a building with his mouth."},
+ "woolbinkle": {"speaker": 70, "vctk_id": "p285", "hz": 115, "length_scale": 1.16, "noise_w": 0.48,
+                "note": "Hurried and self-interrupting — the eager, over-qualifying antelope."},
+ "landy":      {"speaker": 69, "vctk_id": "p279", "hz": 117, "length_scale": 1.26, "noise_w": 0.30,
+                "note": "Brisk and tidy. Everything is filed, stamped and completely sorted."},
+ "t":          {"speaker": 57, "vctk_id": "p258", "hz": 114, "length_scale": 1.32, "noise_w": 0.50,
+                "note": "Highest noise_w in the cast — a performer, and the alliterative soliloquies need the swing."},
+ "dee":        {"speaker": 16, "vctk_id": "p271", "hz": 115, "length_scale": 1.38,
+                "note": "One half of Dee Stroii. See dee_two: a near-identical pitch from a different speaker, so the two of him are uncannily close without being the same."},
+ "dee_two":    {"speaker": 67, "vctk_id": "p298", "hz": 115, "length_scale": 1.44,
+                "note": "The other one. Same measured pitch as dee, different speaker."},
+
+ "darek":      {"model": "en_US-libritts_r-medium", "speaker": 8, "libritts_id": "8848", "hz": 104,
+                "length_scale": 1.24,
+                "note": "American, warm, unhurried — the drawl is written into the text ('wetter'n a boiled owl'), so the voice only has to be slow and kind."},
+ "ben":        {"model": "en_US-libritts_r-medium", "speaker": 36, "libritts_id": "7704", "hz": 88,
+                "length_scale": 1.34, "noise_w": 0.28,
+                "note": "Eighty-eight years old. Deep, slow, and entirely unbothered."},
+ "mary":       {"model": "en_US-libritts_r-medium", "speaker": 33, "libritts_id": "5618", "hz": 168,
+                "length_scale": 1.32,
+                "note": "Long slow observations from a half-shut iguana who is never asleep."},
+ "fatty":      {"model": "en_US-libritts_r-medium", "speaker": 6, "libritts_id": "2531", "hz": 112,
+                "length_scale": 1.02, "noise_w": 0.46,
+                "note": "Fast and delighted. Donut metaphysics delivered at speed."},
+ "wino_t":     {"model": "en_US-libritts_r-medium", "speaker": 21, "libritts_id": "3274", "hz": 106,
+                "length_scale": 0.98, "noise_w": 0.42,
+                "note": "On the beat. Fastest in the cast — his bars are slash-separated in the text and the normaliser turns each slash into a line break so the rhythm lands."},
+ "barney":     {"model": "en_US-libritts_r-medium", "speaker": 24, "libritts_id": "176", "hz": 124,
+                "length_scale": 1.16,
+                "note": "Warm and broad. Slips into a children's-television register about the weather and does not notice."},
+ "luigi":      {"model": "en_US-libritts_r-medium", "speaker": 42, "libritts_id": "501", "hz": 121,
+                "length_scale": 1.04, "noise_w": 0.48,
+                "note": "Animated and quick. The Italian-American cadence is in the written syntax ('Is not a job. Is a vocation.'), so the voice supplies the energy."},
+ "instagator": {"model": "en_US-libritts_r-medium", "speaker": 32, "libritts_id": "3307", "hz": 124,
+                "length_scale": 1.00, "noise_scale": 0.20, "noise_w": 0.20,
+                "note": "Both noise values floored — the flattest delivery in the cast. An alligator discussing assassination in the register of a quarterly review."}
+}

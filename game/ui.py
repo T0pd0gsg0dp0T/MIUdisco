@@ -22,6 +22,7 @@ import textwrap
 import time
 
 from config import CONFIG
+import voice
 
 # --- colour ----------------------------------------------------------------
 
@@ -138,6 +139,7 @@ def narrate(text: str) -> None:
     Callers are responsible for the perspective; tools/voice_lint.py enforces
     it across the content files.
     """
+    voice.say("narrator", text)
     for line in _wrap(text):
         _emit(paint(line, PALETTE["narration"]))
     blank(CONFIG["display"]["paragraph_gap"])
@@ -168,6 +170,8 @@ def skill_voice(skill_name: str, text: str, success: bool = True) -> None:
     passive check still speaks; it simply says something wrong or partial,
     which is what makes an unreliable narrator out of the player's own mind.
     """
+    from skill_checks import SKILL_ATTRIBUTE
+    voice.say("oliver", text, attribute=SKILL_ATTRIBUTE.get(skill_name))
     colour = PALETTE["green"] if success else PALETTE["crimson"]
     label = skill_name.replace("_", "-").title()
     header = paint(f"{label}", colour, STYLE_BOLD)
@@ -190,6 +194,7 @@ def name_the_elephant(name: str = "Furthermore") -> None:
 
 def furthermore(text: str) -> None:
     """The purple elephant. Telepathy renders as an indented purple intrusion."""
+    voice.say("furthermore", text)
     header = paint(ELEPHANT_LABEL[0], PALETTE["purple"], STYLE_BOLD)
     _emit(f" {header}")
     for line in _wrap(text, indent="   ", subsequent="   "):
@@ -197,8 +202,15 @@ def furthermore(text: str) -> None:
     blank()
 
 
-def speech(speaker: str, text: str, colour_key: str = "cyan") -> None:
-    """An NPC talking out loud."""
+def speech(speaker: str, text: str, colour_key: str = "cyan",
+           voice_id: str | None = None) -> None:
+    """An NPC talking out loud.
+
+    `voice_id` is the npc id rather than the shown name: under amnesia the
+    displayed name is an alias ("the friendly Russian"), and the voice must
+    not change when the player learns who somebody is.
+    """
+    voice.say(voice_id or "narrator", text)
     header = paint(speaker.upper(), PALETTE[colour_key], STYLE_BOLD)
     _emit(f" {header}")
     for line in _wrap(text, indent="   ", subsequent="   "):

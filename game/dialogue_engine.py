@@ -99,7 +99,7 @@ class DialogueEngine:
 
         greeting = state.npcs.greeting(npc_id)
         if greeting and not state.npcs.has_spoken_to(npc_id):
-            ui.speech(shown, greeting, npc.colour)
+            ui.speech(shown, greeting, npc.colour, voice_id=npc.id)
 
         node_id = npc.entry_node
         guard = 0
@@ -138,7 +138,7 @@ class DialogueEngine:
             if node.get("narration"):
                 ui.narrate(text)
             else:
-                ui.speech(speaker, text, npc.colour)
+                ui.speech(speaker, text, npc.colour, voice_id=npc.id)
         elif repeat_visit:
             ui.aside(f"{state.npcs.display_name(npc.id)} waits.")
 

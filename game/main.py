@@ -1378,7 +1378,14 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--no-create", action="store_true",
                         help="skip character creation, use the fallback build")
     parser.add_argument("--debug", action="store_true", help="show dice and tracebacks")
+    parser.add_argument("--voice", action="store_true",
+                        help="speak everything aloud with Piper TTS (see content/voices.json)")
     args = parser.parse_args(argv)
+
+    if args.voice:
+        import voice as _voice
+        if not _voice.enable(True):
+            print("voice: unavailable (need `pip install piper-tts` and an audio player); continuing silently")
 
     if args.seed is not None:
         random.seed(args.seed)
