@@ -7,7 +7,7 @@
    "where": [
     "*"
    ],
-   "text": "Count the exits. Now count them again and note that the number is the same, which in this town is worth writing down."
+   "text": "Count the exits. Now count them again, and note that the number is the same both times, which in this town is worth writing down and dating. Most rooms here will give you two different answers to a question that simple if you ask it twice with an interval. This one has held. Whatever else is wrong here, the exits are not part of it, and that is a fixed point to work from."
   },
   {
    "id": "logic.office",
@@ -15,7 +15,7 @@
    "where": [
     "the_office"
    ],
-   "text": "Nine by eleven. Every measurement in Silvora Reefs resolves against this room, and this room resolves against nothing, which makes it either the origin or the error."
+   "text": "Nine feet by eleven. Every measurement you have taken in Silvora Reefs resolves against this room — the hallway that will not settle, the corridor that stretches, the count of the vaults — and every one of them comes out as a variation on these dimensions. And this room resolves against nothing at all. It is measured by no other room. Which makes it either the origin or the error, and there is no third option."
   },
   {
    "id": "logic.mobius",
@@ -23,7 +23,7 @@
    "where": [
     "mobius"
    ],
-   "text": "The corridor is longer than the building. That is not a mystery, it is a contradiction, and a contradiction has an author."
+   "text": "The corridor is longer than the building that contains it. That is not a mystery and it should not be filed as one — a mystery is a thing with a hidden explanation. This is a contradiction, flatly, in the arithmetic. And a contradiction is not a natural phenomenon. A contradiction has an author, because only a sentence can contain one."
   },
   {
    "id": "logic.vaults",
@@ -31,7 +31,7 @@
    "where": [
     "rest_assured"
    ],
-   "text": "Nineteen vaults, and the count holds every time. In a town where nothing else holds, a number that stays put is the anomaly."
+   "text": "Nineteen vaults, and the count holds every time, which is the anomaly. Everything else in this parish gives a different number on a second pass — the hallway, the corridor, the tally of forms, the masks on Ben's wall. Here the number stays put. In a town built out of things that will not hold still, the thing that holds still is the thing to look at."
   }
  ],
  "RHETORIC": [
@@ -41,7 +41,7 @@
    "where": [
     "*"
    ],
-   "text": "Every proper noun in this parish is doing a second job. Names here are not labels, they are arguments that won."
+   "text": "Every proper noun in this parish is doing a second job. Durry Kwain, Dude's Dews, Cheeses Thrice, the Möbius, Rest Assured — not one of them is merely a label with a business behind it. Names here are arguments that won, and they are still being made, every time somebody says one out loud without noticing what they have just agreed to."
   },
   {
    "id": "rhet.queue",
@@ -49,7 +49,7 @@
    "where": [
     "dudes_dews"
    ],
-   "text": "The queue moves fast because everyone in it has agreed on a premise nobody has stated. Find the premise and the queue is yours."
+   "text": "The queue moves fast because everyone standing in it has agreed on a premise that nobody has ever stated aloud, and the agreement is doing all the work. Find the premise and the queue is yours — that is how every closed group in this parish operates, and it is how the code at the counter works, and it is why you cannot be taught either one."
   },
   {
    "id": "rhet.jerry",
@@ -57,7 +57,7 @@
    "where": [
     "gs_spot"
    ],
-   "text": "A man knighted by a pun and living inside the consequences with perfect dignity. There is a lesson in that and it is not a comfortable one."
+   "text": "A man knighted by a pun, living inside the consequences of it with perfect dignity for thirty years, and never once complaining that the joke got there before he did. There is a lesson in that and it is not a comfortable one, because he did not choose the sentence he is in and he has furnished it beautifully anyway."
   }
  ],
  "ETYMOLOGY": [
@@ -67,7 +67,7 @@
    "where": [
     "*"
    ],
-   "text": "Silvora. Silver and ora, mouth, the edge where the speaking happens. Somebody named this place before there was a place, and named it accurately."
+   "text": "Silvora. Silver, and *ora* — mouth, the edge, the place where the speaking happens. The silver mouth. The bright edge where a thing gets said. Somebody named this place before there was a place here to name, and named it accurately, which is a considerably harder trick than naming it well."
   },
   {
    "id": "etym.durry",
@@ -75,7 +75,7 @@
    "where": [
     "durry_kwain"
    ],
-   "text": "Durry Kwain. Say it at speed and it becomes a question in a language nobody here admits to speaking."
+   "text": "Durry Kwain. Say it at speed, without the shopfront in front of you, and it stops being a name and becomes a question in a language nobody in this parish will admit to speaking — and the question is about permission, and the answer to it is on the chalk board in three decimal places."
   },
   {
    "id": "etym.antelope",
@@ -83,7 +83,7 @@
    "where": [
     "lishush_mush"
    ],
-   "text": "Can't Elope. Cantaloupe. The dish is a homophone that got hungry and grew a body, and it has been standing in that kitchen ever since."
+   "text": "Can't Elope. Cantaloupe. The dish on that menu is a homophone that got hungry and grew a body, and then grew a history, and then grew a poem about the history — and the antelope behind the counter is the last stage of a pun that has been going for eleven years and has never once been allowed to finish."
   },
   {
    "id": "etym.mobius",
@@ -91,7 +91,7 @@
    "where": [
     "mobius"
    ],
-   "text": "A strip with one side and one edge, named for a man who noticed. The club is not referencing the shape. The club is an instance of it."
+   "text": "A strip with one surface and one edge, named for a man who noticed it, which is the whole of his achievement and quite enough for anybody. The club is not referencing the shape. That is the thing to be clear about, and the clarity costs something: it is not named after a Möbius strip. It is an instance of one."
   },
   {
    "id": "etym.onions",
@@ -100,7 +100,7 @@
     "the_office",
     "hang_hi"
    ],
-   "text": "Onions. Layers, and the joke everyone makes, and underneath the joke: a word that has never once meant a single thing all the way down."
+   "text": "Onions. Layers, obviously, and the joke everybody makes about layers, and then underneath the joke — which is where this parish keeps everything — a word that has never once meant a single thing all the way down. Every skin is a whole onion. There is no centre, and there was never going to be one, and the word has been telling you so from the beginning."
   }
  ],
  "ENCYCLOPEDIA": [
@@ -110,7 +110,7 @@
    "where": [
     "*"
    ],
-   "text": "Green flame burns at a lower temperature than yellow and indicates a copper salt. There is no copper in this parish. The lampposts have been doing this for eleven years."
+   "text": "Green flame burns at a lower temperature than yellow and indicates a copper salt in the fuel; that is elementary and any chemist would say the same. There is no copper in this parish. There is no copper within forty miles of this parish. The lampposts have been doing it for eleven years and the parish has never once put it out to tender."
   },
   {
    "id": "ency.inn",
@@ -118,7 +118,7 @@
    "where": [
     "outside_inn"
    ],
-   "text": "An inn with weather indoors is not unprecedented — there are three in the literature — and in all three cases the building was standing in for something that had been removed."
+   "text": "An inn with weather indoors is not unprecedented — there are three in the literature, two of them medieval and one disputed — and in all three cases the building turned out to be standing in for something that had been removed. Not built to be marvellous. Built to occupy a space where something else used to be."
   },
   {
    "id": "ency.vault",
@@ -126,7 +126,7 @@
    "where": [
     "rest_assured"
    ],
-   "text": "Vault plates are struck in advance of occupancy, which is ordinary, and struck with the occupant's name, which is not, and the trade stopped doing it two centuries ago for reasons everyone agreed not to write down."
+   "text": "Vault plates are struck in advance of occupancy, which is ordinary and sensible and how the trade has always worked. They are struck with the *occupant's name*, which is not ordinary at all, and the trade stopped doing it a little over two centuries ago for reasons every guild recorded in the same evasive sentence and none of them explained."
   }
  ],
  "VISUAL_CALCULUS": [
@@ -137,7 +137,7 @@
     "hang_hi",
     "the_office"
    ],
-   "text": "Reconstruct it: something rectangular stood here for years, was lifted straight up rather than dragged, and the dust has not had time to forget the shape. Four round feet. A machine that types."
+   "text": "Reconstruct it from what is left. Something rectangular stood here for years — long enough to press four round feet permanently into the grain — and it was lifted straight up rather than dragged, by somebody strong or somebody careful or two people who had done it before. Four round feet, that spacing, that weight. A machine that types."
   },
   {
    "id": "vis.harbour",
@@ -145,7 +145,7 @@
    "where": [
     "*"
    ],
-   "text": "Angle of the water on your coat, direction of the smell, position of the sun that is not there. Whatever came down came down over the harbour and came down hard."
+   "text": "Angle of the water on the coat, direction the smell is coming from, position of a sun that is not there and has not been there all week. Run it back. Whatever came down came down over the harbour, and it came down hard, and it came down at an hour when the fog was already at the height it is at now."
   },
   {
    "id": "vis.giddyup",
@@ -153,7 +153,7 @@
    "where": [
     "giddyup"
    ],
-   "text": "The masks are hung by eyeline, not by size. Somebody arranged these to be looked at by a specific person of a specific height, and that person is not tall."
+   "text": "The masks are hung by eyeline, not by size and not by age and not by any scheme a decorator would recognise. Somebody arranged these to be looked at by a specific person standing in a specific place, and the sightlines converge low and near the fire, and that person is not tall and has not moved in fifty years."
   },
   {
    "id": "vis.mobius",
@@ -161,7 +161,7 @@
    "where": [
     "mobius"
    ],
-   "text": "Track the far wall against the near one. They are not parallel and they were not built that way; the room has been quietly correcting itself all evening."
+   "text": "Track the far wall against the near one and hold the line. They are not parallel, and they were not built that way — a builder who was out by that much would have been out by it consistently. The error moves. The room has been quietly correcting itself all evening, a fraction at a time, in the gaps between anybody looking at it."
   }
  ],
  "CONCEPTUALISATION": [
@@ -171,7 +171,7 @@
    "where": [
     "*"
    ],
-   "text": "That detail is not a detail. It has recurred three times now, and three is where a coincidence becomes a motif and a motif becomes an intention."
+   "text": "That detail is not a detail. It has recurred three times now — in a shopfront, in a poem, in the arrangement of a plate — and three is the number at which a coincidence becomes a motif, and a motif becomes an intention, and an intention implies somebody to have had it. You are not finding a pattern. You are being shown one."
   },
   {
    "id": "conc.office",
@@ -179,7 +179,7 @@
    "where": [
     "the_office"
    ],
-   "text": "A desk made of a door. The composition is too good — a man who writes his way out, working on the thing he is trying to get through. Nobody arranges that by accident, and nobody arranges it about themselves on purpose."
+   "text": "A desk made of a door, in a room with no door in it. The composition is too good: a man who writes his way out of rooms, working every day of eleven years on the flat of the only exit his room ever had. Nobody arranges that by accident. And nobody arranges it about *themselves* on purpose, because it would be unbearable to sit at."
   },
   {
    "id": "conc.town",
@@ -189,7 +189,7 @@
     "dudes_dews",
     "giddyup"
    ],
-   "text": "The joke and the sorrow are load-bearing in the same wall here. Take either one out and the parish comes down."
+   "text": "The joke and the sorrow are load-bearing in the same wall here, and they are the same wall. A barber knighted by a pun. An antelope who cannot elope. A man who apologises for a wait that never happened. Take either one out — the laugh or the grief — and the parish comes down, because there is nothing else holding it up."
   }
  ],
  "EMPATHY": [
@@ -199,7 +199,7 @@
    "where": [
     "*"
    ],
-   "text": "Everyone here is being careful in the same direction, and none of them have compared notes about it."
+   "text": "Everyone in this room is being careful in the same direction, and not one of them has compared notes with any of the others about it. That is not a conspiracy; a conspiracy requires a meeting. That is a room full of people who have each independently worked out the same thing not to look at, and have each assumed they are alone in it."
   },
   {
    "id": "emp.inn",
@@ -207,7 +207,7 @@
    "where": [
     "outside_inn"
    ],
-   "text": "The bellhop is not nervous about you. He is nervous about the ceiling, continuously, and has organised an entire personality around not mentioning it."
+   "text": "The bellhop is not nervous about you. Watch where the eyes go when the hand tightens on the rail: he is nervous about the ceiling, continuously, at all times, in every conversation he has ever had in this building — and he has organised an entire personality around never once mentioning it."
   },
   {
    "id": "emp.lishush",
@@ -215,7 +215,7 @@
    "where": [
     "lishush_mush"
    ],
-   "text": "She feeds people who have not asked to be fed and does not stay to watch them eat. That is a specific kind of kindness and it comes from a specific kind of afternoon."
+   "text": "She feeds people who have not asked to be fed and she does not stay to watch them eat, which is the tell. Staying would make it a gift and gifts require a response. That is a very specific kind of kindness and it does not come from nowhere. It comes from a particular afternoon that somebody has never talked about."
   }
  ],
  "INLAND_EMPIRE": [
@@ -225,7 +225,7 @@
    "where": [
     "*"
    ],
-   "text": "The lamppost has been leaning away from you since you arrived. Not from the wind. It would prefer not to be looked at directly and it is being polite about it."
+   "text": "The lamppost has been leaning away from you since you arrived. Not from the wind — there is no wind, and the one next to it is upright. It would prefer not to be looked at directly, and it is being extremely polite about the preference, and it will go on leaning for exactly as long as you go on standing here."
   },
   {
    "id": "inl.mirror",
@@ -234,7 +234,7 @@
     "hang_hi",
     "gs_spot"
    ],
-   "text": "The mirror is not showing you a room. It is showing you a room's *account* of itself, and the account is late, and the account knows it is late."
+   "text": "The mirror is not showing you a room. It is showing you a room's *account* of itself, which is a different document — and the account is late, and it knows it is late, and it is being submitted anyway by something that would rather submit a late account than none at all."
   },
   {
    "id": "inl.watch",
@@ -242,7 +242,7 @@
    "where": [
     "*"
    ],
-   "text": "The watch says 3:33 and has always said 3:33 and there is a version of this where that is a mercy rather than a fault."
+   "text": "The watch says 3:33 and has always said 3:33 and there is a version of this evening in which that is simply a broken watch. You are not in it. The second hand is not resting against the pin, and a stopped mechanism rests, and this one is being held — patiently, by somebody with better things to do."
   },
   {
    "id": "inl.office",
@@ -250,7 +250,7 @@
    "where": [
     "the_office"
    ],
-   "text": "The chair is pushed back. Somebody stood up from this desk mid-sentence, eleven years ago, and the room has been holding the pose ever since in case they came back."
+   "text": "The chair is pushed back. Somebody stood up from this desk mid-sentence, eleven years ago, meaning to sit straight back down — and the chair has been waiting in exactly that position ever since, and the dust has settled on the seat, and the sentence is still open in the machine."
   }
  ],
  "AUTHORITY": [
@@ -260,7 +260,7 @@
    "where": [
     "*"
    ],
-   "text": "Nobody here has asked who you are. In a parish this small that is not hospitality, that is a decision somebody made in advance on your behalf."
+   "text": "Nobody in here has asked who you are. In a parish this small, arriving wet and unknown, that is not hospitality and it is not indifference. It is instruction. Somebody has told them, and the telling was some time ago, and they have all been very good about it."
   },
   {
    "id": "auth.mobius",
@@ -268,7 +268,7 @@
    "where": [
     "mobius"
    ],
-   "text": "The security has a card he is not showing his manager. Leverage is a thing you either pick up now or walk past."
+   "text": "The security has a card he has not shown his manager, and he is standing where he can see the door and she cannot see his hands. Leverage is a thing you are holding whether or not you decide to use it, and the deciding is the only part that is still available to you."
   },
   {
    "id": "auth.dews",
@@ -276,7 +276,7 @@
    "where": [
     "dudes_dews"
    ],
-   "text": "Police headquarters is directly across the road and has not once come up in conversation. Stand up straighter and see who checks."
+   "text": "Police headquarters is directly across the road and has not once come up in any conversation you have had in this shop, in a parish where the weather comes up four times an hour. That is not an oversight. That is a subject with a fence round it, and everybody in the queue knows where the fence is."
   }
  ],
  "VOLITION": [
@@ -286,7 +286,7 @@
    "where": [
     "*"
    ],
-   "text": "Whatever is loosening in this town, it is not loosening in here. Hold the line at the sternum. That is what the line is for."
+   "text": "Whatever is loosening in this town, it is not loosening in here. Hold the line at the sternum. It is not a metaphor and it is not encouragement — there is an actual place where the giving-way starts and it can be held, and holding it is a thing that gets easier with practice and harder with evidence."
   },
   {
    "id": "vol.mobius",
@@ -294,7 +294,7 @@
    "where": [
     "mobius"
    ],
-   "text": "Gin is on offer, and gin would help, and the fact that gin would genuinely help is precisely the argument to examine before accepting it."
+   "text": "Gin is on offer, and gin would help, and the fact that gin would genuinely help is precisely the argument against it tonight. You have been given a great deal of information in a short time by people who were frightened to give it. That deserves better than a man who is not entirely in the room."
   },
   {
    "id": "vol.office",
@@ -302,7 +302,7 @@
    "where": [
     "the_office"
    ],
-   "text": "Whatever gets said in this room, the part of you doing the listening is not up for negotiation. Establish that now, before he starts."
+   "text": "Whatever gets said in this room, the part of you doing the listening is not up for negotiation. He is going to make a case. The case is going to be good, because he has had eleven years and two hundred drafts to make it good. Being unable to answer an argument is not the same as the argument being true."
   }
  ],
  "VOX_POPULI": [
@@ -312,7 +312,7 @@
    "where": [
     "*"
    ],
-   "text": "Four streets over, a man in an apron sets down a crate and looks at the fog for longer than the crate required. He does this every night. He has never mentioned it to anyone, and he is not the only one."
+   "text": "Four streets over, a man in an apron sets a crate down on a step and looks at the fog for rather longer than the crate required, and then picks it up again. He does this most evenings. He could not tell you why and has never been asked, and there are two hundred people in this parish doing something like it right now."
   },
   {
    "id": "esp.inn",
@@ -321,7 +321,7 @@
     "outside_inn",
     "giddyup"
    ],
-   "text": "Somewhere behind you, in a room you have already left, somebody says your name to somebody else and neither of them writes it down."
+   "text": "Somewhere behind you, in a room you have already left, somebody says your name to somebody else, and neither of them is talking about you — they are using it the way you use a word for a kind of weather. It has become a thing that happens here rather than a man it happens to."
   },
   {
    "id": "esp.office",
@@ -329,7 +329,7 @@
    "where": [
     "the_office"
    ],
-   "text": "The whole parish, all at once, going on without you: the queue moving, the squeegee arcing, the pan saying shhhk. None of it stops. That is either the comfort or the horror and it is going to be both."
+   "text": "The whole parish, all at once, going on without you: the queue moving outside Mary's, the squeegee arcing on the third floor, a pan saying *shhhk*, an owlbear addressing a piece of empty air at six o'clock precisely. None of it has stopped. None of it is going to stop while you are in here."
   }
  ],
  "SUGGESTION": [
@@ -339,7 +339,7 @@
    "where": [
     "*"
    ],
-   "text": "Nobody in here wants to be interrogated. Everybody in here wants to be asked. There is a door's width between those and it is worth aiming for."
+   "text": "Nobody in here wants to be interrogated and everybody in here wants to be *asked*. The difference is entirely in who gets to arrive at the answer. Put the subject down in the middle of the table like a dish and let them serve themselves, and they will tell you things they have not told anybody."
   },
   {
    "id": "sug.giddyup",
@@ -347,7 +347,7 @@
    "where": [
     "giddyup"
    ],
-   "text": "He has told this one before and he wants to tell it again. Let him arrive at it himself and it will come with the part he usually leaves out."
+   "text": "He has told this one before and he wants to tell it again, and he will not tell it if he is asked for it, because being asked makes it a performance and he has decided he is too old for performances. Let him arrive at it. Talk about something adjacent and be patient and he will get there on his own."
   }
  ],
  "PHYSIQUE": [
@@ -357,7 +357,7 @@
    "where": [
     "*"
    ],
-   "text": "The knee that went in the harbour reports in. It is not asking for anything. It is simply on the record now, at intervals."
+   "text": "The knee that went in the harbour reports in. It is not asking for anything and it is not going to stop you doing anything tonight; it simply wants it on the record that it was there, that it took the landing, and that it will be raising the matter again on the stairs."
   },
   {
    "id": "phys.stairs",
@@ -366,7 +366,7 @@
     "hang_hi",
     "rest_assured"
    ],
-   "text": "This building is heavier than a building this size has any business being, and something in the frame is carrying it. Put a hand on the wall. It is working."
+   "text": "This building is heavier than a building this size has any business being. You can feel it in the flight — the treads do not give the way old wood gives, the handrail does not take vibration, and the whole stack sits on the ground like something that has been put down rather than built up."
   }
  ],
  "ELECTROCHEMISTRY": [
@@ -376,7 +376,7 @@
    "where": [
     "*"
    ],
-   "text": "Somewhere within two streets there is a drink with your name on it, and the appetite has already worked out the route and would like to present it."
+   "text": "Somewhere within two streets there is a drink with your name on it and the body has already worked out the route. This is not thirst and it is not weakness; it is the oldest and most reliable navigation system you own, and it is currently the only part of you that knows where anything is."
   },
   {
    "id": "elec.lishush",
@@ -386,7 +386,7 @@
     "giddyup",
     "cheeses_thrice"
    ],
-   "text": "That smells extraordinary. Everything here smells extraordinary. Nothing here has ever hurt anybody, which is a sentence worth turning over while eating anyway."
+   "text": "That smells extraordinary. Everything in this room smells extraordinary, continuously, in a way that ordinary food does not manage — and nothing here has ever been merely food, and the woman at the stove has not tasted anything since 1971 and has not been wrong since 1974."
   },
   {
    "id": "elec.mobius",
@@ -394,7 +394,7 @@
    "where": [
     "mobius"
    ],
-   "text": "Gin, bitter, no ice. The evening has a shape and this is the shape it wants, and it is not wrong, it is just not honest about the cost."
+   "text": "Gin, bitter, no ice, no apology. The evening has a shape and this is the shape it wants to take, and it would be a good evening, and the good evening is available right now for the price of the one you are actually having."
   }
  ],
  "PAIN_THRESHOLD": [
@@ -404,7 +404,7 @@
    "where": [
     "*"
    ],
-   "text": "Inventory of what currently hurts: the knee, the left shoulder, a place behind the eye. All of it survivable. All of it, notably, from the same night."
+   "text": "Inventory of what currently hurts, in order, without flinching: the left knee, the right shoulder, a place behind the eye that is not a headache, and the forearms, symmetrically, in a pattern that a fall does not make. Nothing broken. Everything noted. Carry on."
   },
   {
    "id": "pain.harbour",
@@ -412,7 +412,7 @@
    "where": [
     "*"
    ],
-   "text": "Whatever came down, the body took it and kept the receipt. Nothing broken. Something rearranged."
+   "text": "Whatever came down, the body took it and kept the receipt. Nothing broken, nothing torn, nothing that will stop you walking up that hill tonight — and a set of bruises along both forearms that match each other too well to have come from any surface you fell onto."
   }
  ],
  "SHIVERS": [
@@ -422,7 +422,7 @@
    "where": [
     "*"
    ],
-   "text": "Silvora Reefs, on the skin: the fog with the rotors in it, the lampposts leaning, and under all of it a sound like a room being typed in, four streets down and eleven years ago."
+   "text": "Silvora Reefs, arriving on the skin all at once: the fog with the rotors in it, the lampposts leaning away, the green flame that has no business being green, the cold coming off the harbour with an opinion in it. The town is aware of the weather. The weather is aware of the town."
   },
   {
    "id": "shiv.harbour",
@@ -430,7 +430,7 @@
    "where": [
     "*"
    ],
-   "text": "The cold comes off the water in a way that has an opinion. The parish is holding still the way a room holds still when somebody in it is about to be told something."
+   "text": "The cold comes off the water in a way that has an opinion in it. The parish is up there behind the wall going about an evening that has no space in it for a man who has just come out of the sea, and the space will have to be made, and making it is going to cost somebody something."
   },
   {
    "id": "shiv.office",
@@ -438,7 +438,7 @@
    "where": [
     "the_office"
    ],
-   "text": "The town goes quiet on your skin for the first time since the harbour, and the quiet is not peace. It is the quiet of being on the inside of the thing that was making the noise."
+   "text": "The town goes quiet on the skin for the first time since the harbour — not distant, *absent*, the way a sound is absent when you have walked out of the building it was in. There is no weather in here. There is no parish in here. There is a room, and there are two people in it."
   }
  ],
  "HALF_LIGHT": [
@@ -448,7 +448,7 @@
    "where": [
     "*"
    ],
-   "text": "Two ways out, one behind you, and a man at the edge of vision who has not moved since you came in. Probably nothing. Probably."
+   "text": "Two ways out, one of them behind you, and a man at the edge of vision who has not moved since you came in and is not going to explain himself. Nothing is wrong yet. Note where the door is anyway, because noting it now costs nothing and noting it later costs everything."
   },
   {
    "id": "half.mirror",
@@ -457,7 +457,7 @@
     "hang_hi",
     "gs_spot"
    ],
-   "text": "Something in the glass is at the wrong depth. Do not look directly at it. Do not stop knowing where it is."
+   "text": "Something in the glass is at the wrong depth. Do not look directly at it. Do not let it know the depth has been noticed, because whatever is standing at that distance has been standing there a while and is very good at telling the difference between a man looking at a mirror and a man looking *into* one."
   },
   {
    "id": "half.office",
@@ -465,7 +465,7 @@
    "where": [
     "the_office"
    ],
-   "text": "There is a man at the window and no way back through the seam and only one door in the whole arrangement, and the arrangement was made by him."
+   "text": "There is a man at the window and there is no way back through the seam and there is only one door in this room, and the door is flat on two trestles being used as a desk. Every exit has been accounted for. Somebody accounted for them a long time before you got here."
   }
  ],
  "SEA_LEGS": [
@@ -475,7 +475,7 @@
    "where": [
     "*"
    ],
-   "text": "The floor is not level and has not been level since you arrived, and the body has been quietly correcting for it this whole time without filing a report."
+   "text": "The floor is not level and has not been level since you arrived, and the body has been quietly correcting for it this whole time without mentioning it. That is not a fault in the floor. Floors do not tilt slowly. Vessels do."
   },
   {
    "id": "sea.mobius",
@@ -484,7 +484,7 @@
     "mobius",
     "durry_kwain"
    ],
-   "text": "The room is moving about four inches to the left, slowly, on a cycle. Ride it. Everyone else here already is and none of them have noticed they learned how."
+   "text": "The room is moving about four inches to the left, slowly, on a cycle of roughly forty seconds. Everybody here has learned to ride it and none of them know they have learned it, and you will be doing it yourself within the hour."
   }
  ],
  "SAVOIR_FAIRE": [
@@ -494,7 +494,7 @@
    "where": [
     "*"
    ],
-   "text": "There is a half-second coming where the room looks elsewhere. It arrives about every ninety seconds. It is available for whatever you would like it for."
+   "text": "There is a half-second coming where the room looks elsewhere — the beat after the music turns over, before the conversations restart. It arrives about every forty seconds and it is the only moment in this building when a man can cross the floor without being a thing that happened."
   },
   {
    "id": "sav.exit",
@@ -503,7 +503,7 @@
     "mobius",
     "dudes_dews"
    ],
-   "text": "Leaving without being seen to leave is a matter of choosing the moment somebody else does something louder. Somebody always does."
+   "text": "Leaving without being seen to leave is entirely a matter of choosing the moment somebody else is arriving. Wait for the door. Move on the door. The room will account for the movement as part of the arrival and will not go looking for a second explanation."
   }
  ],
  "PERCEPTION": [
@@ -513,7 +513,7 @@
    "where": [
     "*"
    ],
-   "text": "Edge of vision, low and to the right: something is a slightly different colour than it was when you came in. It has not moved. It has been replaced."
+   "text": "Edge of vision, low and to the right: something is a slightly different colour than it was, and it has been that colour for a few seconds now, and it will go back before you can bring the eye round to it. Do not bring the eye round. Widen instead."
   },
   {
    "id": "perc.sound",
@@ -521,7 +521,7 @@
    "where": [
     "*"
    ],
-   "text": "Under the room noise, at the threshold of the audible, a rhythm. Not machinery. Keys."
+   "text": "Under the room noise, right at the threshold of the audible, a rhythm. Not machinery — machinery is regular and this has phrases in it. Four or five strikes, a pause, a return. It has been going since you came in and it stops if you attend to it directly."
   },
   {
    "id": "perc.office",
@@ -529,7 +529,7 @@
    "where": [
     "the_office"
    ],
-   "text": "The cup has a ring under it and the ring is older than the cup. Somebody replaced the cup and did not replace the habit."
+   "text": "The cup has a ring under it and the ring is older than the cup is. Somebody replaced the cup and put the new one down in exactly the same place, on the same mark, and has gone on doing that for long enough that the mark has outlived at least one of them."
   }
  ],
  "COMPOSURE": [
@@ -539,7 +539,7 @@
    "where": [
     "*"
    ],
-   "text": "Whatever just registered, it registered on your face for approximately a quarter of a second, and one person in this room was looking."
+   "text": "Whatever just registered, it registered on your face for approximately a quarter of a second, and the man opposite has spent eleven years reading faces for a living. Get the jaw back. The information is already gone; do not send the rest of it after."
   },
   {
    "id": "comp.hold",
@@ -547,7 +547,7 @@
    "where": [
     "*"
    ],
-   "text": "Level the voice, unlock the jaw, put the hands somewhere with a reason. The performance is the only part of this anyone else can audit."
+   "text": "Level the voice, unlock the jaw, put the hands somewhere they have a reason to be. The room is deciding what kind of man walked in and it decides in about four seconds and it does not revisit the decision afterwards without a great deal of encouragement."
   }
  ],
  "REACTION_SPEED": [
@@ -557,7 +557,7 @@
    "where": [
     "*"
    ],
-   "text": "There — the half-second before the answer, where the face does the arithmetic. Everyone in this parish has that pause and everyone's is the same length."
+   "text": "There — the half-second before the answer, where the face does the arithmetic. Everyone has one. His is at the left eye and it fires before the mouth moves, and it has fired twice in this conversation, and both times on the same subject."
   },
   {
    "id": "reac.catch",
@@ -565,7 +565,7 @@
    "where": [
     "*"
    ],
-   "text": "Something is going to fall in the next few minutes. The hands have already been briefed."
+   "text": "Something is going to fall in the next few minutes. The hands have already worked out roughly where and have positioned themselves accordingly without being asked, which is either twenty years of practice or a thing you should not be able to do."
   }
  ],
  "HAND_EYE": [
@@ -575,7 +575,7 @@
    "where": [
     "*"
    ],
-   "text": "The wet pages will separate if they are separated correctly: from the spine, slowly, with the grain. Wrong angle and three pages become confetti."
+   "text": "The wet pages will separate if they are separated correctly: from the spine outward, dry side down, no lifting at the corner. It is a trade skill and you have it, and having it is itself a piece of evidence about who you were before this evening."
   },
   {
    "id": "hand.pour",
@@ -585,7 +585,7 @@
     "dudes_dews",
     "durry_kwain"
    ],
-   "text": "The pour behind that counter is exactly level every time, to a tolerance no hand has. Watch the wrist. The wrist is not doing it."
+   "text": "The pour behind that counter is exactly level every time, to a tolerance no eye should be able to hold, in a room this dark, by a person not looking at the glass. That is not showmanship. Showmanship gets watched. Nobody in here has ever watched it."
   }
  ],
  "INTERFACING": [
@@ -595,7 +595,7 @@
    "where": [
     "*"
    ],
-   "text": "Everything in this parish has working parts and none of them are where the outside of the object says they are. Reach for the mechanism, not the name."
+   "text": "Everything in this parish has working parts and none of them are where the working parts should be. The lift runs without a motor room. The lamps burn without a supply. The mechanisms are all somewhere else, and the somewhere else is the same place for every one of them."
   },
   {
    "id": "int.typewriter",
@@ -604,7 +604,7 @@
     "hang_hi",
     "the_office"
    ],
-   "text": "Four round feet, a platen's worth of clearance, and the ribbon spools would sit here and here. This is a typewriter's footprint and the machine that made it was a heavy one."
+   "text": "Four round feet, a platen's worth of clearance above them, and the ribbon spools would sit exactly where those two shallow scuffs are. Whatever stood here was not a typewriter *like* the one in that room. It was that one, or its twin, and it was here for years."
   },
   {
    "id": "int.vault",
@@ -612,7 +612,7 @@
    "where": [
     "rest_assured"
    ],
-   "text": "The vault mechanism is on the wrong side. These were not built to keep the parish out. They were built to be opened from within, by someone already inside."
+   "text": "The vault mechanism is on the wrong side. These were not built to keep the living out — the bolts throw from within, the hinges are internal, the plate is smooth on the corridor face. These were built to keep something in, and somebody paid extra for that."
   }
  ]
 }
