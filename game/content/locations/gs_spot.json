@@ -3,16 +3,18 @@
  "name": "The G.'s Spot",
  "subtitle": "A barbershop. Findable, reportedly, by those who know where it is.",
  "description": "Nobody can give you directions to this place. Four people have tried, all of them sincerely, all of them describing a different corner, and every one of them got here today without difficulty. There is a demographic in Silvora Reefs that finds it without looking, and Wino-T's explanation is that they grew up around those parts, which he delivers on the beat and which is the whole of the explanation you are going to get.\n\nInside: modest from the street, and then not. Two chairs, a long counter, a wall of bottles in colours that were discontinued, and a hallway to the back that is signposted for a lavatory and has, on three occasions, delivered guests into what they later described as a completely different business.\n\nAnd the mirrors. There is a great deal of mirror in a barbershop. In this one, that is a decision somebody made.",
- "revisit": "Wino-T does not look up from the fade he is working and says your name in time with the clippers, on the second beat, which is the beat that means sit down.",
+ "revisit": "Wino-T does not look up from the fade he is working and says your name on the beat, the way he says everything, and the clippers do not miss a stroke doing it.\n\nSir Jerry is at the far chair with a towel over his forearm and the unhurried bearing of a man who has never once been late for anything because he has never once conceded that a thing could start without him. The third mirror holds the room, and holds the back of a head at a desk, and holds Monsieur Albert in an excellent coat with an expression of the most enormous patience.\n\nThere is a cup on the shelf by the third mirror. It is full. It was full yesterday.",
  "lucid": {
   "2": "Under the clippers there is a rhythm that the clippers are matching rather than making.",
   "3": "The clippers stop for the length of a word, and the rhythm underneath does not, and then the clippers catch up.",
   "4": "Nothing in this room makes its own noise. Every sound in here is keeping time with something in another room."
  },
  "ambient": [
-  "Sir Jerry sharpens a razor in nine strokes and says 'Nine, as the physicians hold' and nobody has ever established which physicians.",
-  "Something moves in the dark at the back of the shop with more shoulder in it than a man has. Monsieur Albert does not come forward and does not leave.",
-  "A woman comes in off a street that is not outside the door, hangs her coat on a hook that was not there, and is greeted by name."
+  "Sir Jerry sharpens a razor in nine strokes and says 'Nine, as the physicians had it, and they were wrong about a great deal but not about nine' — to nobody in particular, and to the razor, and possibly to the profession itself.",
+  "Something moves in the dark at the back of the shop with more shoulder in it than the space behind those chairs can account for, and settles, and is courteous about having moved at all.",
+  "A woman comes in off a street that is not outside the door, hangs her coat on a hook that has been empty all evening, and takes the near chair without anybody having to tell her it was free.",
+  "The clippers change pitch as they go over the crown and Wino-T's sentence changes with them, and the sentence was already going to rhyme, and the rhyme lands on the pitch change.",
+  "In the third mirror, the man at the desk reaches for something outside the frame. In the room, nothing reaches for anything."
  ],
  "objects": [
   {
@@ -25,7 +27,7 @@
     "reflection"
    ],
    "description": "Three on the long wall, one behind each chair, and a fourth at the end that faces the third, so that the room goes off into itself in a corridor of diminishing Olivers.\n\nThey do not all agree. The near one has you in the chair. The far one has the room from above and slightly behind, which is not an angle any mirror in this building could be taking. And the third — the third has been showing the same thing for a fortnight, on and off, and Wino-T has stopped covering it because covering it made customers ask.\n\nIt shows a man at a desk. From behind. Working.",
-   "repeat": "He has not turned round. In a fortnight he has not once turned round.",
+   "repeat": "He has not turned round. In a fortnight of coming in here at every hour this shop keeps, he has not once turned round, and the back of that head has become as familiar to you as a face.",
    "lucid": {
     "2": "The shoulders in the mirror move in a rhythm. Small, repetitive, two-handed.",
     "3": "It is not a rhythm. It is typing, and there are pauses in it, and the pauses are where the choices go.",
@@ -36,12 +38,12 @@
     {
      "skill": "SAVOIR_FAIRE",
      "dc": 12,
-     "text": "The far mirror's angle is from above and behind — from where a person would stand if they were reading over a shoulder."
+     "text": "The far mirror's angle is from above and behind — from a corner of the ceiling on the other side of a wall that has no corner in it and no other side. That is not a reflection, whatever else it is. Nothing in this room is standing where that view is being taken from."
     },
     {
      "skill": "LOGIC",
      "dc": 12,
-     "text": "Four mirrors, four accounts, and no two consistent. That is not four faulty mirrors. Faults are random. These are four *versions*, and somebody is keeping all of them."
+     "text": "Four mirrors, four accounts of one room, and no two of them consistent with each other. That is not an optical problem; optics are boringly reliable and would give you four wrong answers that agreed. Four accounts that disagree is not a fault in the glass. It is a disagreement about what the room *is*."
     }
    ],
    "effects": {
@@ -78,7 +80,7 @@
     "skill": "INLAND_EMPIRE",
     "dc": 12,
     "kind": "white",
-    "prompt": "Stop looking at what is in the mirrors and let the mirrors have their say.",
+    "prompt": "Stop looking at what is in the mirrors and let the mirrors look at you for a minute. Four glasses, four accounts of one room, and one of them is not an account of this room at all.",
     "success": "The first two are glass and behave. The third is not glass and is not behaving and has not been, for some time, and it has been extremely patient about being the only one anybody notices.\n\nIt is not showing a room. It is *holding* one — the way a man holds a door for somebody who is taking a long while to arrive — and it has been holding it since before the barber was knighted.",
     "failure": "Three mirrors, and the third one goes on being slightly wrong in a way that stays exactly at the edge of what can be said about it, and the harder you attend to it the more ordinary it becomes, which is itself the point and is no use to you.",
     "success_effects": {
@@ -109,14 +111,14 @@
     "corridor"
    ],
    "description": "Signposted, in a small brass plaque with a small brass arrow, and the plaque is the only unambiguous object in the building.\n\nThree customers on record have gone down it and come out somewhere else. One in a chandlery. One in a room full of filing. One — and this is the one Wino-T tells, on the beat, when the shop is full — came out in the Möbius Strip Club at eleven at night having gone for a wash at four in the afternoon, and was very calm about it, and did not go back for his coat.\n\nAll three returned. None of them can describe the return.",
-   "repeat": "The brass arrow points the same way. It is the only thing in Silvora Reefs you would put money on.",
+   "repeat": "The brass arrow points the same way it has always pointed. It is the only thing in this building that has never once disagreed with itself, and you have started using it as a control.",
    "monocle": "Through the gold the hallway is four feet long and ends in a door, and behind the door is a lavatory, and it is a perfectly ordinary lavatory with a cracked cistern. The other places are not down the hallway. They are down the *account* of the hallway, and the account is longer than the hallway and always has been.",
    "check": {
     "id": "gs:hallway:walk",
     "skill": "SAVOIR_FAIRE",
     "dc": 12,
     "kind": "white",
-    "prompt": "Walk down it. Count. Keep counting on the way back, and do not stop counting for anything, including arriving.",
+    "prompt": "Walk down it and count. Keep counting on the way back, and do not let the count become a thing you are performing rather than a thing you are doing, because this building can tell the difference.",
     "success": "Four paces to the door. You go in, you come out, you count four paces back, and you are in the barbershop, and Wino-T is on the same bar of the same hum.\n\nAnd the count in your head has kept going past four. It is at nineteen. You stopped walking at four and the count went to nineteen and you were not walking for fifteen of them, and you were somewhere, and there was a room, and it had filing in it.",
     "failure": "Four paces to the door, and a lavatory with a cracked cistern, and four paces back, and Wino-T on the same bar of the same hum. Nothing. A hallway did a hallway's job.\n\nExcept that the count in your head is at nineteen and you cannot make it be at eight.",
     "success_effects": {
@@ -150,18 +152,18 @@
     "before"
    ],
    "description": "Sir Jerry's wall. Forty-odd pairs, pinned in a grid, each one a customer before and the same customer after, and every pair is signed by the customer with a comment.\n\nThe comments are extraordinary. *Didn't know myself.* *My own mother walked past me.* *A new man, and the old one is not missed.* One of them, in a shaking hand, says only *thank you*.\n\nThe photographs show a haircut. In every single pair, the difference between the before and the after is about an inch and a half off the sides.",
-   "repeat": "You go along the grid again looking for one pair where the camera agrees with the customer. There is not one.",
+   "repeat": "You go along the grid again, looking for one pair where the before and the after are the same man and the difference is the inch and a half. You have done this four times now and you find the same thing every time, which is that they are the same man, and that they are not.",
    "monocle": "Through the gold the photographs are unchanged and the *comments* are not. Every comment is in the same hand. Forty-odd customers, forty-odd signatures, one hand — and it is a hand that has been trying, on each occasion, to look like somebody else's, and getting better at it as the wall goes on.",
    "passive": [
     {
      "skill": "EMPATHY",
      "dc": 11,
-     "text": "They are not lying and they are not deluded. Read the comments in order: they are all describing the same experience, in forty different vocabularies, and the experience is being seen."
+     "text": "They are not lying and they are not deluded. Read the comments under the pairs: every one of them is written by a man who came in unhappy and went out having been told he was a new man, and believed it, and was right — and the photographs are of the same head with an inch and a half off it."
     },
     {
      "skill": "RHETORIC",
      "dc": 12,
-     "text": "'A new man, and the old one is not missed.' That is not a sentence a person writes about a haircut. That is a sentence a person writes about a replacement."
+     "text": "'A new man, and the old one is not missed.' That is not a satisfied customer's phrasing. That is a formula. Forty-odd variations on one sentence, in forty-odd hands, none of them copying the others, all of them arriving at the same construction."
     }
    ],
    "effects": {
@@ -195,7 +197,7 @@
     "skill": "COMPOSURE",
     "dc": 11,
     "kind": "white",
-    "prompt": "There is a photograph on this wall with you in it. Look at it with the owner watching, and do not give him anything.",
+    "prompt": "There is a photograph on this wall with you in it. Not a resemblance and not a coincidence — you, in a pair, before and after. Look for it without letting Sir Jerry see what you are looking for.",
     "success": "Level voice, hands where they were, weight unchanged. You take the whole wall in as a wall, and you take the eleventh photograph from the left in as one photograph among many, and you ask him about the frames.\n\nHe talks about frames. And while he talks you get the rest of it: the date on the print, the other two men in it, and the fact that in this photograph you are laughing at something the man on your left has just said, and the man on your left is not in the parish and never has been.",
     "failure": "It is the eleventh from the left and it has you in it and your face does the arithmetic before you have authorised the arithmetic.\n\nHe sees it. He does not say anything about it, which is worse, and he moves down the bar to give you the room, which is worse than that.",
     "success_effects": {
@@ -231,13 +233,13 @@
     "shadow"
    ],
    "description": "Monsieur Albert does not come forward. Monsieur Albert has never come forward. He occupies the dark past the last chair the way a bookcase occupies a corner, and he is an owlbear, and he is a nobleman, and both of those are simply true here and neither requires anything of you.\n\nHe is visible in the third mirror. He is not visible in the room. You have checked this in both directions, twice, and on the second attempt he inclined his head at the checking, from the mirror, courteously, while the corresponding volume of air continued to contain nothing.",
-   "repeat": "Still only in the glass. Still courteous about it.",
+   "repeat": "Still only in the glass. Still courteous about it. Still positioned exactly where a person would stand if they wanted to be in the room without being in the way of anybody's work.",
    "monocle": "Through the gold, Monsieur Albert is in the room. Solidly, warmly, taking up a great deal of it, in an excellent coat. It is the *room* that has been declining to include him, and the monocle overrules the room, and he looks back at you with an expression that has waited a long time to be looked at directly.",
    "passive": [
     {
      "skill": "EMPATHY",
      "dc": 12,
-     "text": "He has been in this shop longer than the shop. And nobody has been rude to him, ever, and nobody has spoken to him either, and he has arranged his whole bearing around the difference between those two facts."
+     "text": "He has been in this shop longer than the shop has been in this street, and nobody has spoken to him in forty years, and he is not bitter about it. That is the part that is hard to be in the room with. He has made his peace with a thing that should not be survivable and he has made it courteously."
     }
    ],
    "effects": {
@@ -264,7 +266,7 @@
     "skill": "COMPOSURE",
     "dc": 12,
     "kind": "white",
-    "prompt": "There is an owlbear in the mirror and he is being extremely polite about being looked at. Address him as though this were ordinary.",
+    "prompt": "There is an owlbear in the mirror and he is being extremely courteous about forty years of not being spoken to. Look at him. Directly, in the glass, and do not look away when he notices.",
     "success": "You keep it level. You do not stare and you do not perform not-staring, and you ask him how long he has been at this establishment as though asking a barman about his shift.\n\nHe answers, delighted, at length, and the answer contains the following: forty years, no reflection of his own on this side, and the fact that nobody has addressed him directly since a Thursday he can name.",
     "failure": "You get as far as the address and then some part of the arrangement gets through — the depth of him, the fact that he is *in* the glass rather than reflected by it — and your face does what a face does.\n\nHe looks away first, to spare you, which is the worst thing that has happened tonight.",
     "success_effects": {
@@ -304,13 +306,13 @@
     "colognes"
    ],
    "description": "Hair tonics, all of them discontinued, in colours that were discontinued along with them: a green that is not made any more, an amber that has no modern equivalent, and a purple down at the end which Wino-T says was never made at all and came with the shop.\n\nThe labels are in a typeface you know. You know it the way you know a voice through a wall. You have gone up close to it four times and it has been four different typefaces, all of them the one you know.",
-   "repeat": "Fifth time. Fifth face. All of them the one you know.",
+   "repeat": "Fifth time, fifth face, and all of them the one you know. The amber bottle has not been touched by anybody in this shop in the fortnight you have been watching it, and the level in it is lower than it was.",
    "monocle": "Through the gold the labels are not printed. They are struck — one character at a time, with the uneven pressure of a machine being worked by somebody who does not touch-type, and the purple bottle's label has been struck twice over itself because the first attempt came out as ONIONS.",
    "passive": [
     {
      "skill": "ELECTROCHEMISTRY",
      "dc": 10,
-     "text": "The amber one is forty per cent something. It is a hair tonic and it is forty per cent something and those two facts have been coexisting on that shelf since before the war."
+     "text": "The amber one is forty per cent something. It is labelled as a hair tonic and it was discontinued before either of us was born and the level in it is going down, and nobody in this shop drinks it, and Wino-T pours himself something at the end of the night that does not come out of any bottle on this shelf."
     }
    ],
    "effects": {
@@ -335,7 +337,7 @@
     "skill": "ELECTROCHEMISTRY",
     "dc": 10,
     "kind": "white",
-    "prompt": "The back shelf holds something with no label. Have what the back shelf is having.",
+    "prompt": "The back shelf holds something with no label, in a bottle nobody in this shop reaches for, at a level that goes down anyway. Have what the shop has when the shop is not being watched.",
     "success": "It is clear and it is cold and it tastes like the first line of something.\n\nAnd for the length of one swallow every name behind the bar is legible at once — not the labels, the *names*, the ones the bottles have rather than the ones they were given — and all of them are versions of the same name, declined like a noun in a language with cases.",
     "failure": "It is clear and it is cold and it is extremely strong, and it goes down and stays down and does nothing else whatsoever, and the owner watches you find that out.",
     "success_effects": {
@@ -374,17 +376,17 @@
     "beat": "awakening",
     "lucidity_min": 70
    },
-   "repeat": "Still open. It is not going to close on its own, and that is not the same as it being patient.",
+   "repeat": "Still open. It is not going to close on its own, and that is not the same thing as it being patient, and you have now stood in front of it on three separate evenings doing arithmetic you already know the answer to.",
    "passive": [
     {
      "skill": "LOGIC",
      "dc": 11,
-     "text": "Every deduction you have made for a fortnight terminates here. There is nothing further to work out. The next thing is not a conclusion, it is a step."
+     "text": "Every deduction you have made in a fortnight terminates here. There is nothing further to be worked out from this side of it — no reading of the evidence that does not require walking through — and that has been true since before you admitted it."
     },
     {
      "skill": "PHYSIQUE",
      "dc": 10,
-     "text": "Four inches of nothing, and a floor on the other side that will take a man's weight. The body has already decided. It has been leaning that way since the harbour."
+     "text": "Four inches of nothing, and a floor on the other side that will take a man's weight; you can see the boards and the grain in the boards and a nail head somebody countersunk badly. The body has already worked out the step. The body is not the part that is hesitating."
     }
    ],
    "check": {

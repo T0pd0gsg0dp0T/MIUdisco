@@ -3,16 +3,18 @@
  "name": "Giddyup End 'em Ribs",
  "subtitle": "Open whenever it is genuinely needed. Closed at all other times.",
  "description": "There is no sign of the hours anywhere on the building, and there has never been a night when you have walked up here and found it shut. Other people report finding it shut constantly. Both accounts are held to be accurate and nobody has ever put them side by side.\n\nSmoke first, then the room: low, long, dark wood gone darker, and the sort of warmth that a building only accumulates over centuries. Which is the trouble. The parish had the foundations dated in the sixties, out of civic pride, and the report came back with three different answers for three different courses of stone — one of them four hundred years before there was a Silvora Reefs to build in, and one of them for a material the report's author noted, in a footnote he clearly enjoyed, was not yet being manufactured.\n\nThe walls are masks. That is the thing everybody remembers about this room, and everybody remembers it wrongly, because they remember it as decoration.",
- "revisit": "Ben is at the long table with his hands flat on it, and he greets you with his own name in the form of a question, and the question lands the way it always lands, which is as though he already has the answer and is being polite about it.",
+ "revisit": "Ben is at the long table with his hands flat on it, and he greets you with his own name in the form of a question, and the question lands the way it always lands — as though he already has the answer and is being polite about the interval.\n\nThe room is warm from a fire at the cold end and warm from a smoker somewhere behind, and the smoke goes up and out through a roof that has no vent in it. Two hundred masks watch from the walls at forty different heights. The one near the door is smiling and was not smiling, and Ben has not moved, and Ben will not move, because he has told you that keeping his palms flat on that table is what keeps him where he is and he was not being figurative.",
  "lucid": {
   "2": "The smoke goes up and out through a roof that has no vent in it.",
   "3": "There are two hundred masks and there are two hundred people in Silvora Reefs, and neither of those numbers has ever needed to be counted.",
   "4": "This building is older than the town because it was written first. Everything else was worked out from here."
  },
  "ambient": [
-  "Ben says something about a summer you have not told anybody about, and moves on before it can be a question.",
-  "The fire settles. In the settling there is the sound of a lever being thrown at the end of a line.",
-  "A mask on the west wall is not where it was, and the nail it was on is still there, and there is no dust ring."
+  "Ben says something about a summer you have not told anybody about — a detail, small, correct, offered in passing the way a man offers the weather — and moves on before it can become a question.",
+  "The fire settles. In the settling there is the sound of a lever being thrown at the end of a line, and a pause, and a return, and then it is a fire again and has been a fire all along.",
+  "A mask on the west wall is not where it was. The nail it was on is still in the wall, and there is no dust ring around it, and there is no dust ring where it is now either.",
+  "Somebody at the far end of the long table laughs, and eleven strangers who have never met laugh with them, and the laugh goes down the oak and arrives at your elbow as a vibration about a second later.",
+  "Ben lifts one palm off the table to reach for something, and puts it back before the reach is finished, and does not get whatever it was."
  ],
  "objects": [
   {
@@ -25,7 +27,7 @@
     "faces"
    ],
    "description": "They cover the walls from the wainscot to the beams, overlapping, four and five deep in places, carved in a dozen woods by what must be a dozen hands over what must be a very long time.\n\nAnd they are portraits. Not one of them is an abstraction and not one of them is a god. They are people, and they are people you know: there is Darek in the corner by the door with the drawl carved into the set of the jaw, and Soliloquy over the fire holding her chin at the angle she holds it, and Ginny high up on the west wall with her hair pinned like a threat, and Asimov, and Luigi, and Mary Guana, and a bull antelope with crooked antlers and an expression of enormous effortful hope.\n\nBen's position on this is that they are old masks. He has never disputed the resemblances. He has never once said the word 'resemblance'.",
-   "repeat": "There is one near the door that was not near the door. It is Darek. He is smiling in it and he was not smiling in it.",
+   "repeat": "There is one near the door that was not near the door. It is Darek. He is smiling in it, and he was not smiling in it, and the wood around the mouth is not fresh-cut — whatever changed, it did not change by being carved.",
    "monocle": "Through the gold the masks are not carved. They are *cast* — every one taken from the same original, and then worked afterwards into difference, and the working is skilful and the original is underneath all of them and the original has your bone structure.",
    "passive": [
     {
@@ -72,7 +74,7 @@
     "skill": "COMPOSURE",
     "dc": 10,
     "kind": "white",
-    "prompt": "Take one off the wall and put it on, in front of everybody, without making it a joke.",
+    "prompt": "Take one off the wall and put it on, in front of everybody, without making it a joke. The room will decide what it means about a second and a half after you do it, so get in first.",
     "success": "You put it on. You do not do a voice. You do not make the face people make when they put on a mask, and the room, which had been ready to laugh, has nowhere to put the laugh and quietly keeps it.\n\nFrom inside, the eyeholes line up with the room in a way that is off by a foot. These were cut for somebody standing where nobody stands — behind the counter, on the left, exactly where the proprietor has stood for eleven years.",
     "failure": "You put it on and the room decides what that means before you do, and what it means is a joke, and the joke is generous and warm and completely finished with by the time it comes off.\n\nYou learn nothing except that the wood smells of smoke and that these people like you.",
     "success_effects": {
@@ -104,7 +106,7 @@
     "warped"
    ],
    "description": "Third bay from the fire, four deep, most of it behind a fisherman and a woman with a lamp. What is visible is a cheekbone, part of a jaw, and one eye.\n\nIt is you. It is unmistakably you and it takes about a second and a half to be certain of it, and in the second and a half there is a stage where it is not you and is somebody with your cheekbone, and that stage is the part that stays with you afterwards.\n\nThe features are not quite in the arrangement you keep them in. Nothing is missing and nothing has been added. Everything has been moved about a sixteenth of an inch, in different directions, by somebody who knew exactly what they were doing and had a reason.",
-   "repeat": "You have moved the fisherman aside twice now. Both times it has been back over the eye when you looked again, and both times Ben has been at the long table with his hands flat and his eyes elsewhere.",
+   "repeat": "You have moved the fisherman aside twice now. Both times it has been back over the eye by the time you looked again, and both times Ben has been at the long table with his palms flat and his eyes somewhere else entirely, and both times he has said nothing at all about it.",
    "lucid": {
     "3": "The sixteenth of an inch is not random. Every feature has been moved toward the mirror-image position and stopped short of it.",
     "4": "It is not a warped face. It is a face that was going to be reversed and was interrupted."
@@ -118,7 +120,7 @@
     "requires": {
      "clue": "c_masks_are_portraits"
     },
-    "prompt": "Move the fisherman properly. Not a nudge — lift it off the nail and put it on the table and look at the thing behind it with the whole of your attention.",
+    "prompt": "Move the fisherman properly. Not a nudge and not a lean — lift it off the nail, put it on the table, and look at the thing behind it with the whole of your attention and nothing held back for comfort.",
     "success": "The fisherman comes off the nail. The woman with the lamp comes off the nail. You put them on the long table, one either side of Ben's hands, and Ben does not move them and does not stop you and does not look.\n\nAnd it is your face, complete, and it is wrong in the way described, and it is not a wrongness of craft. Every displacement is toward the mirror image. The nose leans a sixteenth the other way, the jaw sits a sixteenth the other way, the parting is on the other side by a sixteenth — and none of them arrives, all of them stop short, and the effect is of a reversal that somebody began and did not finish.\n\nBen says, to the table: \"That one's older than the others, and it ain't. Both. I've had it up thirty years and I've never hung it and I've never took it down.\"",
     "failure": "The fisherman is on a nail that has been there since the war and it does not want to come off it, and you get it half up and the whole bay shifts an inch and something at the back knocks, and you put it back.\n\nBen has not looked up. Ben's hands are flat on the long table and he says, at a normal volume, to nobody: \"Some things is hung and some things is just up there.\"",
     "success_effects": {
@@ -177,7 +179,7 @@
     "course"
    ],
    "description": "By the cold end of the room somebody has taken up three boards and never put them back, and under them is the top course of the original footing, and beside it in a frame on the wall is the parish's dating report from 1963, kept up because Ben thinks it is funny.\n\nThree courses. Three answers. The bottom one predates Silvora Reefs by four hundred years, which the report handles calmly. The middle one is unremarkable. The top one is a cement compound that the report's author identifies, correctly and at some length and with obvious delight, as not yet being in production.\n\nThe conclusion of the report reads: THE BUILDING IS THEREFORE OF INDETERMINATE BUT UNDOUBTED ANTIQUITY. Somebody in the parish office has written OK in the margin.",
-   "repeat": "The OK in the margin is in a hand you have started to be able to pick out of a crowd.",
+   "repeat": "The OK in the margin is in a hand you have started to be able to pick out of a crowd — the same slight backward lean, the same way of closing an O without quite closing it.",
    "monocle": "Through the gold the three courses are three drafts. The bottom is the earliest and it is the roughest and it has the most life in it. The middle is competent. The top is the newest and is the most careful and is holding up the least.",
    "passive": [
     {
@@ -223,7 +225,7 @@
     "skill": "INTERFACING",
     "dc": 12,
     "kind": "white",
-    "prompt": "The building sits on something older than the building. Get underneath and read the mechanism.",
+    "prompt": "The building sits on something older than the building and somebody took three boards up to look at it and never put them back. Get underneath and read the mechanism rather than the report.",
     "success": "Under the floor the joists rest on a frame, and the frame is not a foundation. It has bearings in it, and a track, and the track is circular.\n\nThis building is mounted to turn. It has not turned — the grease is undisturbed — but it was built by somebody who expected it to, and it is aimed, currently, at the harbour.",
     "failure": "Joists, a frame, and a great deal of very old grease, and whatever the frame is for it declines to say from this angle with this light and this back.",
     "success_effects": {
@@ -254,7 +256,7 @@
     "bench"
    ],
    "description": "One piece of oak, twenty-two feet, black with a century of hands. Ben sits at the middle of the long side with his palms flat on it, which is how he sits, and which is not a mannerism — he has told you it keeps him where he is.\n\nThere are names carved into the underside. You found them by dropping a fork. Hundreds of them, going back along the whole length, cut small and neat and all in the same tool, and each one has a date beside it, and the dates are not deaths and they are not births.\n\nThe most recent one is yours. The date beside it is four days after you came out of the harbour, which has not happened yet.",
-   "repeat": "You check the date again. It is one day closer than it was, and the carving has not been recut, and the number is simply different.",
+   "repeat": "You check the date again. It is one day closer than it was and the carving has not been recut; there is no fresh cut, no dust, no change in the colour of the wood inside the stroke. The number is simply different.",
    "monocle": "Through the gold the dates are not dates. They are page numbers. Yours is high and it is not the highest, and the highest one belongs to a name you cannot read because the tool slipped, or because it has not been decided.",
    "passive": [
     {
@@ -300,7 +302,7 @@
     "skill": "SUGGESTION",
     "dc": 11,
     "kind": "white",
-    "prompt": "The long table seats eleven and nine of them are strangers to each other. Get the table talking about the night the harbour lit up.",
+    "prompt": "The long table seats eleven and nine of them are strangers to each other, and all of them are warm and fed and halfway down a drink. Get the table talking about the night the harbour lit up without asking it to.",
     "success": "You do not ask. You put the subject down in the middle of the table like a dish and let them serve themselves.\n\nWithin four minutes eleven people are arguing about a night none of them will place, and the argument has a shape: everybody remembers the light, nobody remembers the sound, and two of them remember being outside for it and having no reason to have been.",
     "failure": "You put the subject down and it sits there. Somebody asks whether you mean the fireworks. Somebody else says there were no fireworks. The table agrees pleasantly that there were no fireworks and returns to the ribs, and the moment is gone and cannot be put down twice.",
     "success_effects": {
@@ -330,7 +332,7 @@
     "eyelines"
    ],
    "description": "Not the masks themselves. The *hanging* of them — what has been put at eye level and what has been put above it, what is grouped and what has been given a foot of clear wall on either side, which faces have been placed where they can see one another and which two have been separated by the width of a beam.\n\nIt is not by size. There is a small one high and a large one low within a yard of each other. It is not by wood, or by age, or by the hand that carved them, and it is emphatically not by any scheme of decoration a person would arrive at while trying to fill a wall.\n\nSomebody has done this deliberately, over a very long period, revising as they went. There are nail holes that have nothing on them any more, and nail holes that have been filled and painted over, and one bay near the fire where the wall has been made good three separate times.",
-   "repeat": "The arrangement is holding, except in the third bay, where it never quite does.",
+   "repeat": "The arrangement is holding, except in the third bay, where it never quite does. Two masks there have swapped since Tuesday and the eyelines through that bay now converge about four inches further from the fire than they did.",
    "monocle": "Through the gold there is a seating plan under the masks, ruled and lettered, and it has been revised many times, and every revision moves somebody nearer the fire.",
    "effects": {
     "clue": {
@@ -350,7 +352,7 @@
     "skill": "CONCEPTUALISATION",
     "dc": 12,
     "kind": "white",
-    "prompt": "Two hundred portraits, hung by somebody, in an order. Work out what the room is *for*.",
+    "prompt": "Two hundred portraits, hung by somebody, in an order, over decades, with revisions. Stop counting the faces and work out what the room is *for*.",
     "success": "Not a gallery. A gallery faces its pictures outward at whoever comes in, and these do not face the door.\n\nThey face the room. All of them, at their various heights, angled a few degrees off the wall so that their sightlines converge — and they converge low, and near the fire, at the place a man would be if he were sitting at the middle of the long side of the table with his palms flat on it.\n\nIt is not a trophy room and it is not a shrine. It is a room built so that one person can be looked at, kindly, and at length, by every single person he has ever made — and it has been assembled by somebody who could not say that out loud and has been saying it in carpentry for thirty years.",
     "failure": "Two hundred faces at forty heights, and every grouping you propose holds for about nine masks before the tenth ruins it. There is an order here. It is not going to be found from the middle of the floor with the fire this bright.",
     "success_effects": {
