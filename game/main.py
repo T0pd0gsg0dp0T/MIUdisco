@@ -678,7 +678,17 @@ class Game:
         ways = []
         for target, blurb in (location.exits or {}).items():
             name = self.locations.display_name(target)
-            ways.append(f"{name}, {blurb}" if isinstance(blurb, str) and blurb else name)
+            if isinstance(blurb, str) and blurb.strip():
+                blurb = blurb.strip().rstrip(".")
+                # Blurbs are authored as sentence fragments to be joined onto
+                # the place name. Normalise a stray leading capital rather than
+                # letting one file's house style put a full stop mid-sentence.
+                head, _, rest = blurb.partition(" ")
+                if head[:1].isupper() and head[1:].islower():
+                    blurb = head.lower() + (" " + rest if rest else "")
+                ways.append(f"{name} — {blurb}")
+            else:
+                ways.append(name)
         if ways:
             if len(ways) == 1:
                 ui.narrate(f"There is one way on from here: {ways[0]}.")
