@@ -10,9 +10,11 @@
   "4": "There is no whispering. There has never been whispering. There is a room somewhere with a machine in it, and this building is what the sound of that machine looks like when it is given somewhere to be."
  },
  "ambient": [
-  "The temperature in the west corridor drops eleven degrees between one vault and the next, and comes back up between the next and the one after, and nothing accounts for either.",
-  "Your watch, which is stopped, is stopped at a different time in this room, and is stopped at 3:33 again by the door.",
-  "A whisper resolves for one whole second into a complete sentence — '...and he never once asked who was paying for the vault' — and unresolves before you can decide whether it was about you."
+  "The temperature in the west corridor drops eleven degrees between one vault and the next and comes back up again four vaults later, and the drop is not where the draught is, and there is no draught.",
+  "Your watch, which is stopped, is stopped at a different time in this room. You check it twice. It goes back to the old time on the stair down and neither reading has any business being a reading.",
+  "A whisper resolves for one whole second into a complete sentence — '...and furthermore, the arrangement was never—' — in a cadence you have heard every day of your life, and then goes back to being the sound of a cold building.",
+  "Soliloquy delivers eleven lines of something to the far end of an empty corridor, at volume, with feeling, and does not turn round afterwards to see whether anybody heard it.",
+  "The count of the vaults in the west corridor comes out at nineteen. You did not count them. You have simply arrived at the far end knowing the number, again, and it is a different number from the one you arrived with on Tuesday."
  ],
  "objects": [
   {
@@ -26,7 +28,7 @@
     "vaults"
    ],
    "description": "Brass, recessed, one to a door, engraved to a standard that suggests the engraver was paid by the hour and enjoyed the work. Name, two dates, and a line of the family's choosing.\n\nThe trick — and it is done to everyone, and Soliloquy will confirm it without being asked and without being helpful — is that on first look the plate carries your own name. Not a resemblance. Your name, your spelling, the middle one included, which is not a name you have used in public since a form in 1994. It holds for less than a second and then it is a stranger's, and the stranger's dates are ordinary, and the family's chosen line is something about a garden.",
-   "repeat": "It happens on every plate and it has not stopped happening. The middle name is the detail you keep returning to. Nobody in Silvora Reefs knows the middle name.",
+   "repeat": "It happens on every plate and it has not stopped happening and it does not get less unpleasant with familiarity. Your name, your middle name, the one nobody in this parish has been told, engraved to a standard that took somebody a day per letter.",
    "lucid": {
     "3": "The second date on your name is not blank. You have never got a clean look at it and you have stopped pretending that is bad luck."
    },
@@ -76,7 +78,7 @@
     "skill": "PERCEPTION",
     "dc": 11,
     "kind": "white",
-    "prompt": "Nineteen vault plates, struck and mounted. Read all nineteen rather than the one with your name on it.",
+    "prompt": "Nineteen vault plates, struck and mounted and engraved to a standard the trade abandoned two centuries ago. Read all of them, in order, and do not stop at the one with your name on it.",
     "success": "Nineteen names. You know four of them and three of those four are people you have met tonight.\n\nAnd the strike depth is not uniform: eighteen are stamped to the same depth, and one — the seventh — is shallower, and struck twice, the second strike slightly off the first, as though the name on it had been changed to itself.",
     "failure": "Nineteen plates, brass, mounted, and one of them with your name on it, and after that the other eighteen are extremely difficult to give any attention to at all.",
     "success_effects": {
@@ -106,7 +108,7 @@
     "no plate"
    ],
    "description": "Third from the end of the west corridor, and it has no plate. Not a blank plate — no plate, no recess, no screw holes, no discolouration where a plate has been taken off. The door was made without provision for one.\n\nThe seam around it is not sealed. It stands very slightly ajar, at a width of perhaps two fingers, and it has stood at exactly that width every time you have been in this corridor. Through it there is light: warm, low, single-source, of the kind a lamp with a green shade makes.\n\nYou have never got closer than eight feet. Not because you are prevented. Because on each approach Soliloquy has arrived beside you with something to say, and the something has always been long, and by the end of it you have been somewhere else.",
-   "repeat": "Two fingers. Always two fingers. A door that has been left ajar is a door somebody intends to come back through.",
+   "repeat": "Two fingers. Always two fingers. A door that has been standing open for eleven years in a building where the count of the doors will not hold still from one Tuesday to the next.",
    "lucid": {
     "2": "The light behind it moves when the whispering pauses.",
     "4": "It is not ajar. It is being *held* ajar, at a width somebody has chosen, so that the light gets out and you do not get in."
@@ -133,7 +135,7 @@
      "c_own_name": 2,
      "c_second_date": 2
     },
-    "prompt": "She will arrive at eight feet with something long to say. She always does. So give her something longer to say first, and walk while she is saying it.",
+    "prompt": "She will arrive at your elbow at eight feet with something long and courteous to say. Get the question in first, and make it one she cannot answer in verse.",
     "success": "You start talking before she does. You start on the slogan — on the em dash in it, on the decision to break REST IN PEACE against NOT IN PIECES on a hyphen that is doing the work of a whole theology, on whether a house that advertises against dismemberment is reassuring the bereaved or the merchandise.\n\nIt is not your best. It is your longest, and length is the currency here, and Soliloquy is a woman constitutionally unable to let a speech go unanswered. She answers. She answers at length, in rhyme, with a hand raised to hold her place — and a hand raised to hold a place is a hand not raised to stop you.\n\nSeven feet. Six. At four you can see the split in the left trestle leg.\n\nAt three she stops mid-line, and the silence in this building is a maintained condition and she has just switched it off, and the sound underneath it is a machine typing very fast.\n\n'Not that one,' she says, in her own voice, which you have not heard before and which has no rhyme in it at all. 'I have kept that one shut for you, Mr Onions, and I would like it noted that I have never once been thanked.'",
     "failure": "You open on the slogan and she takes the em dash off you inside a sentence.\n\nShe has been waiting years for somebody to raise the em dash. What follows is nine minutes on punctuation as a mortuary practice, delivered without a breath you can get a foot into, and at some point during it you have been walked — gently, courteously, without a hand laid on you — back down the corridor to the vestibule, where the door is, and where the sound of a machine typing is not audible at all.",
     "success_effects": {
@@ -184,7 +186,7 @@
     "records"
    ],
    "description": "On a stand by the vestibule, open, because Soliloquy holds that the dead have nothing to hide and the living should be encouraged in the habit.\n\nColumns: NAME. RECEIVED. VAULT. PAID BY. It runs back a long way in several hands and one ink.\n\nThe PAID BY column is the one. Family, family, estate, family, parish, family — and then, at intervals of no pattern you can find, a run of entries where the column reads only: ACCOUNT SETTLED IN ADVANCE BY THE COALITION. Forty or so, scattered across decades. The names in those rows are not remarkable. The dates in those rows are not remarkable. What they have in common is not in the ledger.",
-   "repeat": "You count the Coalition rows again and get a different number again, and this time you were watching your own finger.",
+   "repeat": "You count the Coalition rows again and get a different total, and the difference is not in the direction of more. There were forty on Tuesday. There are thirty-nine tonight, and the hand has not changed, and no page has been removed.",
    "monocle": "Through the gold the Coalition rows have a further column that the page does not otherwise carry, headed REASON, and every entry in it says the same three words: NOTICED TOO MUCH.",
    "passive": [
     {
@@ -231,7 +233,7 @@
     "skill": "ENCYCLOPEDIA",
     "dc": 11,
     "kind": "white",
-    "prompt": "The ledger is open and the hand is copperplate. Go through it against everything you have ever read about how these are kept.",
+    "prompt": "The ledger is open on a stand in a public vestibule and the hand is copperplate throughout. Go at it as a document — the columns, the totals, the conventions of the trade — rather than as a list of the dead.",
     "success": "Vault ledgers run to a form, and the form has been the same for two hundred years: date of lease, name of lessee, term, and a countersign.\n\nThis one has all four columns and the dates in the first column are *later* than the countersigns in the fourth. Every entry was signed off before it was made. For nineteen vaults. In copperplate, without a single correction, which is not how a man writes when he is making it up as he goes.",
     "failure": "Copperplate, four columns, two hundred years of convention behind it. Something about the ordering is wrong and the wrongness will not resolve into a sentence, and the keeper is watching you not resolve it with enormous courtesy.",
     "success_effects": {
@@ -261,7 +263,7 @@
     "numbers"
    ],
    "description": "Set into the wall of the vestibule at the height of a plate, in the same brass, by the same hand. It carries no name and no dates. It carries a number, five digits, engraved.\n\nEngraved. Not printed, not displayed, not on any mechanism. Cut into brass, permanently, by a tool.\n\nIt was 04412 the first time you saw it. It is not 04412 now.",
-   "repeat": "Lower. Always lower. Nobody has been near it and there is no tool in this building that could have been.",
+   "repeat": "Lower. Always lower. Nobody has been near it, there is no mechanism behind the plate, the chisel marks are old — and the number is lower than it was when you came up the hill this evening.",
    "monocle": "The gold shows the brass mid-cut: a burin in the metal, moving, unheld, and behind it the ghosts of every number it has been, stacked back through 04412 and past it, thousands of them, all the way to a first cut that is out of sight below the plaque and going down.",
    "passive": [
     {
@@ -328,14 +330,14 @@
     "sound"
    ],
    "description": "They travel in the air rather than along the stone, which is the wrong way round for a building of this shape, and they are constant, and they are almost words.\n\nStand still and give them a minute and they resolve. Not into a voice — into a *sentence*, assembled out of the general susurrus by the same trick that assembles a face out of wallpaper. They are all on one subject. They are about death, and they are about dreams, and they never mention one without the other, and the grammar of them is careful in a way that overheard speech is not.",
-   "repeat": "They have got easier to resolve. This is not the direction that sort of thing usually goes.",
+   "repeat": "They have got easier to resolve, which is not the direction these things are supposed to travel in. On Tuesday it was weather. Tonight there are words in it, and the words are in your cadence.",
    "monocle": "The gold does nothing to them, because they are not visual, and the failure is informative: the monocle reveals what a thing is made of, and it has no opinion about these at all, the way it has no opinion about your own voice.",
    "check": {
     "id": "rest:whispers:listen",
     "skill": "EMPATHY",
     "dc": 12,
     "kind": "white",
-    "prompt": "Stop trying to hear the words. Listen for who is talking.",
+    "prompt": "Stop trying to hear the words. The words are not the information. Listen for *who is talking*, and how many of them there are, and whose cadence they are using.",
     "success": "You stop reaching for the words and let the room have them, and what comes up out of the susurrus is not vocabulary. It is cadence.\n\nIt is yours. Every whisper in this building is in your cadence — the long clause, the qualifying aside, the pause before the last word that you have never once managed to stop putting there. Forty voices, none of them yours, all of them speaking the way you speak.\n\nThey are not the dead. They are not talking about you. They are *drafts* of you, and this is where they have been put.",
     "failure": "You listen for the speaker and get the words instead, and the words this time are '—should rest in peace, not in—' and then the building's slogan, and then the slogan again, and then a stretch that is only the rhythm of the slogan with different syllables in it, and none of it will hold still long enough to have said anything.",
     "success_effects": {
@@ -381,7 +383,7 @@
     "beat": "awakening",
     "lucidity_min": 70
    },
-   "repeat": "Still open. It is not going to close on its own, and that is not the same as it being patient.",
+   "repeat": "Still open. It is not going to close on its own, and that is not the same thing as it being patient, and Soliloquy has stopped arriving at your elbow when you stand in front of it.",
    "passive": [
     {
      "skill": "LOGIC",
@@ -425,7 +427,7 @@
     "two fingers"
    ],
    "description": "West corridor, past the count that will not settle: one obsidian door standing about two fingers off its jamb, and it has stood that way for as long as anybody in this building has been asked about it.\n\nThe stone is very black and very cold and takes a fingerprint beautifully, and it is entirely free of fingerprints, which in a building this old is its own kind of statement.\n\nSoliloquy's position — delivered in couplets, at length, and with the specific fluency of a woman who has answered this question before — is that it is not open, it is *unclosed*, and that the distinction is the whole of her profession and the reason there is a keeper here at all. She will not be drawn further. She will also not let you put a hand on it, and she does not make a performance of preventing you; she simply arrives at your elbow, courteously, every single time, and stays there until you have moved on.",
-   "repeat": "Two fingers. You have measured it with the same two fingers four times now and it has been the same four times.",
+   "repeat": "Two fingers. You have measured it with the same two fingers on four separate visits and it has been the same on all four, in a building where nothing else has agreed with itself twice.",
    "monocle": "Through the gold the gap has a hand in it, holding the door off the jamb, and the hand is not straining. It has been resting there a long time and could close it whenever it liked.",
    "passive": [
     {
@@ -452,7 +454,7 @@
     "skill": "VISUAL_CALCULUS",
     "dc": 11,
     "kind": "white",
-    "prompt": "A door does not come to rest two fingers open and stay there for eleven years. Reconstruct how this one manages it.",
+    "prompt": "A door does not come to rest two fingers open and stay there for eleven years. Stop looking at the gap and read the jamb.",
     "success": "Obsidian is unforgiving and keeps everything, which makes this easy once you stop looking at the gap and start looking at the jamb.\n\nThere is scoring. Two arcs, one above the other, at the height a hand would take a door — and they are not the scoring of something forced. They are wear, of the kind that comes from a thing being drawn to exactly this position and released, over and over, a very large number of times.\n\nThis door is not stuck. It is *set*. Somebody opens it and closes it on a rhythm and two fingers is where it rests in between, and the last time it moved, going by the dust in the lower arc, was four days ago.",
     "failure": "Black stone, black shadow, and a lamp Soliloquy declines to move for you. The jamb gives up its width and nothing else, and she stands at the end of the corridor throughout, in couplets, being helpful in the way that prevents help.",
     "success_effects": {
@@ -486,7 +488,7 @@
     "hill"
    ],
    "description": "The mausoleum stands above everything, which is the point of a mausoleum, and from the west corridor's one window the whole of Silvora Reefs is laid out beneath the fog in the green of its own lamps.\n\nYou can see the harbour road and the roof of Durry Kwain. You can see the queue outside Mary's, moving, always moving. You can see the smoke off Ben's, going up through a roof that has no vent in it, and the lit sign at the Möbius holding its coil, and one window burning on the second floor of a building that hangs from nothing.\n\nFrom this height it is possible to watch an entire town do its evening at once — every lit room, every errand, every small ordinary act of maintenance, simultaneously, in one glance.\n\nNobody who lives down there has any reason to come up here and look at it.\n\nSoliloquy does it nightly. She has never mentioned this to anybody, and there is a chair by the window, and the chair faces out.",
-   "repeat": "The lamps are still on. The town is still doing its evening. Somebody down there has just closed a shutter.",
+   "repeat": "The lamps are still on. The town is still doing its evening, all of it at once, in one view. Somebody down there has just closed a shutter, and somebody else has just opened a door onto a lit hallway and gone in.",
    "monocle": "Through the gold the town is a page seen from the top corner, and the lamps are not lamps, they are the places where the writing is densest, and there are large areas with nothing on them at all.",
    "effects": {
     "clue": {
@@ -505,7 +507,7 @@
     "skill": "VOX_POPULI",
     "dc": 12,
     "kind": "white",
-    "prompt": "The whole town is down there at once, doing the same eleven minutes. Take all of it in together rather than one lamp at a time.",
+    "prompt": "The whole town is down there at once, doing the same eleven minutes of its evening. Take all of it in together rather than one lamp at a time.",
     "success": "Every light in Silvora Reefs, and behind every light a person, and behind every person a small maintenance being performed on a town that nobody has told them is failing.\n\nLuigi doing the west end first. Bud saying it is a light well to a ceiling that has not asked. Woolbinkle putting one on at nine because he had a feeling. Wino-T setting down a cup for a man in a mirror. Landy writing RESOLVED in a book. Darek wiping a counter that does not need it, at the window, watching the water.\n\nNone of them knows the others are doing it. Every single one of them is holding up their own eight feet of a building that has no business standing — and the town is not being kept up by whoever wrote it. It is being kept up by two hundred people independently refusing to let go of their own corner of it.",
     "failure": "Lamps in fog, and a town going about its evening, and it is beautiful from here and it does not add up to anything but a town. The parish keeps its own counsel and the window is cold and after a while there is nothing to do but come away from it.",
     "success_effects": {

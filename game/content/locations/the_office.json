@@ -3,15 +3,17 @@
  "name": "The Office",
  "subtitle": "Nine feet by eleven. Everything in Silvora Reefs was measured from here.",
  "description": "Nine by eleven. You have had that measurement for a while now, off a bowl of something soft at Chef D.'s, and having it does nothing at all to prepare a man for standing in it.\n\nA green-shaded lamp. A desk made of a door on two trestles, and the left trestle is split, and you have been meaning to see to it since before the water. Paper in drifts — not stacked, drifted, the way paper drifts when nobody has tidied since there was a reason to. A cup with a ring under it, and the ring is older than the cup, and the cup is cold.\n\nA waste basket with a great deal in it.\n\nAnd a typewriter, black and heavy, with a page in it, and the page is not blank.\n\nThere is one chair at the desk and it is pushed back. There is a second chair drawn up at an angle that means somebody expects to be talked to.\n\nHe is standing at the window. There is no window.",
- "revisit": "The room has not changed and will not. It is the one place in the world that has never once been described twice.",
+ "revisit": "The room has not changed and will not. It is the one place in the world that is not being revised, because the man who does the revising is standing in it with his back to you, and a man cannot describe the room he is being described in.\n\nNine feet by eleven. A desk that is a door. A lamp with a green shade and a cup with a ring under it older than the cup. A chair pushed back and left pushed back. And a page in the machine that says *and he does not*, and has said it since the moment you came through, and will go on saying it for exactly as long as there are two people in this room being people at each other.",
  "lucid": {
   "2": "The sound you have been chasing across ten buildings for a fortnight is not happening in this room. It has stopped. It stopped when you came through.",
   "3": "Every measurement you have taken in Silvora Reefs resolves here: eleven feet of hallway, nine vaults, four inches of boundary, twenty-two paces, two seconds. All of them are dimensions of this room or of the man in it.",
   "4": "You are inside the paragraph. It is smaller than you expected and there is a cup in it."
  },
  "ambient": [
-  "The lamp does not flicker. Nothing in this room does anything at all unless it is being described.",
-  "Out beyond the walls, at an enormous distance, a town continues, and you can hear it the way you hear a party through a floor."
+  "The lamp does not flicker. Nothing in this room does anything at all unless it is described, and neither of you is describing anything at the moment, and so the room simply holds.",
+  "Out beyond the walls, at an enormous distance and through no window, a town continues — a queue moving, a squeegee arcing, a pan saying shhhk — and you can hear all of it at once and none of it individually.",
+  "The typewriter ticks once as it cools, which it should not do, because nothing in this room has been warm.",
+  "He shifts his weight from one foot to the other at the wall that is not a window, and the boards under him take it without a sound, because they have taken it for eleven years and know the shape of him."
  ],
  "on_enter": {
   "flag": {
@@ -30,7 +32,7 @@
     "paper"
    ],
    "description": "Half a sheet showing above the platen. The type is dense and the left margin is wide and the right is ragged, and you have seen this exact shape once before, in melted cheese, for four seconds.\n\nIt is the account of a man coming through a seam into a room nine feet by eleven. It is in the present tense. It stops in the middle of a sentence — not at a full stop, not at a comma, at a place where nothing in the grammar suggests stopping — and the carriage is sitting where it was left.\n\nThe last four words are: *and he does not*",
-   "repeat": "It has not gained a word. Nothing in this room is going to gain a word while you are standing in it, and that is what the whole town has been trying to tell you for a fortnight.",
+   "repeat": "It has not gained a word. Nothing in this room is going to gain a word while both of you are standing in it, and that is not a stalemate — a stalemate is a position. This is a sentence being held open by two people who are each waiting for the other one to finish it.",
    "monocle": "The gold does nothing. There is nothing under this. It is a page and it says what it says and it is the first entirely honest object you have handled since the harbour.",
    "passive": [
     {
@@ -64,7 +66,7 @@
     "skill": "HAND_EYE",
     "dc": 12,
     "kind": "white",
-    "prompt": "There is a page in the machine and it is not blank. Take it out without tearing it and without him stopping you.",
+    "prompt": "There is a page in the machine and it is not blank and it is the only thing in this room with no dust on it. Read what is on it without saying any of it aloud.",
     "success": "Platen release, one turn, and it comes up clean.\n\nIt is a description of a man standing in a small room holding a page he has just taken out of a machine. It is in the present tense. It stops mid-sentence, and the sentence it stops in the middle of is this one.",
     "failure": "You have the corner of it and the platen has the rest, and the rest wins by about two inches of tear, and what you are holding is the top of a page and the top of a page says nothing at all.",
     "success_effects": {
@@ -101,7 +103,7 @@
     "rubbish"
    ],
    "description": "Full, and not recently. The pages at the bottom have gone the colour of weak tea and the ones at the top are screwed up hard by a hand that was not pleased.\n\nYou flatten a few. They are all the same page. Not the same text — the same *page*, the arrival at the seam, attempted and attempted and attempted, and each attempt gets a little further and each one is struck through, and in every single one the man arriving is described a little more kindly than in the one before.\n\nThe earliest ones call him the tenant. The later ones call him Oliver. The last one, screwed up hardest, the one nearest the top, calls him Ols.",
-   "repeat": "You go through more of them. It does not get better and you were not expecting it to and you go through more of them anyway.",
+   "repeat": "You go through more of them. It does not get better and it does not get worse; it gets *longer*, and the dates at the bottom are eleven years apart and the dates at the top are four days apart, and the handwriting on the last one is not steady.",
    "monocle": "The gold finds a date on each. They are eleven years apart at the bottom and four days apart at the top, and the intervals shorten the whole way up, and the shortening is the shape of somebody running out of ways to put it off.",
    "passive": [
     {
@@ -136,7 +138,7 @@
     "skill": "INLAND_EMPIRE",
     "dc": 13,
     "kind": "white",
-    "prompt": "A waste basket with a great deal in it. Do not read the pages. Ask the basket what it is for.",
+    "prompt": "A waste basket with a great deal in it, and every sheet in it screwed up by the same hand. Do not read them. Put a hand in and find out what it *is* first.",
     "success": "It is not a basket of failures. Every page in it was taken out on purpose and none of them were thrown away — they are *folded*, each one, the same fold, which is not what a man does with a bad page.\n\nThis is not where the drafts died. This is where he put the people he could not make work, and he folded each of them first, and he has never once emptied it.",
     "failure": "Paper, and a great deal of it, and the specific silence of a container that has been filled slowly over years by somebody who was not enjoying it. Nothing else comes. The basket declines to elaborate.",
     "success_effects": {
@@ -171,7 +173,7 @@
     "split"
    ],
    "description": "The left one. A long clean split up the grain, the sort that happens once and then sits there getting slowly worse while a man works above it and means to see to it.\n\nSomebody has put a shim in. Folded paper, four thicknesses, wedged in tight and gone grey with age, and it is holding, and it has clearly been holding for years.\n\nIt is a page. You get it out without much trouble, because it has been put in to be got out, and it is one of Landy's forms, filled in beautifully, and under REMEDY it says: *none available. Recommend company.*",
-   "repeat": "You put it back. The desk needs it and you have read it and both of those remain true.",
+   "repeat": "You put it back. The desk needs it, and you have read it once, and reading it a second time is not going to make the folded grey paper say anything different or make the leg any less split.",
    "monocle": "Through the gold, the shim is not holding the desk up. The desk is holding the shim in. Somebody has kept a piece of paper somewhere it would be safe and dry for eleven years and has used a broken trestle as the excuse.",
    "passive": [
     {
@@ -200,7 +202,7 @@
     "skill": "INTERFACING",
     "dc": 11,
     "kind": "white",
-    "prompt": "The left trestle is split and has been for a long time. Get under the desk and look at how it is holding.",
+    "prompt": "The left trestle is split and has been for a long time and has not been mended, and there is something folded holding it up. Get underneath and see what he used.",
     "success": "It is split and it is holding because somebody shimmed it, and the shim is a folded page, and the folded page has been under there long enough to have taken the shape of the load.\n\nHe fixed it with a person. Whatever is written on that shim, it has been holding this desk up for eleven years, and unfolding it would put the desk on the floor.",
     "failure": "Split, shimmed, holding. The shim is paper of some kind and it is compressed to the density of wood and it is not coming out without the desk coming down, and you are not going to be the one who does that in front of him.",
     "success_effects": {
@@ -233,7 +235,7 @@
     "view"
    ],
    "description": "He is standing at it. There is no window. There is wall, plastered, papered, and unremarkable, and a man in green with purple accents standing in front of it in the exact attitude of a man looking out of one — weight on one hip, one hand in a pocket, head at the angle of somebody watching weather.\n\nGo and stand beside him. There is nothing there. There is a wall at the distance a wall would be.\n\nHe has been standing at it for eleven years.",
-   "repeat": "Still nothing there. He has not moved. He does not appear to require there to be anything there.",
+   "repeat": "Still nothing there. He has not moved. He does not appear to be looking at anything, and he has not appeared to be looking at anything for as long as you have been in this room, and the boards in front of him are worn through the wax.",
    "monocle": "Through the gold there is a window and it looks out on Silvora Reefs: the harbour, the green lamps, Durry Kwain's sign the colour of a boiled sweet, the obsidian up on the hill. All of it, in twilight, in enormous detail, from an angle nothing in the town could take.\n\nThe monocle has been showing you what things are made of for eleven years. It is showing you that this wall is made of the whole town.",
    "passive": [
     {
@@ -264,7 +266,7 @@
     "skill": "VOLITION",
     "dc": 13,
     "kind": "white",
-    "prompt": "There is a window and there is a man at it, and the whole room is arranged so that you will look where he is looking. Look at something else instead.",
+    "prompt": "There is a window and there is a man at it, and there is no window. Stand where he is standing and look at what he is looking at, and do not let the room tell you there is nothing to see.",
     "success": "You keep your attention where you put it. The window goes on being a window and the man goes on being at it and the arrangement goes on being an arrangement, and none of it acquires the authority it was built to acquire.\n\nWhen he speaks it is a man speaking in a small room, nine feet by eleven, at a person who is standing up.",
     "failure": "The window is doing what the window was put there to do. Weather behind it, and the long violet, and the parish going about its business a very long way down — and the room composes itself around the view, and around him, and around you as the smaller of the two people in it.",
     "success_effects": {
@@ -297,7 +299,7 @@
     "scene"
    ],
    "description": "Nine feet by eleven. Every object in this room has been where it is for long enough to have made a mark on the surface beneath it — a ring, a shadow of dust, a paler rectangle in the varnish — and the marks are deep and settled and speak of years rather than weeks.\n\nEvery object except three.\n\nThe cup, which has a ring under it older than the cup itself, which means there was a cup before this cup and it stood in exactly the same place. The chair, which is pushed back from the desk at an angle, and has been pushed back long enough that dust has had time to settle evenly across the seat. And the page in the machine, which is the only thing in this entire room — the only surface, the only edge, the only upturned face of anything — that carries no dust at all.\n\nThe lamp is on. It has the particular yellowness of a bulb that has been burning a very long time and has not been switched off in living memory.",
-   "repeat": "The chair is still pushed back. Nothing in here has moved since you came through, including the man.",
+   "repeat": "The chair is still pushed back. Nothing in here has moved since you came through, including the man, and the dust on the seat of the chair has not been disturbed by any of it.",
    "monocle": "Through the gold the room is a paragraph that has been worked on too long. Words struck out and reinstated, a margin annotated in a hand that gets smaller toward the bottom, and one sentence at the end left open with the cursor still in it.",
    "effects": {
     "clue": {
@@ -317,7 +319,7 @@
     "skill": "VISUAL_CALCULUS",
     "dc": 12,
     "kind": "white",
-    "prompt": "You have reconstructed a dozen rooms this fortnight from less than this. Reconstruct the last few hours of this one.",
+    "prompt": "You have reconstructed a dozen rooms this fortnight from a great deal less than this. Reconstruct the last few hours of this one.",
     "success": "Work it backwards from the dust, which is the only honest witness in the room.\n\nHe has been at the window. Not once — habitually, and recently, and for hours at a time: the sill is clear in one place the width of two forearms and the boards in front of it are worn through the wax in the shape of a man standing with his weight on one foot and changing feet.\n\nHe has not been at the desk. The chair was pushed back and has stayed pushed back long enough for dust to settle on the seat, and the cup went cold without being drunk, and the ring under it is old but the cup is *dry* on the inside, and has been for days.\n\nHe has not been writing. He has been standing at a wall that is not a window, with his back to an unfinished sentence, waiting — and going by the wear at the sill, he has been doing it for a considerable part of eleven years.",
     "failure": "The room declines. It is nine feet by eleven and it holds a desk and a lamp and a great deal of paper, and every reconstruction you run on it comes back with the same answer, which is that a man works here, which you had before you came in.",
     "success_effects": {
@@ -352,7 +354,7 @@
     "door"
    ],
    "description": "A door on two trestles, in a room that does not have one.\n\nIt is a good door. Panelled, six panels, hung once and hung properly — the hinge leaves are still screwed to the stile, brass, worn bright along the knuckle by years of opening. There is the ghost of a number on it at eye height, sanded at more than once and never quite taken off, the way a man sands at a thing and then finds he has stopped.\n\nSomebody took it off a frame, laid it flat across two trestles, and has been working on it ever since. The left trestle is split along the grain and has not been mended; it has been shimmed, with something folded, and the shim has been in there long enough to have taken the compression permanently.\n\nThe surface is worn in one place, in front of the chair, in the shape of two forearms.",
-   "repeat": "Still a door. Still flat. Still the only door in a room that has none.",
+   "repeat": "Still a door. Still flat across two trestles, one of them split. Still the only door in a room that does not have one, and the ghost of the number on it is still 2-F if you hold your head at the right angle to the lamp.",
    "monocle": "Through the gold the number on the door is legible and it is 2-F, and that is your number, and the ghost of it has been sanded at more than once by somebody who could not quite bring themselves to take it off.",
    "effects": {
     "clue": {
@@ -373,7 +375,7 @@
     "skill": "CONCEPTUALISATION",
     "dc": 12,
     "kind": "white",
-    "prompt": "The composition of this room is too good to be an accident. Say what it is doing.",
+    "prompt": "The composition of this room is too good to be an accident. Stop reading the objects and say what the arrangement is *doing*.",
     "success": "A man who writes his way out of rooms, working — for eleven years, every day — on the flat of the only door his room has ever had.\n\nIt is too neat. It is the kind of image a writer puts in a story about a writer and then takes out again the following morning for being too neat, and it has survived here for eleven years in the one room where there is nobody to take it out.\n\nWhich leaves two readings and only two. Either he arranged it about himself, deliberately, and has been sitting inside his own metaphor without flinching for a decade — or he did not arrange it, and somebody with a better eye for composition than either of you has been arranging things about him.",
     "failure": "A door on trestles. Men use doors as desks when they are poor or in a hurry or fond of the door, and all three are available here, and the room offers no way to choose between them tonight.",
     "success_effects": {
