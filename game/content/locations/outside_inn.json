@@ -184,7 +184,7 @@
    "lucid": {
     "3": "The eighteen inches between the chairs is not eighteen inches. It is a paragraph break."
    },
-   "monocle": "Through the gold the two chairs are not in the same place. They are in the same *sentence*, adjacent, with nothing between them — and one of them is being rained on because it says so, and the other is not being rained on because it does not.",
+   "monocle": "Through the gold the two chairs are not in the same place.\n\nThey are in the same *sentence* — adjacent, separated by a comma, with nothing between them at all — and that is a different kind of adjacency and it explains the eighteen inches better than any amount of plumbing would.\n\nOne of them is being rained on because the clause says so. The other is not being rained on because its clause does not mention rain. Neither clause has been revised, and the man in the wet one has been reading in it for years, and the woman beside him has never once suggested that anything be changed.",
    "check": {
     "id": "inn:chairs:ask",
     "skill": "EMPATHY",
@@ -301,7 +301,7 @@
    ],
    "description": "Brass rail, brass wheels, brass everything, polished well past the point where polishing is doing any good and into the point where it is doing something else — a man's hands on the same rail, in the same two places, for years.\n\nThere are four bags on it. There have been four bags on it every single time you have been in this building.\n\nThey are not the same four bags. The tartan one was a leather valise in the spring and a hard case in the autumn and is a hatbox tonight. But there are four, always four, arranged with the big one at the bottom and the soft one on top, and the arrangement is correct, and it is the arrangement a man makes when he is about to move a trolley.\n\nThe trolley never goes anywhere.\n\nBud stands beside it all day with one hand on the rail, white at the knuckle, in the attitude of a man holding a horse for somebody who has said they are coming right back.",
    "repeat": "Four bags. One of them is now a hatbox, and it was a valise on Tuesday, and Bud's hand has not left the brass rail in the whole of that time as far as anybody in this building can attest.",
-   "monocle": "Through the gold there are no bags and there is no trolley. There is Bud Onkuhdonk, standing in the middle of the lounge with one hand out at waist height, holding nothing, very hard, for a long time.",
+   "monocle": "Through the gold there are no bags.\n\nThere is no trolley. There is no brass rail, no wheels, no hatbox and no valise.\n\nThere is Bud Onkuhdonk, standing in the middle of a lounge with one hand out at waist height, holding nothing, very hard, with the knuckles white — for a long time, on his feet, every day, in a building he believes he is helping to keep up.\n\nAnd he is not wrong about that. That is the part the gold does not soften.",
    "passive": [
     {
      "skill": "EMPATHY",
