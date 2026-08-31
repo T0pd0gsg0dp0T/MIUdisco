@@ -33,6 +33,30 @@
      "flag": "landy_will_mend_the_trestle"
     },
     "text": "The desk in this room is a desk. It has four legs. Not one of them is split and there is nothing folded and grey wedged into any of them."
+   },
+   {
+    "requires": {
+     "check_passed": "crash:waterline:vis"
+    },
+    "text": "There is sand in the turn-ups of the coat on the back of the door. You have not been to a beach. You take it to the window and turn it out over an ordinary carpet, and it is still there in the morning, and you leave it."
+   },
+   {
+    "requires": {
+     "clue": "c_she_writes_what_she_cannot_say"
+    },
+    "text": "You eat alone, badly, standing up. Halfway through you find you have arranged what is on the plate — ten, then nine, then seven, and one laid across the whole of it — and there is no reason for it, and you do it again the following evening, and the evening after that."
+   },
+   {
+    "requires": {
+     "clue": "c_the_building_is_empty"
+    },
+    "text": "Somewhere above you in this building a radio is playing, and it stops at eleven, and there is a person up there who turned it off. You have lived under them for a year. This morning that strikes you, for the first time in your life, as a thing that could be fixed."
+   },
+   {
+    "requires": {
+     "clue": "c_two_hundred_people_holding"
+    },
+    "text": "The arithmetic stays with you longer than the town does. Two hundred people, each holding up their own eight feet of it, not one of them told what they were doing. You have started counting the people in this building. There are nine."
    }
   ],
   "furthermore": "Nothing. There is nothing behind the sternum and no warmth at the back of the neck and no enormous patience standing in the corner of anything.\n\nYou have your whole mind to yourself. It is very quiet in here.",
@@ -74,6 +98,30 @@
      "clue": "c_twenty_two_forms"
     },
     "text": "There are now twenty-three forms in a cupboard on a half-landing recommending that you not walk the corridor alone. The twenty-third is in a hand that is not Landy's."
+   },
+   {
+    "requires": {
+     "clue": "c_unsignalled_kindness"
+    },
+    "text": "At Cheeses Thrice a joke dies on a Tuesday and the room repairs it — late, scattered, from four tables that did not look at each other — and the thickened patch over the third table thins and goes. Nobody remarks on it. Nobody ever has. It is the most reliable machine in the parish."
+   },
+   {
+    "requires": {
+     "clue": "c_the_gap_is_maintained"
+    },
+    "text": "The vault at the end of the west corridor stands two fingers off its jamb. Soliloquy measures it every Michaelmas and it does not change, and she has stopped writing the number in the book, because she knows it, and because writing it down had begun to feel like a way of asking."
+   },
+   {
+    "requires": {
+     "clue": "c_a_courtesy_shape"
+    },
+    "text": "Ninety people a night arrange themselves across a floor at the Möbius and leave eight square feet clear in front of the far booth. Each of them has a sincere and different reason. Not one of them is right. It does not matter, and the shape holds."
+   },
+   {
+    "requires": {
+     "check_passed": "albert:the_glass_itself"
+    },
+    "text": "In the third mirror at The G.'s Spot an owlbear turns, once, and thanks a pane of glass. The glass does not answer. It goes on including him, which it was always going to do, and which it has never once been asked to."
    }
   ],
   "furthermore": "He is still here. Of course he is still here.\n\nHe stands in the doorway of your flat with an unused saddle and infinite patience while you talk, and talk, and talk, and when the room has gone and there is only him left you turn and say '...and furthermore—'\n\nAnd he listens. He always listens. That was never the part that was in doubt.",
@@ -119,6 +167,36 @@
      "clue": "c_the_shim"
     },
     "text": "Lying Landy mends the trestle. It takes an afternoon. The shim comes out and is put in a plastic wallet in an inside pocket over the heart, where it lives, and the leg does not come back."
+   },
+   {
+    "requires": {
+     "clue": "c_ice_will_not_lie"
+    },
+    "text": "The drain on the Möbius ice machine runs downhill. Ginny finds it on a Tuesday, on her knees, with two fingers, and swears at eleven inches of pipe for a considerable time, and then sits down on the floor of her own cellar and laughs until she has to stop."
+   },
+   {
+    "requires": {
+     "clue": "c_the_far_side_is_later"
+    },
+    "text": "The volume of air between the two chairs at The G.'s Spot is air. Antonio walks through it forty times a day and arrives exactly when he arrives, and Monsieur Albert, who is in the room now and takes some getting used to, has opinions about the coffee."
+   },
+   {
+    "requires": {
+     "clue": "c_he_would_like_to_have_told_you"
+    },
+    "text": "Woolbinkle tells somebody about the cans. Not you — a woman who comes in on a Thursday for a nine-inch and asks, on the way in rather than on the way out, what is on the shelf. He is ready. He has been ready for eleven years."
+   },
+   {
+    "requires": {
+     "clue": "c_a_room_for_being_witnessed"
+    },
+    "text": "Ben has the masks rehung. It takes four days and he will not be helped and he will not say why. When it is done every sightline in the room converges on the middle of the long side, and he sits down in it, with his palms flat, and lets them look at him."
+   },
+   {
+    "requires": {
+     "clue": "c_the_obstructive_ones"
+    },
+    "text": "Soliloquy signs a delivery docket H. O'Dochtaigh, in her own hand, without deciding to, for the first time in sixty years — and stands in the vestibule looking at it for rather a long while afterwards."
    }
   ],
   "furthermore": "He puts his head round the door of a room that has no door, which he has been doing for as long as you have had a skull, and he looks at the two of you arguing about a semicolon.\n\nThen he draws himself up. The air thickens. Something vast is being assembled behind his soft eyes, something that has been waiting since before there were words to wait in—\n\n\"Finally,\" he says, and goes to sleep in the corner.",
@@ -152,6 +230,30 @@
      }
     },
     "text": "There are two of you in the Outside Inn on a Thursday, in a green coat and a purple one, being served by a bellhop who begins every response with BUT and has never in his life been so relieved to have two of something to deny."
+   },
+   {
+    "requires": {
+     "clue": "c_the_ladle_is_held"
+    },
+    "text": "In the kitchen at Lishush Mush the pass goes light during a long sentence, and six things come up, and they stay up a good deal longer than they used to. T has stopped apologising for it. T has started writing longer sentences."
+   },
+   {
+    "requires": {
+     "clue": "c_the_mark_at_the_end"
+    },
+    "text": "T signs for a delivery in a hurry with a knife still in his other hand: one clean stroke, the mark a man makes who cannot write his name. The driver witnesses it without looking. It stands. It has always stood."
+   },
+   {
+    "requires": {
+     "clue": "c_carry_it_longer"
+    },
+    "text": "Soliloquy puts it down. She tells the whole of it to a bellhop who begins every sentence with BUT, in a vestibule, at four in the afternoon — and he denies every word of it, warmly, at length, for an hour and a half, and she goes back inside lighter than she has been since 1961."
+   },
+   {
+    "requires": {
+     "clue": "c_stood_in_it"
+    },
+    "text": "Nothing is finished. The sentence in the machine stays in the present continuous and frays gently at the edge and does not come apart, because fraying is only fatal to a thing that is on its own — and there are two men in that room now, and an elephant, and the elephant has never once been in a hurry."
    }
   ],
   "furthermore": "Nevermind.\n\nHe says it afterwards. He says it about six weeks afterwards, in a completely ordinary moment, after no build-up whatsoever, apropos of nothing, in the middle of a Tuesday — and it is the funniest thing that has ever happened to anybody, and you laugh until you have to sit down on a kerb outside a shop that sells dews and don'ts.",
