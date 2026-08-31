@@ -12,7 +12,7 @@
     "requires": {
      "clue": "c_the_cans"
     },
-    "text": "There is a can on the table by the watch. It is sealed, and it is labelled in a hand that is not yours, and it has held."
+    "text": "There is a can on the table by the watch.\n\nIt is sealed, and it is labelled in a hand that is not yours, in careful capitals by somebody who wanted it legible to a stranger — *Third of March, NEARLY* — and it has held. Whatever is in it is still in it. You have picked it up four times this week and you have not opened it and you are not going to, and the not-opening is the entire point and always was."
    },
    {
     "requires": {
@@ -20,19 +20,19 @@
       "darek": 2
      }
     },
-    "text": "You get up. You go to the window. Somewhere below there is a road, and there is no ice cream on it, and nobody on it is sorry about your wait."
+    "text": "You get up. You go to the window.\n\nSomewhere below there is a road, and there is no ice cream on it, and there is no truck pulled onto the verge at four in the morning with the keys still in it. Nobody on that road is sorry about your wait. Nobody on that road has ever been sorry about anything on your behalf, and that is what an ordinary road is, and you stand there for a while getting used to it."
    },
    {
     "requires": {
      "clue": "c_he_stopped_typing"
     },
-    "text": "At six o'clock, out of the habit of a fortnight, you say good evening to a piece of empty air, and the air is empty, and it stays that way, and you do it again the next day."
+    "text": "At six o'clock, out of the habit of a fortnight, you say good evening to a piece of empty air.\n\nThe air is empty. It stays empty for the whole of the pause you leave for an answer, which is longer than a pause has any business being.\n\nAnd you do it again the next day, at six, in an ordinary room with weather behind the window — and the day after that — and it is some weeks before you stop, and you never quite decide to."
    },
    {
     "requires": {
      "flag": "landy_will_mend_the_trestle"
     },
-    "text": "The desk in this room is a desk. It has four legs. Not one of them is split and there is nothing folded and grey wedged into any of them."
+    "text": "The desk in this room is a desk.\n\nIt has four legs and they were made as legs, by somebody who made desks, and it stands level on an ordinary floor. Not one of them is split. There is nothing folded and grey wedged into any of them, and there is nothing to take out and read, and there never was.\n\nYou check anyway. Twice, the first week."
    },
    {
     "requires": {
@@ -91,13 +91,13 @@
       "woolbinkle": 2
      }
     },
-    "text": "There is a new can on the shelf at Cheeses Thrice. It is labelled in a careful hand: 'The night he came in and asked what was in them.' It holds."
+    "text": "There is a new can on the shelf at Cheeses Thrice, at the near end, where the newest ones go.\n\nIt is labelled in a careful hand that has been getting steadier for some time: *The night he came in and asked what was in them.*\n\nIt holds. They all hold. Eleven years and forty-one cans and not one of them has gone vague, in a town where nothing else stays the shape it was put down in."
    },
    {
     "requires": {
      "clue": "c_twenty_two_forms"
     },
-    "text": "There are now twenty-three forms in a cupboard on a half-landing recommending that you not walk the corridor alone. The twenty-third is in a hand that is not Landy's."
+    "text": "There are now twenty-three forms in a cupboard on a half-landing, all of them recommending that the resident not walk the west corridor alone after dark.\n\nThe twenty-third is in a hand that is not Landy's. It is filled in beautifully — every field complete, the language exactly right, the seal in the correct corner — and Landy files it without ever having written it, and does not appear to find that strange, and has not been asked to."
    },
    {
     "requires": {
@@ -160,13 +160,13 @@
       "asimov": 2
      }
     },
-    "text": "Asimov Sobeleaux measures his corridor with a tape, alone, on a Tuesday, and gets the same answer he got on Monday, and goes and sits down for a while."
+    "text": "Asimov Sobeleaux measures his corridor with a tape, alone, on a Tuesday, and gets the same answer he got on Monday.\n\nHe measures it again on the Wednesday, because a man does not accept a thing like that on two readings. Same answer.\n\nThen he goes and sits down in his office among the charts of waterways that appear on no map, for rather a long time, without turning any of them over."
    },
    {
     "requires": {
      "clue": "c_the_shim"
     },
-    "text": "Lying Landy mends the trestle. It takes an afternoon. The shim comes out and is put in a plastic wallet in an inside pocket over the heart, where it lives, and the leg does not come back."
+    "text": "Lying Landy mends the trestle.\n\nIt takes an afternoon and he will not be helped and he will not be watched, and when it is done the leg is a leg and the desk stands level and there is no shim in it.\n\nThe shim comes out. It is put in a plastic wallet and the wallet goes into an inside pocket over the heart, where it lives, and where it is going to go on living — and the leg does not come back, and the form in the wallet is never filed."
    },
    {
     "requires": {
@@ -196,7 +196,7 @@
     "requires": {
      "clue": "c_the_obstructive_ones"
     },
-    "text": "Soliloquy signs a delivery docket H. O'Dochtaigh, in her own hand, without deciding to, for the first time in sixty years — and stands in the vestibule looking at it for rather a long while afterwards."
+    "text": "Soliloquy signs a delivery docket H. O'Dochtaigh.\n\nIn her own hand, without deciding to, at the door, with a man waiting for the clipboard back — for the first time since 1961.\n\nAnd then she stands in the vestibule looking at it for rather a long while afterwards, with the horizontal behind her and the parish below, not saying anything at all in a building where she has said something every day for sixty years."
    }
   ],
   "furthermore": "He puts his head round the door of a room that has no door, which he has been doing for as long as you have had a skull, and he looks at the two of you arguing about a semicolon.\n\nThen he draws himself up. The air thickens. Something vast is being assembled behind his soft eyes, something that has been waiting since before there were words to wait in—\n\n\"Finally,\" he says, and goes to sleep in the corner.",
@@ -221,7 +221,7 @@
     "requires": {
      "clue": "c_approximately"
     },
-    "text": "Nobody writes anything for a fortnight. The town does not stop. The town has never once needed it continuously and both of you spend that fortnight finding that out, in bars, badly."
+    "text": "Nobody writes anything for a fortnight.\n\nThe town does not stop. The queue moves, the squeegee arcs, the oven comes up to temperature at four and holds it. Nothing goes vague, nothing frays, nothing requires attention.\n\nThe town has never once needed it continuously, and both of them spend that fortnight finding that out — in bars, at length, badly, and with a certain amount of shouting in the street at two in the morning about whose fault the last eleven years were."
    },
    {
     "requires": {
@@ -229,7 +229,7 @@
       "revilo": 3
      }
     },
-    "text": "There are two of you in the Outside Inn on a Thursday, in a green coat and a purple one, being served by a bellhop who begins every response with BUT and has never in his life been so relieved to have two of something to deny."
+    "text": "There are two of you in the Outside Inn on a Thursday, in a green coat and a purple one, under thirty feet of indoor weather.\n\nYou are being served by a bellhop who begins every response with BUT and who has never in his life been so profoundly relieved to have two of something to deny at once — because two is a category, and a category can be handled, and BUT there's two of you is a sentence that does considerably more work than BUT there's one."
    },
    {
     "requires": {
@@ -241,7 +241,7 @@
     "requires": {
      "clue": "c_the_mark_at_the_end"
     },
-    "text": "T signs for a delivery in a hurry with a knife still in his other hand: one clean stroke, the mark a man makes who cannot write his name. The driver witnesses it without looking. It stands. It has always stood."
+    "text": "T signs for a delivery in a hurry, with a knife still in his other hand and the pass going behind him: one clean stroke, the mark a man makes who cannot write his name.\n\nThe driver witnesses it without looking up. It stands. It goes into a book in a van and out of the parish and nobody ever queries it, and it has always stood, and it was always going to."
    },
    {
     "requires": {
