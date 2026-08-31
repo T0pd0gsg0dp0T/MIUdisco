@@ -328,6 +328,66 @@
      }
     }
    }
+  },
+  {
+   "id": "the_plate",
+   "name": "the arrangement on the plate",
+   "aliases": [
+    "plate",
+    "onions",
+    "arrangement",
+    "garnish"
+   ],
+   "description": "Chef D. puts them down the same way every time and has never once been asked about it, because it is a garnish and nobody interrogates a garnish.\n\nTen rings, then nine, then seven, and then one long piece laid across the whole of it. Always that. Always in that order, and always the long one last, and she does it without looking at the plate.",
+   "repeat": "Ten, nine, seven, and a long one. She has served you eleven times and it has been ten, nine, seven and a long one eleven times.",
+   "monocle": "Through the gold the rings are not rings. They are strokes, and they are being written left to right by somebody in a hurry to get it down before the plate goes out.",
+   "passive": [
+    {
+     "skill": "PERCEPTION",
+     "dc": 11,
+     "text": "She does not look at the plate while she does it. Her hands go to the same three places on the board and the fourth cut is longer, every time, without measurement."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_ten_nine_seven",
+     "title": "Ten, nine, seven, and a long one",
+     "text": "Chef D. arranges the onions identically on every plate — ten rings, nine, seven, and one long piece across — without looking, and has never been asked about it.",
+     "beat": "revilo",
+     "tags": [
+      "revilo",
+      "wordplay"
+     ],
+     "source": "the arrangement on the plate"
+    }
+   },
+   "check": {
+    "id": "lishush:plate:conc",
+    "skill": "CONCEPTUALISATION",
+    "dc": 12,
+    "kind": "white",
+    "prompt": "It is not a garnish. Garnishes vary. Work out what it is a picture of.",
+    "success": "Count them as counts and they are nothing. Look at them as *shapes on a surface*, from above, in the order she lays them, and they resolve the way a word resolves when the handwriting stops being handwriting.\n\nThree groups and a crossbar. Ten, nine, seven — and then the long one laid across all three, which is the stroke you put through a word when you have written it out and it is finished.\n\nShe cannot say the sounds. She has had no teeth for thirty years and there are letters that will not survive her mouth, and she has been setting them down in onion, on a plate, several times a night, for as long as anybody in this parish can remember — and then striking them out and sending them into the room to be eaten.",
+    "failure": "Ten, nine, seven, a long one. It stays a garnish. It is a very good garnish and it goes well with the liver, and Chef D. watches you look at it and says nothing about it, which she has been doing for years and is extremely good at.",
+    "success_effects": {
+     "clue": {
+      "id": "c_she_writes_what_she_cannot_say",
+      "title": "She has been writing it down",
+      "text": "The onions are strokes, not rings — three groups and a crossbar, a word written and then struck out. Chef D. has no teeth and there are sounds she cannot make, so she sets them on a plate several times a night and sends them out to be eaten.",
+      "beat": "revilo",
+      "tags": [
+       "revilo",
+       "personhood",
+       "kindness",
+       "language"
+      ],
+      "source": "the arrangement on the plate"
+     },
+     "lucidity": 13,
+     "morale": -4
+    },
+    "failure_effects": {}
+   }
   }
  ],
  "exits": {

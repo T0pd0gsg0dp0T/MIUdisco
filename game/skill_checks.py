@@ -92,7 +92,7 @@ ATTRIBUTE_SKILLS = {
         "INLAND_EMPIRE",
         "AUTHORITY",
         "VOLITION",
-        "ESPRIT_DE_CORPS",
+        "VOX_POPULI",
         "SUGGESTION",
     ],
     "FORTITUDE": [
@@ -166,7 +166,7 @@ SKILL_DESCRIPTIONS = {
         "The part that holds. Resolve against despair, against a drink, "
         "against a very reasonable argument that you do not exist."
     ),
-    "ESPRIT_DE_CORPS": (
+    "VOX_POPULI": (
         "The town thinking about itself, briefly audible. What the other "
         "Reefers are doing while you are not in the room."
     ),

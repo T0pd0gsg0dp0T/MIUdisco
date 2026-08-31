@@ -380,6 +380,65 @@
     },
     "failure_effects": {}
    }
+  },
+  {
+   "id": "the_indoors",
+   "name": "the fact of the weather",
+   "aliases": [
+    "weather",
+    "indoors",
+    "concept",
+    "inn",
+    "idea"
+   ],
+   "description": "Thirty feet of lounge with a front coming through it at around ten, a stream that runs the correct way along the good stretch, and a ceiling that Bud Onkuhdonk would like it noted is a ceiling.\n\nBarney explains it in the voice he does not know he uses — warmer, slower, pitched at somebody small — and the explanation is always weather and never architecture.",
+   "repeat": "The front comes through again. Barney's voice changes again on the word 'sky', and comes back on the other side of it.",
+   "monocle": "Through the gold the weather is a description running on a loop, and it is a good description, and it has been polished by somebody who kept coming back to it long after it worked.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 11,
+     "text": "The register he slips into is not for the guests. It is the voice used to tell a frightened person that the noise outside is only weather."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_never_architecture",
+     "title": "Always weather, never architecture",
+     "text": "Barney explains the Outside Inn exclusively in terms of weather, in a register pitched at somebody small, and never once in terms of the building.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "language"
+     ],
+     "source": "the fact of the weather"
+    }
+   },
+   "check": {
+    "id": "inn:indoors:conc",
+    "skill": "CONCEPTUALISATION",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "Stop asking how the Inn works. Ask what the Inn is a picture of.",
+    "success": "The Outside Inn. Read it as a phrase rather than a name and it stops being a joke about a sign.\n\nIt is a place for being outdoors, indoors. Weather without exposure, a stream without a journey, a sky with a lid on it — every good thing about being out, delivered into a room that can be locked, at a temperature somebody else is managing.\n\nNobody builds that for a traveller. A traveller can go outside. That is built, at considerable expense and with a great deal of care about the details, for somebody who cannot — and the whole parish comes here to drink under it and nobody has ever once asked who it was for.",
+    "failure": "It rains indoors and there is a stream in the lounge and a bellhop who would rather you did not look up. The building resists being read as anything but the building, which after a fortnight in this town is almost restful.",
+    "success_effects": {
+     "clue": {
+      "id": "c_built_for_someone_who_cannot_go_out",
+      "title": "Built for somebody who cannot go outside",
+      "text": "The Outside Inn is the outdoors delivered into a lockable room — weather without exposure, sky with a lid. Nobody builds that for a traveller. It was built, carefully, for somebody who cannot go out.",
+      "beat": "revilo",
+      "tags": [
+       "revilo",
+       "kindness",
+       "architecture"
+      ],
+      "source": "the fact of the weather"
+     },
+     "lucidity": 12
+    },
+    "failure_effects": {}
+   }
   }
  ],
  "exits": {

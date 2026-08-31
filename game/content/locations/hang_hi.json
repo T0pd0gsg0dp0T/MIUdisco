@@ -508,6 +508,125 @@
     },
     "irreversible": true
    }
+  },
+  {
+   "id": "dust_rectangle",
+   "name": "the clean rectangle on the floor",
+   "aliases": [
+    "rectangle",
+    "dust",
+    "clean patch",
+    "patch",
+    "floor"
+   ],
+   "description": "By the window, where the light would have been best, the boards carry a rectangle about the size of a bread oven in which the dust is a different age from the dust around it.\n\nFour small round depressions at the corners, pressed into the grain over a long enough period that the wood has taken them permanently. Whatever stood here stood here for years, and it was heavy, and it had feet rather than a base.",
+   "repeat": "The rectangle is where it was. The dust inside it is still the wrong age and is getting no older.",
+   "monocle": "Through the gold the rectangle is not empty. There is a machine in it, and it is being used, and the man using it has his back to you and does not turn round, and the light through the window falls on both of you at once from two different times of day.",
+   "passive": [
+    {
+     "skill": "INTERFACING",
+     "dc": 11,
+     "text": "Four feet in a rectangle that size, at that spacing, bearing that much weight into softwood: a platen machine. Something with a carriage."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_four_round_feet",
+     "title": "Four round feet by the window",
+     "text": "A rectangle of differently-aged dust by the Hang-Hi window, with four round depressions pressed permanently into the grain. Something heavy stood there for years, in the best light in the room.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "typewriter"
+     ],
+     "source": "the clean rectangle"
+    }
+   },
+   "check": {
+    "id": "hanghi:rect:vis",
+    "skill": "VISUAL_CALCULUS",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "Something stood here for years and then did not. Reconstruct the removal.",
+    "success": "It went straight up.\n\nA dragged object leaves a lip of dust at the trailing edge and a scar in the wax, and there is neither, on any of four sides. Somebody lifted a machine that takes two men, vertically, without tilting it, and did not scuff a board doing it.\n\nAnd then the useful part, which is the dust inside the rectangle: it is *younger* than the dust outside. Not absent. Younger. Whatever this was has been taken away and put back and taken away again, repeatedly, over a long time — and the most recent time was inside the last fortnight, and it has not been put back yet.",
+    "failure": "Dust ages by depth and by disturbance and by the light it has been sitting in, and this floor has had three different windows' worth of weather across it since anything stood here. The rectangle keeps its own counsel.",
+    "success_effects": {
+     "clue": {
+      "id": "c_taken_and_returned",
+      "title": "Taken away and put back, repeatedly",
+      "text": "The machine that stood by the Hang-Hi window was lifted vertically, never dragged. The dust inside its footprint is younger than the dust around it: it has been removed and returned many times. The most recent removal was inside the last fortnight and it has not come back.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "typewriter",
+       "office"
+      ],
+      "source": "the clean rectangle"
+     },
+     "lucidity": 10
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "the_building",
+   "name": "the other tenants",
+   "aliases": [
+    "tenants",
+    "building",
+    "neighbours",
+    "residents",
+    "others"
+   ],
+   "description": "Nine floors hanging off nothing, and on every one of them somebody is at home this evening: a radio on four, a bath running on six, somebody on two who has been moving furniture for an hour and is not finished.\n\nYou have lived here eleven years and could not name one of them.",
+   "repeat": "The radio on four is still on. Whoever it is has not changed the station in eleven years.",
+   "monocle": "Through the gold there is nobody on any of the floors. The radio is playing to an empty room, correctly, on schedule, and has been doing it for as long as the building has needed to sound occupied.",
+   "passive": [
+    {
+     "skill": "PERCEPTION",
+     "dc": 11,
+     "text": "The bath on six runs at the same hour every evening and stops at the same hour, and nobody has ever come down the stairs afterwards with wet hair."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_never_met_a_neighbour",
+     "title": "Eleven years, no neighbours",
+     "text": "Hang-Hi sounds fully occupied every evening — a radio, a bath, furniture moving. In eleven years of living here you have never met or named a single other tenant.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "architecture"
+     ],
+     "source": "the building"
+    }
+   },
+   "check": {
+    "id": "hanghi:tenants:vox",
+    "skill": "VOX_POPULI",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "Nine floors of people you have never met. Reach for the building the way you would reach for the parish.",
+    "success": "Nothing comes back.\n\nNot silence — the parish is loud tonight and it is entirely available from here, the queue moving at Mary's and the fire settling at Ben's and Luigi three floors down doing the west end first. All of that arrives, at full strength, from streets away.\n\nFrom inside this building, at a range of forty feet, through two floors: nothing at all. There is a radio on four and a bath running on six and there is nobody behind either of them, and the parish does not extend into Hang-Hi, and Asimov's office is the last room in the building that has anybody in it.",
+    "failure": "A radio, a bath, and somebody shifting a wardrobe about on two. It is an occupied building on an ordinary evening and it declines, courteously, to be anything else.",
+    "success_effects": {
+     "clue": {
+      "id": "c_the_building_is_empty",
+      "title": "The parish does not extend into this building",
+      "text": "Reaching for Hang-Hi the way you would reach for the parish returns nothing — while the rest of the town arrives at full strength from streets away. The radio and the bath have nobody behind them. Asimov's office is the last occupied room.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "architecture",
+       "office"
+      ],
+      "source": "the building"
+     },
+     "lucidity": 12,
+     "morale": -6
+    },
+    "failure_effects": {}
+   }
   }
  ],
  "exits": {

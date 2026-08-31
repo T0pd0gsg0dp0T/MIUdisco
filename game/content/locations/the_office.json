@@ -274,6 +274,109 @@
      "morale": -8
     }
    }
+  },
+  {
+   "id": "the_evening",
+   "name": "the state of the room",
+   "aliases": [
+    "room",
+    "evening",
+    "state",
+    "scene"
+   ],
+   "description": "Nine feet by eleven, and every object in it has been where it is for long enough to have made a mark, except three.\n\nThe cup, which has a ring under it older than the cup. The chair, which is pushed back. And the page in the machine, which is the only thing in this room that has not gathered any dust at all.",
+   "repeat": "The chair is still pushed back. Nothing in here has moved since you came through, including the man.",
+   "monocle": "Through the gold the room is a paragraph that has been worked on too long. Words struck out and reinstated, a margin annotated in a hand that gets smaller toward the bottom, and one sentence at the end left open with the cursor still in it.",
+   "effects": {
+    "clue": {
+     "id": "c_three_things_unsettled",
+     "title": "Three things in the room have not settled",
+     "text": "Everything in the office has been in place long enough to leave a mark except the cup, the pushed-back chair, and the page in the machine, which carries no dust at all.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "office"
+     ],
+     "source": "the state of the room"
+    }
+   },
+   "check": {
+    "id": "office:evening:vis",
+    "skill": "VISUAL_CALCULUS",
+    "dc": 12,
+    "kind": "white",
+    "prompt": "You have reconstructed a dozen rooms this fortnight from less than this. Reconstruct the last few hours of this one.",
+    "success": "Work it backwards from the dust, which is the only honest witness in the room.\n\nHe has been at the window. Not once — habitually, and recently, and for hours at a time: the sill is clear in one place the width of two forearms and the boards in front of it are worn through the wax in the shape of a man standing with his weight on one foot and changing feet.\n\nHe has not been at the desk. The chair was pushed back and has stayed pushed back long enough for dust to settle on the seat, and the cup went cold without being drunk, and the ring under it is old but the cup is *dry* on the inside, and has been for days.\n\nHe has not been writing. He has been standing at a wall that is not a window, with his back to an unfinished sentence, waiting — and going by the wear at the sill, he has been doing it for a considerable part of eleven years.",
+    "failure": "The room declines. It is nine feet by eleven and it holds a desk and a lamp and a great deal of paper, and every reconstruction you run on it comes back with the same answer, which is that a man works here, which you had before you came in.",
+    "success_effects": {
+     "clue": {
+      "id": "c_he_was_waiting_not_working",
+      "title": "He was waiting, not working",
+      "text": "Reconstructed from dust and floor wear: Revilo has spent his hours at the window rather than the desk. The chair has been pushed back long enough to gather dust, the cup went cold undrunk, and the sill is worn where a man stands and changes feet. He has not been writing. He has been waiting.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "kindness",
+       "office"
+      ],
+      "source": "the state of the room"
+     },
+     "lucidity": 12
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "the_composition",
+   "name": "the desk, as an arrangement",
+   "aliases": [
+    "composition",
+    "desk as",
+    "arrangement",
+    "door"
+   ],
+   "description": "A door on two trestles, in a room that does not have one.\n\nThe door is a good door — panelled, hung once, still carrying its hinges and the ghost of a number. Somebody took it off a frame and laid it flat and has been working on it ever since, and the left trestle is split and has been shimmed rather than mended.",
+   "repeat": "Still a door. Still flat. Still the only door in a room that has none.",
+   "monocle": "Through the gold the number on the door is legible and it is 2-F, and that is your number, and the ghost of it has been sanded at more than once by somebody who could not quite bring themselves to take it off.",
+   "effects": {
+    "clue": {
+     "id": "c_desk_was_a_door",
+     "title": "The desk was a door",
+     "text": "Revilo's desk is a panelled door on two trestles, still carrying its hinges and the ghost of a number, in a room that has no door.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "office",
+      "manuscript"
+     ],
+     "source": "the desk"
+    }
+   },
+   "check": {
+    "id": "office:comp:conc",
+    "skill": "CONCEPTUALISATION",
+    "dc": 12,
+    "kind": "white",
+    "prompt": "The composition of this room is too good to be an accident. Say what it is doing.",
+    "success": "A man who writes his way out of rooms, working — for eleven years, every day — on the flat of the only door his room has ever had.\n\nIt is too neat. It is the kind of image a writer puts in a story about a writer and then takes out again the following morning for being too neat, and it has survived here for eleven years in the one room where there is nobody to take it out.\n\nWhich leaves two readings and only two. Either he arranged it about himself, deliberately, and has been sitting inside his own metaphor without flinching for a decade — or he did not arrange it, and somebody with a better eye for composition than either of you has been arranging things about him.",
+    "failure": "A door on trestles. Men use doors as desks when they are poor or in a hurry or fond of the door, and all three are available here, and the room offers no way to choose between them tonight.",
+    "success_effects": {
+     "clue": {
+      "id": "c_inside_his_own_metaphor",
+      "title": "Either he arranged it, or somebody arranged it about him",
+      "text": "The desk is the room's only door, worked on daily by a man trying to write his way out. Too composed to be accident: either Revilo has sat inside his own metaphor for eleven years, or somebody with a better eye has been arranging things about him.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "manuscript",
+       "office"
+      ],
+      "source": "the desk"
+     },
+     "lucidity": 13
+    },
+    "failure_effects": {}
+   }
   }
  ],
  "exits": {}

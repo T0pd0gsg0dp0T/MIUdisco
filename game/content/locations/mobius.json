@@ -474,6 +474,114 @@
     },
     "irreversible": true
    }
+  },
+  {
+   "id": "geometry",
+   "name": "the angles of the room",
+   "aliases": [
+    "angles",
+    "geometry",
+    "walls",
+    "corners",
+    "true"
+   ],
+   "description": "Stand at the corner by the service door and sight along the near wall to the far one and they are not parallel. Stand at the other corner and do the same and they are not parallel by a different amount, in the other direction.\n\nThe club does not appear to notice. Drinks are poured level, the stage is level, and eleven staff walk this floor nightly without once putting a foot wrong on it.",
+   "repeat": "Sight it again. The error has moved. It is always small, and it is always somewhere, and it is never twice in the same corner.",
+   "monocle": "Through the gold the walls are ruled lines and the ruling is freehand, and every few feet there is a place where the line has been gone over a second time to straighten it, and the second pass is always slightly better than the first.",
+   "effects": {
+    "clue": {
+     "id": "c_walls_not_parallel",
+     "title": "Not parallel, and not consistently so",
+     "text": "The Möbius's walls are out of true, by a different amount and in a different direction depending on where you sight from. The staff walk it nightly without difficulty.",
+     "beat": "manuscript",
+     "tags": [
+      "manuscript",
+      "mobius",
+      "architecture"
+     ],
+     "source": "the angles of the room"
+    }
+   },
+   "check": {
+    "id": "mobius:geom:vis",
+    "skill": "VISUAL_CALCULUS",
+    "dc": 12,
+    "kind": "white",
+    "prompt": "Take the angles properly. Two sightlines, a fixed point, and the discipline not to blink at the wrong moment.",
+    "success": "Fix on the brass rail, sight the far corner, hold it, and take the angle again from the same spot forty seconds later.\n\nIt has changed. It has changed by a quantity too small to see and large enough to measure against a rail, and it has changed in the direction of *true*.\n\nThat is the whole finding and it is worth the crick in the neck: the room is not drifting out of square. It is being brought into it, a fraction at a time, between the moments anybody is looking — and the corrections are not random, they are cumulative, and they are the work of somebody going back over a line that did not come out right the first time.",
+    "failure": "You take the angle, and take it again, and the second one disagrees with the first by about the amount a man's own neck disagrees with itself at eleven at night in a room with this much noise in it. Nothing here will hold still long enough to be accused.",
+    "success_effects": {
+     "clue": {
+      "id": "c_room_being_corrected",
+      "title": "Corrected, a fraction at a time",
+      "text": "Measured twice against a fixed rail forty seconds apart, the Möbius's walls move — toward true, cumulatively, between glances. The room is not drifting. It is being gone back over.",
+      "beat": "manuscript",
+      "tags": [
+       "manuscript",
+       "mobius",
+       "typewriter"
+      ],
+      "source": "the angles of the room"
+     },
+     "lucidity": 11
+    },
+    "failure_effects": {
+     "exhaustion": 1
+    }
+   }
+  },
+  {
+   "id": "the_floor",
+   "name": "the floor, and everybody on it",
+   "aliases": [
+    "floor",
+    "crowd",
+    "patrons",
+    "everybody",
+    "room"
+   ],
+   "description": "Nobody comes in the front. Ginny said so on the first night and she was not making conversation: they arrive by the side, by the corridor, by the stair that does not go anywhere it should, and once they are in they distribute themselves across the room with a great deal of care.\n\nThere are eleven staff and about ninety patrons and not one of them is standing where the far booth can see them.",
+   "repeat": "The floor has rearranged itself since you looked and the far booth still has nobody in front of it.",
+   "monocle": "Through the gold the floor has a shape drawn on it in a dotted line, and everybody is outside the dotted line, and the dotted line has been there longer than the carpet.",
+   "effects": {
+    "clue": {
+     "id": "c_nobody_stands_there",
+     "title": "Nobody stands in front of the far booth",
+     "text": "Ninety patrons and eleven staff distribute themselves across the Möbius floor with care, and not one of them stands where the far booth can see them.",
+     "beat": "quadc",
+     "tags": [
+      "mobius",
+      "quadc"
+     ],
+     "source": "the floor"
+    }
+   },
+   "check": {
+    "id": "mobius:floor:vox",
+    "skill": "VOX_POPULI",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "Ninety people are avoiding the same eight square feet and none of them is thinking about it. Ask the room why.",
+    "success": "It comes up all at once, the way a room's mind does, and it is not a thought any individual in here is having.\n\nThey are not avoiding the booth. They are *leaving it clear* — and the difference is the difference between a man stepping round a puddle and a man stepping round a place where somebody fell over once.\n\nNone of them knows why. Ask any one of them and they will give you a reason about the draught or the speakers and the reason will be sincere. But the shape they are keeping is a courtesy shape, and this parish has been keeping it, nightly, without instruction, for longer than the carpet — and somewhere underneath it is the knowledge that the wall behind that booth is a window, and that it is polite not to stand in front of a window when somebody is looking out of it.",
+    "failure": "Ninety people having a night out, loudly, in a building shaped like an argument. Whatever the room knows collectively, it is not in a mood to be asked about it by a man with his coat still on.",
+    "success_effects": {
+     "clue": {
+      "id": "c_a_courtesy_shape",
+      "title": "They are leaving it clear",
+      "text": "The Möbius floor keeps a gap in front of the far booth — not avoidance but courtesy, kept nightly without instruction for longer than the carpet, by people who each have a sincere and different explanation for it.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "kindness",
+       "personhood",
+       "mobius"
+      ],
+      "source": "the floor"
+     },
+     "lucidity": 11
+    },
+    "failure_effects": {}
+   }
   }
  ],
  "exits": {

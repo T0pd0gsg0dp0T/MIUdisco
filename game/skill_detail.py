@@ -189,19 +189,19 @@ SKILL_DETAIL: dict[str, tuple[str, str]] = {
         "it fills, and an argument you cannot answer becomes an argument "
         "you begin to live inside."
     ),
-    "ESPRIT_DE_CORPS": (
+    "VOX_POPULI": (
         "The parish thinking about itself, briefly audible through you. "
-        "Esprit de Corps is not telepathy and is not deduction; it is the "
+        "Vox Populi is not telepathy and is not deduction; it is the "
         "sense of the other Reefers going about their business in rooms "
         "you are not in — the crate set down, the squeegee arcing, the "
         "same worried glance at the same fog, four streets over, right "
         "now.",
-        "High Esprit de Corps gives you the town as a single organism and "
+        "High Vox Populi gives you the town as a single organism and "
         "occasionally shows you a scene you have no business witnessing, "
         "which is the closest this game comes to handing you an answer for "
         "free. It also makes solitude difficult: a man who can feel the "
         "whole parish at once has a hard time locating where he stops. Low "
-        "Esprit de Corps leaves Silvora Reefs as a series of separate "
+        "Vox Populi leaves Silvora Reefs as a series of separate "
         "rooms containing separate strangers, and the fact that all of "
         "them are quietly doing the same thing will never once come into "
         "focus."

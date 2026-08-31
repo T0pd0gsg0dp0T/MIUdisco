@@ -327,6 +327,57 @@
      "morale": -4
     }
    }
+  },
+  {
+   "id": "the_queue",
+   "name": "the queue",
+   "aliases": [
+    "queue",
+    "line",
+    "crowd",
+    "customers"
+   ],
+   "description": "It goes out of the door and along the front and it never stops moving, because Mary Guana behind the counter is faster than the queue is long and has been for nine years.\n\nNobody in it is impatient. That is the odd part and it takes a while to notice: this is a line of people who are not waiting for anything, standing together, in the cold, in no hurry to reach the front.",
+   "repeat": "The queue has turned over completely since you came in and has not got any shorter, and nobody in it minds.",
+   "monocle": "Through the gold the queue is a paragraph of people and every one of them has a line, and three of them have the same line, and none of the three has noticed.",
+   "effects": {
+    "clue": {
+     "id": "c_nobody_in_it_is_waiting",
+     "title": "A queue of people who are not waiting",
+     "text": "The line at Dude's Dews never stops moving and nobody in it is impatient. It is a place where the parish stands together without needing a reason.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "personhood"
+     ],
+     "source": "the queue"
+    }
+   },
+   "check": {
+    "id": "dudes:queue:vox",
+    "skill": "VOX_POPULI",
+    "dc": 10,
+    "kind": "white",
+    "prompt": "Stop asking the queue questions. Stand in it and let it be a queue, and listen to what the parish is doing with its mouth tonight.",
+    "success": "Thirty people, four conversations, and the whole of Silvora Reefs audible for about ninety seconds if you do not interrupt it.\n\nAnd three separate people, in three separate conversations, at three separate points in that line, mention the sound over the harbour.\n\nEach of them changes the subject inside four seconds. Not nervously — smoothly, the way a person moves past a thing that has already been settled — and none of the three hears either of the others do it, and the queue closes over all three the way water closes over a dropped stone, and moves on, and is not lying to anybody, including itself.",
+    "failure": "Thirty people and four conversations and all of it is about the cold, the price of dews, somebody's sister, and a horse. It is a queue. It is being a queue at you with great commitment and nothing else is on offer tonight.",
+    "success_effects": {
+     "clue": {
+      "id": "c_three_in_the_queue",
+      "title": "Three mentions, three subject changes",
+      "text": "Standing in the queue at Dude's Dews: three separate people mention the sound over the harbour and all three change the subject within four seconds, smoothly, and none notices the others doing it.",
+      "beat": "oracle",
+      "tags": [
+       "oracle",
+       "crash",
+       "language"
+      ],
+      "source": "the queue"
+     },
+     "lucidity": 9
+    },
+    "failure_effects": {}
+   }
   }
  ],
  "exits": {

@@ -437,6 +437,120 @@
     },
     "irreversible": true
    }
+  },
+  {
+   "id": "the_gap",
+   "name": "the vault that stands open",
+   "aliases": [
+    "gap",
+    "open vault",
+    "ajar",
+    "jamb",
+    "two fingers"
+   ],
+   "description": "West corridor, past the count that will not settle: one obsidian door standing about two fingers off its jamb, and it has stood that way for as long as anybody here has been asked about it.\n\nSoliloquy's position is that it is not open, it is *unclosed*, and that the distinction is the whole of her profession. She will not be drawn further and she will not let you put a hand on it.",
+   "repeat": "Two fingers. You have measured it with the same two fingers four times now and it has been the same four times.",
+   "monocle": "Through the gold the gap has a hand in it, holding the door off the jamb, and the hand is not straining. It has been resting there a long time and could close it whenever it liked.",
+   "passive": [
+    {
+     "skill": "SHIVERS",
+     "dc": 11,
+     "text": "The draught goes the wrong way. Air moves *into* a two-finger gap in a sealed obsidian vault, continuously, and has to be going somewhere."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_unclosed_vault",
+     "title": "Not open. Unclosed.",
+     "text": "A vault in the west corridor stands two fingers off its jamb and has for years. Soliloquy insists it is unclosed rather than open, and will not let anyone touch it.",
+     "beat": "quadc",
+     "tags": [
+      "quadc",
+      "oracle"
+     ],
+     "source": "the vault that stands open"
+    }
+   },
+   "check": {
+    "id": "rest:gap:vis",
+    "skill": "VISUAL_CALCULUS",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "A door does not come to rest two fingers open and stay there for eleven years. Reconstruct how this one manages it.",
+    "success": "Obsidian is unforgiving and keeps everything, which makes this easy once you stop looking at the gap and start looking at the jamb.\n\nThere is scoring. Two arcs, one above the other, at the height a hand would take a door — and they are not the scoring of something forced. They are wear, of the kind that comes from a thing being drawn to exactly this position and released, over and over, a very large number of times.\n\nThis door is not stuck. It is *set*. Somebody opens it and closes it on a rhythm and two fingers is where it rests in between, and the last time it moved, going by the dust in the lower arc, was four days ago.",
+    "failure": "Black stone, black shadow, and a lamp Soliloquy declines to move for you. The jamb gives up its width and nothing else, and she stands at the end of the corridor throughout, in couplets, being helpful in the way that prevents help.",
+    "success_effects": {
+     "clue": {
+      "id": "c_the_gap_is_maintained",
+      "title": "The gap is maintained",
+      "text": "Wear arcs on the vault jamb show the door has been drawn to exactly this position and released a great many times. It is not stuck open — it is kept open, on a rhythm, and it last moved four days ago.",
+      "beat": "oracle",
+      "tags": [
+       "oracle",
+       "quadc",
+       "kindness"
+      ],
+      "source": "the vault that stands open"
+     },
+     "lucidity": 10
+    },
+    "failure_effects": {
+     "morale": -3
+    }
+   }
+  },
+  {
+   "id": "the_town_below",
+   "name": "the parish, from up here",
+   "aliases": [
+    "town",
+    "parish",
+    "below",
+    "view",
+    "hill"
+   ],
+   "description": "The mausoleum stands above everything, and from the west corridor's one window the whole of Silvora Reefs is laid out under the fog in the green of its own lamps.\n\nFrom this height it is possible to watch the entire town do its evening at once, which nobody who lives in it has any reason to do, and which Soliloquy does nightly and has never mentioned to anybody.",
+   "repeat": "The lamps are still on. The town is still doing its evening. Somebody down there has just closed a shutter.",
+   "monocle": "Through the gold the town is a page seen from the top corner, and the lamps are not lamps, they are the places where the writing is densest, and there are large areas with nothing on them at all.",
+   "effects": {
+    "clue": {
+     "id": "c_the_whole_evening_at_once",
+     "title": "The whole parish, visible at once",
+     "text": "The west corridor window at Rest Assured overlooks all of Silvora Reefs. Soliloquy watches the town do its evening from here nightly and has never mentioned it.",
+     "beat": "oracle",
+     "tags": [
+      "oracle"
+     ],
+     "source": "the west window"
+    }
+   },
+   "check": {
+    "id": "rest:below:vox",
+    "skill": "VOX_POPULI",
+    "dc": 12,
+    "kind": "white",
+    "prompt": "The whole town is down there at once, doing the same eleven minutes. Take all of it in together rather than one lamp at a time.",
+    "success": "Every light in Silvora Reefs, and behind every light a person, and behind every person a small maintenance being performed on a town that nobody has told them is failing.\n\nLuigi doing the west end first. Bud saying it is a light well to a ceiling that has not asked. Woolbinkle putting one on at nine because he had a feeling. Wino-T setting down a cup for a man in a mirror. Landy writing RESOLVED in a book. Darek wiping a counter that does not need it, at the window, watching the water.\n\nNone of them knows the others are doing it. Every single one of them is holding up their own eight feet of a building that has no business standing — and the town is not being kept up by whoever wrote it. It is being kept up by two hundred people independently refusing to let go of their own corner of it.",
+    "failure": "Lamps in fog, and a town going about its evening, and it is beautiful from here and it does not add up to anything but a town. The parish keeps its own counsel and the window is cold and after a while there is nothing to do but come away from it.",
+    "success_effects": {
+     "clue": {
+      "id": "c_two_hundred_people_holding",
+      "title": "Two hundred people, each holding their own corner",
+      "text": "Seen whole from the mausoleum window: every Reefer is independently performing a small maintenance on a failing town — the route, the denial, the cans, the cup, the counter. None knows the others are doing it. The parish is not held up by its author.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "kindness",
+       "personhood",
+       "manuscript"
+      ],
+      "source": "the west window"
+     },
+     "lucidity": 14,
+     "morale": 8
+    },
+    "failure_effects": {}
+   }
   }
  ],
  "exits": {

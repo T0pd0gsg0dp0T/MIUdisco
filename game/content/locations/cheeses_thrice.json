@@ -309,6 +309,128 @@
     },
     "failure_effects": {}
    }
+  },
+  {
+   "id": "the_poem",
+   "name": "the poem on the wall",
+   "aliases": [
+    "poem",
+    "framed poem",
+    "verse",
+    "cantelope",
+    "cant elope"
+   ],
+   "description": "Framed, behind the till, at a height that suggests it was hung by somebody who did not want to be seen hanging it.\n\nTHE CAN'T ELOPE ANTELOPE. Forty-odd lines of the most relentless punning in the parish — the cans and the can'ts and the can-can, the belle who would not fool with a full-of-bull fool of a bull antelope — and it is genuinely funny, and it is funny the whole way through, which is harder than it looks and is not an accident.\n\nWoolbinkle has hung it himself. He has never mentioned it. It is in three establishments in this town and this is the only one where the antelope put it up.",
+   "repeat": "Still behind the till. Still hung slightly too high to read comfortably, which you have started to suspect is also not an accident.",
+   "monocle": "Through the gold the poem is a draft with the corrections still showing, and every correction moves in the same direction, which is toward mercy.",
+   "passive": [
+    {
+     "skill": "RHETORIC",
+     "dc": 11,
+     "text": "Forty lines and not one of them takes a free shot. Every joke here is at the expense of the *language* and not one of them is at the expense of the antelope, which given the subject matter is a considerable piece of engineering."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_he_hung_it_himself",
+     "title": "He hung it himself",
+     "text": "The Can't Elope Antelope hangs behind the till at Cheeses Thrice, put up by Woolbinkle, who has never mentioned it. It is the only one of the three copies in the parish that the antelope hung.",
+     "beat": "awakening",
+     "tags": [
+      "awakening",
+      "kindness",
+      "wordplay"
+     ],
+     "source": "the poem on the wall"
+    }
+   },
+   "check": {
+    "id": "cheeses:poem:conc",
+    "skill": "CONCEPTUALISATION",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "Everybody in this parish knows what the poem is about. Read it for what it is *about*.",
+    "success": "It is not about an antelope.\n\nStructurally it is four movements and every one of them turns on a refusal, and the refusals soften as the poem goes: the first is a slammed door, the second is an argument, the third is a hesitation dressed as a joke, and the fourth is barely a no at all.\n\nA poem that wanted to condemn him would run that sequence the other way round. This one is built — carefully, over forty lines, by somebody with a great deal of technique — to arrive at a place where the thing he did is *survivable*.\n\nAnd the meter breaks in exactly one place. One. In a poem this tight that is not a slip, it is a signature, and it breaks on the word *nope*.",
+    "failure": "You read it four times and it is four times funny, which is its defence and has always been its defence. The technique closes over the subject like water over a stone and will not let you get at what is underneath it tonight.",
+    "success_effects": {
+     "clue": {
+      "id": "c_poem_is_a_defence",
+      "title": "The poem is a defence",
+      "text": "Read as composition, the Can't Elope Antelope softens its refusals across four movements — engineered to arrive somewhere the antelope's worst act is survivable. The meter breaks exactly once, on the word 'nope'.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "kindness",
+       "wordplay",
+       "manuscript"
+      ],
+      "source": "the poem on the wall"
+     },
+     "lucidity": 11
+    },
+    "failure_effects": {}
+   }
+  },
+  {
+   "id": "the_room_at_large",
+   "name": "the room, when Chuckles is on",
+   "aliases": [
+    "room",
+    "audience",
+    "crowd",
+    "tables",
+    "chuckles"
+   ],
+   "description": "Eleven tables, a low stage that is really a pallet with a cloth over it, and a man in a checked jacket doing material that is not going to work.\n\nIt does not work. The room knows within about four words that it is not going to work, and what the room does next is the thing worth watching.",
+   "repeat": "He is on again. The room is doing it again, and it is doing it without any of them having agreed to.",
+   "monocle": "Through the gold the room is not an audience. It is a repair crew, and it is working, and the patch it is closing is above the third table and about a yard across.",
+   "passive": [
+    {
+     "skill": "EMPATHY",
+     "dc": 10,
+     "text": "Somebody laughs about a beat and a half late, from three tables off, alone, on purpose. And then somebody else does. They are not laughing at the joke and they are not laughing at him."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_the_room_repairs",
+     "title": "The room repairs him",
+     "text": "When a joke dies at Cheeses Thrice, laughter arrives late, deliberately, from scattered tables — from people who are not laughing at the joke and not laughing at the comedian.",
+     "beat": "oracle",
+     "tags": [
+      "oracle",
+      "kindness",
+      "personhood"
+     ],
+     "source": "the room"
+    }
+   },
+   "check": {
+    "id": "cheeses:room:vox",
+    "skill": "VOX_POPULI",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "Something in this room is being organised without anybody organising it. Listen for the whole parish at once.",
+    "success": "Nobody signals. That is the finding and it takes a moment to be sure of, because the coordination is so good that a signal is the natural assumption.\n\nThe laugh comes from table nine, late and solitary. Table four joins it. Then the pair by the window, then a man on his own by the oven who does not look up from his plate while doing it — and the patch of thickened air over the third table thins out and goes, and the comedian gets to the end of his set believing he has died, which he has, and the room lets him believe it because the alternative is telling him what he is for.\n\nEleven times a night. Six years. Nobody has ever mentioned it to anybody, including each other.",
+    "failure": "A bad set in a warm room, and some laughter, and some not. The kindness in here is real and it is not going to be caught in the act by a man standing at the back looking for it.",
+    "success_effects": {
+     "clue": {
+      "id": "c_unsignalled_kindness",
+      "title": "Nobody signals",
+      "text": "The late scattered laughter that clears the thickened air at Cheeses Thrice is completely uncoordinated — no signal, no glance, eleven times a night for six years, and nobody has ever mentioned it to anybody, including each other.",
+      "beat": "awakening",
+      "tags": [
+       "awakening",
+       "kindness",
+       "personhood"
+      ],
+      "source": "the room"
+     },
+     "lucidity": 11,
+     "morale": 6
+    },
+    "failure_effects": {}
+   }
   }
  ],
  "exits": {

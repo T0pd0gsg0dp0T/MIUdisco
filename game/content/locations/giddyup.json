@@ -339,6 +339,57 @@
     },
     "failure_effects": {}
    }
+  },
+  {
+   "id": "the_arrangement",
+   "name": "the arrangement of the masks",
+   "aliases": [
+    "arrangement",
+    "hanging",
+    "composition",
+    "eyelines"
+   ],
+   "description": "Not the masks. The *hanging* of them: what is at eye level and what is above it, what is grouped and what has been given room, which faces have been put where they can see each other and which have been separated by a beam.\n\nSomebody has done this deliberately over a very long period. Nothing here is hung by size or by wood or by age, and nothing here is hung at random.",
+   "repeat": "The arrangement is holding, except in the third bay, where it never quite does.",
+   "monocle": "Through the gold there is a seating plan under the masks, ruled and lettered, and it has been revised many times, and every revision moves somebody nearer the fire.",
+   "effects": {
+    "clue": {
+     "id": "c_hung_deliberately",
+     "title": "Arranged, not accumulated",
+     "text": "The Giddyup masks are hung by no rule of size, wood or age — but by eyeline and grouping, deliberately, over a very long period.",
+     "beat": "revilo",
+     "tags": [
+      "revilo",
+      "personhood"
+     ],
+     "source": "the arrangement of the masks"
+    }
+   },
+   "check": {
+    "id": "giddyup:arrange:conc",
+    "skill": "CONCEPTUALISATION",
+    "dc": 12,
+    "kind": "white",
+    "prompt": "Two hundred portraits, hung by somebody, in an order. Work out what the room is *for*.",
+    "success": "Not a gallery. A gallery faces its pictures outward at whoever comes in, and these do not face the door.\n\nThey face the room. All of them, at their various heights, angled a few degrees off the wall so that their sightlines converge — and they converge low, and near the fire, at the place a man would be if he were sitting at the middle of the long side of the table with his palms flat on it.\n\nIt is not a trophy room and it is not a shrine. It is a room built so that one person can be looked at, kindly, and at length, by every single person he has ever made — and it has been assembled by somebody who could not say that out loud and has been saying it in carpentry for thirty years.",
+    "failure": "Two hundred faces at forty heights, and every grouping you propose holds for about nine masks before the tenth ruins it. There is an order here. It is not going to be found from the middle of the floor with the fire this bright.",
+    "success_effects": {
+     "clue": {
+      "id": "c_a_room_for_being_witnessed",
+      "title": "A room for being looked at kindly",
+      "text": "The masks' sightlines converge on the seat at the middle of the long table. Giddyup is not a gallery or a shrine — it is a room arranged so one man can be witnessed, at length, by everyone he made.",
+      "beat": "revilo",
+      "tags": [
+       "revilo",
+       "personhood",
+       "kindness"
+      ],
+      "source": "the arrangement of the masks"
+     },
+     "lucidity": 12
+    },
+    "failure_effects": {}
+   }
   }
  ],
  "exits": {

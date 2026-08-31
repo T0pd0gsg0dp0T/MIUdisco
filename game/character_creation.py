@@ -57,7 +57,7 @@ ARCHETYPES: dict[str, tuple[str, dict[str, int], list[str], str]] = {
         "You feel the room before you enter it. Half of what you know arrived "
         "without paperwork and none of it will hold up in a report.",
         {"INTELLECT": 2, "PSYCHE": 5, "FORTITUDE": 3, "MOTORICS": 2},
-        ["INLAND_EMPIRE", "EMPATHY", "SHIVERS", "ESPRIT_DE_CORPS"],
+        ["INLAND_EMPIRE", "EMPATHY", "SHIVERS", "VOX_POPULI"],
         "INLAND_EMPIRE",
     ),
     "The Survivor": (

@@ -257,7 +257,7 @@
      "text": "The parish, coming down the hill to meet you: wet stone, green flame, and a fog with rotors in it that has been here longer than tonight."
     },
     {
-     "skill": "ESPRIT_DE_CORPS",
+     "skill": "VOX_POPULI",
      "dc": 11,
      "text": "Four streets up, a man sets down a crate and looks at this fog for longer than the crate required. He does it every night. He will not mention it to you."
     }
@@ -298,6 +298,68 @@
     },
     "failure_effects": {
      "health": -3
+    }
+   }
+  },
+  {
+   "id": "waterline",
+   "name": "the waterline",
+   "aliases": [
+    "waterline",
+    "water",
+    "shallows",
+    "sand",
+    "marks",
+    "shore"
+   ],
+   "description": "The tide has been going out since before you woke and it has left the beach in the condition of a page somebody has written on and not yet torn up.\n\nThere are marks. There is the long smooth drag of the wreck settling, and there is a churn where the water works at it, and between the churn and the harbour wall there is a set of prints going up the sand, and they are yours, and they are walking.\n\nNot crawling. Not staggering. Walking, at an even stride, in a straight line, from the water to the wall.",
+   "repeat": "The prints are still there. The tide has had four hours to take them and has taken everything else on this beach and left those.",
+   "monocle": "Through the gold there is only one set of prints on this beach and they go the wrong way — down the sand, into the water, in a stride that does not vary — and the sea end of them is where the wreck is, and there is no return.",
+   "passive": [
+    {
+     "skill": "PERCEPTION",
+     "dc": 10,
+     "text": "The stride does not shorten anywhere along its length. A man coming out of cold water up a wet slope shortens his stride. This one does not."
+    }
+   ],
+   "effects": {
+    "clue": {
+     "id": "c_prints_walking",
+     "title": "The prints are walking",
+     "text": "The set of prints leading from the water to the harbour wall is yours, at an even stride, in a straight line. Not a crawl and not a stagger.",
+     "beat": "crash",
+     "tags": [
+      "crash",
+      "identity"
+     ],
+     "source": "the waterline"
+    }
+   },
+   "check": {
+    "id": "crash:waterline:vis",
+    "skill": "VISUAL_CALCULUS",
+    "dc": 11,
+    "kind": "white",
+    "prompt": "The water has been going out for hours and it has left a record of everything that came up this beach. Read it backwards.",
+    "success": "Run it in reverse. Stride length gives height and gives weight and both of them give you, so the prints are yours and that was never in question.\n\nWhat was in question is where they start, and they start four feet out from the low-water mark, in a place that was under three feet of water at the hour they were made, on sand that would not have held them.\n\nThey do not come out of the sea. They *begin*, at depth, mid-stride, already walking — and there is a second set that comes down to meet them at the wall, smaller, in a boot with a worn heel, and that set turns round and goes back up the hill in a hurry with the first set beside it.",
+    "failure": "Stride, depth, the angle of the sand: it comes apart into three problems that will not sit still together, and the tide takes the near end of the evidence while you are working on the far end, which is the tide's whole method.",
+    "success_effects": {
+     "clue": {
+      "id": "c_prints_begin_at_depth",
+      "title": "The prints begin at depth, mid-stride",
+      "text": "Reconstructed from stride and sand: your prints do not emerge from the sea. They begin four feet out, under three feet of water, already walking. A second set in a worn-heeled boot comes down to meet them and hurries back up the hill alongside.",
+      "beat": "crash",
+      "tags": [
+       "crash",
+       "identity",
+       "manuscript"
+      ],
+      "source": "the waterline"
+     },
+     "lucidity": 9
+    },
+    "failure_effects": {
+     "exhaustion": 1
     }
    }
   }
