@@ -525,7 +525,7 @@
     "skill": "VISUAL_CALCULUS",
     "dc": 11,
     "kind": "white",
-    "prompt": "Something stood here for years and then did not. Reconstruct the removal.",
+    "prompt": "Something heavy stood in this spot for years and then, at some point in the last fortnight, did not. The dust has kept the whole transaction. Reconstruct the removal — how it went, which way, and how many hands it took.",
     "success": "It went straight up.\n\nA dragged object leaves a lip of dust at the trailing edge and a scar in the wax, and there is neither, on any of four sides. Somebody lifted a machine that takes two men, vertically, without tilting it, and did not scuff a board doing it.\n\nAnd then the useful part, which is the dust inside the rectangle: it is *younger* than the dust outside. Not absent. Younger. Whatever this was has been taken away and put back and taken away again, repeatedly, over a long time — and the most recent time was inside the last fortnight, and it has not been put back yet.",
     "failure": "Dust ages by depth and by disturbance and by the light it has been sitting in, and this floor has had three different windows' worth of weather across it since anything stood here. The rectangle keeps its own counsel.",
     "success_effects": {

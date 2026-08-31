@@ -272,7 +272,7 @@
     "skill": "PERCEPTION",
     "dc": 10,
     "kind": "white",
-    "prompt": "A notice by the till: laminated, ordinary, hand-washing. Ignore the notice. Read the *board* it is pinned to.",
+    "prompt": "A notice by the till: laminated, ordinary, hand-washing, with a cartoon on it that has gone yellow. Ignore the notice entirely. Read the *board* it has been pinned to.",
     "success": "The notice is nothing. The *board* is the thing: four pin-holes at the corners of a rectangle that is not this notice's rectangle, and a rectangle of unfaded paint inside it.\n\nSomething larger hung here for years and came down recently, and the man behind the counter has put a laminated card about hand-washing over the gap.",
     "failure": "Opening hours, an allergy warning, and a hand-washing instruction with a cartoon on it that has been there long enough for the cartoon to have gone yellow. You read all three twice and they go on being exactly and only what they are.",
     "success_effects": {

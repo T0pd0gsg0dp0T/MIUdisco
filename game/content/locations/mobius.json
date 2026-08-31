@@ -130,7 +130,7 @@
     "skill": "SEA_LEGS",
     "dc": 11,
     "kind": "white",
-    "prompt": "Walk the corridor with no turns all the way round, at a steady pace, without putting a hand on the wall.",
+    "prompt": "Walk the corridor that has no turns in it, all the way round, at a steady pace, without putting a hand on the wall to check — because the hand is what the building corrects for, and a man counting his own steps is a different instrument from a man leaning on the plaster.",
     "success": "The floor is off-level the whole way and the off-level rotates, slowly, so that down is always about four degrees ahead of you. You walk it the way you walk a deck.\n\nYou arrive facing the way you set off, having never reversed, and — because you kept your feet and therefore your count — with the knowledge that the corridor is eleven paces longer coming back than it was going out, and that you only went one way.",
     "failure": "Four degrees of wrong, continuously, and about two-thirds of the way round the wall gets a hand whether you offer it or not, and the count goes, and you come out grinning like the patrons do and knowing exactly as much as they do.",
     "success_effects": {
@@ -320,7 +320,7 @@
     "skill": "AUTHORITY",
     "dc": 11,
     "kind": "white",
-    "prompt": "A laminated card by the service door, in the language institutions use on each other. Requisition it.",
+    "prompt": "A laminated card screwed to the wall by the service door, written in the language institutions use on each other rather than on the public. Requisition it — with the manner of somebody entitled to, which is the only manner that works on process.",
     "success": "You take it off the hook the way a man takes a thing he is entitled to take, and nobody stops you, because nobody in a service corridor has ever stopped a man who took something off a hook without hesitating.\n\nIt is a procedure card. Step four is 'Log the anomaly.' Step five is 'The anomaly did not occur.' Both steps are printed. Neither is a correction of the other.",
     "failure": "You reach for it and the reach turns into a gesture at it, and the gesture turns into a question, and the question is answered by an alligator in a suit who is *terribly* sorry but the card is not for patrons, and holds the door for you with real regret.",
     "success_effects": {
@@ -383,7 +383,7 @@
     "skill": "REACTION_SPEED",
     "dc": 12,
     "kind": "white",
-    "prompt": "The act resolves the instant you stop watching and refuses to while you do. Catch it in the gap.",
+    "prompt": "The act resolves the instant you stop watching it and refuses absolutely to while you do. That is a gap with a shape, and a gap with a shape can be stepped into. Catch it in the gap.",
     "success": "You look away, and back, faster than the deciding part of you can be consulted — and for about a third of a second the stage is *between states*, which is not a thing a stage can be.\n\nWhat is on it in that third of a second is not dancers. It is a stage direction, unperformed, waiting to be given a body, and it notices being seen and gets dressed extremely quickly.",
     "failure": "Away, and back. The act is exactly as it was, continuous, impeccable, and entirely unbothered, and the room's opinion of a man snapping his head about at a strip club is available to you without anybody having to voice it.",
     "success_effects": {
@@ -414,7 +414,7 @@
     "through"
    ],
    "description": "It went transparent at the usual time and it has not come back.\n\nTwo seconds became four. Four became eleven. Eleven became the rest of the evening, and it is still going, and the black stone and the green lamp and the corner of a desk are all simply there now, at the back of a strip club, behind the last booth, in full view of ninety people.\n\nThe Insta-gators have stopped repositioning anybody. That is the detail that tells you where the evening has got to: there is no longer a coherent account of this room for them to protect, and line two of the card requires an account to redirect people toward, and there isn't one.\n\nThe music is still playing. Nobody is dancing.\n\nOne of them is standing beside you, watching it with you, nine feet of tailored patience with its hands folded, not doing anything at all. After a while it says — quietly, without the register, entirely off script — \"Yeah. That's it, then.\"",
-   "monocle": "Through the gold the club is nine feet of corridor and a dead end, and always was, and the dead end is standing open.",
+   "monocle": "Through the gold the club is nine feet of corridor and a dead end.\n\nThat is all it has ever been. No main room, no stage, no ninety patrons, no bar — nine feet, and a wall at the end of it, and the whole of the rest built outward from that by somebody who needed there to be somewhere to go on a Friday.\n\nAnd the dead end is standing open.",
    "requires": {
     "beat": "awakening",
     "lucidity_min": 70
@@ -484,7 +484,7 @@
     "skill": "VISUAL_CALCULUS",
     "dc": 12,
     "kind": "white",
-    "prompt": "Take the angles properly. Two sightlines, a fixed point, and the discipline not to blink at the wrong moment.",
+    "prompt": "Take the angles properly, the way it should be done: two sightlines, one fixed point that cannot move, forty seconds between readings, and the discipline not to blink at the wrong moment or shift your weight off the back foot.",
     "success": "Fix on the brass rail, sight the far corner, hold it, and take the angle again from the same spot forty seconds later.\n\nIt has changed. It has changed by a quantity too small to see and large enough to measure against a rail, and it has changed in the direction of *true*.\n\nThat is the whole finding and it is worth the crick in the neck: the room is not drifting out of square. It is being brought into it, a fraction at a time, between the moments anybody is looking — and the corrections are not random, they are cumulative, and they are the work of somebody going back over a line that did not come out right the first time.",
     "failure": "You take the angle, and take it again, and the second one disagrees with the first by about the amount a man's own neck disagrees with itself at eleven at night in a room with this much noise in it. Nothing here will hold still long enough to be accused.",
     "success_effects": {

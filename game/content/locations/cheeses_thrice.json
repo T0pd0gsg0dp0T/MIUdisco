@@ -264,7 +264,7 @@
     "skill": "SUGGESTION",
     "dc": 12,
     "kind": "white",
-    "prompt": "He will not tell you what is in the cans and he will not lie to you about it either, which leaves exactly one route. Arrange for him to want to tell you.",
+    "prompt": "He will not tell you what is in the cans. He also will not lie to you about them, which he could do easily and which would end this — and the fact that he will not is the whole of your route. Arrange for him to want to tell you.",
     "success": "You stop asking about the cans and start being interested in the *sealing*, which is a craft, and which nobody has asked him about in eleven years.\n\nHe talks for a quarter of an hour about pressure and headspace, and somewhere in the middle of it he says, without noticing he is saying it, that the difficult ones are the ones that are still going on when you seal them — and then he stops, and looks at the shelf, and does not take it back.",
     "failure": "You come at it from the side and he watches you come, pleasantly, the whole way. \"You want to know what's in them,\" he says, not unkindly, and puts a slice in front of you, and that is the end of the subject for tonight.",
     "success_effects": {

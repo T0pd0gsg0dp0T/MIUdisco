@@ -336,7 +336,7 @@
     "skill": "VOX_POPULI",
     "dc": 10,
     "kind": "white",
-    "prompt": "Stop asking the queue questions. Stand in it and let it be a queue, and listen to what the parish is doing with its mouth tonight.",
+    "prompt": "Stop asking the queue questions; a queue that is being asked questions stops being a queue and becomes an audience. Stand in it and let it be a queue, and listen to what the parish is doing with its mouth tonight.",
     "success": "Thirty people, four conversations, and the whole of Silvora Reefs audible for about ninety seconds if you do not interrupt it.\n\nAnd three separate people, in three separate conversations, at three separate points in that line, mention the sound over the harbour.\n\nEach of them changes the subject inside four seconds. Not nervously — smoothly, the way a person moves past a thing that has already been settled — and none of the three hears either of the others do it, and the queue closes over all three the way water closes over a dropped stone, and moves on, and is not lying to anybody, including itself.",
     "failure": "Thirty people and four conversations and all of it is about the cold, the price of dews, somebody's sister, and a horse. It is a queue. It is being a queue at you with great commitment and nothing else is on offer tonight.",
     "success_effects": {

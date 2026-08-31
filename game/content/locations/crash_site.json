@@ -215,7 +215,7 @@
     "skill": "HAND_EYE",
     "dc": 10,
     "kind": "white",
-    "prompt": "The three legible pages are stuck to their ruined neighbours. Separate them without losing them.",
+    "prompt": "The three legible pages are stuck fast to their ruined neighbours, and the ruined neighbours are stuck to each other, and the whole block wants to come away as one wet object. Separate them without losing them — from the spine outward, dry side down, no lifting at the corner.",
     "success": "From the spine, slowly, with the grain. The wet paper gives up its neighbours one fibre at a time and all three come away whole.\n\nThe third page has a list on it. Eleven names, in your hand, and nine of them have been crossed out — not scribbled, *ruled* through, once, neatly, the way a man crosses out something he is sorry about.",
     "failure": "From the spine, slowly, thumb flat, the way it should be done — and then not slowly enough.\n\nThe top page comes away in two pieces, and the two pieces do not want to be one piece again, and the blue goes across the tear and takes the last of it with it. What is left in your hand is half a list of something, in your own writing, in which the only surviving legible word is a place name you do not recognise.",
     "success_effects": {
@@ -281,7 +281,7 @@
     "skill": "SEA_LEGS",
     "dc": 9,
     "kind": "white",
-    "prompt": "The wall is wet to a height the tide has no business reaching, and the street is on the other side of it. Go over rather than around.",
+    "prompt": "The wall is wet to a height the tide has no business reaching and there is no gate along it in either direction for as far as the fog allows looking. The street is on the other side of it, and the parish is up the street, and you are down here in the cold. Go over rather than around.",
     "success": "Wet stone, a bad angle and a knee with opinions, and none of it is new to the body doing it. You are up and over and down the other side before the deciding part of you has finished objecting.\n\nFrom the top, briefly, the whole parish: green lampposts going up in a line, and the fog behind you with the rotors still in it, and — for one second, from that height only — no lights at all past the far end of the town. Not darkness. An edge.",
     "failure": "Wet stone and a bad angle. You get a knee over, and the knee that went in the harbour makes a case, and you come down on the harbour side in about four inches of water with your dignity arriving separately a moment later.",
     "success_effects": {
