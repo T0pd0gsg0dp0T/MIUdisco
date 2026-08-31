@@ -2,7 +2,7 @@
  "npc": "asimov",
  "nodes": {
   "root": {
-   "text": "So. You have been looking at my building. Not living in it — looking at it. There is a difference and I have been in this trade long enough to hear it through a floor.",
+   "text": "So. You have been looking at my building.\n\nNot living in it — *looking* at it. There is a difference and I have been in this trade long enough to hear it through a floor. A man who lives in a building walks the same line to his door every night and never once counts the steps. A man who is looking at it stops on the landing.\n\nYou have stopped on the landing four times this week, Oliver. Come in. Mind the corridor, it is longer today than it was contracted to be.",
    "options": [
     {
      "id": "corridor",
@@ -192,7 +192,7 @@
    ]
   },
   "typing": {
-   "text": "Ah. The typing.\n\nYes. Every resident hears it. No resident owns a machine — I have keys to every flat in this building and I have looked, and I looked because a manager who does not look is a landlord. There is no typewriter in the Hang-Hi Quiet Apartments.",
+   "text": "Ah. The typing.\n\nYes. Every resident hears it. Every resident, at every hour, on every floor — I have had it raised with me eleven times in nine years and I have raised it with myself considerably more often than that.\n\nNo resident owns a machine. I want to be exact about how I know: I have keys to every flat in this building and I have been into every one of them and I have looked. Not glanced — looked, in cupboards, under beds, in the places a man puts a thing he does not want found.\n\nI looked because a manager who does not look is a landlord. There is no typewriter in the Hang-Hi Quiet Apartments.",
    "options": [
     {
      "id": "press",
@@ -307,7 +307,7 @@
    ]
   },
   "forms_hold": {
-   "text": "You have the look, Oliver. The one you get before a sentence with three subordinate clauses in it.\n\nGo on. Say the thing. I have been waiting some years for a tenant to say it to me so I do not have to be the one who did.",
+   "text": "You have the look, Oliver.\n\nThe one you get before a sentence with three subordinate clauses in it — the eyebrow comes down and the head goes very slightly to the left and the whole face becomes an argument that has not been made yet.\n\nGo on. Say the thing.\n\nI have been waiting some years for a tenant to say it to me, so that I do not have to be the man who said it first in his own building.",
    "options": [
     {
      "id": "say_it",
@@ -377,7 +377,7 @@
    ]
   },
   "name": {
-   "text": "Sobeleaux. So-be-low. Yes. My grandmother's, and she thought it was about fishing — above the water, below the water, the same shape twice and only one of them is yours.\n\nEverybody gets there eventually. You got there faster than most and you have been carrying it about for a week without asking, which is worse manners and better instinct.",
+   "text": "Sobeleaux. So-be-low. Yes.\n\nMy grandmother's, and she thought it was about fishing — above the water, below the water, the same shape twice and only one of them is yours. She said it at every meal for as long as I knew her and I did not understand it until she was dead, which I am told is the usual arrangement with grandmothers.\n\nEverybody gets there eventually. Most of them get there in the second year.\n\nYou got there faster than most, and you have been carrying it about for a week without asking me — which is worse manners and better instinct, and I would rather have the instinct in a tenant than the manners.",
    "effects": {
     "morale": 3,
     "relationship": {

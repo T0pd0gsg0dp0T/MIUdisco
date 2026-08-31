@@ -2,7 +2,7 @@
  "npc": "fatty",
  "nodes": {
   "root": {
-   "text": "Sit. Sit down. Right — look at this straw.\n\nNo, look at it properly. It's in the shake and it's above the shake. Same straw. One straw. So which bit of it is the straw?",
+   "text": "Sit. Sit down. Right — look at this straw.\n\nNo. Look at it *properly*, take a second with it, I'm not doing a bit here.\n\nIt's in the shake and it's above the shake. Same straw. One straw, one object, bought in a box of two hundred, nothing special about it whatsoever.\n\nSo which bit of it is the straw?",
    "options": [
     {
      "id": "answer",
@@ -222,7 +222,7 @@
    ]
   },
   "boundary": {
-   "text": "Two foot four.\n\nYeah. You noticed. Nobody notices — Mary noticed, Mary notices everything, Mary's never said anything.\n\nTwo foot four off the cold, on the warm, always. And it moves, so I move, and I've moved four times tonight and I'll move twice more before close.\n\nAnd before you ask why: it's the closest I can get.",
+   "text": "Two foot four.\n\nYeah. You noticed. Nobody notices — Mary noticed, but Mary notices everything and Mary has never once said anything about it to me or to anybody, which is the single kindest thing anyone in this parish has ever done for me.\n\nTwo foot four off the cold, on the warm side, always. Every night I've been coming in here.\n\nAnd it moves, the line, so I move. Four times tonight already and I'll move twice more before close, and I do it without thinking about it now, the way you'd shift out of a draught.\n\nAnd before you ask why: it's the closest I can get.",
    "options": [
     {
      "id": "closest",

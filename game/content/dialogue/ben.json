@@ -2,7 +2,7 @@
  "npc": "ben",
  "nodes": {
   "root": {
-   "text": "What you been up to, my friend?\n\nSit at the middle. Not the end. Everybody sits at the end the first time and everybody's wrong, and I've stopped telling them, but I'm telling you.",
+   "text": "What you been up to, my friend?\n\n— No. Don't answer that one. I'll take the other one. What you been up to that you ain't told nobody.\n\nAnd sit at the middle while you think about it. Not the end. Everybody sits at the end the first time and everybody's wrong about it, and I stopped telling people some years back because a man don't like being moved.\n\nBut I'm telling you. The middle's where the table's oldest and it's where I can hear you.",
    "options": [
     {
      "id": "masks",

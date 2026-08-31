@@ -2,7 +2,7 @@
  "npc": "barney",
  "nodes": {
   "root": {
-   "text": "Take a pew! Mind the ford — she's running the other way tonight, which happens, that's just her being a river about it.",
+   "text": "Take a pew! Mind the ford — she's running the other way tonight, which happens, that's just her being a river about it.\n\nWe've got a front coming through the lounge around ten, so if you're stopping I'd take the dry side and I'd take it now, because the good chairs go and I'd hate to see you sat in weather all evening like a man who didn't get told.\n\nThat's the sky doing what a sky does. Nothing in it. You get a lot of that this time of year.",
    "options": [
     {
      "id": "history",
@@ -282,7 +282,7 @@
    ]
   },
   "green_coat": {
-   "text": "Handsome fella. Tall. Bit like you, actually — no, that's not it. Bit like *the idea* of you, if you'd been described to somebody who then met you.\n\nAnd he had a stick with a thing on the top and I couldn't tell you what the thing was and I looked right at it.\n\nWill you have a drink? I've gone off a bit here and I'd like to go back on.",
+   "text": "Handsome fella. Tall. Bit like you, actually — no. No, that's not it, and I've been trying to get it right since he left.\n\nBit like *the idea* of you. Like if somebody had described you to a man very carefully, and the man had listened properly and taken notes, and then a week later he walked in through that door.\n\nAnd he had a stick with a thing on the top of it, and I couldn't tell you what the thing was, and I looked right at it. Looked right at it while he was paying, close as you are now.\n\nWill you have a drink? I've gone off a bit here and I'd like to go back on.",
    "effects": {
     "clue": {
      "id": "c_green_coat_stick",

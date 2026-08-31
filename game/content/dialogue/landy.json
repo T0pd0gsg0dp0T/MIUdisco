@@ -2,7 +2,7 @@
  "npc": "landy",
  "nodes": {
   "root": {
-   "text": "Mr Onions! Two-F! Now — I'll stop you before you start, because I know what you're going to say and I've already done it.\n\nThe window's sorted. The corridor's sorted. The door on Two-C is sorted and has been since Michaelmas, and if it's opening onto Three-A on a Thursday then that is a *Thursday* issue and I'd want it raised as one.",
+   "text": "Mr Onions! Two-F!\n\nNow — I'll stop you before you start, because I know exactly what you're going to say and I've already done it.\n\nThe window's sorted. The corridor's sorted. The door on Two-C is sorted and has been since Michaelmas, and if it's opening onto Three-A on a Thursday then that is a *Thursday* issue, Mr Onions, and I'd want it raised as one, on its own form, so it can be dealt with properly rather than bundled in with a door.\n\nBundling is how a job gets lost. I've seen it happen to better men than me.",
    "options": [
     {
      "id": "sorted",
@@ -122,7 +122,7 @@
    ]
   },
   "worked_example": {
-   "text": "Would you like to see it? I've got it in the cupboard. I've — nobody's ever asked, Mr Onions, and I've been carrying it about in a plastic wallet for eleven years like a man with a picture of his dog.\n\n... It's a lovely hand. That's the thing I'd want you to notice. Whoever filled that in cared about the corner of a form, and there is not much of that about.",
+   "text": "Would you like to see it?\n\nI've got it in the cupboard. I've — sorry. Nobody's ever asked. Eleven years and nobody has ever asked, and I've been carrying it about in a plastic wallet the whole time like a man with a picture of his dog.\n\nHere. Mind the corner.\n\n... It's a lovely hand. That's the thing I'd want you to notice, before anything else, before the wording or the seal or any of it. Whoever filled that in cared about the corner of a form. They squared the boxes. They did the date in full.\n\nThere is not much of that about, Mr Onions. There is not much of that about at all any more.",
    "options": [
     {
      "id": "see_it",
