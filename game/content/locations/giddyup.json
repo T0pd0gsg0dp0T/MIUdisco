@@ -227,7 +227,7 @@
     "kind": "white",
     "prompt": "The building sits on something older than the building and somebody took three boards up to look at it and never put them back. Get underneath and read the mechanism rather than the report.",
     "success": "Under the floor the joists rest on a frame, and the frame is not a foundation. It has bearings in it, and a track, and the track is circular.\n\nThis building is mounted to turn. It has not turned — the grease is undisturbed — but it was built by somebody who expected it to, and it is aimed, currently, at the harbour.",
-    "failure": "Joists, a frame, and a great deal of very old grease, and whatever the frame is for it declines to say from this angle with this light and this back.",
+    "failure": "Joists, a frame, and a very great deal of very old grease.\n\nWhatever the frame is for, it declines to say from this angle, with this light, with this back — and there is about nine inches of clearance under the boards and a man of your age gets one attempt at that per evening.",
     "success_effects": {
      "clue": {
       "id": "c_the_building_can_turn",

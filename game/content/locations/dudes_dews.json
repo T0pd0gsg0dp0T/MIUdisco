@@ -212,7 +212,7 @@
     "kind": "white",
     "prompt": "Warm on the left, cold on the right, and a line between them you can stand astride. Stop measuring it and stand in it, and let the parish come up through the four inches.",
     "success": "One foot in each. The line is about four inches wide and it drifts, slowly, and standing in it is like standing in a doorway in a house that is thinking about something.\n\nAnd from inside the four inches the parish is briefly audible as one thing — every room in Silvora Reefs holding a boundary exactly this wide, all of them the same boundary, all of them drifting at the same rate.",
-    "failure": "Warm, cold, and a great deal of standing about in a busy shop while a queue that knows what it is doing goes around you.",
+    "failure": "Warm on the left, cold on the right, and eleven degrees of difference across four inches of open air that gives up absolutely nothing else about itself.\n\nAnd a great deal of standing about in the middle of a busy shop while a queue that knows exactly what it is doing goes around you — patiently, without comment, the way water goes round a post.",
     "success_effects": {
      "clue": {
       "id": "c_one_boundary_everywhere",

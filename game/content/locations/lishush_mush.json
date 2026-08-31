@@ -74,7 +74,7 @@
     "kind": "white",
     "prompt": "Your account of the menu is being revised while you are not looking at it, which means the revision has to happen in the gap. Catch the gap. Look away and back faster than the revision can be made.",
     "success": "You catch the tail of it. For a quarter of a second the laminate holds two dish names in the same place, one fading under the other, and the one fading is the one you read and the one arriving is the one you will remember reading.\n\nThe correction is not on the menu. It is on you, and you have just watched it be applied.",
-    "failure": "TOMORROW'S MEMORIES SEARED IN YESTERDAY'S REGRETS. You look away and back and it says something else and has always said something else, and the something else is not interesting.",
+    "failure": "TOMORROW'S MEMORIES SEARED IN YESTERDAY'S REGRETS.\n\nYou look away — deliberately, at a fixed point on the far wall, for a count of two — and back, and it says something else, and has always said something else, and the something else is not interesting. It is a fish dish. It is a perfectly ordinary fish dish with a perfectly ordinary name, and the laminate is unmarked, and your certainty about what was there four seconds ago is already going soft at the edges.",
     "success_effects": {
      "clue": {
       "id": "c_correction_applied_to_you",
@@ -156,7 +156,7 @@
     "kind": "white",
     "prompt": "The onions rearrange while you look at them, which means they do not rearrange while you look at them. Look faster than the rearrangement, and do not blink at the wrong moment.",
     "success": "You catch it mid-move. Ten, nine, seven and a long one — and for the half-second before it settles, the arrangement is *not* four rows of onions. It is four lines of type, set and waiting, and one of the lines is longer than the others because it has a name in it.\n\nThen it is onions, and it is very good, and the plate is warm.",
-    "failure": "Ten, nine, seven, and a long one. You look away and back and it is ten, nine, seven, and a long one, and the rearranging happens exactly and only in the place where you are not.",
+    "failure": "Ten, nine, seven, and a long one.\n\nYou look away and back, faster this time, fast enough that the eye has not properly left the plate — and it is ten, nine, seven, and a long one, in exactly the positions they were in.\n\nThe rearranging happens precisely and only in the place where you are not, and there is no version of this where you are quick enough, because being quick is not the variable.",
     "success_effects": {
      "clue": {
       "id": "c_four_lines_of_type",
@@ -234,7 +234,7 @@
     "kind": "white",
     "prompt": "The file is behind the pass and the kitchen is busy and Chef D. is entirely capable of noticing a man going where he should not. Get to it without being the sort of guest who gets to it.",
     "success": "There is a half-second every ninety seconds when the pass is loud and nobody is facing the shelf. You take it in that half-second and read it standing up and put it back in the next one.\n\nNine years. Every findings column reads NO MATTERS ARISING — and on the last page, this Thursday, in a different hand: *matters arising*, lower case, unstamped, unfinished.",
-    "failure": "You get the file off the shelf and Chef D. says your name — the one she uses, which is 'love' — from four feet away without turning round, and asks whether you are hungry, and you put it back and say yes.",
+    "failure": "You get the file off the shelf and Chef D. says your name — the one she uses, which is 'love' — from four feet away, without turning round, over the noise of a pan.\n\nShe asks whether you are hungry. She does not ask what you are doing, or why you have her inspection file in your hands, or anything else that would require you to produce an answer.\n\nYou put it back and say yes. The liver is extraordinary and neither of you mentions the file again.",
     "success_effects": {
      "clue": {
       "id": "c_matters_arising",

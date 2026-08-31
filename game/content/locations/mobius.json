@@ -46,7 +46,7 @@
     },
     "prompt": "Do the letters properly. Not the impression of the trick — the arithmetic of it. Count what THE MÖBIUS STRIP CLUB actually contains, and count what it gave you.",
     "success": "You count. You count twice, because the first count is the one where a man finds what he expected.\n\nTHE MÖBIUS STRIP CLUB has no A in it. It has no V. REVILO'S TRAP BUILT has both, and has them prominently, and REVILO is where they live.\n\nThis is not an anagram. An anagram would be a coincidence with good manners. This is a rearrangement that has *brought letters with it* — which means the sign did not reveal a hidden name. Somebody spelled a name at you, and used the sign as a surface to do it on, and did not check whether the surface could afford the letters.\n\nWhoever did it wanted to be read more than they wanted to be plausible.",
-    "failure": "The letters swim. You get as far as counting the Bs, lose the count to the music, start again, and lose it again to the specific fact that the music stopped for exactly as long as it took you to lose it.",
+    "failure": "The letters swim. Not the neon — the neon is steady, the neon has been steady all fortnight — the *letters*, in the reading of them.\n\nYou get as far as counting the Bs, lose the count to the music, start again, and lose it again to the specific and unwelcome fact that the music stopped for exactly as long as it took you to lose it, and started again on the beat you would have finished on.",
     "success_effects": {
      "clue": {
       "id": "c_impossible_anagram",
@@ -540,7 +540,7 @@
     "kind": "white",
     "prompt": "Ninety people are avoiding the same eight square feet and none of them is thinking about it. Ask the room why.",
     "success": "It comes up all at once, the way a room's mind does, and it is not a thought any individual in here is having.\n\nThey are not avoiding the booth. They are *leaving it clear* — and the difference is the difference between a man stepping round a puddle and a man stepping round a place where somebody fell over once.\n\nNone of them knows why. Ask any one of them and they will give you a reason about the draught or the speakers and the reason will be sincere. But the shape they are keeping is a courtesy shape, and this parish has been keeping it, nightly, without instruction, for longer than the carpet — and somewhere underneath it is the knowledge that the wall behind that booth is a window, and that it is polite not to stand in front of a window when somebody is looking out of it.",
-    "failure": "Ninety people having a night out, loudly, in a building shaped like an argument. Whatever the room knows collectively, it is not in a mood to be asked about it by a man with his coat still on.",
+    "failure": "Ninety people having a night out, loudly, in a building shaped like an argument.\n\nWhatever the room knows collectively, it is not in a mood to be asked about it by a man standing at the edge of the floor with his coat still on and his weight on the back foot — and the room is entitled to that, and the room has ninety perfectly good reasons to be enjoying itself instead.",
     "success_effects": {
      "clue": {
       "id": "c_a_courtesy_shape",

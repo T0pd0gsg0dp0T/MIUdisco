@@ -339,7 +339,7 @@
     "kind": "white",
     "prompt": "The back shelf holds something with no label, in a bottle nobody in this shop reaches for, at a level that goes down anyway. Have what the shop has when the shop is not being watched.",
     "success": "It is clear and it is cold and it tastes like the first line of something.\n\nAnd for the length of one swallow every name behind the bar is legible at once — not the labels, the *names*, the ones the bottles have rather than the ones they were given — and all of them are versions of the same name, declined like a noun in a language with cases.",
-    "failure": "It is clear and it is cold and it is extremely strong, and it goes down and stays down and does nothing else whatsoever, and the owner watches you find that out.",
+    "failure": "It is clear and it is cold and it is extremely strong, and it goes down and stays down and does nothing else whatsoever.\n\nNo memory, no kitchen, no afternoon belonging to somebody else. Just alcohol, doing the one job alcohol does — and the owner watches you find that out from the other end of the bar, on the beat, with an expression that is not quite sympathy.",
     "success_effects": {
      "clue": {
       "id": "c_bottles_one_name_declined",

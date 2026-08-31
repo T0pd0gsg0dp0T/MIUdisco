@@ -124,7 +124,7 @@
     "kind": "white",
     "prompt": "The fog off the harbour comes up this street and stops at the door of every other establishment on it. Stand in the doorway and work out what this one is doing that the others are not.",
     "success": "It is not cold and it is not wet and it has a direction that has nothing to do with the wind.\n\nIt is coming *from* the far end of the parish rather than from the sea, and there is a pressure in it like the pressure at the edge of a held note, and four streets over somebody stops what they are doing at the same moment you do.",
-    "failure": "Fog. It goes over you and past you and up the street and it is, as far as any part of you can establish, weather.",
+    "failure": "Fog. It comes up the street off the harbour, goes over you and past you and on toward the lamps, and it is — as far as any part of you can establish, standing in a doorway in the cold with an oven behind you — weather.\n\nThe patch over the third table does not care that you are looking at it. It is a yard of thickened air in a restaurant, it has been there since before you came in, and it declines absolutely to be anything more interesting than that while a man is standing in the doorway waiting for it to be.",
     "success_effects": {
      "clue": {
       "id": "c_fog_from_the_far_end",
@@ -201,7 +201,7 @@
     "kind": "white",
     "prompt": "Franchise decor, mass-produced, identical to a thousand other rooms — except that no two people in this room have ever agreed about what is on that wall. Look at the frames rather than the pictures.",
     "success": "Eleven framed prints, all of them stock, all of them the same three photographs in rotation — and the ninth is not a print.\n\nIt is a photograph of this room, taken from where you are standing, with the prints on the wall in it, and in that photograph the ninth frame contains a photograph of this room.",
-    "failure": "Eleven frames of exactly the kind of nothing they are meant to be, and a smell of oregano, and a man watching you look at his wall with the patience of somebody used to it.",
+    "failure": "Eleven frames of exactly the kind of nothing they are meant to be. The breakwater. The fish quay. The lighthouse twice. A smell of oregano over everything and a warm draught off the oven every time the door comes open.\n\nAnd a bull antelope watching you look at his wall with the patience of somebody who is entirely used to it — who has watched a great many people look at this wall and has never once asked any of them what they were seeing, because he has worked out that the asking is the part that upsets people.",
     "success_effects": {
      "clue": {
       "id": "c_ninth_frame",
@@ -398,7 +398,7 @@
     "kind": "white",
     "prompt": "Something in this room is being organised without anybody organising it, eleven times a night, six nights a week. Stop watching the stage and listen for the whole parish at once.",
     "success": "Nobody signals. That is the finding and it takes a moment to be sure of, because the coordination is so good that a signal is the natural assumption.\n\nThe laugh comes from table nine, late and solitary. Table four joins it. Then the pair by the window, then a man on his own by the oven who does not look up from his plate while doing it — and the patch of thickened air over the third table thins out and goes, and the comedian gets to the end of his set believing he has died, which he has, and the room lets him believe it because the alternative is telling him what he is for.\n\nEleven times a night. Six years. Nobody has ever mentioned it to anybody, including each other.",
-    "failure": "A bad set in a warm room, and some laughter, and some not. The kindness in here is real and it is not going to be caught in the act by a man standing at the back looking for it.",
+    "failure": "A bad set in a warm room, and some laughter, and some not, and a comedian working through it with the dogged competence of a man who has died in better rooms than this.\n\nThe kindness in here is real. It is going on right now, four feet from where you are standing. And it is not going to be caught in the act by a man at the back of the room who has decided to watch for it — because the whole mechanism depends on nobody in here believing they are part of a mechanism.",
     "success_effects": {
      "clue": {
       "id": "c_unsignalled_kindness",

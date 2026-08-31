@@ -80,7 +80,7 @@
     "kind": "white",
     "prompt": "Nineteen vault plates, struck and mounted and engraved to a standard the trade abandoned two centuries ago. Read all of them, in order, and do not stop at the one with your name on it.",
     "success": "Nineteen names. You know four of them and three of those four are people you have met tonight.\n\nAnd the strike depth is not uniform: eighteen are stamped to the same depth, and one — the seventh — is shallower, and struck twice, the second strike slightly off the first, as though the name on it had been changed to itself.",
-    "failure": "Nineteen plates, brass, mounted, and one of them with your name on it, and after that the other eighteen are extremely difficult to give any attention to at all.",
+    "failure": "Nineteen plates, brass, mounted, engraved to a standard nobody has met in two hundred years.\n\nAnd one of them with your name on it, with the middle name, and after that the other eighteen are extremely difficult to give any attention to at all. You get to the fourth. You go back to the first. You get to the fourth again.",
     "success_effects": {
      "clue": {
       "id": "c_seventh_plate_struck_twice",

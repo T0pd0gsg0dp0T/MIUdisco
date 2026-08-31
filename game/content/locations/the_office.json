@@ -68,7 +68,7 @@
     "kind": "white",
     "prompt": "There is a page in the machine and it is not blank and it is the only thing in this room with no dust on it. Read what is on it without saying any of it aloud.",
     "success": "Platen release, one turn, and it comes up clean.\n\nIt is a description of a man standing in a small room holding a page he has just taken out of a machine. It is in the present tense. It stops mid-sentence, and the sentence it stops in the middle of is this one.",
-    "failure": "You have the corner of it and the platen has the rest, and the rest wins by about two inches of tear, and what you are holding is the top of a page and the top of a page says nothing at all.",
+    "failure": "You have the corner of it and the platen has the rest, and the platen wins by about two inches of tear.\n\nWhat you are holding is the top of a page, and the top of a page says nothing at all — a wide left margin, three words that are the end of a previous sentence, and a great deal of white. The rest of it is still in the machine, still wound round the roller, still saying whatever it says.",
     "success_effects": {
      "clue": {
       "id": "c_page_describes_this",
@@ -140,7 +140,7 @@
     "kind": "white",
     "prompt": "A waste basket with a great deal in it, and every sheet in it screwed up by the same hand. Do not read them. Put a hand in and find out what it *is* first.",
     "success": "It is not a basket of failures. Every page in it was taken out on purpose and none of them were thrown away — they are *folded*, each one, the same fold, which is not what a man does with a bad page.\n\nThis is not where the drafts died. This is where he put the people he could not make work, and he folded each of them first, and he has never once emptied it.",
-    "failure": "Paper, and a great deal of it, and the specific silence of a container that has been filled slowly over years by somebody who was not enjoying it. Nothing else comes. The basket declines to elaborate.",
+    "failure": "Paper, and a very great deal of it, and underneath the paper the specific silence of a container that has been filled slowly over years by somebody who was not enjoying the filling.\n\nNothing else comes. The basket declines to elaborate, and goes on being a waste basket in a small room, and the pages at the bottom go on being the colour of weak tea.",
     "success_effects": {
      "clue": {
       "id": "c_basket_is_a_grave",
@@ -377,7 +377,7 @@
     "kind": "white",
     "prompt": "The composition of this room is too good to be an accident. Stop reading the objects and say what the arrangement is *doing*.",
     "success": "A man who writes his way out of rooms, working — for eleven years, every day — on the flat of the only door his room has ever had.\n\nIt is too neat. It is the kind of image a writer puts in a story about a writer and then takes out again the following morning for being too neat, and it has survived here for eleven years in the one room where there is nobody to take it out.\n\nWhich leaves two readings and only two. Either he arranged it about himself, deliberately, and has been sitting inside his own metaphor without flinching for a decade — or he did not arrange it, and somebody with a better eye for composition than either of you has been arranging things about him.",
-    "failure": "A door on trestles. Men use doors as desks when they are poor or in a hurry or fond of the door, and all three are available here, and the room offers no way to choose between them tonight.",
+    "failure": "A door on trestles.\n\nMen use doors as desks when they are poor, or in a hurry, or fond of the door, and all three of those are entirely available here and the room offers no way whatever to choose between them tonight. It is a good door and it is a flat surface and a man has been working on it, and every reading you try slides off it and leaves it exactly as it was.",
     "success_effects": {
      "clue": {
       "id": "c_inside_his_own_metaphor",

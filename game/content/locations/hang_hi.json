@@ -80,7 +80,7 @@
     "kind": "white",
     "prompt": "There are more pages in this than the three. Ninety of them, and the blue has not left the paper, it has only stopped being arranged. Work the smear apart with a dry cloth and a great deal of patience and see what is still in there.",
     "success": "Patience, a dry cloth and a very shallow angle. Two more pages come up out of the blue — not legible, but *ruled*, and the ruling is not the notebook's.\n\nSomebody drew a margin down these pages by hand, twice, on the same two sheets, at eleven and nine inches. The measurements of a room.",
-    "failure": "The blue is not ink any more, it is a suspension, and the moment the cloth touches it the page decides to be one colour all the way through.",
+    "failure": "The blue is not ink any more. It is a suspension — pigment held in a paper that has given up being paper — and the moment the cloth touches it, the page makes its decision and becomes one colour all the way through.\n\nYou stop after the second. There are eighty-seven left and you have just learned what the cloth does to them, and there is a version of this evening in which you go on until there is nothing left to be careful with.",
     "success_effects": {
      "clue": {
       "id": "c_margins_at_eleven_and_nine",
@@ -132,7 +132,7 @@
     "kind": "white",
     "prompt": "Hold absolutely still. Longer than is reasonable, longer than is comfortable, long enough to be rude to your own knee — and do not look at the room, look at the place in the glass where the room stops agreeing with itself.",
     "success": "You hold. Your knees file their complaint and you overrule it. The corridor drains out of the glass like water out of a bath and the office stays: a desk, a green lamp, a typewriter with a page in it, and beside the page, a coffee cup with a ring under it that has been there long enough to have a ring.\n\nSomebody works here. Somebody has worked here for a long time, badly, in the specific way of a person who does not get up.",
-    "failure": "Your knee goes at forty seconds — the one that has been going since the harbour — and the shift is small and the mirror is not interested in small. The corridor snaps back. The coat rack is very smug about it.",
+    "failure": "Your knee goes at forty seconds — the one that has been going since the harbour, which has been quiet all evening and has been waiting for exactly this.\n\nThe shift is small. The mirror is not interested in small. The corridor snaps back with the flat suddenness of a thing that was never anything else, and the coat rack is very smug about it, and the lamp is a lamp, and you are a man standing in a hallway looking at himself.",
     "success_effects": {
      "clue": {
       "id": "c_mirror_office",
@@ -208,7 +208,7 @@
     "kind": "white",
     "prompt": "The snake on the board is in a slightly different position every time the eye comes back to it. Look away deliberately, count to four, and come back fast enough to catch it mid-move.",
     "success": "Away and back, fast, without deciding to.\n\nIt is mid-stroke. Not mid-slither — mid-*stroke*, the way a line is mid-stroke when a hand is drawing it, and there is no hand, and it finishes the stroke while you watch and settles into having always been that shape.",
-    "failure": "Away and back. Coiled, painted, flaking at the tail, and exactly where it was, and it will go on being exactly where it was for as long as you keep doing this.",
+    "failure": "Away, count of four, and back.\n\nCoiled, painted, flaking at the tail, and exactly where it was — and it will go on being exactly where it was for as long as you keep doing this, which is the arrangement, and which it has kept faithfully for eleven years without once being caught out or once being still.",
     "success_effects": {
      "clue": {
       "id": "c_snake_mid_stroke",
@@ -273,7 +273,7 @@
     "kind": "white",
     "prompt": "Twenty-two forms in a cupboard on a half-landing, all stamped, all in the same hand. You have read enough municipal paper in your life to know what a form is supposed to look like. Read these as documents rather than as excuses.",
     "success": "A repair notice exists to create a liability and then discharge it. Every one of these has been raised, stamped and *closed* — closed by the same office that raised it, on the same day, with no work recorded in between.\n\nThat is not maintenance. That is a body of paper generated for the purpose of existing, and somebody has been generating it about this building, at a rate of two a year, for eleven years.",
-    "failure": "Twenty-two forms, stamped, in a hand you have seen before. There is a convention they are violating and it stays just out of reach, filed somewhere behind everything else you have ever read.",
+    "failure": "Twenty-two forms, stamped, in a hand you have seen before somewhere and cannot place.\n\nThere is a convention they are violating. You can feel the shape of it — something about the seal, or the ordering, or the fact that the same seal appears on a licence in an ice cream shop — and it stays just out of reach, filed somewhere behind everything else you have ever read, in a drawer this evening does not have the key to.",
     "success_effects": {
      "clue": {
       "id": "c_forms_raised_and_closed",
@@ -351,7 +351,7 @@
     "kind": "white",
     "prompt": "Open the window over the harbour and let the parish come in for a minute — the cold, the smell, the sound, and whatever else is riding on the sound at this hour.",
     "success": "Cold off the water, green flame two streets down, and the rotors — and with the window open the rotors resolve into what they have been all along, which is not rotors.\n\nIt is a page being turned. Over and over, at the pace of a man checking something he has already read, from a room that is not in the direction the sound is coming from.",
-    "failure": "Cold, and the smell of the harbour, and the rotors going on being rotors at the same unhurried pace they have kept since you came out of the water.",
+    "failure": "Cold, and the smell of the harbour coming up wet off the stone, and the rotors going on being rotors at the same unhurried pace they have kept since you came out of the water.\n\nThe parish does not come in with it. Whatever is out there tonight is out there on its own terms and is not sending anything up to a lit window on the second floor of a building that hangs from nothing.",
     "success_effects": {
      "clue": {
       "id": "c_rotors_are_pages",
@@ -416,7 +416,7 @@
     "kind": "white",
     "prompt": "The dust holds a rectangle with four round gaps at the corners and a worn arc on the near side. Work the machine out from its footprint, the way you would work out a man from his handwriting.",
     "success": "Four feet, in a rectangle nine and a quarter by eleven and a half, with the front pair set inboard — which is a carriage-return frame, which means a heavy desk machine, which means a weight no man carries down a flight of stairs alone.\n\nAnd the dust is undisturbed all round it. Nothing was dragged. Nothing was lifted. The rectangle is not where a machine was taken from. It is where a machine has not yet been put.",
-    "failure": "A rectangle and four gaps and a quantity of dust, and it is the shape of a typewriter the way a hole is the shape of a thing that is not in it.",
+    "failure": "A rectangle, four gaps, and a quantity of dust.\n\nIt is the shape of a typewriter in the way that a hole is the shape of the thing that is not in it, which is to say completely and uselessly. Every reconstruction you run terminates in the same place: something was here, it was heavy, it is not here now. You have had that since you sat down.",
     "success_effects": {
      "clue": {
       "id": "c_not_yet_been_put",
@@ -590,7 +590,7 @@
     "kind": "white",
     "prompt": "Nine floors of people you have never met, all of them at home, all of them audible. Reach for the building the way you would reach for the parish and see what comes back.",
     "success": "Nothing comes back.\n\nNot silence — the parish is loud tonight and it is entirely available from here, the queue moving at Mary's and the fire settling at Ben's and Luigi three floors down doing the west end first. All of that arrives, at full strength, from streets away.\n\nFrom inside this building, at a range of forty feet, through two floors: nothing at all. There is a radio on four and a bath running on six and there is nobody behind either of them, and the parish does not extend into Hang-Hi, and Asimov's office is the last room in the building that has anybody in it.",
-    "failure": "A radio, a bath, and somebody shifting a wardrobe about on two. It is an occupied building on an ordinary evening and it declines, courteously, to be anything else.",
+    "failure": "A radio on four, a bath on six, and somebody still shifting a wardrobe about on two.\n\nIt is an occupied building on an ordinary evening and it declines, courteously and completely, to be anything else. Whatever you were reaching for does not arrive, and the not-arriving feels like an ordinary failure rather than an answer, which is itself worth nothing at all.",
     "success_effects": {
      "clue": {
       "id": "c_the_building_is_empty",

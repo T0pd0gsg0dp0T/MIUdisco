@@ -76,7 +76,7 @@
     "kind": "white",
     "prompt": "There is thirty feet of sky in a two-storey building and a stream that leaves lower than it enters. Stand still in the middle of the lounge and let the place tell you what it is instead of asking it.",
     "success": "It has weather in it. Not the idea of weather — pressure, and a front coming through, and a temperature drop that arrives four minutes before it arrives outside.\n\nThis sky is running ahead of the real one. It is not a copy of the weather over Silvora Reefs. It is a draft of it.",
-    "failure": "Thirty feet of it, with a moon, indoors, and the bellhop somewhere behind you saying BUT it's a light well with the fervour of a man holding something up.",
+    "failure": "Thirty feet of it, with a moon in it that is the wrong way round for the season, indoors, over a lounge with a stream running through it.\n\nAnd the bellhop somewhere behind you saying BUT it's a light well — with the fervour of a man holding something up, at a volume calibrated to reach you and not the guests, and with a hand that has not left the brass rail of a trolley that is not going anywhere.",
     "success_effects": {
      "clue": {
       "id": "c_indoor_sky_runs_ahead",
@@ -333,7 +333,7 @@
     "kind": "white",
     "prompt": "Bud has been holding that luggage trolley all evening and every evening before this one. Take the weight off him for a minute — properly, both hands, so he has to let go.",
     "success": "He hands it over with enormous reluctance and you take the weight, and the weight is wrong.\n\nThere are no bags on it. There have never been bags on it. It weighs what a loaded trolley weighs and the load is not on it, and Bud watches you find that out with an expression of profound and specific relief at not being the only one.",
-    "failure": "He does not let go. He says BUT it's no trouble, three times, with escalating politeness, and his knuckles do something that ends the offer more clearly than a refusal would have.",
+    "failure": "He does not let go.\n\nHe says BUT it's no trouble, three times, with escalating politeness and no escalation whatever in the grip — and his knuckles do something on the third repetition that ends the offer considerably more clearly than a refusal would have.\n\nHe is not being rude. He is being, as far as he is concerned, extremely helpful, and he is going to go on being extremely helpful about this particular thing for as long as anybody stands near it.",
     "success_effects": {
      "clue": {
       "id": "c_trolley_loaded_with_nothing",

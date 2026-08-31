@@ -72,7 +72,7 @@
     "kind": "white",
     "prompt": "You have been avoiding this since you stood up, in the specific way a man avoids the one piece of evidence that is attached to him. Press the places that hurt, one at a time, hold each one long enough to get an honest answer, and take a full inventory rather than a flinch.",
     "success": "Knee, shoulder, a place behind the eye. You press each one and hold it and the body reports honestly for once.\n\nNothing is broken. Everything is bruised in the pattern of a man who was held and then let go, not a man who struck anything — and the bruising on the forearms is symmetrical, which is not what a fall does.",
-    "failure": "You press the knee and the knee closes the conversation, and the inventory ends there with one item on it, underlined.",
+    "failure": "You press the knee, and the knee closes the conversation.\n\nThe inventory ends there, with one item on it, underlined twice — and the body goes back to the position it has been holding since you stood up, which is braced, and quiet, and not currently taking questions.",
     "success_effects": {
      "clue": {
       "id": "c_held_not_struck",
@@ -143,7 +143,7 @@
     "kind": "white",
     "prompt": "It is still hot and it is still ticking and it is still, in some sense that will not sit still long enough to be examined, doing something. Go in past the point where the heat says stop, and find out what.",
     "success": "You get in past the point where the heat says stop, because the animal doing this has decided the heat is not the threat.\n\nIt is right. The threat is the sound — under the ticking of cooling metal, a rhythm, four or five strikes and a pause and a return, which is not a machine failing. It is a machine *working*, somewhere very close, and it is a typewriter.",
-    "failure": "You get within a yard and everything old in you objects at once, loudly and without argument, and you are back at the waterline with your pulse doing something athletic and nothing whatever to show for it.",
+    "failure": "You get within a yard and everything old and unhelpful in you objects at once — loudly, without argument, without any interest in the reasoning you were halfway through.\n\nAnd you are back at the waterline with your pulse doing something athletic, four yards further from the wreck than you meant to be, with nothing whatever to show for it except the information that some part of you has strong views about that machine and is not going to discuss them.",
     "success_effects": {
      "clue": {
       "id": "c_typing_in_the_wreck",
@@ -217,7 +217,7 @@
     "kind": "white",
     "prompt": "The three legible pages are stuck to their ruined neighbours. Separate them without losing them.",
     "success": "From the spine, slowly, with the grain. The wet paper gives up its neighbours one fibre at a time and all three come away whole.\n\nThe third page has a list on it. Eleven names, in your hand, and nine of them have been crossed out — not scribbled, *ruled* through, once, neatly, the way a man crosses out something he is sorry about.",
-    "failure": "From the spine, slowly, and then not slowly enough. The top page comes away in two pieces and the two pieces do not want to be one piece again, and what is left of it is half a list of something.",
+    "failure": "From the spine, slowly, thumb flat, the way it should be done — and then not slowly enough.\n\nThe top page comes away in two pieces, and the two pieces do not want to be one piece again, and the blue goes across the tear and takes the last of it with it. What is left in your hand is half a list of something, in your own writing, in which the only surviving legible word is a place name you do not recognise.",
     "success_effects": {
      "clue": {
       "id": "c_eleven_names_nine_ruled",
