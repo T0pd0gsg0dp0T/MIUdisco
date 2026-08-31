@@ -2,7 +2,7 @@
  "npc": "albert",
  "nodes": {
   "root": {
-   "text": "— from the glass, and only from the glass, at a volume that does not cross the room —\n\n\"You have addressed me.\n\nForgive me. I shall require a moment. It has been some time and I find that I have prepared a great deal and retained none of it.\"",
+   "text": "— from the glass, and only from the glass, at a volume that does not cross the room, and which arrives in the ear rather than travelling to it —\n\n\"You have addressed me.\n\nForgive me. I shall require a moment.\n\nIt has been some time, monsieur, and I find that I have prepared a very great deal over the course of it and retained none of it whatsoever. Forty years of drafting, and the whole of it gone at the first application.\"\n\nIn the third mirror, an owlbear in an excellent coat straightens the set of his shoulders and does not know what to do with his hands.",
    "options": [
     {
      "id": "how_long",

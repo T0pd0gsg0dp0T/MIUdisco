@@ -2,7 +2,7 @@
  "npc": "wino_t",
  "nodes": {
   "root": {
-   "text": "Chair's open / clippers warm / you got a question in your walk / and it ain't about your hair.\n\nGo on. Ask it on my beat and I'll answer on yours.",
+   "text": "Chair's open / clippers warm / you got a question in your walk / and it ain't about your hair.\n\nGo on. Ask it on my beat and I'll answer on yours.\n\nAnd sit down while you do it. Man asks a question standing up, he's already decided he ain't staying for the answer.",
    "options": [
     {
      "id": "mirrors",

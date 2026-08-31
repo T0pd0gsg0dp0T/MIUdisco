@@ -2,7 +2,7 @@
  "npc": "soliloquy",
  "nodes": {
   "root": {
-   "text": "You have come to the house of the horizontal. Mind the threshold — it is the only part of my establishment that has ever asked anything of anybody, and what it asks is that you notice which way you are going through it.",
+   "text": "You have come to the house of the horizontal.\n\nMind the threshold. It is the only part of my establishment that has ever asked anything of anybody, and what it asks is very small: that you notice which way you are going through it.\n\nMost do not. Most come in sideways, talking, with their hands full of somebody else's arrangements, and go out the same way — and I do not hold it against them, sir, grief is not a state in which a person should be marked on their footwork.\n\nBut you are not bereaved. You are something else, and you have been something else in my vestibule four times this fortnight.",
    "options": [
     {
      "id": "plates",

@@ -2,7 +2,7 @@
  "npc": "sir_jerry",
  "nodes": {
   "root": {
-   "text": "Be seated, good sir, and let us have a look at the presenting field.\n\nMm. Mm. There is a deal of thinking gone on above this collar and it has not been kind to the temporal region. I say that as an observation and not a judgement — a knight does not judge a field, a knight surveys it.",
+   "text": "Be seated, good sir, and let us have a look at the presenting field.\n\nMm. Mm.\n\nThere is a deal of thinking gone on above this collar and it has not been kind to the temporal region. I say that as an observation and not as a judgement — a knight does not judge a field, a knight *surveys* it, and the survey is the whole of my duty and the flattery is somebody else's trade.\n\nThe crown is sound. The crown has always been sound; I should have said so at the outset and I did not, and that is a discourtesy I shall correct now.",
    "options": [
     {
      "id": "photos",

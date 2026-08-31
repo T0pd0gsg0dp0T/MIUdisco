@@ -2,7 +2,7 @@
  "npc": "instagator",
  "nodes": {
   "root": {
-   "text": "Thanks for making the time. I know you didn't, but I've booked it, so.\n\nQuick alignment on your evening: you've been surfacing a number of items in this space. That's fine. That's within tolerance. I just want to make sure we're on the same page about what page we're on.",
+   "text": "Thanks for making the time. I know you didn't, but I've booked it, so.\n\nQuick alignment on your evening. You've been surfacing a number of items in this space — and that's fine, I want to say that up front, that's entirely within tolerance and nobody's flagged anything.\n\nI just want to make sure we're on the same page about what page we're on. Because there is a page. There's always a page, and in my experience the friction comes when one party's working off a different one and doesn't know it.\n\nSo. Take me through your evening.",
    "options": [
     {
      "id": "what_page",
@@ -174,7 +174,7 @@
    ]
   },
   "wall": {
-   "text": "I'm not seeing that.\n\nAnd I want to be careful here because I don't want to invalidate your experience. Your experience is your experience. It's just not something I can confirm, and it's also not something I'd want to deny, because denying it would be —\n\nSorry. Can we take that from the top. What was the item.",
+   "text": "I'm not seeing that.\n\nAnd I want to be careful here, because I don't want to invalidate your experience. Your experience is your experience. It's real to you and I'd never come at it from a place of contradiction.\n\nIt's just not something I can confirm. And it's also not something I'd want to deny, because denying it would be—\n\nHe stops. The professional face stays exactly where it is and something behind it does not.\n\nSorry. Can we take that from the top. What was the item.",
    "passive": [
     {
      "skill": "LOGIC",

@@ -2,7 +2,7 @@
  "npc": "chef_d",
  "nodes": {
   "root": {
-   "text": "Shit down. You look like a man who hash been reading shomething and hash not been eating anything, and I have sheen that fashe before and it did not end well for the fashe.",
+   "text": "Shit down. Shit down, go on.\n\nYou look like a man who hash been reading shomething and hash not been eating anything, and I have sheen that fashe before, Mishter Onionsh, and it did not end well for the fashe.\n\nI got shomething going and ish nearly at the — shhhk.\n\nThere. Ish at the shhhk. Now we have four minutesh and you are going to shit there and not be clever at me for all four of them.",
    "options": [
     {
      "id": "liver",

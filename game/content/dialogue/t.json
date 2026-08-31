@@ -2,7 +2,7 @@
  "npc": "t",
  "nodes": {
   "root": {
-   "text": "Voilà! In view, a vagabond veteran, vested in violet, victim of a vessel of vicissitude that has vanished — and vowing, at last, to vindicate the vexed and the—\n\n... Sorry. Sorry. You get a V and it takes the whole night off you.",
+   "text": "Voilà! In view, a vagabond veteran, vested in violet, victim of a vessel of vicissitude that has vanished — and vowing, at last, to vindicate the vexed and the vanquished and the very nearly—\n\n... Sorry. Sorry.\n\nYou get a V and it takes the whole night off you. It's the most generous letter in the alphabet and it has no self-control whatsoever and neither have I when I'm holding one.\n\nRight. What can I do for you, chef.",
    "options": [
     {
      "id": "why_t",
@@ -235,7 +235,7 @@
    ]
   },
   "speech": {
-   "text": "You want the T one.\n\nNobody wants the T one. They want the V one because they've heard the V one. Right. Right — stand back, mind the pass, and don't laugh in the middle, laugh at the end, the middle's load-bearing.",
+   "text": "You want the T one.\n\nNobody wants the T one. They want the V one, because they've heard the V one, because the V one travels — somebody does it in a pub and it comes back to me improved.\n\nRight. Right.\n\nStand back. Mind the pass — I mean that, actually mind it, stand where you are and not a foot closer. And don't laugh in the middle. Laugh at the end. The middle's load-bearing and a laugh in the middle takes the whole thing down.",
    "options": [
     {
      "id": "listen",

@@ -2,7 +2,7 @@
  "npc": "ginny",
  "nodes": {
   "root": {
-   "text": "You're standing in my doorway with your weight on the back foot and your eyes doing the room. That's a guard. That's a man expecting to be hit by architecture.\n\nSit down, Onions. Nothing in here has ever hit anybody who was sitting.",
+   "text": "You're standing in my doorway with your weight on the back foot and your eyes doing the room — left, up, left again, exits.\n\nThat's a guard. That's a man expecting to be hit by architecture.\n\nSit down, Onions. Nothing in here has ever hit anybody who was sitting, and I've been managing this floor eleven years and I'd know, because I'd have filled in the form.",
    "options": [
     {
      "id": "corridor",
@@ -210,7 +210,7 @@
    ]
   },
   "wall": {
-   "text": "Yes.\n\nThat's it. That's the whole answer. Yes, it does that, roughly nine times a night, roughly two seconds a go, and I could set a clock by it except that in this establishment that sentence has a second meaning I'd rather not have opened.",
+   "text": "Yes.\n\nThat's it. That's the whole answer, and I'd rather give you the whole answer in one word than spend nine minutes arriving at it.\n\nYes, it does that. Roughly nine times a night, roughly two seconds a go, and it's been doing it since before I took the floor.\n\nAnd I could set a clock by it — except that in this establishment that sentence has a second meaning I would rather not have opened at half past ten on a Friday.",
    "options": [
     {
      "id": "whats_behind",

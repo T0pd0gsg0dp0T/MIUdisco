@@ -2,7 +2,7 @@
  "npc": "dee",
  "nodes": {
   "root": {
-   "text": "Both of us saw you come in. That's not a boast, it's the difficulty — we saw you come in from the stream and we saw you come in from the stair, and the two accounts don't match, and we've been going round on it since.",
+   "text": "Both of us saw you come in.\n\nThat's not a boast — it would be a poor boast, it's the sort of thing we can do without trying and we'd rather not be congratulated on it.\n\nIt's the difficulty. We saw you come in from the stream, and we saw you come in from the stair, and the two accounts do not match on the timing or on the coat or on whether you stopped to look up at the sky.\n\nAnd we've been going round on it since. Which is unusual. Normally we can settle a thing like this in a minute and a half.",
    "options": [
     {
      "id": "how",

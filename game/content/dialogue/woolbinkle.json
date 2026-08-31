@@ -2,7 +2,7 @@
  "npc": "woolbinkle",
  "nodes": {
   "root": {
-   "text": "It's in. It's been in about four minutes, which is — no, that's fine, that's actually ideal, I put it in when I had the feeling and the feeling was about four minutes ago and here you are, so.\n\nSo that's good. That's a good sign about the feeling.",
+   "text": "It's in. It's been in about four minutes, which is — no. No, that's fine, that's actually ideal, that's exactly where you want it.\n\nI put it in when I had the feeling, and the feeling was about four minutes ago, and here you are. So.\n\nSo that's good. That's a good sign about the feeling, and I'd rather have a good sign about the feeling than not, and I'm aware I've said the word feeling three times now and I'm going to stop.\n\nSit anywhere. Sit near the warm. Not the very back, the very back's near the door and the door does what it does.",
    "options": [
     {
      "id": "feeling",
@@ -304,7 +304,7 @@
    "narration": true
   },
   "poem": {
-   "text": "Yes.\n\nGo on then. You've got the face of a man who's about to do the whole thing at me and I'd honestly rather you did it than sat on it, because sitting on it makes it bigger, and it's already got music.",
+   "text": "Yes.\n\nGo on then.\n\nYou've got the face of a man who's about to do the whole thing at me — the whole forty lines, the cans and the can'ts and the can-can — and I'd honestly rather you did it than sat on it, because sitting on it makes it bigger. It gets bigger in a room. It's been getting bigger in this room for about ten minutes.\n\nAnd it's already got music. Somebody set it to music. So there is genuinely nothing you can do to it that has not already been done to it in three establishments and a school hall.",
    "options": [
     {
      "id": "recite",
