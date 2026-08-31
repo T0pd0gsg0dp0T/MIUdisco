@@ -74,6 +74,9 @@
     },
     "failure_effects": {
      "morale": -3
+    },
+    "bonus_if_clue": {
+     "c_founded_twice": 2
     }
    },
    "effects": {
@@ -239,6 +242,10 @@
       ],
       "source": "the far booth"
      }
+    },
+    "bonus_if_clue": {
+     "c_taken_and_returned": 2,
+     "c_proofing_tick": 2
     }
    }
   },
@@ -580,7 +587,11 @@
      },
      "lucidity": 11
     },
-    "failure_effects": {}
+    "failure_effects": {},
+    "bonus_if_clue": {
+     "c_they_grew_insides": 2,
+     "c_the_glass_refuses_to_stop": 2
+    }
    }
   }
  ],

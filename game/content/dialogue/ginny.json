@@ -181,6 +181,9 @@
        "relationship": {
         "ginny": 1
        }
+      },
+      "bonus_if_clue": {
+       "c_walls_not_parallel": 2
       }
      }
     },

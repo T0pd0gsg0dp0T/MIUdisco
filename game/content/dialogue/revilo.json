@@ -67,7 +67,9 @@
       "kind": "white",
       "bonus_if_clue": {
        "c_silvo_ovlis": 2,
-       "c_interrupted_reversal": 2
+       "c_interrupted_reversal": 2,
+       "c_the_mark_at_the_end": 2,
+       "c_the_obstructive_ones": 2
       },
       "success_text": "\"Letter for letter. Not an anagram — an anagram is a coincidence with good manners. A reversal is an author.\"\n\nHe says it in the exact rhythm you would have said it in, and then he does something with his mouth that is not a smile and is the shape a smile is cut from.\n\n\"Silvo and Ovlis founded that town twice, eleven years apart, on the same plots, and neither charter mentions the other. That was not cleverness. That was a man who could not settle on a name and did not have the discipline to throw the first one away, and the parish has been living in both of them ever since.\n\nI have never thrown anything away. You will have noticed the basket. That is not the same as keeping things, and it has taken me eleven years to learn the difference, and I learned it about four days ago and I am not enjoying it.\"",
       "failure_text": "\"Mm. You have got it round the wrong way, which is funnier than either of us needs tonight.\"\n\nHe lets it sit, and does not correct you, and the not-correcting is a courtesy that costs him something.",
@@ -134,7 +136,9 @@
       "bonus_if_clue": {
        "c_the_unfinished_sentence": 3,
        "c_two_hundred_drafts": 2,
-       "c_no_floor": 2
+       "c_no_floor": 2,
+       "c_inside_his_own_metaphor": 3,
+       "c_he_was_waiting_not_working": 2
       },
       "success_text": "He stops.\n\nIt is the first genuine stop of the evening and it is four full seconds long, and in a room where nothing moves unless it is described, four seconds is an enormous quantity of nothing happening.\n\n\"...Go on,\" he says.\n\n\"You stand at a window that is a wall. You keep a chair for a visitor who is yourself. You have a cup with a ring under it older than the cup and you have never once left this room to get another one, because there is no out there for you to get one in. You are nine feet by eleven and a set of habits, and when I came through that seam your sentence stopped in the middle, because the writing of a man and the being of him cannot happen in the same second — and it stopped on *your* side.\n\nOne of us is standing in a room he can leave.\"\n\nHe looks at the page in the machine for a while.\n\n\"That,\" he says, \"is the argument I have been unable to write down for eleven years, and you have made it in a room with no window, at eleven o'clock at night, on a knee that has been going since March. I would like it on record that I am not angry. I have simply been beaten with my own vocabulary and there is nobody to complain to.\"",
       "failure_text": "\"So am I. Yes.\"\n\nHe says it without a flicker, and it is not a concession, because he has clearly had it for years and filed it.\n\n\"I have known that a great deal longer than you have and it has never once helped. Two drafts in a room is not better than one, it is worse, because now there are two things with no fact underneath them and only one chair that has ever been sat in.\"",
@@ -208,7 +212,9 @@
       },
       "bonus_if_clue": {
        "c_no_floor": 2,
-       "c_two_hundred_drafts": 2
+       "c_two_hundred_drafts": 2,
+       "c_two_hundred_people_holding": 3,
+       "c_unsignalled_kindness": 2
       }
      }
     }
@@ -277,6 +283,10 @@
        "relationship": {
         "revilo": 1
        }
+      },
+      "bonus_if_clue": {
+       "c_carry_it_longer": 3,
+       "c_took_it_off_the_counter": 2
       }
      }
     }
@@ -321,7 +331,10 @@
       "bonus_if_clue": {
        "c_mentioned_less": 3,
        "c_kept_out_of_kindness": 3,
-       "c_bud_holds_the_floor": 2
+       "c_bud_holds_the_floor": 2,
+       "c_a_courtesy_shape": 2,
+       "c_she_writes_what_she_cannot_say": 2,
+       "c_the_glass_refuses_to_stop": 2
       },
       "success_text": "You do not argue. You do the only thing that has ever worked in Silvora Reefs, which is to say things out loud in front of somebody, in order, until they are the case.\n\nMonsieur Albert was not put in a mirror. He was mentioned less, over years, and at each stage there was nothing to object to and no office to object at, and he has been courteous about it for forty years and he asks nothing except to be addressed.\n\nDee Stroii was described, and the description stopped, and started again better, and the first one was left in — not by accident. By somebody who could not take it out. He has been the leftover draft of a man for nineteen years and he would rather that than the alternative and he thinks about the alternative most nights.\n\nBud Onkuhdonk says 'it's a light well' out loud every morning of his life because the one year he did not, a floor went, with four guests on it. He is holding up a building with his mouth and he has never told the innkeeper because the innkeeper sleeps well.\n\nWoolbinkle has canned forty things in eleven years and every one of them has held, in a town where nothing holds, and he did it because he did one unforgivable thing once and has been making sure nothing else got loose ever since.\n\n\"You did not put insides in them,\" you say. \"They grew them. In the gaps. While you were busy.\"\n\nHe has both hands flat on the desk, which is what Ben does, which is what a man does when he needs to be kept where he is.",
       "failure_text": "You start to list them and it comes out as a list.\n\nNames, and facts about names, and the facts are all correct and none of them arrives as a person, and about four names in you can hear it happening and cannot stop it, and he lets you finish, courteously, which is the worst possible response.\n\n\"Yes,\" he says. \"That is what I have as well. A list. I have had it for eleven years and I have never once been able to get anybody out of it.\"",
@@ -432,7 +445,10 @@
       "bonus_if_clue": {
        "c_recommend_company": 3,
        "c_the_shim": 3,
-       "c_two_hundred_drafts": 2
+       "c_two_hundred_drafts": 2,
+       "c_he_was_waiting_not_working": 3,
+       "c_the_gap_is_maintained": 2,
+       "c_built_for_someone_who_cannot_go_out": 2
       },
       "success_text": "\"I know,\" you say. \"You have been very bad at hiding it.\n\nThe shim in the trestle is a form you kept somewhere dry for eleven years, and the desk is not holding the shim up, the desk is holding the shim *in*, and you have refused to have the leg mended by a man who has offered every year.\n\nThe drafts in that basket are dated. Eleven years apart at the bottom and four days apart at the top. That is not a writer's block. That is somebody finding one more thing to do.\n\nAnd the earliest ones call me the tenant. And the last one calls me Ols, which is what a man calls me who drove down to a slipway at four in the morning.\"\n\nHe has not turned round from the wall.\n\n\"I did not think anybody was going to read the basket,\" he says. \"That is the whole of my defence and it is not a good one.\"",
       "failure_text": "\"I know. You have kept me alive.\"\n\nIt comes out flat and it comes out as a receipt, and he takes it as a receipt, and says \"Thank you\" to a wall in a tone that closes the subject for good.",

@@ -158,6 +158,10 @@
     "failure_effects": {
      "health": -3,
      "lucidity": 4
+    },
+    "bonus_if_clue": {
+     "c_the_mark_at_the_end": 2,
+     "c_opposite_partings": 2
     }
    },
    "effects": {
@@ -388,7 +392,11 @@
      },
      "lucidity": 12
     },
-    "failure_effects": {}
+    "failure_effects": {},
+    "bonus_if_clue": {
+     "c_she_writes_what_she_cannot_say": 2,
+     "c_drafts_of_you": 2
+    }
    }
   }
  ],

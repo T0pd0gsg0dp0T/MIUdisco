@@ -91,6 +91,10 @@
        "relationship": {
         "woolbinkle": 2
        }
+      },
+      "bonus_if_clue": {
+       "c_you_did_not_pick_one": 2,
+       "c_wall_is_the_town": 2
       }
      }
     },
@@ -144,6 +148,10 @@
         "woolbinkle": 2
        },
        "morale": -5
+      },
+      "bonus_if_clue": {
+       "c_two_hundred_people_holding": 2,
+       "c_twenty_two_forms": 2
       }
      }
     },

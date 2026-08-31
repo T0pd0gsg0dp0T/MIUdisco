@@ -378,7 +378,11 @@
       "bud": 2
      }
     },
-    "failure_effects": {}
+    "failure_effects": {},
+    "bonus_if_clue": {
+     "c_worn_boards_beside_it": 2,
+     "c_took_it_off_the_counter": 2
+    }
    }
   },
   {

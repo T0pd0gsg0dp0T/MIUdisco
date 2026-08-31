@@ -326,6 +326,10 @@
       ],
       "source": "the Can't Elope Antelope"
      }
+    },
+    "bonus_if_clue": {
+     "c_something_on_this_wall": 2,
+     "c_inside_his_own_metaphor": 2
     }
    }
   },
@@ -386,7 +390,11 @@
      "lucidity": 13,
      "morale": -4
     },
-    "failure_effects": {}
+    "failure_effects": {},
+    "bonus_if_clue": {
+     "c_the_mark_at_the_end": 2,
+     "c_t_has_no_rest": 2
+    }
    }
   }
  ],

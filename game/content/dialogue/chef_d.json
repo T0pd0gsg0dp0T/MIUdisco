@@ -62,6 +62,10 @@
        "relationship": {
         "chef_d": 1
        }
+      },
+      "bonus_if_clue": {
+       "c_interrupted_reversal": 2,
+       "c_drafts_of_you": 2
       }
      }
     },

@@ -307,7 +307,11 @@
       "woolbinkle": 1
      }
     },
-    "failure_effects": {}
+    "failure_effects": {},
+    "bonus_if_clue": {
+     "c_worn_boards_beside_it": 2,
+     "c_trolley_loaded_with_nothing": 2
+    }
    }
   },
   {
@@ -368,7 +372,11 @@
      },
      "lucidity": 11
     },
-    "failure_effects": {}
+    "failure_effects": {},
+    "bonus_if_clue": {
+     "c_changed_for_the_rhyme": 2,
+     "c_two_hundred_people_holding": 2
+    }
    }
   },
   {
@@ -429,7 +437,11 @@
      "lucidity": 11,
      "morale": 6
     },
-    "failure_effects": {}
+    "failure_effects": {},
+    "bonus_if_clue": {
+     "c_you_did_not_pick_one": 2,
+     "c_they_grew_insides": 2
+    }
    }
   }
  ],

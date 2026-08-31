@@ -210,6 +210,10 @@
        "relationship": {
         "albert": 1
        }
+      },
+      "bonus_if_clue": {
+       "c_you_did_not_pick_one": 2,
+       "c_wall_is_the_town": 2
       }
      }
     },
@@ -307,6 +311,9 @@
        "relationship": {
         "albert": 1
        }
+      },
+      "bonus_if_clue": {
+       "c_the_building_is_empty": 2
       }
      }
     },

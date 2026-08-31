@@ -311,6 +311,10 @@
     },
     "failure_effects": {
      "morale": -5
+    },
+    "bonus_if_clue": {
+     "c_unsignalled_kindness": 2,
+     "c_they_grew_insides": 2
     }
    }
   },

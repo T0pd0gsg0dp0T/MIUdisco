@@ -239,6 +239,10 @@
        "relationship": {
         "darek": 2
        }
+      },
+      "bonus_if_clue": {
+       "c_worn_boards_beside_it": 2,
+       "c_trolley_loaded_with_nothing": 2
       }
      }
     },
@@ -392,6 +396,10 @@
        "relationship": {
         "darek": 1
        }
+      },
+      "bonus_if_clue": {
+       "c_three_pages": 2,
+       "c_stopped_when_you_surfaced": 2
       }
      }
     },

@@ -105,6 +105,10 @@
        "relationship": {
         "t": 1
        }
+      },
+      "bonus_if_clue": {
+       "c_never_worked_on_you": 2,
+       "c_she_writes_what_she_cannot_say": 2
       }
      }
     },

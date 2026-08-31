@@ -58,6 +58,10 @@
        "relationship": {
         "bud": 1
        }
+      },
+      "bonus_if_clue": {
+       "c_trolley_loaded_with_nothing": 2,
+       "c_took_it_off_the_counter": 2
       }
      }
     },

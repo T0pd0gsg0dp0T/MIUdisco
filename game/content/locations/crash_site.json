@@ -360,6 +360,10 @@
     },
     "failure_effects": {
      "exhaustion": 1
+    },
+    "bonus_if_clue": {
+     "c_three_legible_pages": 2,
+     "c_ink_and_callus": 2
     }
    }
   }

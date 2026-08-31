@@ -387,6 +387,10 @@
     },
     "failure_effects": {
      "exhaustion": 1
+    },
+    "bonus_if_clue": {
+     "c_everyone_has_your_voice": 2,
+     "c_t_has_no_rest": 2
     }
    }
   },
@@ -549,7 +553,11 @@
      "lucidity": 14,
      "morale": 8
     },
-    "failure_effects": {}
+    "failure_effects": {},
+    "bonus_if_clue": {
+     "c_kept_out_of_kindness": 2,
+     "c_holding_is_possible": 2
+    }
    }
   }
  ],

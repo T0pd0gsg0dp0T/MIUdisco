@@ -253,6 +253,10 @@
         "wino_t": 1,
         "albert": 1
        }
+      },
+      "bonus_if_clue": {
+       "c_say_it_first": 2,
+       "c_not_taken_back": 2
       }
      }
     },

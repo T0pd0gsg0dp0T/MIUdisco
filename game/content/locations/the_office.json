@@ -84,6 +84,10 @@
     },
     "failure_effects": {
      "morale": -4
+    },
+    "bonus_if_clue": {
+     "c_somebody_to_have_lost": 2,
+     "c_not_yet_been_put": 2
     }
    }
   },
@@ -150,7 +154,11 @@
      },
      "lucidity": 10
     },
-    "failure_effects": {}
+    "failure_effects": {},
+    "bonus_if_clue": {
+     "c_the_glass_refuses_to_stop": 2,
+     "c_shimmed_with_a_person": 2
+    }
    }
   },
   {
@@ -210,7 +218,11 @@
      },
      "lucidity": 9
     },
-    "failure_effects": {}
+    "failure_effects": {},
+    "bonus_if_clue": {
+     "c_kept_out_of_kindness": 2,
+     "c_holding_is_possible": 2
+    }
    }
   },
   {
@@ -323,7 +335,11 @@
      },
      "lucidity": 12
     },
-    "failure_effects": {}
+    "failure_effects": {},
+    "bonus_if_clue": {
+     "c_the_shim": 2,
+     "c_just_got_up": 2
+    }
    }
   },
   {
@@ -375,7 +391,11 @@
      },
      "lucidity": 13
     },
-    "failure_effects": {}
+    "failure_effects": {},
+    "bonus_if_clue": {
+     "c_something_on_this_wall": 2,
+     "c_room_of_measure": 2
+    }
    }
   }
  ],

@@ -376,7 +376,10 @@
      },
      "lucidity": 9
     },
-    "failure_effects": {}
+    "failure_effects": {},
+    "bonus_if_clue": {
+     "c_town_agreement": 2
+    }
    }
   }
  ],

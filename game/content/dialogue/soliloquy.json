@@ -451,6 +451,10 @@
        "relationship": {
         "soliloquy": 1
        }
+      },
+      "bonus_if_clue": {
+       "c_unsettled_name": 2,
+       "c_profession_followed_name": 2
       }
      }
     },

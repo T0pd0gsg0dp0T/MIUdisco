@@ -49,6 +49,10 @@
        "relationship": {
         "dee": 2
        }
+      },
+      "bonus_if_clue": {
+       "c_wall_is_the_town": 2,
+       "c_unsignalled_kindness": 2
       }
      }
     },
@@ -99,6 +103,9 @@
        "relationship": {
         "dee": 2
        }
+      },
+      "bonus_if_clue": {
+       "c_remembering_not_knowing": 2
       }
      }
     },
