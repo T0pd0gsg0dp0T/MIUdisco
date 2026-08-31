@@ -46,7 +46,7 @@
       "kind": "white",
       "success": "root",
       "failure": "root",
-      "success_text": "You are standing and moving before the sentence she is building has finished being built, and you are through the door on the beat where the music changes, which is the only beat on which anybody leaves this room unremarked.\n\nFrom the corridor, briefly, you hear her say — to nobody, in a completely different voice — \"Well. *He* knows how to leave.\"",
+      "success_text": "You are standing and moving before the sentence she is building has finished being built — not rudely, not visibly, but on the half-beat before a conversation acquires its next turn — and you are through the door on the beat where the music changes.\n\nWhich is the only beat on which anybody leaves this room unremarked, and you did not work that out, and some part of you has clearly worked it out before.\n\nFrom the corridor, briefly, over the change in the music, you hear her say — to nobody, in a completely different voice from the one she uses on people:\n\n\"Well. *He* knows how to leave.\"\n\nAnd then, after a pause, quieter, and not to nobody: \"Where'd he learn that.\"",
       "failure_text": "You go to leave and the room does what the room does.\n\nThe music holds. The conversation acquires one more turn — a small one, easily declined, which you do not decline — and you take the turn, and somebody says something to you on the way past that requires an answer.\n\nBy the time you are through the door you have been seen leaving by everybody who was going to see it.",
       "success_effects": {
        "clue": {

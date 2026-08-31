@@ -42,7 +42,7 @@
       "kind": "white",
       "success": "root",
       "failure": "root",
-      "success_text": "You go at her pace and something in you supplies the words before the rest of you has been consulted, and they are not words you know.\n\nShe serves it. It is right. The queue does not break stride, and Mary looks at you for exactly as long as it takes to hand it over, which is the longest she has looked at anybody all night.",
+      "success_text": "You go at her pace, which is not a pace you have ever gone at — and something in you supplies the words before the rest of you has been consulted about them, and they are not words you know.\n\nShe serves it.\n\nIt is right. It is exactly right, it is the thing you would have chosen if you had known it was available, and it arrives in about four seconds with the queue moving behind you the entire time.\n\nAnd Mary looks at you. For exactly as long as it takes to hand the cup over — which is the longest she has looked at anybody all night, and which is not a long time, and which from a woman who is half-shut and never asleep is a considerable expenditure.\n\n\"Yeah,\" she says. \"Thought so.\"",
       "failure_text": "You go at her pace and produce a sound.\n\nShe waits — at her speed, which is a very fast kind of waiting and involves not moving at all — and then serves you the thing that people who make that sound get, which arrives in about four seconds and is perfectly fine, and which is not what you were trying to order.",
       "success_effects": {
        "clue": {

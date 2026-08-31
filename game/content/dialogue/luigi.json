@@ -36,7 +36,7 @@
       "kind": "white",
       "success": "root",
       "failure": "root",
-      "success_text": "You take it and you do the arc — one pass, no lift, the wrist doing the turn at the bottom — and the glass behind it stops arguing with the room.\n\nLuigi watches the whole pane without speaking, which he has not done since you met him. \"Ey,\" he says, when it is finished. \"You have done this. Not a floor. Something else. But you have done *this*.\"",
+      "success_text": "You take it and you do the arc — one pass, no lift, the wrist doing the turn at the bottom of the stroke without being told to — and the glass behind it stops arguing with the room.\n\nLuigi watches the whole pane without speaking.\n\nHe has not done that since you met him. He has commentary for everything, in two languages, at all times, and for the length of one pane of glass he has none.\n\n\"Ey,\" he says, when it is finished. He takes the squeegee back and looks at it, and then at the pane, and then at you.\n\n\"You have done this. Not a floor. Something else. But you have done *this*, my friend, and you have done it for years, and nobody does that wrist by accident.\"",
       "failure_text": "You take it and you do something that is technically a wipe.\n\nLuigi does not take it back. Taking it back would be a kindness and he has decided against kindness in favour of instruction: he watches the whole pane, and he offers advice, and the advice is entirely about the elbow.\n\nThe pane ends up worse than it started. He looks at it for a while and says nothing at all, which is the most eloquent thing that has happened this evening.",
       "success_effects": {
        "clue": {

@@ -39,7 +39,7 @@
       "kind": "white",
       "success": "root",
       "failure": "root",
-      "success_text": "He does, and it is not from any of the bottles, and he pours two.\n\nHalfway down he says, to the bar rather than to you, that he has been closing this room every night for eleven years and has never once been the last to leave it, and that he has stopped wondering who else is still in here.",
+      "success_text": "He does, and it is not from any of the bottles on that shelf, and it does not come from under the counter either, and he pours two.\n\nHalfway down his own, to the bar rather than to you, at a volume that would not carry past the near chair:\n\nHe has been closing this room every night for eleven years. Locking the door, killing the lights, doing the till.\n\nAnd he has never once been the last to leave it.\n\nHe says that flatly, the way a man says a thing he has decided to stop arranging into a joke — and then he says that he stopped wondering who else is still in here about four years ago, and that stopping was a decision, and that it was the right one and he would make it again.",
       "failure_text": "\"You don't want that,\" he says.\n\nAnd he pours you something excellent instead — genuinely excellent, better than the thing you asked for by any measure a bar can apply — and moves down to the fade at the end where the light gives out.\n\nThe conversation ends there, with great courtesy, on the beat, and there is no version of the evening in which it starts again.",
       "success_effects": {
        "clue": {

@@ -39,7 +39,7 @@
       "kind": "white",
       "success": "root",
       "failure": "root",
-      "success_text": "He shows you — headspace, pressure, the quarter-turn at the end — and lets you do one, and you do it correctly, and the can holds.\n\n\"Right,\" he says, and takes it, and writes on the label in a hand that is not steady: *the night somebody helped*. Then he puts it on the shelf with the others and does not look at it again.",
+      "success_text": "He shows you — headspace, pressure, the quarter-turn at the end that nobody would guess at — and then he stands back and lets you do one.\n\nYou do it correctly. The seal takes. The can holds.\n\n\"Right,\" he says. He takes it off you with both hands, the way he takes everything off everybody, and he turns it and writes on the label in a hand that is not steady: *the night somebody helped.*\n\nThen he puts it on the shelf with the others, at the near end, and squares it up with the one beside it.\n\nAnd does not look at it again for the rest of the evening, which takes visible effort, and which he manages.",
       "failure_text": "He shows you and you do it and the seal fails, audibly, and whatever was going into that can is now going into the room instead. He is not angry. He is *quick* — a second can, a proper seal, four seconds flat — and he does not explain what he just caught.",
       "success_effects": {
        "clue": {

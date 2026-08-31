@@ -44,7 +44,7 @@
       "kind": "white",
       "success": "root",
       "failure": "root",
-      "success_text": "You keep your face out of it entirely and let him run the whole explanation again, and you do not help him, and you do not nod.\n\nThe second telling is nine words shorter and one of the nine is 'contracted'. He notices that you noticed. He does not mind, particularly, and he pours you something.",
+      "success_text": "You keep your face entirely out of it and let him run the whole explanation again, and you do not help him, and you do not nod, and you do not do the small encouraging noise that a listener makes without knowing they are making it.\n\nThe second telling is nine words shorter. One of the nine is 'contracted'.\n\nHe notices that you noticed. He stops halfway through a sentence, looks at you for a moment with something that is not quite offence, and then decides in your favour.\n\n\"Mm,\" he says. \"Yes. It goes down each time and I have never had it go down in front of a witness before.\" And he pours you something, from a bottle that lives behind the charts, and does not offer an explanation of the bottle either.",
       "failure_text": "He gets four sentences in — and they are good sentences, they are going somewhere, the charts are already coming off the shelf — and then something crosses your face.\n\nHe stops. He adjusts. And what you get instead is the version for a man who is having difficulty: warmer, considerably shorter, delivered with a hand on your shoulder, and with nothing whatsoever in it.",
       "success_effects": {
        "clue": {
@@ -86,7 +86,7 @@
       "skill": "SAVOIR_FAIRE",
       "dc": 12,
       "kind": "white",
-      "success_text": "You have the notebook out before he finishes and you get it, in full, in your own hand — and the writing holds. You read it back. It is nine words long. It was four minutes long when he said it, and the nine words are: *a corridor is a service and services scale down.* That is not a summary. That is what survived.",
+      "success_text": "You have the notebook out before he has finished, and you get it — in full, in your own hand, every clause, and the writing holds while you write it.\n\nYou read it back.\n\nIt is nine words long.\n\nIt was four minutes long when he said it. You were there. You listened to the whole of it and followed the whole of it and the four minutes were not padding — and the nine words are: *a corridor is a service and services scale down.*\n\nThat is not a summary. A summary is something you make. Nobody made this. That is what survived, and the rest did not go into the notebook and did not stay in the room and is not anywhere now.",
       "failure_text": "You have the notebook out before he has finished the sentence, and you get the first clause down cleanly.\n\nThe second clause is gone by the time the pencil reaches the place it should go. Not forgotten — *gone*, the way a word is gone when the room has decided you did not hear it — and the pencil goes on moving across the page for a while afterwards out of pure politeness, making the shapes of a sentence that is no longer available.",
       "success": "write_it_ok",
       "failure": "corridor",

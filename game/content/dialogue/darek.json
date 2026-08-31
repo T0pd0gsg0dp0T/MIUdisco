@@ -38,7 +38,7 @@
       "kind": "white",
       "success": "root",
       "failure": "root",
-      "success_text": "He looks at you for a while and then makes it, and it is not on the board.\n\nIt tastes of a specific afternoon that is not yours, in a kitchen with the window open, and somebody in the next room is typing. When it is gone the taste goes with it completely, the way a name goes.",
+      "success_text": "He looks at you for a while — properly, without the drawl in it, with the cloth still in his hand — and then he makes it, and it is not on the board and it never has been.\n\nIt tastes of a specific afternoon that is not yours. A kitchen with the window open. Warm. Somebody in the next room is typing, unhurried, four or five strikes and a pause and a return, and somebody nearer is not talking and does not need to be.\n\nWhen it is gone the taste goes with it completely — not fading, *gone*, the way a name goes when you have had it a second ago and now do not.\n\nDarek does not ask what it was. Darek has never once asked what any of them were.",
       "failure_text": "\"I would not sell you that,\" he says.\n\nAnd he makes you the second-best thing instead, without being asked and without any apparent resentment — and the second-best thing is superb, and tastes of nothing whatever but itself, which under the circumstances is a small betrayal and is meant kindly and lands as neither.",
       "success_effects": {
        "clue": {

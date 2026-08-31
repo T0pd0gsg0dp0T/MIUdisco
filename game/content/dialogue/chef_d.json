@@ -42,7 +42,7 @@
       "kind": "white",
       "success": "root",
       "failure": "root",
-      "success_text": "She tells you and you do it, and the plates go out at the pace they go out at, and nothing is dropped.\n\nAt the end of it she says *shhhk* at the pan, approvingly, and tells you that you plate like somebody who has been fed by somebody who cared, which is not the same as somebody who can cook, and is a much rarer thing to be.",
+      "success_text": "She tells you and you do it — the pass, the plates, the order they go out in — and the plates go out at the pace they go out at, which is not a pace you would have believed from the front of house, and nothing is dropped.\n\nAt the end of it she says *shhhk* at the pan, approvingly, at nobody.\n\nAnd then she tells you that you plate like somebody who has been fed by somebody who cared.\n\nWhich is not the same as somebody who can cook. She is specific about that, and she is specific in a kitchen at the end of a service with her hands still going: it is a much rarer thing to be, and it cannot be learned afterwards, and she can tell inside four plates.",
       "failure_text": "She tells you and you do most of it, and you do most of it adequately, and one plate goes down badly.\n\nShe has it rebuilt before it has finished going down badly — the whole thing, replated, from a pan you did not see her reach for.\n\n\"Shit,\" she says, kindly and immediately, meaning sit, and there is food in front of you inside a minute and no further reference to the plate at any point that evening.",
       "success_effects": {
        "clue": {

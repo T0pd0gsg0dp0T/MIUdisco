@@ -39,7 +39,7 @@
       "kind": "white",
       "success": "root",
       "failure": "root",
-      "success_text": "He is not standing under the light well. He is standing beside it, exactly, at the edge of where it would come down — and the floor there has been worn to a different colour in the shape of a man standing.\n\nHe has stood in that spot, every day, for long enough to wear the boards, and it is the one place in this room the thirty feet of sky is not above.",
+      "success_text": "He is not standing under the light well.\n\nHe is standing *beside* it — precisely beside it, at the exact edge of where it would come down if it came down, with about four inches of clearance he has never once encroached on.\n\nAnd the floor there has been worn to a different colour in the shape of a man standing: two patches, shoulder-width, deeper at the heel.\n\nHe has stood in that spot every working day for long enough to take the finish off oak. It is the one place in this room that thirty feet of indoor sky is not above, and he found it without a plan and without a survey, and he could not tell you he had found it.",
       "failure_text": "BUT it's a light well, he says — and you look up at it rather than at him, which is precisely what the sentence is for and precisely what it is engineered to achieve.\n\nAnd it works. Thirty feet of indoor weather does what thirty feet of indoor weather does, and by the time your eyes come down he has moved four feet along the rail and is being helpful at somebody else.",
       "success_effects": {
        "clue": {
@@ -178,7 +178,7 @@
       "skill": "LOGIC",
       "dc": 12,
       "kind": "white",
-      "success_text": "\"BUT from the— from the—\"\n\nHe points up. His arm gets about halfway and he watches it going and brings it back down and puts the hand back on the brass rail where it lives.\n\n\"From above,\" he says. \"Leaks come from above. That's the whole of what I know about leaks and I've been leaning on it for nine years and I would very much appreciate it if you'd let me keep it.\"",
+      "success_text": "\"BUT from the— from the—\"\n\nHe points up. The arm gets about halfway and then he watches it going, from the outside, the way a man watches his own hand do something he did not authorise — and he brings it back down and puts it on the brass rail where it lives.\n\nBoth hands on the rail now. That is new.\n\n\"From above,\" he says. \"Leaks come from above. That's the whole of what I know about leaks and I've been leaning on it for nine years and it has held me up the entire time.\n\nAnd I would very much appreciate it, sir, if you'd let me keep it.\"",
       "failure_text": "\"BUT from ABOVE. Where else. Where else does water come from, in a building, when it's coming down.\"\n\nAnd that is, infuriatingly, an argument. It is a complete argument with a premise and a conclusion, and it is unanswerable, and he is holding the trolley rail while he makes it.",
       "success": "root",
       "failure": "root",

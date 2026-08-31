@@ -30,7 +30,7 @@
       "kind": "white",
       "success": "root",
       "failure": "root",
-      "success_text": "You use the name once and look at the space between them while you do it, and you do not favour either, and you do not apologise for the arrangement.\n\nBoth of them answer. At the same time. In the same words — and then stop, at the same time, and one of them says: \"Nobody does that. Everybody picks one. You did not pick one.\"",
+      "success_text": "You use the name once, and you look at the space between them while you do it, and you do not favour either of them, and you do not apologise for the arrangement or acknowledge that there is one.\n\nBoth of them answer.\n\nAt the same time. In the same words. And then both stop, at the same time, on the same syllable — which is not something they have done all evening, because they have been finishing each other's sentences from opposite ends of a lounge and enjoying it.\n\nOne of them says: \"Nobody does that.\"\n\nAnd the other one says: \"Everybody picks one. You did not pick one.\" And they look at each other across eighteen feet of indoor weather and neither of them says anything else for a while.",
       "failure_text": "You address one of them, because a man addresses a man, and the other one goes very slightly out of focus for the rest of the conversation, and it is not clear that either of them minds, and it is extremely clear that one of them noticed.",
       "success_effects": {
        "clue": {
