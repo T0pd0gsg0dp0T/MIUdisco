@@ -3,16 +3,18 @@
  "name": "Chef D.'s Lishush Mush",
  "subtitle": "Everything soft. Nothing simple.",
  "description": "The name is the menu and the menu is a pronunciation guide. Chef Delilah Rishrush has no teeth and has never regarded this as a limitation, and the whole establishment is built on the proposition that texture is the least interesting thing food can offer.\n\nInside, the room is exactly the right size. It is exactly the right size when there are two diners and it is exactly the right size when there are thirty, and nobody has ever had to wait and nobody has ever eaten in an echo. The walls are a colour that changes its mind about being a colour. There are eleven tables tonight. You have counted eleven every time and you have never seen the same eleven.\n\nAnd the air. Somebody has done something to the air in here, and what they have done to it is: it tastes.",
- "revisit": "Chef D. has your order going before the door has finished. She does not look up. She says something to the pan that is mostly onomatopoeia and entirely instructions, and the pan does it.",
+ "revisit": "Chef D. has your order going before the door has finished swinging. She does not ask what you want and she has never asked what you want, and in eleven years she has not once been wrong about it, and the one time you tried to order something else she made that as well and put both down and said nothing about it.\n\nThe pass is loud. T is doing something at the far end that involves a great deal of knife and no visible attention. The extraction fan is running, and it will go quiet in a moment, and neither of them will remark on that either.",
  "lucid": {
   "2": "The onomatopoeia she cooks by is not describing the food. It is keeping time with something.",
   "3": "Under the extraction fan there is a sound with pauses in it, and Chef D. cooks in the pauses and rests in the striking.",
   "4": "She is not cooking to a rhythm. She is cooking in the gaps, the way a person talks in the gaps when somebody else is talking."
  },
  "ambient": [
-  "A diner puts down a spoon, looks at the middle distance for four seconds with an expression of complete and specific grief, picks the spoon back up, and finishes the bowl.",
-  "T comes out of the kitchen, delivers eleven seconds of soliloquy on the subject of celeriac, and returns. A ladle stays up for a moment after he has gone.",
-  "The colour of the wall commits to being green, thinks better of it, and goes back to the previous arrangement."
+  "A diner puts down a spoon, looks at the middle distance for four seconds with an expression of mild and pleasant recognition, and picks the spoon back up. Whatever arrived was not unwelcome. Whatever arrived was also not theirs.",
+  "T comes out of the kitchen, delivers eleven seconds of soliloquy on the subject of a root vegetable to a room that is largely eating, receives no response whatsoever, and goes back in entirely satisfied.",
+  "The colour of the wall commits to being green, thinks better of it, and settles on something it can defend at a committee. Nobody in the room looks up. The couple nearest the wall go on with their conversation against a colour that is now three shades warmer than the one they sat down in front of.",
+  "Chef D. laughs at something T says through the pass. It is a big unguarded laugh from a face with nothing behind it to protect, and it stops the room for about a second, and the room is glad of it.",
+  "Something on the stove says *shhhk*, once, and Chef D. moves toward it without looking, arriving exactly when she needs to."
  ],
  "objects": [
   {
@@ -25,7 +27,7 @@
     "dishes"
    ],
    "description": "Hand-lettered, laminated, and — the establishment's central and only complaint — unstable.\n\nYou read: TOMORROW'S MEMORIES SEARED IN YESTERDAY'S REGRETS. You order it. What arrives is described by the person carrying it as something else entirely, in a different register, with a different number of words. You go back to the menu to establish which of you is wrong and the menu is on your side of the argument in a way that makes it clear you have misremembered.\n\nThis has happened to every diner in this room and it is not discussed, in the way that a thing which happens to everybody and can be checked by nobody is not discussed.",
-   "repeat": "You have started reading it aloud, quietly, as a control. It does not help. It changes anyway and you cannot swear to what you said.",
+   "repeat": "You have started reading it aloud, quietly, as a control. It does not help. The words come out of your mouth in one order and are on the card in another by the time your eye returns to them, and the laminate is unmarked, and the lettering is unmistakably hand-done.",
    "monocle": "Through the gold the menu is a list of eleven dishes and it is completely stable. Every one is crossed out. Underneath, in a hand that is not Chef D.'s and is not steady, somebody has written eleven replacements — and then crossed those out too, and then written the first eleven back.",
    "passive": [
     {
@@ -70,7 +72,7 @@
     "skill": "REACTION_SPEED",
     "dc": 11,
     "kind": "white",
-    "prompt": "Your account of the menu is revised while you are not looking at it. Look back before the revision finishes.",
+    "prompt": "Your account of the menu is being revised while you are not looking at it, which means the revision has to happen in the gap. Catch the gap. Look away and back faster than the revision can be made.",
     "success": "You catch the tail of it. For a quarter of a second the laminate holds two dish names in the same place, one fading under the other, and the one fading is the one you read and the one arriving is the one you will remember reading.\n\nThe correction is not on the menu. It is on you, and you have just watched it be applied.",
     "failure": "TOMORROW'S MEMORIES SEARED IN YESTERDAY'S REGRETS. You look away and back and it says something else and has always said something else, and the something else is not interesting.",
     "success_effects": {
@@ -101,7 +103,7 @@
     "food"
    ],
    "description": "It arrives without being ordered, as it has arrived without being ordered every time, and Chef D.'s position on this — delivered toothlessly, warmly, and without any apparent sense that it needs defending — is that a man named Onions who has not been given onions has been failed by his restaurant.\n\nIt is soft. Everything here is soft. It is also, and this is not a matter of opinion, extraordinary — the liver tastes of something that has no business being a taste, something in the region of a long afternoon in a house where somebody is painting.\n\nThe onions are arranged on the top. They arrange themselves further while you look at the plate. Round, and evenly spaced, in four short rows.",
-   "repeat": "Four rows again. You have started counting the rounds in each row and the counts are 10, 9, 7, and a long one at the bottom.",
+   "repeat": "Four rows again. You have started counting the rounds in each row before you pick up the fork, the way a man checks a stair he already knows will hold, and it has been ten, nine, seven and a long one every single time.",
    "lucid": {
     "2": "Four rows. Ten, nine, seven, and a long one at the bottom that your thumb wants to press.",
     "4": "It is a keyboard. It has been a keyboard every time, on your plate, in front of you, going cold while you failed to look at it."
@@ -152,7 +154,7 @@
     "skill": "REACTION_SPEED",
     "dc": 11,
     "kind": "white",
-    "prompt": "The onions rearrange while you look at them. Look faster than they rearrange.",
+    "prompt": "The onions rearrange while you look at them, which means they do not rearrange while you look at them. Look faster than the rearrangement, and do not blink at the wrong moment.",
     "success": "You catch it mid-move. Ten, nine, seven and a long one — and for the half-second before it settles, the arrangement is *not* four rows of onions. It is four lines of type, set and waiting, and one of the lines is longer than the others because it has a name in it.\n\nThen it is onions, and it is very good, and the plate is warm.",
     "failure": "Ten, nine, seven, and a long one. You look away and back and it is ten, nine, seven, and a long one, and the rearranging happens exactly and only in the place where you are not.",
     "success_effects": {
@@ -183,7 +185,7 @@
     "clipboard"
    ],
    "description": "Antopolis Ficklefuk comes on Thursdays and he has come on Thursdays for nine years and he keeps the most meticulous records in Silvora Reefs.\n\nThe file lives in a wire rack by the door because the regulations say it must be available for inspection, and nobody has ever inspected it except you, and you have now done so four times.\n\nThe observations column is exhaustive. *Room dimension at 1904h: 6.2m. Room dimension at 1911h: 9.4m. No structural work observed.* *Dish served under name not appearing on menu. Menu subsequently correct.* *Utensil aloft, unsupported, 4s, kitchen.*\n\nThe findings column, on every page, for nine years, says: NO MATTERS ARISING.",
-   "repeat": "Two new Thursdays. Utensil aloft, six seconds. Diner reports tasting a colour. No matters arising.",
+   "repeat": "Two new Thursdays on the file. Utensil aloft, six seconds. Diner reports temporal displacement, mild, no complaint. Signed, dated, filed, and the file goes back behind the pass where anybody could read it and nobody ever has.",
    "monocle": "Through the gold, NO MATTERS ARISING is a stamp and not a signature, and the stamp has four lobes, and it has been applied to the findings column *before* the observations column was filled in. The ink of the finding is under the ink of the observation on every page for nine years.",
    "passive": [
     {
@@ -230,7 +232,7 @@
     "skill": "SAVOIR_FAIRE",
     "dc": 11,
     "kind": "white",
-    "prompt": "The file is behind the pass and the kitchen is busy. Have the last nine years of it without anybody watching you have it.",
+    "prompt": "The file is behind the pass and the kitchen is busy and Chef D. is entirely capable of noticing a man going where he should not. Get to it without being the sort of guest who gets to it.",
     "success": "There is a half-second every ninety seconds when the pass is loud and nobody is facing the shelf. You take it in that half-second and read it standing up and put it back in the next one.\n\nNine years. Every findings column reads NO MATTERS ARISING — and on the last page, this Thursday, in a different hand: *matters arising*, lower case, unstamped, unfinished.",
     "failure": "You get the file off the shelf and Chef D. says your name — the one she uses, which is 'love' — from four feet away without turning round, and asks whether you are hungry, and you put it back and say yes.",
     "success_effects": {
@@ -264,14 +266,14 @@
     "special"
    ],
    "description": "It is on the menu and it is on the menu at every establishment in Silvora Reefs that has ever wanted to annoy Woolbinkle, which is all of them.\n\nHere it is served in a bowl, soft, pale, and it is the only dish in the room that arrives looking different to each person at the table. You have watched this happen. Four diners, one dish, four honest descriptions, no two overlapping, and a general table-wide agreement afterwards that it had been very good.\n\nChef D. will tell you, if you ask, that she does not know what is in it. She will tell you this cheerfully and it is not a joke and it does not trouble her. Her position is that she cooks it correctly and the ingredients are between the dish and the diner.",
-   "repeat": "Different again. You are getting better at not describing it, which is the only skill this dish rewards.",
+   "repeat": "Different again. You are getting better at not describing it to yourself while it is in front of you, which helps, and which is the most disquieting sentence you have formed this week.",
    "monocle": "Through the gold, the bowl contains one word, and the word is CANNED, and it has been canned.",
    "check": {
     "id": "lishush:antelope:eat",
     "skill": "ELECTROCHEMISTRY",
     "dc": 11,
     "kind": "red",
-    "prompt": "Eat it. Everything in this room has been extraordinary and none of it has hurt anybody, and that is a sentence with a shape you have started to distrust.",
+    "prompt": "Eat it. Everything in this room has been extraordinary and this is the thing the room is named for, and there is no version of tonight in which you leave without having tried it.",
     "success": "Soft. Warm. And then a taste that is not a taste but a *held note*, low, sustained, the way an organ holds a chord under a hymn — and while the note is held, a great deal of Silvora Reefs is briefly available to you at once, the way a town is available from a hill.\n\nYou are aware of Rest Assured, and the count of its vaults, which is nineteen. You are aware of Darek's back hallway, which is eleven feet. You are aware of a small room with a green lamp in it, which is nine by eleven, and which is not in Silvora Reefs, and which is nonetheless the room all of the others are measured from.\n\nThen it is a bowl of something soft, and Chef D. is saying *shhhk* at a pan, and your spoon is halfway to your mouth and has been for some time.",
     "failure": "Soft. Warm. Extraordinary. And nothing else — no note, no hill, no town laid out.\n\nAt the bottom of the bowl there is a single round of cantaloupe, which is not an ingredient in anything else in this room, and which sits there being a joke told by somebody who is not present and who has been waiting a long time for you to reach the bottom of a bowl.",
     "success_effects": {
@@ -319,7 +321,7 @@
     "garnish"
    ],
    "description": "Chef D. puts them down the same way every time and has never once been asked about it, because it is a garnish, and nobody in the history of eating has interrogated a garnish.\n\nTen rings. Then nine. Then seven. Then one long piece, laid across the whole of it at a slight angle, always last.\n\nAlways that. Always in that order, always the long one last, and she does it without looking at the plate — her hands go to three places on the board and the fourth cut is longer, every time, without measuring, while she is talking to you about something else entirely.\n\nThe rings are not the same size as each other within each group, which rules out a mould and rules out habit-of-the-knife. They are placed. Each one is put where it goes, and the spacing between the groups is wider than the spacing within them, and it is wider by about the same amount every time.",
-   "repeat": "Ten, nine, seven, and a long one. She has served you eleven times and it has been ten, nine, seven and a long one eleven times.",
+   "repeat": "Ten, nine, seven, and a long one. She has served you eleven times and it has been ten, nine, seven and a long one on all eleven plates, laid down in that order, the long one last, without her once looking at what her hands were doing.",
    "monocle": "Through the gold the rings are not rings. They are strokes, and they are being written left to right by somebody in a hurry to get it down before the plate goes out.",
    "passive": [
     {
@@ -346,7 +348,7 @@
     "skill": "CONCEPTUALISATION",
     "dc": 12,
     "kind": "white",
-    "prompt": "It is not a garnish. Garnishes vary. Work out what it is a picture of.",
+    "prompt": "It is not a garnish. Garnishes vary, and this one has not varied in eleven visits. Stop looking at it as food and work out what it is a picture of.",
     "success": "Count them as counts and they are nothing. Look at them as *shapes on a surface*, from above, in the order she lays them, and they resolve the way a word resolves when the handwriting stops being handwriting.\n\nThree groups and a crossbar. Ten, nine, seven — and then the long one laid across all three, which is the stroke you put through a word when you have written it out and it is finished.\n\nShe cannot say the sounds. She has had no teeth for thirty years and there are letters that will not survive her mouth, and she has been setting them down in onion, on a plate, several times a night, for as long as anybody in this parish can remember — and then striking them out and sending them into the room to be eaten.",
     "failure": "Ten, nine, seven, a long one. It stays a garnish. It is a very good garnish and it goes well with the liver, and Chef D. watches you look at it and says nothing about it, which she has been doing for years and is extremely good at.",
     "success_effects": {
