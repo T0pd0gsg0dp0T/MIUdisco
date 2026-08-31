@@ -3,15 +3,17 @@
  "name": "Dude's Dews & Don'ts",
  "subtitle": "Across from police headquarters. Busiest establishment in the parish.",
  "description": "It is directly opposite police headquarters, it is open at every hour anybody has ever tried, and it is where the whole of Silvora Reefs goes. The queue is out of the door and moving fast and it is moving fast because everybody in it except you knows the code.\n\nInside is warm on the left and cold on the right, permanently, with a boundary you can stand astride and feel on both arms at once. The line drifts. Regulars track it without looking, the way people track a draught, and the seating rearranges itself around the drift over the course of an evening.\n\nMary Guana is behind the counter at a speed that is not consistent with anything else about Mary Guana, taking orders in a language that is technically English.",
- "revisit": "The code has changed. Of course the code has changed. Nine people in front of you deliver it flawlessly and none of them can tell you what it is, and Mary looks up once, at you, for slightly longer than the queue can afford.",
+ "revisit": "The code has changed. Of course the code has changed — it changes on no schedule anybody has been able to isolate, and nine people in front of you deliver the new one flawlessly without having been told it, and take their bags, and go.\n\nThe neon is running at about eighty per cent, which is where neon is at its best. The boundary has drifted a foot or so toward the door since Tuesday and four people have quietly rearranged themselves around it without breaking conversation. Mary is behind the counter at a speed that has nothing whatever to do with the rest of her, half-shut, unhurried, and not asleep.\n\nAcross the road, police headquarters is doing what it does, which as far as anybody in this queue is concerned is nothing at all.",
  "lucid": {
   "2": "The queue moves in bursts, and between the bursts there is nothing — not a pause, a nothing, of a length nobody in it accounts for afterwards.",
   "4": "This is the only building in Silvora Reefs with two hundred people in it and the only one where nothing has ever gone wrong, and those two facts are the same fact."
  },
  "ambient": [
-  "The neon over the door reads DUDE'S DEWS & DON'TS. On the second look it reads DUDES DUES AND DONUTS. Nobody in the queue adjusts.",
-  "A constable comes over from headquarters, orders in fluent code, and takes his drink back across the road without once looking at the building he is in.",
-  "Somebody's drink changes flavour at the halfway mark. They make a small pleased noise and keep drinking."
+  "The neon over the door reads DUDE'S DEWS & DON'TS. On the second look it reads DUDES DUES AND DONUTS, and on the third it has gone back, and at no point does the glass appear to have moved or the gas to have flickered.",
+  "A constable comes over from headquarters, orders in fluent code without breaking stride, takes his drink back across the road and up the steps, and the door lets him in before he reaches it. Nobody in the queue watches him go.",
+  "Somebody's drink changes flavour at the halfway mark. They make a small pleased noise, adjust their grip on the cup, and keep drinking. Two people near them nod, in the manner of a room acknowledging a decent bit of luck.",
+  "The queue advances four places in about nine seconds. Nobody appears to hurry and nobody is served twice and every order is correct, and Mary has not visibly moved from the waist up.",
+  "A man on the cold side finishes his coffee, looks at the four inches of open air beside him, and moves his chair six inches further from it without pausing his conversation."
  ],
  "objects": [
   {
@@ -23,18 +25,18 @@
     "signage"
    ],
    "description": "Pink and green and running at about eighty per cent, which is where neon is at its best.\n\nDUDE'S DEWS & DON'TS.\n\nDUDES DUES AND DONUTS.\n\nDUDE'S DUES, AND DON'T.\n\nIt has been all three in the last four minutes and it will be others. The tubes do not move. There is no mechanism, no shutter, no second layer — it is bent glass with gas in it, screwed to a bracket, and it says something different on each direct look and the same thing on each glance.\n\nThe queue does not adjust. Two hundred people a night walk under it and nobody has ever misspelled it to Mary, because everybody says the name out loud and the name is always the one they read.",
-   "repeat": "DEW'S DUDES DON'T. That one is new and it is worse.",
+   "repeat": "DEW'S DUDES DON'T. That one is new, and it is worse, and it is worse in a way you would have trouble putting in a report — the apostrophe has moved somewhere that changes who is being addressed and what they are being told not to do.",
    "monocle": "Through the gold the sign is not lit and is not glass. It is a line of type that has been set four times because the compositor could not settle it, and all four settings have been left standing, and the one you read is whichever one your eye lands on.",
    "passive": [
     {
      "skill": "RHETORIC",
      "dc": 11,
-     "text": "Dews, dues, do's. Don'ts, donuts, don't. Every reading is a legitimate pun on the others and none of them is the original, and a name with no original is not a name, it is an unresolved decision left up in neon."
+     "text": "Dews, dues, do's. Don'ts, donuts, don't. Every reading is a legitimate pun on the others and no reading is the original, and the sign is not being clever about this — a sign that was being clever would settle on one and let you find the rest."
     },
     {
      "skill": "LOGIC",
      "dc": 12,
-     "text": "Everybody says it out loud correctly. Everybody reads it differently. Which means the saying is upstream of the reading — the name is settled at the point of speech and unsettled everywhere else."
+     "text": "Everybody says it out loud correctly and everybody reads it differently, which puts the instability in the writing rather than in the place. The spoken name is stable. The written name is not. In this parish that is not a curiosity, it is a category of evidence."
     }
    ],
    "effects": {
@@ -70,7 +72,7 @@
     "skill": "ETYMOLOGY",
     "dc": 10,
     "kind": "white",
-    "prompt": "Dude's Dews & Don'ts. Read it the way a name wants to be read.",
+    "prompt": "Dude's Dews & Don'ts. Stop reading it as a shopfront and read it the way a name wants to be read — backwards through what it has been, rather than forwards from what it says.",
     "success": "Dews. Dos. Do's and don'ts. The apostrophe is doing three jobs and one of them is load-bearing.\n\nThis is not a shop that was named. This is a *rule* — a list of permitted and forbidden actions — that has been folded up small enough to fit over a door, and the queue outside it is not a queue. It is compliance.",
     "failure": "Dews, dues, do's. It comes apart into three homophones, all of them plausible, none of them settling, and the neon buzzes on above you at a frequency that makes the distinction harder rather than easier.",
     "success_effects": {
@@ -101,18 +103,18 @@
     "system"
    ],
    "description": "There is a board. The board does not explain the code. The board has never explained the code and the board is not for that.\n\nWhat happens is this: a customer reaches the counter and says something like \"Two down, the good green, and not on a Thursday,\" and Mary produces two drinks and a bag without a word, and both parties are satisfied, and the whole exchange takes four seconds.\n\nThe next customer says something structurally unrelated. It also works.\n\nYou have been coming here for eleven years. You have never got it right. You order in plain words, like a foreigner, and Mary hands over the thing you came in for anyway, and the queue behind you is patient in a way that is far more humiliating than impatience would be.",
-   "repeat": "\"Three and the cold side and tell him I said so.\" Four seconds. A bag. You have written six of these down and they have never once repeated.",
+   "repeat": "'Three and the cold side and tell him I said so.' Four seconds, a bag, no eye contact, no confusion. You have now written six of these down verbatim and not one of them has worked twice, and every person who has used one has used it once.",
    "monocle": "Through the gold the orders are not orders. Every one of them is a line of dialogue, correctly delivered, and Mary's four-second silences are the stage directions between them, and the reason yours does not work is that you have been improvising in a room where everybody else has the script.",
    "passive": [
     {
      "skill": "EMPATHY",
      "dc": 12,
-     "text": "Nobody is embarrassed for you and nobody is enjoying it. They are waiting the way people wait for somebody to finish a line they have all heard before."
+     "text": "Nobody is embarrassed for you and nobody is enjoying it, which is worse than either. They are waiting the way people wait for a man to find the right change: without judgement, without hurry, and with the absolute certainty that he will get there or he will not and either way the queue will continue."
     },
     {
      "skill": "SAVOIR_FAIRE",
      "dc": 13,
-     "text": "There is no pattern in the words. There is a pattern in the *timing*: every successful order is delivered in one breath, at the same tempo, arriving on the same beat after the previous customer clears. The content is irrelevant. The metre is the code."
+     "text": "There is no pattern in the words — you have written six down and they share nothing, not a keyword, not a structure, not a length. The pattern is in the *timing*: every successful order lands in the same half-second of the room's rhythm, the beat after Mary's hand leaves the counter and before it comes back."
     }
    ],
    "check": {
@@ -123,7 +125,7 @@
     "bonus_if_clue": {
      "c_saying_makes_it_so": 2
     },
-    "prompt": "Try it on the metre rather than the meaning. Wait for the beat. Say anything at all, but say it in one breath, at their tempo, and land it where the last one landed.",
+    "prompt": "Try it on the metre rather than the meaning. Do not listen for the words, listen for where in the room's rhythm they land. Wait for the beat, and say anything at all on it.",
     "success": "You wait. The man in front clears. There is a beat, and the beat has a shape, and you go on it.\n\n\"Four back, the one from before, and I'll take the warm side.\"\n\nIt means nothing. You constructed it out of the rhythm and nothing else. Mary's hands are moving before you finish and there is a cup and a bag on the counter in under four seconds, and the cup contains something you have wanted for about a decade and have never been able to name, and the bag has two in it, and the second one is not for you.\n\nMary says, slowly, the first unhurried thing anybody has said in this room: \"Yeah. There you go. Took you long enough, and you got there the right way round, which most don't.\"",
     "failure": "You wait for the beat and you go a fraction late, because you were listening for the beat instead of being on it, which are different activities and only one of them works.\n\n\"...Two of the green ones, please.\"\n\nMary gives you two of the green ones. It is exactly what you asked for and it is somehow much worse than being refused, and the queue moves up behind you with enormous and terrible patience.",
     "success_effects": {
@@ -161,18 +163,18 @@
     "temperature"
    ],
    "description": "It runs roughly north-south through the middle of the shop and it is about four inches wide and you can stand in it and have a different arm.\n\nIt is not a draught. A draught has a source and this has two, and they are the two halves of a single room with no partition, no vent, no equipment and no explanation, and the difference across four inches is something like eleven degrees.\n\nIt drifts. Over an evening it will move a yard or two either way and the regulars go with it, picking their tables by feel, resettling once or twice a night without conversation, the way a flock resettles.",
-   "repeat": "It has come two feet toward the door since you arrived. Four people have moved. Nobody spoke.",
+   "repeat": "It has come two feet toward the door since you arrived. Four people have moved. Nobody spoke about it, nobody looked down, and the conversation on both sides of it did not break.",
    "monocle": "Through the gold the boundary is a change of tense. Everything on the warm side is present. Everything on the cold side is past, and the four inches between them is where the sentence turns, and Mary works the counter with one hand in each.",
    "passive": [
     {
      "skill": "PHYSIQUE",
      "dc": 10,
-     "text": "Stand in it. Left arm warm, right arm cold, eleven degrees, four inches, and the body's honest reaction is not confusion. The body simply accepts it, immediately, and that is worse than confusion."
+     "text": "Stand in it. Left arm warm, right arm cold, eleven degrees of difference across four inches of open air, and the body's honest reaction is not wonder — it is a low-level objection, the kind it makes about a draught it cannot find the source of."
     },
     {
      "skill": "LOGIC",
      "dc": 12,
-     "text": "Eleven degrees maintained across four inches of open air in a room with two hundred people moving through it. That is not a temperature gradient. Air does not do that. Something is holding two accounts of this room next to each other and the boundary is the join."
+     "text": "Eleven degrees maintained across four inches of open air, in a room with two hundred people in it and a door that opens onto the street every nine seconds. There is no mechanism for that. Air does not hold a line. Air is, definitionally, the thing that does not hold a line."
     }
    ],
    "effects": {
@@ -208,7 +210,7 @@
     "skill": "SHIVERS",
     "dc": 10,
     "kind": "white",
-    "prompt": "Warm on the left, cold on the right, and a line between them you can stand astride. Stand in it and hold still.",
+    "prompt": "Warm on the left, cold on the right, and a line between them you can stand astride. Stop measuring it and stand in it, and let the parish come up through the four inches.",
     "success": "One foot in each. The line is about four inches wide and it drifts, slowly, and standing in it is like standing in a doorway in a house that is thinking about something.\n\nAnd from inside the four inches the parish is briefly audible as one thing — every room in Silvora Reefs holding a boundary exactly this wide, all of them the same boundary, all of them drifting at the same rate.",
     "failure": "Warm, cold, and a great deal of standing about in a busy shop while a queue that knows what it is doing goes around you.",
     "success_effects": {
@@ -237,18 +239,18 @@
     "station"
    ],
    "description": "The whole front of the shop looks at it. Grey stone, four storeys, a blue lamp, and a set of steps that the parish keeps in very good order.\n\nIn eleven years you have never seen anybody go in.\n\nOut, constantly. Constables come down those steps all evening, cross the road, order in fluent code, and go back up them. Up the steps and through the door — you have watched that happen several hundred times. Nobody has ever come out of the building and nobody has ever gone in from the street, and both of those sentences are about the same door, and you have only this evening put them next to each other.",
-   "repeat": "You watch the steps for a while with a coffee. Down, across, back up, in. Down, across, back up, in.",
+   "repeat": "You watch the steps for a while over a coffee. Down, across, back up, in. Down, across, back up, in. Nobody comes out of that building who did not first go into it, and the traffic is entirely one-directional for as long as you sit there.",
    "monocle": "Through the gold the building is a façade nine inches deep with nothing behind it, and the constables coming down the steps are entering the scene rather than leaving a building, and when they go back up they stop, and wait, in the doorway, for as long as it takes, and they are entirely comfortable there.",
    "passive": [
     {
      "skill": "EMPATHY",
      "dc": 12,
-     "text": "The constables are perfectly happy. Whatever is behind that door, they go back to it every evening without a trace of reluctance, and they have never once been asked what it is like."
+     "text": "The constables are perfectly happy. That is the finding, and it takes some sitting with: whatever is behind that door, they go back to it every day without reluctance, they come out for coffee, they go back in, and not one of them has the face of a person returning to somewhere difficult."
     },
     {
      "skill": "LOGIC",
      "dc": 13,
-     "text": "The busiest shop in the parish is directly opposite the police headquarters, and the busiest shop in the parish is the only building in Silvora Reefs where nothing has ever gone wrong. Those are not two facts."
+     "text": "The busiest shop in the parish is directly opposite police headquarters, and the busiest shop in the parish operates entirely on a spoken code that changes without notice and that nobody can be taught. Those two facts have been sitting across the road from each other for years."
     }
    ],
    "effects": {
@@ -282,7 +284,7 @@
     "skill": "AUTHORITY",
     "dc": 12,
     "kind": "white",
-    "prompt": "Police headquarters is directly across the road and nobody in this queue has looked at it once. Cross the road and ask them something.",
+    "prompt": "Police headquarters is directly across the road and not one person in this queue has looked at it since you arrived. Cross over, go up the steps, and see what a stranger gets.",
     "success": "The desk sergeant listens to the whole question with the patience of a man being read a shipping forecast, and then answers it, and the answer is: no report of anything coming down, no report of rotor noise, no report of a man walking out of the harbour.\n\n\"Nothing's been reported,\" he says, \"because nothing gets reported,\" and he says it the way a man says a thing he has said before and has stopped hearing.",
     "failure": "You get as far as the step. The door is a door and the building is a building and the sergeant behind the glass looks up at you with an expression of such complete institutional patience that the question goes out of you before it reaches your mouth.\n\nYou are back across the road holding a shake you do not remember being handed.",
     "success_effects": {
@@ -314,7 +316,7 @@
     "customers"
    ],
    "description": "It goes out of the door and along the front and round toward the alley, and it never stops moving, because Mary Guana behind the counter is comprehensively faster than the queue is long and has been for nine years.\n\nNobody in it is impatient.\n\nThat is the odd part, and it takes a while to surface, because a queue is such an ordinary object that you can look straight at one for several minutes without registering what it is doing. Nobody checks the front. Nobody leans out to see how many. Nobody does the small shifting weight-change of a person calculating whether this is worth it.\n\nThey talk. They talk to the people they came with and, more often, to the people they did not, and when they reach the counter a certain number of them look faintly disappointed to have got there.\n\nIt is a line of people who are not waiting for anything, standing together in the cold, in no particular hurry to reach the front.",
-   "repeat": "The queue has turned over completely since you came in and has not got any shorter, and nobody in it minds.",
+   "repeat": "The queue has turned over completely since you came in and has not got any shorter, and nobody in it minds, and two of the people who were at the back when you arrived are now at the back again.",
    "monocle": "Through the gold the queue is a paragraph of people and every one of them has a line, and three of them have the same line, and none of the three has noticed.",
    "effects": {
     "clue": {

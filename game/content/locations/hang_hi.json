@@ -3,16 +3,18 @@
  "name": "Hang-Hi Quiet Apartments",
  "subtitle": "Second floor. Suspended from above. Nobody has ever explained from what.",
  "description": "Home, insofar as the word survives contact with the building. The second floor hangs from something overhead rather than standing on anything below, and the residents treat this as a design feature the way other towns treat a nice cornice. Your corridor runs from the stair to your door in a length that has never twice been the same, and it is longer tonight, because you are walking it alone.\n\nInside, the flat has arranged itself into the shape it uses when you have been away: chair angled toward the window, desk under its usual weight of paper, the smell of wet wool coming off the coat you have not yet taken off. The lamp is on. You do not recall leaving it on, but the lamp and you have an arrangement and it has never yet been in writing.",
- "revisit": "The corridor gives you a different length again — shorter this time, companionably so, which from this building constitutes an apology. Your door is where you left it, which is not guaranteed and is never remarked upon.",
+ "revisit": "The corridor gives you a different length again — shorter this time, companionably so, which from this building reads less like an anomaly and more like a courtesy extended to a tenant who has had a long day.\n\nThe green flame in the wall lamp is doing what it does. Somewhere below, a bucket is set down on tile and a squeegee starts an arc. Two flats along, a door opens onto weather that is not the weather outside, and closes again, and nobody comes out.\n\nYour own door is where you left it. Two-F. The window in it has been sorted, completely sorted, and you would not want to worry about the weather in it.",
  "lucid": {
   "2": "Under everything else, at the edge of the audible, there is a rhythm in the building that is not plumbing. Three or four strikes, then a pause. Then three or four more.",
   "3": "The pauses between the strikes have lengths. Some are short. One, tonight, goes on for most of a minute, and the building holds its breath through all of it, and then the striking resumes and something in the arrangement of your evening has been revised.",
   "4": "The building is not making a sound. The building is being described as making a sound, and the description is being typed, and you are standing inside the paragraph where it happens."
  },
  "ambient": [
-  "Somewhere below, a squeegee completes an arc, and for a moment the stairwell agrees to be a stairwell.",
-  "A door two flats down opens onto weather. It is not the weather outside. Nobody mentions it, and the door closes politely.",
-  "The green flame in the corridor lamp throws four shadows and has only ever had the one of you."
+  "Somewhere below, a squeegee completes an arc, and for a moment the whole stairwell agrees to be a stairwell — the angles settle, the flight lands where the eye expects, the handrail runs true from top to bottom. It holds for about as long as the wet takes to dry.",
+  "A door two flats down opens onto weather. It is not the weather outside — it is warmer, and it is raining in it, and there is a smell of cut grass in a building four streets from the sea in the middle of a fog. Nobody mentions it. The door closes. The corridor smells of grass for a while afterwards.",
+  "The green flame in the corridor lamp throws four shadows across the wall and has only ever had the one of you to work with. They do not agree about where the light is. Three of them move when you move.",
+  "The lift goes down without being called, waits at the bottom for the length of a held breath, and comes back up empty. The doors do not open. It has done this twice tonight and the building has not remarked on it.",
+  "Somebody on the floor above crosses the room, stops in the middle, and stands there. There is no second set of footsteps and no conversation and no chair being sat in. After a while they cross back."
  ],
  "on_enter": {
   "thought": "and_furthermore",
@@ -28,18 +30,18 @@
     "notes"
    ],
    "description": "It came out of the harbour in your coat. Ninety pages of blue smear, ink gone to weather, the whole record of whatever you were doing before the sky handed you back.\n\nThree pages are dry. Not dried — dry. They sit in the middle of the ruin like a paragraph the flood was instructed to go around. The handwriting is yours. The words are yours in the sense that you would use them, in that order, with that comma. You have no memory of the sentence they make.",
-   "repeat": "The three pages are still dry. You have stopped expecting this to change and have not stopped checking.",
+   "repeat": "The three pages are still dry. You have stopped expecting this to change and you have not stopped checking, and the checking has become a small private ritual performed at the start of every look, like a man testing a step he already knows will hold.",
    "monocle": "Through the gold, the smeared pages stay smeared — but the blue moves. It is not ink dispersing in water. It is ink being *withdrawn*, page by page, back toward a nib, in a slow careful retraction that has been going on for some time and is nearly finished. The three dry pages are not survivors. They are what has not been taken back yet.",
    "passive": [
     {
      "skill": "LOGIC",
      "dc": 10,
-     "text": "Water does not select. It has no criteria. A flood that skips three pages in the middle of a book is not a flood, it is an editor."
+     "text": "Water does not select. It has no criteria and no opinions and no way of forming either. A flood that takes ninety pages and goes round three, in the middle of a bound notebook, in a coat, in the sea, is not a flood that failed to reach them. It is a flood that was routed around them."
     },
     {
      "skill": "EMPATHY",
      "dc": 12,
-     "text": "Read the three pages as a person rather than as evidence. The hand is steady on the first two. On the third it presses harder — not fear. Insistence. Somebody wanted this bit to survive being written."
+     "text": "Read the three pages as a person rather than as evidence. The hand is steady on the first, hurried on the second, and on the third it is doing something worse than hurried — it is *careful*, letter by letter, the way a man writes when he has decided this may be the only copy and somebody else is going to have to read it."
     }
    ],
    "effects": {
@@ -76,7 +78,7 @@
     "skill": "HAND_EYE",
     "dc": 10,
     "kind": "white",
-    "prompt": "There are more pages in this than the three. Work the blue smear apart and see what is under it.",
+    "prompt": "There are more pages in this than the three. Ninety of them, and the blue has not left the paper, it has only stopped being arranged. Work the smear apart with a dry cloth and a great deal of patience and see what is still in there.",
     "success": "Patience, a dry cloth and a very shallow angle. Two more pages come up out of the blue — not legible, but *ruled*, and the ruling is not the notebook's.\n\nSomebody drew a margin down these pages by hand, twice, on the same two sheets, at eleven and nine inches. The measurements of a room.",
     "failure": "The blue is not ink any more, it is a suspension, and the moment the cloth touches it the page decides to be one colour all the way through.",
     "success_effects": {
@@ -105,7 +107,7 @@
     "reflection"
    ],
    "description": "A tall spotted glass in a frame the building insists came with the building. It reflects the corridor, the lamp, the coat rack, and you — in that order of enthusiasm, as though you were the item it was least contracted to include.\n\nHold still in front of it. Hold still longer than is comfortable, longer than a man checking his collar would. On a long enough hold, the corridor behind your reflection stops being the corridor. It becomes a room with a low ceiling and one lamp, and a desk under the lamp, and paper on the desk. Then it is the corridor again, and the mirror has the decency not to look pleased with itself.",
-   "repeat": "The office comes faster now. You have got better at holding still, or it has got worse at waiting.",
+   "repeat": "The office comes faster now. Either you have got better at holding still or it has got worse at pretending, and there is no version of that sentence in which the situation is improving.",
    "lucid": {
     "3": "This time the office holds for four full seconds, and there is a hand in it. Not reaching for anything. Resting beside the paper, the way a hand rests when the person it belongs to is deciding.",
     "4": "The hand in the mirror is the same shape as yours and is not doing what yours is doing."
@@ -115,12 +117,12 @@
     {
      "skill": "SAVOIR_FAIRE",
      "dc": 11,
-     "text": "The trick is stillness. Not patience — stillness. Whatever is on the other side is watching for movement, the way a thing that has to keep a secret watches for movement."
+     "text": "The trick is stillness. Not patience — stillness, which is a different discipline and a harder one. Whatever is on the other side is watching for movement the way anything watches for movement, and it is very good at it, and it has had considerably more practice at this than you have."
     },
     {
      "skill": "LOGIC",
      "dc": 13,
-     "text": "Rule out the ordinary. Reflected room from a facing window: there is no facing window. Trick of the lamp: the lamp is behind you and green, and that room's lamp is green, which is either corroboration or the single laziest coincidence in the harbour."
+     "text": "Rule out the ordinary, in order, and be honest at each step. Reflected room from a facing window: there is no facing window, this wall backs onto the stair. Trick of the frame: the frame is deal, forty years old, and came with the building. A second room beyond a partition: you have measured the corridor and the flat and there is nothing between them but eleven inches of lath.\n\nThat exhausts the ordinary. What is left is a room that is not in this building, arriving in a mirror that is."
     }
    ],
    "check": {
@@ -128,7 +130,7 @@
     "skill": "PHYSIQUE",
     "dc": 12,
     "kind": "white",
-    "prompt": "Hold absolutely still. Longer than is reasonable. Long enough to be rude to your own knees.",
+    "prompt": "Hold absolutely still. Longer than is reasonable, longer than is comfortable, long enough to be rude to your own knee — and do not look at the room, look at the place in the glass where the room stops agreeing with itself.",
     "success": "You hold. Your knees file their complaint and you overrule it. The corridor drains out of the glass like water out of a bath and the office stays: a desk, a green lamp, a typewriter with a page in it, and beside the page, a coffee cup with a ring under it that has been there long enough to have a ring.\n\nSomebody works here. Somebody has worked here for a long time, badly, in the specific way of a person who does not get up.",
     "failure": "Your knee goes at forty seconds — the one that has been going since the harbour — and the shift is small and the mirror is not interested in small. The corridor snaps back. The coat rack is very smug about it.",
     "success_effects": {
@@ -174,13 +176,13 @@
     "s"
    ],
    "description": "HANG-HI QUIET APARTMENT , says the board over the entry, the final S having been supplied years ago by somebody with a spray can and a sense of humour: a snake, coiled into the shape of the letter, green on a ground of flaking gold.\n\nIt is a good S. It is a better snake. It has been in a different coil every time you have had occasion to check, and you have never once caught it moving, which after eleven years you have decided to regard as manners.",
-   "repeat": "Recoiled. Same paint, same wall, different S.",
+   "repeat": "Recoiled. Same paint, same flaking at the tail, same wall — and a different S, in a slightly different place, doing a slightly different amount of work to hold the name together.",
    "monocle": "Through the gold, the snake is not paint and is not a snake. It is a correction — a letter that was typed wrong, struck through, and typed again, and the strike-through is what you have been reading as a body all these years. It is still wet. It has been still wet since before you moved in.",
    "passive": [
     {
      "skill": "RHETORIC",
      "dc": 10,
-     "text": "A building that cannot hold on to the last letter of its own name. There is no reading of that which is good for the tenants."
+     "text": "A building that cannot hold on to the last letter of its own name. There is no reading of that which is about paint. A name is an argument a place makes about itself, and this one keeps losing the end of the sentence, and somebody keeps going up a ladder to put it back."
     }
    ],
    "effects": {
@@ -204,7 +206,7 @@
     "skill": "REACTION_SPEED",
     "dc": 11,
     "kind": "white",
-    "prompt": "The snake on the building sign is in a slightly different position every time the eye returns to it. Catch it moving.",
+    "prompt": "The snake on the board is in a slightly different position every time the eye comes back to it. Look away deliberately, count to four, and come back fast enough to catch it mid-move.",
     "success": "Away and back, fast, without deciding to.\n\nIt is mid-stroke. Not mid-slither — mid-*stroke*, the way a line is mid-stroke when a hand is drawing it, and there is no hand, and it finishes the stroke while you watch and settles into having always been that shape.",
     "failure": "Away and back. Coiled, painted, flaking at the tail, and exactly where it was, and it will go on being exactly where it was for as long as you keep doing this.",
     "success_effects": {
@@ -234,18 +236,18 @@
     "paperwork"
    ],
    "description": "Lying Landy, the Unhandy Dandy, does not fix things. Landy files. Pinned to the corridor board in a fan of municipal beige is the complete record of his attentions: WINDOW 2F — WEATHER NONCONFORMING — RESOLVED. DOOR 2C — OPENS TO 3A ON THURSDAYS — RESOLVED. CORRIDOR — LENGTH — RESOLVED, RESOLVED, RESOLVED.\n\nEach one is stamped, bottom right, with a four-lobed seal and a line of small print: FILED WITH THE COALITION FOR CULPABILITY AND CONSTRUCTIVE CHANGE. NO FURTHER ACTION IS REQUIRED OF THE RESIDENT. NO FURTHER ACTION IS AVAILABLE TO THE RESIDENT.",
-   "repeat": "Three more since you last looked. The corridor has been RESOLVED twice this week.",
+   "repeat": "Three more since you last looked. The corridor has been RESOLVED twice this week, which is once more than it has been complained about, which means Landy is now filing against a schedule rather than against events.",
    "monocle": "Under the gold, the word RESOLVED is not a word. It is the same three characters typed over and over on top of themselves until the paper gave up and agreed to be black there. Nothing was resolved. Something was insisted on, at length, by a machine.",
    "passive": [
     {
      "skill": "LOGIC",
      "dc": 11,
-     "text": "Nothing on this board has been repaired. Every item has been *filed*. The distinction is the entire organisation."
+     "text": "Nothing on this board has been repaired. Every item on it has been *filed*, and the distinction is the whole of Landy's professional life. A repair changes the building. A filing changes the record of the building. Only one of those has been happening here for eleven years."
     },
     {
      "skill": "RHETORIC",
      "dc": 12,
-     "text": "Read the small print again. 'No further action is required of the resident' is a courtesy. 'No further action is available to the resident' is the sentence they actually came to write, and they put it second so it would sound like the same sentence twice."
+     "text": "Read the small print again, properly. 'No further action is required of the resident' is a courtesy on the face of it and an instruction underneath it, and the difference between those two readings is the difference between a landlord and something considerably more organised.\n\nAnd it appears on every form. Twenty-two times. In the same words."
     }
    ],
    "effects": {
@@ -269,7 +271,7 @@
     "skill": "ENCYCLOPEDIA",
     "dc": 11,
     "kind": "white",
-    "prompt": "Twenty-two forms in a cupboard on a half-landing. You have read enough bureaucracy to know what a form is for.",
+    "prompt": "Twenty-two forms in a cupboard on a half-landing, all stamped, all in the same hand. You have read enough municipal paper in your life to know what a form is supposed to look like. Read these as documents rather than as excuses.",
     "success": "A repair notice exists to create a liability and then discharge it. Every one of these has been raised, stamped and *closed* — closed by the same office that raised it, on the same day, with no work recorded in between.\n\nThat is not maintenance. That is a body of paper generated for the purpose of existing, and somebody has been generating it about this building, at a rate of two a year, for eleven years.",
     "failure": "Twenty-two forms, stamped, in a hand you have seen before. There is a convention they are violating and it stays just out of reach, filed somewhere behind everything else you have ever read.",
     "success_effects": {
@@ -299,7 +301,7 @@
     "view"
    ],
    "description": "The glass gives you the harbour, the fog, and the perpetual violet overhead going about its slow crimson business. Down there, the water is holding whatever came out of the sky and is not offering it up.\n\nAnd the sound is still there. Rotors. Slow ones, the heavy unhurried chop of a machine holding a position, somewhere off past the breakwater in fog too thick to hold a machine. It has not stopped since you came out of the water. Nobody else has mentioned it. You have twice asked, in the specific casual voice, and been answered in the specific casual voice, and the answer both times was about the weather.",
-   "repeat": "Still turning. Same position, same unhurried chop, same fog that could not possibly contain it.",
+   "repeat": "Still turning. Same position, same unhurried chop, same volume, same fog that could not possibly contain a machine that size and does anyway. Four days now. You have started timing it and it does not vary.",
    "lucid": {
     "3": "Listen to the rhythm rather than the sound. It is not rotors. It is a hand returning to the same four keys, over and over, while its owner works out what the next word is."
    },
@@ -308,12 +310,12 @@
     {
      "skill": "LOGIC",
      "dc": 12,
-     "text": "Constant volume, constant bearing, four days. A machine holding a hover for four days is a machine that has solved fuel. Rule it out and what is left is that this is not a machine."
+     "text": "Constant volume, constant bearing, four days. A machine holding a hover for four days is a machine that is not a machine — fuel is not a matter of opinion, and neither is a gearbox. Whatever is over that harbour is not flying. It is simply *there*, making the noise of a thing that flies."
     },
     {
      "skill": "EMPATHY",
      "dc": 11,
-     "text": "It is not that they cannot hear it. Watch a Reefer's face while the sound is happening: there is a small managed flinch, and then the weather. They can hear it. They have agreed not to have heard it."
+     "text": "It is not that they cannot hear it. Watch a Reefer's face while the sound is happening: there is a small adjustment around the eyes, a half-beat of accommodation, and then nothing. They hear it. They have all agreed, without ever having had the conversation, to hear it as weather."
     }
    ],
    "effects": {
@@ -347,7 +349,7 @@
     "skill": "SHIVERS",
     "dc": 10,
     "kind": "white",
-    "prompt": "Open the window over the harbour and let the parish come in for a minute.",
+    "prompt": "Open the window over the harbour and let the parish come in for a minute — the cold, the smell, the sound, and whatever else is riding on the sound at this hour.",
     "success": "Cold off the water, green flame two streets down, and the rotors — and with the window open the rotors resolve into what they have been all along, which is not rotors.\n\nIt is a page being turned. Over and over, at the pace of a man checking something he has already read, from a room that is not in the direction the sound is coming from.",
     "failure": "Cold, and the smell of the harbour, and the rotors going on being rotors at the same unhurried pace they have kept since you came out of the water.",
     "success_effects": {
@@ -376,18 +378,18 @@
     "typewriter"
    ],
    "description": "A door on two trestles, which is what a desk is when a man has decided that furniture is a distraction from work. Paper in drifts. A dozen abandoned openings to a dozen abandoned somethings, each one a single confident sentence followed by a great deal of white.\n\nThere is no typewriter on it. There has never been a typewriter on it. There is, in the dust at the back edge, a rectangle where the dust is thinner, of a size, with four small round gaps at the corners.",
-   "repeat": "The rectangle in the dust has not filled in. Dust does not work like that, and this dust has been given other instructions.",
+   "repeat": "The rectangle in the dust has not filled in. Dust does not work like that — dust arrives on everything at the same rate, that is the entire nature of dust — and this rectangle has been holding its edges since before you started looking at it.",
    "monocle": "Through the gold the rectangle is occupied. There is a typewriter there, black and heavy and mid-sentence, and it is not translucent or ghostly or any of the things the word would lead you to expect. It is simply present, and the room has been asked not to include it.",
    "passive": [
     {
      "skill": "SAVOIR_FAIRE",
      "dc": 11,
-     "text": "Four round gaps at the corners of a thin rectangle. Feet. Rubber ones, the kind fitted to a machine heavy enough to need them."
+     "text": "Four round gaps at the corners of a thin rectangle. Feet — rubber ones, the kind fitted to office machines so they do not walk across a desk under their own vibration. That is not furniture. Furniture does not vibrate."
     },
     {
      "skill": "ELECTROCHEMISTRY",
      "dc": 10,
-     "text": "There is a cold cup somewhere under that paper and it has a ring under it and the ring is older than the cup. Drink it anyway. It is only a day. Two days. It is fine."
+     "text": "There is a cold cup somewhere under that paper and the ring beneath it is older than the cup is, which means there was a cup before this cup, in the same place, for long enough to leave its own mark. Somebody has sat here drinking the same thing at the same spot for years, and has not once moved the cup to wipe underneath it."
     }
    ],
    "effects": {
@@ -412,7 +414,7 @@
     "skill": "INTERFACING",
     "dc": 11,
     "kind": "white",
-    "prompt": "The dust holds a rectangle with four round gaps. Work out the machine from its footprint.",
+    "prompt": "The dust holds a rectangle with four round gaps at the corners and a worn arc on the near side. Work the machine out from its footprint, the way you would work out a man from his handwriting.",
     "success": "Four feet, in a rectangle nine and a quarter by eleven and a half, with the front pair set inboard — which is a carriage-return frame, which means a heavy desk machine, which means a weight no man carries down a flight of stairs alone.\n\nAnd the dust is undisturbed all round it. Nothing was dragged. Nothing was lifted. The rectangle is not where a machine was taken from. It is where a machine has not yet been put.",
     "failure": "A rectangle and four gaps and a quantity of dust, and it is the shape of a typewriter the way a hole is the shape of a thing that is not in it.",
     "success_effects": {
@@ -452,17 +454,17 @@
     "beat": "awakening",
     "lucidity_min": 70
    },
-   "repeat": "Still open. It is not going to close on its own, and that is not the same as it being patient.",
+   "repeat": "Still open. It is not going to close on its own, and that is not the same thing as it being patient, and you have caught yourself on three separate evenings standing in this corridor doing arithmetic about it.",
    "passive": [
     {
      "skill": "LOGIC",
      "dc": 11,
-     "text": "Every deduction you have made for a fortnight terminates here. There is nothing further to work out. The next thing is not a conclusion, it is a step."
+     "text": "Every deduction you have made in a fortnight terminates here. There is nothing further to work out from this side, no reading of the evidence that does not require going and looking, and you have known that for at least a day and a half."
     },
     {
      "skill": "PHYSIQUE",
      "dc": 10,
-     "text": "Four inches of nothing, and a floor on the other side that will take a man's weight. The body has already decided. It has been leaning that way since the harbour."
+     "text": "Four inches of nothing, and a floor on the other side that will take a man's weight — you can see the boards, you can see the grain in the boards. The body has already worked out the step. It is not the body that is hesitating."
     }
    ],
    "check": {
@@ -496,13 +498,13 @@
     "floor"
    ],
    "description": "By the window, where the light would have been best for most of the day, the boards carry a rectangle about the size of a bread oven in which the dust is a different age from the dust around it.\n\nFour small round depressions sit at its corners, pressed down into the grain over a period long enough that the wood has stopped intending to come back up. You can put a fingertip in one. It is deeper than a fingertip.\n\nWhatever stood here stood here for years and it was heavy and it had feet rather than a base, and it was placed with some care — the rectangle is square to the window rather than square to the room, which is what a man does when what matters is the light falling on the work rather than the furniture looking tidy.\n\nThe boards around it are worn in a shallow arc on the near side. Somebody sat there. For a long time, in a chair that moved a little, doing something that required them to be close.",
-   "repeat": "The rectangle is where it was. The dust inside it is still the wrong age and is getting no older.",
+   "repeat": "The rectangle is where it was. The dust inside it is still the wrong age and is getting no older, and the four round depressions at the corners are still deeper than a fingertip, and the wear on the near side is still the shape of a man who sat there for years.",
    "monocle": "Through the gold the rectangle is not empty. There is a machine in it, and it is being used, and the man using it has his back to you and does not turn round, and the light through the window falls on both of you at once from two different times of day.",
    "passive": [
     {
      "skill": "INTERFACING",
      "dc": 11,
-     "text": "Four feet in a rectangle that size, at that spacing, bearing that much weight into softwood: a platen machine. Something with a carriage."
+     "text": "Four feet in a rectangle that size, at that spacing, bearing that much weight down into softwood over that many years: a platen machine. Something with a carriage that returns, which means something that takes a shock at the end of every line, which is why the feet are round and rubber and why they have driven themselves into the grain."
     }
    ],
    "effects": {
@@ -559,13 +561,13 @@
     "others"
    ],
    "description": "Nine floors hanging off nothing at all, and on every one of them somebody is at home this evening.\n\nThere is a radio on four. It has been on since you came in and it is playing the sort of programme that is mostly talking, and it will go off at eleven, because it goes off at eleven. There is a bath running on six — the pipes announce it through the whole west stack, a long rising note that tops out and holds. And there is somebody on two who has been moving furniture for the better part of an hour and has not yet found where they want it.\n\nIt is a full building. It sounds exactly like a full building sounds on a cold evening: occupied, unremarkable, faintly companionable through a wall.\n\nYou have lived here eleven years.\n\nYou could not name one of them. Not one. Not a face on the stair, not a parcel taken in, not a nod at the letterboxes — and until this moment, standing in your own hallway listening to a bath you have heard a thousand times, it has never once struck you as strange.",
-   "repeat": "The radio on four is still on. Whoever it is has not changed the station in eleven years.",
+   "repeat": "The radio on four is still on and has not changed station in eleven years. The bath on six ran at the usual hour and stopped at the usual hour. Nobody has come down the stairs all evening.",
    "monocle": "Through the gold there is nobody on any of the floors. The radio is playing to an empty room, correctly, on schedule, and has been doing it for as long as the building has needed to sound occupied.",
    "passive": [
     {
      "skill": "PERCEPTION",
      "dc": 11,
-     "text": "The bath on six runs at the same hour every evening and stops at the same hour, and nobody has ever come down the stairs afterwards with wet hair."
+     "text": "The bath on six runs at the same hour every evening and stops at the same hour, and it runs for the same duration, and nobody has ever come down those stairs afterwards with wet hair. You have been in this stairwell at every hour of the day for eleven years."
     }
    ],
    "effects": {
@@ -586,7 +588,7 @@
     "skill": "VOX_POPULI",
     "dc": 11,
     "kind": "white",
-    "prompt": "Nine floors of people you have never met. Reach for the building the way you would reach for the parish.",
+    "prompt": "Nine floors of people you have never met, all of them at home, all of them audible. Reach for the building the way you would reach for the parish and see what comes back.",
     "success": "Nothing comes back.\n\nNot silence — the parish is loud tonight and it is entirely available from here, the queue moving at Mary's and the fire settling at Ben's and Luigi three floors down doing the west end first. All of that arrives, at full strength, from streets away.\n\nFrom inside this building, at a range of forty feet, through two floors: nothing at all. There is a radio on four and a bath running on six and there is nobody behind either of them, and the parish does not extend into Hang-Hi, and Asimov's office is the last room in the building that has anybody in it.",
     "failure": "A radio, a bath, and somebody shifting a wardrobe about on two. It is an occupied building on an ordinary evening and it declines, courteously, to be anything else.",
     "success_effects": {
