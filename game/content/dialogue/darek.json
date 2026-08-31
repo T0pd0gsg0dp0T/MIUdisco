@@ -39,7 +39,7 @@
       "success": "root",
       "failure": "root",
       "success_text": "He looks at you for a while and then makes it, and it is not on the board.\n\nIt tastes of a specific afternoon that is not yours, in a kitchen with the window open, and somebody in the next room is typing. When it is gone the taste goes with it completely, the way a name goes.",
-      "failure_text": "\"I would not sell you that,\" he says, and makes you the second-best thing, and the second-best thing is superb and tastes of nothing but itself, which under the circumstances is a small betrayal.",
+      "failure_text": "\"I would not sell you that,\" he says.\n\nAnd he makes you the second-best thing instead, without being asked and without any apparent resentment — and the second-best thing is superb, and tastes of nothing whatever but itself, which under the circumstances is a small betrayal and is meant kindly and lands as neither.",
       "success_effects": {
        "clue": {
         "id": "c_a_kitchen_and_typing",

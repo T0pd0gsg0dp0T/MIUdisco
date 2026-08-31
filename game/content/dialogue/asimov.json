@@ -45,7 +45,7 @@
       "success": "root",
       "failure": "root",
       "success_text": "You keep your face out of it entirely and let him run the whole explanation again, and you do not help him, and you do not nod.\n\nThe second telling is nine words shorter and one of the nine is 'contracted'. He notices that you noticed. He does not mind, particularly, and he pours you something.",
-      "failure_text": "He gets four sentences in and something crosses your face and he stops, and adjusts, and gives you the version for a man who is having difficulty — which is warmer, and shorter, and has nothing in it.",
+      "failure_text": "He gets four sentences in — and they are good sentences, they are going somewhere, the charts are already coming off the shelf — and then something crosses your face.\n\nHe stops. He adjusts. And what you get instead is the version for a man who is having difficulty: warmer, considerably shorter, delivered with a hand on your shoulder, and with nothing whatsoever in it.",
       "success_effects": {
        "clue": {
         "id": "c_contracted_out",
@@ -87,7 +87,7 @@
       "dc": 12,
       "kind": "white",
       "success_text": "You have the notebook out before he finishes and you get it, in full, in your own hand — and the writing holds. You read it back. It is nine words long. It was four minutes long when he said it, and the nine words are: *a corridor is a service and services scale down.* That is not a summary. That is what survived.",
-      "failure_text": "You have the notebook out before he finishes, and you get the first clause, and the second clause is gone by the time the pencil reaches it, and the pencil goes on moving for a while out of politeness.",
+      "failure_text": "You have the notebook out before he has finished the sentence, and you get the first clause down cleanly.\n\nThe second clause is gone by the time the pencil reaches the place it should go. Not forgotten — *gone*, the way a word is gone when the room has decided you did not hear it — and the pencil goes on moving across the page for a while afterwards out of pure politeness, making the shapes of a sentence that is no longer available.",
       "success": "write_it_ok",
       "failure": "corridor",
       "success_effects": {
@@ -206,7 +206,7 @@
        "c_dust_rectangle": 2
       },
       "success_text": "He does not answer for long enough that the answer is the pause.\n\n\"I thought there might be,\" he says, \"because for one week in the spring the sound came from a specific direction, and I stood in the corridor at two in the morning with my hand on a door, and the direction was 2F.\"\n\nA pause of a different quality.\n\n\"2F is your flat, Oliver. You were in the harbour that week. You were in the harbour that week and the flat was empty and the sound was coming from inside it and I did not open the door, and I have had a year to decide whether that was cowardice or courtesy, and I have not decided.\"",
-      "failure_text": "\"I looked because I look. It is a building; things get into buildings. A man brought a goat up to 3C in the spring and did not think to mention it.\" He turns a chart over, which is what he does instead of ending a conversation.",
+      "failure_text": "\"I looked because I look. It is a building; things get into buildings. A man brought a goat up to 3C in the spring and did not think to mention it, and I found out from the carpet.\"\n\nHe turns a chart over, which is what Asimov Sobeleaux does instead of ending a conversation, and which ends the conversation.",
       "success": "typing_2f",
       "failure": "root",
       "success_effects": {
@@ -276,7 +276,7 @@
       "dc": 11,
       "kind": "white",
       "success_text": "\"I let them,\" he agrees, \"and here is why, and you will not like it and neither do I.\n\nBefore they began stamping, the corridor did not simply vary. It *ended*, sometimes, four feet short of my door, and there was nothing past the end — not a wall, Oliver. Nothing. I put my hand into it once.\n\nThey stamped it RESOLVED. It has never ended since. It varies, it stretches, it is impertinent — but it goes all the way to the door every single time.\n\nSo yes. I let them. Whatever they are doing with those words, the words are holding something up.\"",
-      "failure_text": "\"I let them.\" He turns a chart. \"A man my age chooses what he will be tired about. I have chosen the boiler.\"",
+      "failure_text": "\"I let them.\"\n\nHe turns a chart over. The accent has gone almost entirely, which happens when the subject is ordinary.\n\n\"A man my age chooses what he will be tired about. There is a list and it is not a long one and everything else goes on the other list. I have chosen the boiler.\"",
       "success": "forms_hold",
       "failure": "root",
       "success_effects": {

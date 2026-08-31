@@ -43,7 +43,7 @@
       "success": "root",
       "failure": "root",
       "success_text": "The face lies fluently and continuously and the hands do not participate.\n\nWhile he explains that everything is sorted, his hands sort: a screw into the left pocket, a folded form into the right, and the right pocket already has eleven folded forms in it and he has not filed any of them.",
-      "failure_text": "He talks and you watch and the hands do exactly what a maintenance man's hands do, which is fidget with a screwdriver, and the face goes on being extremely reassuring about all of it.",
+      "failure_text": "He talks and you watch, and the hands do exactly what a maintenance man's hands do while he talks: fidget with a screwdriver, turn it over, tap it twice against a palm, put it in a pocket, take it out again.\n\nAnd the face goes on being extremely reassuring about all of it — about the window, about the corridor, about the stair — with the untroubled warmth of a man who has never once said a thing he did not believe at the moment of saying it.",
       "success_effects": {
        "clue": {
         "id": "c_eleven_unfiled_forms",
@@ -290,7 +290,7 @@
        "c_dust_rectangle": 2
       },
       "success_text": "\"Noise complaint.\"\n\nHe says it quickly and then stands there in a very good suit with a toolbox that will not shut.\n\n\"Three-A and Two-C, both, same week, same wording — *machine noise, night, below*. And below Two-C is Two-F and Two-F was empty because you were in the water, and I let myself in with Mr Sobeleaux's knowledge and against his advice.\n\nThere was nothing. Flat as anything. Chair, papers, that desk you've made out of a door — and I want to say, in passing, that the left trestle's split and I'd have had that off you and mended in an afternoon if you'd ever once asked.\n\nAnd it was *warm*, Mr Onions. In the middle of the room. Not the flat — the flat was cold, four days empty, but there was a patch of warm air about the size of a desk chair, at the back edge, and I stood in it, and I filed a form.\"",
-      "failure_text": "\"A tap. There was a tap. I'd rather not go further into a tenant's flat than a tap, Mr Onions, even a tenant's own flat, even to the tenant. It's a matter of standards.\"\n\nThe pocket square is adjusted twice.",
+      "failure_text": "\"A tap. There was a tap.\"\n\nThe pocket square is adjusted. \"I'd rather not go further into a tenant's flat than a tap, Mr Onions. Even a tenant's own flat. Even to the tenant himself. It's a matter of standards and I have always kept them.\"\n\nThe pocket square is adjusted a second time, which it did not need.",
       "success": "the_warm_patch",
       "failure": "root",
       "success_effects": {

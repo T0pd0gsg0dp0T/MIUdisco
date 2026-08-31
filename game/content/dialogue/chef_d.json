@@ -43,7 +43,7 @@
       "success": "root",
       "failure": "root",
       "success_text": "She tells you and you do it, and the plates go out at the pace they go out at, and nothing is dropped.\n\nAt the end of it she says *shhhk* at the pan, approvingly, and tells you that you plate like somebody who has been fed by somebody who cared, which is not the same as somebody who can cook, and is a much rarer thing to be.",
-      "failure_text": "She tells you and you do most of it and one plate goes down badly and she has it rebuilt before it has finished going down badly. \"Sit,\" she says, kindly, immediately, and there is food in front of you inside a minute.",
+      "failure_text": "She tells you and you do most of it, and you do most of it adequately, and one plate goes down badly.\n\nShe has it rebuilt before it has finished going down badly — the whole thing, replated, from a pan you did not see her reach for.\n\n\"Shit,\" she says, kindly and immediately, meaning sit, and there is food in front of you inside a minute and no further reference to the plate at any point that evening.",
       "success_effects": {
        "clue": {
         "id": "c_fed_by_somebody_who_cared",
@@ -243,7 +243,7 @@
       "dc": 12,
       "kind": "white",
       "success_text": "\"I ashked him. Onshe. Four yearsh ago, in April, and I have not ashked shinsh.\n\nHe put down the shtamp and he shaid — and I am giving you the wordsh, becaushe I have had them in my head for four yearsh — he shaid: *Chef, I record what occurs and I certify what may be said to have occurred, and those are two different professions, and the parish employs me in both, and pays me for one.*\n\nAnd then he shtamped it. And then he shaid good afternoon Chef. And he hash come every Thurshday shinsh and he hash never mentioned it and neither have I.\"",
-      "failure_text": "\"Who would ashk? Ish a health inshpector. You do not ashk a health inshpector to explain himshelf, you give him a chair and a good light and you get on with the shervish.\"",
+      "failure_text": "\"Who would ashk? Ish a health inshpector.\"\n\nShe is genuinely puzzled, which is worse than being stonewalled.\n\n\"You do not ashk a health inshpector to explain himshelf. You give him a chair and a good light and you get on with the shervish. Nine yearsh he hash come. Nine yearsh I have fed him.\"",
       "success": "ficklefuk",
       "failure": "root",
       "success_effects": {

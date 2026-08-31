@@ -40,7 +40,7 @@
       "success": "root",
       "failure": "root",
       "success_text": "He is not standing under the light well. He is standing beside it, exactly, at the edge of where it would come down — and the floor there has been worn to a different colour in the shape of a man standing.\n\nHe has stood in that spot, every day, for long enough to wear the boards, and it is the one place in this room the thirty feet of sky is not above.",
-      "failure_text": "BUT it's a light well, he says, and you look up at it rather than at him, which is what the sentence is for, and it works, and thirty feet of indoor weather does what it does.",
+      "failure_text": "BUT it's a light well, he says — and you look up at it rather than at him, which is precisely what the sentence is for and precisely what it is engineered to achieve.\n\nAnd it works. Thirty feet of indoor weather does what thirty feet of indoor weather does, and by the time your eyes come down he has moved four feet along the rail and is being helpful at somebody else.",
       "success_effects": {
        "clue": {
         "id": "c_worn_boards_beside_it",
@@ -179,7 +179,7 @@
       "dc": 12,
       "kind": "white",
       "success_text": "\"BUT from the— from the—\"\n\nHe points up. His arm gets about halfway and he watches it going and brings it back down and puts the hand back on the brass rail where it lives.\n\n\"From above,\" he says. \"Leaks come from above. That's the whole of what I know about leaks and I've been leaning on it for nine years and I would very much appreciate it if you'd let me keep it.\"",
-      "failure_text": "\"BUT from ABOVE. Where else. Where else does water come from, in a building, when it's coming down.\" And that is, infuriatingly, an argument.",
+      "failure_text": "\"BUT from ABOVE. Where else. Where else does water come from, in a building, when it's coming down.\"\n\nAnd that is, infuriatingly, an argument. It is a complete argument with a premise and a conclusion, and it is unanswerable, and he is holding the trolley rail while he makes it.",
       "success": "root",
       "failure": "root",
       "success_effects": {
@@ -219,7 +219,7 @@
        "c_bud_holds_nothing": 3
       },
       "success_text": "\"BUT they're—\"\n\nAnd then he does something he has not done in the nine years you have been coming here, which is that he takes his hand off the rail.\n\nThe trolley is still there. He looks at it with the expression of a man checking.\n\n\"They're nobody's,\" he says. \"There's never been a name on one. They change. That tartan one was leather in the spring and I never touched it and nobody ever came for it and I have been holding luggage for nine years for people who have not arrived, and I'll tell you what I've worked out, and then I'm going to put my hand back.\n\nThey're not waiting to go up. They're waiting to be *for* somebody. And as long as I'm stood here holding them like they're for somebody, they haven't got round to not being.\"\n\nHe puts his hand back on the rail. The knuckles go white in the usual place.",
-      "failure_text": "\"BUT they're the *guests'*.\" And the hand does not leave the rail, and the sentence does not get a second clause, and after a while it becomes clear that standing here is a thing you are doing to a man who has a job.",
+      "failure_text": "\"BUT they're the *guests'*.\"\n\nThe hand does not leave the rail. The sentence does not acquire a second clause. He looks at you with the open, faintly worried face of a man who has answered the question and cannot understand why the conversation is continuing.\n\nAnd after a while it becomes clear that standing here is a thing you are doing to a man who has a job.",
       "success": "trolley_truth",
       "failure": "root",
       "success_effects": {

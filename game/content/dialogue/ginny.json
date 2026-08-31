@@ -47,7 +47,7 @@
       "success": "root",
       "failure": "root",
       "success_text": "You are standing and moving before the sentence she is building has finished being built, and you are through the door on the beat where the music changes, which is the only beat on which anybody leaves this room unremarked.\n\nFrom the corridor, briefly, you hear her say — to nobody, in a completely different voice — \"Well. *He* knows how to leave.\"",
-      "failure_text": "You go to leave and the room does what the room does: the music holds, the conversation has one more turn in it, and you take the turn, and by the time you are out you have been seen leaving by everybody who was going to see it.",
+      "failure_text": "You go to leave and the room does what the room does.\n\nThe music holds. The conversation acquires one more turn — a small one, easily declined, which you do not decline — and you take the turn, and somebody says something to you on the way past that requires an answer.\n\nBy the time you are through the door you have been seen leaving by everybody who was going to see it.",
       "success_effects": {
        "clue": {
         "id": "c_a_different_voice",
@@ -126,7 +126,7 @@
        "c_corridor_fold": 2
       },
       "success_text": "\"'Course I know.\"\n\nShe puts the gin down. Not hard — placed, the way you place a thing you might need both hands away from.\n\n\"I've managed this floor eleven years. You think I haven't paced the corridor? I've paced it with a tape. I've paced it with two men and a tape. I know precisely what my building is, Onions, and here's what I do about it: I open at six, I run the bar, I pay eleven people, and I do not look at the back wall.\n\nThat's not denial. Denial's Bud Onkuhdonk, up at the Inn, arguing with weather. This is a *stance*. I know what's coming through that wall and I have decided where my feet go, and my feet go here, in front of the till, between it and them.\"",
-      "failure_text": "\"I know what it's called, I know what it costs to heat, and I know what time the fire inspection is.\" She picks the gin back up. \"You came in here to be told something. Everybody does. The dancers are through there.\"",
+      "failure_text": "\"I know what it's called, I know what it costs to heat, and I know what time the fire inspection is.\"\n\nShe picks the gin back up, which is the end of that.\n\n\"You came in here to be told something. Everybody does — they come in the front and they stand where you're standing and they wait for the building to be explained to them. The dancers are through there.\"",
       "success": "corridor_stance",
       "failure": "root",
       "success_effects": {
@@ -158,7 +158,7 @@
       "dc": 11,
       "kind": "white",
       "success_text": "It is a good machine badly used and it takes about four minutes to find out why: the thermostat is fine, the compressor is fine, and the drain runs uphill for eleven inches before it remembers itself.\n\nYou say so. Ginny looks at the eleven inches for a while.\n\n\"That pipe was straight in March,\" she says. \"I had it in. I watched him fit it. It ran downhill because pipes do.\"\n\nShe crouches, follows it with two fingers, and stops where it lifts.\n\n\"Right. So my building's been quietly redecorating the plumbing and the only reason anybody knows is that ice is the one thing in here that won't lie about which way is down.\"",
-      "failure_text": "You get the panel off and a great deal of cold air and a diagnosis of 'it's the drain, probably', which Ginny receives with the exact courtesy of a woman who has had that diagnosis from three engineers and a cousin.",
+      "failure_text": "You get the panel off and a great deal of very cold air, and a diagnosis of 'it's the drain, probably'.\n\nGinny receives this with the exact courtesy of a woman who has had that diagnosis from three engineers, a cousin, and a man from the brewery, and who has been running a bar long enough to know what a man says when he has taken a panel off and found nothing.",
       "success": "ice_machine",
       "failure": "corridor",
       "success_effects": {
@@ -229,7 +229,7 @@
        "c_gator_doctrine": 2
       },
       "success_text": "\"That's the question,\" she says, and looks at you properly for the first time. \"Nobody asks that one. They all ask what's behind it. You asked how long.\n\nTwo seconds because two seconds is what a person *glances* at. Long enough that you saw it, short enough that you can't check it. That's not a physical property, Onions. Nothing physical has a duration tuned to human attention.\n\nSomebody set it. And a thing that's been set can be set differently, and the week before you came out of that harbour it was running at four.\"",
-      "failure_text": "\"Because that's how long it does it for.\" She drinks. \"You're asking a plumbing question about a wall. I've got no plumber for the wall. I've asked.\"",
+      "failure_text": "\"Because that's how long it does it for.\"\n\nShe drinks. \"You're asking a plumbing question about a wall. I've got no plumber for the wall. I've asked — properly, twice, with money on the table — and what I've got is a licence, eleven staff and a fire inspection on Thursday.\"",
       "success": "wall_tuned",
       "failure": "wall",
       "success_effects": {
@@ -261,7 +261,7 @@
       "dc": 12,
       "kind": "white",
       "success_text": "Turn it round. Everybody in this club has spent eleven years asking what is behind the wall, which assumes the wall is a window and you are on the outside of it.\n\nYou are not on the outside of it.\n\nTwo seconds, nine times a night, at a duration tuned exactly to human attention — that is not a leak and it is not a fault. That is a schedule. Something opens a wall onto this room on a rhythm, for precisely as long as it takes to see and not long enough to be checked, and it has been doing it since before you came out of the water.\n\nThe correct question was never what is behind it. The correct question is what it has been *looking at*, ninety times a night, for eleven years.",
-      "failure_text": "It goes transparent, and there is black stone behind it, and it goes back, and the whole business takes about two seconds and refuses to be more sinister than that no matter how long you stand in front of it with your coat on.",
+      "failure_text": "It goes transparent, and there is black stone behind it, and it goes back.\n\nThe whole business takes about two seconds and refuses absolutely to be more sinister than that, no matter how long a man stands in front of it with his coat still on, and by the fourth time it has become something the evening simply does now and then.",
       "success": "two_seconds_threat",
       "failure": "wall",
       "success_effects": {
@@ -339,7 +339,7 @@
        "c_struck_page": 3
       },
       "success_text": "\"Desk made out of a door on two trestles. Left trestle's split. Paper everywhere — not stacked, *drifted*, like nobody's tidied since there was a reason to. Green shade on the lamp. Cup with a ring under it. Chair pushed back.\n\nAnd a typewriter.\"\n\nShe is watching your face while she says it, which is a fighter's habit, and she does not stop.\n\n\"That's your desk, isn't it. I've been looking at your desk through my back wall once a month for eleven years and I only worked that out about four seconds ago, from your face, and I would like it very much on the record that I did not enjoy it.\"",
-      "failure_text": "\"A room. Lamp, desk, paper. I've got a bar to run, Onions, I don't take inventory of the impossible, I take inventory of the gin.\" But her eyes went to the back wall while she said it, and came back, and she noticed you notice.",
+      "failure_text": "\"A room. Lamp, desk, paper. I've got a bar to run, Onions — I don't take inventory of the impossible, I take inventory of the gin.\"\n\nBut her eyes went to the back wall while she said it. Not a glance: a check, of the kind you make on a thing you have been checking for years.\n\nAnd they came back. And she noticed you notice, and she let you see her notice, and neither of you says anything about it.",
       "success": "room_is_yours",
       "failure": "wall",
       "success_effects": {

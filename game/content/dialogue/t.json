@@ -31,7 +31,7 @@
       "success": "root",
       "failure": "root",
       "success_text": "Eleven minutes of silence and a man doing prep, and in eleven minutes he does not once look at what his hands are doing.\n\nHe is watching the door. Not the pass, not the pans, the *door*, continuously, the whole shift, and he has arranged his entire station so that he can do that without it being visible that he is doing it.",
-      "failure_text": "He preps. It is soothing and extremely fast and entirely opaque, and at the end of eleven minutes there is a great deal of prepared food and you have learned nothing except that he is very good at this.",
+      "failure_text": "He preps.\n\nIt is soothing and extremely fast and entirely opaque — the hands go where they go, the knife does what it does, and there is no visible relationship between the attention he is paying and the work getting done.\n\nAt the end of eleven minutes there is a great deal of prepared food and you have learned nothing at all except that he is very good at this, which everybody in this parish already knew.",
       "success_effects": {
        "clue": {
         "id": "c_t_watches_the_door",
@@ -79,7 +79,7 @@
       "dc": 11,
       "kind": "white",
       "success_text": "\"Ha! Right. Right — nobody has ever asked me that and I have had eleven years to get ready for it.\"\n\nHe puts the knife down, which he does not do.\n\n\"*Taw.* That's the Phoenician. Last letter of the alphabet, and it means a mark — the mark you make when you cannot write, the one you put at the bottom of a thing to say you were there and you agreed to it. A cross. A signature for a man with no letters.\n\nSo I'm the mark at the end. That's the etymology and I'd be lying if I said I hadn't looked it up, and I'd be lying twice if I said I looked it up recently.\"\n\nA beat. The extraction fan has gone quiet again.\n\n\"Man with no name signs with a T. It's not the worst arrangement anybody in this parish has come to.\"",
-      "failure_text": "\"Tee. As in the letter, as in the drink, as in the thing you hit a ball off.\" He shrugs, cheerfully, and picks the knife back up. \"I do the sound, chef. I've never once done the history.\"",
+      "failure_text": "\"Tee. As in the letter, as in the drink, as in the thing you hit a ball off.\"\n\nHe shrugs, cheerfully, entirely unbothered, and picks the knife back up.\n\n\"I do the sound, chef. That's the job and it's the whole job. I've never once done the history and I'd probably be worse at the sound if I had.\"",
       "success": "letter_t",
       "failure": "why_t",
       "success_effects": {
@@ -204,7 +204,7 @@
       "dc": 11,
       "kind": "white",
       "success_text": "The ladle is on the pass and it is not quite touching the pass, and it has been in that condition for the length of a sentence about tureens.\n\nSo: what does the ladle want.\n\nThe answer arrives fully dressed and entirely unembarrassed, the way they do, and it is this — the ladle does not want anything. The ladle is *being held*, gently, at the height at which a person holds a thing they intend to give back, by something that has been in this kitchen a very long time and has never once been thanked for the catching.\n\nAnd it likes the long sentences. It likes them the way a dog likes a particular voice, without understanding one word.",
-      "failure_text": "The ladle is a ladle. It is a ladle nine inches above a steel counter and it is entirely uninterested in being interviewed, and after a while T says, kindly, \"It doesn't do requests,\" and goes back to the prep.",
+      "failure_text": "The ladle is a ladle.\n\nIt is a ladle nine inches above a steel counter, and it is entirely uninterested in being interviewed, and it has the specific inertness of an object that has been asked a question by somebody who did not have the standing to ask it.\n\nAfter a while T says, kindly, without turning round, \"It doesn't do requests,\" and goes back to the prep.",
       "success": "the_ladle",
       "failure": "utensils",
       "success_effects": {

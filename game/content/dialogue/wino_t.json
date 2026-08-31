@@ -40,7 +40,7 @@
       "success": "root",
       "failure": "root",
       "success_text": "He does, and it is not from any of the bottles, and he pours two.\n\nHalfway down he says, to the bar rather than to you, that he has been closing this room every night for eleven years and has never once been the last to leave it, and that he has stopped wondering who else is still in here.",
-      "failure_text": "\"You don't want that,\" he says, and pours you something excellent instead, and moves down the bar to the fade where the light gives out, and the conversation ends there with great courtesy.",
+      "failure_text": "\"You don't want that,\" he says.\n\nAnd he pours you something excellent instead — genuinely excellent, better than the thing you asked for by any measure a bar can apply — and moves down to the fade at the end where the light gives out.\n\nThe conversation ends there, with great courtesy, on the beat, and there is no version of the evening in which it starts again.",
       "success_effects": {
        "clue": {
         "id": "c_never_the_last_to_leave",
@@ -220,7 +220,7 @@
       "dc": 12,
       "kind": "white",
       "success_text": "\"Spoken *about* him. All day, every day, twenty-two years. Spoken *to* him?\"\n\nThe clippers slow down.\n\n\"...No. Not once. Not by me and not by nobody in that chair, and I have watched four hundred people notice that owlbear in my mirror and every single one of them has turned to *me* to ask about it.\n\nThey ask me. Man's right there. In the glass, in an excellent coat, and they turn round and ask the barber.\"\n\nHe puts the clippers down.\n\n\"Twenty-two years I been the one they ask instead. And he's been stood there through every one of them, being asked about, in the third person, in his own shop.\"",
-      "failure_text": "\"Folk talk about him plenty. He don't seem to mind it. He's got a face for being talked about — some fellas have.\"\n\nThe beat comes back and the subject goes with it.",
+      "failure_text": "\"Folk talk about him plenty. He don't seem to mind it. He's got a face for being talked about — some fellas have.\"\n\nThe beat comes back underneath it, and the clippers find it, and the subject goes with the beat the way everything in this shop goes with the beat when Antonio would rather it did.",
       "success": "albert_ok",
       "failure": "root",
       "success_effects": {

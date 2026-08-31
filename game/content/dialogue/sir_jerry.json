@@ -35,7 +35,7 @@
       "success": "root",
       "failure": "root",
       "success_text": "The third mirror does something on the ninth minute and you do not move, at all, because whatever it costs to hold still is a currency you happen to have a great deal of.\n\n\"A knight,\" says Sir Jerry, genuinely moved, \"does not flinch.\" And in the glass, for the length of the tenth minute, there are two men being shaved by two barbers and only one of the barbers is Sir Jerry.",
-      "failure_text": "The third mirror does something on the ninth minute and your head goes round with it, and the razor withdraws with thirty years of practice, and there is a very small nick above the ear bleeding with tremendous enthusiasm.",
+      "failure_text": "The third mirror does something on the ninth minute and your head goes round with it before any part of you has been consulted.\n\nThe razor withdraws with thirty years of practice behind the withdrawal — instantly, unhurriedly, at an angle chosen long before tonight.\n\nThere is a very small nick above the ear, bleeding with tremendous enthusiasm. \"A knight,\" Sir Jerry observes, applying something, \"does not flinch. A knight's patient is under no such obligation.\"",
       "success_effects": {
        "clue": {
         "id": "c_two_barbers",

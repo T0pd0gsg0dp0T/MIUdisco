@@ -31,7 +31,7 @@
       "success": "root",
       "failure": "root",
       "success_text": "He slides it over without a word, which for Fatty is an event.\n\nIt is cold and thick and about two-thirds of the way down there is a *hole* in it — not a bubble, a hole, going through the shake and out the other side of the glass and not letting anything through — and it holds for as long as the straw is in it.",
-      "failure_text": "He slides it over and you drink some of a very good milkshake, and he explains the hole to you at length while you do, and the hole does not appear, and he is not remotely bothered by this.",
+      "failure_text": "He slides it over and you drink some of a very good milkshake.\n\nHe explains the hole to you at length while you do — the hole, not the donut, the hole considered as an object with a history — and it is a genuinely interesting argument and he is genuinely pleased to be making it.\n\nThe hole does not appear. He is not remotely bothered by this, which suggests he has been here before.",
       "success_effects": {
        "clue": {
         "id": "c_hole_in_the_shake",
@@ -76,7 +76,7 @@
       "dc": 12,
       "kind": "white",
       "success_text": "\"Everything.\"\n\nHe puts the shake down, which he does not do.\n\n\"It knows everything, man, that's the whole tragedy, it's *in* it. It's got the full picture. It's just got no mouth on that end.\n\nAnd every so often — every so often, right — you get a bubble. Comes up the straw. Little bit of down there arriving up here. And what does the dry bit do?\"\n\nHe waits. He genuinely waits.\n\n\"It goes 'huh, a bubble', and it carries on. Every time. And that's you and me and everybody in this shop, and the bubbles have been coming up for years, and we've been going 'huh, a bubble.'\"",
-      "failure_text": "\"Nothing! It's a straw!\" He laughs enormously. \"It's a straw, man, come on, I'm not a *wizard*.\"\n\nAnd he drinks through it, and the moment is gone, and it may not have been there.",
+      "failure_text": "\"Nothing! It's a straw!\"\n\nHe laughs enormously, from the chest, with his whole face. \"It's a straw, man, come on. I'm not a *wizard*.\"\n\nAnd he drinks through it, and the moment is gone, and it is entirely possible that it was never there and that you have spent four minutes doing metaphysics at a man about a straw.",
       "success": "bubbles",
       "failure": "root",
       "success_effects": {

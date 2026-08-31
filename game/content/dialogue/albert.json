@@ -180,7 +180,7 @@
       "dc": 12,
       "kind": "white",
       "success_text": "Not Albert. The glass. The third mirror, which has held an owlbear for forty years without being asked and without complaint and without, so far as anybody in this shop has ever considered, an opinion.\n\nIt has one.\n\nIt arrives sideways and complete and in no language at all: *he is good company and he is the only thing in here that has ever said thank you to a surface, and he has been getting quieter for years, and I cannot make him louder, I can only refuse to stop including him, and I have never once stopped.*\n\nIn the glass, Monsieur Albert looks at nothing in particular, and does not ask what just happened, and inclines his head about a degree.",
-      "failure_text": "It is a mirror in a barbershop. It shows the room, and an owlbear, and the back of a man's head at a desk that is not there, and it declines to be drawn on any of it.",
+      "failure_text": "It is a mirror in a barbershop.\n\nIt shows the room, and an owlbear in an excellent coat, and the back of a man's head at a desk that is not there — and it declines, completely and without discourtesy, to be drawn on any of it. Whatever a pane of glass has instead of an opinion, it is keeping it.",
       "success": "glass_opinion",
       "failure": "why_glass",
       "success_effects": {

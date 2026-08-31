@@ -37,7 +37,7 @@
       "success": "root",
       "failure": "root",
       "success_text": "You take it and you do the arc — one pass, no lift, the wrist doing the turn at the bottom — and the glass behind it stops arguing with the room.\n\nLuigi watches the whole pane without speaking, which he has not done since you met him. \"Ey,\" he says, when it is finished. \"You have done this. Not a floor. Something else. But you have done *this*.\"",
-      "failure_text": "You take it and you do something that is technically a wipe. Luigi does not take it back, which would be a kindness. He watches, and offers advice, and the advice is about the elbow, and the pane ends up worse than it started.",
+      "failure_text": "You take it and you do something that is technically a wipe.\n\nLuigi does not take it back. Taking it back would be a kindness and he has decided against kindness in favour of instruction: he watches the whole pane, and he offers advice, and the advice is entirely about the elbow.\n\nThe pane ends up worse than it started. He looks at it for a while and says nothing at all, which is the most eloquent thing that has happened this evening.",
       "success_effects": {
        "clue": {
         "id": "c_you_have_done_this",
@@ -197,7 +197,7 @@
        "c_luigi_stabilises": 3
       },
       "success_text": "He stops mid-arc.\n\n\"...Sì,\" he says. \"Sì, is true. I do not hear it when I am working. I hear it when I stop for the coffee, and I hear it going up the stair, and never with the squeegee in my hand.\"\n\nA long pause, filled by a bucket.\n\n\"I had thought this was because of the noise of my working. But I am a quiet worker, Mr Onions. I am a very quiet worker. Is glass and water. Is the quietest thing in the building.\"",
-      "failure_text": "\"Because I am working! Is noise! A man with a bucket cannot hear a pipe do a waltz, this is not a mystery, this is a bucket.\"",
+      "failure_text": "\"Because I am working! Is noise!\"\n\nHe is delighted to have been asked something with an answer in it.\n\n\"A man with a bucket cannot hear a pipe do a waltz, Mr Onions, this is not a mystery, this is a *bucket*. You want the mystery, you go upstairs and ask a man with no bucket.\"",
       "success": "not_pipes_ok",
       "failure": "root",
       "success_effects": {

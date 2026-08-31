@@ -42,7 +42,7 @@
       "success": "root",
       "failure": "root",
       "success_text": "The suit is a suit and the clipboard is a clipboard and under both of them is an animal that has been standing at parade rest for eleven years.\n\nHe is not dangerous to you. He is *braced* — against the door, continuously, in the specific way of something that has been told what comes through it and has not been told when.",
-      "failure_text": "He is an alligator in a suit with a clipboard and a lanyard, and the old part of you files him under 'management' and goes back to sleep, and the meeting proceeds.",
+      "failure_text": "He is an alligator in a very good suit with a clipboard and a lanyard, and the old part of you — the part that has been in a great many rooms and made a great many quick decisions — files him under 'management' and goes back to sleep.\n\nThe meeting proceeds. It proceeds for some time. At no point does anything happen that would justify waking anybody up.",
       "success_effects": {
        "clue": {
         "id": "c_braced_against_the_door",
@@ -192,7 +192,7 @@
       "dc": 12,
       "kind": "white",
       "success_text": "\"—confirming that there's a category of thing it belongs to.\"\n\nHe says it fast, the way a man says the answer to a question he has been asking himself for longer than is healthy, and then his professional face comes down over it like a shutter.\n\n\"Which is on the card. That's line two, that's not a secret, the card's screwed to a wall at the height of my eye. Everyone could read it. Nobody reads it. You read it.\"\n\nA beat.\n\n\"You're the first patron in eleven years who read the card.\"",
-      "failure_text": "\"—would be outside my remit. Which it is. So.\" He smiles, which involves a great deal of infrastructure. \"Really appreciate you raising it. I'll take it away.\"",
+      "failure_text": "\"—would be outside my remit. Which it is. So.\"\n\nHe smiles, which involves a great deal of infrastructure and takes a moment to complete.\n\n\"Really appreciate you raising it. Genuinely — that's the kind of thing we want surfaced. I'll take it away.\" He does not write anything down. There is nowhere on the clipboard where it would go.",
       "success": "read_the_card",
       "failure": "root",
       "success_effects": {

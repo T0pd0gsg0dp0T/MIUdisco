@@ -43,7 +43,7 @@
       "success": "root",
       "failure": "root",
       "success_text": "The verse is a surface. Underneath it the vault room is doing something continuous and quiet, and it is the same thing the fog does and the same thing the lampposts do.\n\nIt is *waiting*, in the specific way of a room that has been told to expect somebody. Nineteen vaults, and the room is not holding them shut. It is holding them ready.",
-      "failure_text": "She speaks in verse and the verse is very good and the room is cold and full of brass, and whatever else it is doing it declines to do it audibly tonight.",
+      "failure_text": "She speaks in verse and the verse is very good, and the room is cold and full of brass and the horizontal.\n\nWhatever else this building is doing tonight, it declines to do it audibly — and the couplets go on, and they are about the seasons, and they are genuinely lovely, and by the end of them you are nearer the vestibule than you were.",
       "success_effects": {
        "clue": {
         "id": "c_holding_them_ready",
@@ -156,7 +156,7 @@
        "c_noticed_too_much": 3
       },
       "success_text": "\"They talked,\" she says, and there is no rhyme in it. \"That is the whole of it, sir, and I have had sixty years to find a better answer and there is not one.\n\nThey talked about the town. Not gossip — *description*. They were the ones who said out loud that the hallway was longer, that the clock was wrong, that the man behind the counter had answered before the question. They said it in public and they said it more than once.\n\nAnd then a card came, with four lobes on it, and then they did.\"",
-      "failure_text": "\"In common? They were dead, sir, which in my experience is the only thing anybody has ever had in common with anybody.\" A couplet arrives about worms and is genuinely very good, and takes ninety seconds, and answers nothing.",
+      "failure_text": "\"In common? They were dead, sir, which in my experience is the only thing anybody has ever had in common with anybody else.\"\n\nA couplet arrives about worms. It is genuinely very good — better than it needs to be, better than the moment can absorb — and it takes ninety seconds, and it answers nothing whatever, and it is not intended to.",
       "success": "ledger_talked",
       "failure": "root",
       "success_effects": {
@@ -415,7 +415,7 @@
       "dc": 11,
       "kind": "white",
       "success_text": "\"Ó Dochartaigh,\" she says, and gives it the whole of its length, which nobody has done in this parish in sixty years. \"Anglicised badly and early. *Dochartach* — hurtful, obstructive. The unhelpful ones. The line of the man who gets in the way.\"\n\nA pause, and the vestibule does the thing it does with pauses.\n\n\"I have thought about that a great deal, sir, standing in front of a door I will not open, obstructing a man who wishes to be let past. One does wonder whether one chose the profession or whether the profession was sitting in the name all along, waiting — as it was for the barber, who is a knight by nothing but a vowel.\"",
-      "failure_text": "\"It is Irish, sir, and it is old, and it belonged to a woman who went into a vault in 1961 and has no further use for it.\"\n\nAnd that is a stone door coming down, in couplets, courteously, and there is nothing behind it tonight.",
+      "failure_text": "\"It is Irish, sir, and it is old, and it belonged to a woman who went into a vault in 1961 and has no further use for it.\"\n\nAnd that is a stone door coming down. In couplets, courteously, with an apology folded into the meter — and there is nothing behind it tonight, and there is not going to be, and she stands in front of it with her hands folded until you have understood that.",
       "success": "odochtaigh",
       "failure": "name",
       "success_effects": {

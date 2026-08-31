@@ -66,7 +66,7 @@
        "c_the_obstructive_ones": 2
       },
       "success_text": "\"Letter for letter. Not an anagram — an anagram is a coincidence with good manners. A reversal is an author.\"\n\nHe says it in the exact rhythm you would have said it in, and then he does something with his mouth that is not a smile and is the shape a smile is cut from.\n\n\"Silvo and Ovlis founded that town twice, eleven years apart, on the same plots, and neither charter mentions the other. That was not cleverness. That was a man who could not settle on a name and did not have the discipline to throw the first one away, and the parish has been living in both of them ever since.\n\nI have never thrown anything away. You will have noticed the basket. That is not the same as keeping things, and it has taken me eleven years to learn the difference, and I learned it about four days ago and I am not enjoying it.\"",
-      "failure_text": "\"Mm. You have got it round the wrong way, which is funnier than either of us needs tonight.\"\n\nHe lets it sit, and does not correct you, and the not-correcting is a courtesy that costs him something.",
+      "failure_text": "\"Mm. You have got it round the wrong way, which is funnier than either of us needs tonight.\"\n\nHe lets it sit. He does not correct you — does not supply the right order, does not enjoy the error, does not do any of the four things a man in his position could reasonably do with it.\n\nAnd the not-correcting is a courtesy, and it costs him something, and he pays it without drawing attention to the payment.",
       "success": "root",
       "failure": "root",
       "success_effects": {
@@ -430,7 +430,7 @@
        "c_built_for_someone_who_cannot_go_out": 2
       },
       "success_text": "\"I know,\" you say. \"You have been very bad at hiding it.\n\nThe shim in the trestle is a form you kept somewhere dry for eleven years, and the desk is not holding the shim up, the desk is holding the shim *in*, and you have refused to have the leg mended by a man who has offered every year.\n\nThe drafts in that basket are dated. Eleven years apart at the bottom and four days apart at the top. That is not a writer's block. That is somebody finding one more thing to do.\n\nAnd the earliest ones call me the tenant. And the last one calls me Ols, which is what a man calls me who drove down to a slipway at four in the morning.\"\n\nHe has not turned round from the wall.\n\n\"I did not think anybody was going to read the basket,\" he says. \"That is the whole of my defence and it is not a good one.\"",
-      "failure_text": "\"I know. You have kept me alive.\"\n\nIt comes out flat and it comes out as a receipt, and he takes it as a receipt, and says \"Thank you\" to a wall in a tone that closes the subject for good.",
+      "failure_text": "\"I know. You have kept me alive.\"\n\nIt comes out flat, and it comes out as a receipt — an item acknowledged, a column balanced — and he takes it as a receipt, because that is what it is.\n\n\"Thank you,\" he says, to the wall that is not a window, in a tone that closes the subject for good and will not be reopening it this evening or any other.",
       "success": "the_last_word",
       "failure": "the_last_word",
       "success_effects": {

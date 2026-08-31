@@ -43,7 +43,7 @@
       "success": "root",
       "failure": "root",
       "success_text": "You go at her pace and something in you supplies the words before the rest of you has been consulted, and they are not words you know.\n\nShe serves it. It is right. The queue does not break stride, and Mary looks at you for exactly as long as it takes to hand it over, which is the longest she has looked at anybody all night.",
-      "failure_text": "You go at her pace and produce a sound. She waits, at her speed, which is a very fast kind of waiting, and then serves you the thing that people who make that sound get, and it is fine.",
+      "failure_text": "You go at her pace and produce a sound.\n\nShe waits — at her speed, which is a very fast kind of waiting and involves not moving at all — and then serves you the thing that people who make that sound get, which arrives in about four seconds and is perfectly fine, and which is not what you were trying to order.",
       "success_effects": {
        "clue": {
         "id": "c_you_know_the_code",
@@ -92,7 +92,7 @@
        "c_metre_is_the_code": 3
       },
       "success_text": "\"I don't.\"\n\nShe is completely still. She has been completely still since you came round this side and it is now clear that the stillness is the default and the counter-speed is the effort.\n\n\"I give 'em something. And then they've ordered it. That's the whole mechanism, man, and I found it when I was nineteen and I've never told a soul.\n\nSomebody says a thing on the beat, right — confident, no gap — and there's about a second where what they wanted hasn't settled yet. It's *open*. And if I put a cup down in that second, then that's what they wanted, and they walk off happy, and they're not being fooled, I want to be clear. They *did* want it. It's just that they wanted it because I gave it to them and not the other way round.\"",
-      "failure_text": "\"Vibes,\" she says, and lets it sit there for about eight seconds. \"...Yeah. Vibes. That's the answer and it's a real answer and it's cost me forty years to be able to say it that short.\"",
+      "failure_text": "\"Vibes,\" she says.\n\nAnd she lets it sit there for about eight seconds, half-shut, entirely unhurried, while the queue moves behind you.\n\n\"...Yeah. Vibes. That's the answer, man, and it's a real answer, and it's cost me forty years to be able to say it that short.\"",
       "success": "mechanism",
       "failure": "root",
       "success_effects": {
@@ -201,7 +201,7 @@
        "c_change_of_tense": 3
       },
       "success_text": "\"Both. Always both. Counter runs across it — that's not an accident, man, my dad built that counter and he built it across, and I asked him once why and he said 'so somebody's in both.'\n\nHe wasn't a mystical guy. He sold pop.\n\nBut I've had forty years behind a counter with one hand in each and I'll tell you what it's like, since you're the one asking: the cold side's *done*. Everything over there has already happened, it's finished, you can't do anything about it and it doesn't want you to.\n\nThe warm side's still going.\n\nAnd my till's on the cold side and my hands are on the warm, and that's the job, man. Taking money for things that have already happened with hands that are still going.\"",
-      "failure_text": "\"Both, man. Counter runs across it.\" She shrugs, slowly, and it takes about four seconds. \"You get used to it. You get used to anything with a wage attached.\"",
+      "failure_text": "\"Both, man. Counter runs across it.\"\n\nShe shrugs, slowly, and the shrug takes about four seconds from start to finish and is the largest gesture you have seen her make.\n\n\"You get used to it. Left hand's cold at the end of a shift and the right one isn't. You get used to anything with a wage attached.\"",
       "success": "both_sides",
       "failure": "root",
       "success_effects": {
