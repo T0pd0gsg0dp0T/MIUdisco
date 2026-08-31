@@ -175,6 +175,42 @@
      "effects": {
       "morale": -5
      }
+    },
+    {
+     "id": "hold",
+     "text": "Say nothing. Stand there and do not come apart.",
+     "once": true,
+     "check": {
+      "id": "revilo:hold",
+      "skill": "VOLITION",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "You do not argue, because the argument is sound and you have not got one, and the absence of one is what he has been counting on.\n\nSo you stand in it instead. The whole weight of a correct case for your own non-existence, delivered in your own cadence by a man with your face, and you take it standing up in a room nine feet by eleven, and you do not answer it, and you do not come apart, and it goes on for some time.\n\nHe stops before you do.\n\n\"...That,\" he says, \"is not a rebuttal.\"\n\nNo. It is not.\n\n\"No. It is worse than a rebuttal. A rebuttal I have drafted answers to.\"",
+      "failure_text": "The case lands the way a correct case lands. He builds it in one breath, without cruelty and without a gap, and somewhere in the third clause the floor of it gives and there is nothing underneath to stand on, and the room gets very small and stays that way for a while.\n\nHe waits, courteously, until it has finished happening.",
+      "success": "held",
+      "failure": "arg_one",
+      "success_effects": {
+       "clue": {
+        "id": "c_stood_in_it",
+        "title": "Not a rebuttal, and worse than one",
+        "text": "Faced with a sound argument for his own non-existence, Oliver did not answer it and did not come apart. Revilo has drafted answers to every rebuttal. He has not drafted one for a man simply remaining in the room.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "personhood"
+        ],
+        "source": "Snoino Revilo"
+       },
+       "lucidity": 12,
+       "relationship": {
+        "revilo": 1
+       }
+      },
+      "bonus_if_clue": {
+       "c_no_floor": 2,
+       "c_two_hundred_drafts": 2
+      }
+     }
     }
    ]
   },
@@ -209,6 +245,40 @@
      "id": "on",
      "text": "Let him go on.",
      "goto": "arg_two"
+    },
+    {
+     "id": "take_it",
+     "text": "Take it. Do not put it down and do not let him see you put it down.",
+     "once": true,
+     "check": {
+      "id": "revilo:take_it",
+      "skill": "PAIN_THRESHOLD",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "He has just removed a kitchen, a woman, and forty years of the only grief you were certain of, and he did it in four sentences, courteously, because the architecture required it.\n\nYou take it the way you have taken every other thing this fortnight: fully, at once, without flinching and without filing it anywhere it can be lost.\n\n\"You are not going to argue,\" he says.\n\nNo.\n\n\"You are not going to argue, and you are not going to sit down, and you are going to carry that out of this room with you.\" A pause, and it is the first one this evening that has not been an instrument. \"I did not model that. I modelled grief and I modelled rage and I modelled a man asking me to put her back. I did not model *keeping* it.\"",
+      "failure_text": "It goes in exactly where he aimed it.\n\nThere is no argument available and no ground to take it on, and the room does what small rooms do, and it is some time before the conversation has anywhere to go and when it does it goes somewhere easier, because he lets it, which is the worst courtesy of the night.",
+      "success": "took_it",
+      "failure": "denied",
+      "success_effects": {
+       "clue": {
+        "id": "c_he_did_not_model_keeping",
+        "title": "He did not model keeping it",
+        "text": "Told the kitchen and the woman in it were invented, Oliver kept the grief rather than surrendering or contesting it. Revilo modelled grief, rage, and pleading. He did not model a man keeping what he had been told was not real.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "personhood",
+         "kindness"
+        ],
+        "source": "Snoino Revilo"
+       },
+       "lucidity": 13,
+       "morale": -4,
+       "relationship": {
+        "revilo": 1
+       }
+      }
+     }
     }
    ]
   },
@@ -574,6 +644,28 @@
      }
     }
    ]
+  },
+  "held": {
+   "text": "\"No. It is worse than a rebuttal.\"\n\nHe sits down at the desk — beside the machine, not at it — for the first time since you came through.\n\n\"I have two hundred drafts of you arguing. In the basket, by your foot, every one of them. You are extremely good in all of them and I have beaten you in all of them, because I write both halves and the man writing both halves does not lose.\n\nI have not got one of you simply *staying*. I could not make it come out. I assumed that was a failure of craft.\"",
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "took_it": {
+   "text": "\"I did not model *keeping* it.\"\n\nHe says it again, quietly, as though checking whether it survives repetition, and it does.\n\n\"Which means there is a thing you are doing in this room that I did not put in you and cannot account for, and I have spent eleven years being certain that the list of such things was empty.\n\nIt is not empty. It has one item on it. I would like a moment.\"",
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ],
+   "narration": true
   }
  }
 }

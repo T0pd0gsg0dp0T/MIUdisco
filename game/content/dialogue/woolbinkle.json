@@ -61,6 +61,40 @@
      }
     },
     {
+     "id": "let_him",
+     "text": "Do not ask about the cans. Admire the oven, at length, and wait.",
+     "once": true,
+     "check": {
+      "id": "woolbinkle:let_him",
+      "skill": "SUGGESTION",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "You ask about the oven. You ask about the stone and the recovery time and whether he banks it overnight, and you mean all of it, which is the part that works.\n\nHe answers for four minutes, happily, in detail, and somewhere in the fourth minute the sentences start arriving with a little more room in them, and then he is not talking about the oven.\n\n\"Can I say a thing,\" says Woolbinkle, to the peel. \"You've been in three times now and you've not once asked me what's on the shelf. Everybody asks. They ask on the way out so it doesn't count as asking.\n\nI'd like to tell you. Not now — I'd like to have told you. I'm putting it there so it's said and you can do what you like with it, and if you never come back that's fine and it's still been said.\"",
+      "failure_text": "You ask about the oven and he tells you about the oven, warmly, completely, for eleven minutes, and it is genuinely interesting and he is genuinely pleased and at the end of it he says \"Anyway\" and looks at the door, and the shelf behind him goes unmentioned by both of you.",
+      "success": "he_said_it",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_he_would_like_to_have_told_you",
+        "title": "He would like to have told you",
+        "text": "Not asked about the cans, Woolbinkle raises them himself — noting that everyone asks on the way out so it does not count as asking, and that he would like to have told somebody, whether or not they come back.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "kindness",
+         "personhood"
+        ],
+        "source": "Woolbinkle"
+       },
+       "lucidity": 7,
+       "morale": 6,
+       "relationship": {
+        "woolbinkle": 2
+       }
+      }
+     }
+    },
+    {
      "id": "leave",
      "text": "Leave before the oven finishes.",
      "goto": "__exit__"
@@ -387,6 +421,23 @@
     "relationship": {
      "woolbinkle": 1
     }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "he_said_it": {
+   "text": "\"There. Said.\"\n\nHe does something with the peel that is not necessary and takes four seconds.\n\n\"That's the most forward I've been with anybody since I got here and I'd like to go back to the oven now, if that's all right, and I'd like you to have a pizza while I do it, and I'd like neither of those to be a big thing.\n\nIt's a good one. I did it when I had the feeling.\"",
+   "effects": {
+    "relationship": {
+     "woolbinkle": 1
+    },
+    "morale": 6,
+    "health": 4
    },
    "options": [
     {

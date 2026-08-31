@@ -77,6 +77,39 @@
      }
     },
     {
+     "id": "the_parish_then",
+     "text": "\"You remember a chandlery. What else has this street been?\"",
+     "once": true,
+     "check": {
+      "id": "albert:the_parish_then",
+      "skill": "ENCYCLOPEDIA",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "\"A chandlery, a rope-walk, and before that a customs house with a weighbridge in the road — you may still find the anchor bolts if you lift the third flag outside the tobacconist, and I would take it kindly if you did, as I have not been able to check for some decades.\"\n\nHe goes on. Names, trades, the order of them, the year the parish put the green lamps in and what they replaced.\n\nAnd then, without any change of tone at all:\n\n\"And none of it appears in the parish record, monsieur. I have had four decades and a great deal of glass to look through and there is no customs house in the archive, no rope-walk, no weighbridge. There is Silvora Reefs, established once, in the year everyone agrees on.\n\nI remember a town that was never written down. You will appreciate that this is an uncomfortable thing for a man in my position to be certain of.\"",
+      "failure_text": "\"A chandlery. A rope-walk, I believe, though I would not swear to the order of them, and the years have rather run together in here — one loses the trick of keeping them apart when nothing outside changes fast enough to mark them by.\"",
+      "success": "the_parish_then",
+      "failure": "how_long",
+      "success_effects": {
+       "clue": {
+        "id": "c_a_town_never_written_down",
+        "title": "A town that was never written down",
+        "text": "Albert remembers a customs house, a rope-walk and a chandlery on this street, in order, with dates. None of it appears in the parish record, which has Silvora Reefs established once, in the year everyone agrees on.",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript",
+         "architecture",
+         "identity"
+        ],
+        "source": "Monsieur Albert"
+       },
+       "lucidity": 12,
+       "relationship": {
+        "albert": 1
+       }
+      }
+     }
+    },
+    {
      "id": "back",
      "text": "\"Something else.\"",
      "goto": "root"
@@ -147,6 +180,40 @@
    },
    "options": [
     {
+     "id": "the_glass_itself",
+     "text": "Ask the mirror what it makes of him.",
+     "once": true,
+     "check": {
+      "id": "albert:the_glass_itself",
+      "skill": "INLAND_EMPIRE",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "Not Albert. The glass. The third mirror, which has held an owlbear for forty years without being asked and without complaint and without, so far as anybody in this shop has ever considered, an opinion.\n\nIt has one.\n\nIt arrives sideways and complete and in no language at all: *he is good company and he is the only thing in here that has ever said thank you to a surface, and he has been getting quieter for years, and I cannot make him louder, I can only refuse to stop including him, and I have never once stopped.*\n\nIn the glass, Monsieur Albert looks at nothing in particular, and does not ask what just happened, and inclines his head about a degree.",
+      "failure_text": "It is a mirror in a barbershop. It shows the room, and an owlbear, and the back of a man's head at a desk that is not there, and it declines to be drawn on any of it.",
+      "success": "glass_opinion",
+      "failure": "why_glass",
+      "success_effects": {
+       "clue": {
+        "id": "c_the_glass_refuses_to_stop",
+        "title": "It has never once stopped including him",
+        "text": "The third mirror's position, arrived at without language: it cannot make Albert louder, only refuse to stop including him — which it has done, without interruption, for forty years.",
+        "beat": "awakening",
+        "tags": [
+         "awakening",
+         "personhood",
+         "kindness"
+        ],
+        "source": "the third mirror"
+       },
+       "lucidity": 11,
+       "morale": 6,
+       "relationship": {
+        "albert": 1
+       }
+      }
+     }
+    },
+    {
      "id": "back",
      "text": "\"Something else.\"",
      "goto": "root"
@@ -210,6 +277,40 @@
      }
     },
     {
+     "id": "walked_through",
+     "text": "You have walked through that air. Twice. Tonight.",
+     "once": true,
+     "check": {
+      "id": "albert:walked_through",
+      "skill": "HALF_LIGHT",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "Everything old and unhelpful in you arrives at once and it does not arrive with an argument. It arrives with an instruction, and the instruction is: *not again, not through that, go round.*\n\nAnd it is right, and it is right for a reason it cannot articulate and does not need to, which is that both times you went through the volume of air between the chairs, the temperature was wrong on the far side of it. Not cold. *Later.* You came out of it into a room that had been going on for a few seconds longer than the room you went in from.\n\nThe animal noticed both times. The animal has been trying to mention it since Tuesday.",
+      "failure_text": "There is a piece of air between two barbers' chairs and it is a piece of air, and going round it would be an admission, so you do not, and nothing whatever happens, and nothing whatever continues to happen for the rest of the evening.",
+      "success": "walked_through",
+      "failure": "seen",
+      "success_effects": {
+       "clue": {
+        "id": "c_the_far_side_is_later",
+        "title": "You come out of it a few seconds later",
+        "text": "Crossing the empty volume between the barber's chairs puts you into a room that has been running a few seconds longer than the one you left. It has happened twice and something in you registered it both times.",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript",
+         "office",
+         "architecture"
+        ],
+        "source": "the third mirror"
+       },
+       "lucidity": 12,
+       "morale": -5,
+       "relationship": {
+        "albert": 1
+       }
+      }
+     }
+    },
+    {
      "id": "back",
      "text": "\"Something else.\"",
      "goto": "root"
@@ -232,6 +333,54 @@
     {
      "id": "back",
      "text": "\"Every evening at six, Monsieur.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "glass_opinion": {
+   "text": "\"You have been talking to the mirror,\" says Albert, from inside it. \"About me.\n\nMonsieur. I have lived in that surface for forty years and it has never once been rude to me, and I have never once considered that it might have a view. That is precisely the discourtesy I have spent four decades objecting to, performed by me, upon a pane of glass.\n\nI shall have to think about that. Do not tell Antonio. He will put a cup out for it.\"",
+   "effects": {
+    "relationship": {
+     "albert": 1
+    },
+    "morale": 5
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "walked_through": {
+   "text": "\"You have gone pale, monsieur, which in this establishment is a considerable achievement, as everything is already the colour of a mirror.\n\nYes. It is a few seconds later on that side. I have watched patrons cross it for forty years and come out the other side very slightly behind the room, and none of them has ever noticed, and Antonio walks through it forty times a day and is the most punctual man in this parish and has never once been late for anything in his life.\n\nI had assumed it was a property of the shop. It has not previously occurred to me to wonder what is on the other side of a *few seconds*.\"",
+   "effects": {
+    "relationship": {
+     "albert": 1
+    },
+    "lucidity": 5
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "the_parish_then": {
+   "text": "\"I should not have said that so plainly. You have gone quiet and I have had forty years of practice at being tactful and I appear to have spent all of it on the weather.\n\nMonsieur — take it as a courtesy rather than an alarm. I remember a town that is not in the record. You are investigating a town that is not in the record. We are, I think, the only two people in this parish who have that in common, and I have been waiting a long time for the second one.\"",
+   "effects": {
+    "relationship": {
+     "albert": 1
+    },
+    "morale": 4
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else, Monsieur.\"",
      "goto": "root"
     }
    ]

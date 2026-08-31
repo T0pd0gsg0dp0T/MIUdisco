@@ -273,6 +273,38 @@
      }
     },
     {
+     "id": "enough",
+     "text": "\"Stop. No verse. Answer me in prose or say you will not.\"",
+     "once": true,
+     "check": {
+      "id": "soliloquy:enough",
+      "skill": "AUTHORITY",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "It is not loud. Loud would have got you a couplet about thunder.\n\nIt is the voice that ends a conversation, used once, in a building where the acoustics are on her side and the subject is hers and the standing is not — and it works, and what is startling is how fast it works, as though she has been waiting sixty years for somebody to make her stop.\n\n\"...Very well,\" says Soliloquy, in prose. \"I will not.\n\nThere. That is the honest form of it and it has taken me the whole of my professional life to be asked for it correctly. I will not tell you what is behind that door. Not tonight, not to you, not while you are still deciding what you are — and you may take that as obstruction, sir, and I shall not complain, because it is.\"",
+      "failure_text": "\"Prose,\" she says, delightedly, and does eleven lines of it that scan perfectly and rhyme internally and are, technically, prose, and are about the history of the word.\n\nBy the end of it you are nearer the vestibule and she is nearer the west corridor and neither of those movements was yours.",
+      "success": "keeper_yields",
+      "failure": "vault",
+      "success_effects": {
+       "clue": {
+        "id": "c_she_will_not_say",
+        "title": "The honest form of a refusal",
+        "text": "Asked in prose, Soliloquy refuses in prose: she will not say what is behind the unmarked door, not while Oliver is still deciding what he is, and she names it as obstruction herself.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "kindness"
+        ],
+        "source": "Soliloquy"
+       },
+       "lucidity": 8,
+       "relationship": {
+        "soliloquy": 1
+       }
+      }
+     }
+    },
+    {
      "id": "back",
      "text": "Let her have Mrs Ahearne.",
      "goto": "root"
@@ -327,6 +359,40 @@
    },
    "options": [
     {
+     "id": "keep_it",
+     "text": "\"Then I will keep it. All of it. Until I know what I want to be true.\"",
+     "once": true,
+     "check": {
+      "id": "soliloquy:keep_it",
+      "skill": "VOLITION",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "\"Then you are the first,\" she says.\n\nNo rhyme. No couplet. A keeper of the horizontal standing in her own vestibule saying four flat words to a man who is still upright.\n\n\"Forty of them, sir, and every single one told somebody. Not out of foolishness — out of *relief*. It is an unbearable amount to carry alone and the carrying is the whole of the price, and I have watched forty people put it down and I have engraved forty plates and I have never once been able to say what I am saying to you now, which is: carry it. Carry it a while longer. It is worth what it costs.\"",
+      "failure_text": "\"Everyone says so, sir. Everyone says so in this vestibule, with the fog behind them and their collar up, and then they go down the hill and into a warm room and there is somebody kind in it, and the kind person asks what is the matter — and that is where it goes. Never in the fog. Always in the warm room.\"\n\nA couplet arrives about hearths. It is very fine. It is also a door closing.",
+      "success": "kept_it",
+      "failure": "aloud",
+      "success_effects": {
+       "clue": {
+        "id": "c_carry_it_longer",
+        "title": "Carry it a while longer",
+        "text": "Soliloquy has watched forty people put down what they were carrying — always in a warm room, to somebody kind — and then engraved forty plates. She has never before been able to tell anyone to keep carrying it.",
+        "beat": "quadc",
+        "tags": [
+         "quadc",
+         "kindness",
+         "personhood"
+        ],
+        "source": "Soliloquy"
+       },
+       "lucidity": 9,
+       "morale": 6,
+       "relationship": {
+        "soliloquy": 2
+       }
+      }
+     }
+    },
+    {
      "id": "out",
      "text": "Go and find the page.",
      "goto": "__exit__"
@@ -352,6 +418,87 @@
      ],
      "source": "Soliloquy"
     }
+   },
+   "options": [
+    {
+     "id": "odochtaigh",
+     "text": "\"O'Dochtaigh. Take that apart for me.\"",
+     "once": true,
+     "check": {
+      "id": "soliloquy:odochtaigh",
+      "skill": "ETYMOLOGY",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "\"Ó Dochartaigh,\" she says, and gives it the whole of its length, which nobody has done in this parish in sixty years. \"Anglicised badly and early. *Dochartach* — hurtful, obstructive. The unhelpful ones. The line of the man who gets in the way.\"\n\nA pause, and the vestibule does the thing it does with pauses.\n\n\"I have thought about that a great deal, sir, standing in front of a door I will not open, obstructing a man who wishes to be let past. One does wonder whether one chose the profession or whether the profession was sitting in the name all along, waiting — as it was for the barber, who is a knight by nothing but a vowel.\"",
+      "failure_text": "\"It is Irish, sir, and it is old, and it belonged to a woman who went into a vault in 1961 and has no further use for it.\"\n\nAnd that is a stone door coming down, in couplets, courteously, and there is nothing behind it tonight.",
+      "success": "odochtaigh",
+      "failure": "name",
+      "success_effects": {
+       "clue": {
+        "id": "c_the_obstructive_ones",
+        "title": "Ó Dochartaigh — the unhelpful ones",
+        "text": "Soliloquy's abandoned surname means hurtful or obstructive: the line of the man who gets in the way. She stands in front of a door she will not open and wonders whether the profession was waiting in the name, as barbering waited in Sir Jerry's.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "language",
+         "wordplay",
+         "identity"
+        ],
+        "source": "Soliloquy"
+       },
+       "lucidity": 9,
+       "relationship": {
+        "soliloquy": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "kept_it": {
+   "text": "\"Good. Then I shall do the corresponding thing, which is to stop being charming at you.\n\nThe verse is a service, Mr Onions, and I do not apologise for it — the bereaved require somewhere to put their hands and a couplet is somewhere to put your hands. But it is also sixty years of a woman keeping a room between herself and everybody who walks into it.\n\nYou are carrying yours. I shall put down mine for the length of this conversation, and we will see which of us finds it harder.\"",
+   "effects": {
+    "relationship": {
+     "soliloquy": 1
+    },
+    "morale": 4
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "keeper_yields": {
+   "text": "\"Ask me again when you know. Not when you have more evidence — when you *know*, which is a different condition and arrives in a different part of a person.\n\nI shall not have moved. I shall be standing precisely here, obstructing precisely this, in the manner of my ancestors. But I will have been asked twice, and twice is a thing I can put in the ledger, and the ledger is the only place in this parish where I am permitted to be honest.\"",
+   "effects": {
+    "relationship": {
+     "soliloquy": 1
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "odochtaigh": {
+   "text": "\"The barber knows, you understand. Not in words — he has never once said it in words — but he knows, and he made his peace with it at thirty and has been a knight ever since, and I have never made mine.\n\nThat is the difference between Jeremy and myself, sir, and it is the whole difference: he accepted the sentence he was given and furnished it. I changed my name to a stage direction and have been obstructing doorways for sixty years in the belief that this constituted an escape.\"",
+   "effects": {
+    "relationship": {
+     "soliloquy": 1
+    },
+    "lucidity": 4
    },
    "options": [
     {

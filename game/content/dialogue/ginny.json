@@ -65,6 +65,38 @@
      }
     },
     {
+     "id": "my_floor",
+     "text": "\"You run this floor. You don't run what I'm doing on it.\"",
+     "once": true,
+     "check": {
+      "id": "ginny:my_floor",
+      "skill": "AUTHORITY",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "She looks at you for slightly longer than the sentence deserved.\n\n\"Good,\" she says. \"Say it like that to the gators and they'll write it down and file it and forget it, which is what you want. Say it like that to me and I'll respect it, which is worse for you, because now I'm interested.\"\n\nShe puts the gin down.\n\n\"Weight was right. Chin was wrong — you lifted it, which is a tell, and it says the standing's borrowed. Doesn't matter in here. Will matter in about four days when somebody asks you who you are and you have to answer without a wobble in it. Practise on me. I'm cheap.\"",
+      "failure_text": "\"Mm,\" says Ginny, and does not look up from the till. \"You said that with your weight on the back foot.\"\n\nAnd that is the whole of the exchange, and the room absorbs it without a ripple, and somewhere behind you a man in a suit that fits too well makes a note of nothing at all.",
+      "success": "standing",
+      "failure": "root",
+      "success_effects": {
+       "clue": {
+        "id": "c_borrowed_standing",
+        "title": "The standing is borrowed",
+        "text": "Ginny reads Oliver's authority as borrowed — the weight right, the chin lifted, a tell. She expects it to be tested within four days by somebody asking who he is.",
+        "beat": "revilo",
+        "tags": [
+         "revilo",
+         "identity"
+        ],
+        "source": "Ginny Ginja"
+       },
+       "lucidity": 6,
+       "relationship": {
+        "ginny": 1
+       }
+      }
+     }
+    },
+    {
      "id": "leave",
      "text": "Leave before the room decides something.",
      "goto": "__exit__"
@@ -113,6 +145,39 @@
         "source": "Ginny Ginja"
        },
        "lucidity": 7,
+       "relationship": {
+        "ginny": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "ice_machine",
+     "text": "\"Show me the ice machine. You said it was a problem.\"",
+     "once": true,
+     "check": {
+      "id": "ginny:ice_machine",
+      "skill": "INTERFACING",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "It is a good machine badly used and it takes about four minutes to find out why: the thermostat is fine, the compressor is fine, and the drain runs uphill for eleven inches before it remembers itself.\n\nYou say so. Ginny looks at the eleven inches for a while.\n\n\"That pipe was straight in March,\" she says. \"I had it in. I watched him fit it. It ran downhill because pipes do.\"\n\nShe crouches, follows it with two fingers, and stops where it lifts.\n\n\"Right. So my building's been quietly redecorating the plumbing and the only reason anybody knows is that ice is the one thing in here that won't lie about which way is down.\"",
+      "failure_text": "You get the panel off and a great deal of cold air and a diagnosis of 'it's the drain, probably', which Ginny receives with the exact courtesy of a woman who has had that diagnosis from three engineers and a cousin.",
+      "success": "ice_machine",
+      "failure": "corridor",
+      "success_effects": {
+       "clue": {
+        "id": "c_ice_will_not_lie",
+        "title": "Ice will not lie about which way is down",
+        "text": "The Möbius ice machine fails because its drain now runs uphill for eleven inches. The pipe was fitted straight in March. Ice is the only thing in the building that cannot be persuaded about the direction of down.",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript",
+         "mobius",
+         "architecture"
+        ],
+        "source": "Ginny Ginja"
+       },
+       "lucidity": 10,
        "relationship": {
         "ginny": 1
        }
@@ -183,6 +248,40 @@
         "source": "Ginny Ginja"
        },
        "lucidity": 10,
+       "relationship": {
+        "ginny": 1
+       }
+      }
+     }
+    },
+    {
+     "id": "two_seconds_threat",
+     "text": "Two seconds is not a glance. Two seconds is a *look*, and something is doing the looking.",
+     "once": true,
+     "check": {
+      "id": "ginny:two_seconds_threat",
+      "skill": "HALF_LIGHT",
+      "dc": 12,
+      "kind": "white",
+      "success_text": "Turn it round. Everybody in this club has spent eleven years asking what is behind the wall, which assumes the wall is a window and you are on the outside of it.\n\nYou are not on the outside of it.\n\nTwo seconds, nine times a night, at a duration tuned exactly to human attention — that is not a leak and it is not a fault. That is a schedule. Something opens a wall onto this room on a rhythm, for precisely as long as it takes to see and not long enough to be checked, and it has been doing it since before you came out of the water.\n\nThe correct question was never what is behind it. The correct question is what it has been *looking at*, ninety times a night, for eleven years.",
+      "failure_text": "It goes transparent, and there is black stone behind it, and it goes back, and the whole business takes about two seconds and refuses to be more sinister than that no matter how long you stand in front of it with your coat on.",
+      "success": "two_seconds_threat",
+      "failure": "wall",
+      "success_effects": {
+       "clue": {
+        "id": "c_it_has_been_looking",
+        "title": "The wall is not a window you are outside of",
+        "text": "The Möbius wall's two-second transparency is a schedule, not a fault — tuned to be seen and not verified, nine times a night for eleven years. The question is not what is behind it but what it has been looking at.",
+        "beat": "manuscript",
+        "tags": [
+         "manuscript",
+         "mobius",
+         "revilo"
+        ],
+        "source": "the far wall"
+       },
+       "lucidity": 13,
+       "morale": -6,
        "relationship": {
         "ginny": 1
        }
@@ -395,6 +494,61 @@
      "goto": "root"
     }
    ]
+  },
+  "standing": {
+   "text": "\"Right. Lesson's over, I've got a floor.\n\nOne thing though, and take it or don't. Whatever you're walking toward — and you are, you've got the walk — it's going to end in a room with one other person in it. They always do. And in a room with one other person, authority isn't the loud thing. It's whoever's still there at the end of the sentence.\n\nBe there at the end of the sentence, Onions.\"",
+   "effects": {
+    "relationship": {
+     "ginny": 1
+    },
+    "flag": {
+     "ginny_end_of_sentence": true
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "two_seconds_threat": {
+   "text": "She does not say anything for a while, which for Ginny is a substantial expenditure.\n\n\"Eleven years,\" she says. \"Eleven years I've had that wall and I've asked what's behind it maybe four thousand times and I have never once asked it the other way round.\n\nRight. Well. That's my night ruined and probably my decade.\"\n\nShe picks the gin up and this time she drinks it.\n\n\"Guard up, Onions. And do me a favour — when you work out what it's been looking at, don't tell me in here. There's ninety people on this floor.\"",
+   "effects": {
+    "relationship": {
+     "ginny": 2
+    },
+    "morale": -4,
+    "flag": {
+     "ginny_knows_it_looks": true
+    }
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "ice_machine": {
+   "text": "\"Don't say it. I know what you're going to say and I've got ninety people on that floor and a fire inspection Thursday.\"\n\nShe stands up, wipes her hands, and puts them flat on the top of the machine for a second, which is a thing Ben does, and which she has certainly never seen Ben do.\n\n\"Eleven inches. In my ice. Right — go on, get out, I've got a pipe to be furious at. And Onions: thanks. That's not sarcasm, I'm aware it reads as sarcasm. Nobody's fixed anything in here in eleven years.\"",
+   "effects": {
+    "relationship": {
+     "ginny": 2
+    },
+    "morale": 6
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ],
+   "narration": true
   }
  }
 }

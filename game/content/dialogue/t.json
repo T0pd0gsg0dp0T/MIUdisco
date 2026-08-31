@@ -73,6 +73,42 @@
      "goto": "rest_of_it"
     },
     {
+     "id": "the_letter",
+     "text": "\"Then take the letter apart. What is a T.\"",
+     "once": true,
+     "check": {
+      "id": "t:the_letter",
+      "skill": "ETYMOLOGY",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "\"Ha! Right. Right — nobody has ever asked me that and I have had eleven years to get ready for it.\"\n\nHe puts the knife down, which he does not do.\n\n\"*Taw.* That's the Phoenician. Last letter of the alphabet, and it means a mark — the mark you make when you cannot write, the one you put at the bottom of a thing to say you were there and you agreed to it. A cross. A signature for a man with no letters.\n\nSo I'm the mark at the end. That's the etymology and I'd be lying if I said I hadn't looked it up, and I'd be lying twice if I said I looked it up recently.\"\n\nA beat. The extraction fan has gone quiet again.\n\n\"Man with no name signs with a T. It's not the worst arrangement anybody in this parish has come to.\"",
+      "failure_text": "\"Tee. As in the letter, as in the drink, as in the thing you hit a ball off.\" He shrugs, cheerfully, and picks the knife back up. \"I do the sound, chef. I've never once done the history.\"",
+      "success": "letter_t",
+      "failure": "why_t",
+      "success_effects": {
+       "clue": {
+        "id": "c_the_mark_at_the_end",
+        "title": "The mark a man makes who cannot write",
+        "text": "T knows his own etymology: taw, the last Phoenician letter, meaning the mark made by someone who cannot write — the cross at the foot of a document to say you were there and agreed. A man with no name signs with a T.",
+        "beat": "revilo",
+        "tags": [
+         "revilo",
+         "language",
+         "wordplay",
+         "identity",
+         "personhood"
+        ],
+        "source": "\"T\""
+       },
+       "lucidity": 11,
+       "morale": 4,
+       "relationship": {
+        "t": 1
+       }
+      }
+     }
+    },
+    {
      "id": "back",
      "text": "\"Something else.\"",
      "goto": "root"
@@ -166,6 +202,39 @@
     }
    },
    "options": [
+    {
+     "id": "ask_ladle",
+     "text": "Do not ask him. Ask the ladle.",
+     "once": true,
+     "check": {
+      "id": "t:ask_ladle",
+      "skill": "INLAND_EMPIRE",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "The ladle is on the pass and it is not quite touching the pass, and it has been in that condition for the length of a sentence about tureens.\n\nSo: what does the ladle want.\n\nThe answer arrives fully dressed and entirely unembarrassed, the way they do, and it is this — the ladle does not want anything. The ladle is *being held*, gently, at the height at which a person holds a thing they intend to give back, by something that has been in this kitchen a very long time and has never once been thanked for the catching.\n\nAnd it likes the long sentences. It likes them the way a dog likes a particular voice, without understanding one word.",
+      "failure_text": "The ladle is a ladle. It is a ladle nine inches above a steel counter and it is entirely uninterested in being interviewed, and after a while T says, kindly, \"It doesn't do requests,\" and goes back to the prep.",
+      "success": "the_ladle",
+      "failure": "utensils",
+      "success_effects": {
+       "clue": {
+        "id": "c_the_ladle_is_held",
+        "title": "Being held, not lifted",
+        "text": "The utensils over T's pass are not rising. They are being held at giving-back height by something long resident in the kitchen that has never been thanked, and that likes the sound of the long sentences without understanding them.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "language",
+         "furthermore"
+        ],
+        "source": "the pass"
+       },
+       "lucidity": 10,
+       "relationship": {
+        "t": 1
+       }
+      }
+     }
+    },
     {
      "id": "back",
      "text": "\"Something else.\"",
@@ -267,6 +336,38 @@
     {
      "id": "back",
      "text": "Stand in the patch.",
+     "goto": "root"
+    }
+   ]
+  },
+  "the_ladle": {
+   "text": "\"You went quiet,\" says T, without turning round. \"People go quiet at the pass sometimes. I've stopped asking.\"\n\nHe sets the ladle down properly, in its place, and it goes where he puts it and stays there like any other object in the world.\n\n\"For what it's worth — and I've never said this because it sounds like a man taking credit for weather — I don't think they come up for the sound. I think they come up for the *effort*. Long sentence, nobody listening, four hundred covers, and up they go.\n\nSomething in this kitchen likes it when a man tries too hard. That's the whole of my theology and it has served me well.\"",
+   "effects": {
+    "relationship": {
+     "t": 1
+    },
+    "morale": 6
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "letter_t": {
+   "text": "\"Right. Enough of that, I've got a hundred and ten covers and a woman out there who cannot say her own consonants and does not care.\n\nBut — thank you. Genuinely. Not for the etymology. For asking a question about me that had an answer in it.\n\nMost people ask what the T stands for. You asked what a T *is*. That's a different question and it's the one I could actually do.\"",
+   "effects": {
+    "relationship": {
+     "t": 2
+    },
+    "morale": 8
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
      "goto": "root"
     }
    ]

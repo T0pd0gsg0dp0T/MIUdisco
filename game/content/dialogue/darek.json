@@ -209,6 +209,40 @@
      }
     },
     {
+     "id": "carry",
+     "text": "Say nothing about the rotors. Let him keep the noise, and carry the rest yourself.",
+     "once": true,
+     "check": {
+      "id": "darek:carry",
+      "skill": "PAIN_THRESHOLD",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "He has told you there is nothing up there. He is wrong and he knows he is wrong and the knowing is sitting on him like a coat that is too warm for the room.\n\nSo you let it go. You take the whole weight of the thing off the counter and put it somewhere in yourself where it will keep, and you ask him about the tubs.\n\nAnd Darek — who is previous, who has been previous his whole life, who answers a beat before the question — does not answer this one early. He looks at you for a second and a half.\n\n\"...Yeah,\" he says slowly. \"The tubs. Right.\" And then, wiping: \"You just did somethin', Ols. I don't know what it was. I'd like the record to show I noticed it.\"",
+      "failure_text": "You do not mention it, which is the plan, and then it is in the room anyway — in the shape of the pause, in the way the cone gets made too carefully — and he says \"Sorry about your wait\" at the wrong moment for the first time all evening and neither of you can pretend that landed right.",
+      "success": "carried_it",
+      "failure": "rotors",
+      "success_effects": {
+       "clue": {
+        "id": "c_took_it_off_the_counter",
+        "title": "Off the counter, into your pocket",
+        "text": "Rather than make Darek say the rotors out loud — which in Silvora Reefs is how a thing becomes the case — you carried it yourself. He noticed, a beat late, which is not how Darek notices anything.",
+        "beat": "oracle",
+        "tags": [
+         "oracle",
+         "kindness",
+         "personhood"
+        ],
+        "source": "Darek Dwayne Wayne"
+       },
+       "lucidity": 7,
+       "morale": 5,
+       "relationship": {
+        "darek": 2
+       }
+      }
+     }
+    },
+    {
      "id": "back",
      "text": "Let it be a noise.",
      "goto": "root"
@@ -329,6 +363,39 @@
      "goto": "apology"
     },
     {
+     "id": "let_him_arrive",
+     "text": "Do not ask him what he is not saying. Talk about nothing until he says it.",
+     "once": true,
+     "check": {
+      "id": "darek:let_him_arrive",
+      "skill": "SUGGESTION",
+      "dc": 11,
+      "kind": "white",
+      "success_text": "So you talk about nothing. The weather that is not weather, the price of the tubs, a dog that used to come in, whether the chalk board is worth the trouble.\n\nIt takes eleven minutes and it costs you eleven minutes and Darek is the only person in Silvora Reefs for whom eleven minutes of nothing is a functioning interrogation technique, because the man cannot help arriving early and if you give him no question to arrive at he will eventually arrive at his own.\n\n\"—and the thing is,\" he says, in the middle of the dog, \"I knew you was comin' up out of that water before the phone went.\"\n\nHe stops. He looks at the counter with the expression of a man who has just heard his own sentence.\n\n\"I was already in the truck, Ols. Keys in it. Four in the mornin'. And I've not thought about that once until right this second.\"",
+      "failure_text": "You talk about nothing and he talks about nothing, gladly, at length, because talking about nothing with you is his favourite part of the week and he has no idea he is being handled — and at the end of it there is a cone and a warm shop and no information whatsoever, which is arguably the better outcome and is certainly the kinder one.",
+      "success": "arrived_early",
+      "failure": "ahead",
+      "success_effects": {
+       "clue": {
+        "id": "c_already_in_the_truck",
+        "title": "He was already in the truck",
+        "text": "Talked round to it rather than asked, Darek hears himself say that he was in the truck with the keys in it at four in the morning before the phone rang — and that he had never once thought about it until saying it aloud.",
+        "beat": "crash",
+        "tags": [
+         "crash",
+         "manuscript",
+         "kindness"
+        ],
+        "source": "Darek Dwayne Wayne"
+       },
+       "lucidity": 11,
+       "relationship": {
+        "darek": 1
+       }
+      }
+     }
+    },
+    {
      "id": "back",
      "text": "\"Something else.\"",
      "goto": "root"
@@ -444,6 +511,41 @@
     {
      "id": "back",
      "text": "Change the subject.",
+     "goto": "root"
+    }
+   ],
+   "narration": true
+  },
+  "carried_it": {
+   "text": "You just did somethin', Ols, and I'd like the record to show I noticed it.\n\nNow eat this. No — don't do the face, don't do the eyebrow, I have watched you not eat for a fortnight and tonight you're eating in front of me like a man with a body.\n\nAnd then you can go and do whatever it is. I ain't askin'. I've made a real point of not askin' and I'd like credit for it at some future date.",
+   "effects": {
+    "relationship": {
+     "darek": 1
+    },
+    "morale": 8,
+    "health": 4
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
+     "goto": "root"
+    }
+   ]
+  },
+  "arrived_early": {
+   "text": "I was already in the truck.\n\nOls, I want you to hear me say the next part 'cause I ain't going to say it twice and I ain't going to be able to say it better.\n\nI don't know how I knew. I've spent my whole life bein' previous and I've never once minded it and tonight I mind it, because bein' previous about ice cream is a party trick and bein' previous about a man comin' up out of the water at four in the mornin' is somethin' else, and I don't want to know what.\n\n... You go on. I got tubs. Go on, Ols.",
+   "effects": {
+    "relationship": {
+     "darek": 1
+    },
+    "morale": -5,
+    "lucidity": 6
+   },
+   "options": [
+    {
+     "id": "back",
+     "text": "\"Something else.\"",
      "goto": "root"
     }
    ],
